@@ -1,0 +1,2 @@
+﻿Comprobar interferencias
+REDONDEO PENDIENTE en Interfaz_lumbar_aligerada. Una entrega no puede declarar un redondeo que no se aplico (fue el problema de P2.04). Revisar REDONDEOS.json, que incluye las aristas problematicas.

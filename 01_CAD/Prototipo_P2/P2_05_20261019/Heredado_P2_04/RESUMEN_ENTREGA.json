@@ -1,0 +1,21 @@
+{
+  "version": "P2.04",
+  "masa_rigida_y_protectores_kg": 1.4423278471806384,
+  "masa_referencias_visuales_kg": 0.4811540518095094,
+  "masa_arnes_textiles_kg": 0.65,
+  "reserva_adicional_kg": 0.12,
+  "presupuesto_sistema_kg": 2.2123278471806387,
+  "masa_sistema_medida_kg": null,
+  "P2_03_rigida_kg": 2.3331284134369037,
+  "P2_03_presupuesto_kg": 2.9131284134369038,
+  "ahorro_rigido_porcentaje": 38.180520245948976,
+  "ahorro_presupuesto_porcentaje": 24.056631455853395,
+  "grupos": {
+    "estructura": 0.5687584194437078,
+    "uniones": 0.06752012718697468,
+    "anclajes": 0.5604881510747604,
+    "protecciones": 0.08075908399532589,
+    "fijaciones": 0.16480206547986972
+  },
+  "nota": "El presupuesto sustituye toda la geometria REF por 0.65 kg; no suma dos veces los textiles. No incluye la bomba ni el agua."
+}

@@ -1,0 +1,1151 @@
+﻿[
+    {
+        "pieza":  "Refuerzo_C_I",
+        "aristas_totales":  46,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  46,
+        "radio_mm":  0.35,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Refuerzo_C_D",
+        "aristas_totales":  46,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  46,
+        "radio_mm":  0.35,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Interfaz_lumbar_aligerada",
+        "aristas_totales":  472,
+        "aplicado":  false,
+        "criterio":  "ninguna",
+        "aristas_redondeadas":  0,
+        "radio_mm":  0.5,
+        "error":  "No se pudo aplicar el redondeo, ni al conjunto completo ni a un grupo",
+        "pruebas":  153,
+        "aristas_problematicas":  [
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           50,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  237,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           50,
+                                                           11
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           50,
+                                                           11
+                                                       ],
+                                          "indice_en_cuerpo":  238,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           50,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           50,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  239,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           50,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -114,
+                                                           76,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  240,
+                                          "cuerda_mm":  22,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -114,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  241,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -114,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  242,
+                                          "cuerda_mm":  22,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -111,
+                                                           76,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -114,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  243,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -114,
+                                                           50,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           50,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  244,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -111,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  245,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           50,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           50,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  246,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  247,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           80,
+                                                           11
+                                                       ],
+                                          "indice_en_cuerpo":  248,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           80,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           80,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  249,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           80,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           80,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  250,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           80,
+                                                           11
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           80,
+                                                           8
+                                                       ],
+                                          "indice_en_cuerpo":  251,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           76,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           76,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  252,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           76,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           76,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  253,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           80,
+                                                           8
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           76,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  254,
+                                          "cuerda_mm":  22,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           54,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           54,
+                                                           4
+                                                       ],
+                                          "indice_en_cuerpo":  255,
+                                          "cuerda_mm":  22,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           76,
+                                                           4
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           108,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  256,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  257,
+                                          "cuerda_mm":  8,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  258,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           108,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  259,
+                                          "cuerda_mm":  8,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           117.58,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  260,
+                                          "cuerda_mm":  9.58,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           108,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           108,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  261,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           108,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  262,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  263,
+                                          "cuerda_mm":  12,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  264,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           88,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           20.13,
+                                                           -2.79
+                                                       ],
+                                          "indice_en_cuerpo":  265,
+                                          "cuerda_mm":  4.61,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           18,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           18,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  266,
+                                          "cuerda_mm":  17.7,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           18,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           18,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  267,
+                                          "cuerda_mm":  7.07,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           23,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           23,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  268,
+                                          "cuerda_mm":  90,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           113,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           113,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  269,
+                                          "cuerda_mm":  7.07,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           118,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           118,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  270,
+                                          "cuerda_mm":  17.7,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           118,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           118,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  271,
+                                          "cuerda_mm":  2.04,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           117.58,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           20.13,
+                                                           -2.79
+                                                       ],
+                                          "indice_en_cuerpo":  272,
+                                          "cuerda_mm":  4.61,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           18,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           18,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  273,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           18,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           18,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  274,
+                                          "cuerda_mm":  17.7,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           18,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           18,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  275,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           18,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           18,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  276,
+                                          "cuerda_mm":  7.07,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           23,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           23,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  277,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           23,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           23,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  278,
+                                          "cuerda_mm":  90,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           113,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           113,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  279,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           113,
+                                                           24
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           113,
+                                                           24
+                                                       ],
+                                          "indice_en_cuerpo":  280,
+                                          "cuerda_mm":  7.07,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           118,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           118,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  281,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           118,
+                                                           19
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           118,
+                                                           19
+                                                       ],
+                                          "indice_en_cuerpo":  282,
+                                          "cuerda_mm":  17.7,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           118,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           118,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  283,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           118,
+                                                           1.3
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           117.58,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  284,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           117.58,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           118,
+                                                           1.3
+                                                       ],
+                                          "indice_en_cuerpo":  285,
+                                          "cuerda_mm":  2.04,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           117.58,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  286,
+                                          "cuerda_mm":  9.58,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           117.58,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           88,
+                                                           -3.2
+                                                       ],
+                                          "indice_en_cuerpo":  287,
+                                          "cuerda_mm":  2.5,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  288,
+                                          "cuerda_mm":  12,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  289,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -3.7
+                                                       ],
+                                          "indice_en_cuerpo":  290,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -79,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  291,
+                                          "cuerda_mm":  32,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -111,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           88,
+                                                           -3.2
+                                                       ],
+                                          "indice_en_cuerpo":  292,
+                                          "cuerda_mm":  2.5,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -111,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -67,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  293,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -67,
+                                                           88,
+                                                           -3.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -67,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  294,
+                                          "cuerda_mm":  9,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           100,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  295,
+                                          "cuerda_mm":  32,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -79,
+                                                           100,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -111,
+                                                           88,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  296,
+                                          "cuerda_mm":  12,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -111,
+                                                           100,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -73,
+                                                           108,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  297,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -76,
+                                                           108,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -73,
+                                                           100,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  298,
+                                          "cuerda_mm":  8,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -73,
+                                                           108,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -76,
+                                                           100,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  299,
+                                          "cuerda_mm":  3,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -73,
+                                                           100,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -66,
+                                                           88.13,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  300,
+                                          "cuerda_mm":  1.01,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -67,
+                                                           88,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -66,
+                                                           122,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  301,
+                                          "cuerda_mm":  33.87,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -66,
+                                                           88.13,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -65.89,
+                                                           123.84,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  302,
+                                          "cuerda_mm":  1.85,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -66,
+                                                           122,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -67,
+                                                           124,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  303,
+                                          "cuerda_mm":  1.12,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -65.89,
+                                                           123.84,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -123,
+                                                           124,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  304,
+                                          "cuerda_mm":  56,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -67,
+                                                           124,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -127,
+                                                           120,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  305,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -123,
+                                                           124,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -127,
+                                                           100.65,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  306,
+                                          "cuerda_mm":  19.35,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -127,
+                                                           120,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -130,
+                                                           102,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  307,
+                                          "cuerda_mm":  3.29,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -127,
+                                                           100.65,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -156,
+                                                           102,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  308,
+                                          "cuerda_mm":  26,
+                                          "tipo_curva":  "5123",
+                                          "desde_mm":  [
+                                                           -130,
+                                                           102,
+                                                           -0.7
+                                                       ]
+                                      },
+                                      {
+                                          "hasta_mm":  [
+                                                           -160,
+                                                           98,
+                                                           -0.7
+                                                       ],
+                                          "indice_en_cuerpo":  309,
+                                          "cuerda_mm":  5.66,
+                                          "tipo_curva":  "5125",
+                                          "desde_mm":  [
+                                                           -156,
+                                                           102,
+                                                           -0.7
+                                                       ]
+                                      }
+                                  ],
+        "estado":  "no_aplicado",
+        "aristas_omitidas":  73
+    },
+    {
+        "pieza":  "Yugo_superior_I",
+        "aristas_totales":  248,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  248,
+        "radio_mm":  0.5,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Yugo_superior_D",
+        "aristas_totales":  248,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  248,
+        "radio_mm":  0.5,
+        "pruebas":  1,
+        "estado":  "total"
+    }
+]
