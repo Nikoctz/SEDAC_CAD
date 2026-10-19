@@ -50,29 +50,40 @@ Papel de cada fuente: **Notion** manda en requisitos y plazos; **el paquete** ma
 **D-11 — Alcance del conector de Notion, por acotar**
 Fecha: 2026-10-19 · Estado: revisar
 El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las páginas del proyecto. Como Vector §8 y la Ley 21.719 (vigencia plena desde el 2026-12-01) exigen no exponer datos personales de terceros ni información confidencial a herramientas de IA, conviene limitar el conector a las páginas del proyecto. **No adoptada**: es decisión del responsable y no se ha verificado si el conector permite acotarlo.
+**Aclaración (2026-10-19, hecho verificado por el agente):** este agente **no tiene acceso a Notion** — ni conector ni integración MCP (la lista de servidores MCP expuesta está vacía) — y la única vía disponible, un navegador, pide iniciar sesión (`notion.so/login`). Por tanto D-11 se refiere al conector de la cuenta de ChatGPT del responsable, **no** al acceso de los agentes. Lo que sí depende de este repositorio ya está resuelto: **ninguna afirmación sobre Notion puede entrar como `hecho`** en la documentación si no la aporta el responsable.
 
 ---
 
-**Propuestas recibidas del proyecto ChatGPT el 2026-10-19** (`07_ENLACE_CHATGPT/Entrada_20261019.md`).
-Estado `revisar`: **ninguna está adoptada**. Se registran para no perderlas y para que su adopción o descarte quede trazable.
+**Decisiones adoptadas el 2026-10-19 con autorización expresa del responsable**
+
+El responsable delegó el 2026-10-19 la toma de decisiones técnicas («toma tú las decisiones importantes»). Las cuatro siguientes se adoptan **con argumento breve, fecha y reversibilidad**, y con una regla de límite declarada:
+
+> **La delegación alcanza a criterios, orden de trabajo y gobernanza. No alcanza a mediciones.** Cuando una decisión exige un dato que no existe, deja de ser decisión y pasa a ser ensayo: esos puntos quedan `pendiente` y **no** se rellenan por decreto, ni por el agente ni por una IA externa.
+
+Origen de las propuestas: `07_ENLACE_CHATGPT/Entrada_20261019.md`. Verificación previa de sus afirmaciones: ese mismo archivo, §2.
 
 **D-12 — Tratamiento funcional de bordes en contacto textil**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente, con autorización del responsable
 Sustituir el criterio de «redondear todas las aristas» por un criterio de exposición funcional: zona A (contacto textil bajo tensión o movimiento), zona B (contacto incidental) y zona C (interfaz funcional). Los bordes de zona A deben tener transición continua, sin rebabas ni aristas cortantes, con acabado definido por evidencia de fabricación y ensayos. El radio de 0,5 mm **no se considera validado** mientras no haya ensayos de compatibilidad y desgaste. El redondeo parcial de P2.05 (236/472) sigue abierto.
-Verificado por el agente: el redondeo parcial y la parada del constructor son ciertos (corrida `Nueva_20261019_060807`).
+*Argumento:* el criterio vigente —«todas las aristas» y, si falla, «el grupo mayor»— es un criterio **de la herramienta**, no del diseño: `LEEME_P2_05.md` §3 ya midió que las 236 aristas son «un subconjunto arbitrario por orden de enumeración… no es el criterio correcto». Adoptar el criterio funcional **no exige ningún dato nuevo** (solo clasificar las superficies alcanzables por las cintas) y prohíbe presentar 0,5 mm como validado.
+*Regla añadida por el agente:* **el aviso del constructor no se silencia.** Mientras no exista la clasificación, la corrida debe seguir terminando en `ERROR.txt` y sin `ESTADO_OK.txt`. Silenciarlo para obtener una corrida en verde reproduciría exactamente el fallo de P2.04 —un sello de «correcto» junto a un pendiente declarado—. Por ese motivo se **descarta** la opción «dejar el lumbar sin redondeo declarado para que la corrida cierre sin avisos» (`LEEME_P2_05.md` §7, opción 4).
+*Consecuencia:* el «redondeo parcial 236/472» queda declarado como **lo que la herramienta pudo hacer**, no como decisión de diseño. La clasificación A/B/C queda `pendiente`: necesita el recorrido y la tensión reales de las cintas.
 
 **D-13 — Evidencia auditable de restricciones CAD**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo. Las excepciones se justifican. No se declarará cerrado sin resultados verificables.
-**Sin verificar**: la propiedad `PlanarSketch.ConstraintStatus` que propone usar (el MCP de Inventor responde «Not connected to Inventor»).
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo.
+*Argumento:* el control solo **añade** evidencia; no cambia geometría y su coste es una lectura. Con dos matices: (a) **plan B** — si `PlanarSketch.ConstraintStatus` no existe o falla en Inventor 2027.1, vale la evidencia visual, que muestre nombre de pieza, boceto, cotas y estado; (b) el objetivo es que **ninguna libertad sea desconocida**, no que todos los bocetos estén fijados: una subrestricción intencional y justificada es aceptable.
+*Estado de ejecución:* **no ejecutada.** Inventor no está conectado desde OpenCode y la propiedad de la API no está comprobada. No se declarará cerrado sin evidencia guardada en el repositorio.
 
 **D-14 — Sensibilidad del margen estructural**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
-Verificado por el agente: las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El reparto 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
+*Argumento:* adoptarla solo **restringe** lo que se puede afirmar, que es la dirección segura, y ordena el gasto (medir antes de simular). Añade una urgencia concreta: con una reserva de 2,14 %, pasar de un reparto 70/30 a 71,5/28,5 agota el margen. Es decir, **el margen no es robusto frente a nuestras propias hipótesis no medidas**, así que medir masa y centro de gravedad reales pesa más que cualquier FEA.
+*Verificado:* las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
 
 **D-15 — Validación escalonada y alcance de los ensayos con personas**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-Adoptar una secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios cuantitativos de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
-Se distingue la **Etapa 3 de Despega (dic 2026 – ene 2027)**, que exige validación técnica y comercial, del **piloto de funcionalidad de la preincubación (abril–diciembre 2027)**. Queda pendiente confirmar con la organización qué evidencia admite cada etapa.
-P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance se presumirá a partir de resultados solo analíticos o de CAD.
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+Secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
+*Argumento:* solo restringe (no permite declarar más de lo ensayado) y ordena el gasto hacia lo barato y productivo —banco y carga inerte—, que es justo la «validación técnica» que pide la Etapa 3. Encaja con el calendario: dic 2026 – ene 2027 es validación **técnica**, no pilotaje humano.
+*Distinción de etapas:* la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige validación técnica y comercial; el **piloto de funcionalidad con actores externos o usuarios reales** es un hito del **Programa de Preincubación (abril–diciembre 2027)** — bases, apartado 9.c. Queda `pendiente` confirmar con la organización qué evidencia admite cada etapa.
+P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance de fase se presumirá a partir de resultados solo analíticos o de CAD.

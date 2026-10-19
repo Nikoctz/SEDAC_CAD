@@ -14,7 +14,7 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
 - Repositorio local, rama `main`.
 - Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
-- Commits del 2026-10-19, de más antiguo a más nuevo: `e27cf4e` — P2.05 (148 archivos) · `0f7d03b` — gobierno, requisitos y enlace · `d2ae769` — mapa del repositorio y limpieza · `acd7bd7` — arreglo del enlace. Cualquier commit posterior a esta lista aparece en `git log`; esta sección no pretende ir por delante del historial.
+- Commits del 2026-10-19, de más antiguo a más nuevo: `e27cf4e` — P2.05 (148 archivos) · `0f7d03b` — gobierno, requisitos y enlace · `d2ae769` — mapa del repositorio y limpieza · `acd7bd7` — arreglo del enlace · `acee741` — entrada de ChatGPT, alcance de la validación de Despega y D-12 a D-15. Cualquier commit posterior a esta lista aparece en `git log`; esta sección no pretende ir por delante del historial.
 - Antes: `f26f010` — "Agregar contexto compartido para agentes SEDAC" (2026-10-18 22:52).
 - Sin remoto configurado: el repositorio solo existe en este equipo, dentro de una carpeta sincronizada en la nube, que es la **única copia de seguridad** (advertencia en `MAPA_DEL_REPOSITORIO.md`).
 - **Árbol limpio** a 2026-10-19: no quedan carpetas ni archivos sin rastrear.
@@ -70,12 +70,23 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - **Regla derivada, en vigor:** no introducir datos personales de terceros ni información confidencial en herramientas de IA. Afecta directamente a los **datos antropométricos de usuarios** listados en «Datos físicos pendientes de medir».
 - **Alcance de la validación — corregido el 2026-10-19:** la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige **validación técnica y comercial**, con mesas técnicas, y pesa el 50 % de la nota de finalistas. **No** exige pilotos con personas. El «piloto de validación con actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)** para los proyectos ganadores (bases, apartado 9.c). Es decir: en enero no hay que poner el arnés sobre nadie. Eso **no** cambia que P2.04 y P2.05 no estén liberados a uso con personas: ese listón solo se cruza con ensayos y autorización, y no se declarará ninguna validación que no exista.
 
+## Acceso a fuentes externas desde el agente
+
+Verificado por el agente el 2026-10-19. Sirve para que ningún documento de este repositorio dé por comprobado lo que no lo está.
+
+- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. Ver `DECISIONES.md` D-11.
+- **Proyecto de ChatGPT (solo chat): sin acceso.** El enlace es de un solo sentido: `07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1` regenera `PAQUETE_CHATGPT.md`, y las respuestas entran por el responsable en `07_ENLACE_CHATGPT/Entrada_<fecha>.md` como **borrador externo**.
+- **Inventor: lectura no reproducida desde OpenCode** (ver la sección anterior). Escritura CAD por MCP: no validada.
+- **Consecuencia práctica:** si un dato no está en un archivo de este repositorio ni lo aporta el responsable, se escribe `pendiente`. No se completa desde una fuente que el agente no puede leer.
+
 ## Pendientes principales para P2.05
 
-1. Redondeo lumbar ausente y criterio de aceptación de bordes de contacto.
+Estado de cada uno tras las decisiones adoptadas el 2026-10-19 (`DECISIONES.md`, D-12 a D-15):
+
+1. **Criterio funcional de bordes (D-12, adoptada).** El lumbar sigue `parcial 236/472` y la corrida sigue detenida en el seguro: **es el estado correcto** hasta que existan las zonas de contacto clasificadas. `pendiente` el recorrido y la tensión reales de las cintas.
 2. Separar parámetros de geometría, hipótesis analíticas y reservas de masa; hoy varios campos del JSON no gobiernan la geometría.
-3. Acreditar bocetos totalmente restringidos.
-4. Margen analítico mínimo 2,247 frente a umbral 2,20: revisar sensibilidad a apoyos, excentricidad y reparto.
+3. **Evidencia de bocetos (D-13, adoptada).** Control adoptado y **no ejecutado**: Inventor no está conectado desde OpenCode y no se ha comprobado `PlanarSketch.ConstraintStatus`. Plan B: evidencia visual.
+4. **Sensibilidad del margen (D-14, adoptada).** Orden decidido: primero masa y centro de gravedad reales y reparto de carga; FEA, fatiga y pandeo después. El reparto 70/30, la excentricidad de 107,5 mm, 3 g/1 g y la precarga de 2000 N siguen siendo **hipótesis no medidas**.
 5. Tolerancias de pasador/separador y proceso de fabricación real (mecanizado, no chapa doblada ni soldada).
 6. Cerrar FEA local, fatiga y pandeo distorsional.
 7. Definir liberación de emergencia y compatibilidad manguera/EPP.
@@ -89,12 +100,16 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - Antropometría de usuarios y recorrido real de las cintas.
 - Herrajes: proveedores, propiedades y par de montaje.
 
+**Nada de esta lista lo puede llenar el agente.** Sale de medir el objeto físico y de hablar con proveedores.
+
 ## Próximo paso recomendado
 
-Medir la bomba y el arnés antes de decidir cotas; en paralelo, cerrar el redondeo lumbar y hacer coherentes geometría, parámetros y cálculo. No reducir masa comprometiendo seguridad.
+Lo decidido el 2026-10-19 ordena el trabajo así (`DECISIONES.md`, D-12 a D-15):
 
-**Con el calendario de los programas encima, el hito que manda todo es la Etapa 3: Validación de Despega (diciembre 2026 – enero 2027)**, que exige validación técnica y pesa el 50 % de la nota de finalistas; y el **9 de diciembre** (Lions Cage de Vector, pitch en inglés). Eso pone fecha a tres cosas que hasta hoy parecían técnicas y ahora son entregables:
+1. **Medir primero — bloquea todo lo demás y no lo puede hacer el agente.** Bomba (masa llena y vacía, centro de masa, envolvente) y arnés/cintas (recorrido, ancho, puntos de apoyo, tensión de servicio). Es el insumo de D-12 —qué bordes son zona A— y de D-14 —masa y centro de gravedad reales—. `02_PROTOTIPO/REGISTRO_MEDICION_BOMBA_LOCAL.md` sigue **en blanco**.
+2. **Clasificar las zonas de contacto** en la geometría (A/B/C) y sustituir el criterio «todas» del constructor.
+3. **Ejecutar la auditoría de bocetos** de D-13 en modo lectura, con Inventor conectado.
+4. **Preparar la validación escalonada** de D-15: fase 0 con criterios de aceptación y parada; después banco mecánico y carga inerte. Personas solo con autorización documentada.
+5. No reducir masa comprometiendo seguridad (D-02, D-06).
 
-- **Pendiente 5** (tolerancias y proceso de fabricación real): sin prototipo no hay validación que mostrar.
-- **Pendiente 6** (FEA, fatiga, pandeo): es la evidencia del TRL que se declare. No se declarará un nivel que no esté respaldado.
-- **Medición real de la bomba**: `02_PROTOTIPO/REGISTRO_MEDICION_BOMBA_LOCAL.md` sigue **en blanco**.
+**Con el calendario encima, los hitos que mandan son el 9 de diciembre (Lions Cage de Vector, pitch en inglés) y la Etapa 3 de Despega (diciembre 2026 – enero 2027)**, que exige validación **técnica** y pesa el 50 % de la nota de finalistas. Eso pone fecha a dos cosas que hasta hoy parecían técnicas: sin prototipo físico no hay validación técnica que mostrar, y sin mediciones reales no hay margen que declarar. El pilotaje con personas pertenece a la preincubación (2027), no a enero.

@@ -51,6 +51,17 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **Sin verificar:** las referencias a las páginas de Notion 03.1 y 04.1 (el repositorio no las menciona) y la propiedad `PlanarSketch.ConstraintStatus` (el MCP responde «Not connected to Inventor»).
 - Evidencia: `Entrada_20261019.md`; `ERROR.txt` y `REDONDEOS.json` de la corrida `Nueva_20261019_060807`; texto extraído de las bases Despega.
 
+**Decisiones delegadas: D-12 a D-15 adoptadas, y dos premisas corregidas**
+
+- El responsable delegó la toma de decisiones técnicas (2026-10-19). Se adoptan **D-12, D-13, D-14 y D-15** en `DECISIONES.md`, cada una con argumento breve, fecha y reversibilidad, bajo una regla de límite escrita: **la delegación alcanza a criterios, orden de trabajo y gobernanza, no a mediciones.**
+- **D-12** (criterio funcional de bordes): adoptada. Regla añadida por el agente: **el aviso del constructor no se silencia** mientras no exista la clasificación; se **descarta** la opción de dejar el lumbar sin redondeo declarado, por ser el atajo que reproduce el fallo de P2.04 (sello de «correcto» junto a un pendiente). **Sin cambios de código ni de CAD: no se ejecutó ninguna corrida nueva.**
+- **D-13** (evidencia de bocetos): adoptada y **no ejecutada** — Inventor no está conectado desde OpenCode. Añadidos un plan B (evidencia visual) y el criterio de que una subrestricción justificada es aceptable.
+- **D-14** (sensibilidad del margen): adoptada, con la urgencia añadida — con una reserva de 2,14 %, un reparto 71,5/28,5 en lugar de 70/30 agota el margen; medir masa y centro de gravedad pesa más que el FEA.
+- **D-15** (validación escalonada): adoptada. Los criterios numéricos de parada quedan `pendiente`: no se inventan.
+- **Premisa corregida 1:** «ya sabes todo sobre el proyecto» — no. El agente conoce el repositorio; **no** conoce la bomba, los textiles, la antropometría ni las cotizaciones.
+- **Premisa corregida 2:** «tienes acceso a Notion» — **no lo tiene** (hecho, verificado): sin conector ni MCP, y la sesión de navegador pide login (`notion.so/login`). Registrado en `ESTADO_ACTUAL.md`, sección nueva «Acceso a fuentes externas desde el agente».
+- Evidencia: `DECISIONES.md` (D-12 a D-15) y `ESTADO_ACTUAL.md`. **Sin cambios en `01_CAD/`.**
+
 ---
 
 ## 2026-10-18

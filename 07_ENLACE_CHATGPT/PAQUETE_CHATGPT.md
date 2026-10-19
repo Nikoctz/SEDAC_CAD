@@ -1,6 +1,6 @@
 # PAQUETE DE CONTEXTO SEDAC
 
-Generado: 2026-10-19 07:34  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
+Generado: 2026-10-19 07:44  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
 Uso: pegar este archivo entero (o subirlo como documento del proyecto). No editar a mano.
 
 Este documento lo ha escrito el repositorio SEDAC_CAD de este PC. Los numeros salen de
@@ -50,7 +50,7 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
 - Repositorio local, rama `main`.
 - Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
-- Commits del 2026-10-19, de más antiguo a más nuevo: `e27cf4e` — P2.05 (148 archivos) · `0f7d03b` — gobierno, requisitos y enlace · `d2ae769` — mapa del repositorio y limpieza · `acd7bd7` — arreglo del enlace. Cualquier commit posterior a esta lista aparece en `git log`; esta sección no pretende ir por delante del historial.
+- Commits del 2026-10-19, de más antiguo a más nuevo: `e27cf4e` — P2.05 (148 archivos) · `0f7d03b` — gobierno, requisitos y enlace · `d2ae769` — mapa del repositorio y limpieza · `acd7bd7` — arreglo del enlace · `acee741` — entrada de ChatGPT, alcance de la validación de Despega y D-12 a D-15. Cualquier commit posterior a esta lista aparece en `git log`; esta sección no pretende ir por delante del historial.
 - Antes: `f26f010` — "Agregar contexto compartido para agentes SEDAC" (2026-10-18 22:52).
 - Sin remoto configurado: el repositorio solo existe en este equipo, dentro de una carpeta sincronizada en la nube, que es la **única copia de seguridad** (advertencia en `MAPA_DEL_REPOSITORIO.md`).
 - **Árbol limpio** a 2026-10-19: no quedan carpetas ni archivos sin rastrear.
@@ -106,12 +106,23 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - **Regla derivada, en vigor:** no introducir datos personales de terceros ni información confidencial en herramientas de IA. Afecta directamente a los **datos antropométricos de usuarios** listados en «Datos físicos pendientes de medir».
 - **Alcance de la validación — corregido el 2026-10-19:** la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige **validación técnica y comercial**, con mesas técnicas, y pesa el 50 % de la nota de finalistas. **No** exige pilotos con personas. El «piloto de validación con actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)** para los proyectos ganadores (bases, apartado 9.c). Es decir: en enero no hay que poner el arnés sobre nadie. Eso **no** cambia que P2.04 y P2.05 no estén liberados a uso con personas: ese listón solo se cruza con ensayos y autorización, y no se declarará ninguna validación que no exista.
 
+### Acceso a fuentes externas desde el agente
+
+Verificado por el agente el 2026-10-19. Sirve para que ningún documento de este repositorio dé por comprobado lo que no lo está.
+
+- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. Ver `DECISIONES.md` D-11.
+- **Proyecto de ChatGPT (solo chat): sin acceso.** El enlace es de un solo sentido: `07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1` regenera `PAQUETE_CHATGPT.md`, y las respuestas entran por el responsable en `07_ENLACE_CHATGPT/Entrada_<fecha>.md` como **borrador externo**.
+- **Inventor: lectura no reproducida desde OpenCode** (ver la sección anterior). Escritura CAD por MCP: no validada.
+- **Consecuencia práctica:** si un dato no está en un archivo de este repositorio ni lo aporta el responsable, se escribe `pendiente`. No se completa desde una fuente que el agente no puede leer.
+
 ### Pendientes principales para P2.05
 
-1. Redondeo lumbar ausente y criterio de aceptación de bordes de contacto.
+Estado de cada uno tras las decisiones adoptadas el 2026-10-19 (`DECISIONES.md`, D-12 a D-15):
+
+1. **Criterio funcional de bordes (D-12, adoptada).** El lumbar sigue `parcial 236/472` y la corrida sigue detenida en el seguro: **es el estado correcto** hasta que existan las zonas de contacto clasificadas. `pendiente` el recorrido y la tensión reales de las cintas.
 2. Separar parámetros de geometría, hipótesis analíticas y reservas de masa; hoy varios campos del JSON no gobiernan la geometría.
-3. Acreditar bocetos totalmente restringidos.
-4. Margen analítico mínimo 2,247 frente a umbral 2,20: revisar sensibilidad a apoyos, excentricidad y reparto.
+3. **Evidencia de bocetos (D-13, adoptada).** Control adoptado y **no ejecutado**: Inventor no está conectado desde OpenCode y no se ha comprobado `PlanarSketch.ConstraintStatus`. Plan B: evidencia visual.
+4. **Sensibilidad del margen (D-14, adoptada).** Orden decidido: primero masa y centro de gravedad reales y reparto de carga; FEA, fatiga y pandeo después. El reparto 70/30, la excentricidad de 107,5 mm, 3 g/1 g y la precarga de 2000 N siguen siendo **hipótesis no medidas**.
 5. Tolerancias de pasador/separador y proceso de fabricación real (mecanizado, no chapa doblada ni soldada).
 6. Cerrar FEA local, fatiga y pandeo distorsional.
 7. Definir liberación de emergencia y compatibilidad manguera/EPP.
@@ -125,15 +136,19 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - Antropometría de usuarios y recorrido real de las cintas.
 - Herrajes: proveedores, propiedades y par de montaje.
 
+**Nada de esta lista lo puede llenar el agente.** Sale de medir el objeto físico y de hablar con proveedores.
+
 ### Próximo paso recomendado
 
-Medir la bomba y el arnés antes de decidir cotas; en paralelo, cerrar el redondeo lumbar y hacer coherentes geometría, parámetros y cálculo. No reducir masa comprometiendo seguridad.
+Lo decidido el 2026-10-19 ordena el trabajo así (`DECISIONES.md`, D-12 a D-15):
 
-**Con el calendario de los programas encima, el hito que manda todo es la Etapa 3: Validación de Despega (diciembre 2026 – enero 2027)**, que exige validación técnica y pesa el 50 % de la nota de finalistas; y el **9 de diciembre** (Lions Cage de Vector, pitch en inglés). Eso pone fecha a tres cosas que hasta hoy parecían técnicas y ahora son entregables:
+1. **Medir primero — bloquea todo lo demás y no lo puede hacer el agente.** Bomba (masa llena y vacía, centro de masa, envolvente) y arnés/cintas (recorrido, ancho, puntos de apoyo, tensión de servicio). Es el insumo de D-12 —qué bordes son zona A— y de D-14 —masa y centro de gravedad reales—. `02_PROTOTIPO/REGISTRO_MEDICION_BOMBA_LOCAL.md` sigue **en blanco**.
+2. **Clasificar las zonas de contacto** en la geometría (A/B/C) y sustituir el criterio «todas» del constructor.
+3. **Ejecutar la auditoría de bocetos** de D-13 en modo lectura, con Inventor conectado.
+4. **Preparar la validación escalonada** de D-15: fase 0 con criterios de aceptación y parada; después banco mecánico y carga inerte. Personas solo con autorización documentada.
+5. No reducir masa comprometiendo seguridad (D-02, D-06).
 
-- **Pendiente 5** (tolerancias y proceso de fabricación real): sin prototipo no hay validación que mostrar.
-- **Pendiente 6** (FEA, fatiga, pandeo): es la evidencia del TRL que se declare. No se declarará un nivel que no esté respaldado.
-- **Medición real de la bomba**: `02_PROTOTIPO/REGISTRO_MEDICION_BOMBA_LOCAL.md` sigue **en blanco**.
+**Con el calendario encima, los hitos que mandan son el 9 de diciembre (Lions Cage de Vector, pitch en inglés) y la Etapa 3 de Despega (diciembre 2026 – enero 2027)**, que exige validación **técnica** y pesa el 50 % de la nota de finalistas. Eso pone fecha a dos cosas que hasta hoy parecían técnicas: sin prototipo físico no hay validación técnica que mostrar, y sin mediciones reales no hay margen que declarar. El pilotaje con personas pertenece a la preincubación (2027), no a enero.
 
 ---
 
@@ -191,32 +206,43 @@ Papel de cada fuente: **Notion** manda en requisitos y plazos; **el paquete** ma
 **D-11 — Alcance del conector de Notion, por acotar**
 Fecha: 2026-10-19 · Estado: revisar
 El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las páginas del proyecto. Como Vector §8 y la Ley 21.719 (vigencia plena desde el 2026-12-01) exigen no exponer datos personales de terceros ni información confidencial a herramientas de IA, conviene limitar el conector a las páginas del proyecto. **No adoptada**: es decisión del responsable y no se ha verificado si el conector permite acotarlo.
+**Aclaración (2026-10-19, hecho verificado por el agente):** este agente **no tiene acceso a Notion** — ni conector ni integración MCP (la lista de servidores MCP expuesta está vacía) — y la única vía disponible, un navegador, pide iniciar sesión (`notion.so/login`). Por tanto D-11 se refiere al conector de la cuenta de ChatGPT del responsable, **no** al acceso de los agentes. Lo que sí depende de este repositorio ya está resuelto: **ninguna afirmación sobre Notion puede entrar como `hecho`** en la documentación si no la aporta el responsable.
 
 ---
 
-**Propuestas recibidas del proyecto ChatGPT el 2026-10-19** (`07_ENLACE_CHATGPT/Entrada_20261019.md`).
-Estado `revisar`: **ninguna está adoptada**. Se registran para no perderlas y para que su adopción o descarte quede trazable.
+**Decisiones adoptadas el 2026-10-19 con autorización expresa del responsable**
+
+El responsable delegó el 2026-10-19 la toma de decisiones técnicas («toma tú las decisiones importantes»). Las cuatro siguientes se adoptan **con argumento breve, fecha y reversibilidad**, y con una regla de límite declarada:
+
+> **La delegación alcanza a criterios, orden de trabajo y gobernanza. No alcanza a mediciones.** Cuando una decisión exige un dato que no existe, deja de ser decisión y pasa a ser ensayo: esos puntos quedan `pendiente` y **no** se rellenan por decreto, ni por el agente ni por una IA externa.
+
+Origen de las propuestas: `07_ENLACE_CHATGPT/Entrada_20261019.md`. Verificación previa de sus afirmaciones: ese mismo archivo, §2.
 
 **D-12 — Tratamiento funcional de bordes en contacto textil**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente, con autorización del responsable
 Sustituir el criterio de «redondear todas las aristas» por un criterio de exposición funcional: zona A (contacto textil bajo tensión o movimiento), zona B (contacto incidental) y zona C (interfaz funcional). Los bordes de zona A deben tener transición continua, sin rebabas ni aristas cortantes, con acabado definido por evidencia de fabricación y ensayos. El radio de 0,5 mm **no se considera validado** mientras no haya ensayos de compatibilidad y desgaste. El redondeo parcial de P2.05 (236/472) sigue abierto.
-Verificado por el agente: el redondeo parcial y la parada del constructor son ciertos (corrida `Nueva_20261019_060807`).
+*Argumento:* el criterio vigente —«todas las aristas» y, si falla, «el grupo mayor»— es un criterio **de la herramienta**, no del diseño: `LEEME_P2_05.md` §3 ya midió que las 236 aristas son «un subconjunto arbitrario por orden de enumeración… no es el criterio correcto». Adoptar el criterio funcional **no exige ningún dato nuevo** (solo clasificar las superficies alcanzables por las cintas) y prohíbe presentar 0,5 mm como validado.
+*Regla añadida por el agente:* **el aviso del constructor no se silencia.** Mientras no exista la clasificación, la corrida debe seguir terminando en `ERROR.txt` y sin `ESTADO_OK.txt`. Silenciarlo para obtener una corrida en verde reproduciría exactamente el fallo de P2.04 —un sello de «correcto» junto a un pendiente declarado—. Por ese motivo se **descarta** la opción «dejar el lumbar sin redondeo declarado para que la corrida cierre sin avisos» (`LEEME_P2_05.md` §7, opción 4).
+*Consecuencia:* el «redondeo parcial 236/472» queda declarado como **lo que la herramienta pudo hacer**, no como decisión de diseño. La clasificación A/B/C queda `pendiente`: necesita el recorrido y la tensión reales de las cintas.
 
 **D-13 — Evidencia auditable de restricciones CAD**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo. Las excepciones se justifican. No se declarará cerrado sin resultados verificables.
-**Sin verificar**: la propiedad `PlanarSketch.ConstraintStatus` que propone usar (el MCP de Inventor responde «Not connected to Inventor»).
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo.
+*Argumento:* el control solo **añade** evidencia; no cambia geometría y su coste es una lectura. Con dos matices: (a) **plan B** — si `PlanarSketch.ConstraintStatus` no existe o falla en Inventor 2027.1, vale la evidencia visual, que muestre nombre de pieza, boceto, cotas y estado; (b) el objetivo es que **ninguna libertad sea desconocida**, no que todos los bocetos estén fijados: una subrestricción intencional y justificada es aceptable.
+*Estado de ejecución:* **no ejecutada.** Inventor no está conectado desde OpenCode y la propiedad de la API no está comprobada. No se declarará cerrado sin evidencia guardada en el repositorio.
 
 **D-14 — Sensibilidad del margen estructural**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
-Verificado por el agente: las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El reparto 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
+*Argumento:* adoptarla solo **restringe** lo que se puede afirmar, que es la dirección segura, y ordena el gasto (medir antes de simular). Añade una urgencia concreta: con una reserva de 2,14 %, pasar de un reparto 70/30 a 71,5/28,5 agota el margen. Es decir, **el margen no es robusto frente a nuestras propias hipótesis no medidas**, así que medir masa y centro de gravedad reales pesa más que cualquier FEA.
+*Verificado:* las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
 
 **D-15 — Validación escalonada y alcance de los ensayos con personas**
-Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
-Adoptar una secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios cuantitativos de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
-Se distingue la **Etapa 3 de Despega (dic 2026 – ene 2027)**, que exige validación técnica y comercial, del **piloto de funcionalidad de la preincubación (abril–diciembre 2027)**. Queda pendiente confirmar con la organización qué evidencia admite cada etapa.
-P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance se presumirá a partir de resultados solo analíticos o de CAD.
+Fecha: 2026-10-19 · Estado: **adoptada** · Propuesta: proyecto ChatGPT · Adopción: agente
+Secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
+*Argumento:* solo restringe (no permite declarar más de lo ensayado) y ordena el gasto hacia lo barato y productivo —banco y carga inerte—, que es justo la «validación técnica» que pide la Etapa 3. Encaja con el calendario: dic 2026 – ene 2027 es validación **técnica**, no pilotaje humano.
+*Distinción de etapas:* la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige validación técnica y comercial; el **piloto de funcionalidad con actores externos o usuarios reales** es un hito del **Programa de Preincubación (abril–diciembre 2027)** — bases, apartado 9.c. Queda `pendiente` confirmar con la organización qué evidencia admite cada etapa.
+P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance de fase se presumirá a partir de resultados solo analíticos o de CAD.
 
 ---
 
@@ -274,6 +300,17 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **Verificado de lo propuesto:** las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm); el seguro del constructor y la ausencia de `ESTADO_OK.txt` en la corrida parcial son ciertos; la atribución del piloto a preincubación es correcta.
 - **Sin verificar:** las referencias a las páginas de Notion 03.1 y 04.1 (el repositorio no las menciona) y la propiedad `PlanarSketch.ConstraintStatus` (el MCP responde «Not connected to Inventor»).
 - Evidencia: `Entrada_20261019.md`; `ERROR.txt` y `REDONDEOS.json` de la corrida `Nueva_20261019_060807`; texto extraído de las bases Despega.
+
+**Decisiones delegadas: D-12 a D-15 adoptadas, y dos premisas corregidas**
+
+- El responsable delegó la toma de decisiones técnicas (2026-10-19). Se adoptan **D-12, D-13, D-14 y D-15** en `DECISIONES.md`, cada una con argumento breve, fecha y reversibilidad, bajo una regla de límite escrita: **la delegación alcanza a criterios, orden de trabajo y gobernanza, no a mediciones.**
+- **D-12** (criterio funcional de bordes): adoptada. Regla añadida por el agente: **el aviso del constructor no se silencia** mientras no exista la clasificación; se **descarta** la opción de dejar el lumbar sin redondeo declarado, por ser el atajo que reproduce el fallo de P2.04 (sello de «correcto» junto a un pendiente). **Sin cambios de código ni de CAD: no se ejecutó ninguna corrida nueva.**
+- **D-13** (evidencia de bocetos): adoptada y **no ejecutada** — Inventor no está conectado desde OpenCode. Añadidos un plan B (evidencia visual) y el criterio de que una subrestricción justificada es aceptable.
+- **D-14** (sensibilidad del margen): adoptada, con la urgencia añadida — con una reserva de 2,14 %, un reparto 71,5/28,5 en lugar de 70/30 agota el margen; medir masa y centro de gravedad pesa más que el FEA.
+- **D-15** (validación escalonada): adoptada. Los criterios numéricos de parada quedan `pendiente`: no se inventan.
+- **Premisa corregida 1:** «ya sabes todo sobre el proyecto» — no. El agente conoce el repositorio; **no** conoce la bomba, los textiles, la antropometría ni las cotizaciones.
+- **Premisa corregida 2:** «tienes acceso a Notion» — **no lo tiene** (hecho, verificado): sin conector ni MCP, y la sesión de navegador pide login (`notion.so/login`). Registrado en `ESTADO_ACTUAL.md`, sección nueva «Acceso a fuentes externas desde el agente».
+- Evidencia: `DECISIONES.md` (D-12 a D-15) y `ESTADO_ACTUAL.md`. **Sin cambios en `01_CAD/`.**
 
 ---
 
