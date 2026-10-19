@@ -1,6 +1,6 @@
 # ESTADO ACTUAL — SEDAC_CAD
 
-Última actualización: 2026-10-18
+Última actualización: 2026-10-19
 Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
 ## Versión vigente
@@ -13,8 +13,12 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 ## Estado de Git
 
 - Repositorio local, rama `main`.
-- Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18).
-- Árbol limpio al momento de esta revisión.
+- Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
+- Commit vigente (HEAD): **`f26f010`** — "Agregar contexto compartido para agentes SEDAC" (2026-10-18 22:52).
+- Sin remoto configurado: el repositorio solo existe en este equipo.
+- Árbol con dos carpetas nuevas **sin rastrear** en esta revisión (2026-10-19), ninguna commiteada:
+  - `01_CAD/Prototipo_P2/P2_05_20261019/` — borrador de trabajo de P2.05 (ver su `LEEME_P2_05.md`). **No cerrado.**
+  - `07_ENLACE_CHATGPT/` — enlace de contexto con un proyecto ChatGPT de solo chat.
 - Excluidos de Git por decisión intencional: `.codex/config.toml` (contiene rutas locales de este equipo) y `tools/inventor-mcp/` (repositorio externo clonado). También se ignoran `.venv*/` y `OldVersions/`. No deben agregarse al repositorio.
 
 ## MCP de Inventor — estado
@@ -34,9 +38,11 @@ Separación de estados:
 | Lectura estructural desde Codex | **Verificada y funcional** |
 | Compatibilidad de lectura | Funcional, con **al menos una incompatibilidad menor** detectada en una consulta geométrica (`Coordinate`), atribuida a compatibilidad parcial Inventor 2027.1 / MCP |
 | Escritura / modificación CAD mediante MCP | **Todavía no validada** |
-| Integración MCP dentro de OpenCode | **Todavía no configurada ni verificada** (no hay sección `mcp` en `~/.config/opencode/opencode.json`) |
+| Integración MCP dentro de OpenCode | **Configurada.** Existe sección `mcp` en `~/.config/opencode/opencode.json` (servidor `inventor`, declarado `enabled: false`) y `status()` responde desde OpenCode («Not connected to Inventor»). Lectura estructural del ensamblaje: **no reproducida en OpenCode** |
 
 Nota: la verificación de lectura proviene de una sesión previa en Codex y no fue reproducida por mí en esta revisión.
+
+Nota (2026-10-19): el servidor MCP `inventor` está declarado `enabled: false` y, aun así, la herramienta responde desde OpenCode. Queda por aclarar qué clave gobierna realmente ese interruptor y reproducir la lectura estructural en OpenCode.
 
 ## Skills instaladas
 
@@ -52,6 +58,17 @@ Realizada y versionada en `06_DOCUMENTACION/REVISION_P2_04_Y_SKILLS_20261017.md`
 Verificado sobre archivos: 79 huellas SHA-256 coincidentes; ZIP de 80 entradas sin error CRC; masa recalculada 1,442328 kg; 54 piezas y 83 ocurrencias; 82 operaciones actualizadas; cero interferencias rígidas nominales; cálculo de prediseño reproducido.
 
 Hallazgo principal: **el redondeo de 0,5 mm de `Interfaz_lumbar_aligerada` figura como `aplicado: false`** (error COM) en `REDONDEOS.json`, aunque el informe lo da por incluido.
+
+## Programas de financiamiento (2026)
+
+Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
+
+- **Vector 2026** (Centro de Innovación, FING USACH): inscrito; al 2026-10-19 va por la **clase 8**. **Lions Cage el 9 de diciembre** (40 % de la selección y es un pitch **en inglés**); Demo Day el 16 de diciembre. Autodiagnóstico TRL/IRL/CRL: se repite periódicamente, **todavía básico y sin registro versionado**.
+- **Despega USACH 2026** (DINEM / INNOVO USACH): inscrito; **sesión 1 el 2026-10-19** (Etapa 1, Ideación, octubre–noviembre 2026). **Etapa 3: Validación, diciembre 2026 – enero 2027**: exige validación técnica y comercial, y pesa **50 % de la nota de finalistas**. Final en marzo 2027.
+- **Premio:** hasta **$2.000.000 CLP** para actividades críticas, incluyendo expresamente el **desarrollo de prototipos**; **+25 %** si el proyecto es liderado por mujer.
+- **Uso de IA generativa: declarado** ante el organizador (lo exige Vector §8).
+- **Regla derivada, en vigor:** no introducir datos personales de terceros ni información confidencial en herramientas de IA. Afecta directamente a los **datos antropométricos de usuarios** listados en «Datos físicos pendientes de medir».
+- **Tensión declarada, sin resolver:** los programas piden piloto con **usuarios reales** (TRL 6–7) y este proyecto **no está liberado a uso con personas**. No se declarará ninguna validación que no exista.
 
 ## Pendientes principales para P2.05
 
