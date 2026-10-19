@@ -42,6 +42,15 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
 - Cierre: el aviso de privacidad del generador se había colado en el control de versiones; se retiró del índice y del disco y se añadió a `.gitignore`. La línea que señaló era **real** (el estado decía dónde vive el repositorio) y se reescribió sin la ruta. Además, el campo «commit vigente» del estado se sustituyó por la lista de commits del día, porque un documento no puede nombrar al commit que lo contiene. Commits del 2026-10-19: `e27cf4e`, `0f7d03b`, `d2ae769`, `acd7bd7` y los posteriores que registre `git log`.
 
+**Entrada de ChatGPT archivada, y una corrección de interpretación propia**
+
+- Guardada la respuesta del proyecto ChatGPT como `07_ENLACE_CHATGPT/Entrada_20261019.md` (plantilla rellenada + respuesta literal), marcada como **borrador externo**.
+- **Corrección de un error de este repositorio:** `ESTADO_ACTUAL.md` afirmaba que «los programas piden piloto con usuarios reales» como exigencia de enero de 2027. Verificado en las bases Despega: el «Piloto de validación… actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)**; la **Etapa 3** (dic 2026 – ene 2027) pide validación **técnica y comercial**. Corregido en `ESTADO_ACTUAL.md` y en `REQUISITOS_SEDAC.md`. La advertencia sobre seguridad no cambia: P2.04/P2.05 siguen sin liberar para personas.
+- Registradas `D-12` a `D-15` en `DECISIONES.md`, **en estado `revisar`**: son propuestas del proyecto ChatGPT, **no adoptadas**.
+- **Verificado de lo propuesto:** las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm); el seguro del constructor y la ausencia de `ESTADO_OK.txt` en la corrida parcial son ciertos; la atribución del piloto a preincubación es correcta.
+- **Sin verificar:** las referencias a las páginas de Notion 03.1 y 04.1 (el repositorio no las menciona) y la propiedad `PlanarSketch.ConstraintStatus` (el MCP responde «Not connected to Inventor»).
+- Evidencia: `Entrada_20261019.md`; `ERROR.txt` y `REDONDEOS.json` de la corrida `Nueva_20261019_060807`; texto extraído de las bases Despega.
+
 ---
 
 ## 2026-10-18

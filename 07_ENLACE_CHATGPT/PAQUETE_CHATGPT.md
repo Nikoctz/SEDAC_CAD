@@ -1,6 +1,6 @@
 # PAQUETE DE CONTEXTO SEDAC
 
-Generado: 2026-10-19 07:26  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
+Generado: 2026-10-19 07:34  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
 Uso: pegar este archivo entero (o subirlo como documento del proyecto). No editar a mano.
 
 Este documento lo ha escrito el repositorio SEDAC_CAD de este PC. Los numeros salen de
@@ -104,7 +104,7 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - **Premio:** hasta **$2.000.000 CLP** para actividades críticas, incluyendo expresamente el **desarrollo de prototipos**; **+25 %** si el proyecto es liderado por mujer.
 - **Uso de IA generativa: declarado** ante el organizador (lo exige Vector §8).
 - **Regla derivada, en vigor:** no introducir datos personales de terceros ni información confidencial en herramientas de IA. Afecta directamente a los **datos antropométricos de usuarios** listados en «Datos físicos pendientes de medir».
-- **Tensión declarada, sin resolver:** los programas piden piloto con **usuarios reales** (TRL 6–7) y este proyecto **no está liberado a uso con personas**. No se declarará ninguna validación que no exista.
+- **Alcance de la validación — corregido el 2026-10-19:** la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige **validación técnica y comercial**, con mesas técnicas, y pesa el 50 % de la nota de finalistas. **No** exige pilotos con personas. El «piloto de validación con actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)** para los proyectos ganadores (bases, apartado 9.c). Es decir: en enero no hay que poner el arnés sobre nadie. Eso **no** cambia que P2.04 y P2.05 no estén liberados a uso con personas: ese listón solo se cruza con ensayos y autorización, y no se declarará ninguna validación que no exista.
 
 ### Pendientes principales para P2.05
 
@@ -194,6 +194,32 @@ El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las págin
 
 ---
 
+**Propuestas recibidas del proyecto ChatGPT el 2026-10-19** (`07_ENLACE_CHATGPT/Entrada_20261019.md`).
+Estado `revisar`: **ninguna está adoptada**. Se registran para no perderlas y para que su adopción o descarte quede trazable.
+
+**D-12 — Tratamiento funcional de bordes en contacto textil**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Sustituir el criterio de «redondear todas las aristas» por un criterio de exposición funcional: zona A (contacto textil bajo tensión o movimiento), zona B (contacto incidental) y zona C (interfaz funcional). Los bordes de zona A deben tener transición continua, sin rebabas ni aristas cortantes, con acabado definido por evidencia de fabricación y ensayos. El radio de 0,5 mm **no se considera validado** mientras no haya ensayos de compatibilidad y desgaste. El redondeo parcial de P2.05 (236/472) sigue abierto.
+Verificado por el agente: el redondeo parcial y la parada del constructor son ciertos (corrida `Nueva_20261019_060807`).
+
+**D-13 — Evidencia auditable de restricciones CAD**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo. Las excepciones se justifican. No se declarará cerrado sin resultados verificables.
+**Sin verificar**: la propiedad `PlanarSketch.ConstraintStatus` que propone usar (el MCP de Inventor responde «Not connected to Inventor»).
+
+**D-14 — Sensibilidad del margen estructural**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
+Verificado por el agente: las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
+
+**D-15 — Validación escalonada y alcance de los ensayos con personas**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Adoptar una secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios cuantitativos de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
+Se distingue la **Etapa 3 de Despega (dic 2026 – ene 2027)**, que exige validación técnica y comercial, del **piloto de funcionalidad de la preincubación (abril–diciembre 2027)**. Queda pendiente confirmar con la organización qué evidencia admite cada etapa.
+P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance se presumirá a partir de resultados solo analíticos o de CAD.
+
+---
+
 ## 3. Cambios registrados (CHANGELOG_SEDAC.md, literal)
 
 ## CHANGELOG — SEDAC_CAD
@@ -239,6 +265,15 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **Nuevo `MAPA_DEL_REPOSITORIO.md`:** declara el estado de cada cosa, el orden de lectura para un agente, lo que está fuera de Git y la limpieza de hoy.
 - Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
 - Cierre: el aviso de privacidad del generador se había colado en el control de versiones; se retiró del índice y del disco y se añadió a `.gitignore`. La línea que señaló era **real** (el estado decía dónde vive el repositorio) y se reescribió sin la ruta. Además, el campo «commit vigente» del estado se sustituyó por la lista de commits del día, porque un documento no puede nombrar al commit que lo contiene. Commits del 2026-10-19: `e27cf4e`, `0f7d03b`, `d2ae769`, `acd7bd7` y los posteriores que registre `git log`.
+
+**Entrada de ChatGPT archivada, y una corrección de interpretación propia**
+
+- Guardada la respuesta del proyecto ChatGPT como `07_ENLACE_CHATGPT/Entrada_20261019.md` (plantilla rellenada + respuesta literal), marcada como **borrador externo**.
+- **Corrección de un error de este repositorio:** `ESTADO_ACTUAL.md` afirmaba que «los programas piden piloto con usuarios reales» como exigencia de enero de 2027. Verificado en las bases Despega: el «Piloto de validación… actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)**; la **Etapa 3** (dic 2026 – ene 2027) pide validación **técnica y comercial**. Corregido en `ESTADO_ACTUAL.md` y en `REQUISITOS_SEDAC.md`. La advertencia sobre seguridad no cambia: P2.04/P2.05 siguen sin liberar para personas.
+- Registradas `D-12` a `D-15` en `DECISIONES.md`, **en estado `revisar`**: son propuestas del proyecto ChatGPT, **no adoptadas**.
+- **Verificado de lo propuesto:** las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm); el seguro del constructor y la ausencia de `ESTADO_OK.txt` en la corrida parcial son ciertos; la atribución del piloto a preincubación es correcta.
+- **Sin verificar:** las referencias a las páginas de Notion 03.1 y 04.1 (el repositorio no las menciona) y la propiedad `PlanarSketch.ConstraintStatus` (el MCP responde «Not connected to Inventor»).
+- Evidencia: `Entrada_20261019.md`; `ERROR.txt` y `REDONDEOS.json` de la corrida `Nueva_20261019_060807`; texto extraído de las bases Despega.
 
 ---
 
@@ -453,7 +488,7 @@ de la Universidad.
 |---|---|---|
 | Validación técnica (TRL 4–6) | P2.05 abierto; FEA, fatiga y pandeo sin cerrar (pendiente 6) | falta evidencia de validación de componentes |
 | Prototipo físico / MVP | sólo CAD; sin tolerancias ni proceso de fabricación decidido (pendiente 5) | **no existe prototipo** |
-| Piloto con usuarios reales (TRL 6–7) | `ESTADO_ACTUAL.md`: no liberado a uso con personas | **conflicto real**: no se puede probar con personas sin demostrar seguridad |
+| Piloto con usuarios reales — es hito del **Programa de Preincubación, abril–diciembre 2027** | `ESTADO_ACTUAL.md`: no liberado a uso con personas | **No** es una exigencia de la Etapa 3 (dic 2026 – ene 2027), que pide validación técnica y comercial. El listón de uso con personas se cruza con ensayos y autorización, no con un calendario |
 | Autodiagnóstico TRL / IRL / CRL | hecho en Vector, pero **no se guarda** ninguno | falta el registro histórico de madurez |
 | Pitch técnico en inglés (Vector) y en dos idiomas (Despega) | no consta | falta material y ensayo |
 | **Declaración de uso de IA generativa** | declarado al organizador | **cumplido** |
@@ -483,7 +518,10 @@ porque la fuente es el PDF.
 2. **Registrar el autodiagnóstico TRL/IRL/CRL**: se repite periódicamente en Vector, pero no se guarda
    ninguna copia. Es la evidencia del avance de madurez y conviene versionarla aquí.
 3. **Protocolo de validación con usuarios reales**: no existe, y la Etapa 3 lo pide.
-4. **Convenio de preincubación**: qué compromisos exige en materia de validación con personas.
+4. **Convenio de preincubación (abril–diciembre 2027)**: el «piloto de validación con actores externos o
+   usuarios reales» figura en ese programa, no en la Etapa 3. Queda por confirmar con la organización
+   **qué evidencia admite cada etapa** — sobre todo qué significa «validación técnica» en la Etapa 3
+   (dic 2026 – ene 2027) y qué se acepta como tal sin prueba con personas.
 
 ---
 

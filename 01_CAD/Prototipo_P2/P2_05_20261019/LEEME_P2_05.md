@@ -153,8 +153,10 @@ Cuatro resultados distintos con la misma declaración no son «aplicado». **Not
 que la geometría limpia, y un redondeo solo puede quitar material; por tanto aquellas corridas no diferían
 solo en el redondeo. Causa **pendiente** ( probablemente la parametrización cambió entre corridas).
 
-**Consecuencia física abierta (hecho, importante).** La pieza que toca las cintas —el lumbar— tiene hoy
-sus 472 aristas vivas: no se le ha aplicado ningún redondeo. La decisión de diseño de §7 sigue pendiente.
+**Consecuencia física abierta (hecho, importante).** En la **entrega vigente (P2.04)** la pieza que toca las
+cintas —el lumbar— tiene sus 472 aristas vivas: nunca se le aplicó redondeo. En la corrida de esta copia
+(P2.05) sí se aplicó un **subconjunto de 236** con el criterio «grupo mayor», pero es arbitrario por orden
+de enumeración (§3, punto 4), no una decisión de diseño. La decisión de qué bordes redondear sigue pendiente (§7).
 
 ---
 

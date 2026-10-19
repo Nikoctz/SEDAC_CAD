@@ -122,7 +122,7 @@ de la Universidad.
 |---|---|---|
 | Validación técnica (TRL 4–6) | P2.05 abierto; FEA, fatiga y pandeo sin cerrar (pendiente 6) | falta evidencia de validación de componentes |
 | Prototipo físico / MVP | sólo CAD; sin tolerancias ni proceso de fabricación decidido (pendiente 5) | **no existe prototipo** |
-| Piloto con usuarios reales (TRL 6–7) | `ESTADO_ACTUAL.md`: no liberado a uso con personas | **conflicto real**: no se puede probar con personas sin demostrar seguridad |
+| Piloto con usuarios reales — es hito del **Programa de Preincubación, abril–diciembre 2027** | `ESTADO_ACTUAL.md`: no liberado a uso con personas | **No** es una exigencia de la Etapa 3 (dic 2026 – ene 2027), que pide validación técnica y comercial. El listón de uso con personas se cruza con ensayos y autorización, no con un calendario |
 | Autodiagnóstico TRL / IRL / CRL | hecho en Vector, pero **no se guarda** ninguno | falta el registro histórico de madurez |
 | Pitch técnico en inglés (Vector) y en dos idiomas (Despega) | no consta | falta material y ensayo |
 | **Declaración de uso de IA generativa** | declarado al organizador | **cumplido** |
@@ -152,4 +152,7 @@ porque la fuente es el PDF.
 2. **Registrar el autodiagnóstico TRL/IRL/CRL**: se repite periódicamente en Vector, pero no se guarda
    ninguna copia. Es la evidencia del avance de madurez y conviene versionarla aquí.
 3. **Protocolo de validación con usuarios reales**: no existe, y la Etapa 3 lo pide.
-4. **Convenio de preincubación**: qué compromisos exige en materia de validación con personas.
+4. **Convenio de preincubación (abril–diciembre 2027)**: el «piloto de validación con actores externos o
+   usuarios reales» figura en ese programa, no en la Etapa 3. Queda por confirmar con la organización
+   **qué evidencia admite cada etapa** — sobre todo qué significa «validación técnica» en la Etapa 3
+   (dic 2026 – ene 2027) y qué se acepta como tal sin prueba con personas.

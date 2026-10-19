@@ -50,3 +50,29 @@ Papel de cada fuente: **Notion** manda en requisitos y plazos; **el paquete** ma
 **D-11 — Alcance del conector de Notion, por acotar**
 Fecha: 2026-10-19 · Estado: revisar
 El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las páginas del proyecto. Como Vector §8 y la Ley 21.719 (vigencia plena desde el 2026-12-01) exigen no exponer datos personales de terceros ni información confidencial a herramientas de IA, conviene limitar el conector a las páginas del proyecto. **No adoptada**: es decisión del responsable y no se ha verificado si el conector permite acotarlo.
+
+---
+
+**Propuestas recibidas del proyecto ChatGPT el 2026-10-19** (`07_ENLACE_CHATGPT/Entrada_20261019.md`).
+Estado `revisar`: **ninguna está adoptada**. Se registran para no perderlas y para que su adopción o descarte quede trazable.
+
+**D-12 — Tratamiento funcional de bordes en contacto textil**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Sustituir el criterio de «redondear todas las aristas» por un criterio de exposición funcional: zona A (contacto textil bajo tensión o movimiento), zona B (contacto incidental) y zona C (interfaz funcional). Los bordes de zona A deben tener transición continua, sin rebabas ni aristas cortantes, con acabado definido por evidencia de fabricación y ensayos. El radio de 0,5 mm **no se considera validado** mientras no haya ensayos de compatibilidad y desgaste. El redondeo parcial de P2.05 (236/472) sigue abierto.
+Verificado por el agente: el redondeo parcial y la parada del constructor son ciertos (corrida `Nueva_20261019_060807`).
+
+**D-13 — Evidencia auditable de restricciones CAD**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Verificar el estado de restricciones de los bocetos funcionales y estructurales de P2.05 en Inventor y conservar evidencia: pieza y versión, boceto, estado (Fully/Under/Over/Unknown), captura visual, versión del software y vínculo al commit y al SHA-256 del archivo. Las excepciones se justifican. No se declarará cerrado sin resultados verificables.
+**Sin verificar**: la propiedad `PlanarSketch.ConstraintStatus` que propone usar (el MCP de Inventor responde «Not connected to Inventor»).
+
+**D-14 — Sensibilidad del margen estructural**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+El margen mínimo 2,247 frente al umbral 2,20 equivale a una reserva del **2,14 %** de demanda *si* el modo de falla gobernante admite relación inversa lineal entre margen y demanda (supuesto, no medido). Identificar primero el caso gobernante y después estudiar masa y centro de gravedad reales, apoyos, reparto, excentricidad, tolerancias y modos de falla adicionales. El 70/30 y la excentricidad de 107,5 mm permanecen como hipótesis no medidas. No se declarará robustez a partir del margen nominal aislado.
+Verificado por el agente: las tres cuentas se reproducen exactas (2,136 % · 0,71495 · 109,80 mm).
+
+**D-15 — Validación escalonada y alcance de los ensayos con personas**
+Fecha: 2026-10-19 · Estado: revisar · Origen: propuesta externa (ChatGPT)
+Adoptar una secuencia de validación en cuatro fases: 0) preparación técnica y análisis de riesgos; 1) banco mecánico sin personas; 2) sistema completo con carga inerte; 3) evaluación con personas solo con autorización documentada. Cada fase necesita, **antes** de empezar, condiciones de ensayo, instrumentos, criterios cuantitativos de aceptación y parada, evidencia trazable y decisión formal de avance. Una fase no autoriza la siguiente.
+Se distingue la **Etapa 3 de Despega (dic 2026 – ene 2027)**, que exige validación técnica y comercial, del **piloto de funcionalidad de la preincubación (abril–diciembre 2027)**. Queda pendiente confirmar con la organización qué evidencia admite cada etapa.
+P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance se presumirá a partir de resultados solo analíticos o de CAD.

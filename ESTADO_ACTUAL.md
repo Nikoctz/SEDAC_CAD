@@ -68,7 +68,7 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 - **Premio:** hasta **$2.000.000 CLP** para actividades críticas, incluyendo expresamente el **desarrollo de prototipos**; **+25 %** si el proyecto es liderado por mujer.
 - **Uso de IA generativa: declarado** ante el organizador (lo exige Vector §8).
 - **Regla derivada, en vigor:** no introducir datos personales de terceros ni información confidencial en herramientas de IA. Afecta directamente a los **datos antropométricos de usuarios** listados en «Datos físicos pendientes de medir».
-- **Tensión declarada, sin resolver:** los programas piden piloto con **usuarios reales** (TRL 6–7) y este proyecto **no está liberado a uso con personas**. No se declarará ninguna validación que no exista.
+- **Alcance de la validación — corregido el 2026-10-19:** la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige **validación técnica y comercial**, con mesas técnicas, y pesa el 50 % de la nota de finalistas. **No** exige pilotos con personas. El «piloto de validación con actores externos o usuarios reales» es un hito del **Programa de Preincubación (abril–diciembre 2027)** para los proyectos ganadores (bases, apartado 9.c). Es decir: en enero no hay que poner el arnés sobre nadie. Eso **no** cambia que P2.04 y P2.05 no estén liberados a uso con personas: ese listón solo se cruza con ensayos y autorización, y no se declarará ninguna validación que no exista.
 
 ## Pendientes principales para P2.05
 
