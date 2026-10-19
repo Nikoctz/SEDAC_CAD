@@ -1,6 +1,6 @@
 # PAQUETE DE CONTEXTO SEDAC
 
-Generado: 2026-10-19 07:14  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
+Generado: 2026-10-19 07:25  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
 Uso: pegar este archivo entero (o subirlo como documento del proyecto). No editar a mano.
 
 Este documento lo ha escrito el repositorio SEDAC_CAD de este PC. Los numeros salen de
@@ -50,12 +50,12 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
 - Repositorio local, rama `main`.
 - Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
-- Commit vigente (HEAD): **`f26f010`** — "Agregar contexto compartido para agentes SEDAC" (2026-10-18 22:52).
-- Sin remoto configurado: el repositorio solo existe en este equipo.
-- Árbol con dos carpetas nuevas **sin rastrear** en esta revisión (2026-10-19), ninguna commiteada:
-  - `01_CAD/Prototipo_P2/P2_05_20261019/` — borrador de trabajo de P2.05 (ver su `LEEME_P2_05.md`). **No cerrado.**
-  - `07_ENLACE_CHATGPT/` — enlace de contexto con un proyecto ChatGPT de solo chat.
-- Excluidos de Git por decisión intencional: `.codex/config.toml` (contiene rutas locales de este equipo) y `tools/inventor-mcp/` (repositorio externo clonado). También se ignoran `.venv*/` y `OldVersions/`. No deben agregarse al repositorio.
+- Commit vigente (HEAD): **`0f7d03b`** — "Gobierno: corregir estado, registrar D-10/D-11, requisitos de las convocatorias y enlace con ChatGPT" (2026-10-19).
+- Historial reciente: `e27cf4e` — "P2.05: copia de trabajo sobre P2.04, parametros coherentes con la geometria y calculo regenerado" (2026-10-19, 148 archivos) sobre `f26f010` — "Agregar contexto compartido para agentes SEDAC".
+- Sin remoto configurado: el repositorio solo existe en este equipo. **OneDrive es la única copia de seguridad.**
+- **Árbol limpio** a 2026-10-19: no quedan carpetas ni archivos sin rastrear.
+- Excluidos de Git por decisión intencional: `.codex/config.toml` (contiene rutas locales de este equipo, verificado), `tools/inventor-mcp/` (repositorio externo clonado), `.venv-inventor-mcp/`, `OldVersions/` y `01_CAD/Automatizacion/python_libs/` (retirado a la Papelera el 2026-10-19). No deben agregarse al repositorio.
+- Mapa de la carpeta —qué es actual, qué es historia, qué está superado y qué se limpió el 2026-10-19—: `MAPA_DEL_REPOSITORIO.md`.
 
 ### MCP de Inventor — estado
 
@@ -128,6 +128,12 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 ### Próximo paso recomendado
 
 Medir la bomba y el arnés antes de decidir cotas; en paralelo, cerrar el redondeo lumbar y hacer coherentes geometría, parámetros y cálculo. No reducir masa comprometiendo seguridad.
+
+**Con el calendario de los programas encima, el hito que manda todo es la Etapa 3: Validación de Despega (diciembre 2026 – enero 2027)**, que exige validación técnica y pesa el 50 % de la nota de finalistas; y el **9 de diciembre** (Lions Cage de Vector, pitch en inglés). Eso pone fecha a tres cosas que hasta hoy parecían técnicas y ahora son entregables:
+
+- **Pendiente 5** (tolerancias y proceso de fabricación real): sin prototipo no hay validación que mostrar.
+- **Pendiente 6** (FEA, fatiga, pandeo): es la evidencia del TRL que se declare. No se declarará un nivel que no esté respaldado.
+- **Medición real de la bomba**: `02_PROTOTIPO/REGISTRO_MEDICION_BOMBA_LOCAL.md` sigue **en blanco**.
 
 ---
 
@@ -221,6 +227,17 @@ Se creó `07_ENLACE_CHATGPT/INSTRUCCIONES_PROYECTO.md` (reglas permanentes que s
 El responsable **eliminó el ZIP del repositorio completo** que estaba subido en el proyecto ChatGPT y **pegó las instrucciones del proyecto** (ambas cosas declaradas por él el 2026-10-19). Se registraron las decisiones `D-10` (el repositorio no sale del PC) y `D-11` (alcance del conector de Notion, por acotar) en `DECISIONES.md`, y se añadió a las instrucciones que en ese proyecto **no hay ningún archivo del repositorio subido**.
 - Motivo: el ZIP competía con la versión vigente dentro del mismo proyecto y llevaba rutas locales, historia de Git y archivos excluidos a propósito.
 - Evidencia: `DECISIONES.md` (D-10, D-11); `INSTRUCCIONES_PROYECTO.md`; paquete regenerado.
+
+**Commit, limpieza de la carpeta y mapa del repositorio**
+
+Con autorización del responsable se hizo lo siguiente, **en este orden** (proteger primero, limpiar después):
+
+- **Dos commits:** `e27cf4e` — P2.05 (148 archivos) y `0f7d03b` — gobierno, requisitos y enlace. `git status` queda limpio.
+- **Retirado a la Papelera de Windows** (recuperable): `01_CAD/Automatizacion/python_libs/` (54,4 MB, 1.366 archivos; numpy 2.5.3 + manifold3d 3.5.4 vendorizados, fuera de Git, usados por `generar_maqueta_kit.py`) y `OldVersions/Part1.0003.ipt` (autoguardado huérfano; único `Part1*` del proyecto).
+- **Medido:** de 486,2 MB / 10.655 archivos a **431,6 MB / 9.288 archivos**. `git status` limpio antes y después: nada de lo retirado estaba versionado.
+- **No se borró nada más.** Se conservan, a propósito: la generación «maqueta» (contiene el porqué de las cotas del kit en `KIT_MONTAJE_V01.md` y la hoja de medición de la bomba en `REGISTRO_MEDICION_BOMBA_LOCAL.md`), las memorias P2_02/P2_03 (citadas por 19 líneas de otros documentos), las instantáneas de iteración y todas las entregas.
+- **Nuevo `MAPA_DEL_REPOSITORIO.md`:** declara el estado de cada cosa, el orden de lectura para un agente, lo que está fuera de Git y la limpieza de hoy.
+- Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
 
 ---
 

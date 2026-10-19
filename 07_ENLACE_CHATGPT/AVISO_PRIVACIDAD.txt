@@ -1,0 +1,4 @@
+﻿El paquete contiene 1 linea(s) con posibles rutas locales, marcas de este
+equipo o un nombre personal. Revisar antes de enviarlo.
+
+  L55: - Sin remoto configurado: el repositorio solo existe en este equipo. **OneDrive es la única copia de seguridad

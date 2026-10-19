@@ -30,6 +30,17 @@ El responsable **eliminó el ZIP del repositorio completo** que estaba subido en
 - Motivo: el ZIP competía con la versión vigente dentro del mismo proyecto y llevaba rutas locales, historia de Git y archivos excluidos a propósito.
 - Evidencia: `DECISIONES.md` (D-10, D-11); `INSTRUCCIONES_PROYECTO.md`; paquete regenerado.
 
+**Commit, limpieza de la carpeta y mapa del repositorio**
+
+Con autorización del responsable se hizo lo siguiente, **en este orden** (proteger primero, limpiar después):
+
+- **Dos commits:** `e27cf4e` — P2.05 (148 archivos) y `0f7d03b` — gobierno, requisitos y enlace. `git status` queda limpio.
+- **Retirado a la Papelera de Windows** (recuperable): `01_CAD/Automatizacion/python_libs/` (54,4 MB, 1.366 archivos; numpy 2.5.3 + manifold3d 3.5.4 vendorizados, fuera de Git, usados por `generar_maqueta_kit.py`) y `OldVersions/Part1.0003.ipt` (autoguardado huérfano; único `Part1*` del proyecto).
+- **Medido:** de 486,2 MB / 10.655 archivos a **431,6 MB / 9.288 archivos**. `git status` limpio antes y después: nada de lo retirado estaba versionado.
+- **No se borró nada más.** Se conservan, a propósito: la generación «maqueta» (contiene el porqué de las cotas del kit en `KIT_MONTAJE_V01.md` y la hoja de medición de la bomba en `REGISTRO_MEDICION_BOMBA_LOCAL.md`), las memorias P2_02/P2_03 (citadas por 19 líneas de otros documentos), las instantáneas de iteración y todas las entregas.
+- **Nuevo `MAPA_DEL_REPOSITORIO.md`:** declara el estado de cada cosa, el orden de lectura para un agente, lo que está fuera de Git y la limpieza de hoy.
+- Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
+
 ---
 
 ## 2026-10-18
