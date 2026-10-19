@@ -1,6 +1,6 @@
 # PAQUETE DE CONTEXTO SEDAC
 
-Generado: 2026-10-19 07:44  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
+Generado: 2026-10-19 07:57  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
 Uso: pegar este archivo entero (o subirlo como documento del proyecto). No editar a mano.
 
 Este documento lo ha escrito el repositorio SEDAC_CAD de este PC. Los numeros salen de
@@ -110,7 +110,7 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 
 Verificado por el agente el 2026-10-19. Sirve para que ningún documento de este repositorio dé por comprobado lo que no lo está.
 
-- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. Ver `DECISIONES.md` D-11.
+- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. **Vías de acceso estudiadas el 2026-10-19: ver `DECISIONES.md` D-11** — el MCP oficial de Notion llega a **todo** el espacio de trabajo y además puede **escribir**; solo el token de integración acotado (sin mantenimiento) o la exportación de páginas al repositorio respetan D-11.
 - **Proyecto de ChatGPT (solo chat): sin acceso.** El enlace es de un solo sentido: `07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1` regenera `PAQUETE_CHATGPT.md`, y las respuestas entran por el responsable en `07_ENLACE_CHATGPT/Entrada_<fecha>.md` como **borrador externo**.
 - **Inventor: lectura no reproducida desde OpenCode** (ver la sección anterior). Escritura CAD por MCP: no validada.
 - **Consecuencia práctica:** si un dato no está en un archivo de este repositorio ni lo aporta el responsable, se escribe `pendiente`. No se completa desde una fuente que el agente no puede leer.
@@ -207,6 +207,16 @@ Papel de cada fuente: **Notion** manda en requisitos y plazos; **el paquete** ma
 Fecha: 2026-10-19 · Estado: revisar
 El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las páginas del proyecto. Como Vector §8 y la Ley 21.719 (vigencia plena desde el 2026-12-01) exigen no exponer datos personales de terceros ni información confidencial a herramientas de IA, conviene limitar el conector a las páginas del proyecto. **No adoptada**: es decisión del responsable y no se ha verificado si el conector permite acotarlo.
 **Aclaración (2026-10-19, hecho verificado por el agente):** este agente **no tiene acceso a Notion** — ni conector ni integración MCP (la lista de servidores MCP expuesta está vacía) — y la única vía disponible, un navegador, pide iniciar sesión (`notion.so/login`). Por tanto D-11 se refiere al conector de la cuenta de ChatGPT del responsable, **no** al acceso de los agentes. Lo que sí depende de este repositorio ya está resuelto: **ninguna afirmación sobre Notion puede entrar como `hecho`** en la documentación si no la aporta el responsable.
+
+**Opciones de acceso verificadas el 2026-10-19** (fuentes: documentación oficial de Notion y de OpenCode). Se registran para no repetir la investigación y porque **solo una respeta D-11**:
+
+| Vía | Alcance real | ¿Respeta D-11? | Estado del software |
+|---|---|---|---|
+| **MCP oficial de Notion** — `https://mcp.notion.com/mcp`, conexión por OAuth | «el contenido al que tú tengas acceso» en el espacio elegido: **todo el espacio de trabajo**, y además **puede crear y modificar páginas** | **No**: es el problema que D-11 señala | Activo y soportado por Notion |
+| **Servidor propio con token de integración** — `@notionhq/notion-mcp-server` | **solo las páginas que se le compartan**; sus capacidades se pueden limitar a «solo lectura» | **Sí, por construcción** | **Ya no se mantiene**; Notion avisa de que puede retirarlo |
+| **Exportar las páginas a Markdown y guardarlas en el repositorio** | solo las páginas exportadas; **sin credenciales ni superficie de datos** | **Sí, y sin exponer nada más** | Estable; se queda desactualizado y hay que reexportar |
+
+**Recomendación registrada:** para este proyecto, **exportar** al repositorio las páginas que hagan falta (03.1, 04.1 y las bases de las convocatorias), porque el repositorio es la autoridad (`AGENTS.md` §4), queda versionado en Git y **elimina la superficie de privacidad** en vez de gestionarla. Si se quiere acceso vivo, la única vía que respeta D-11 es el token de integración acotado y de solo lectura, asumiendo que no tiene mantenimiento. **La vía oficial, por sí sola, contradice D-11** y además concede escritura.
 
 ---
 
@@ -311,6 +321,11 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **Premisa corregida 1:** «ya sabes todo sobre el proyecto» — no. El agente conoce el repositorio; **no** conoce la bomba, los textiles, la antropometría ni las cotizaciones.
 - **Premisa corregida 2:** «tienes acceso a Notion» — **no lo tiene** (hecho, verificado): sin conector ni MCP, y la sesión de navegador pide login (`notion.so/login`). Registrado en `ESTADO_ACTUAL.md`, sección nueva «Acceso a fuentes externas desde el agente».
 - Evidencia: `DECISIONES.md` (D-12 a D-15) y `ESTADO_ACTUAL.md`. **Sin cambios en `01_CAD/`.**
+
+**Notion: vías de acceso estudiadas (documentación de Notion y de OpenCode, 2026-10-19)**
+
+- Registrado en `DECISIONES.md` D-11. Hallazgo principal: **el MCP oficial de Notion (`https://mcp.notion.com/mcp`, OAuth) no acota** — alcanza todo el contenido al que acceda el usuario y además puede **crear y modificar páginas**; es decir, por sí solo contradice D-11. El servidor con token de integración **sí acota** (solo las páginas compartidas, y admite «solo lectura»), pero **ya no tiene mantenimiento**. La exportación de páginas al repositorio es la vía recomendada por este proyecto.
+- Nada de esto se ha activado: **no se añadió ningún servidor MCP ni ninguna credencial**. Requiere decisión del responsable.
 
 ---
 

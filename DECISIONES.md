@@ -52,6 +52,16 @@ Fecha: 2026-10-19 · Estado: revisar
 El conector de ChatGPT alcanza **todo** el espacio de Notion, no solo las páginas del proyecto. Como Vector §8 y la Ley 21.719 (vigencia plena desde el 2026-12-01) exigen no exponer datos personales de terceros ni información confidencial a herramientas de IA, conviene limitar el conector a las páginas del proyecto. **No adoptada**: es decisión del responsable y no se ha verificado si el conector permite acotarlo.
 **Aclaración (2026-10-19, hecho verificado por el agente):** este agente **no tiene acceso a Notion** — ni conector ni integración MCP (la lista de servidores MCP expuesta está vacía) — y la única vía disponible, un navegador, pide iniciar sesión (`notion.so/login`). Por tanto D-11 se refiere al conector de la cuenta de ChatGPT del responsable, **no** al acceso de los agentes. Lo que sí depende de este repositorio ya está resuelto: **ninguna afirmación sobre Notion puede entrar como `hecho`** en la documentación si no la aporta el responsable.
 
+**Opciones de acceso verificadas el 2026-10-19** (fuentes: documentación oficial de Notion y de OpenCode). Se registran para no repetir la investigación y porque **solo una respeta D-11**:
+
+| Vía | Alcance real | ¿Respeta D-11? | Estado del software |
+|---|---|---|---|
+| **MCP oficial de Notion** — `https://mcp.notion.com/mcp`, conexión por OAuth | «el contenido al que tú tengas acceso» en el espacio elegido: **todo el espacio de trabajo**, y además **puede crear y modificar páginas** | **No**: es el problema que D-11 señala | Activo y soportado por Notion |
+| **Servidor propio con token de integración** — `@notionhq/notion-mcp-server` | **solo las páginas que se le compartan**; sus capacidades se pueden limitar a «solo lectura» | **Sí, por construcción** | **Ya no se mantiene**; Notion avisa de que puede retirarlo |
+| **Exportar las páginas a Markdown y guardarlas en el repositorio** | solo las páginas exportadas; **sin credenciales ni superficie de datos** | **Sí, y sin exponer nada más** | Estable; se queda desactualizado y hay que reexportar |
+
+**Recomendación registrada:** para este proyecto, **exportar** al repositorio las páginas que hagan falta (03.1, 04.1 y las bases de las convocatorias), porque el repositorio es la autoridad (`AGENTS.md` §4), queda versionado en Git y **elimina la superficie de privacidad** en vez de gestionarla. Si se quiere acceso vivo, la única vía que respeta D-11 es el token de integración acotado y de solo lectura, asumiendo que no tiene mantenimiento. **La vía oficial, por sí sola, contradice D-11** y además concede escritura.
+
 ---
 
 **Decisiones adoptadas el 2026-10-19 con autorización expresa del responsable**

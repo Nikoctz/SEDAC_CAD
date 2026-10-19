@@ -62,6 +62,11 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **Premisa corregida 2:** «tienes acceso a Notion» — **no lo tiene** (hecho, verificado): sin conector ni MCP, y la sesión de navegador pide login (`notion.so/login`). Registrado en `ESTADO_ACTUAL.md`, sección nueva «Acceso a fuentes externas desde el agente».
 - Evidencia: `DECISIONES.md` (D-12 a D-15) y `ESTADO_ACTUAL.md`. **Sin cambios en `01_CAD/`.**
 
+**Notion: vías de acceso estudiadas (documentación de Notion y de OpenCode, 2026-10-19)**
+
+- Registrado en `DECISIONES.md` D-11. Hallazgo principal: **el MCP oficial de Notion (`https://mcp.notion.com/mcp`, OAuth) no acota** — alcanza todo el contenido al que acceda el usuario y además puede **crear y modificar páginas**; es decir, por sí solo contradice D-11. El servidor con token de integración **sí acota** (solo las páginas compartidas, y admite «solo lectura»), pero **ya no tiene mantenimiento**. La exportación de páginas al repositorio es la vía recomendada por este proyecto.
+- Nada de esto se ha activado: **no se añadió ningún servidor MCP ni ninguna credencial**. Requiere decisión del responsable.
+
 ---
 
 ## 2026-10-18

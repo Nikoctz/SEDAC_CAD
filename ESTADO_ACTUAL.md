@@ -74,7 +74,7 @@ Ambos vigentes. Requisitos, plazos y citas: `REQUISITOS_SEDAC.md`.
 
 Verificado por el agente el 2026-10-19. Sirve para que ningún documento de este repositorio dé por comprobado lo que no lo está.
 
-- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. Ver `DECISIONES.md` D-11.
+- **Notion: sin acceso (hecho).** No hay conector ni integración MCP (la lista de servidores MCP expuesta está vacía). La única vía disponible es un navegador, y la sesión pide iniciar sesión (`notion.so/login`). Por tanto **ninguna afirmación sobre Notion puede entrar como `hecho`** si no la aporta el responsable. **Vías de acceso estudiadas el 2026-10-19: ver `DECISIONES.md` D-11** — el MCP oficial de Notion llega a **todo** el espacio de trabajo y además puede **escribir**; solo el token de integración acotado (sin mantenimiento) o la exportación de páginas al repositorio respetan D-11.
 - **Proyecto de ChatGPT (solo chat): sin acceso.** El enlace es de un solo sentido: `07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1` regenera `PAQUETE_CHATGPT.md`, y las respuestas entran por el responsable en `07_ENLACE_CHATGPT/Entrada_<fecha>.md` como **borrador externo**.
 - **Inventor: lectura no reproducida desde OpenCode** (ver la sección anterior). Escritura CAD por MCP: no validada.
 - **Consecuencia práctica:** si un dato no está en un archivo de este repositorio ni lo aporta el responsable, se escribe `pendiente`. No se completa desde una fuente que el agente no puede leer.
