@@ -1,6 +1,6 @@
 # PAQUETE DE CONTEXTO SEDAC
 
-Generado: 2026-10-19 07:25  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
+Generado: 2026-10-19 07:26  |  por: 07_ENLACE_CHATGPT/GENERAR_PAQUETE.ps1
 Uso: pegar este archivo entero (o subirlo como documento del proyecto). No editar a mano.
 
 Este documento lo ha escrito el repositorio SEDAC_CAD de este PC. Los numeros salen de
@@ -52,7 +52,7 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 - Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
 - Commit vigente (HEAD): **`0f7d03b`** — "Gobierno: corregir estado, registrar D-10/D-11, requisitos de las convocatorias y enlace con ChatGPT" (2026-10-19).
 - Historial reciente: `e27cf4e` — "P2.05: copia de trabajo sobre P2.04, parametros coherentes con la geometria y calculo regenerado" (2026-10-19, 148 archivos) sobre `f26f010` — "Agregar contexto compartido para agentes SEDAC".
-- Sin remoto configurado: el repositorio solo existe en este equipo. **OneDrive es la única copia de seguridad.**
+- Sin remoto configurado: el repositorio solo existe en este equipo, dentro de una carpeta sincronizada en la nube, que es la **única copia de seguridad** (advertencia en `MAPA_DEL_REPOSITORIO.md`).
 - **Árbol limpio** a 2026-10-19: no quedan carpetas ni archivos sin rastrear.
 - Excluidos de Git por decisión intencional: `.codex/config.toml` (contiene rutas locales de este equipo, verificado), `tools/inventor-mcp/` (repositorio externo clonado), `.venv-inventor-mcp/`, `OldVersions/` y `01_CAD/Automatizacion/python_libs/` (retirado a la Papelera el 2026-10-19). No deben agregarse al repositorio.
 - Mapa de la carpeta —qué es actual, qué es historia, qué está superado y qué se limpió el 2026-10-19—: `MAPA_DEL_REPOSITORIO.md`.

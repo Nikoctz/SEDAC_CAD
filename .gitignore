@@ -36,3 +36,7 @@ OldVersions/
 
 # Dependencias Python locales dentro del proyecto
 **/python_libs/
+
+# === Salidas del generador del enlace con ChatGPT ===
+# El aviso de privacidad es un artefacto de una corrida, no un documento del proyecto.
+07_ENLACE_CHATGPT/AVISO_PRIVACIDAD.txt
