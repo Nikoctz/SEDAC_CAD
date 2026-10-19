@@ -92,6 +92,7 @@ Estado de cada uno tras las decisiones adoptadas el 2026-10-19 (`DECISIONES.md`,
 6. Cerrar FEA local, fatiga y pandeo distorsional.
 7. Definir liberación de emergencia y compatibilidad manguera/EPP.
 8. Regeneración de extremo a extremo: hoy el cálculo y los documentos no se regeneran con el CAD.
+9. **Entrega de P2.04 incompleta frente a P2.03 (hecho, 2026-10-19).** `P2_04_20261016/Entrega/Inventor/` contiene el CAD (`SEDAC_P2_04.iam` + 54 `.ipt`), el STEP, las vistas, las BOM de fijaciones y los JSON de auditoría, pero **no** tiene `BOM_PIEZAS_Y_MASAS.csv`, `RESUMEN_MASAS.csv`, `PARAMETROS_P2_04.json`, especificación, informe de diseño ni memoria de cálculo — documentos que sí entregó P2.03. `pendiente` decidir si se generan antes de las próximas entregas de Vector y Despega.
 
 ## Datos físicos pendientes de medir
 

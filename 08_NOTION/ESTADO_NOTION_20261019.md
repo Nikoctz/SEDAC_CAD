@@ -63,7 +63,20 @@ El agente **no escribe en Notion**. Correcciones sugeridas, para que las aplique
 4. **04.1** — cambiar «Verificación previa de P2.03» por la revisión vigente; el resto del protocolo sirve igual.
 5. **Decidir antes** qué revisión es la vigente. La respuesta del repositorio es P2.04 (+ P2.05 abierto); si el responsable sostiene otra cosa, se corrige este archivo.
 
-## 5. Evidencia
+## 5. Nota técnica que conviene registrar
+
+**hecho — 03.2 ya describe por escrito la arquitectura de P2.04.** Su apartado «Dirección de optimización para la siguiente revisión» propone «suspensión superior + estabilización inferior mínima», sustituir la cuna pesada por un «localizador inferior abierto o dividido» y reducir «el piso de cuna, sus tres refuerzos, parte de las cartelas, el protector inferior y varias fijaciones». Eso es exactamente lo que el repositorio ya construyó como P2.04 (cuna textil).
+Consecuencia práctica: **no hay contradicción de criterio** entre Notion y el repositorio — el plan de Notion se ejecutó. Lo que falta es que Notion **registre el resultado**. Y advierte de un riesgo ya conocido: la suspensión superior «solo es viable si la carga se distribuye en zonas reforzadas o mediante un arnés/cradle independiente», y no debe colgarse de la manilla ni del cuello de llenado. Es coherente con la masa de la bomba llena (~18 kg) todavía **sin medir**.
+
+## 6. Textos literales para la corrección
+
+Los literales exactos de las cuatro páginas, con el reemplazo propuesto, se entregaron al responsable el 2026-10-19 en un bloque listo para pegar (destinatario: la cuenta de ChatGPT, que sí puede escribir en Notion). Los criterios que sigue ese bloque:
+
+- Corregir solo las **afirmaciones de vigencia**; no reescribir los datos técnicos propios de P2.03, que pasan a leerse como históricos.
+- Donde falta el dato de P2.04, escribir `pendiente` — nunca trasvasar los números de P2.03 a P2.04.
+- El CAD de P2.04 está en `01_CAD/Prototipo_P2/P2_04_20261016/Entrega/Inventor/` (principal: `SEDAC_P2_04.iam`, 54 `.ipt`), verificado el 2026-10-19.
+
+## 7. Evidencia
 
 - Llamadas del 2026-10-19: `API-get-self`, `API-post-search` (consultas `P2.03`, `P2.04`, `P2.05`, vacía), `API-retrieve-page-markdown` (03.1, 03.2, 03.4, 04.1), `API-get-block-children` (04.1: sin subpáginas).
 - Del repositorio: `ESTADO_ACTUAL.md` (vigencia P2.04), `01_CAD/Prototipo_P2/P2_04_20261016/`, `DECISIONES.md` D-10 y D-11.
