@@ -29,6 +29,7 @@ Para quien abra esta carpeta y necesite saber **qué es cada cosa y por dónde e
 | Memorias de cálculo | superadas las de P2_02 y P2_03 | `06_DOCUMENTACION/Memoria_Calculo_P2_02|P2_03` |
 | Memoria vigente del diseño | `REVISION_P2_04_Y_SKILLS_20261017.md` | `06_DOCUMENTACION/` |
 | Enlace con ChatGPT | activo | `07_ENLACE_CHATGPT/` |
+| Notion (lectura de solo lectura) | activo | `08_NOTION/` |
 
 ## La generación «maqueta» NO es basura
 

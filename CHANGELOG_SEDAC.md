@@ -7,6 +7,15 @@ Formato: fecha · versión/ámbito · descripción · evidencia.
 
 ## 2026-10-19
 
+**Notion: acceso de solo lectura en funcionamiento, y desfase verificado frente al repositorio**
+
+Se cerró el diagnóstico que quedaba abierto: la conexión `SEDAC lectura` creada por el responsable quedó operativa y el agente **lee Notion**. El bloqueo era de entorno —el proceso de OpenCode no heredaba la variable `NOTION_TOKEN`; se reinició el servicio y quedó resuelto—.
+- Verificado: `API-get-self` responde bot `SEDAC lectura` (id `3fef5e4b-db90-810b-b59b-0027dfdd45e0`); la búsqueda devuelve **90 páginas** compartidas; el servidor MCP `notion` aparece `connected`.
+- **Hallazgo principal (hecho):** las páginas **03.1, 03.2, 03.4 y 04.1** de Notion siguen declarando **P2.03** como diseño y CAD vigentes, con enlaces de Drive al paquete P2.03 — **dos revisiones por detrás** del repositorio (P2.04 base, P2.05 abierto). Se verificó que ChatGPT acertó al señalarlo y se encontró un cuarto punto que no había mencionado: **03.4 (CAD vigente)**.
+- Resuelto sin inventar: por `AGENTS.md` §1, en caso de conflicto manda `ESTADO_ACTUAL.md`; por tanto **lo que se corrige es Notion**, y esa corrección es del responsable (el agente no escribe en Notion).
+- Registrado además que «margen 2,254 (Notion) vs 2,247 (repositorio)» **no es contradicción**: son dos revisiones distintas del diseño.
+- Evidencia: llamadas `API-get-self`, `API-post-search` y `API-retrieve-page-markdown` del 2026-10-19.
+
 **Corrección de desfases en `ESTADO_ACTUAL.md` y enlace de contexto con ChatGPT**
 
 Se corrigieron afirmaciones desactualizadas de `ESTADO_ACTUAL.md`, detectadas al preparar el enlace con ChatGPT:
