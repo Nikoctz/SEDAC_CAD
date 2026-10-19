@@ -1,0 +1,2 @@
+﻿Comprobar interferencias
+Hay interferencias: revisar INTERFERENCIAS.json antes de aceptar esta revision

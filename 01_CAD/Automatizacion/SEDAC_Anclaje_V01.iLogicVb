@@ -1,0 +1,204 @@
+' SEDAC V0.1 - regla externa iLogic para una pieza nueva y vacia.
+' Unidades de usuario: mm. API Inventor: cm.
+' Modelo preliminar de ajuste: dimensiones asumidas, sin validacion de resistencia.
+' Cambiar parametros SEDAC_* y volver a ejecutar para regenerar la geometria.
+' La regla regenera SOLO su modelo; se detiene si se agregan otras operaciones.
+Sub Main()
+    Dim doc As Inventor.PartDocument = TryCast(ThisApplication.ActiveDocument, Inventor.PartDocument)
+    If doc Is Nothing Then
+        MessageBox.Show("Activa una pieza estandar (.ipt) antes de ejecutar.", "SEDAC")
+        Return
+    End If
+    If ThisApplication.ActiveEditObject IsNot Nothing AndAlso _
+       (TypeOf ThisApplication.ActiveEditObject Is Inventor.PlanarSketch OrElse _
+        TypeOf ThisApplication.ActiveEditObject Is Inventor.Sketch3D) Then
+        MessageBox.Show("Finaliza el boceto activo y vuelve a ejecutar la regla.", "SEDAC")
+        Return
+    End If
+    Dim cd As Inventor.PartComponentDefinition = doc.ComponentDefinition
+    If TypeOf cd Is Inventor.SheetMetalComponentDefinition Then
+        MessageBox.Show("Utiliza una pieza estandar, no una plantilla de chapa.", "SEDAC")
+        Return
+    End If
+    Const marker As String = "SEDAC_Anclaje_V01_Generator"
+    Dim rebuilding As Boolean = doc.AttributeSets.NameIsUsed(marker)
+    If rebuilding Then
+        If cd.Features.Count <> 3 OrElse cd.Sketches.Count <> 2 OrElse cd.SurfaceBodies.Count <> 1 Then
+            MessageBox.Show("El modelo tiene cambios ajenos a esta regla. Se conserva intacto. Ejecuta en una pieza nueva para crear otra variante.", "SEDAC")
+            Return
+        End If
+        Try
+            Dim b As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Item("SEDAC_Base")
+            Dim c As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Item("SEDAC_Aberturas")
+            Dim f As Inventor.FilletFeature = cd.Features.FilletFeatures.Item("SEDAC_Bordes_R2")
+        Catch
+            MessageBox.Show("No se reconoce la estructura original de la regla. No se modifica la pieza.", "SEDAC")
+            Return
+        End Try
+    ElseIf cd.Features.Count > 0 OrElse cd.Sketches.Count > 0 OrElse cd.SurfaceBodies.Count > 0 OrElse cd.Sketches3D.Count > 0 Then
+        MessageBox.Show("Esta regla necesita una pieza vacia, sin bocetos ni operaciones. No se ha modificado el documento.", "SEDAC")
+        Return
+    End If
+
+    Dim tx As Inventor.Transaction = Nothing
+    Try
+        tx = ThisApplication.TransactionManager.StartTransaction(doc, "SEDAC - generar anclaje V0.1")
+        Dim up As Inventor.UserParameters = cd.Parameters.UserParameters
+        EnsureMM(up, "SEDAC_Ancho", "90 mm")
+        EnsureMM(up, "SEDAC_Alto", "75 mm")
+        EnsureMM(up, "SEDAC_Espesor", "8 mm")
+        EnsureMM(up, "SEDAC_RadioExterior", "5 mm")
+        EnsureMM(up, "SEDAC_RadioBorde", "2 mm")
+        EnsureMM(up, "SEDAC_CintaAncho", "50 mm")
+        EnsureMM(up, "SEDAC_CintaEspesor", "2 mm")
+        EnsureMM(up, "SEDAC_HolguraLateral", "1 mm")
+        EnsureMM(up, "SEDAC_HolguraEspesor", "3 mm")
+        EnsureMM(up, "SEDAC_PasoAncho", "SEDAC_CintaAncho + 2 * SEDAC_HolguraLateral")
+        EnsureMM(up, "SEDAC_PasoAlto", "SEDAC_CintaEspesor + SEDAC_HolguraEspesor")
+        EnsureMM(up, "SEDAC_PasoY", "57.5 mm")
+        EnsureMM(up, "SEDAC_RanuraAncho", "6.2 mm")
+        EnsureMM(up, "SEDAC_RanuraLargo", "30 mm")
+        EnsureMM(up, "SEDAC_Separacion", "66 mm")
+        EnsureMM(up, "SEDAC_RanuraY", "25 mm")
+        EnsureMM(up, "SEDAC_TornilloNominal", "5 mm")
+        ' Recorrido nominal limitado por el diametro del tornillo, no por el ancho de ranura.
+        EnsureMM(up, "SEDAC_RecorridoNominal", "SEDAC_RanuraLargo - SEDAC_TornilloNominal")
+        doc.Update()
+        Dim w As Double = up.Item("SEDAC_Ancho").Value
+        Dim h As Double = up.Item("SEDAC_Alto").Value
+        Dim t As Double = up.Item("SEDAC_Espesor").Value
+        Dim r As Double = up.Item("SEDAC_RadioExterior").Value
+        Dim edgeR As Double = up.Item("SEDAC_RadioBorde").Value
+        Dim pw As Double = up.Item("SEDAC_PasoAncho").Value
+        Dim ph As Double = up.Item("SEDAC_PasoAlto").Value
+        Dim py As Double = up.Item("SEDAC_PasoY").Value
+        Dim sw As Double = up.Item("SEDAC_RanuraAncho").Value
+        Dim sl As Double = up.Item("SEDAC_RanuraLargo").Value
+        Dim sep As Double = up.Item("SEDAC_Separacion").Value
+        Dim sy As Double = up.Item("SEDAC_RanuraY").Value
+        Dim margin As Double = Math.Max(r, 2 * edgeR)
+        If w <= 0 OrElse h <= 0 OrElse t <= 0 OrElse r <= 0 OrElse edgeR <= 0 OrElse _
+           2 * r >= Math.Min(w, h) OrElse 2 * edgeR >= t OrElse pw <= ph OrElse ph <= 0 OrElse _
+           sl <= sw OrElse sw <= up.Item("SEDAC_TornilloNominal").Value OrElse sep <= sw Then
+            Throw New Exception("Parametros geometricos incompatibles. Revisa espesores, radios y ranuras.")
+        End If
+        If (w - pw) / 2 <= margin OrElse (w - sep - sw) / 2 <= margin OrElse _
+           sy - sl / 2 <= margin OrElse h - py - ph / 2 <= margin OrElse _
+           py - ph / 2 - (sy + sl / 2) <= 2 * edgeR Then
+            Throw New Exception("Las aberturas quedan demasiado cerca de los bordes o entre si para estos redondeos.")
+        End If
+        If rebuilding Then
+            cd.Features.FilletFeatures.Item("SEDAC_Bordes_R2").Delete()
+            cd.Features.ExtrudeFeatures.Item("SEDAC_Aberturas").Delete(False, False, False)
+            cd.Features.ExtrudeFeatures.Item("SEDAC_Base").Delete(False, False, False)
+        End If
+
+        Dim tg As Inventor.TransientGeometry = ThisApplication.TransientGeometry
+        Dim outline As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        outline.Name = "SEDAC_01_Contorno"
+        RoundedRectangle(outline, tg, w, h, r)
+        Dim baseDef As Inventor.ExtrudeDefinition = cd.Features.ExtrudeFeatures.CreateExtrudeDefinition( _
+            outline.Profiles.AddForSolid(), Inventor.PartFeatureOperationEnum.kJoinOperation)
+        baseDef.SetDistanceExtent("SEDAC_Espesor", Inventor.PartFeatureExtentDirectionEnum.kPositiveExtentDirection)
+        Dim base As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Add(baseDef)
+        base.Name = "SEDAC_Base"
+        outline.Visible = False
+
+        Dim holes As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        holes.Name = "SEDAC_02_PasoCinta_Y_Regulacion"
+        Capsule(holes, tg, w / 2, py, pw, ph, False)
+        Capsule(holes, tg, (w - sep) / 2, sy, sl, sw, True)
+        Capsule(holes, tg, (w + sep) / 2, sy, sl, sw, True)
+        Dim cutDef As Inventor.ExtrudeDefinition = cd.Features.ExtrudeFeatures.CreateExtrudeDefinition( _
+            holes.Profiles.AddForSolid(), Inventor.PartFeatureOperationEnum.kCutOperation)
+        cutDef.SetDistanceExtent("SEDAC_Espesor", Inventor.PartFeatureExtentDirectionEnum.kPositiveExtentDirection)
+        Dim cut As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Add(cutDef)
+        cut.Name = "SEDAC_Aberturas"
+        holes.Visible = False
+        doc.Update()
+
+        ' Redondear bordes en ambas caras, incluidos los que contactan con la cinta.
+        Dim edges As Inventor.EdgeCollection = ThisApplication.TransientObjects.CreateEdgeCollection()
+        For Each e As Inventor.Edge In cd.SurfaceBodies.Item(1).Edges
+            ' Este modelo solo tiene segmentos y arcos abiertos: ambos vertices
+            ' distinguen sus bordes planos de los segmentos verticales.
+            If e.StartVertex IsNot Nothing AndAlso e.StopVertex IsNot Nothing Then
+                If Math.Abs(e.StartVertex.Point.Z - e.StopVertex.Point.Z) < 0.000001 Then edges.Add(e)
+            End If
+        Next
+        If edges.Count = 0 Then Throw New Exception("No se encontraron bordes para redondear.")
+        Dim fillet As Inventor.FilletFeature = cd.Features.FilletFeatures.AddSimple(edges, "SEDAC_RadioBorde")
+        fillet.Name = "SEDAC_Bordes_R2"
+        If Not doc.Update2(False) Then Throw New Exception("Inventor informa un error al actualizar la pieza.")
+        If cd.SurfaceBodies.Count <> 1 OrElse Not cd.SurfaceBodies.Item(1).IsSolid Then
+            Throw New Exception("El resultado no es un unico solido.")
+        End If
+        If Not rebuilding Then
+            doc.AttributeSets.Add(marker).Add("Version", Inventor.ValueTypeEnum.kStringType, "0.1")
+        End If
+        doc.UnitsOfMeasure.LengthUnits = Inventor.UnitsTypeEnum.kMillimeterLengthUnits
+        tx.End()
+        tx = Nothing
+    Catch ex As Exception
+        If tx IsNot Nothing Then tx.Abort()
+        MessageBox.Show("No se completo el modelo; se revirtio la transaccion." & vbCrLf & ex.Message, "SEDAC")
+        Return
+    End Try
+    ThisApplication.ActiveView.Fit()
+    MessageBox.Show("Anclaje preliminar creado en la pieza activa." & vbCrLf & _
+        "Guarda como SEDAC_Anclaje_Regulable_V0.1.ipt." & vbCrLf & _
+        "Para variar cotas: Administrar > Parametros > SEDAC_* y ejecutar otra vez esta regla." & vbCrLf & _
+        "PLA previsto para ajuste; material fisico y resistencia NO validados.", "SEDAC")
+End Sub
+
+Sub EnsureMM(up As Inventor.UserParameters, name As String, expression As String)
+    For Each p As Inventor.UserParameter In up
+        If p.Name = name Then Return
+    Next
+    up.AddByExpression(name, expression, Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+End Sub
+
+Sub RoundedRectangle(sk As Inventor.PlanarSketch, tg As Inventor.TransientGeometry, w As Double, h As Double, r As Double)
+    Dim p(7) As Inventor.SketchPoint
+    p(0) = sk.SketchPoints.Add(tg.CreatePoint2d(r, 0), False)
+    p(1) = sk.SketchPoints.Add(tg.CreatePoint2d(w-r, 0), False)
+    p(2) = sk.SketchPoints.Add(tg.CreatePoint2d(w, r), False)
+    p(3) = sk.SketchPoints.Add(tg.CreatePoint2d(w, h-r), False)
+    p(4) = sk.SketchPoints.Add(tg.CreatePoint2d(w-r, h), False)
+    p(5) = sk.SketchPoints.Add(tg.CreatePoint2d(r, h), False)
+    p(6) = sk.SketchPoints.Add(tg.CreatePoint2d(0, h-r), False)
+    p(7) = sk.SketchPoints.Add(tg.CreatePoint2d(0, r), False)
+    sk.SketchLines.AddByTwoPoints(p(0), p(1))
+    sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(w-r,r), p(1), p(2), True)
+    sk.SketchLines.AddByTwoPoints(p(2), p(3))
+    sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(w-r,h-r), p(3), p(4), True)
+    sk.SketchLines.AddByTwoPoints(p(4), p(5))
+    sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(r,h-r), p(5), p(6), True)
+    sk.SketchLines.AddByTwoPoints(p(6), p(7))
+    sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(r,r), p(7), p(0), True)
+End Sub
+
+Sub Capsule(sk As Inventor.PlanarSketch, tg As Inventor.TransientGeometry, cx As Double, cy As Double, length As Double, width As Double, vertical As Boolean)
+    Dim r As Double = width / 2
+    Dim a As Double = (length-width) / 2
+    Dim p(3) As Inventor.SketchPoint
+    If vertical Then
+        p(0) = sk.SketchPoints.Add(tg.CreatePoint2d(cx+r,cy-a), False)
+        p(1) = sk.SketchPoints.Add(tg.CreatePoint2d(cx+r,cy+a), False)
+        p(2) = sk.SketchPoints.Add(tg.CreatePoint2d(cx-r,cy+a), False)
+        p(3) = sk.SketchPoints.Add(tg.CreatePoint2d(cx-r,cy-a), False)
+        sk.SketchLines.AddByTwoPoints(p(0), p(1))
+        sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(cx,cy+a), p(1), p(2), True)
+        sk.SketchLines.AddByTwoPoints(p(2), p(3))
+        sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(cx,cy-a), p(3), p(0), True)
+    Else
+        p(0) = sk.SketchPoints.Add(tg.CreatePoint2d(cx-a,cy-r), False)
+        p(1) = sk.SketchPoints.Add(tg.CreatePoint2d(cx+a,cy-r), False)
+        p(2) = sk.SketchPoints.Add(tg.CreatePoint2d(cx+a,cy+r), False)
+        p(3) = sk.SketchPoints.Add(tg.CreatePoint2d(cx-a,cy+r), False)
+        sk.SketchLines.AddByTwoPoints(p(0), p(1))
+        sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(cx+a,cy), p(1), p(2), True)
+        sk.SketchLines.AddByTwoPoints(p(2), p(3))
+        sk.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(cx-a,cy), p(3), p(0), True)
+    End If
+End Sub

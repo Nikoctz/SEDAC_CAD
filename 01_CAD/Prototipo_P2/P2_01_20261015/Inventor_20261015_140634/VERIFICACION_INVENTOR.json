@@ -1,0 +1,18 @@
+{
+  "inventor_version": "2027.1",
+  "components": 12,
+  "all_components_solid": true,
+  "mini_bodies": 1,
+  "mini_dimensions_mm": [
+    24.366666666666667,
+    35.0,
+    11.958333333367
+  ],
+  "mini_volume_mm3": 903.4446574072906,
+  "stl_volume_mm3": 903.4446579526108,
+  "volume_difference_mm3": -5.453201765703852E-07,
+  "assembly_update_success": true,
+  "mechanical_validation": false,
+  "ilogic_executed": false,
+  "native_generation": "Inventor API"
+}

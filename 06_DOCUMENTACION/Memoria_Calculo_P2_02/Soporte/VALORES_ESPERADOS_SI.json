@@ -1,0 +1,522 @@
+[
+  {
+    "name": "Mass",
+    "value": 25
+  },
+  {
+    "name": "grav",
+    "value": 9.81
+  },
+  {
+    "name": "av",
+    "value": 3
+  },
+  {
+    "name": "ah",
+    "value": 1
+  },
+  {
+    "name": "eta",
+    "value": 0.7
+  },
+  {
+    "name": "Fv",
+    "value": 735.75
+  },
+  {
+    "name": "Fh",
+    "value": 245.25
+  },
+  {
+    "name": "H",
+    "value": 0.5
+  },
+  {
+    "name": "Sep",
+    "value": 0.2
+  },
+  {
+    "name": "b",
+    "value": 0.05
+  },
+  {
+    "name": "d",
+    "value": 0.025
+  },
+  {
+    "name": "t",
+    "value": 0.0025
+  },
+  {
+    "name": "ecc",
+    "value": 0.1
+  },
+  {
+    "name": "Linput",
+    "value": 0.4
+  },
+  {
+    "name": "Le",
+    "value": 0.4
+  },
+  {
+    "name": "nReq",
+    "value": 2.2
+  },
+  {
+    "name": "deltaLim",
+    "value": 0.005
+  },
+  {
+    "name": "SyR",
+    "value": 240000000.0
+  },
+  {
+    "name": "SyS",
+    "value": 130000000.0
+  },
+  {
+    "name": "SyB",
+    "value": 450000000.0
+  },
+  {
+    "name": "Emod",
+    "value": 69000000000.0
+  },
+  {
+    "name": "nu",
+    "value": 0.33
+  },
+  {
+    "name": "rho",
+    "value": 2700.0
+  },
+  {
+    "name": "Kt",
+    "value": 2
+  },
+  {
+    "name": "Kslot",
+    "value": 1.5
+  },
+  {
+    "name": "Kb",
+    "value": 1.2
+  },
+  {
+    "name": "c0",
+    "value": 0.21460183660255172
+  },
+  {
+    "name": "c1",
+    "value": 0.13698379248397125
+  },
+  {
+    "name": "ro",
+    "value": 0.005
+  },
+  {
+    "name": "ri",
+    "value": 0.0025
+  },
+  {
+    "name": "Area",
+    "value": 0.00033390486225480867
+  },
+  {
+    "name": "Ix",
+    "value": 3.2784009404865355e-08
+  },
+  {
+    "name": "Iz",
+    "value": 9.886588913828917e-08
+  },
+  {
+    "name": "Zx",
+    "value": 2.6227207523892284e-06
+  },
+  {
+    "name": "Zz",
+    "value": 3.954635565531566e-06
+  },
+  {
+    "name": "MassR",
+    "value": 0.9015431280879834
+  },
+  {
+    "name": "Nr",
+    "value": 515.025
+  },
+  {
+    "name": "Me",
+    "value": 51.5025
+  },
+  {
+    "name": "SigAx",
+    "value": 1542430.3693037431
+  },
+  {
+    "name": "SigEc",
+    "value": 19637050.552592225
+  },
+  {
+    "name": "SigH",
+    "value": 31417496.06328289
+  },
+  {
+    "name": "SigN",
+    "value": 52596976.98517886
+  },
+  {
+    "name": "Am",
+    "value": 0.0010566786466911066
+  },
+  {
+    "name": "Tr",
+    "value": 17.1675
+  },
+  {
+    "name": "TauT",
+    "value": 3249332.2456658836
+  },
+  {
+    "name": "TauV",
+    "value": 1625864.36640483
+  },
+  {
+    "name": "SigVM",
+    "value": 106540970.78586194
+  },
+  {
+    "name": "nR",
+    "value": 2.252654525575697
+  },
+  {
+    "name": "deltaH",
+    "value": 0.0016190289666549473
+  },
+  {
+    "name": "deltaE",
+    "value": 0.0018214075874868156
+  },
+  {
+    "name": "deltaR",
+    "value": 0.0034404365541417627
+  },
+  {
+    "name": "Kcol",
+    "value": 2
+  },
+  {
+    "name": "Pcr",
+    "value": 34884.37350316462
+  },
+  {
+    "name": "nEuler",
+    "value": 67.73335955179772
+  },
+  {
+    "name": "bp",
+    "value": 0.04
+  },
+  {
+    "name": "kplate",
+    "value": 4
+  },
+  {
+    "name": "SigCr",
+    "value": 995087274.6160609
+  },
+  {
+    "name": "SigCap",
+    "value": 240000000.0
+  },
+  {
+    "name": "pitch",
+    "value": 0.045
+  },
+  {
+    "name": "armH",
+    "value": 0.0625
+  },
+  {
+    "name": "As8",
+    "value": 3.66e-05
+  },
+  {
+    "name": "dia8",
+    "value": 0.008
+  },
+  {
+    "name": "Vy",
+    "value": 515.025
+  },
+  {
+    "name": "Vz",
+    "value": 171.67499999999998
+  },
+  {
+    "name": "MomC",
+    "value": 62.232187499999995
+  },
+  {
+    "name": "R8old",
+    "value": 1691.189973324996
+  },
+  {
+    "name": "R8",
+    "value": 1789.4139462754279
+  },
+  {
+    "name": "tg",
+    "value": 0.004
+  },
+  {
+    "name": "VM8",
+    "value": 84681854.39129415
+  },
+  {
+    "name": "nBolt8",
+    "value": 5.31400738959565
+  },
+  {
+    "name": "BearR",
+    "value": 89470697.31377138
+  },
+  {
+    "name": "nBearR",
+    "value": 2.682442489056795
+  },
+  {
+    "name": "BearG",
+    "value": 55919185.82110713
+  },
+  {
+    "name": "nBearG",
+    "value": 2.3247834905158884
+  },
+  {
+    "name": "edge",
+    "value": 0.0125
+  },
+  {
+    "name": "hole8",
+    "value": 0.0086
+  },
+  {
+    "name": "TearG",
+    "value": 47246278.517093986
+  },
+  {
+    "name": "nTearG",
+    "value": 2.75153946681674
+  },
+  {
+    "name": "hRoot",
+    "value": 0.08
+  },
+  {
+    "name": "Vcart",
+    "value": 542.8840173094065
+  },
+  {
+    "name": "SigRoot",
+    "value": 14585668.945312496
+  },
+  {
+    "name": "TauRoot",
+    "value": 1696512.5540918952
+  },
+  {
+    "name": "VMroot",
+    "value": 29757432.894712377
+  },
+  {
+    "name": "nRoot",
+    "value": 4.368656411323028
+  },
+  {
+    "name": "Width",
+    "value": 0.3
+  },
+  {
+    "name": "Depth",
+    "value": 0.125
+  },
+  {
+    "name": "tf",
+    "value": 0.0025
+  },
+  {
+    "name": "spanF",
+    "value": 0.065
+  },
+  {
+    "name": "over",
+    "value": 0.04
+  },
+  {
+    "name": "Ppatch",
+    "value": 100
+  },
+  {
+    "name": "strip",
+    "value": 0.05
+  },
+  {
+    "name": "qfloor",
+    "value": 39240.0
+  },
+  {
+    "name": "Mspan",
+    "value": 53.223625
+  },
+  {
+    "name": "Medge",
+    "value": 111.392
+  },
+  {
+    "name": "Mfloor",
+    "value": 111.392
+  },
+  {
+    "name": "SigFloor",
+    "value": 106936319.99999999
+  },
+  {
+    "name": "nFloor",
+    "value": 1.2156767691276456
+  },
+  {
+    "name": "tNeed",
+    "value": 0.003363119431077688
+  },
+  {
+    "name": "tfProp",
+    "value": 0.0035
+  },
+  {
+    "name": "SigProp",
+    "value": 54559346.9387755
+  },
+  {
+    "name": "nProp",
+    "value": 2.382726467490185
+  },
+  {
+    "name": "br",
+    "value": 0.02
+  },
+  {
+    "name": "tr",
+    "value": 0.0015
+  },
+  {
+    "name": "Irib",
+    "value": 5.827222943207817e-09
+  },
+  {
+    "name": "Zrib",
+    "value": 5.827222943207817e-07
+  },
+  {
+    "name": "Lrib",
+    "value": 0.25
+  },
+  {
+    "name": "SigRib",
+    "value": 55239112.71924033
+  },
+  {
+    "name": "nRib",
+    "value": 4.344747556316299
+  },
+  {
+    "name": "slot",
+    "value": 0.052000000000000005
+  },
+  {
+    "name": "bridgeS",
+    "value": 0.024
+  },
+  {
+    "name": "ta",
+    "value": 0.005
+  },
+  {
+    "name": "SigSlot",
+    "value": 100429874.99999999
+  },
+  {
+    "name": "nSlot",
+    "value": 2.3897271603693624
+  },
+  {
+    "name": "tb",
+    "value": 0.005
+  },
+  {
+    "name": "bridgeB",
+    "value": 0.026000000000000002
+  },
+  {
+    "name": "SigBelt",
+    "value": 92704499.99999999
+  },
+  {
+    "name": "nBelt",
+    "value": 2.5888710904001426
+  },
+  {
+    "name": "Zbelt",
+    "value": 4.166666666666667e-07
+  },
+  {
+    "name": "SigYoke",
+    "value": 98884799.99999999
+  },
+  {
+    "name": "nYoke",
+    "value": 2.427066647250134
+  },
+  {
+    "name": "riseX",
+    "value": 0.31999999999999995
+  },
+  {
+    "name": "LenX",
+    "value": 0.3773592452822641
+  },
+  {
+    "name": "ForceX",
+    "value": 462.7367745273763
+  },
+  {
+    "name": "NetX",
+    "value": 3.48e-05
+  },
+  {
+    "name": "nX",
+    "value": 9.776616532413401
+  },
+  {
+    "name": "As6",
+    "value": 2.01e-05
+  },
+  {
+    "name": "R6",
+    "value": 309.015
+  },
+  {
+    "name": "VM6",
+    "value": 26628342.30352719
+  },
+  {
+    "name": "nM6",
+    "value": 16.899287040500187
+  },
+  {
+    "name": "MinYield",
+    "value": 1.2156767691276456
+  }
+]

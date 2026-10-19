@@ -1,0 +1,2485 @@
+﻿{
+    "fecha":  "2026-10-17 00:01:55",
+    "inventor":  "2027.1",
+    "ensamblaje_actualiza":  true,
+    "piezas":  [
+                   {
+                       "archivo":  "Tuerca_M5_autofreno_metalica.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Tuerca",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Rosca_M5x0.8_6H",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_herrajes",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  193000,
+                                           "Sy_MPa":  600,
+                                           "nu":  0.3
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0014316268702906818
+                   },
+                   {
+                       "archivo":  "Arandela_M5_16x3_GN6341.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Arandela_gruesa",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_herrajes",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  200000,
+                                           "Sy_MPa":  200,
+                                           "nu":  0.3
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.004296002290078085
+                   },
+                   {
+                       "archivo":  "Tornillo_M5x55_ISO4762_A2_80.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  3,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Vastago",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Cabeza",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_3_Hexagono_interior",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Rosca_M5x0.8_6g",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  6,
+                       "material":  "SEDAC_herrajes",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  193000,
+                                           "Sy_MPa":  600,
+                                           "nu":  0.3
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.010576626734536862
+                   },
+                   {
+                       "archivo":  "REF_Asa_sistema.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Asa_textil_continua",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.011121716668932916
+                   },
+                   {
+                       "archivo":  "REF_Hebilla_pectoral.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_cierre",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0087490486225480744
+                   },
+                   {
+                       "archivo":  "REF_Correa_pectoral.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Correa_pecho",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0046038086256176107
+                   },
+                   {
+                       "archivo":  "REF_Hebilla_cinturon.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_cierre",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.028537698930976945
+                   },
+                   {
+                       "archivo":  "REF_Cinta_cierre_cinturon_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Cierre_frontal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0023313086256175741
+                   },
+                   {
+                       "archivo":  "REF_Bisagra_textil_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Conexion_flexible_cinturon",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0032624999999999894
+                   },
+                   {
+                       "archivo":  "REF_Ala_cinturon_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Ala_flexible",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.016151479065543952
+                   },
+                   {
+                       "archivo":  "REF_Cinta_cierre_cinturon_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Cierre_frontal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0023313086256175749
+                   },
+                   {
+                       "archivo":  "REF_Bisagra_textil_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Conexion_flexible_cinturon",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0032624999999999876
+                   },
+                   {
+                       "archivo":  "REF_Ala_cinturon_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Ala_flexible",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.016151479065543931
+                   },
+                   {
+                       "archivo":  "REF_Hebilla_carga_350.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_hebilla",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.011362223392972748
+                   },
+                   {
+                       "archivo":  "REF_Cinta_estabilizadora_350.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Retencion_transversal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.025981401662859633
+                   },
+                   {
+                       "archivo":  "REF_Hebilla_carga_225.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_hebilla",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.011362223392972748
+                   },
+                   {
+                       "archivo":  "REF_Cinta_estabilizadora_225.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Retencion_transversal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.025981401662859633
+                   },
+                   {
+                       "archivo":  "REF_Regulador_hombro_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_regulador",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0075469911184307759
+                   },
+                   {
+                       "archivo":  "REF_Cinta_hombrera_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.023192991432748746
+                   },
+                   {
+                       "archivo":  "REF_Hombrera_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.011409648236451193
+                   },
+                   {
+                       "archivo":  "REF_Cinta_carga_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.040353693123664526
+                   },
+                   {
+                       "archivo":  "REF_Cuna_textil_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.037065896762217769
+                   },
+                   {
+                       "archivo":  "REF_Regulador_hombro_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Envolvente_regulador",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_hebilla_ref",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0075469911184307759
+                   },
+                   {
+                       "archivo":  "REF_Cinta_hombrera_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.023192991432748746
+                   },
+                   {
+                       "archivo":  "REF_Hombrera_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.011409648236451195
+                   },
+                   {
+                       "archivo":  "REF_Cinta_carga_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.040353693123664415
+                   },
+                   {
+                       "archivo":  "REF_Cuna_textil_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Recorrido_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.037065896762217769
+                   },
+                   {
+                       "archivo":  "REF_Acolchado_lumbar.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Apoyo_lumbar",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.029542765316663496
+                   },
+                   {
+                       "archivo":  "REF_Acolchado_dorsal_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Apoyo_dorsal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.010972688417786784
+                   },
+                   {
+                       "archivo":  "REF_Funda_refuerzo_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Funda_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0096686849840915169
+                   },
+                   {
+                       "archivo":  "REF_Acolchado_dorsal_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Apoyo_dorsal",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_espuma",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.010972688417786784
+                   },
+                   {
+                       "archivo":  "REF_Funda_refuerzo_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Funda_textil",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_textil",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.00966868498409154
+                   },
+                   {
+                       "archivo":  "Espaldera_HDPE_aligerada.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  2,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Panel_contacto",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Ventilacion_y_paso_cintas",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  4,
+                       "material":  "SEDAC_hdpe",
+                       "propiedades":  null,
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.080759083995325887
+                   },
+                   {
+                       "archivo":  "Yugo_superior_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  5,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Placa_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Cintas_y_aligeramiento",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_3_Mejilla_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_4_Mejilla_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_5_Pasadores_yugo_y_ventana",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Redondeo_cantos",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  10,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.12469916004550986
+                   },
+                   {
+                       "archivo":  "Yugo_superior_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  5,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Placa_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Cintas_y_aligeramiento",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_3_Mejilla_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_4_Mejilla_yugo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_5_Pasadores_yugo_y_ventana",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Redondeo_cantos",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  10,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.12469916004551049
+                   },
+                   {
+                       "archivo":  "Interfaz_lumbar_aligerada.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  10,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Placa_lumbar",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Refuerzos_locales_puentes",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_3_Refuerzos_locales_cuna",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_4_Ventanas_cinturon_y_cuna",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_5_Mejilla_apoyo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_6_Mejilla_apoyo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_7_Pasadores_y_ventana_mejillas",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_8_Mejilla_apoyo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_9_Mejilla_apoyo",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_10_Pasadores_y_ventana_mejillas",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  20,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.31108983098374005
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_D_450.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808626
+                   },
+                   {
+                       "archivo":  "Casquillo_D_450.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.002878595795391019
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_D_390.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808158
+                   },
+                   {
+                       "archivo":  "Casquillo_D_390.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.002878595795391019
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_D_95.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808314
+                   },
+                   {
+                       "archivo":  "Casquillo_D_95.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953909804
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_D_35.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808392
+                   },
+                   {
+                       "archivo":  "Casquillo_D_35.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953909747
+                   },
+                   {
+                       "archivo":  "Refuerzo_C_D.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  2,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Canal_abierto",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Alojamiento_pasador_hueco",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Redondeo_cantos",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  4,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  {
+                                                  "parametro":  "Altura_refuerzo",
+                                                  "expresion":  "480 mm",
+                                                  "extrusion":  "Altura_refuerzo"
+                                              },
+                       "masa_nativa_kg":  0.28437920972185388
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_I_450.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808626
+                   },
+                   {
+                       "archivo":  "Casquillo_I_450.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953910177
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_I_390.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808158
+                   },
+                   {
+                       "archivo":  "Casquillo_I_390.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953910177
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_I_95.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808314
+                   },
+                   {
+                       "archivo":  "Casquillo_I_95.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953909804
+                   },
+                   {
+                       "archivo":  "Pasador_hueco_I_35.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Pasador_cortante",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0055614201029808392
+                   },
+                   {
+                       "archivo":  "Casquillo_I_35.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  1,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Separador_compresion",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  2,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  null,
+                       "masa_nativa_kg":  0.0028785957953909747
+                   },
+                   {
+                       "archivo":  "Refuerzo_C_I.ipt",
+                       "existe":  true,
+                       "cuerpos":  1,
+                       "solido":  true,
+                       "bocetos":  2,
+                       "operaciones":  [
+                                           {
+                                               "nombre":  "F_1_Canal_abierto",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "F_2_Alojamiento_pasador_hueco",
+                                               "estado":  "kUpToDateHealth"
+                                           },
+                                           {
+                                               "nombre":  "Redondeo_cantos",
+                                               "estado":  "kUpToDateHealth"
+                                           }
+                                       ],
+                       "parametros_usuario":  4,
+                       "material":  "SEDAC_6061",
+                       "propiedades":  {
+                                           "unidad":  "Kilopascal",
+                                           "E_MPa":  69000,
+                                           "Sy_MPa":  240,
+                                           "nu":  0.33
+                                       },
+                       "parametro_refuerzo":  {
+                                                  "parametro":  "Altura_refuerzo",
+                                                  "expresion":  "480 mm",
+                                                  "extrusion":  "Altura_refuerzo"
+                                              },
+                       "masa_nativa_kg":  0.28437920972185388
+                   }
+               ],
+    "referencias":  [
+                        {
+                            "archivo":  "Arandela_M5_16x3_GN6341.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_D_35.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_D_390.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_D_450.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_D_95.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_I_35.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_I_390.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_I_450.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Casquillo_I_95.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Espaldera_HDPE_aligerada.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Interfaz_lumbar_aligerada.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_D_35.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_D_390.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_D_450.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_D_95.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_I_35.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_I_390.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_I_450.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Pasador_hueco_I_95.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Acolchado_dorsal_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Acolchado_dorsal_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Acolchado_lumbar.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Ala_cinturon_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Ala_cinturon_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Asa_sistema.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Bisagra_textil_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Bisagra_textil_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_carga_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_carga_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_cierre_cinturon_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_cierre_cinturon_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_estabilizadora_225.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_estabilizadora_350.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_hombrera_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cinta_hombrera_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Correa_pectoral.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cuna_textil_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Cuna_textil_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Funda_refuerzo_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Funda_refuerzo_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hebilla_carga_225.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hebilla_carga_350.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hebilla_cinturon.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hebilla_pectoral.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hombrera_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Hombrera_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Regulador_hombro_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "REF_Regulador_hombro_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Refuerzo_C_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Refuerzo_C_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Tornillo_M5x55_ISO4762_A2_80.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Tuerca_M5_autofreno_metalica.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Yugo_superior_D.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        },
+                        {
+                            "archivo":  "Yugo_superior_I.ipt",
+                            "ausente":  false,
+                            "suprimida":  false
+                        }
+                    ],
+    "restricciones":  [
+                          {
+                              "nombre":  "Pos_Refuerzo_C_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Refuerzo_C_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Refuerzo_C_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_35_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_35_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_35_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_35_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_35_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_35_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_95_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_95_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_95_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_95_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_95_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_95_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_390_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_390_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_390_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_390_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_390_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_390_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_450_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_450_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_I_450_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_450_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_450_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_I_450_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Refuerzo_C_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Refuerzo_C_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Refuerzo_C_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_35_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_35_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_35_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_35_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_35_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_35_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_95_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_95_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_95_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_95_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_95_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_95_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_390_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_390_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_390_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_390_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_390_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_390_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_450_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_450_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Casquillo_D_450_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_450_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_450_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Pasador_hueco_D_450_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_superior_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Espaldera_HDPE_aligerada_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Espaldera_HDPE_aligerada_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Espaldera_HDPE_aligerada_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Funda_refuerzo_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_dorsal_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_lumbar_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_lumbar_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Acolchado_lumbar_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cuna_textil_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_carga_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hombrera_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_hombrera_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Regulador_hombro_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_225_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_225_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_225_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_225_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_225_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_225_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_350_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_350_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_estabilizadora_350_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_350_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_350_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_carga_350_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_I_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_I_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_I_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Ala_cinturon_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Bisagra_textil_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_D_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_D_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Cinta_cierre_cinturon_D_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_cinturon_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_cinturon_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_cinturon_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Correa_pectoral_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Correa_pectoral_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Correa_pectoral_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_pectoral_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_pectoral_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Hebilla_pectoral_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Asa_sistema_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Asa_sistema_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_REF_Asa_sistema_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_1_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_I_2_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_3_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Lumbar_D_4_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_5_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_I_6_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_7_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tornillo_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tornillo_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tornillo_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_cabeza_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_cabeza_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_cabeza_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Arandela_tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tuerca_1",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tuerca_2",
+                              "estado":  "kUpToDateHealth"
+                          },
+                          {
+                              "nombre":  "Pos_Yugo_D_8_Tuerca_3",
+                              "estado":  "kUpToDateHealth"
+                          }
+                      ],
+    "ocurrencias":  83,
+    "vistas":  [
+                   "[Primary]",
+                   "Default",
+                   "Con_arnes",
+                   "Estructura"
+               ],
+    "alcance":  "Lectura del CAD nativo, materiales y enlaces. No es FEA ni ensayo fisico."
+}

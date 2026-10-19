@@ -1,0 +1,452 @@
+﻿[
+    {
+        "pieza":  "Refuerzo_C_I",
+        "material":  "6061",
+        "volumen_mm3":  104124.97122853206,
+        "masa_candidata_kg":  0.28113742231703653,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "estructura"
+    },
+    {
+        "pieza":  "Casquillo_I_35",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855462,
+        "masa_candidata_kg":  0.0028785957953909747,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_I_35",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262365,
+        "masa_candidata_kg":  0.0055614201029808383,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_I_95",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855482,
+        "masa_candidata_kg":  0.0028785957953909804,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_I_95",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262338,
+        "masa_candidata_kg":  0.0055614201029808314,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_I_390",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855621,
+        "masa_candidata_kg":  0.0028785957953910177,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_I_390",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262279,
+        "masa_candidata_kg":  0.0055614201029808149,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_I_450",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855621,
+        "masa_candidata_kg":  0.0028785957953910177,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_I_450",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262452,
+        "masa_candidata_kg":  0.0055614201029808618,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Refuerzo_C_D",
+        "material":  "6061",
+        "volumen_mm3":  104124.97122853206,
+        "masa_candidata_kg":  0.28113742231703653,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "estructura"
+    },
+    {
+        "pieza":  "Casquillo_D_35",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855462,
+        "masa_candidata_kg":  0.0028785957953909747,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_D_35",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262365,
+        "masa_candidata_kg":  0.0055614201029808383,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_D_95",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855482,
+        "masa_candidata_kg":  0.0028785957953909804,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_D_95",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262338,
+        "masa_candidata_kg":  0.0055614201029808314,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_D_390",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855625,
+        "masa_candidata_kg":  0.002878595795391019,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_D_390",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262279,
+        "masa_candidata_kg":  0.0055614201029808149,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Casquillo_D_450",
+        "material":  "6061",
+        "volumen_mm3":  1066.1465908855625,
+        "masa_candidata_kg":  0.002878595795391019,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Pasador_hueco_D_450",
+        "material":  "6061",
+        "volumen_mm3":  2059.7852233262452,
+        "masa_candidata_kg":  0.0055614201029808618,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "uniones"
+    },
+    {
+        "pieza":  "Interfaz_lumbar_aligerada",
+        "material":  "6061",
+        "volumen_mm3":  99074.006312549944,
+        "masa_candidata_kg":  0.26749981704388487,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "anclajes"
+    },
+    {
+        "pieza":  "Yugo_superior_I",
+        "material":  "6061",
+        "volumen_mm3":  35178.396971012713,
+        "masa_candidata_kg":  0.094981671821734323,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "anclajes"
+    },
+    {
+        "pieza":  "Yugo_superior_D",
+        "material":  "6061",
+        "volumen_mm3":  35178.396971012749,
+        "masa_candidata_kg":  0.09498167182173442,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "anclajes"
+    },
+    {
+        "pieza":  "Espaldera_HDPE_aligerada",
+        "material":  "hdpe",
+        "volumen_mm3":  87899.548818486335,
+        "masa_candidata_kg":  0.083768270024017474,
+        "cantidad":  1,
+        "referencia":  false,
+        "grupo":  "protecciones"
+    },
+    {
+        "pieza":  "REF_Funda_refuerzo_I",
+        "material":  "textil",
+        "volumen_mm3":  12891.579978788719,
+        "masa_candidata_kg":  0.00966868498409154,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Acolchado_dorsal_I",
+        "material":  "espuma",
+        "volumen_mm3":  182878.14029644642,
+        "masa_candidata_kg":  0.010972688417786784,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Funda_refuerzo_D",
+        "material":  "textil",
+        "volumen_mm3":  12891.579978788688,
+        "masa_candidata_kg":  0.0096686849840915169,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Acolchado_dorsal_D",
+        "material":  "espuma",
+        "volumen_mm3":  182878.14029644642,
+        "masa_candidata_kg":  0.010972688417786784,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Acolchado_lumbar",
+        "material":  "espuma",
+        "volumen_mm3":  492379.42194439162,
+        "masa_candidata_kg":  0.029542765316663496,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Cuna_textil_I",
+        "material":  "textil",
+        "volumen_mm3":  49421.195682957026,
+        "masa_candidata_kg":  0.037065896762217769,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Cinta_carga_I",
+        "material":  "textil",
+        "volumen_mm3":  50440.354777628119,
+        "masa_candidata_kg":  0.037830266083221091,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Hombrera_I",
+        "material":  "espuma",
+        "volumen_mm3":  190160.80394085328,
+        "masa_candidata_kg":  0.011409648236451195,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Cinta_hombrera_I",
+        "material":  "textil",
+        "volumen_mm3":  30923.988576998327,
+        "masa_candidata_kg":  0.023192991432748746,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Regulador_hombro_I",
+        "material":  "hebilla_ref",
+        "volumen_mm3":  6037.5928947446209,
+        "masa_candidata_kg":  0.0075469911184307768,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "herrajes_textiles"
+    },
+    {
+        "pieza":  "REF_Cuna_textil_D",
+        "material":  "textil",
+        "volumen_mm3":  49421.195682957026,
+        "masa_candidata_kg":  0.037065896762217769,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Cinta_carga_D",
+        "material":  "textil",
+        "volumen_mm3":  50440.354777627887,
+        "masa_candidata_kg":  0.037830266083220918,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Hombrera_D",
+        "material":  "espuma",
+        "volumen_mm3":  190160.80394085325,
+        "masa_candidata_kg":  0.011409648236451193,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Cinta_hombrera_D",
+        "material":  "textil",
+        "volumen_mm3":  30923.988576998327,
+        "masa_candidata_kg":  0.023192991432748746,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Regulador_hombro_D",
+        "material":  "hebilla_ref",
+        "volumen_mm3":  6037.5928947446209,
+        "masa_candidata_kg":  0.0075469911184307768,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "herrajes_textiles"
+    },
+    {
+        "pieza":  "REF_Ala_cinturon_I",
+        "material":  "espuma",
+        "volumen_mm3":  269191.31775906554,
+        "masa_candidata_kg":  0.016151479065543931,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Bisagra_textil_I",
+        "material":  "textil",
+        "volumen_mm3":  4349.9999999999836,
+        "masa_candidata_kg":  0.0032624999999999876,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Cinta_cierre_cinturon_I",
+        "material":  "textil",
+        "volumen_mm3":  3108.411500823433,
+        "masa_candidata_kg":  0.0023313086256175749,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Ala_cinturon_D",
+        "material":  "espuma",
+        "volumen_mm3":  269191.31775906589,
+        "masa_candidata_kg":  0.016151479065543952,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "acolchados"
+    },
+    {
+        "pieza":  "REF_Bisagra_textil_D",
+        "material":  "textil",
+        "volumen_mm3":  4349.9999999999864,
+        "masa_candidata_kg":  0.00326249999999999,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Cinta_cierre_cinturon_D",
+        "material":  "textil",
+        "volumen_mm3":  3108.4115008234321,
+        "masa_candidata_kg":  0.0023313086256175741,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Hebilla_cinturon",
+        "material":  "hebilla_ref",
+        "volumen_mm3":  22830.159144781555,
+        "masa_candidata_kg":  0.028537698930976945,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "herrajes_textiles"
+    },
+    {
+        "pieza":  "REF_Correa_pectoral",
+        "material":  "textil",
+        "volumen_mm3":  6138.4115008234812,
+        "masa_candidata_kg":  0.0046038086256176107,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "REF_Hebilla_pectoral",
+        "material":  "hebilla_ref",
+        "volumen_mm3":  6999.2388980384594,
+        "masa_candidata_kg":  0.0087490486225480744,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "herrajes_textiles"
+    },
+    {
+        "pieza":  "REF_Asa_sistema",
+        "material":  "textil",
+        "volumen_mm3":  14828.955558577221,
+        "masa_candidata_kg":  0.011121716668932916,
+        "cantidad":  1,
+        "referencia":  true,
+        "grupo":  "textiles"
+    },
+    {
+        "pieza":  "Tornillo_M5x55_ISO4762_A2_80",
+        "material":  "herrajes",
+        "volumen_mm3":  1322.0783418171079,
+        "masa_candidata_kg":  0.010576626734536862,
+        "cantidad":  8,
+        "referencia":  false,
+        "grupo":  "fijaciones"
+    },
+    {
+        "pieza":  "Arandela_M5_16x3_GN6341",
+        "material":  "herrajes",
+        "volumen_mm3":  537.00028625976063,
+        "masa_candidata_kg":  0.004296002290078085,
+        "cantidad":  16,
+        "referencia":  false,
+        "grupo":  "fijaciones"
+    },
+    {
+        "pieza":  "Tuerca_M5_autofreno_metalica",
+        "material":  "herrajes",
+        "volumen_mm3":  178.95335878633523,
+        "masa_candidata_kg":  0.0014316268702906818,
+        "cantidad":  8,
+        "referencia":  false,
+        "grupo":  "fijaciones"
+    }
+]

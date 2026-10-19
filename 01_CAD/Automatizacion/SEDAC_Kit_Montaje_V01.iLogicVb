@@ -1,0 +1,251 @@
+' KIT SEDAC: crea un NUEVO ensamblaje y piezas auxiliares en una carpeta unica.
+' Referencia los IPT existentes, sin modificarlos ni sobrescribirlos.
+' Modelos simplificados de tornilleria: SIN rosca real, NO imprimir herrajes.
+' Ensamblaje estatico: ocurrencias fijadas (Grounded), sin restricciones cinematicas.
+' Impresora confirmada 40x40x70 mm: SOLO cabe el separador a escala real.
+Sub Main()
+    Dim root As String = "C:\Users\nicol\OneDrive\Desktop\SEDAC_CAD"
+    Dim anchorPath As String = System.IO.Path.Combine(root,"SEDAC_Anclaje.ipt")
+    Dim basePath As String = System.IO.Path.Combine(root,"SEDAC_Cuna_Base_V0.1.ipt")
+    If Not System.IO.File.Exists(anchorPath) OrElse Not System.IO.File.Exists(basePath) Then
+        MessageBox.Show("Faltan SEDAC_Anclaje.ipt o SEDAC_Cuna_Base_V0.1.ipt en la carpeta del proyecto.","SEDAC")
+        Return
+    End If
+    Dim stage As String = "leer piezas existentes"
+    Dim output As String = ""
+    Dim assy As Inventor.AssemblyDocument = Nothing
+    Try
+        Dim a As Inventor.PartDocument = TryCast(ThisApplication.Documents.Open(anchorPath,False),Inventor.PartDocument)
+        Dim b As Inventor.PartDocument = TryCast(ThisApplication.Documents.Open(basePath,False),Inventor.PartDocument)
+        If a Is Nothing OrElse b Is Nothing Then Throw New Exception("Los archivos fuente deben ser piezas.")
+        If a.Dirty OrElse b.Dirty Then Throw New Exception("Guarda tus cambios en las dos piezas fuente y vuelve a ejecutar. La regla no las guarda por ti.")
+        ' Detenerse si las cotas no corresponden al kit previsto; no forzar el montaje.
+        CheckP(a,"SEDAC_Ancho",90)
+        CheckP(a,"SEDAC_Alto",75)
+        CheckP(a,"SEDAC_Espesor",8)
+        CheckP(a,"SEDAC_Separacion",66)
+        CheckP(a,"SEDAC_RanuraY",25)
+        CheckP(a,"SEDAC_RanuraAncho",6.2)
+        CheckP(a,"SEDAC_RanuraLargo",30)
+        CheckP(b,"CB_Ancho",280)
+        CheckP(b,"CB_Fondo",140)
+        CheckP(b,"CB_Espesor",6)
+        CheckP(b,"CB_AlturaPosterior",60)
+        CheckP(b,"CB_SeparacionHorizontal",180)
+        CheckP(b,"CB_SeparacionVertical",20)
+        CheckP(b,"CB_AgujeroInferiorZ",30)
+        CheckP(b,"CB_DiametroAgujero",6.2)
+        CheckBox(a,90,75,8)
+        CheckBox(b,280,140,66)
+        stage = "crear carpeta de salida"
+        output = System.IO.Path.Combine(root,"01_CAD\Ensamblajes\Kit_V01_" & DateTime.Now.ToString("yyyyMMdd_HHmmss") & "_" & System.Guid.NewGuid().ToString("N").Substring(0,6))
+        System.IO.Directory.CreateDirectory(output)
+        Dim parts As String = System.IO.Path.Combine(output,"Componentes")
+        System.IO.Directory.CreateDirectory(parts)
+        Dim washerPath As String = System.IO.Path.Combine(parts,"REF_Arandela_M5_15x5p3x1p2.ipt")
+        Dim spacerPath As String = System.IO.Path.Combine(parts,"SEDAC_Separador_18x5p5x6.ipt")
+        Dim nutPath As String = System.IO.Path.Combine(parts,"REF_Tuerca_M5_Envolvente.ipt")
+        Dim bolt30 As String = System.IO.Path.Combine(parts,"REF_Tornillo_M5x30.ipt")
+        Dim bolt20 As String = System.IO.Path.Combine(parts,"REF_Tornillo_M5x20.ipt")
+        Dim panelPath As String = System.IO.Path.Combine(parts,"REF_Panel_Ensayo_360x420x3.ipt")
+        stage = "crear separador"
+        MakeRing(spacerPath,18,5.5,6,"Separador de prueba")
+        stage = "crear arandela"
+        MakeRing(washerPath,15,5.3,1.2,"Arandela comercial de referencia")
+        stage = "crear tuerca"
+        MakeNut(nutPath)
+        stage = "crear tornillo M5x30"
+        MakeBolt(bolt30,30)
+        stage = "crear tornillo M5x20"
+        MakeBolt(bolt20,20)
+        stage = "crear panel de ensayo"
+        MakePanel(panelPath)
+        stage = "crear ensamblaje"
+        assy = CType(ThisApplication.Documents.Add(Inventor.DocumentTypeEnum.kAssemblyDocumentObject, _
+            ThisApplication.FileManager.GetTemplateFile(Inventor.DocumentTypeEnum.kAssemblyDocumentObject),True),Inventor.AssemblyDocument)
+        assy.UnitsOfMeasure.LengthUnits = Inventor.UnitsTypeEnum.kMillimeterLengthUnits
+        Place(assy,panelPath,0,0,0,"Panel_de_ensayo")
+        Place(assy,anchorPath,50,295,9,"Anclaje_izquierdo")
+        Place(assy,anchorPath,220,295,9,"Anclaje_derecho")
+        ' Piso de la base en XY local; girar -90 grados sobre X:
+        ' X->X, Y->-Z, Z->Y. Parte posterior de base toca cara Z=3 del panel.
+        Dim baseMatrix As Inventor.Matrix = ThisApplication.TransientGeometry.CreateMatrix()
+        baseMatrix.Cell(1,1)=1 : baseMatrix.Cell(1,2)=0 : baseMatrix.Cell(1,3)=0
+        baseMatrix.Cell(2,1)=0 : baseMatrix.Cell(2,2)=0 : baseMatrix.Cell(2,3)=1
+        baseMatrix.Cell(3,1)=0 : baseMatrix.Cell(3,2)=-1 : baseMatrix.Cell(3,3)=0
+        baseMatrix.Cell(1,4)=4 : baseMatrix.Cell(2,4)=4 : baseMatrix.Cell(3,4)=14.3
+        Dim baseOcc As Inventor.ComponentOccurrence = assy.ComponentDefinition.Occurrences.Add(basePath,baseMatrix)
+        baseOcc.Name="Base_de_apoyo" : baseOcc.Grounded=True
+        stage = "colocar tornilleria de los dos anclajes"
+        Dim index As Integer = 0
+        For Each x As Double In New Double() {62,128,232,298}
+            index += 1
+            Dim tag As String = "Anclaje_" & index.ToString()
+            Place(assy,spacerPath,x,320,3,tag & "_separador")
+            Place(assy,washerPath,x,320,17,tag & "_arandela_frontal")
+            Place(assy,washerPath,x,320,-1.2,tag & "_arandela_posterior")
+            Place(assy,nutPath,x,320,-6.2,tag & "_tuerca")
+            Place(assy,bolt30,x,320,18.2,tag & "_M5x30")
+        Next
+        stage = "colocar tornilleria de la base"
+        index = 0
+        For Each x As Double In New Double() {90,270}
+            For Each y As Double In New Double() {70,90}
+                index += 1
+                Dim tag As String = "Base_" & index.ToString()
+                Place(assy,washerPath,x,y,9,tag & "_arandela_frontal")
+                Place(assy,washerPath,x,y,-1.2,tag & "_arandela_posterior")
+                Place(assy,nutPath,x,y,-6.2,tag & "_tuerca")
+                Place(assy,bolt20,x,y,10.2,tag & "_M5x20")
+            Next
+        Next
+        stage = "comprobar y guardar"
+        If Not assy.Update2(False) Then Throw New Exception("Inventor informa error al actualizar el ensamblaje.")
+        If assy.ComponentDefinition.Occurrences.Count <> 40 Then Throw New Exception("Cantidad inesperada de componentes.")
+        Dim assemblyPath As String = System.IO.Path.Combine(output,"SEDAC_Kit_Montaje_V01.iam")
+        assy.SaveAs(assemblyPath,False)
+        System.IO.File.WriteAllText(System.IO.Path.Combine(output,"ESTADO.txt"), _
+            "Kit creado y actualizado en Inventor. 40 ocurrencias fijadas. NO representa resistencia validada." & vbCrLf & _
+            "Panel 360x420x3 asumido. Dos anclajes, una base, cuatro separadores 18x5.5x6." & vbCrLf & _
+            "4 tornillos M5x30, 4 M5x20, 16 arandelas 15x5.3x1.2, 8 tuercas M5 (envolvente 8 entre caras x5 alto)." & vbCrLf & _
+            "Roscas no modeladas. No usar el kit para fabricar tornilleria. No se ha ejecutado prueba estructural." & vbCrLf & _
+            "Si cambias fuentes, las posiciones fijas no se ajustan automaticamente: revisar y regenerar el kit." & vbCrLf & _
+            "Referencia anclaje: " & anchorPath & vbCrLf & "Referencia base: " & basePath)
+        assy.Activate()
+        ThisApplication.ActiveView.Fit()
+        MessageBox.Show("Kit guardado en:" & vbCrLf & assemblyPath & vbCrLf & _
+            "Es un montaje estatico para revisar geometria. Herrajes simplificados, panel provisional." & vbCrLf & _
+            "Impresora 40x40x70 mm: SOLO imprimir el separador de Componentes. Anclaje y base no caben." & vbCrLf & _
+            "Las piezas REF_ son referencias, no archivos para imprimir.","SEDAC")
+    Catch ex As Exception
+        MessageBox.Show("Regla: ENSAMBLAJE revision 3. No se completo el kit." & vbCrLf & "Etapa: " & stage & vbCrLf & ex.ToString() & vbCrLf & _
+            "Las fuentes no se modificaron. Si existe, la carpeta parcial se conserva:" & vbCrLf & output,"SEDAC - Error")
+    End Try
+End Sub
+
+Sub CheckP(doc As Inventor.PartDocument, name As String, expectedMM As Double)
+    Dim actual As Double = doc.ComponentDefinition.Parameters.UserParameters.Item(name).Value*10
+    If Math.Abs(actual-expectedMM)>0.01 Then Throw New Exception(doc.DisplayName & ": " & name & " no coincide con el kit. Revisar antes de montar.")
+End Sub
+
+Sub CheckBox(doc As Inventor.PartDocument, w As Double, h As Double, d As Double)
+    If doc.ComponentDefinition.SurfaceBodies.Count<>1 Then Throw New Exception("La fuente no tiene un unico cuerpo.")
+    Dim body As Inventor.SurfaceBody = doc.ComponentDefinition.SurfaceBodies.Item(1)
+    If Not body.IsSolid Then Throw New Exception("La fuente no es solida.")
+    Dim box As Inventor.Box = body.RangeBox
+    Dim expected() As Double={w,h,d}
+    Dim mins() As Double={box.MinPoint.X*10,box.MinPoint.Y*10,box.MinPoint.Z*10}
+    Dim maxs() As Double={box.MaxPoint.X*10,box.MaxPoint.Y*10,box.MaxPoint.Z*10}
+    For i As Integer=0 To 2
+        If Math.Abs(mins(i))>0.05 OrElse Math.Abs(maxs(i)-expected(i))>0.05 Then
+            Throw New Exception("Envolvente u origen de " & doc.DisplayName & " distintos a los previstos. No se fuerza el montaje.")
+        End If
+    Next
+End Sub
+
+Function NewPart() As Inventor.PartDocument
+    Dim doc As Inventor.PartDocument = CType(ThisApplication.Documents.Add(Inventor.DocumentTypeEnum.kPartDocumentObject, _
+        ThisApplication.FileManager.GetTemplateFile(Inventor.DocumentTypeEnum.kPartDocumentObject),False),Inventor.PartDocument)
+    doc.UnitsOfMeasure.LengthUnits=Inventor.UnitsTypeEnum.kMillimeterLengthUnits
+    Return doc
+End Function
+
+Sub FinishPart(doc As Inventor.PartDocument, path As String)
+    If Not doc.Update2(False) Then Throw New Exception("Error al actualizar " & path)
+    If doc.ComponentDefinition.SurfaceBodies.Count<>1 Then Throw New Exception("Pieza sin un unico cuerpo: " & path)
+    doc.SaveAs(path,False)
+    doc.Close(True)
+End Sub
+
+Sub MakeRing(path As String, od As Double, id As Double, height As Double, name As String)
+    Dim doc As Inventor.PartDocument=NewPart()
+    Dim cd As Inventor.PartComponentDefinition=doc.ComponentDefinition
+    Dim up As Inventor.UserParameters=cd.Parameters.UserParameters
+    up.AddByValue("DiametroExterior",od/10,Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+    up.AddByValue("DiametroInterior",id/10,Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+    up.AddByValue("Largo",height/10,Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+    Dim tg As Inventor.TransientGeometry=ThisApplication.TransientGeometry
+    Dim sk As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    Dim outer As Inventor.SketchCircle=sk.SketchCircles.AddByCenterRadius(tg.CreatePoint2d(0,0),od/20)
+    Dim inner As Inventor.SketchCircle=sk.SketchCircles.AddByCenterRadius(outer.CenterSketchPoint,id/20)
+    ' Fijar solo el centro compartido; los diametros siguen editables.
+    sk.GeometricConstraints.AddGround(outer.CenterSketchPoint)
+    sk.DimensionConstraints.AddDiameter(outer,tg.CreatePoint2d(od/10,od/10)).Parameter.Expression="DiametroExterior"
+    sk.DimensionConstraints.AddDiameter(inner,tg.CreatePoint2d(id/10,-id/10)).Parameter.Expression="DiametroInterior"
+    Extrude(cd,sk,"Largo",Inventor.PartFeatureOperationEnum.kJoinOperation,False,name)
+    FinishPart(doc,path)
+End Sub
+
+Sub MakeBolt(path As String, lengthMM As Double)
+    Dim doc As Inventor.PartDocument=NewPart()
+    Dim cd As Inventor.PartComponentDefinition=doc.ComponentDefinition
+    Dim tg As Inventor.TransientGeometry=ThisApplication.TransientGeometry
+    cd.Parameters.UserParameters.AddByValue("LongitudBajoCabeza",lengthMM/10,Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+    Dim head As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    Hexagon(head,8)
+    Extrude(cd,head,"3.5 mm",Inventor.PartFeatureOperationEnum.kJoinOperation,False,"Cabeza_hexagonal_REF")
+    Dim shaft As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    shaft.SketchCircles.AddByCenterRadius(tg.CreatePoint2d(0,0),0.25)
+    Extrude(cd,shaft,"LongitudBajoCabeza",Inventor.PartFeatureOperationEnum.kJoinOperation,True,"Vastago_M5_sin_rosca_REF")
+    FinishPart(doc,path)
+End Sub
+
+Sub MakeNut(path As String)
+    Dim doc As Inventor.PartDocument=NewPart()
+    Dim cd As Inventor.PartComponentDefinition=doc.ComponentDefinition
+    Dim sk As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    Hexagon(sk,8)
+    ' Bore 5.1: clearance for visualization only; not a real thread specification.
+    sk.SketchCircles.AddByCenterRadius(ThisApplication.TransientGeometry.CreatePoint2d(0,0),0.255)
+    Extrude(cd,sk,"5 mm",Inventor.PartFeatureOperationEnum.kJoinOperation,False,"Envolvente_tuerca_sin_rosca_REF")
+    FinishPart(doc,path)
+End Sub
+
+Sub Hexagon(sk As Inventor.PlanarSketch, acrossFlatsMM As Double)
+    Dim radius As Double=acrossFlatsMM/(10*Math.Sqrt(3))
+    Dim p(5) As Inventor.SketchPoint
+    For i As Integer=0 To 5
+        Dim angle As Double=i*Math.PI/3
+        p(i)=sk.SketchPoints.Add(ThisApplication.TransientGeometry.CreatePoint2d(radius*Math.Cos(angle),radius*Math.Sin(angle)),False)
+    Next
+    For i As Integer=0 To 5
+        sk.SketchLines.AddByTwoPoints(p(i),p((i+1) Mod 6))
+    Next
+End Sub
+
+Sub MakePanel(path As String)
+    Dim doc As Inventor.PartDocument=NewPart()
+    Dim cd As Inventor.PartComponentDefinition=doc.ComponentDefinition
+    Dim tg As Inventor.TransientGeometry=ThisApplication.TransientGeometry
+    Dim sk As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    sk.SketchLines.AddAsTwoPointRectangle(tg.CreatePoint2d(0,0),tg.CreatePoint2d(36,42))
+    Extrude(cd,sk,"3 mm",Inventor.PartFeatureOperationEnum.kJoinOperation,False,"Panel_ensayo_NO_definitivo")
+    Dim holes As Inventor.PlanarSketch=cd.Sketches.Add(cd.WorkPlanes.Item(3))
+    For Each x As Double In New Double() {62,128,232,298}
+        holes.SketchCircles.AddByCenterRadius(tg.CreatePoint2d(x/10,32),0.275)
+    Next
+    For Each x As Double In New Double() {90,270}
+        For Each y As Double In New Double() {70,90}
+            holes.SketchCircles.AddByCenterRadius(tg.CreatePoint2d(x/10,y/10),0.275)
+        Next
+    Next
+    Extrude(cd,holes,"3 mm",Inventor.PartFeatureOperationEnum.kCutOperation,False,"Agujeros_ensayo_5p5")
+    FinishPart(doc,path)
+End Sub
+
+Sub Extrude(cd As Inventor.PartComponentDefinition, sk As Inventor.PlanarSketch, distance As String, operation As Inventor.PartFeatureOperationEnum, negative As Boolean, name As String)
+    Dim ed As Inventor.ExtrudeDefinition=cd.Features.ExtrudeFeatures.CreateExtrudeDefinition(sk.Profiles.AddForSolid(),operation)
+    Dim direction As Inventor.PartFeatureExtentDirectionEnum=Inventor.PartFeatureExtentDirectionEnum.kPositiveExtentDirection
+    If negative Then direction=Inventor.PartFeatureExtentDirectionEnum.kNegativeExtentDirection
+    ed.SetDistanceExtent(distance,direction)
+    cd.Features.ExtrudeFeatures.Add(ed).Name=name
+    sk.Visible=False
+End Sub
+
+Sub Place(assy As Inventor.AssemblyDocument, path As String, x As Double, y As Double, z As Double, name As String)
+    Dim m As Inventor.Matrix=ThisApplication.TransientGeometry.CreateMatrix()
+    m.SetTranslation(ThisApplication.TransientGeometry.CreateVector(x/10,y/10,z/10))
+    Dim occ As Inventor.ComponentOccurrence=assy.ComponentDefinition.Occurrences.Add(path,m)
+    occ.Name=name
+    occ.Grounded=True
+End Sub

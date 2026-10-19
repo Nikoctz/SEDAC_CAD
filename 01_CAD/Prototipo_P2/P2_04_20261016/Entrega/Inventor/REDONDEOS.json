@@ -1,0 +1,28 @@
+﻿[
+    {
+        "pieza":  "Refuerzo_C_I",
+        "radio_mm":  0.35,
+        "aplicado":  true
+    },
+    {
+        "pieza":  "Refuerzo_C_D",
+        "radio_mm":  0.35,
+        "aplicado":  true
+    },
+    {
+        "pieza":  "Interfaz_lumbar_aligerada",
+        "radio_mm":  0.5,
+        "aplicado":  false,
+        "error":  "Devuelto error HRESULT E_FAIL de una llamada a un componente COM."
+    },
+    {
+        "pieza":  "Yugo_superior_I",
+        "radio_mm":  0.5,
+        "aplicado":  true
+    },
+    {
+        "pieza":  "Yugo_superior_D",
+        "radio_mm":  0.5,
+        "aplicado":  true
+    }
+]

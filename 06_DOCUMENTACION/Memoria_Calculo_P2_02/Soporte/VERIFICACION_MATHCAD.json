@@ -1,0 +1,912 @@
+﻿[
+    {
+        "variable":  "Mass",
+        "valor_mathcad_SI":  25,
+        "valor_control_SI":  25,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "grav",
+        "valor_mathcad_SI":  9.81,
+        "valor_control_SI":  9.81,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "av",
+        "valor_mathcad_SI":  3,
+        "valor_control_SI":  3,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ah",
+        "valor_mathcad_SI":  1,
+        "valor_control_SI":  1,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "eta",
+        "valor_mathcad_SI":  0.7,
+        "valor_control_SI":  0.7,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Fv",
+        "valor_mathcad_SI":  735.75,
+        "valor_control_SI":  735.75,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Fh",
+        "valor_mathcad_SI":  245.25,
+        "valor_control_SI":  245.25,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "H",
+        "valor_mathcad_SI":  0.5,
+        "valor_control_SI":  0.5,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Sep",
+        "valor_mathcad_SI":  0.2,
+        "valor_control_SI":  0.2,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "b",
+        "valor_mathcad_SI":  0.05,
+        "valor_control_SI":  0.05,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "d",
+        "valor_mathcad_SI":  0.025,
+        "valor_control_SI":  0.025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "t",
+        "valor_mathcad_SI":  0.0025,
+        "valor_control_SI":  0.0025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ecc",
+        "valor_mathcad_SI":  0.1,
+        "valor_control_SI":  0.1,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Linput",
+        "valor_mathcad_SI":  0.4,
+        "valor_control_SI":  0.4,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Le",
+        "valor_mathcad_SI":  0.4,
+        "valor_control_SI":  0.4,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nReq",
+        "valor_mathcad_SI":  2.2,
+        "valor_control_SI":  2.2,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "deltaLim",
+        "valor_mathcad_SI":  0.005,
+        "valor_control_SI":  0.005,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SyR",
+        "valor_mathcad_SI":  240000000,
+        "valor_control_SI":  240000000.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SyS",
+        "valor_mathcad_SI":  130000000,
+        "valor_control_SI":  130000000.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SyB",
+        "valor_mathcad_SI":  450000000,
+        "valor_control_SI":  450000000.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Emod",
+        "valor_mathcad_SI":  69000000000,
+        "valor_control_SI":  69000000000.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nu",
+        "valor_mathcad_SI":  0.33,
+        "valor_control_SI":  0.33,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "rho",
+        "valor_mathcad_SI":  2700,
+        "valor_control_SI":  2700.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Kt",
+        "valor_mathcad_SI":  2,
+        "valor_control_SI":  2,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Kslot",
+        "valor_mathcad_SI":  1.5,
+        "valor_control_SI":  1.5,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Kb",
+        "valor_mathcad_SI":  1.2,
+        "valor_control_SI":  1.2,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "c0",
+        "valor_mathcad_SI":  0.21460183660255172,
+        "valor_control_SI":  0.21460183660255172,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "c1",
+        "valor_mathcad_SI":  0.13698379248397125,
+        "valor_control_SI":  0.13698379248397125,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ro",
+        "valor_mathcad_SI":  0.005,
+        "valor_control_SI":  0.005,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ri",
+        "valor_mathcad_SI":  0.0025,
+        "valor_control_SI":  0.0025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Area",
+        "valor_mathcad_SI":  0.00033390486225480867,
+        "valor_control_SI":  0.00033390486225480867,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ix",
+        "valor_mathcad_SI":  3.2784009404865355E-08,
+        "valor_control_SI":  3.2784009404865355E-08,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Iz",
+        "valor_mathcad_SI":  9.88658891382892E-08,
+        "valor_control_SI":  9.8865889138289168E-08,
+        "error_relativo":  2.6773419864430841E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "Zx",
+        "valor_mathcad_SI":  2.6227207523892284E-06,
+        "valor_control_SI":  2.6227207523892284E-06,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Zz",
+        "valor_mathcad_SI":  3.9546355655315678E-06,
+        "valor_control_SI":  3.9546355655315661E-06,
+        "error_relativo":  4.2837471783089351E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "MassR",
+        "valor_mathcad_SI":  0.90154312808798343,
+        "valor_control_SI":  0.9015431280879834,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Nr",
+        "valor_mathcad_SI":  515.025,
+        "valor_control_SI":  515.025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Me",
+        "valor_mathcad_SI":  51.5025,
+        "valor_control_SI":  51.5025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigAx",
+        "valor_mathcad_SI":  1542430.3693037431,
+        "valor_control_SI":  1542430.3693037431,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigEc",
+        "valor_mathcad_SI":  19637050.552592225,
+        "valor_control_SI":  19637050.552592225,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigH",
+        "valor_mathcad_SI":  31417496.063282885,
+        "valor_control_SI":  31417496.06328289,
+        "error_relativo":  1.1857374919243167E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigN",
+        "valor_mathcad_SI":  52596976.985178858,
+        "valor_control_SI":  52596976.98517886,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Am",
+        "valor_mathcad_SI":  0.0010566786466911066,
+        "valor_control_SI":  0.0010566786466911066,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Tr",
+        "valor_mathcad_SI":  17.1675,
+        "valor_control_SI":  17.1675,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "TauT",
+        "valor_mathcad_SI":  3249332.2456658836,
+        "valor_control_SI":  3249332.2456658836,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "TauV",
+        "valor_mathcad_SI":  1625864.36640483,
+        "valor_control_SI":  1625864.36640483,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigVM",
+        "valor_mathcad_SI":  106540970.78586194,
+        "valor_control_SI":  106540970.78586194,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nR",
+        "valor_mathcad_SI":  2.2526545255756969,
+        "valor_control_SI":  2.252654525575697,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "deltaH",
+        "valor_mathcad_SI":  0.0016190289666549473,
+        "valor_control_SI":  0.0016190289666549473,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "deltaE",
+        "valor_mathcad_SI":  0.0018214075874868156,
+        "valor_control_SI":  0.0018214075874868156,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "deltaR",
+        "valor_mathcad_SI":  0.0034404365541417627,
+        "valor_control_SI":  0.0034404365541417627,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Kcol",
+        "valor_mathcad_SI":  2,
+        "valor_control_SI":  2,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Pcr",
+        "valor_mathcad_SI":  34884.373503164621,
+        "valor_control_SI":  34884.37350316462,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nEuler",
+        "valor_mathcad_SI":  67.733359551797719,
+        "valor_control_SI":  67.73335955179772,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bp",
+        "valor_mathcad_SI":  0.04,
+        "valor_control_SI":  0.04,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "kplate",
+        "valor_mathcad_SI":  4,
+        "valor_control_SI":  4,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigCr",
+        "valor_mathcad_SI":  995087274.61606085,
+        "valor_control_SI":  995087274.6160609,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigCap",
+        "valor_mathcad_SI":  240000000,
+        "valor_control_SI":  240000000.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pitch",
+        "valor_mathcad_SI":  0.045,
+        "valor_control_SI":  0.045,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "armH",
+        "valor_mathcad_SI":  0.0625,
+        "valor_control_SI":  0.0625,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "As8",
+        "valor_mathcad_SI":  3.66E-05,
+        "valor_control_SI":  3.66E-05,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "dia8",
+        "valor_mathcad_SI":  0.008,
+        "valor_control_SI":  0.008,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Vy",
+        "valor_mathcad_SI":  515.025,
+        "valor_control_SI":  515.025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Vz",
+        "valor_mathcad_SI":  171.67499999999998,
+        "valor_control_SI":  171.67499999999998,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "MomC",
+        "valor_mathcad_SI":  62.232187499999995,
+        "valor_control_SI":  62.232187499999995,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "R8old",
+        "valor_mathcad_SI":  1691.1899733249959,
+        "valor_control_SI":  1691.189973324996,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "R8",
+        "valor_mathcad_SI":  1789.4139462754279,
+        "valor_control_SI":  1789.4139462754279,
+        "error_relativo":  1.2706600164623647E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "tg",
+        "valor_mathcad_SI":  0.004,
+        "valor_control_SI":  0.004,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "VM8",
+        "valor_mathcad_SI":  84681854.391294152,
+        "valor_control_SI":  84681854.39129415,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nBolt8",
+        "valor_mathcad_SI":  5.31400738959565,
+        "valor_control_SI":  5.31400738959565,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "BearR",
+        "valor_mathcad_SI":  89470697.313771382,
+        "valor_control_SI":  89470697.31377138,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nBearR",
+        "valor_mathcad_SI":  2.6824424890567951,
+        "valor_control_SI":  2.682442489056795,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "BearG",
+        "valor_mathcad_SI":  55919185.821107127,
+        "valor_control_SI":  55919185.82110713,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nBearG",
+        "valor_mathcad_SI":  2.3247834905158884,
+        "valor_control_SI":  2.3247834905158884,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "edge",
+        "valor_mathcad_SI":  0.0125,
+        "valor_control_SI":  0.0125,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "hole8",
+        "valor_mathcad_SI":  0.0086,
+        "valor_control_SI":  0.0086,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "TearG",
+        "valor_mathcad_SI":  47246278.517093986,
+        "valor_control_SI":  47246278.517093986,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nTearG",
+        "valor_mathcad_SI":  2.75153946681674,
+        "valor_control_SI":  2.75153946681674,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "hRoot",
+        "valor_mathcad_SI":  0.08,
+        "valor_control_SI":  0.08,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Vcart",
+        "valor_mathcad_SI":  542.88401730940654,
+        "valor_control_SI":  542.8840173094065,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigRoot",
+        "valor_mathcad_SI":  14585668.945312496,
+        "valor_control_SI":  14585668.945312496,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "TauRoot",
+        "valor_mathcad_SI":  1696512.5540918952,
+        "valor_control_SI":  1696512.5540918952,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "VMroot",
+        "valor_mathcad_SI":  29757432.894712377,
+        "valor_control_SI":  29757432.894712377,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nRoot",
+        "valor_mathcad_SI":  4.3686564113230277,
+        "valor_control_SI":  4.368656411323028,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Width",
+        "valor_mathcad_SI":  0.3,
+        "valor_control_SI":  0.3,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Depth",
+        "valor_mathcad_SI":  0.125,
+        "valor_control_SI":  0.125,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tf",
+        "valor_mathcad_SI":  0.0025,
+        "valor_control_SI":  0.0025,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "spanF",
+        "valor_mathcad_SI":  0.065,
+        "valor_control_SI":  0.065,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "over",
+        "valor_mathcad_SI":  0.04,
+        "valor_control_SI":  0.04,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ppatch",
+        "valor_mathcad_SI":  100,
+        "valor_control_SI":  100,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "strip",
+        "valor_mathcad_SI":  0.05,
+        "valor_control_SI":  0.05,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "qfloor",
+        "valor_mathcad_SI":  39240,
+        "valor_control_SI":  39240.0,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Mspan",
+        "valor_mathcad_SI":  53.223625,
+        "valor_control_SI":  53.223625,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Medge",
+        "valor_mathcad_SI":  111.392,
+        "valor_control_SI":  111.392,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Mfloor",
+        "valor_mathcad_SI":  111.392,
+        "valor_control_SI":  111.392,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigFloor",
+        "valor_mathcad_SI":  106936319.99999999,
+        "valor_control_SI":  106936319.99999999,
+        "error_relativo":  1.3934611920297665E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "nFloor",
+        "valor_mathcad_SI":  1.2156767691276456,
+        "valor_control_SI":  1.2156767691276456,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tNeed",
+        "valor_mathcad_SI":  0.0033631194310776878,
+        "valor_control_SI":  0.003363119431077688,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tfProp",
+        "valor_mathcad_SI":  0.0035,
+        "valor_control_SI":  0.0035,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigProp",
+        "valor_mathcad_SI":  54559346.9387755,
+        "valor_control_SI":  54559346.9387755,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nProp",
+        "valor_mathcad_SI":  2.3827264674901851,
+        "valor_control_SI":  2.382726467490185,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "br",
+        "valor_mathcad_SI":  0.02,
+        "valor_control_SI":  0.02,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tr",
+        "valor_mathcad_SI":  0.0015,
+        "valor_control_SI":  0.0015,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Irib",
+        "valor_mathcad_SI":  5.8272229432078171E-09,
+        "valor_control_SI":  5.8272229432078171E-09,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Zrib",
+        "valor_mathcad_SI":  5.8272229432078168E-07,
+        "valor_control_SI":  5.8272229432078168E-07,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Lrib",
+        "valor_mathcad_SI":  0.25,
+        "valor_control_SI":  0.25,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigRib",
+        "valor_mathcad_SI":  55239112.71924033,
+        "valor_control_SI":  55239112.71924033,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nRib",
+        "valor_mathcad_SI":  4.3447475563162987,
+        "valor_control_SI":  4.344747556316299,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "slot",
+        "valor_mathcad_SI":  0.052000000000000005,
+        "valor_control_SI":  0.052000000000000005,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bridgeS",
+        "valor_mathcad_SI":  0.024,
+        "valor_control_SI":  0.024,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ta",
+        "valor_mathcad_SI":  0.005,
+        "valor_control_SI":  0.005,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigSlot",
+        "valor_mathcad_SI":  100429874.99999999,
+        "valor_control_SI":  100429874.99999999,
+        "error_relativo":  1.4837379010824872E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "nSlot",
+        "valor_mathcad_SI":  2.3897271603693624,
+        "valor_control_SI":  2.3897271603693624,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tb",
+        "valor_mathcad_SI":  0.005,
+        "valor_control_SI":  0.005,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bridgeB",
+        "valor_mathcad_SI":  0.026000000000000002,
+        "valor_control_SI":  0.026000000000000002,
+        "error_relativo":  1.3344026738283131E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigBelt",
+        "valor_mathcad_SI":  92704499.999999985,
+        "valor_control_SI":  92704499.99999999,
+        "error_relativo":  1.6073827261726946E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "nBelt",
+        "valor_mathcad_SI":  2.5888710904001426,
+        "valor_control_SI":  2.5888710904001426,
+        "error_relativo":  1.715377839772714E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "Zbelt",
+        "valor_mathcad_SI":  4.1666666666666672E-07,
+        "valor_control_SI":  4.1666666666666672E-07,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "SigYoke",
+        "valor_mathcad_SI":  98884799.999999985,
+        "valor_control_SI":  98884799.99999999,
+        "error_relativo":  1.5069213057869012E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "nYoke",
+        "valor_mathcad_SI":  2.4270666472501339,
+        "valor_control_SI":  2.427066647250134,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "riseX",
+        "valor_mathcad_SI":  0.31999999999999995,
+        "valor_control_SI":  0.31999999999999995,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "LenX",
+        "valor_mathcad_SI":  0.37735924528226411,
+        "valor_control_SI":  0.3773592452822641,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "ForceX",
+        "valor_mathcad_SI":  462.73677452737633,
+        "valor_control_SI":  462.7367745273763,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "NetX",
+        "valor_mathcad_SI":  3.48E-05,
+        "valor_control_SI":  3.48E-05,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nX",
+        "valor_mathcad_SI":  9.7766165324134011,
+        "valor_control_SI":  9.776616532413401,
+        "error_relativo":  1.816944372841991E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "As6",
+        "valor_mathcad_SI":  2.01E-05,
+        "valor_control_SI":  2.01E-05,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "R6",
+        "valor_mathcad_SI":  309.015,
+        "valor_control_SI":  309.015,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "VM6",
+        "valor_mathcad_SI":  26628342.303527191,
+        "valor_control_SI":  26628342.30352719,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nM6",
+        "valor_mathcad_SI":  16.899287040500187,
+        "valor_control_SI":  16.899287040500187,
+        "error_relativo":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "MinYield",
+        "valor_mathcad_SI":  1.2156767691276456,
+        "valor_control_SI":  1.2156767691276456,
+        "error_relativo":  0,
+        "coincide":  true
+    }
+]

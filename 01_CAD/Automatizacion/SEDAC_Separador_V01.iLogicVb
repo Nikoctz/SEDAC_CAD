@@ -1,0 +1,52 @@
+' Tercera pieza SEDAC: separador para prueba geometrica, no resistencia validada.
+' Usar una NUEVA pieza estandar vacia. Modificar SP_* para actualizar directamente.
+Sub Main()
+    Dim doc As Inventor.PartDocument = TryCast(ThisApplication.ActiveDocument, Inventor.PartDocument)
+    If doc Is Nothing Then
+        MessageBox.Show("Abre una nueva pieza estandar vacia.", "SEDAC")
+        Return
+    End If
+    Dim cd As Inventor.PartComponentDefinition = doc.ComponentDefinition
+    If cd.Features.Count > 0 OrElse cd.Sketches.Count > 0 OrElse cd.SurfaceBodies.Count > 0 Then
+        MessageBox.Show("Usa una pieza vacia. El documento actual se conserva.", "SEDAC")
+        Return
+    End If
+    Dim tx As Inventor.Transaction = Nothing
+    Dim stage As String = "iniciar separador"
+    Try
+        tx = ThisApplication.TransactionManager.StartTransaction(doc,"SEDAC - Separador")
+        Dim up As Inventor.UserParameters = cd.Parameters.UserParameters
+        up.AddByExpression("SP_DiametroExterior","18 mm",Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+        up.AddByExpression("SP_DiametroInterior","5.5 mm",Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+        up.AddByExpression("SP_Largo","6 mm",Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+        Dim tg As Inventor.TransientGeometry = ThisApplication.TransientGeometry
+        stage = "crear circulos concentricos"
+        Dim sk As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        sk.Name = "SP_Anillo"
+        Dim outer As Inventor.SketchCircle = sk.SketchCircles.AddByCenterRadius(tg.CreatePoint2d(0,0),0.9)
+        Dim inner As Inventor.SketchCircle = sk.SketchCircles.AddByCenterRadius(outer.CenterSketchPoint,0.275)
+        ' Crear desde Point2d; OriginPoint no es un centro valido en esta llamada.
+        stage = "fijar centro comun"
+        sk.GeometricConstraints.AddGround(outer.CenterSketchPoint)
+        stage = "acotar diametros"
+        sk.DimensionConstraints.AddDiameter(outer,tg.CreatePoint2d(1,1)).Parameter.Expression = "SP_DiametroExterior"
+        sk.DimensionConstraints.AddDiameter(inner,tg.CreatePoint2d(0.4,-0.6)).Parameter.Expression = "SP_DiametroInterior"
+        stage = "crear extrusion"
+        Dim ed As Inventor.ExtrudeDefinition = cd.Features.ExtrudeFeatures.CreateExtrudeDefinition(sk.Profiles.AddForSolid(),Inventor.PartFeatureOperationEnum.kJoinOperation)
+        ed.SetDistanceExtent("SP_Largo",Inventor.PartFeatureExtentDirectionEnum.kPositiveExtentDirection)
+        cd.Features.ExtrudeFeatures.Add(ed).Name = "SP_Separacion"
+        sk.Visible = False
+        doc.UnitsOfMeasure.LengthUnits = Inventor.UnitsTypeEnum.kMillimeterLengthUnits
+        If Not doc.Update2(False) Then Throw New Exception("No se pudo actualizar el separador.")
+        tx.End()
+        tx = Nothing
+    Catch ex As Exception
+        If tx IsNot Nothing Then tx.Abort()
+        MessageBox.Show("Regla: SEPARADOR revision 3" & vbCrLf & "Etapa: " & stage & vbCrLf & ex.ToString(),"SEDAC - Error")
+        Return
+    End Try
+    ThisApplication.ActiveView.Fit()
+    MessageBox.Show("Separador: exterior 18 / interior 5.5 / largo 6 mm." & vbCrLf & _
+        "Guardar como SEDAC_Separador_6mm_V0.1.ipt. Cuatro unidades para dos anclajes." & vbCrLf & _
+        "Cambiar SP_* en Parameters actualiza la pieza, sin volver a ejecutar.","SEDAC")
+End Sub

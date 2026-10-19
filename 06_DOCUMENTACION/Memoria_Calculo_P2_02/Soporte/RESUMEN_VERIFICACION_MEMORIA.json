@@ -1,0 +1,22 @@
+{
+  "fecha": "2026-10-15",
+  "documento": "MC01",
+  "formato": "XMCD clasico compatible con Mathcad 15",
+  "motor_COM": "14.1.4.587",
+  "paginas": 17,
+  "variables_verificadas": 130,
+  "errores_en_regiones_guardadas": 0,
+  "control_numerico": "130 valores coincidentes, tolerancia relativa 1e-8",
+  "maquetacion": {
+    "pages": 17,
+    "regions": 348,
+    "overlaps": [],
+    "horizontal_overflow": 0,
+    "source": "Renderizado por Mathcad, exportacion HTML de hoja calculada"
+  },
+  "n_piso_2p5": 1.2156767691276456,
+  "n_objetivo": 2.2,
+  "espesor_orientativo_mm": 3.3631194310776875,
+  "n_comparacion_3p5": 2.382726467490185,
+  "CAD_modificado": false
+}

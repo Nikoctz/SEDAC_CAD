@@ -1,0 +1,52 @@
+﻿pieza,cantidad,material,masa_unidad_kg,masa_grupo_kg,grupo,incluida_reserva_textil
+Riel_I,1,6061,0.3415413148138518,0.3415413148138518,Dos rieles,False
+Casquillo_M6_I_45,1,6061,0.004428354446980795,0.004428354446980795,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_I_80,1,6061,0.00442835444698079,0.00442835444698079,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_I_365,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_I_395,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_I_165,1,6061,0.00442835444698078,0.00442835444698078,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_I_470,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Pasador_hueco_M6_I_20,1,6061,0.006343318532162224,0.006343318532162224,"Casquillos, pasadores, apoyos y calces",False
+Pasador_hueco_M6_I_100,1,6061,0.006343318532162213,0.006343318532162213,"Casquillos, pasadores, apoyos y calces",False
+Cartela_I,1,6061,0.10817053967974516,0.10817053967974516,Dos cartelas,False
+Apoyo_interior_M5_I_15,1,6061,0.002071589786647179,0.002071589786647179,"Casquillos, pasadores, apoyos y calces",False
+Apoyo_interior_M5_I_60,1,6061,0.002071589786647186,0.002071589786647186,"Casquillos, pasadores, apoyos y calces",False
+Apoyo_interior_M5_I_105,1,6061,0.002071589786647188,0.002071589786647188,"Casquillos, pasadores, apoyos y calces",False
+Riel_D,1,6061,0.34154131481385236,0.34154131481385236,Dos rieles,False
+Casquillo_M6_D_45,1,6061,0.004428354446980795,0.004428354446980795,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_D_80,1,6061,0.00442835444698079,0.00442835444698079,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_D_365,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_D_395,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_D_165,1,6061,0.00442835444698078,0.00442835444698078,"Casquillos, pasadores, apoyos y calces",False
+Casquillo_M6_D_470,1,6061,0.004428354446980792,0.004428354446980792,"Casquillos, pasadores, apoyos y calces",False
+Pasador_hueco_M6_D_20,1,6061,0.006343318532162224,0.006343318532162224,"Casquillos, pasadores, apoyos y calces",False
+Pasador_hueco_M6_D_100,1,6061,0.006343318532162213,0.006343318532162213,"Casquillos, pasadores, apoyos y calces",False
+Cartela_D,1,6061,0.10817053967974496,0.10817053967974496,Dos cartelas,False
+Apoyo_interior_M5_D_15,1,6061,0.0020715897866472014,0.0020715897866472014,"Casquillos, pasadores, apoyos y calces",False
+Apoyo_interior_M5_D_60,1,6061,0.0020715897866471888,0.0020715897866471888,"Casquillos, pasadores, apoyos y calces",False
+Apoyo_interior_M5_D_105,1,6061,0.002071589786647187,0.002071589786647187,"Casquillos, pasadores, apoyos y calces",False
+Refuerzo_cuna_1,1,6061,0.06053102462435557,0.06053102462435557,Piso y tres refuerzos de cuna,False
+Refuerzo_cuna_2,1,6061,0.060531024624355584,0.060531024624355584,Piso y tres refuerzos de cuna,False
+Refuerzo_cuna_3,1,6061,0.060531024624355605,0.060531024624355605,Piso y tres refuerzos de cuna,False
+Cuna_modular,1,5052,0.287938862854744,0.287938862854744,Piso y tres refuerzos de cuna,False
+Travesano_Bajo,1,6061,0.03459302601306059,0.03459302601306059,Travesaños y diagonales,False
+Travesano_Alto,1,6061,0.03459302601306057,0.03459302601306057,Travesaños y diagonales,False
+Diagonal_1,1,5052,0.04130466706639616,0.04130466706639616,Travesaños y diagonales,False
+Diagonal_2,1,5052,0.04130466706639606,0.04130466706639606,Travesaños y diagonales,False
+Calce_X_100_165,1,6061,0.0006465209185528839,0.0006465209185528839,"Casquillos, pasadores, apoyos y calces",False
+Calce_X_-100_470,1,6061,0.000646520918552884,0.000646520918552884,"Casquillos, pasadores, apoyos y calces",False
+Anclaje_hombro_I,1,anclaje,0.050674171718310915,0.050674171718310915,Anclajes de hombro y cinturón,False
+Anclaje_hombro_D,1,anclaje,0.05067417171831101,0.05067417171831101,Anclajes de hombro y cinturón,False
+Anclaje_cinturon_I,1,anclaje,0.05903843751657945,0.05903843751657945,Anclajes de hombro y cinturón,False
+Anclaje_cinturon_D,1,anclaje,0.059038437516578585,0.059038437516578585,Anclajes de hombro y cinturón,False
+REF_Acolchado_I,1,pad,0.01476493800988155,0.01476493800988155,Acolchado de referencia (dentro de reserva textil),True
+REF_Acolchado_D,1,pad,0.014764938009881549,0.014764938009881549,Acolchado de referencia (dentro de reserva textil),True
+Protector_bolsa_aligerado,1,hdpe,0.09612928152973615,0.09612928152973615,Protector HDPE,False
+Tornillo_ISO4762_M6x65_A2_80,4,herrajes,0.01786634702045808,0.07146538808183232,"Tornillos, tuercas y arandelas",False
+Arandela_ISO7089_M6,32,herrajes,0.0010358710624828996,0.033147873999452786,"Tornillos, tuercas y arandelas",False
+Tuerca_autofrenante_M6_DIN980,16,herrajes,0.002799753911814458,0.04479606258903133,"Tornillos, tuercas y arandelas",False
+Tornillo_ISO4762_M5x40_A2_80,6,herrajes,0.00823151736951306,0.04938910421707836,"Tornillos, tuercas y arandelas",False
+Arandela_ISO7089_M5,12,herrajes,0.0004518238554393035,0.005421886265271642,"Tornillos, tuercas y arandelas",False
+Tuerca_autofrenante_M5_DIN980,6,herrajes,0.0014316268702906818,0.008589761221744091,"Tornillos, tuercas y arandelas",False
+Tornillo_ISO4762_M6x60_A2_80,4,herrajes,0.016735373665165806,0.06694149466066322,"Tornillos, tuercas y arandelas",False
+Tornillo_ISO4762_M6x55_A2_80,8,herrajes,0.015604400309873525,0.1248352024789882,"Tornillos, tuercas y arandelas",False

@@ -1,0 +1,186 @@
+' SEDAC - maqueta geometrica de base/cuna desmontable.
+' Ejecutar en un NUEVO archivo de pieza estandar VACIO, nunca en el anclaje.
+' Cotas asumidas autorizadas por el usuario. No definen una base metalica calculada.
+' Parametros en mm; API geométrica en cm. Modificar CB_* y ejecutar otra vez.
+Sub Main()
+    Dim doc As Inventor.PartDocument = TryCast(ThisApplication.ActiveDocument, Inventor.PartDocument)
+    If doc Is Nothing Then
+        MessageBox.Show("Abre una nueva pieza estandar (.ipt).", "SEDAC - Base")
+        Return
+    End If
+    If TypeOf ThisApplication.ActiveEditObject Is Inventor.PlanarSketch OrElse TypeOf ThisApplication.ActiveEditObject Is Inventor.Sketch3D Then
+        MessageBox.Show("Finaliza el boceto activo antes de ejecutar.", "SEDAC - Base")
+        Return
+    End If
+    Dim cd As Inventor.PartComponentDefinition = doc.ComponentDefinition
+    If TypeOf cd Is Inventor.SheetMetalComponentDefinition Then
+        MessageBox.Show("Esta maqueta requiere una pieza estandar, no chapa.", "SEDAC - Base")
+        Return
+    End If
+    Const marker As String = "SEDAC_Cuna_Base_V01"
+    Dim rebuild As Boolean = doc.AttributeSets.NameIsUsed(marker)
+    Dim names() As String = {"CB_Piso", "CB_ParedPosterior", "CB_LabiosLaterales", "CB_SalidaLibre", "CB_AgujerosPanel"}
+    If rebuild Then
+        If cd.Features.Count <> 6 OrElse cd.Sketches.Count <> 5 OrElse cd.Sketches3D.Count <> 0 OrElse cd.SurfaceBodies.Count <> 1 Then
+            MessageBox.Show("Hay cambios ajenos al generador. No se modifica la base; usa una pieza nueva para otra variante.", "SEDAC - Base")
+            Return
+        End If
+        Try
+            For Each n As String In names
+                Dim f As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Item(n)
+            Next
+            Dim rounded As Inventor.FilletFeature = cd.Features.FilletFeatures.Item("CB_BordesSuaves")
+        Catch
+            MessageBox.Show("No se reconoce la estructura generada. Se conserva el modelo.", "SEDAC - Base")
+            Return
+        End Try
+    ElseIf cd.Features.Count > 0 OrElse cd.Sketches.Count > 0 OrElse cd.SurfaceBodies.Count > 0 OrElse cd.Sketches3D.Count > 0 Then
+        MessageBox.Show("La pieza activa ya tiene geometria. Guarda tu ANCLAJE y abre New > Standard (mm).ipt para generar la BASE.", "SEDAC - Base")
+        Return
+    End If
+
+    Dim tx As Inventor.Transaction = Nothing
+    Dim stage As String = "parametros"
+    Try
+        tx = ThisApplication.TransactionManager.StartTransaction(doc, "SEDAC - Base conceptual V0.1")
+        Dim up As Inventor.UserParameters = cd.Parameters.UserParameters
+        EnsureMM(up, "CB_Ancho", "280 mm")
+        EnsureMM(up, "CB_Fondo", "140 mm")
+        EnsureMM(up, "CB_Espesor", "6 mm")
+        EnsureMM(up, "CB_AlturaPosterior", "60 mm")
+        EnsureMM(up, "CB_AlturaLabio", "15 mm")
+        EnsureMM(up, "CB_AberturaAncho", "60 mm")
+        EnsureMM(up, "CB_AberturaProfundidad", "90 mm")
+        EnsureMM(up, "CB_DiametroAgujero", "6.2 mm")
+        EnsureMM(up, "CB_SeparacionHorizontal", "180 mm")
+        EnsureMM(up, "CB_AgujeroInferiorZ", "30 mm")
+        EnsureMM(up, "CB_SeparacionVertical", "20 mm")
+        EnsureMM(up, "CB_RadioBorde", "1 mm")
+        doc.Update()
+        Dim w As Double = up.Item("CB_Ancho").Value
+        Dim d As Double = up.Item("CB_Fondo").Value
+        Dim t As Double = up.Item("CB_Espesor").Value
+        Dim bh As Double = up.Item("CB_AlturaPosterior").Value
+        Dim lh As Double = up.Item("CB_AlturaLabio").Value
+        Dim nw As Double = up.Item("CB_AberturaAncho").Value
+        Dim nd As Double = up.Item("CB_AberturaProfundidad").Value
+        Dim hd As Double = up.Item("CB_DiametroAgujero").Value
+        Dim sx As Double = up.Item("CB_SeparacionHorizontal").Value
+        Dim z1 As Double = up.Item("CB_AgujeroInferiorZ").Value
+        Dim sz As Double = up.Item("CB_SeparacionVertical").Value
+        Dim r As Double = up.Item("CB_RadioBorde").Value
+        If w <= 0 OrElse d <= 0 OrElse t <= 0 OrElse bh <= 0 OrElse lh <= 0 OrElse _
+           nw <= 0 OrElse nd <= nw/2 OrElse hd <= 0 OrElse sx <= hd OrElse sz <= hd OrElse r <= 0 Then
+            Throw New Exception("Revisa dimensiones: deben ser positivas y las aberturas no pueden solaparse.")
+        End If
+        If r >= t/2 OrElse lh >= bh OrElse nd >= d-t-2*r OrElse nw >= w-2*t-4*r OrElse _
+           (w-sx-hd)/2 <= t+2*r OrElse z1-hd/2 <= t+lh+2*r OrElse _
+           z1+sz+hd/2 >= t+bh-2*r OrElse sz-hd <= 2*r Then
+            Throw New Exception("No hay espacio suficiente para paredes, agujeros o redondeos con esas cotas.")
+        End If
+        If rebuild Then
+            cd.Features.FilletFeatures.Item("CB_BordesSuaves").Delete()
+            For i As Integer = names.Length-1 To 0 Step -1
+                cd.Features.ExtrudeFeatures.Item(names(i)).Delete(False, False, False)
+            Next
+        End If
+        Dim tg As Inventor.TransientGeometry = ThisApplication.TransientGeometry
+        Dim positive As Inventor.PartFeatureExtentDirectionEnum = Inventor.PartFeatureExtentDirectionEnum.kPositiveExtentDirection
+        stage = "piso"
+        Dim floor As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        floor.Name = "CB_01_Planta"
+        Rect(floor, tg, 0, 0, w, d)
+        Extrude(cd, floor, "CB_Espesor", Inventor.PartFeatureOperationEnum.kJoinOperation, positive, names(0))
+
+        stage = "pared posterior"
+        Dim back As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        back.Name = "CB_02_UnionPosterior"
+        Rect(back, tg, 0, d-t, w, d)
+        Extrude(cd, back, "CB_Espesor + CB_AlturaPosterior", Inventor.PartFeatureOperationEnum.kJoinOperation, positive, names(1))
+
+        stage = "labios laterales"
+        Dim lips As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        lips.Name = "CB_03_RetencionLateral"
+        Rect(lips, tg, 0, 0, t, d-t)
+        Rect(lips, tg, w-t, 0, w, d-t)
+        Extrude(cd, lips, "CB_Espesor + CB_AlturaLabio", Inventor.PartFeatureOperationEnum.kJoinOperation, positive, names(2))
+
+        stage = "abertura central"
+        Dim notch As Inventor.PlanarSketch = cd.Sketches.Add(cd.WorkPlanes.Item(3))
+        notch.Name = "CB_04_LiberacionRacor"
+        ' U abierta al frente (Y=0); profundidad incluye extremo semicircular.
+        Dim nr As Double = nw/2
+        Dim cy As Double = nd-nr
+        Dim p0 As Inventor.SketchPoint = notch.SketchPoints.Add(tg.CreatePoint2d(w/2-nr,-t),False)
+        Dim p1 As Inventor.SketchPoint = notch.SketchPoints.Add(tg.CreatePoint2d(w/2+nr,-t),False)
+        Dim p2 As Inventor.SketchPoint = notch.SketchPoints.Add(tg.CreatePoint2d(w/2+nr,cy),False)
+        Dim p3 As Inventor.SketchPoint = notch.SketchPoints.Add(tg.CreatePoint2d(w/2-nr,cy),False)
+        notch.SketchLines.AddByTwoPoints(p0,p1)
+        notch.SketchLines.AddByTwoPoints(p1,p2)
+        notch.SketchArcs.AddByCenterStartEndPoint(tg.CreatePoint2d(w/2,cy),p2,p3,True)
+        notch.SketchLines.AddByTwoPoints(p3,p0)
+        Extrude(cd, notch, "CB_Espesor + CB_AlturaPosterior", Inventor.PartFeatureOperationEnum.kCutOperation, positive, names(3))
+
+        stage = "agujeros de fijacion al panel"
+        ' XZ de origen, con centros transformados para no asumir el sentido del boceto.
+        Dim xz As Inventor.WorkPlane = cd.WorkPlanes.Item(2)
+        Dim holes As Inventor.PlanarSketch = cd.Sketches.Add(xz)
+        holes.Name = "CB_05_PatronFijacion"
+        For Each x As Double In New Double() {(w-sx)/2, (w+sx)/2}
+            For Each z As Double In New Double() {z1, z1+sz}
+                holes.SketchCircles.AddByCenterRadius(holes.ModelToSketchSpace(tg.CreatePoint(x,0,z)),hd/2)
+            Next
+        Next
+        Dim direction As Inventor.PartFeatureExtentDirectionEnum = positive
+        ' La normal real del boceto se obtiene de la transformacion al espacio modelo.
+        Dim sketchNormal As Inventor.Vector = tg.CreateVector(0,0,1)
+        sketchNormal.TransformBy(holes.SketchToModelTransform)
+        If sketchNormal.Y < 0 Then direction = Inventor.PartFeatureExtentDirectionEnum.kNegativeExtentDirection
+        Extrude(cd, holes, "CB_Fondo + CB_Espesor", Inventor.PartFeatureOperationEnum.kCutOperation, direction, names(4))
+        doc.Update()
+
+        stage = "redondeo de bordes"
+        Dim edges As Inventor.EdgeCollection = ThisApplication.TransientObjects.CreateEdgeCollection()
+        For Each edge As Inventor.Edge In cd.SurfaceBodies.Item(1).Edges
+            edges.Add(edge)
+        Next
+        Dim fillet As Inventor.FilletFeature = cd.Features.FilletFeatures.AddSimple(edges,"CB_RadioBorde")
+        fillet.Name = "CB_BordesSuaves"
+        stage = "actualizacion final"
+        If Not doc.Update2(False) Then Throw New Exception("Inventor informa un error de actualizacion.")
+        If cd.SurfaceBodies.Count <> 1 OrElse Not cd.SurfaceBodies.Item(1).IsSolid Then Throw New Exception("No se obtuvo un unico solido.")
+        If Not rebuild Then doc.AttributeSets.Add(marker).Add("Version",Inventor.ValueTypeEnum.kStringType,"0.1")
+        doc.UnitsOfMeasure.LengthUnits = Inventor.UnitsTypeEnum.kMillimeterLengthUnits
+        tx.End()
+        tx = Nothing
+    Catch ex As Exception
+        If tx IsNot Nothing Then tx.Abort()
+        MessageBox.Show("No se completo la base. Se revirtieron los cambios de esta ejecucion." & vbCrLf & _
+            "Etapa: " & stage & vbCrLf & ex.Message, "SEDAC - Base")
+        Return
+    End Try
+    ThisApplication.ActiveView.Fit()
+    MessageBox.Show("Base geometrica creada en la pieza activa." & vbCrLf & _
+        "Guardar como SEDAC_Cuna_Base_V0.1.ipt." & vbCrLf & _
+        "Modificar CB_* y volver a ejecutar para regenerar. No agregar operaciones antes de regenerar." & vbCrLf & _
+        "Comprobar impresora, geometria de bolsa y acolchados. No validada para carga real.", "SEDAC - Base")
+End Sub
+
+Sub EnsureMM(up As Inventor.UserParameters, name As String, expression As String)
+    For Each p As Inventor.UserParameter In up
+        If p.Name = name Then Return
+    Next
+    up.AddByExpression(name,expression,Inventor.UnitsTypeEnum.kMillimeterLengthUnits)
+End Sub
+
+Sub Rect(sk As Inventor.PlanarSketch, tg As Inventor.TransientGeometry, x0 As Double, y0 As Double, x1 As Double, y1 As Double)
+    sk.SketchLines.AddAsTwoPointRectangle(tg.CreatePoint2d(x0,y0),tg.CreatePoint2d(x1,y1))
+End Sub
+
+Sub Extrude(cd As Inventor.PartComponentDefinition, sk As Inventor.PlanarSketch, distance As String, operation As Inventor.PartFeatureOperationEnum, direction As Inventor.PartFeatureExtentDirectionEnum, name As String)
+    Dim definition As Inventor.ExtrudeDefinition = cd.Features.ExtrudeFeatures.CreateExtrudeDefinition(sk.Profiles.AddForSolid(),operation)
+    definition.SetDistanceExtent(distance,direction)
+    Dim feature As Inventor.ExtrudeFeature = cd.Features.ExtrudeFeatures.Add(definition)
+    feature.Name = name
+    sk.Visible = False
+End Sub

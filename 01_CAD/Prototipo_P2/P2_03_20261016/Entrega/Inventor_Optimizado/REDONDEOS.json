@@ -1,0 +1,26 @@
+[
+  {
+    "pieza": "Anclaje_hombro_I",
+    "radio_mm": 0.4,
+    "aplicado": true,
+    "evidencia": "Feature nativa Radio_cantos_0p4 y radio indicado por el generador"
+  },
+  {
+    "pieza": "Anclaje_hombro_D",
+    "radio_mm": 0.4,
+    "aplicado": true,
+    "evidencia": "Feature nativa Radio_cantos_0p4 y radio indicado por el generador"
+  },
+  {
+    "pieza": "Anclaje_cinturon_I",
+    "radio_mm": 0.4,
+    "aplicado": true,
+    "evidencia": "Feature nativa Radio_cantos_0p4 y radio indicado por el generador"
+  },
+  {
+    "pieza": "Anclaje_cinturon_D",
+    "radio_mm": 0.4,
+    "aplicado": true,
+    "evidencia": "Feature nativa Radio_cantos_0p4 y radio indicado por el generador"
+  }
+]

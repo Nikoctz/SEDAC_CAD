@@ -1,0 +1,16 @@
+﻿[
+    {
+        "pieza":  "Tornillo_M5x50_ISO4762_A2_80",
+        "rosca":  "M5x0.8",
+        "clase":  "6g",
+        "nativa":  true,
+        "helice_geometrica":  false
+    },
+    {
+        "pieza":  "Tuerca_M5_autofreno_metalica",
+        "rosca":  "M5x0.8",
+        "clase":  "6H",
+        "nativa":  true,
+        "helice_geometrica":  false
+    }
+]

@@ -1,0 +1,5083 @@
+{
+  "version": "P2.03",
+  "units": "mm",
+  "parameters": {
+    "version": "P2.03",
+    "fecha": "2026-10-16",
+    "unidades": "mm",
+    "geometria": {
+      "H": 500,
+      "S": 200,
+      "W": 300,
+      "D": 125,
+      "Y": 135,
+      "b": 50,
+      "d": 40,
+      "t": 1.5,
+      "tmin": 1.4,
+      "tf": 2.5,
+      "tg": 3,
+      "ta": 2,
+      "tb": 2,
+      "rib_h": 20,
+      "rib_d": 10,
+      "rib_t": 1.5,
+      "support_depths": [
+        15,
+        60,
+        105
+      ],
+      "bolt8_y": [
+        20,
+        100
+      ],
+      "hip_y": [
+        45,
+        80
+      ],
+      "shoulder_y": [
+        365,
+        395
+      ],
+      "brace_y": [
+        165,
+        470
+      ],
+      "hose_radius": 25,
+      "hose_offset": 10,
+      "tflange": 5,
+      "cover_gap": 12,
+      "pan_depth": 18,
+      "pan_min": 1.8
+    },
+    "cargas": {
+      "m": 25,
+      "g": 9.81,
+      "av": 3,
+      "ah": 1,
+      "eta": 0.7,
+      "e": 107.5,
+      "L": 423,
+      "Kt": 2,
+      "Kb": 1.2,
+      "Kslot": 1.5,
+      "nReq": 2.2,
+      "deltaLim": 5
+    },
+    "materiales": {
+      "SyR": 240,
+      "SyS": 130,
+      "SyB": 600,
+      "E": 69000,
+      "nu": 0.33
+    },
+    "uniones": {
+      "preload8": 3500,
+      "preload6": 1800,
+      "preload5": 1000,
+      "preload4": 250,
+      "dispersion": 0.25,
+      "prying": 1.5,
+      "preload_interface": 500,
+      "preload_cartela": 1500,
+      "preload_frame": 1400
+    },
+    "masa": {
+      "reserva_textiles_kg": 0.5,
+      "reserva_piezas_no_modeladas_kg": 0.08,
+      "objetivo_total_kg": 2.0
+    }
+  },
+  "parts": [
+    {
+      "name": "Riel_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 500,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 0,
+              "y": -125.0,
+              "w": 40,
+              "h": 50,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Perfil_exterior"
+        },
+        {
+          "axis": "y",
+          "start": -0.1,
+          "depth": 500.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 1.5,
+              "y": -123.5,
+              "w": 37.0,
+              "h": 47.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado"
+        },
+        {
+          "axis": "z",
+          "start": -0.1,
+          "depth": 40.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 45,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 80,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 365,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 395,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 165,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "M6_pasantes"
+        },
+        {
+          "axis": "x",
+          "start": -125.1,
+          "depth": 50.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "M8_pasantes"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_45",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 45,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 45,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 80,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 80,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_365",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 365,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 365,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_395",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 395,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 395,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_165",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 165,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 165,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_I_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Pasador_hueco_M6_I_20",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -128.0,
+          "depth": 53,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Pasador_hueco_M6_I_100",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -128.0,
+          "depth": 53,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cartela_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -128.0,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  115,
+                  0
+                ],
+                [
+                  115,
+                  165
+                ],
+                [
+                  85,
+                  115.0
+                ],
+                [
+                  0,
+                  40
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Alma"
+        },
+        {
+          "axis": "y",
+          "start": 110,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 40,
+              "y": -128.0,
+              "w": 125,
+              "h": 19,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Ala_de_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": -128.1,
+          "depth": 3.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "M8"
+        },
+        {
+          "axis": "x",
+          "start": -128.1,
+          "depth": 3.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 73,
+              "y": 62,
+              "w": 20,
+              "h": 28,
+              "r": 8
+            }
+          ],
+          "cut": true,
+          "label": "Aligeramiento"
+        },
+        {
+          "axis": "y",
+          "start": 109.9,
+          "depth": 5.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_I_15",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -122.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 51.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_I_60",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -122.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 96.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_I_105",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -122.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 141.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Riel_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 500,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 0,
+              "y": 75.0,
+              "w": 40,
+              "h": 50,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Perfil_exterior"
+        },
+        {
+          "axis": "y",
+          "start": -0.1,
+          "depth": 500.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 1.5,
+              "y": 76.5,
+              "w": 37.0,
+              "h": 47.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado"
+        },
+        {
+          "axis": "z",
+          "start": -0.1,
+          "depth": 40.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 45,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 80,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 365,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 395,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "M6_pasantes"
+        },
+        {
+          "axis": "x",
+          "start": 74.9,
+          "depth": 50.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "M8_pasantes"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_45",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 45,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 45,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 80,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 80,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_365",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 365,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 365,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_395",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 395,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 395,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_165",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_M6_D_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 1.5,
+          "depth": 37.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Pasador_hueco_M6_D_20",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 75.0,
+          "depth": 53,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Pasador_hueco_M6_D_100",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 75.0,
+          "depth": 53,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cartela_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 125.0,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  115,
+                  0
+                ],
+                [
+                  115,
+                  165
+                ],
+                [
+                  85,
+                  115.0
+                ],
+                [
+                  0,
+                  40
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Alma"
+        },
+        {
+          "axis": "y",
+          "start": 110,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 40,
+              "y": 109.0,
+              "w": 125,
+              "h": 19,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Ala_de_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": 124.9,
+          "depth": 3.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 20,
+              "y": 20.0,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 20.0,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "M8"
+        },
+        {
+          "axis": "x",
+          "start": 124.9,
+          "depth": 3.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 73,
+              "y": 62,
+              "w": 20,
+              "h": 28,
+              "r": 8
+            }
+          ],
+          "cut": true,
+          "label": "Aligeramiento"
+        },
+        {
+          "axis": "y",
+          "start": 109.9,
+          "depth": 5.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_D_15",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 112.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 51.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_D_60",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 112.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 96.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Apoyo_interior_M5_D_105",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 112.0,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 141.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Refuerzo_cuna_1",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 300,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 115,
+              "y": 50.0,
+              "w": 20,
+              "h": 10,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "x",
+          "start": -150.1,
+          "depth": 300.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 51.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Refuerzo_cuna_2",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 300,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 115,
+              "y": 95.0,
+              "w": 20,
+              "h": 10,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "x",
+          "start": -150.1,
+          "depth": 300.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 96.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Refuerzo_cuna_3",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 300,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 115,
+              "y": 140.0,
+              "w": 20,
+              "h": 10,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "x",
+          "start": -150.1,
+          "depth": 300.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 116.5,
+              "y": 141.5,
+              "w": 17.0,
+              "h": 7.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado"
+        },
+        {
+          "axis": "y",
+          "start": 114.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cuna_modular",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 135,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 40,
+              "y": -150.0,
+              "w": 125,
+              "h": 300,
+              "r": 6
+            }
+          ],
+          "cut": false,
+          "label": "Piso"
+        },
+        {
+          "axis": "y",
+          "start": 134.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 175,
+              "y": 0,
+              "r": 25
+            }
+          ],
+          "cut": true,
+          "label": "Salida_frontal_manguera"
+        },
+        {
+          "axis": "z",
+          "start": 40,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -144.0,
+              "y": 137.5,
+              "w": 288,
+              "h": 12,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Respaldo"
+        },
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 137.5,
+              "y": 46,
+              "w": 12,
+              "h": 113,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Labio_lateral"
+        },
+        {
+          "axis": "x",
+          "start": 147.5,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 137.5,
+              "y": 46,
+              "w": 12,
+              "h": 113,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Labio_lateral"
+        },
+        {
+          "axis": "y",
+          "start": 134.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 55,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "M5"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        124,
+        154,
+        169
+      ],
+      "reference": false
+    },
+    {
+      "name": "Travesano_Bajo",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -116.0,
+              "y": 151,
+              "w": 232,
+              "h": 28,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 165,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Fijaciones"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Travesano_Alto",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -116.0,
+              "y": 456,
+              "w": 232,
+              "h": 28,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Fijaciones"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Diagonal_1",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -114.94272722050157,
+                  160.448637213572
+                ],
+                [
+                  -98.21783987278421,
+                  149.4814979691672
+                ],
+                [
+                  114.94272722050157,
+                  474.551362786428
+                ],
+                [
+                  98.21783987278421,
+                  485.51850203083285
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -4.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 165,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "M6"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        124,
+        154,
+        169
+      ],
+      "reference": false
+    },
+    {
+      "name": "Diagonal_2",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -6,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  98.21783987278421,
+                  149.4814979691672
+                ],
+                [
+                  114.94272722050157,
+                  160.448637213572
+                ],
+                [
+                  -98.21783987278421,
+                  485.51850203083285
+                ],
+                [
+                  -114.94272722050157,
+                  474.551362786428
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -6.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "M6"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        124,
+        154,
+        169
+      ],
+      "reference": false
+    },
+    {
+      "name": "Calce_X_100_165",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 7
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 165,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Calce_X_-100_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 7
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        162,
+        185,
+        196
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_hombro_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 40,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -118.0,
+                  350
+                ],
+                [
+                  -82.0,
+                  350
+                ],
+                [
+                  -62.0,
+                  400
+                ],
+                [
+                  -62.0,
+                  440
+                ],
+                [
+                  -138.0,
+                  440
+                ],
+                [
+                  -138.0,
+                  400
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 39.9,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 365,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 395,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": -126.0,
+              "y": 408,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Correa_M6"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -118.0,
+                  350
+                ],
+                [
+                  -138.0,
+                  400
+                ],
+                [
+                  -138.0,
+                  440
+                ],
+                [
+                  -136.0,
+                  440
+                ],
+                [
+                  -136.0,
+                  400
+                ],
+                [
+                  -116.0,
+                  350
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_lateral"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -82.0,
+                  350
+                ],
+                [
+                  -62.0,
+                  400
+                ],
+                [
+                  -62.0,
+                  440
+                ],
+                [
+                  -64.0,
+                  440
+                ],
+                [
+                  -64.0,
+                  400
+                ],
+                [
+                  -84.0,
+                  350
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_lateral"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -138.0,
+              "y": 438,
+              "w": 76,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_puente"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        218,
+        149,
+        63
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_hombro_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 40,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  82.0,
+                  350
+                ],
+                [
+                  118.0,
+                  350
+                ],
+                [
+                  138.0,
+                  400
+                ],
+                [
+                  138.0,
+                  440
+                ],
+                [
+                  62.0,
+                  440
+                ],
+                [
+                  62.0,
+                  400
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 39.9,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 365,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 395,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": 74.0,
+              "y": 408,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Correa_M6"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  82.0,
+                  350
+                ],
+                [
+                  62.0,
+                  400
+                ],
+                [
+                  62.0,
+                  440
+                ],
+                [
+                  64.0,
+                  440
+                ],
+                [
+                  64.0,
+                  400
+                ],
+                [
+                  84.0,
+                  350
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_lateral"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  118.0,
+                  350
+                ],
+                [
+                  138.0,
+                  400
+                ],
+                [
+                  138.0,
+                  440
+                ],
+                [
+                  136.0,
+                  440
+                ],
+                [
+                  136.0,
+                  400
+                ],
+                [
+                  116.0,
+                  350
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_lateral"
+        },
+        {
+          "axis": "z",
+          "start": 42,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 62.0,
+              "y": 438,
+              "w": 76,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Retorno_puente"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        218,
+        149,
+        63
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_cinturon_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -155,
+              "y": 15,
+              "w": 75,
+              "h": 100,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100,
+              "y": 45,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100,
+              "y": 80,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": -129,
+              "y": 37,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Cinturon_M6"
+        },
+        {
+          "axis": "z",
+          "start": -18,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -155,
+              "y": 15,
+              "w": 75,
+              "h": 2,
+              "r": 0
+            },
+            {
+              "kind": "rr",
+              "x": -155,
+              "y": 113,
+              "w": 75,
+              "h": 2,
+              "r": 0
+            },
+            {
+              "kind": "rr",
+              "x": -155,
+              "y": 17,
+              "w": 2,
+              "h": 96,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Retornos_cinturon"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        218,
+        149,
+        63
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_cinturon_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 80,
+              "y": 15,
+              "w": 75,
+              "h": 100,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 45,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100,
+              "y": 80,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": 121,
+              "y": 37,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Cinturon_M6"
+        },
+        {
+          "axis": "z",
+          "start": -18,
+          "depth": 16,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 80,
+              "y": 15,
+              "w": 75,
+              "h": 2,
+              "r": 0
+            },
+            {
+              "kind": "rr",
+              "x": 80,
+              "y": 113,
+              "w": 75,
+              "h": 2,
+              "r": 0
+            },
+            {
+              "kind": "rr",
+              "x": 153,
+              "y": 17,
+              "w": 2,
+              "h": 96,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Retornos_cinturon"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        218,
+        149,
+        63
+      ],
+      "reference": false
+    },
+    {
+      "name": "REF_Acolchado_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -28,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -130,
+              "y": 145,
+              "w": 60,
+              "h": 345,
+              "r": 15
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "pad",
+      "color": [
+        43,
+        59,
+        66
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_Acolchado_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -28,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 70,
+              "y": 145,
+              "w": 60,
+              "h": 345,
+              "r": 15
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "pad",
+      "color": [
+        43,
+        59,
+        66
+      ],
+      "reference": true
+    },
+    {
+      "name": "Protector_bolsa_aligerado",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 149.5,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 42.5,
+              "y": -147.0,
+              "w": 122.5,
+              "h": 294,
+              "r": 6
+            }
+          ],
+          "cut": false,
+          "label": "Cara_lisa"
+        },
+        {
+          "axis": "y",
+          "start": 137.5,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 42.5,
+              "y": -147.0,
+              "w": 122.5,
+              "h": 294,
+              "r": 6
+            },
+            {
+              "kind": "rr",
+              "x": 44.5,
+              "y": -145.0,
+              "w": 118.5,
+              "h": 290,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Perimetro"
+        },
+        {
+          "axis": "y",
+          "start": 137.5,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 44.5,
+              "y": -81,
+              "w": 118.5,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Nervio_polimero"
+        },
+        {
+          "axis": "y",
+          "start": 137.5,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 44.5,
+              "y": -41,
+              "w": 118.5,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Nervio_polimero"
+        },
+        {
+          "axis": "y",
+          "start": 137.5,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 44.5,
+              "y": 39,
+              "w": 118.5,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Nervio_polimero"
+        },
+        {
+          "axis": "y",
+          "start": 137.5,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 44.5,
+              "y": 79,
+              "w": 118.5,
+              "h": 2,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Nervio_polimero"
+        },
+        {
+          "axis": "y",
+          "start": 137.4,
+          "depth": 14.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 175,
+              "y": 0,
+              "r": 25
+            }
+          ],
+          "cut": true,
+          "label": "Salida_manguera"
+        }
+      ],
+      "material": "hdpe",
+      "color": [
+        31,
+        92,
+        100
+      ],
+      "reference": true
+    },
+    {
+      "name": "Tornillo_ISO4762_M6x65_A2_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 65,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Vastago"
+        },
+        {
+          "axis": "z",
+          "start": -6,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 5.0
+            }
+          ],
+          "cut": false,
+          "label": "Cabeza"
+        },
+        {
+          "axis": "z",
+          "start": -6.1,
+          "depth": 3.5999999999999996,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  2.886751345948129,
+                  0.0
+                ],
+                [
+                  1.4433756729740648,
+                  2.5
+                ],
+                [
+                  -1.4433756729740639,
+                  2.5000000000000004
+                ],
+                [
+                  -2.886751345948129,
+                  3.53525079574969e-16
+                ],
+                [
+                  -1.4433756729740659,
+                  -2.4999999999999996
+                ],
+                [
+                  1.4433756729740648,
+                  -2.5
+                ]
+              ]
+            }
+          ],
+          "cut": true,
+          "label": "Hexagono_interior"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 6,
+        "pitch": 1,
+        "internal": false,
+        "length": 24
+      },
+      "description": "ISO 4762; M6x1; L=65; rosca b=24; A2-80; comprar con certificado"
+    },
+    {
+      "name": "Arandela_ISO7089_M6",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 1.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 6.0
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.2
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": null,
+      "description": "ISO 7089; arandela plana, no dispositivo de bloqueo"
+    },
+    {
+      "name": "Tuerca_autofrenante_M6_DIN980",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  5.773502691896258,
+                  0.0
+                ],
+                [
+                  2.8867513459481295,
+                  5.0
+                ],
+                [
+                  -2.8867513459481278,
+                  5.000000000000001
+                ],
+                [
+                  -5.773502691896258,
+                  7.07050159149938e-16
+                ],
+                [
+                  -2.8867513459481318,
+                  -4.999999999999999
+                ],
+                [
+                  2.8867513459481295,
+                  -5.0
+                ]
+              ]
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 6,
+        "pitch": 1,
+        "internal": true,
+        "length": 6
+      },
+      "description": "Derivada DIN 980, autofrenante metalica; altura 6; verificar clase y par prevalente del proveedor"
+    },
+    {
+      "name": "Tornillo_ISO4762_M5x40_A2_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 40,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.5
+            }
+          ],
+          "cut": false,
+          "label": "Vastago"
+        },
+        {
+          "axis": "z",
+          "start": -5,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.25
+            }
+          ],
+          "cut": false,
+          "label": "Cabeza"
+        },
+        {
+          "axis": "z",
+          "start": -5.1,
+          "depth": 3.0,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  2.3094010767585034,
+                  0.0
+                ],
+                [
+                  1.154700538379252,
+                  2.0
+                ],
+                [
+                  -1.1547005383792512,
+                  2.0000000000000004
+                ],
+                [
+                  -2.3094010767585034,
+                  2.828200636599752e-16
+                ],
+                [
+                  -1.1547005383792528,
+                  -2.0
+                ],
+                [
+                  1.154700538379252,
+                  -2.0
+                ]
+              ]
+            }
+          ],
+          "cut": true,
+          "label": "Hexagono_interior"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 5,
+        "pitch": 0.8,
+        "internal": false,
+        "length": 22
+      },
+      "description": "ISO 4762; M5x0.8; L=40; rosca b=22; A2-80; comprar con certificado"
+    },
+    {
+      "name": "Arandela_ISO7089_M5",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 1,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.65
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": null,
+      "description": "ISO 7089; arandela plana, no dispositivo de bloqueo"
+    },
+    {
+      "name": "Tuerca_autofrenante_M5_DIN980",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.618802153517007,
+                  0.0
+                ],
+                [
+                  2.309401076758504,
+                  4.0
+                ],
+                [
+                  -2.3094010767585025,
+                  4.000000000000001
+                ],
+                [
+                  -4.618802153517007,
+                  5.656401273199504e-16
+                ],
+                [
+                  -2.3094010767585056,
+                  -4.0
+                ],
+                [
+                  2.309401076758504,
+                  -4.0
+                ]
+              ]
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 5,
+        "pitch": 0.8,
+        "internal": true,
+        "length": 5
+      },
+      "description": "Derivada DIN 980, autofrenante metalica; altura 5; verificar clase y par prevalente del proveedor"
+    },
+    {
+      "name": "Tornillo_ISO4762_M6x60_A2_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 60,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Vastago"
+        },
+        {
+          "axis": "z",
+          "start": -6,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 5.0
+            }
+          ],
+          "cut": false,
+          "label": "Cabeza"
+        },
+        {
+          "axis": "z",
+          "start": -6.1,
+          "depth": 3.5999999999999996,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  2.886751345948129,
+                  0.0
+                ],
+                [
+                  1.4433756729740648,
+                  2.5
+                ],
+                [
+                  -1.4433756729740639,
+                  2.5000000000000004
+                ],
+                [
+                  -2.886751345948129,
+                  3.53525079574969e-16
+                ],
+                [
+                  -1.4433756729740659,
+                  -2.4999999999999996
+                ],
+                [
+                  1.4433756729740648,
+                  -2.5
+                ]
+              ]
+            }
+          ],
+          "cut": true,
+          "label": "Hexagono_interior"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 6,
+        "pitch": 1,
+        "internal": false,
+        "length": 24
+      },
+      "description": "ISO 4762; M6x1; L=60; rosca b=24; A2-80; comprar con certificado"
+    },
+    {
+      "name": "Tornillo_ISO4762_M6x55_A2_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 55,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Vastago"
+        },
+        {
+          "axis": "z",
+          "start": -6,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 5.0
+            }
+          ],
+          "cut": false,
+          "label": "Cabeza"
+        },
+        {
+          "axis": "z",
+          "start": -6.1,
+          "depth": 3.5999999999999996,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  2.886751345948129,
+                  0.0
+                ],
+                [
+                  1.4433756729740648,
+                  2.5
+                ],
+                [
+                  -1.4433756729740639,
+                  2.5000000000000004
+                ],
+                [
+                  -2.886751345948129,
+                  3.53525079574969e-16
+                ],
+                [
+                  -1.4433756729740659,
+                  -2.4999999999999996
+                ],
+                [
+                  1.4433756729740648,
+                  -2.5
+                ]
+              ]
+            }
+          ],
+          "cut": true,
+          "label": "Hexagono_interior"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        105,
+        114,
+        124
+      ],
+      "reference": false,
+      "thread": {
+        "d": 6,
+        "pitch": 1,
+        "internal": false,
+        "length": 24
+      },
+      "description": "ISO 4762; M6x1; L=55; rosca b=24; A2-80; comprar con certificado"
+    }
+  ],
+  "instances": [
+    {
+      "part": "Riel_I",
+      "name": "Riel_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_45",
+      "name": "Casquillo_M6_I_45",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_80",
+      "name": "Casquillo_M6_I_80",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_365",
+      "name": "Casquillo_M6_I_365",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_395",
+      "name": "Casquillo_M6_I_395",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_165",
+      "name": "Casquillo_M6_I_165",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_I_470",
+      "name": "Casquillo_M6_I_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Pasador_hueco_M6_I_20",
+      "name": "Pasador_hueco_M6_I_20",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Pasador_hueco_M6_I_100",
+      "name": "Pasador_hueco_M6_I_100",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cartela_I",
+      "name": "Cartela_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_I_15",
+      "name": "Apoyo_interior_M5_I_15",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_I_60",
+      "name": "Apoyo_interior_M5_I_60",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_I_105",
+      "name": "Apoyo_interior_M5_I_105",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Riel_D",
+      "name": "Riel_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_45",
+      "name": "Casquillo_M6_D_45",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_80",
+      "name": "Casquillo_M6_D_80",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_365",
+      "name": "Casquillo_M6_D_365",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_395",
+      "name": "Casquillo_M6_D_395",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_165",
+      "name": "Casquillo_M6_D_165",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_M6_D_470",
+      "name": "Casquillo_M6_D_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Pasador_hueco_M6_D_20",
+      "name": "Pasador_hueco_M6_D_20",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Pasador_hueco_M6_D_100",
+      "name": "Pasador_hueco_M6_D_100",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cartela_D",
+      "name": "Cartela_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_D_15",
+      "name": "Apoyo_interior_M5_D_15",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_D_60",
+      "name": "Apoyo_interior_M5_D_60",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Apoyo_interior_M5_D_105",
+      "name": "Apoyo_interior_M5_D_105",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Refuerzo_cuna_1",
+      "name": "Refuerzo_cuna_1",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Refuerzo_cuna_2",
+      "name": "Refuerzo_cuna_2",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Refuerzo_cuna_3",
+      "name": "Refuerzo_cuna_3",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cuna_modular",
+      "name": "Cuna_modular",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Travesano_Bajo",
+      "name": "Travesano_Bajo",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Travesano_Alto",
+      "name": "Travesano_Alto",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Diagonal_1",
+      "name": "Diagonal_1",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Diagonal_2",
+      "name": "Diagonal_2",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Calce_X_100_165",
+      "name": "Calce_X_100_165",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Calce_X_-100_470",
+      "name": "Calce_X_-100_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_hombro_I",
+      "name": "Anclaje_hombro_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_hombro_D",
+      "name": "Anclaje_hombro_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_cinturon_I",
+      "name": "Anclaje_cinturon_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_cinturon_D",
+      "name": "Anclaje_cinturon_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Acolchado_I",
+      "name": "REF_Acolchado_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Acolchado_D",
+      "name": "REF_Acolchado_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Protector_bolsa_aligerado",
+      "name": "Protector_bolsa_aligerado",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x65_A2_80",
+      "name": "Cartela_I_1_Tornillo",
+      "axis": "x",
+      "position": [
+        -129.6,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_I_1_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -129.6,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_I_1_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -75.0,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cartela_I_1_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.4,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x65_A2_80",
+      "name": "Cartela_I_2_Tornillo",
+      "axis": "x",
+      "position": [
+        -129.6,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_I_2_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -129.6,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_I_2_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -75.0,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cartela_I_2_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.4,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_I_3_Tornillo",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        55
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_3_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        55
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_3_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        137.5,
+        55
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_I_3_Tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        138.5,
+        55
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_I_4_Tornillo",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        100
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_4_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        100
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_4_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        137.5,
+        100
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_I_4_Tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        138.5,
+        100
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_I_5_Tornillo",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        145
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_5_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        -117.0,
+        109,
+        145
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_I_5_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        137.5,
+        145
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_I_5_Tuerca",
+      "axis": "y",
+      "position": [
+        -117.0,
+        138.5,
+        145
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x65_A2_80",
+      "name": "Cartela_D_6_Tornillo",
+      "axis": "nx",
+      "position": [
+        129.6,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_D_6_Arandela_cabeza",
+      "axis": "nx",
+      "position": [
+        129.6,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_D_6_Arandela_tuerca",
+      "axis": "nx",
+      "position": [
+        75.0,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cartela_D_6_Tuerca",
+      "axis": "nx",
+      "position": [
+        73.4,
+        20,
+        20.0
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x65_A2_80",
+      "name": "Cartela_D_7_Tornillo",
+      "axis": "nx",
+      "position": [
+        129.6,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_D_7_Arandela_cabeza",
+      "axis": "nx",
+      "position": [
+        129.6,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cartela_D_7_Arandela_tuerca",
+      "axis": "nx",
+      "position": [
+        75.0,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cartela_D_7_Tuerca",
+      "axis": "nx",
+      "position": [
+        73.4,
+        100,
+        20.0
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_D_8_Tornillo",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        55
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_8_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        55
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_8_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        137.5,
+        55
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_D_8_Tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        138.5,
+        55
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_D_9_Tornillo",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        100
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_9_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        100
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_9_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        137.5,
+        100
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_D_9_Tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        138.5,
+        100
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M5x40_A2_80",
+      "name": "Cuna_D_10_Tornillo",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        145
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_10_Arandela_cabeza",
+      "axis": "y",
+      "position": [
+        117.0,
+        109,
+        145
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M5",
+      "name": "Cuna_D_10_Arandela_tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        137.5,
+        145
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M5_DIN980",
+      "name": "Cuna_D_10_Tuerca",
+      "axis": "y",
+      "position": [
+        117.0,
+        138.5,
+        145
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x60_A2_80",
+      "name": "Marco_11_Tornillo",
+      "axis": "z",
+      "position": [
+        -100.0,
+        165,
+        -5.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_11_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        -100.0,
+        165,
+        -5.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_11_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        -100.0,
+        165,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Marco_11_Tuerca",
+      "axis": "z",
+      "position": [
+        -100.0,
+        165,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x60_A2_80",
+      "name": "Marco_12_Tornillo",
+      "axis": "z",
+      "position": [
+        100.0,
+        470,
+        -5.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_12_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        100.0,
+        470,
+        -5.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_12_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        100.0,
+        470,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Marco_12_Tuerca",
+      "axis": "z",
+      "position": [
+        100.0,
+        470,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x60_A2_80",
+      "name": "Marco_13_Tornillo",
+      "axis": "z",
+      "position": [
+        100.0,
+        165,
+        -7.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_13_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        100.0,
+        165,
+        -7.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_13_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        100.0,
+        165,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Marco_13_Tuerca",
+      "axis": "z",
+      "position": [
+        100.0,
+        165,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x60_A2_80",
+      "name": "Marco_14_Tornillo",
+      "axis": "z",
+      "position": [
+        -100.0,
+        470,
+        -7.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_14_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        -100.0,
+        470,
+        -7.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Marco_14_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        -100.0,
+        470,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Marco_14_Tuerca",
+      "axis": "z",
+      "position": [
+        -100.0,
+        470,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Hombro_I_15_Tornillo",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        365,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_I_15_Arandela_cabeza",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        365,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_I_15_Arandela_tuerca",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        365,
+        0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Hombro_I_15_Tuerca",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        365,
+        -1.6000000000000014
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Hombro_I_16_Tornillo",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        395,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_I_16_Arandela_cabeza",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        395,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_I_16_Arandela_tuerca",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        395,
+        0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Hombro_I_16_Tuerca",
+      "axis": "nz",
+      "position": [
+        -100.0,
+        395,
+        -1.6000000000000014
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Hombro_D_17_Tornillo",
+      "axis": "nz",
+      "position": [
+        100.0,
+        365,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_D_17_Arandela_cabeza",
+      "axis": "nz",
+      "position": [
+        100.0,
+        365,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_D_17_Arandela_tuerca",
+      "axis": "nz",
+      "position": [
+        100.0,
+        365,
+        0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Hombro_D_17_Tuerca",
+      "axis": "nz",
+      "position": [
+        100.0,
+        365,
+        -1.6000000000000014
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Hombro_D_18_Tornillo",
+      "axis": "nz",
+      "position": [
+        100.0,
+        395,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_D_18_Arandela_cabeza",
+      "axis": "nz",
+      "position": [
+        100.0,
+        395,
+        43.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Hombro_D_18_Arandela_tuerca",
+      "axis": "nz",
+      "position": [
+        100.0,
+        395,
+        0
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Hombro_D_18_Tuerca",
+      "axis": "nz",
+      "position": [
+        100.0,
+        395,
+        -1.6000000000000014
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Cinturon_I_19_Tornillo",
+      "axis": "z",
+      "position": [
+        -100,
+        45,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_I_19_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        -100,
+        45,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_I_19_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        -100,
+        45,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cinturon_I_19_Tuerca",
+      "axis": "z",
+      "position": [
+        -100,
+        45,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Cinturon_I_20_Tornillo",
+      "axis": "z",
+      "position": [
+        -100,
+        80,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_I_20_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        -100,
+        80,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_I_20_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        -100,
+        80,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cinturon_I_20_Tuerca",
+      "axis": "z",
+      "position": [
+        -100,
+        80,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Cinturon_D_21_Tornillo",
+      "axis": "z",
+      "position": [
+        100,
+        45,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_D_21_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        100,
+        45,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_D_21_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        100,
+        45,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cinturon_D_21_Tuerca",
+      "axis": "z",
+      "position": [
+        100,
+        45,
+        41.6
+      ]
+    },
+    {
+      "part": "Tornillo_ISO4762_M6x55_A2_80",
+      "name": "Cinturon_D_22_Tornillo",
+      "axis": "z",
+      "position": [
+        100,
+        80,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_D_22_Arandela_cabeza",
+      "axis": "z",
+      "position": [
+        100,
+        80,
+        -3.6
+      ]
+    },
+    {
+      "part": "Arandela_ISO7089_M6",
+      "name": "Cinturon_D_22_Arandela_tuerca",
+      "axis": "z",
+      "position": [
+        100,
+        80,
+        40
+      ]
+    },
+    {
+      "part": "Tuerca_autofrenante_M6_DIN980",
+      "name": "Cinturon_D_22_Tuerca",
+      "axis": "z",
+      "position": [
+        100,
+        80,
+        41.6
+      ]
+    }
+  ],
+  "bolts": [
+    {
+      "axis": "x",
+      "pos": [
+        -128.0,
+        20,
+        20.0
+      ],
+      "diam": 6,
+      "grip": 53,
+      "tag": "Cartela_I",
+      "id": 1,
+      "longitud": 65,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 2.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x65_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 41,
+      "sentido": "x"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        -128.0,
+        100,
+        20.0
+      ],
+      "diam": 6,
+      "grip": 53,
+      "tag": "Cartela_I",
+      "id": 2,
+      "longitud": 65,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 2.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x65_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 41,
+      "sentido": "x"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        -117.0,
+        110,
+        55
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_I",
+      "id": 3,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        -117.0,
+        110,
+        100
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_I",
+      "id": 4,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        -117.0,
+        110,
+        145
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_I",
+      "id": 5,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        75.0,
+        20,
+        20.0
+      ],
+      "diam": 6,
+      "grip": 53,
+      "tag": "Cartela_D",
+      "id": 6,
+      "longitud": 65,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 2.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x65_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 41,
+      "sentido": "nx"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        75.0,
+        100,
+        20.0
+      ],
+      "diam": 6,
+      "grip": 53,
+      "tag": "Cartela_D",
+      "id": 7,
+      "longitud": 65,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 2.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x65_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 41,
+      "sentido": "nx"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        117.0,
+        110,
+        55
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_D",
+      "id": 8,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        117.0,
+        110,
+        100
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_D",
+      "id": 9,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        117.0,
+        110,
+        145
+      ],
+      "diam": 5,
+      "grip": 27.5,
+      "tag": "Cuna_D",
+      "id": 10,
+      "longitud": 40,
+      "paso": 0.8,
+      "arandela": 1,
+      "altura_tuerca": 5,
+      "protrusion": 5.499999999999998,
+      "tornillo": "Tornillo_ISO4762_M5x40_A2_80",
+      "tuerca": "Tuerca_autofrenante_M5_DIN980",
+      "washer": "Arandela_ISO7089_M5",
+      "rosca_longitud": 22,
+      "vastago_liso": 18,
+      "sentido": "y"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        165,
+        -4
+      ],
+      "diam": 6,
+      "grip": 44,
+      "tag": "Marco",
+      "id": 11,
+      "longitud": 60,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 6.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x60_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 36,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        470,
+        -4
+      ],
+      "diam": 6,
+      "grip": 44,
+      "tag": "Marco",
+      "id": 12,
+      "longitud": 60,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 6.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x60_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 36,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        165,
+        -6
+      ],
+      "diam": 6,
+      "grip": 46,
+      "tag": "Marco",
+      "id": 13,
+      "longitud": 60,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 4.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x60_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 36,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        470,
+        -6
+      ],
+      "diam": 6,
+      "grip": 46,
+      "tag": "Marco",
+      "id": 14,
+      "longitud": 60,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 4.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x60_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 36,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        365,
+        0
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Hombro_I",
+      "id": 15,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "nz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        395,
+        0
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Hombro_I",
+      "id": 16,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "nz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        365,
+        0
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Hombro_D",
+      "id": 17,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "nz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        395,
+        0
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Hombro_D",
+      "id": 18,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "nz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100,
+        45,
+        -2
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Cinturon_I",
+      "id": 19,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100,
+        80,
+        -2
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Cinturon_I",
+      "id": 20,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100,
+        45,
+        -2
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Cinturon_D",
+      "id": 21,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "z"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100,
+        80,
+        -2
+      ],
+      "diam": 6,
+      "grip": 42,
+      "tag": "Cinturon_D",
+      "id": 22,
+      "longitud": 55,
+      "paso": 1,
+      "arandela": 1.6,
+      "altura_tuerca": 6,
+      "protrusion": 3.799999999999997,
+      "tornillo": "Tornillo_ISO4762_M6x55_A2_80",
+      "tuerca": "Tuerca_autofrenante_M6_DIN980",
+      "washer": "Arandela_ISO7089_M6",
+      "rosca_longitud": 24,
+      "vastago_liso": 31,
+      "sentido": "z"
+    }
+  ]
+}

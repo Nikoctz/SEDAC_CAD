@@ -1,0 +1,7 @@
+Kit creado y actualizado en Inventor. 40 ocurrencias fijadas. NO representa resistencia validada.
+Panel 360x420x3 asumido. Dos anclajes, una base, cuatro separadores 18x5.5x6.
+4 tornillos M5x30, 4 M5x20, 16 arandelas 15x5.3x1.2, 8 tuercas M5 (envolvente 8 entre caras x5 alto).
+Roscas no modeladas. No usar el kit para fabricar tornilleria. No se ha ejecutado prueba estructural.
+Si cambias fuentes, las posiciones fijas no se ajustan automaticamente: revisar y regenerar el kit.
+Referencia anclaje: C:\Users\nicol\OneDrive\Desktop\SEDAC_CAD\SEDAC_Anclaje.ipt
+Referencia base: C:\Users\nicol\OneDrive\Desktop\SEDAC_CAD\SEDAC_Cuna_Base_V0.1.ipt

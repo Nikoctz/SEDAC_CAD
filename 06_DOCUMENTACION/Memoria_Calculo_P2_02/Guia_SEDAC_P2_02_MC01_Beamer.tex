@@ -1,0 +1,1283 @@
+% !TeX program = pdflatex
+% SEDAC P2.02 MC01 - Guia explicada en LaTeX Beamer
+% Fuente unica. Compatible con pdfLaTeX y Tectonic.
+\documentclass[10pt,aspectratio=169]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usefonttheme{professionalfonts}
+\usefonttheme[onlymath]{serif}
+\definecolor{azul}{HTML}{173345}
+\definecolor{verde}{HTML}{007D86}
+\definecolor{gris}{HTML}{576B79}
+\definecolor{rojo}{HTML}{9D302C}
+\setbeamercolor{normal text}{fg=azul,bg=white}
+\setbeamercolor{structure}{fg=verde}
+\setbeamercolor{frametitle}{fg=azul}
+\setbeamercolor{title}{fg=azul}
+\setbeamercolor{alerted text}{fg=rojo}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{title}{size=\LARGE,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\small\textbullet}
+\setbeamersize{text margin left=9mm,text margin right=9mm}
+\setlength{\parskip}{4pt}
+\newcommand{\mc}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\N}{\,\mathrm{N}}
+\newcommand{\mm}{\,\mathrm{mm}}
+\newcommand{\MPa}{\,\mathrm{MPa}}
+\newcommand{\kg}{\,\mathrm{kg}}
+\newcommand{\cita}[1]{\par\medskip{\scriptsize\color{gris}#1}}
+\newcommand{\mcref}{Guía de lectura}
+\setbeamertemplate{footline}{%
+ \leavevmode\hbox{%
+ \begin{beamercolorbox}[wd=.37\paperwidth,ht=2.8ex,dp=1.25ex,leftskip=9mm]{normal text}
+ \scriptsize\color{gris}SEDAC P2.02 / MC01
+ \end{beamercolorbox}%
+ \begin{beamercolorbox}[wd=.46\paperwidth,ht=2.8ex,dp=1.25ex,center]{normal text}
+ \scriptsize\color{verde}\mcref
+ \end{beamercolorbox}%
+ \begin{beamercolorbox}[wd=.17\paperwidth,ht=2.8ex,dp=1.25ex,rightskip=9mm]{normal text}
+ \hfill\scriptsize\color{gris}\insertframenumber/\inserttotalframenumber
+ \end{beamercolorbox}}}
+\title{Memoria de cálculo explicada}
+\subtitle{SEDAC P2.02\\Desarrollos y criterios de falla}
+\author{Guía para acompañar la hoja MC01 de Mathcad}
+\date{15 de octubre de 2026}
+
+\begin{document}
+\spanishplainpercent
+\gdef\mcref{Guía de lectura}
+\begin{frame}[label=inicio]
+ \titlepage
+ \vspace{-5mm}
+ \begin{center}
+  \small Prediseño paramétrico sujeto a mediciones de la bomba real.
+ \end{center}
+\end{frame}
+
+\begin{frame}[t,label=mapa]{Índice para seguir Mathcad}
+\small
+Cada número corresponde a la \textbf{sección de la hoja MC01}.
+Los enlaces llevan al primer desarrollo de ese tema.
+\medskip
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\begin{enumerate}
+ \item \hyperlink{mc01}{Alcance y cargas}
+ \item \hyperlink{mc02}{Geometría y brazos}
+ \item \hyperlink{mc03}{Materiales y factores}
+ \item \hyperlink{mc04}{Sección redondeada}
+ \item \hyperlink{mc05}{Riel: axial y flexión}
+ \item \hyperlink{mc06}{Riel: torsión, fluencia y flecha}
+ \item \hyperlink{mc07}{Estabilidad}
+ \item \hyperlink{mc08}{Grupo de tornillos M8}
+ \item \hyperlink{mc09}{Cortante y falla de chapa}
+\end{enumerate}
+\column{.49\textwidth}
+\begin{enumerate}
+ \setcounter{enumi}{9}
+ \item \hyperlink{mc10}{Raíz de cartela}
+ \item \hyperlink{mc11}{Cargas sobre el piso}
+ \item \hyperlink{mc12}{Piso: tensión y espesor}
+ \item \hyperlink{mc13}{Refuerzos y hombro}
+ \item \hyperlink{mc14}{Cinturón y diagonales}
+ \item \hyperlink{mc15}{M6 y alcance de los criterios}
+ \item \hyperlink{mc16}{Resumen de resultados}
+ \item \hyperlink{mc17}{Actualización del modelo}
+\end{enumerate}
+\end{columns}
+\medskip
+\footnotesize
+Antes de los cálculos: operadores, funciones y fluencia.
+Al final: fatiga, fractura, sensibilidad, diccionario y fuentes.
+\end{frame}
+
+\begin{frame}[t]{Notación y uso de esta guía}
+\begin{columns}[T,onlytextwidth]
+\column{.52\textwidth}
+\textbf{En las ecuaciones}
+\[
+ \sigma_{\mathrm{VM}},\qquad F_v,\qquad
+ n_R=\frac{S_{yR}}{\sigma_{\mathrm{VM}}}
+\]
+La notación matemática usa letras griegas y subíndices para facilitar la lectura.
+\medskip
+
+\textbf{En Mathcad}
+\[
+ \mc{SigVM},\qquad\mc{Fv},\qquad\mc{nR}
+\]
+Debajo de cada desarrollo se indican los nombres que aparecen en la hoja.
+\column{.44\textwidth}
+\textbf{Cómo seguir los desarrollos}
+\begin{itemize}
+ \item Abrir la hoja editable MC01.
+ \item Buscar el mismo número de sección en ambos archivos.
+ \item Comparar la expresión general con la sustitución numérica.
+ \item Revisar la hipótesis antes de cambiar un dato.
+\end{itemize}
+\end{columns}
+\medskip
+\textbf{Los valores del PDF son estáticos.}
+Al editar Mathcad, sus resultados pueden diferir de los ejemplos de esta guía.
+\end{frame}
+
+\begin{frame}[t]{Mathcad: definición y evaluación}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Definición con \(\boldsymbol{:=}\)}
+\[
+ \mc{Mass}:=25\kg
+\]
+\[
+ \mc{Fv}:=\mc{Mass}\,\mc{grav}\,\mc{av}
+\]
+Asigna un valor o una regla. Una definición puede estar bien construida sin mostrar un resultado al lado.
+\column{.48\textwidth}
+\textbf{Evaluación con \(\boldsymbol{=}\)}
+\[
+ \mc{Fv}=735{,}75\N
+\]
+Muestra el valor de una expresión ya definida.
+\medskip
+
+\textbf{Orden de cálculo}
+
+De arriba hacia abajo y, a igual altura, de izquierda a derecha.
+\end{columns}
+\bigskip
+\textbf{Recálculo completo:} la ayuda de Mathcad clásico indica
+\mc{Ctrl + F9}. En modo manual puede aparecer \mc{Calc} en la barra de estado.
+\cita{[1] Ayuda instalada de Mathcad clásico: operadores, orden de cálculo y cálculo automático.}
+\end{frame}
+
+\begin{frame}[t]{Mathcad: funciones y unidades}
+\begin{columns}[T,onlytextwidth]
+\column{.52\textwidth}
+\textbf{Funciones utilizadas}
+\[
+ \sqrt{9\mm^2}=3\mm
+\]
+\[
+ \min(I_x,I_z)\quad\text{elige el eje menos rígido}
+\]
+\[
+ \max(M_{\mathrm{tramo}},M_{\mathrm{borde}})
+\]
+La última expresión selecciona el caso de piso más exigente.
+
+\textbf{Mayúsculas y minúsculas}
+\[
+ \mc{Nr}\ [\mathrm{N}]\neq\mc{nR}\ [-]
+\]
+Una es fuerza axial y la otra es un margen.
+\column{.44\textwidth}
+\textbf{Unidades y potencias}
+\[
+ 1\MPa=1\,\frac{\mathrm{N}}{\mathrm{mm}^2}
+\]
+\[
+ 1\mm^4=10^{-12}\,\mathrm{m}^4
+\]
+\[
+ I_x=3{,}2784\times10^{-8}\,\mathrm{m}^4
+      =32\,784{,}01\mm^4
+\]
+Introducir una longitud requiere una unidad:
+\(\mc{t}:=2{,}5\mm\).
+\end{columns}
+\cita{[1] La unidad de presentación cambia la forma del resultado, manteniendo su valor físico.}
+\end{frame}
+
+\begin{frame}[t]{Fluencia: Von Mises y margen de cálculo}
+\textbf{Hipótesis de material dúctil.}
+Se compara una tensión equivalente con la referencia de fluencia \(S_y\).
+\[
+ \boxed{\sigma_{\mathrm{VM}}=\sqrt{\sigma^2+3\tau^2}}
+ \qquad
+ \boxed{n=\frac{S_y}{\sigma_{\mathrm{VM}}}}
+\]
+La primera expresión corresponde a un estado con una tensión normal
+\(\sigma\) y una cortante \(\tau\) en el mismo punto.
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Cortante puro}
+\[
+ \sigma=0
+ \quad\Longrightarrow\quad
+ \sigma_{\mathrm{VM}}=\sqrt{3}\,|\tau|
+\]
+De aquí proviene \(\sqrt{3}\) en las comprobaciones M8 y M6.
+\column{.48\textwidth}
+\textbf{Objetivo adoptado}
+\[
+ n\ge n_{\mathrm{req}}=2{,}2
+\]
+Este valor es una decisión provisional del prediseño.
+\end{columns}
+\cita{[2] MIT, Structural Plasticity. El riel usa una envolvente de solicitaciones que debe revisarse localmente.}
+\end{frame}
+
+\begin{frame}[t]{Criterios de falla y factores del modelo}
+\begin{columns}[T,onlytextwidth]
+\column{.52\textwidth}
+\textbf{Tresca, como referencia teórica}
+\[
+ \sigma_{\mathrm{T}}=
+ \max\!\left(
+ |\sigma_1-\sigma_2|,
+ |\sigma_2-\sigma_3|,
+ |\sigma_3-\sigma_1|
+ \right)
+\]
+En cortante puro:
+\[
+ \sigma_{\mathrm{T}}=2|\tau|,
+ \qquad
+ \sigma_{\mathrm{VM}}=\sqrt{3}\,|\tau|
+\]
+La hoja utiliza Von Mises. Tresca se explica aquí para distinguir ambos criterios.
+\column{.44\textwidth}
+\textbf{Los números cumplen funciones distintas}
+\begin{itemize}
+ \item \(a_v,a_h\): niveles de carga elegidos.
+ \item \(K_t,K_{\mathrm{slot}},K_b\): amplificaciones provisionales de demanda.
+ \item \(n_{\mathrm{req}}\): margen buscado.
+\end{itemize}
+Un margen \(n=1{,}22\) queda por debajo del objetivo \(2{,}2\), aunque sea mayor que uno.
+\end{columns}
+\cita{[2] Fluencia, pandeo, fatiga, fractura y deformación excesiva requieren comprobaciones diferentes.}
+\end{frame}
+
+\section{1. Alcance y cargas}
+\gdef\mcref{Mathcad / sección 1}
+\begin{frame}[t,label=mc01]{1. Fuerzas de cálculo}
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\textbf{Entradas provisionales}
+\[
+ m=25\kg,\qquad g=9{,}81\,\mathrm{m/s^2}
+\]
+\[
+ a_v=3,\qquad a_h=1,\qquad\eta=0{,}7
+\]
+\(a_v=3\) representa tres veces el peso, incluyendo la gravedad.
+\column{.47\textwidth}
+\textbf{Sustitución}
+\begin{align*}
+ F_v&=mga_v\\
+    &=25(9{,}81)(3)=735{,}75\N\\
+ F_h&=mga_h=245{,}25\N\\
+ N_R&=\eta F_v=515{,}025\N
+\end{align*}
+\end{columns}
+\medskip
+\(\eta\) representa el lado que recibe el \(70\,\%\) de la carga en un
+reparto supuesto \(70/30\). Debe revisarse con el arnés y la bomba reales.
+\cita{Mathcad: \mc{Mass}, \mc{grav}, \mc{av}, \mc{ah}, \mc{eta}, \mc{Fv}, \mc{Fh}, \mc{Nr}.
+La masa de 25 kg es una hipótesis de cálculo.}
+\end{frame}
+
+\section{2. Geometría}
+\gdef\mcref{Mathcad / sección 2}
+\begin{frame}[t,label=mc02]{2. Geometría y brazos de palanca}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Riel tubular}
+\[
+ b=50\mm,\quad d=25\mm,\quad t=2{,}5\mm
+\]
+\[
+ H=500\mm,\qquad s=200\mm
+\]
+\[
+ r_o=5\mm,\qquad r_i=2{,}5\mm
+\]
+\textbf{Excentricidad}
+\[
+ e=100\mm
+\]
+Se mide desde el eje del riel hasta la línea de acción de la carga vertical.
+\column{.48\textwidth}
+\textbf{Longitud idealizada}
+\begin{align*}
+ L&=\max(L_{\mathrm{input}},H-100\mm)\\
+  &=\max(400,400)\mm\\
+  &=400\mm
+\end{align*}
+\[
+ n_{\mathrm{req}}=2{,}2,\qquad
+ \delta_{\mathrm{lim}}=5\mm
+\]
+La regla de \(L\) debe contrastarse con los apoyos reales.
+\end{columns}
+\cita{Mathcad: \mc{b}, \mc{d}, \mc{t}, \mc{H}, \mc{Sep}, \mc{ecc}, \mc{Le}.
+La geometría de cálculo corresponde a escala 1:1.}
+\end{frame}
+
+\section{3. Materiales}
+\gdef\mcref{Mathcad / sección 3}
+\begin{frame}[t,label=mc03]{3. Propiedades y factores adoptados}
+\begin{columns}[T,onlytextwidth]
+\column{.56\textwidth}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Propiedad & Valor & Uso\\
+\midrule
+\(S_{yR}\) & \(240\MPa\) & Perfil 6061-T6\\
+\(S_{yS}\) & \(130\MPa\) & Chapa 5052-H32\\
+\(S_{yB}\) & \(450\MPa\) & Tornillo A2-70\\
+\(E\) & \(69\,000\MPa\) & Rigidez\\
+\(\nu\) & \(0{,}33\) & Poisson\\
+\(\rho\) & \(2\,700\,\mathrm{kg/m^3}\) & Masa\\
+\bottomrule
+\end{tabular}
+\[
+ K_t=2,\quad K_{\mathrm{slot}}=1{,}5,\quad K_b=1{,}2
+\]
+\column{.40\textwidth}
+\(S_y\) mide resistencia a fluencia.
+
+\(E\) relaciona tensión con deformación elástica.
+
+El producto, el espesor y el temple deben coincidir con el certificado del material.
+
+Los factores \(K\) son provisionales. Aún faltan modelos locales para obtener factores específicos de cada detalle.
+\end{columns}
+\cita{[3--6] Hydro, Atlas y Bossard. Para 5052-H32 se adopta 130 MPa considerando diferencias entre especificaciones.
+Una zona soldada requiere revisar la resistencia del 6061-T6.}
+\end{frame}
+
+\section{4. Sección redondeada}
+\gdef\mcref{Mathcad / sección 4}
+\begin{frame}[t,label=mc04]{4. Área del tubo con radios de esquina}
+Se retiran cuatro cuadrados y se restituyen cuatro cuartos de círculo:
+\[
+ \boxed{\operatorname{Ar}(B,D,R)=BD-(4-\pi)R^2}
+\]
+El tubo resulta de restar el hueco interior:
+\[
+ A=\operatorname{Ar}(b,d,r_o)
+ -\operatorname{Ar}(b-2t,d-2t,r_i)
+\]
+\[
+ \boxed{A=333{,}90486\mm^2}
+\]
+\textbf{Función frente a resultado}
+\[
+ \operatorname{Ar}(50\mm,25\mm,5\mm)=1\,228{,}54\mm^2
+\]
+Esta última cifra corresponde al rectángulo redondeado macizo.
+\(A\) es el área de metal del tubo.
+\cita{Mathcad: función \mc{Ar(B,D,R)} y variable \mc{Area}.
+Los argumentos \(B,D,R\) son locales a la función.}
+\end{frame}
+
+\begin{frame}[t]{4. Desarrollo del segundo momento de esquina}
+En una esquina se integra \((c+v)^2\) sobre el área retirada, con
+\(c=D/2-R\).
+\[
+ c_0=1-\frac{\pi}{4},
+ \qquad
+ c_1=\frac13-\frac{\pi}{16}
+\]
+\[
+ \int_{\mathrm{ret}}dA=c_0r^2,\qquad
+ \int_{\mathrm{ret}}v\,dA=\frac{r^3}{6},\qquad
+ \int_{\mathrm{ret}}v^2\,dA=c_1r^4
+\]
+Al expandir el cuadrado:
+\begin{align*}
+ J_c(c,r)
+ &=c^2\!\int_{\mathrm{ret}}dA
+   +2c\!\int_{\mathrm{ret}}v\,dA
+   +\int_{\mathrm{ret}}v^2\,dA\\
+ &=\boxed{c_0c^2r^2+\frac{cr^3}{3}+c_1r^4}
+\end{align*}
+\cita{Mathcad: \mc{Jc(c,r)}. Es un segundo momento de área auxiliar, de unidad longitud\(^{4}\).
+Su nombre no corresponde a la constante de torsión de Saint-Venant.}
+\end{frame}
+
+\begin{frame}[t]{4. Inercias del rectángulo y del hueco}
+Para el eje paralelo a \(B\):
+\[
+ \operatorname{Ir}(B,D,R)
+ =\frac{BD^3}{12}
+ -4J_c\!\left(\frac D2-R,R\right)
+\]
+\begin{align*}
+ I_x&=\operatorname{Ir}(b,d,r_o)
+ -\operatorname{Ir}(b-2t,d-2t,r_i),\\
+ I_z&=\operatorname{Ir}(d,b,r_o)
+ -\operatorname{Ir}(d-2t,b-2t,r_i).
+\end{align*}
+\[
+ \boxed{I_x=32\,784{,}01\mm^4}
+ \qquad
+ \boxed{I_z=98\,865{,}89\mm^4}
+\]
+Intercambiar \(B\) y \(D\) cambia el eje de flexión.
+
+Estas propiedades describen la sección continua idealizada.
+Los agujeros y uniones requieren revisar la sección local.
+\cita{Mathcad: \mc{Ir(B,D,R)}, \mc{Ix}, \mc{Iz}.}
+\end{frame}
+
+\section{5. Riel: tensión normal}
+\gdef\mcref{Mathcad / sección 5}
+\begin{frame}[t,label=mc05]{5. Esfuerzo axial y flexión por excentricidad}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Módulos resistentes}
+\[
+ Z_x=\frac{I_x}{d/2},\qquad
+ Z_z=\frac{I_z}{b/2}
+\]
+De \(\sigma=My/I\), en la fibra exterior:
+\[
+ \sigma_{\max}=\frac{Mc}{I}=\frac MZ
+\]
+\textbf{Carga del lado crítico}
+\[
+ N_R=\eta F_v,\qquad M_e=\eta F_ve
+\]
+\column{.48\textwidth}
+\textbf{Resultados}
+\begin{align*}
+ N_R&=515{,}025\N\\
+ M_e&=51\,502{,}50\N\mm\\
+ \sigma_{\mathrm{ax}}&=\frac{N_R}{A}
+                       =1{,}54\MPa\\
+ \sigma_e&=\frac{M_e}{Z_x}
+                       =19{,}64\MPa
+\end{align*}
+\end{columns}
+\[
+ m_{\mathrm{rieles}}=2HA\rho=0{,}902\kg
+\]
+La masa anterior corresponde a los tubos idealizados sin descontar agujeros.
+\cita{Mathcad: \mc{Zx}, \mc{Zz}, \mc{Nr}, \mc{Me}, \mc{SigAx}, \mc{SigEc}, \mc{MassR}.}
+\end{frame}
+
+\begin{frame}[t]{5. Máximo de flexión por fuerza horizontal}
+Se permite una dirección horizontal cualquiera de módulo \(F_h\).
+Para dos componentes perpendiculares \(F_1,F_2\):
+\[
+ F_1^2+F_2^2=F_h^2,
+ \qquad
+ \sigma_h=\eta L\!\left(\frac{F_1}{Z_x}+\frac{F_2}{Z_z}\right).
+\]
+La desigualdad de Cauchy-Schwarz da:
+\[
+ \boxed{\sigma_h=
+ \eta F_hL\sqrt{\frac1{Z_x^2}+\frac1{Z_z^2}}}
+ =31{,}42\MPa
+\]
+Se suman las contribuciones que agravan la fibra crítica:
+\[
+ \sigma_N=\sigma_{\mathrm{ax}}+\sigma_e+\sigma_h
+          =\boxed{52{,}60\MPa}
+\]
+El resultado corresponde al modelo de riel en voladizo.
+Las reacciones del arnés pueden cambiar esta distribución.
+\cita{Mathcad: \mc{SigH}, \mc{SigN}.}
+\end{frame}
+
+\section{6. Riel: torsión y flecha}
+\gdef\mcref{Mathcad / sección 6}
+\begin{frame}[t,label=mc06]{6. Torsión del tubo cerrado}
+\textbf{Área encerrada por la línea media de la pared}
+\[
+ A_m=(b-t)(d-t)-(4-\pi)(1{,}5t)^2
+     =1\,056{,}68\mm^2
+\]
+Para una celda delgada cerrada, el flujo cortante es aproximadamente
+\(q_T=T/(2A_m)\). Al dividir por el espesor:
+\[
+ T_R=\eta F_h\frac{s}{2}=17\,167{,}50\N\mm
+\]
+\[
+ \boxed{\tau_T=\frac{T_R}{2A_mt}=3{,}25\MPa}
+\]
+\(A_m\) encierra la línea media del tubo.
+\(A=333{,}90\mm^2\) representa el metal de su pared.
+
+La aproximación supone una celda continua y espesor uniforme.
+Las perforaciones pueden alterar el flujo cortante.
+\cita{Mathcad: \mc{Am}, \mc{Tr}, \mc{TauT}.}
+\end{frame}
+
+\begin{frame}[t]{6. Envolvente de tensiones y fluencia del riel}
+La hoja conserva la siguiente aproximación de cortante medio:
+\[
+ \tau_V=\frac{\eta\sqrt{F_v^2+F_h^2}}{A}
+       =1{,}63\MPa
+\]
+Con \(K_t=2\):
+\[
+ \sigma_{\mathrm{VM}}
+ =K_t\sqrt{\sigma_N^2+3(\tau_T+\tau_V)^2}
+ =106{,}54\MPa
+\]
+\[
+ \boxed{n_R=\frac{240}{106{,}54}=2{,}253}
+ \qquad n_{\mathrm{req}}=2{,}2
+\]
+\footnotesize
+\(\tau_V\) incluye \(F_v\), aunque el riel ya la recibe axialmente.
+\(V/A\) es un valor medio. La suma combina máximos de una envolvente
+y necesita revisión como campo local, especialmente cerca de agujeros.
+
+El margen supera el objetivo en aproximadamente \(2{,}4\,\%\).
+\cita{Mathcad: \mc{TauV}, \mc{SigVM}, \mc{nR}.}
+\end{frame}
+
+\begin{frame}[t]{6. Flecha del riel idealizado}
+Para una viga elástica de rigidez constante:
+\[
+ EI\,v''(x)=M(x).
+\]
+Integrando con desplazamiento y giro nulos en el empotramiento:
+\begin{align*}
+ \delta_h&=\frac{\eta F_hL^3}{3E\min(I_x,I_z)}
+           =1{,}619\mm,\\
+ \delta_e&=\frac{M_eL^2}{2EI_x}
+           =1{,}821\mm.
+\end{align*}
+\[
+ \boxed{\delta_R=\delta_h+\delta_e=3{,}440\mm<5\mm}
+\]
+La suma es una aproximación de desplazamiento.
+Aún falta la flexibilidad de uniones y arnés.
+\cita{[7] MIT, Beam Deflections.
+Mathcad: \mc{deltaH}, \mc{deltaE}, \mc{deltaR}, \mc{deltaLim}.}
+\end{frame}
+
+\section{7. Estabilidad}
+\gdef\mcref{Mathcad / sección 7}
+\begin{frame}[t,label=mc07]{7. Pandeo global de Euler}
+\[
+ \boxed{P_{\mathrm{cr}}=
+ \frac{\pi^2E I_{\min}}{(K_{\mathrm{col}}L)^2}},
+ \qquad I_{\min}=\min(I_x,I_z)
+\]
+\[
+ K_{\mathrm{col}}=2,\qquad L=400\mm
+\]
+\[
+ P_{\mathrm{cr}}=34\,884{,}37\N,
+ \qquad
+ n_{\mathrm{Euler}}=\frac{P_{\mathrm{cr}}}{N_R}=67{,}73
+\]
+\textbf{Condiciones del modelo}
+\begin{itemize}
+ \item Columna ideal, recta y elástica.
+ \item Un extremo empotrado y otro libre para \(K_{\mathrm{col}}=2\).
+ \item Compresión y eje débil según las hipótesis adoptadas.
+\end{itemize}
+Ese cociente grande convive con otros modos que pueden limitar antes.
+\cita{[8] MIT, Buckling of Beams.
+Mathcad: \mc{Kcol}, \mc{Pcr}, \mc{nEuler}.}
+\end{frame}
+
+\begin{frame}[t]{7. Pandeo local de una pared}
+Se aproxima una pared por una placa larga apoyada en sus bordes.
+\[
+ b_p=\max(b,d)-4t=40\mm,\qquad k=4
+\]
+\[
+ \boxed{\sigma_{\mathrm{cr}}=
+ \frac{k\pi^2E}{12(1-\nu^2)}
+ \left(\frac{t}{b_p}\right)^2}
+ =995{,}09\MPa
+\]
+Como la predicción elástica supera la fluencia adoptada:
+\[
+ \sigma_{\mathrm{cap}}=
+ \min(S_{yR},\sigma_{\mathrm{cr}})
+ =240\MPa
+\]
+El coeficiente \(k\), el ancho plano, los agujeros y las condiciones
+de apoyo necesitan revisión en la sección real.
+
+Quedan pendientes imperfecciones y modos de estabilidad de las uniones.
+\cita{[9] MIT, Buckling of Plates and Sections.
+Mathcad: \mc{bp}, \mc{kplate}, \mc{SigCr}, \mc{SigCap}.}
+\end{frame}
+
+\section{8. Grupo M8}
+\gdef\mcref{Mathcad / sección 8}
+\begin{frame}[t,label=mc08]{8. Reparto en dos tornillos M8}
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+\textbf{Fuerzas directas}
+\[
+ V_y=\eta F_v,\qquad V_z=\eta F_h
+\]
+Cada tornillo recibe \(V_y/2\) y \(V_z/2\).
+
+\textbf{Momento}
+\[
+ M_c=\eta(F_ve+F_ha_H)
+\]
+\[
+ p=45\mm,\qquad a_H=62{,}5\mm
+\]
+\column{.49\textwidth}
+\textbf{Par de fuerzas}
+\[
+ Qp=M_c
+ \quad\Longrightarrow\quad Q=\frac{M_c}{p}
+\]
+En el tornillo crítico se suman las componentes del mismo sentido:
+\[
+ \boxed{
+ R_8=K_b\sqrt{
+ \left(\frac{V_y}{2}\right)^2+
+ \left(\frac{V_z}{2}+\frac{M_c}{p}\right)^2}}
+\]
+\end{columns}
+\medskip
+Se idealiza un grupo de igual rigidez en el plano \(YZ\).
+El otro tornillo recibe la contribución del par con signo opuesto.
+\cita{Mathcad: \mc{Vy}, \mc{Vz}, \mc{MomC}, \mc{pitch}, \mc{armH}, \mc{R8}.}
+\end{frame}
+
+\begin{frame}[t]{8. Sustitución y corrección del M8}
+\begin{align*}
+ \frac{V_y}{2}&=257{,}5125\N,&
+ \frac{V_z}{2}&=85{,}8375\N,\\
+ M_c&=62\,232{,}19\N\mm,&
+ \frac{M_c}{p}&=1\,382{,}94\N.
+\end{align*}
+\[
+ R_8=1{,}2\sqrt{257{,}5125^2+
+                (85{,}8375+1\,382{,}94)^2}
+    =\boxed{1\,789{,}41\N}
+\]
+La comparación anterior de la hoja conserva:
+\[
+ R_{\mathrm{old}}=
+ K_b\sqrt{
+ \left(\frac{\sqrt{V_y^2+V_z^2}}{2}\right)^2+
+ \left(\frac{M_c}{p}\right)^2}
+ =1\,691{,}19\N
+\]
+La resistencia se revisa con \(R_8\).
+Quedan por estudiar tracción, palanca y apertura fuera del plano.
+\cita{[10] NASA RP-1228 como referencia de diseño de uniones.
+Mathcad: \mc{R8old}, \mc{R8}.}
+\end{frame}
+
+\section{9. M8 y falla de chapa}
+\gdef\mcref{Mathcad / sección 9}
+\begin{frame}[t,label=mc09]{9. Cortante del tornillo y aplastamiento}
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+\textbf{Cortante del M8}
+\[
+ A_{s8}=36{,}6\mm^2
+\]
+\[
+ \sigma_{\mathrm{VM8}}
+ =\sqrt{3}\,\frac{R_8}{A_{s8}}
+ =84{,}68\MPa
+\]
+\[
+ \boxed{n_{\mathrm{M8}}=\frac{450}{84{,}68}=5{,}31}
+\]
+Se usa área resistente de rosca y un plano de corte.
+\column{.49\textwidth}
+\textbf{Aplastamiento medio}
+\[
+ \sigma_{\mathrm{bear}}=\frac{R_8}{d_8t_{\mathrm{pieza}}}
+\]
+\[
+ \begin{array}{c|c|c}
+ &\sigma_{\mathrm{bear}}&n\\ \hline
+ \text{Tubo, }t=2{,}5\mm&89{,}47\MPa&2{,}68\\
+ \text{Cartela, }t_g=4\mm&55{,}92\MPa&2{,}32
+ \end{array}
+\]
+La comprobación acredita una pared del tubo.
+\end{columns}
+\medskip
+Comparar presión media con \(S_y\) es un precriterio.
+Una unión completa requiere valores y geometrías de contacto apropiados.
+\cita{Mathcad: \mc{VM8}, \mc{nBolt8}, \mc{BearR}, \mc{nBearR}, \mc{BearG}, \mc{nBearG}.}
+\end{frame}
+
+\begin{frame}[t]{9. Arrancamiento hacia un borde}
+Se consideran dos planos de cortante en la chapa:
+\[
+ e_b=\min(15\mm,d/2)=12{,}5\mm,\qquad d_h=8{,}6\mm
+\]
+\[
+ A_{\mathrm{arr}}=
+ 2\left(e_b-\frac{d_h}{2}\right)t_g
+ =2(12{,}5-4{,}3)(4)=65{,}6\mm^2
+\]
+\[
+ \tau_{\mathrm{arr}}=\frac{R_8}{A_{\mathrm{arr}}},
+ \qquad
+ \sigma_{\mathrm{eq,arr}}=\sqrt{3}\,\tau_{\mathrm{arr}}
+\]
+\[
+ \boxed{n_{\mathrm{arr}}=
+ \frac{S_{yS}}{\sigma_{\mathrm{eq,arr}}}
+ =\frac{130}{47{,}25}=2{,}75}
+\]
+\(e_b\) debe representar el borde susceptible de arrancarse
+en la dirección de la fuerza. Recortes o cargas oblicuas cambian el modelo.
+\cita{Mathcad: \mc{edge}, \mc{hole8}, \mc{TearG}, \mc{nTearG}.}
+\end{frame}
+
+\section{10. Raíz de cartela}
+\gdef\mcref{Mathcad / sección 10}
+\begin{frame}[t,label=mc10]{10. Flexión de la raíz de cartela}
+Para una sección rectangular idealizada, con \(h_r=80\mm\):
+\[
+ Z_r=\frac{t_gh_r^2}{6},\qquad
+ V_c=\sqrt{V_y^2+V_z^2}
+\]
+\begin{align*}
+ \sigma_r&=\frac{M_c}{Z_r}
+          =\frac{6M_c}{t_gh_r^2}=14{,}59\MPa,\\
+ \tau_r&=\frac{V_c}{t_gh_r}=1{,}70\MPa.
+\end{align*}
+\[
+ \sigma_{\mathrm{eq},r}
+ =2\sqrt{\sigma_r^2+3\tau_r^2}=29{,}76\MPa,
+ \qquad
+ \boxed{n_r=4{,}37}
+\]
+\footnotesize
+El factor 2 es provisional. El pliegue, el recorte y las fuerzas fuera del
+plano exigen análisis local. También faltan precarga, presión bajo arandela
+y ajuste de los casquillos.
+\cita{[10] Mathcad: \mc{SigRoot}, \mc{TauRoot}, \mc{VMroot}, \mc{nRoot}.}
+\end{frame}
+
+\section{11. Cargas del piso}
+\gdef\mcref{Mathcad / sección 11}
+\begin{frame}[t,label=mc11]{11. Hipótesis de carga del piso}
+\[
+ W=300\mm,\quad D=125\mm,\quad t_f=2{,}5\mm
+\]
+\[
+ \ell=65\mm,\quad a=40\mm,\quad
+ P=100\N,\quad w_p=50\mm
+\]
+\[
+ \boxed{q=\frac{2F_v}{WD}=0{,}03924\,\mathrm{N/mm^2}}
+\]
+Las líneas de apoyo se toman en los ejes de los refuerzos.
+\(\ell\) es su separación y \(a\) es el voladizo delantero.
+
+\textbf{Alcance de la presión elegida}
+\[
+ qWD+P=1\,571{,}5\N
+ \qquad \text{frente a}\qquad F_v=735{,}75\N
+\]
+El factor 2 y el parche forman una envolvente local.
+Su distribución debe justificarse con la bolsa llena y el contacto real.
+\cita{Mathcad: \mc{Width}, \mc{Depth}, \mc{tf}, \mc{spanF}, \mc{over},
+\mc{Ppatch}, \mc{strip}, \mc{qfloor}.}
+\end{frame}
+
+\begin{frame}[t]{11. Dos posiciones alternativas del parche}
+Se analiza una franja de ancho unitario.
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Tramo entre apoyos}
+\[
+ M_{\mathrm{tramo}}=
+ \frac{q\ell^2}{8}+\frac{P\ell}{4w_p}
+\]
+\[
+ M_{\mathrm{tramo}}=53{,}2236\N
+\]
+Carga uniforme y punto equivalente en el centro de una viga apoyada.
+\column{.48\textwidth}
+\textbf{Voladizo delantero}
+\[
+ M_{\mathrm{borde}}=
+ \frac{qa^2}{2}+\frac{Pa}{w_p}
+\]
+\[
+ M_{\mathrm{borde}}=111{,}392\N
+\]
+Carga uniforme y parche en el extremo libre.
+\end{columns}
+\bigskip
+\[
+ M_f=\max(M_{\mathrm{tramo}},M_{\mathrm{borde}}).
+ \qquad [M_f]=\frac{\mathrm{N\,mm}}{\mathrm{mm}}=\mathrm{N}
+\]
+Se revisan posiciones alternativas de un parche.
+\(M_f\) es momento por unidad de ancho.
+\cita{Mathcad: \mc{Mspan}, \mc{Medge}, \mc{Mfloor}.}
+\end{frame}
+
+\section{12. Piso: tensión y espesor}
+\gdef\mcref{Mathcad / sección 12}
+\begin{frame}[t,label=mc12]{12. Desarrollo de la tensión del piso}
+Para una franja de ancho \(u\):
+\[
+ I=\frac{ut_f^3}{12},\qquad
+ c=\frac{t_f}{2},\qquad
+ Z=\frac{I}{c}=\frac{ut_f^2}{6}
+\]
+El momento de la franja es \(M_fu\), por lo que:
+\[
+ \sigma_f=\frac{M_fu}{ut_f^2/6}
+          =\boxed{\frac{6M_f}{t_f^2}}
+\]
+\[
+ \sigma_f=\frac{6(111{,}392)}{2{,}5^2}
+         =106{,}93632\MPa
+\]
+\[
+ \boxed{n_f=\frac{130}{106{,}93632}=1{,}216<2{,}2}
+\]
+\alert{El piso actual queda por debajo del objetivo en este escenario.}
+\cita{Mathcad: \mc{SigFloor}, \mc{nFloor}. El resultado no predice una rotura inmediata.}
+\end{frame}
+
+\begin{frame}[t]{12. Despeje del espesor orientativo}
+\[
+ \frac{S_{yS}}{6M_f/t_f^2}\ge n_{\mathrm{req}}
+ \quad\Longrightarrow\quad
+ t_f^2\ge\frac{6M_fn_{\mathrm{req}}}{S_{yS}}
+\]
+\[
+ \boxed{t_{\mathrm{necesario}}=
+ \sqrt{\frac{6M_fn_{\mathrm{req}}}{S_{yS}}}
+ =3{,}363\mm}
+\]
+Comparación con \(t_{\mathrm{prop}}=3{,}5\mm\):
+\[
+ \sigma_{\mathrm{prop}}=
+ \frac{6(111{,}392)}{3{,}5^2}=54{,}56\MPa,
+ \qquad
+ \boxed{n_{\mathrm{prop}}=2{,}383}
+\]
+También puede reducirse el voladizo o acercar un refuerzo al borde.
+
+El CAD conserva \(2{,}5\mm\).
+La comparación de \(3{,}5\mm\) pertenece a la memoria de cálculo.
+\cita{Mathcad: \mc{tNeed}, \mc{tfProp}, \mc{SigProp}, \mc{nProp}.
+Faltan contacto real, tolerancias y revisión local de la placa.}
+\end{frame}
+
+\section{13. Refuerzos y hombro}
+\gdef\mcref{Mathcad / sección 13}
+\begin{frame}[t,label=mc13]{13. Flexión del refuerzo inferior}
+Tubo de \(20\times20\times1{,}5\mm\), con radios incluidos:
+\[
+ I_{\mathrm{ref}}=
+ \operatorname{Ir}(b_r,b_r,2t_r)
+ -\operatorname{Ir}(b_r-2t_r,b_r-2t_r,t_r)
+\]
+\[
+ I_{\mathrm{ref}}=5\,827{,}22\mm^4,\qquad
+ Z_{\mathrm{ref}}=\frac{I_{\mathrm{ref}}}{b_r/2}
+                 =582{,}72\mm^3
+\]
+La viga apoyada recibe una fuerza equivalente \(\eta F_v\):
+\[
+ L_r=s+b=250\mm,\qquad M_{\max}=\frac{\eta F_vL_r}{4}
+\]
+\[
+ \sigma_{\mathrm{ref}}
+ =\frac{\eta F_vL_r}{4Z_{\mathrm{ref}}}
+ =55{,}24\MPa,\qquad
+ \boxed{n_{\mathrm{ref}}=4{,}34}
+\]
+\cita{Mathcad: \mc{Irib}, \mc{Zrib}, \mc{Lrib}, \mc{SigRib}, \mc{nRib}.
+La comprobación no incluye las uniones en los extremos.}
+\end{frame}
+
+\begin{frame}[t]{13. Puente del anclaje de hombro}
+El ligamento junto a la ranura se aproxima como una viga apoyada
+con fuerza fuera del plano.
+\[
+ L_s=52\mm,\qquad b_s=24\mm,\qquad t_a=5\mm
+\]
+\[
+ M_s=\frac{\eta F_vL_s}{4},
+ \qquad
+ Z_s=\frac{b_st_a^2}{6}
+\]
+\[
+ \boxed{\sigma_s=
+ K_{\mathrm{slot}}\frac{6(\eta F_vL_s/4)}{b_st_a^2}
+ =100{,}43\MPa}
+\]
+\[
+ \boxed{n_s=\frac{240}{100{,}43}=2{,}39}
+\]
+El espesor aparece al cuadrado porque la flexión ocurre fuera del plano.
+Faltan cinta, costura, desgaste y radio de contacto en la ranura.
+\cita{Mathcad: \mc{slot}, \mc{bridgeS}, \mc{ta}, \mc{SigSlot}, \mc{nSlot}.}
+\end{frame}
+
+\section{14. Cinturón y diagonales}
+\gdef\mcref{Mathcad / sección 14}
+\begin{frame}[t,label=mc14]{14. Puente del cinturón y raíz del yugo}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Puente de la ranura}
+\[
+ b_b=26\mm,\qquad t_b=5\mm
+\]
+\[
+ \sigma_b=
+ K_{\mathrm{slot}}
+ \frac{6(\eta F_vL_s/4)}{b_bt_b^2}
+\]
+\[
+ \sigma_b=92{,}70\MPa,\qquad
+ \boxed{n_b=2{,}59}
+\]
+\column{.48\textwidth}
+\textbf{Raíz del yugo}
+\[
+ Z_b=\frac{(100\mm)t_b^2}{6}
+\]
+\[
+ \sigma_y=
+ \frac{2\,\eta F_v(40\mm)}{Z_b}
+ =98{,}88\MPa
+\]
+\[
+ \boxed{n_y=2{,}43}
+\]
+\end{columns}
+\medskip
+El brazo de \(40\mm\) es una idealización local.
+Quedan pendientes el equilibrio del arnés, la transferencia a la cadera
+y los herrajes de liberación.
+\cita{Mathcad: \mc{SigBelt}, \mc{nBelt}, \mc{Zbelt}, \mc{SigYoke}, \mc{nYoke}.}
+\end{frame}
+
+\begin{frame}[t]{14. Tracción de la diagonal activa}
+\[
+ h_X=H-30\mm-(120\mm+30\mm)=320\mm
+\]
+\[
+ L_X=\sqrt{s^2+h_X^2}=377{,}36\mm
+\]
+Si \(\theta\) se mide desde la vertical:
+\[
+ \sin\theta=\frac{s}{L_X},\qquad
+ F_X\sin\theta=F_h
+ \quad\Longrightarrow\quad
+ \boxed{F_X=F_h\frac{L_X}{s}=462{,}74\N}
+\]
+\[
+ A_{\mathrm{net}}=(2\mm)(24-6{,}6)\mm=34{,}8\mm^2
+\]
+\[
+ \sigma_X=\frac{F_X}{A_{\mathrm{net}}},
+ \qquad
+ \boxed{n_X=\frac{130}{\sigma_X}=9{,}78}
+\]
+Se acredita una diagonal traccionada. La opuesta puede pandear o aflojarse.
+\cita{Mathcad: \mc{riseX}, \mc{LenX}, \mc{ForceX}, \mc{NetX}, \mc{nX}.
+La cota de 120 mm requiere revisión explícita si cambia la altura de cuna.}
+\end{frame}
+
+\section{15. M6 y alcance}
+\gdef\mcref{Mathcad / sección 15}
+\begin{frame}[t,label=mc15]{15. M6 y mínimo de los márgenes incluidos}
+\[
+ R_6=K_b\frac{\eta F_v}{2}=309{,}015\N,
+ \qquad A_{s6}=20{,}1\mm^2
+\]
+\[
+ \sigma_{\mathrm{VM6}}=\sqrt{3}\frac{R_6}{A_{s6}}
+ =26{,}63\MPa
+ \qquad
+ \boxed{n_{\mathrm{M6}}=\frac{450}{26{,}63}=16{,}90}
+\]
+La hoja reúne los márgenes de los modelos incluidos:
+\[
+ \mc{MinYield}=
+ \min(n_R,n_{\mathrm{M8}},n_{\mathrm{bear}},n_f,\ldots)
+ =1{,}216
+\]
+El mínimo ayuda a localizar el resultado más bajo.
+Su alcance depende de los modos que se hayan incorporado.
+
+Un margen alto del M6 deja pendientes la chapa, la unión completa
+y la trayectoria de carga.
+\cita{Mathcad: \mc{As6}, \mc{R6}, \mc{VM6}, \mc{nM6}, \mc{MinYield}.}
+\end{frame}
+
+\begin{frame}[t]{15. Comprobaciones calculadas y pendientes}
+\begin{tabular}{@{}p{.25\textwidth}p{.68\textwidth}@{}}
+\toprule
+Fenómeno & Alcance de MC01\\
+\midrule
+Fluencia y flecha &
+Modelos simplificados de riel, chapa, anclajes y tornillos.\\[3pt]
+Pandeo &
+Estimaciones elásticas ideales del riel. Faltan uniones e imperfecciones.\\[3pt]
+Fatiga y fractura &
+Sin vida calculada ni evaluación de grietas.\\[3pt]
+Unión atornillada &
+Faltan tracción, precarga, apertura, palanca y aflojamiento.\\[3pt]
+Arnés y entorno &
+Faltan textiles, costuras, ergonomía, temperatura y condiciones de uso.\\
+\bottomrule
+\end{tabular}
+\bigskip
+El margen mínimo de estas fórmulas describe las comprobaciones parciales.
+La validación del conjunto requiere cerrar los mecanismos pendientes.
+\end{frame}
+
+\section{16. Resumen}
+\gdef\mcref{Mathcad / sección 16}
+\begin{frame}[t,label=mc16]{16. Resultados con las entradas iniciales}
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Comprobación & Margen \(n\)\\
+\midrule
+Riel, \mc{nR} & 2,25\\
+M8, \mc{nBolt8} & 5,31\\
+Tubo, \mc{nBearR} & 2,68\\
+Cartela, \mc{nBearG} & 2,32\\
+Arrancamiento, \mc{nTearG} & 2,75\\
+Raíz cartela, \mc{nRoot} & 4,37\\
+\alert{Piso actual, \mc{nFloor}} & \alert{1,22}\\
+\bottomrule
+\end{tabular}
+\column{.48\textwidth}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Comprobación & Margen \(n\)\\
+\midrule
+Refuerzo, \mc{nRib} & 4,34\\
+Hombro, \mc{nSlot} & 2,39\\
+Puente cinturón, \mc{nBelt} & 2,59\\
+Raíz yugo, \mc{nYoke} & 2,43\\
+Diagonal, \mc{nX} & 9,78\\
+M6, \mc{nM6} & 16,90\\
+\bottomrule
+\end{tabular}
+\end{columns}
+\bigskip
+\[
+ n_{\mathrm{req}}=2{,}2,
+ \qquad
+ \delta_R=3{,}440\mm,\quad\delta_{\mathrm{lim}}=5\mm
+\]
+Prioridad: revisar piso y apoyo delantero, y confirmar las zonas locales
+del riel, cartelas y anclajes.
+\end{frame}
+
+\section{17. Actualización}
+\gdef\mcref{Mathcad / sección 17}
+\begin{frame}[t,label=mc17]{17. Medidas reales y actualización del modelo}
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\textbf{Datos por obtener}
+\begin{itemize}
+ \item Masa llena y componentes soportados.
+ \item Forma de la bolsa llena y centro de carga.
+ \item Apoyos y posiciones del arnés.
+ \item Huella de contacto sobre el piso.
+ \item Tubos, chapas y fijaciones reales.
+\end{itemize}
+\column{.47\textwidth}
+\textbf{Revisión coordinada}
+\begin{itemize}
+ \item Guardar una copia con el cambio registrado.
+ \item Ajustar entradas y brazos constantes.
+ \item Recalcular y revisar unidades.
+ \item Actualizar el CAD y comparar medidas.
+ \item Completar detalles y pruebas de banco.
+\end{itemize}
+\end{columns}
+\medskip
+El CAD de referencia registra 54 diseños, 70 ocurrencias y aproximadamente
+\(3{,}206\kg\), sin arnés completo.
+La meta preliminar de \(1{,}5\) a \(2\kg\) aún requiere trabajo.
+
+Los cambios en Mathcad y en Inventor se coordinan manualmente.
+\end{frame}
+
+\appendix
+\section{Ampliaciones}
+\gdef\mcref{Ampliación / fatiga}
+\begin{frame}[t]{Fatiga: tensión media y amplitud}
+Para un ciclo de tensión:
+\[
+ \boxed{\sigma_m=\frac{\sigma_{\max}+\sigma_{\min}}{2}},
+ \qquad
+ \boxed{\sigma_a=\frac{\sigma_{\max}-\sigma_{\min}}{2}}
+\]
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Información necesaria}
+\begin{itemize}
+ \item Historia de cargas al caminar.
+ \item Número y secuencia de ciclos.
+ \item Curvas S--N del detalle.
+ \item Acabado, radios, agujeros y entorno.
+\end{itemize}
+\column{.48\textwidth}
+\textbf{Alcance actual}
+
+\(S_y\) permite revisar fluencia.
+La vida en ciclos necesita datos cíclicos.
+
+El \(K_t=2\) provisional de MC01 necesita revisión antes de emplearlo
+en un análisis de fatiga.
+\end{columns}
+\cita{[11] MIT, Defect-Free Fatigue.
+Esta ampliación explica un cálculo pendiente. MC01 no asigna vida útil.}
+\end{frame}
+
+\gdef\mcref{Ampliación / fractura}
+\begin{frame}[t]{Fractura: presencia de una grieta}
+Una aproximación lineal elástica de modo I utiliza:
+\[
+ \boxed{K_I=Y\,\sigma\sqrt{\pi a}}
+\]
+\begin{tabular}{@{}ll@{}}
+\(a\) & Tamaño de grieta según la geometría elegida.\\[4pt]
+\(Y\) & Factor geométrico.\\[4pt]
+\(\sigma\) & Tensión nominal de referencia.\\[4pt]
+\(K_I\) & Intensidad del campo de tensiones próximo a la grieta.\\
+\end{tabular}
+\bigskip
+
+Para evaluar propagación inestable se necesita una tenacidad apropiada,
+junto con espesor, condiciones de restricción y validez del modelo.
+
+La memoria actual carece de esos datos. Esta expresión orienta
+una ampliación futura cuando se defina el detalle fabricado.
+\cita{[12] MIT, David Roylance, Introduction to Fracture Mechanics.}
+\end{frame}
+
+\gdef\mcref{Ampliación / sensibilidad}
+\begin{frame}[t]{Sensibilidad del piso al espesor}
+\[
+ \sigma_f=\frac{6}{t_f^2}
+ \left(\frac{qa^2}{2}+\frac{Pa}{w_p}\right)
+\]
+\begin{columns}[T,onlytextwidth]
+\column{.49\textwidth}
+\begin{tabular}{@{}rrr@{}}
+\toprule
+\(t_f\) [mm] & \(\sigma_f\) [MPa] & \(n_f\)\\
+\midrule
+2,5 & 106,94 & 1,22\\
+3,0 & 74,26 & 1,75\\
+3,5 & 54,56 & 2,38\\
+4,0 & 41,77 & 3,11\\
+\bottomrule
+\end{tabular}
+\column{.47\textwidth}
+Con cargas fijas:
+\[
+ \sigma_f\propto\frac1{t_f^2}
+\]
+La presión contribuye con \(a^2\).
+El parche contribuye con \(a\).
+
+Acercar el apoyo reduce ambas contribuciones.
+\end{columns}
+\medskip
+Pasar una placa plana de \(300\times125\mm\) de \(2{,}5\) a \(3{,}5\mm\)
+agregaría aproximadamente \(101\) g, antes de considerar recortes o pliegues.
+\end{frame}
+
+\gdef\mcref{Consulta / nombres de Mathcad}
+\begin{frame}[t]{Diccionario: cargas y rieles}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Símbolo de esta guía & Nombre en Mathcad\\
+\midrule
+\(m,g,a_v,a_h\) & \mc{Mass}, \mc{grav}, \mc{av}, \mc{ah}\\[3pt]
+\(s,e,L\) & \mc{Sep}, \mc{ecc}, \mc{Le}\\[3pt]
+\(A,A_m\) & \mc{Area}, \mc{Am}\\[3pt]
+\(N_R,M_e,T_R\) & \mc{Nr}, \mc{Me}, \mc{Tr}\\[3pt]
+\(\sigma_{\mathrm{ax}},\sigma_e,\sigma_h\) & \mc{SigAx}, \mc{SigEc}, \mc{SigH}\\[3pt]
+\(\sigma_N,\sigma_{\mathrm{VM}}\) & \mc{SigN}, \mc{SigVM}\\[3pt]
+\(\tau_T,\tau_V\) & \mc{TauT}, \mc{TauV}\\
+\bottomrule
+\end{tabular}
+\bigskip
+
+Unidades habituales: N, mm, MPa, mm\(^{2}\), mm\(^{3}\), mm\(^{4}\) y kg.
+Los márgenes \(n\), los factores \(K\) y \(\nu\) son adimensionales.
+\end{frame}
+
+\begin{frame}[t]{Diccionario: uniones, piso y anclajes}
+\begin{tabular}{@{}ll@{}}
+\toprule
+Símbolo de esta guía & Nombre en Mathcad\\
+\midrule
+\(M_c,p,a_H\) & \mc{MomC}, \mc{pitch}, \mc{armH}\\[4pt]
+\(W,D,t_f\) & \mc{Width}, \mc{Depth}, \mc{tf}\\[4pt]
+\(\ell,a,P,w_p\) & \mc{spanF}, \mc{over}, \mc{Ppatch}, \mc{strip}\\[4pt]
+\(q,M_f,\sigma_f\) & \mc{qfloor}, \mc{Mfloor}, \mc{SigFloor}\\[4pt]
+\(L_s,b_s,b_b\) & \mc{slot}, \mc{bridgeS}, \mc{bridgeB}\\[4pt]
+\(L_X,F_X,A_{\mathrm{net}}\) & \mc{LenX}, \mc{ForceX}, \mc{NetX}\\
+\bottomrule
+\end{tabular}
+\bigskip
+
+Las variables conservan sus nombres originales en la hoja.
+Esta tabla permite relacionarlos con los símbolos usados en las ecuaciones.
+\end{frame}
+
+\gdef\mcref{Consulta / fuentes}
+\begin{frame}[t]{Fuentes de Mathcad y materiales}
+\footnotesize
+\begin{description}
+ \item[{[1]}] Ayuda local de Mathcad clásico, carpeta \mc{doc/HELP_ES/Help}.
+ Operadores, funciones, unidades y recálculo.
+ \href{https://www.ptc.com/en/support/help/mathcad}{Centro oficial de ayuda PTC}.
+ \item[{[3]}] \href{https://www.hydro.com/globalassets/01-products--services/extruded-profiles/americas/ena-resources/alloy-data-sheets/hydro_2019_data_sheet_6061.pdf}{Hydro, Alloy 6061.}
+ Propiedades del perfil según temple y producto.
+ \item[{[4]}] \href{https://atlassteels.com.au/wp-content/uploads/2021/08/Aluminium-Alloy-5052-Data-Sheet-24-06-21.pdf}{Atlas Steels, Aluminium Alloy 5052 Data Sheet.}
+ \item[{[5]}] \href{https://www.atlassteels.com.au/documents/TN14-5052\%20and\%205251\%20rev\%20June\%202013.pdf}{Atlas Steels, Technical Note 14, 5052 and 5251.}
+ Diferencias entre especificaciones.
+ \item[{[6]}] \href{https://www.bossard.com/-/media/bossard-group/website/documents/technical-resources-old/stainless-steel-fasteners.pdf}{Bossard, Stainless steel fasteners.}
+ Propiedades de fijaciones según ISO 3506.
+\end{description}
+\medskip
+Las ecuaciones y valores iniciales corresponden a MC01.
+Las propiedades del material comprado deben sustituir los valores provisionales.
+\end{frame}
+
+\begin{frame}[t]{Fuentes de diseño mecánico}
+\footnotesize
+\begin{description}
+ \item[{[2]}] \href{https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/30dc1a0f74debf21fb92a1df56616929_MIT2_080JF13_Lecture12.pdf}{MIT, Structural Plasticity.} Von Mises y Tresca.
+ \item[{[7]}] \href{https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/3533c046dafcc488f1432e92d05ec210_MIT2_080JF13_Lecture5.pdf}{MIT, Solution Method for Beam Deflections.}
+ \item[{[8]}] \href{https://ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/mit16_001_f21_lec33lec34lec35.pdf}{MIT, Buckling of Beams.}
+ \item[{[9]}] \href{https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/345c462fe40421ea0f795bd35d2e4af1_MIT2_080JF13_Lecture11.pdf}{MIT, Buckling of Plates and Sections.}
+ \item[{[10]}] \href{https://ntrs.nasa.gov/api/citations/19900009424/downloads/19900009424.pdf}{NASA RP-1228, Fastener Design Manual, 1990.}
+ Referencia general para uniones.
+ \item[{[11]}] \href{https://ocw.mit.edu/courses/2-002-mechanics-and-materials-ii-spring-2004/db45866e2fc0cf164d96828936748e8f_lec21_notes.pdf}{MIT, Anand y Parks, Defect-Free Fatigue.}
+ \item[{[12]}] \href{https://web.mit.edu/course/3/3.11/www/modules/frac.pdf}{MIT, David Roylance, Introduction to Fracture Mechanics.}
+\end{description}
+\medskip
+\textbf{Documento de referencia:} \mc{Memoria_SEDAC_P2_02_MC01_EDITABLE.xmcd}.
+
+\textbf{Estado:} prediseño P2.02. Las fórmulas parciales se revisarán
+con mediciones, detalles fabricables y pruebas de banco.
+\end{frame}
+\end{document}

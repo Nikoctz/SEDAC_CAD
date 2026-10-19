@@ -1,0 +1,397 @@
+[
+  {
+    "archivo": "BOM_Y_MASAS.csv",
+    "bytes": 9883,
+    "sha256": "be5724ec9639b51e5ae767744bde5b00c9e30374c2336ee74a243973a23acc39"
+  },
+  {
+    "archivo": "Calculos/COMPARACION_SECCIONES.csv",
+    "bytes": 537,
+    "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+    "archivo": "Calculos/RESULTADOS_PREDISENO.json",
+    "bytes": 7494,
+    "sha256": "fbeabaccd2c22d4c2c0a3476e9c9653b0b447e3115deb02aa5e7211894998df4"
+  },
+  {
+    "archivo": "Entrega/Inventor/Arandela_M5_16x3_GN6341.ipt",
+    "bytes": 100864,
+    "sha256": "9fdbb5430ff6a56e942b6589186ccf7ea8d77e452b22bb1116d978e7d0589468"
+  },
+  {
+    "archivo": "Entrega/Inventor/AUDITORIA_NATIVA.json",
+    "bytes": 120869,
+    "sha256": "550537e9184da96885424d6b0d43d165798c39c179d792cdf1097dc217d894a9"
+  },
+  {
+    "archivo": "Entrega/Inventor/BOM_FIJACIONES.csv",
+    "bytes": 707,
+    "sha256": "0ea272db2368885c3641e1d94bf8e2508eb860b140f1ea26fc800296481d997a"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_D_35.ipt",
+    "bytes": 115200,
+    "sha256": "bb539b6d184db04425b78986c057235cd8a2850d1a966dfa34bcec2da27c9f56"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_D_390.ipt",
+    "bytes": 115712,
+    "sha256": "1bfa11aa137296fac239edd67d1b0ed7c1249d6e74f64e0665e2b67c3514873f"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_D_450.ipt",
+    "bytes": 115712,
+    "sha256": "29c51baf0d2f05602aa90453b495da72b8035b171ad8f4eabf3e598509764c7f"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_D_95.ipt",
+    "bytes": 114688,
+    "sha256": "e78ab39426ecb85a003a64f130802e838cb62fbee2a238d2045185eb51492c3b"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_I_35.ipt",
+    "bytes": 115712,
+    "sha256": "cf44469bfae45a52c17907ed5e40d7afacf813419ff1b6d703a5b5c4f0bdcfc5"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_I_390.ipt",
+    "bytes": 115200,
+    "sha256": "695910da2af8f5b62e7c4929eedcf7b52287d49f7fa037efe4688014aac4501e"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_I_450.ipt",
+    "bytes": 115200,
+    "sha256": "bd7df78f132bdccd20fe001d817409400d9950fd4de34f9da26b9b29eb0aaa6c"
+  },
+  {
+    "archivo": "Entrega/Inventor/Casquillo_I_95.ipt",
+    "bytes": 115200,
+    "sha256": "73e7569ec95cd63f4447f6aba019d4a34bdfcb7e13afe10c12c36521dca7f02d"
+  },
+  {
+    "archivo": "Entrega/Inventor/Espaldera_HDPE_aligerada.ipt",
+    "bytes": 187392,
+    "sha256": "30170273870e9834cb217527f2c425edd688aa2a5caddfe25458db6b21eedb0a"
+  },
+  {
+    "archivo": "Entrega/Inventor/ESTADO_OK.txt",
+    "bytes": 196,
+    "sha256": "c22d85eb2d590dacb07a5f8d6676514fe0dddfc8ecae818eb9f693bcfa8c5d2a"
+  },
+  {
+    "archivo": "Entrega/Inventor/Interfaz_lumbar_aligerada.ipt",
+    "bytes": 291840,
+    "sha256": "4e67c90d06c54d6f51eab6e6a4dd7e744acf0d64497429ba560ed89fc355ba30"
+  },
+  {
+    "archivo": "Entrega/Inventor/INTERFERENCIAS.json",
+    "bytes": 11,
+    "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+  },
+  {
+    "archivo": "Entrega/Inventor/MASAS_CAD.json",
+    "bytes": 14799,
+    "sha256": "57b881eeee00674bb478e3c2af8343f837f0c2605840410a352bb1e3448870a5"
+  },
+  {
+    "archivo": "Entrega/Inventor/MODELO_API.json",
+    "bytes": 116130,
+    "sha256": "849be1c84ee2abda58189fa2fbe38a115a82fb19bf28154a7544b873a170007e"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_D_35.ipt",
+    "bytes": 107008,
+    "sha256": "5c70a6918704ff7093ab832a15f0b6b2519e691bf243fcec420e01ef77018bb3"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_D_390.ipt",
+    "bytes": 105984,
+    "sha256": "ff4efb7a3926f21a255b5a5fc14c11b684cb85c9de107ca22858481644800f8e"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_D_450.ipt",
+    "bytes": 106496,
+    "sha256": "c502e9e4624418b2efee572889013cfba6621dac030fd07cd5b30cbb876f0257"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_D_95.ipt",
+    "bytes": 106496,
+    "sha256": "dfc3540cc7b8a14db1e5cd951fe1d70680aca4760e152639509167dd518f7754"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_I_35.ipt",
+    "bytes": 106496,
+    "sha256": "3a0cf9d848371af3af13931a861e411c5d4b2daaa4b072320fe17714736c776a"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_I_390.ipt",
+    "bytes": 107008,
+    "sha256": "cff9e4b0e6aac707d06123401fbf96cab8efcc224c35e387d95d9eda222a6630"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_I_450.ipt",
+    "bytes": 105984,
+    "sha256": "3fb563f3b8b4f9d891f07ca5fb1c221906598b65c120b3ec955141db63786f59"
+  },
+  {
+    "archivo": "Entrega/Inventor/Pasador_hueco_I_95.ipt",
+    "bytes": 105984,
+    "sha256": "e301b5d83c5675326482615571c05276365642dee54b4a47f487fae7bf23ebbd"
+  },
+  {
+    "archivo": "Entrega/Inventor/REDONDEOS.json",
+    "bytes": 638,
+    "sha256": "d94dd342bc82d039d007119d22d9abd19a87e29322d9d2a5354b7d905e4589cc"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Acolchado_dorsal_D.ipt",
+    "bytes": 93184,
+    "sha256": "4a640bb9ac76da1c0bc54386c1d3271e4b1cd30b3e92558aa9b8e155e244adcd"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Acolchado_dorsal_I.ipt",
+    "bytes": 92160,
+    "sha256": "8a44d25f3f939c5c4759095661320887001940080a023ccfa770d97feb3c94f0"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Acolchado_lumbar.ipt",
+    "bytes": 92672,
+    "sha256": "fe94cceacc15b476f28ac0ba0ec68f96088b570889ff063846f7fbddfff1e5e7"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Ala_cinturon_D.ipt",
+    "bytes": 119808,
+    "sha256": "ad638478ca9a7ffcbd634782a6ff4a1826a26b4bd093fc79edfa8ac1de276bba"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Ala_cinturon_I.ipt",
+    "bytes": 120320,
+    "sha256": "dc4b627c76f6b40becf43d739355e17206df36d3610e5e6066f6c3d1bbf942b2"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Asa_sistema.ipt",
+    "bytes": 93696,
+    "sha256": "387cc28346110f13fc99fddf14602558cf21399ace0e6cefb598d4040610f479"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Bisagra_textil_D.ipt",
+    "bytes": 88576,
+    "sha256": "816c360cee7952f7f8eb454d5116d480a0b19f0139902f2a6ebe7cdf01cf926d"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Bisagra_textil_I.ipt",
+    "bytes": 87552,
+    "sha256": "726834deda1396448c24fde9b80079166c46c955d48f557807ab1f3a9a93b4bf"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_carga_D.ipt",
+    "bytes": 115712,
+    "sha256": "f0dd8a720fceea68de07da1eb360023306eff122fd874d9de4edc1a699919837"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_carga_I.ipt",
+    "bytes": 115712,
+    "sha256": "e4609bf63c6d2d45b8e30939fa4e1d167d3704bf2a35be0671902bf360da6c9f"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_cierre_cinturon_D.ipt",
+    "bytes": 92160,
+    "sha256": "8be0a8efd076fcd5e9fef961bb7d6cc8a146721ab13144bd0b9678303c178c82"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_cierre_cinturon_I.ipt",
+    "bytes": 91648,
+    "sha256": "87fd3609a1ad5a969188b0500a05f251b0f4530fa6184024b9ef590b684c4ea5"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_estabilizadora_225.ipt",
+    "bytes": 103424,
+    "sha256": "a7b644eb50bce34e49fe1735c3bf5a525050b6d42bf39b2b18a207b629b4aa15"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_estabilizadora_350.ipt",
+    "bytes": 103936,
+    "sha256": "1f135fcebe27e7445d5fc125c3e5dca20023f98315c2996132221ae809127ca9"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_hombrera_D.ipt",
+    "bytes": 100352,
+    "sha256": "71155d8ae0de672f486b666f717e4836bbabcf08a5e5971ff55b0753c7b6b1e6"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cinta_hombrera_I.ipt",
+    "bytes": 100352,
+    "sha256": "f805e17f08513d46b690b209e7d5d04d3ada205e79e63b8dcc7257676fcfa52c"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Correa_pectoral.ipt",
+    "bytes": 90624,
+    "sha256": "94126f6d32cfa9adcf3299146ccd01b114471b10bce4ff51f4131502509b19b1"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cuna_textil_D.ipt",
+    "bytes": 103936,
+    "sha256": "c76571f58cf7ba6f7bbc110ac1177ce0154efc07a5be638a7c155017d027406e"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Cuna_textil_I.ipt",
+    "bytes": 104448,
+    "sha256": "d9d0b5a95c1b9ab3214add0e6c3943cc74d2b123d5c4cf4bd3068886bf47902f"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Funda_refuerzo_D.ipt",
+    "bytes": 101376,
+    "sha256": "1e8b60332cef0e4781eb7d647aa7a182397ad0cfd752238a94ec300e8a66138a"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Funda_refuerzo_I.ipt",
+    "bytes": 100352,
+    "sha256": "b4055cf6d001b94e84e7177127f4e98e1395d8fa61a7074f0fafc9bbb5588b4a"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hebilla_carga_225.ipt",
+    "bytes": 93184,
+    "sha256": "1def5b7f1e8c8123a8916184447058821242d9b02565ad5e2354b7d99c1cd8e2"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hebilla_carga_350.ipt",
+    "bytes": 93696,
+    "sha256": "77a1b94d59ca3f35d6a342d2b74ac3b5012d10a4cdf35b9dcb9b22a4d71732ee"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hebilla_cinturon.ipt",
+    "bytes": 125952,
+    "sha256": "a8784edc9c686206cb169403ed4da3e049c7f24635e25b4aa05a9ab63839490a"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hebilla_pectoral.ipt",
+    "bytes": 93184,
+    "sha256": "0588c7419a997dc055a9fc40847ab4512ddd7b131c55ab9eb04c29aa4fe3ce84"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hombrera_D.ipt",
+    "bytes": 98304,
+    "sha256": "4d496413a14331be0f445b5ad8764c3fa7b26894bebd702f78feb5fa25c5f941"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Hombrera_I.ipt",
+    "bytes": 98816,
+    "sha256": "44d1cf2db0ff60e565e5c5caaacffe77bf762cf2f6b3b166a9cf315760f1cf14"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Regulador_hombro_D.ipt",
+    "bytes": 109056,
+    "sha256": "69d793d7ea5e13751fae7c09006aba9bb77204c15878d7abb3f8900b5544d86e"
+  },
+  {
+    "archivo": "Entrega/Inventor/REF_Regulador_hombro_I.ipt",
+    "bytes": 108544,
+    "sha256": "0e2ef02cd81363fa5b47d9ce41243155927dab798e96bf23e407df629d6e9d8b"
+  },
+  {
+    "archivo": "Entrega/Inventor/Refuerzo_C_D.ipt",
+    "bytes": 147456,
+    "sha256": "a4d58c2da3ff3ac049ad9c167b8d41e9a24e0a1c3cf5ec382a4d237fa55f3627"
+  },
+  {
+    "archivo": "Entrega/Inventor/Refuerzo_C_I.ipt",
+    "bytes": 148480,
+    "sha256": "14c101ed4b3e4a2eae40feab9ea530d20fd8637dd5e90e3a08646068b98970d0"
+  },
+  {
+    "archivo": "Entrega/Inventor/RESTRICCIONES.json",
+    "bytes": 19336,
+    "sha256": "f64e256b28aaed6c9b8739da8367c7c1eb46d918d7121e56e0b53108ad4bff86"
+  },
+  {
+    "archivo": "Entrega/Inventor/ROSCAS_NATIVAS.json",
+    "bytes": 374,
+    "sha256": "49c1a410a5d381c539288562ffc5a9bf7a0f8e101412dd25c4dacec43a71222a"
+  },
+  {
+    "archivo": "Entrega/Inventor/SEDAC_P2_04.iam",
+    "bytes": 674304,
+    "sha256": "65b69f20af4bb02a24ef796a76698b9fcc50eede76c644df205eb7dab86152e1"
+  },
+  {
+    "archivo": "Entrega/Inventor/SEDAC_P2_04_REVISION.step",
+    "bytes": 2691167,
+    "sha256": "08588b447a54867f110d495e70b985c79243ae7bee10433a9bb03957158c8cbc"
+  },
+  {
+    "archivo": "Entrega/Inventor/Tornillo_M5x55_ISO4762_A2_80.ipt",
+    "bytes": 131584,
+    "sha256": "edc8ff011045f479ecc1a5ba1d1d8aae8ae26aa1bc2aeac993967f4ff1f3b96c"
+  },
+  {
+    "archivo": "Entrega/Inventor/Tuerca_M5_autofreno_metalica.ipt",
+    "bytes": 124416,
+    "sha256": "9aa6320723b7fd5b1be3ef4153739ed5a9a68a0b68eb3b0826c4aeb03b021c0c"
+  },
+  {
+    "archivo": "Entrega/Inventor/VISTA_ESPALDA.png",
+    "bytes": 621448,
+    "sha256": "7ccf71b0a8a3b136152807a9995106f2906583e0433dd6f49002ea7396e36612"
+  },
+  {
+    "archivo": "Entrega/Inventor/VISTA_ESTRUCTURA.png",
+    "bytes": 740796,
+    "sha256": "14b6ceda15212ddaa9fd449f0c3921020aa040ec7c390060c7d058fa644f985b"
+  },
+  {
+    "archivo": "Entrega/Inventor/VISTA_FRENTE.png",
+    "bytes": 637029,
+    "sha256": "1c919a57c20af7320329ae1041dbc55d37d4bfc6132f9f82506d512ec739ea54"
+  },
+  {
+    "archivo": "Entrega/Inventor/Yugo_superior_D.ipt",
+    "bytes": 487936,
+    "sha256": "4c36e18e8454b6f8de2646d525e62457b74be4fc67af1cc0f8996c36c4a6e7eb"
+  },
+  {
+    "archivo": "Entrega/Inventor/Yugo_superior_I.ipt",
+    "bytes": 488960,
+    "sha256": "b381a1cd1f947064adc9b683089c2c6cb1322d9b0969b5225011c46e79b6f9c1"
+  },
+  {
+    "archivo": "ESPECIFICACION_P2_04.md",
+    "bytes": 3948,
+    "sha256": "751aa4aaf84157fb6f736ad3e6c00a21cccf36c262587f62a8bcaace3e7c4601"
+  },
+  {
+    "archivo": "INFORME_DISENO_P2_04.md",
+    "bytes": 12308,
+    "sha256": "428fb19946c1282dd64f3815c906328824312d4ad4ffcd7669d65a62f6e2e94e"
+  },
+  {
+    "archivo": "LEEME.md",
+    "bytes": 2648,
+    "sha256": "19d6abeb6235508ca0d7e7493536586ea1830952bcde77658303fcdb8c7d982e"
+  },
+  {
+    "archivo": "PARAMETROS_P2_04.json",
+    "bytes": 2073,
+    "sha256": "660de89e3c2201f2612e6f8d87564d6b39bf24c65ddcd77d73ec6faf46407f12"
+  },
+  {
+    "archivo": "RESUMEN_ENTREGA.json",
+    "bytes": 837,
+    "sha256": "7a6610f038c3505f38f47b774fde7aa4679dabc4afb9ef4ead25f9250c6ca9ec"
+  },
+  {
+    "archivo": "Soporte/calcular_p2_04.py",
+    "bytes": 8325,
+    "sha256": "7b744b1b7a316116dbfa0ce6a86382d9d3337d2b37e6aba5ab9208e5fd6a7d68"
+  },
+  {
+    "archivo": "Soporte/CONSTRUIR_P2_04.ps1",
+    "bytes": 20442,
+    "sha256": "1373bfc3f5a5b9540c8fa071a3ebea2fc14300a0f727000313a8993b69db0ef0"
+  },
+  {
+    "archivo": "Soporte/generar_p2_04.py",
+    "bytes": 14520,
+    "sha256": "deb3f090419938c474c33e60617e1cbe5d6ed7cb077ff16efe414812c476bf9f"
+  }
+]

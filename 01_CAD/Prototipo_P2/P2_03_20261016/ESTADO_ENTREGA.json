@@ -1,0 +1,21 @@
+{
+  "version": "P2.03",
+  "fecha": "2026-10-16",
+  "estado": "Entrega de prediseño completa",
+  "cad": "Entrega/Inventor_Optimizado/SEDAC_P2_03.iam",
+  "mathcad": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Memoria_SEDAC_P2_03_MC02_FINAL_EDITABLE.xmcd",
+  "pdf_diapos": 55,
+  "masa_rigida_kg": 2.3331284134369037,
+  "masa_reservada_kg": 2.913128413437,
+  "zip_bytes": 7963984,
+  "archivos_zip": 92,
+  "zip_sha256": "a26d0c3adf5122324b3652ebff88c84fafae73cc0b22bb7fa79c79ef5b4fb52d",
+  "pendientes_ingenieria": [
+    "mediciones",
+    "tolerancias y productos comerciales",
+    "FEA",
+    "fatiga",
+    "ensayos y arnes"
+  ],
+  "organizacion": "CAD intermedios archivados. Un XMCD borrador quedó bloqueado por otra instancia; excluido del ZIP y señalado en LEEME."
+}

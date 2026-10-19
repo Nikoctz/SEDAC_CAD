@@ -1,0 +1,112 @@
+{
+  "version": "P2.02",
+  "unidades": "mm",
+  "geometria": {
+    "altura_riel": 500,
+    "separacion_rieles": 200,
+    "ancho_cuna": 300,
+    "fondo_cuna": 125,
+    "altura_piso": 120,
+    "espesor_piso": 2.5,
+    "espesor_cartela": 4,
+    "ancho_refuerzo_cuna": 20,
+    "espesor_refuerzo_cuna": 1.5,
+    "espesor_anclaje_hombro": 5,
+    "espesor_yugo_cinturon": 5,
+    "espesor_hdpe": 2,
+    "profundidad_pad": 12
+  },
+  "cargas": {
+    "masa_total_referencia_kg": 25,
+    "factor_vertical": 3,
+    "factor_horizontal": 1,
+    "fraccion_lado_mas_cargado": 0.7,
+    "brazo_carga_desde_eje_riel": 100,
+    "altura_fuerza_sobre_sujecion": 400,
+    "factor_concentracion_provisional": 2,
+    "margen_fluencia_objetivo": 2.2,
+    "flecha_limite_preliminar_mm": 5
+  },
+  "materiales": {
+    "riel": "6061-T6 extruido SIN soldar, certificado pendiente",
+    "fluencia_6061_MPa": 240,
+    "fluencia_5052_MPa": 130,
+    "fluencia_A2_70_MPa": 450,
+    "E_aluminio_MPa": 69000,
+    "nu_aluminio": 0.33,
+    "densidad_6061_kg_mm3": 0.0000027,
+    "densidad_5052_kg_mm3": 0.00000268,
+    "densidad_hdpe_kg_mm3": 9.53e-7
+  },
+  "candidatos_riel": [
+    [
+      25,
+      25,
+      2
+    ],
+    [
+      30,
+      25,
+      2
+    ],
+    [
+      30,
+      30,
+      2
+    ],
+    [
+      30,
+      30,
+      2.5
+    ],
+    [
+      30,
+      30,
+      3
+    ],
+    [
+      35,
+      35,
+      2
+    ],
+    [
+      35,
+      35,
+      2.5
+    ],
+    [
+      40,
+      25,
+      2.5
+    ],
+    [
+      45,
+      25,
+      2.5
+    ],
+    [
+      50,
+      25,
+      2.5
+    ],
+    [
+      50,
+      25,
+      3
+    ],
+    [
+      40,
+      30,
+      2.5
+    ]
+  ],
+  "notas": [
+    "Dimensiones y cargas son hipótesis de prediseño, no mediciones.",
+    "La capacidad comercial publicada es 19 L; 25 kg es escenario de cálculo elegido, no masa medida.",
+    "Margen analítico no demuestra fatiga, torsión de uniones, incendio ni seguridad humana."
+  ],
+  "preferencia_optimizacion": {
+    "profundidad_max_preferida": 25,
+    "masa_max_par_rieles_kg": 1
+  }
+}

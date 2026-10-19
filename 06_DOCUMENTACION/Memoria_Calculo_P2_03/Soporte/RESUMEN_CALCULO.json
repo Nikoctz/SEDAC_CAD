@@ -1,0 +1,182 @@
+{
+  "pages": 45,
+  "variables": 247,
+  "min_margin": 2.253636805641785,
+  "checks": [
+    {
+      "name": "nRail",
+      "value": 2.4473480097854567,
+      "passes": true
+    },
+    {
+      "name": "nMinWall",
+      "value": 2.3050259650218807,
+      "passes": true
+    },
+    {
+      "name": "nBearR",
+      "value": 2.8761509964539465,
+      "passes": true
+    },
+    {
+      "name": "nBearG",
+      "value": 6.163180706687028,
+      "passes": true
+    },
+    {
+      "name": "nTearG",
+      "value": 7.045461799338725,
+      "passes": true
+    },
+    {
+      "name": "nRoot",
+      "value": 11.242469713209498,
+      "passes": true
+    },
+    {
+      "name": "nFlange",
+      "value": 2.4270666472501343,
+      "passes": true
+    },
+    {
+      "name": "nFloor",
+      "value": 2.8301426740232967,
+      "passes": true
+    },
+    {
+      "name": "nRib",
+      "value": 2.4267047428606423,
+      "passes": true
+    },
+    {
+      "name": "nRibBear",
+      "value": 3.494975972040192,
+      "passes": true
+    },
+    {
+      "name": "nSlot",
+      "value": 2.888908014474564,
+      "passes": true
+    },
+    {
+      "name": "nBelt",
+      "value": 2.9406882970835673,
+      "passes": true
+    },
+    {
+      "name": "nHipRoot",
+      "value": 3.0604214246364716,
+      "passes": true
+    },
+    {
+      "name": "nShoulderRoot",
+      "value": 4.376386703460467,
+      "passes": true
+    },
+    {
+      "name": "CsnWeb",
+      "value": 12.46213227636979,
+      "passes": true
+    },
+    {
+      "name": "CbnWeb",
+      "value": 5.438482407995578,
+      "passes": true
+    },
+    {
+      "name": "nPanLocal",
+      "value": 2.888908014474564,
+      "passes": true
+    },
+    {
+      "name": "nX",
+      "value": 7.789910933232698,
+      "passes": true
+    },
+    {
+      "name": "nXBearing",
+      "value": 2.906683184042051,
+      "passes": true
+    },
+    {
+      "name": "nXTear",
+      "value": 4.866705524391347,
+      "passes": true
+    },
+    {
+      "name": "nFrameBear",
+      "value": 3.465728169087824,
+      "passes": true
+    },
+    {
+      "name": "nRailFrame",
+      "value": 2.426009718361477,
+      "passes": true
+    },
+    {
+      "name": "nBoltC",
+      "value": 2.584075936777859,
+      "passes": true
+    },
+    {
+      "name": "nBoltF",
+      "value": 2.253636805641785,
+      "passes": true
+    },
+    {
+      "name": "nBoltH",
+      "value": 3.3159240310119316,
+      "passes": true
+    },
+    {
+      "name": "nBolt5",
+      "value": 4.242007547977841,
+      "passes": true
+    },
+    {
+      "name": "nPin",
+      "value": 2.6680115481275584,
+      "passes": true
+    },
+    {
+      "name": "nPinBore",
+      "value": 3.6979084240122164,
+      "passes": true
+    },
+    {
+      "name": "nSleeve6",
+      "value": 3.4108150985607075,
+      "passes": true
+    },
+    {
+      "name": "nSleeve5",
+      "value": 2.585722727827813,
+      "passes": true
+    },
+    {
+      "name": "nSeat6",
+      "value": 6.226973560519051,
+      "passes": true
+    },
+    {
+      "name": "nSeat5",
+      "value": 4.870366017454824,
+      "passes": true
+    },
+    {
+      "name": "nPanPunch",
+      "value": 3.014562461424337,
+      "passes": true
+    }
+  ],
+  "deflection_mm": 2.0379921165578314,
+  "mCAD_kg": 2.3331284134369037,
+  "mTotal_kg": 2.913128413437,
+  "pending": [
+    "FEA",
+    "fatiga",
+    "ensayos",
+    "bomba y arnes reales",
+    "tolerancias y certificados"
+  ]
+}

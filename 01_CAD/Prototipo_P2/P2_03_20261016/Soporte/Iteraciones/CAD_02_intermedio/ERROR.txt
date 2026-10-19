@@ -1,0 +1,2 @@
+Ensamblar
+Cannot convert argument "occ", with value: "System.__ComObject", for "Proxy" to type "Inventor.ComponentOccurrence": "Cannot convert the "System.__ComObject" value of type "System.__ComObject#{5df86020-6b16-11d3-b794-0060b0f159ef}" to type "Inventor.ComponentOccurrence"."

@@ -1,0 +1,230 @@
+{
+  "hipotesis": {
+    "version": "P2.02",
+    "unidades": "mm",
+    "geometria": {
+      "altura_riel": 500,
+      "separacion_rieles": 200,
+      "ancho_cuna": 300,
+      "fondo_cuna": 125,
+      "altura_piso": 120,
+      "espesor_piso": 2.5,
+      "espesor_cartela": 4,
+      "ancho_refuerzo_cuna": 20,
+      "espesor_refuerzo_cuna": 1.5,
+      "espesor_anclaje_hombro": 5,
+      "espesor_yugo_cinturon": 5,
+      "espesor_hdpe": 2,
+      "profundidad_pad": 12
+    },
+    "cargas": {
+      "masa_total_referencia_kg": 25,
+      "factor_vertical": 3,
+      "factor_horizontal": 1,
+      "fraccion_lado_mas_cargado": 0.7,
+      "brazo_carga_desde_eje_riel": 100,
+      "altura_fuerza_sobre_sujecion": 400,
+      "factor_concentracion_provisional": 2,
+      "margen_fluencia_objetivo": 2.2,
+      "flecha_limite_preliminar_mm": 5
+    },
+    "materiales": {
+      "riel": "6061-T6 extruido SIN soldar, certificado pendiente",
+      "fluencia_6061_MPa": 240,
+      "fluencia_5052_MPa": 130,
+      "fluencia_A2_70_MPa": 450,
+      "E_aluminio_MPa": 69000,
+      "nu_aluminio": 0.33,
+      "densidad_6061_kg_mm3": 2.7e-06,
+      "densidad_5052_kg_mm3": 2.68e-06,
+      "densidad_hdpe_kg_mm3": 9.53e-07
+    },
+    "candidatos_riel": [
+      [
+        25,
+        25,
+        2
+      ],
+      [
+        30,
+        25,
+        2
+      ],
+      [
+        30,
+        30,
+        2
+      ],
+      [
+        30,
+        30,
+        2.5
+      ],
+      [
+        30,
+        30,
+        3
+      ],
+      [
+        35,
+        35,
+        2
+      ],
+      [
+        35,
+        35,
+        2.5
+      ],
+      [
+        40,
+        25,
+        2.5
+      ],
+      [
+        45,
+        25,
+        2.5
+      ],
+      [
+        50,
+        25,
+        2.5
+      ],
+      [
+        50,
+        25,
+        3
+      ],
+      [
+        40,
+        30,
+        2.5
+      ]
+    ],
+    "notas": [
+      "Dimensiones y cargas son hipótesis de prediseño, no mediciones.",
+      "La capacidad comercial publicada es 19 L; 25 kg es escenario de cálculo elegido, no masa medida.",
+      "Margen analítico no demuestra fatiga, torsión de uniones, incendio ni seguridad humana."
+    ],
+    "preferencia_optimizacion": {
+      "profundidad_max_preferida": 25,
+      "masa_max_par_rieles_kg": 1
+    }
+  },
+  "seleccion": {
+    "b": 50,
+    "d": 25,
+    "t": 2.5,
+    "A": 333.89894845498907,
+    "Ix": 32783.254939018356,
+    "Iz": 98862.55277533585,
+    "Zx": 2622.6603951214684,
+    "Zz": 3954.502111013434,
+    "masa_rieles_kg": 0.9015271608284705,
+    "tension_VM_MPa": 106.54356417405333,
+    "margen": 2.2525996934730617,
+    "flecha_mm": 3.440515731510931,
+    "margen_Euler": 67.73180078862595,
+    "tension_pandeo_local_MPa": 995.0872746160609,
+    "cumple_precriterios": true
+  },
+  "fuerza_vertical_N": 735.75,
+  "fuerza_horizontal_N": 245.25,
+  "reaccion_tornillo_cartela_N": 1691.1899733249957,
+  "altura_efectiva_calculo_mm": 400,
+  "comprobaciones": [
+    {
+      "elemento": "M8_cartela_cortante",
+      "tension_MPa": 80.03352347131002,
+      "limite_MPa": 450,
+      "margen": 5.622643868244955,
+      "alcance": "Rosca en plano de corte, A_s=36.6 mm2; sin acreditar friccion"
+    },
+    {
+      "elemento": "Pared_riel_aplastamiento_M8",
+      "tension_MPa": 84.55949866624978,
+      "limite_MPa": 240,
+      "margen": 2.838238208427212,
+      "alcance": "Una pared; espesor nominal; cilindro de apoyo interior"
+    },
+    {
+      "elemento": "Cartela_aplastamiento_M8",
+      "tension_MPa": 52.849686666406114,
+      "limite_MPa": 130,
+      "margen": 2.4598064473035834,
+      "alcance": "Sin credito de reparto por friccion"
+    },
+    {
+      "elemento": "Cartela_arrancamiento_borde",
+      "tension_MPa": 44.652849985517484,
+      "limite_MPa": 130,
+      "margen": 2.911348324735457,
+      "alcance": "Borde centro-agujero minimo min(15, profundidad/2) mm"
+    },
+    {
+      "elemento": "Cartela_raiz_VM",
+      "tension_MPa": 29.75743289471238,
+      "limite_MPa": 130,
+      "margen": 4.368656411323028,
+      "alcance": "Idealizacion de viga; factor local 2, sin sustituir FEA del recorte"
+    },
+    {
+      "elemento": "Piso_carga_repartida_y_parche_100N",
+      "tension_MPa": 38.551680000000005,
+      "limite_MPa": 130,
+      "margen": 3.372096883974965,
+      "alcance": "2x presion media + 100 N sobre franja de 50 mm; supuesto de contacto flexible"
+    },
+    {
+      "elemento": "Refuerzo_cuna_flexion",
+      "tension_MPa": 50.50651159141725,
+      "limite_MPa": 240,
+      "margen": 4.7518625309450995,
+      "alcance": "70% de F en un tubo, carga puntual centrada entre cartelas"
+    },
+    {
+      "elemento": "Puente_ranura_hombro",
+      "tension_MPa": 100.429875,
+      "limite_MPa": 240,
+      "margen": 2.3897271603693624,
+      "alcance": "Carga fuera del plano sobre puente, viga apoyada; concentracion 1.5 provisional"
+    },
+    {
+      "elemento": "Puente_ranura_cinturon",
+      "tension_MPa": 92.7045,
+      "limite_MPa": 240,
+      "margen": 2.5888710904001426,
+      "alcance": "Viga apoyada del puente exterior, fuerza fuera del plano"
+    },
+    {
+      "elemento": "Yugo_cinturon_flexion_lateral",
+      "tension_MPa": 98.8848,
+      "limite_MPa": 240,
+      "margen": 2.4270666472501334,
+      "alcance": "Voladizo 40 mm desde riel, sin utilizar ventana central como apoyo"
+    },
+    {
+      "elemento": "Diagonal_trabajando_a_traccion",
+      "tension_MPa": 13.297033750786678,
+      "limite_MPa": 130,
+      "margen": 9.7766165324134,
+      "alcance": "Solo la diagonal traccionada; sin credito a la comprimida"
+    },
+    {
+      "elemento": "M6_uniones_VM",
+      "tension_MPa": 26.628342303527184,
+      "limite_MPa": 450,
+      "margen": 16.899287040500194,
+      "alcance": "Solo cortante externo; pretension, apertura y palanca pendientes"
+    }
+  ],
+  "criterio_interno": 2.2,
+  "validacion_global": false,
+  "pendientes": [
+    "FEA de uniones y rigidez real del arnes",
+    "Fatiga y espectro de pasos/impactos",
+    "Aflojamiento, pretension, aplastamiento bajo arandelas y palanca",
+    "Ensayo de bolsa flexible llena y salida inferior",
+    "Ambiente termico, abrasion, bordes y liberacion rapida"
+  ]
+}

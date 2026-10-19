@@ -1,0 +1,990 @@
+[
+  {
+    "name": "Mass",
+    "value": 25
+  },
+  {
+    "name": "grav",
+    "value": 9.81
+  },
+  {
+    "name": "av",
+    "value": 3
+  },
+  {
+    "name": "ah",
+    "value": 1
+  },
+  {
+    "name": "eta",
+    "value": 0.7
+  },
+  {
+    "name": "Fv",
+    "value": 735.75
+  },
+  {
+    "name": "Fh",
+    "value": 245.25
+  },
+  {
+    "name": "H",
+    "value": 0.5
+  },
+  {
+    "name": "Sep",
+    "value": 0.2
+  },
+  {
+    "name": "b",
+    "value": 0.05
+  },
+  {
+    "name": "d",
+    "value": 0.04
+  },
+  {
+    "name": "t",
+    "value": 0.0015
+  },
+  {
+    "name": "tmin",
+    "value": 0.0014
+  },
+  {
+    "name": "ecc",
+    "value": 0.1075
+  },
+  {
+    "name": "Le",
+    "value": 0.423
+  },
+  {
+    "name": "nReq",
+    "value": 2.2
+  },
+  {
+    "name": "deltaLim",
+    "value": 0.005
+  },
+  {
+    "name": "SyR",
+    "value": 240000000.0
+  },
+  {
+    "name": "SyS",
+    "value": 130000000.0
+  },
+  {
+    "name": "SyB",
+    "value": 600000000.0
+  },
+  {
+    "name": "Eal",
+    "value": 69000000000.0
+  },
+  {
+    "name": "nu",
+    "value": 0.33
+  },
+  {
+    "name": "Kt",
+    "value": 2
+  },
+  {
+    "name": "Kb",
+    "value": 1.2
+  },
+  {
+    "name": "Kslot",
+    "value": 1.5
+  },
+  {
+    "name": "rhoAl",
+    "value": 2700.0
+  },
+  {
+    "name": "cero",
+    "value": 0.21460183660255172
+  },
+  {
+    "name": "cuno",
+    "value": 0.13698379248397125
+  },
+  {
+    "name": "ro",
+    "value": 0.003
+  },
+  {
+    "name": "ri",
+    "value": 0.0015
+  },
+  {
+    "name": "Area",
+    "value": 0.0002552057504117311
+  },
+  {
+    "name": "Ix",
+    "value": 6.602410304202341e-08
+  },
+  {
+    "name": "Iz",
+    "value": 9.300672437231099e-08
+  },
+  {
+    "name": "Zx",
+    "value": 3.3012051521011704e-06
+  },
+  {
+    "name": "Zz",
+    "value": 3.7202689748924395e-06
+  },
+  {
+    "name": "mRails",
+    "value": 0.689055526111674
+  },
+  {
+    "name": "Nr",
+    "value": 515.025
+  },
+  {
+    "name": "Me",
+    "value": 55.3651875
+  },
+  {
+    "name": "SigAx",
+    "value": 2018077.5674885642
+  },
+  {
+    "name": "SigEc",
+    "value": 16771204.741626203
+  },
+  {
+    "name": "SigH",
+    "value": 29409388.362527303
+  },
+  {
+    "name": "Am",
+    "value": 0.0018629043128087983
+  },
+  {
+    "name": "Tr",
+    "value": 17.1675
+  },
+  {
+    "name": "TauT",
+    "value": 3071816.389416098
+  },
+  {
+    "name": "TauV",
+    "value": 2127240.5360520105
+  },
+  {
+    "name": "SigVM",
+    "value": 98065334.00251453
+  },
+  {
+    "name": "nRail",
+    "value": 2.4473480097854567
+  },
+  {
+    "name": "deltaH",
+    "value": 0.0009507258509004274
+  },
+  {
+    "name": "deltaE",
+    "value": 0.0010872662656574038
+  },
+  {
+    "name": "deltaR",
+    "value": 0.0020379921165578313
+  },
+  {
+    "name": "Pcr",
+    "value": 62821.83530806308
+  },
+  {
+    "name": "nEuler",
+    "value": 121.97822495619258
+  },
+  {
+    "name": "bflat",
+    "value": 0.044000000000000004
+  },
+  {
+    "name": "SigLocal",
+    "value": 296059023.8527123
+  },
+  {
+    "name": "CapLocal",
+    "value": 240000000.0
+  },
+  {
+    "name": "Amin",
+    "value": 0.00023911256480310737
+  },
+  {
+    "name": "IminX",
+    "value": 6.221788695511905e-08
+  },
+  {
+    "name": "IminZ",
+    "value": 8.760140888799794e-08
+  },
+  {
+    "name": "ZXmin",
+    "value": 3.110894347755953e-06
+  },
+  {
+    "name": "ZZmin",
+    "value": 3.5040563555199175e-06
+  },
+  {
+    "name": "AMmin",
+    "value": 0.0018721744236023313
+  },
+  {
+    "name": "Nmin",
+    "value": 51166460.751319304
+  },
+  {
+    "name": "Tmin",
+    "value": 5545347.162347192
+  },
+  {
+    "name": "nMinWall",
+    "value": 2.3050259650218807
+  },
+  {
+    "name": "pitch8",
+    "value": 0.08
+  },
+  {
+    "name": "armH",
+    "value": 0.075
+  },
+  {
+    "name": "tg",
+    "value": 0.003
+  },
+  {
+    "name": "tfl",
+    "value": 0.005
+  },
+  {
+    "name": "Vy",
+    "value": 515.025
+  },
+  {
+    "name": "Vz",
+    "value": 171.67499999999998
+  },
+  {
+    "name": "MomC",
+    "value": 68.24081249999999
+  },
+  {
+    "name": "Rpin",
+    "value": 1168.2279560922216
+  },
+  {
+    "name": "nBearR",
+    "value": 2.8761509964539465
+  },
+  {
+    "name": "nBearG",
+    "value": 6.163180706687028
+  },
+  {
+    "name": "edge8",
+    "value": 0.015
+  },
+  {
+    "name": "nTearG",
+    "value": 7.045461799338725
+  },
+  {
+    "name": "hroot",
+    "value": 0.115
+  },
+  {
+    "name": "SigRoot",
+    "value": 10319971.644612474
+  },
+  {
+    "name": "TauRoot",
+    "value": 1573576.8617663956
+  },
+  {
+    "name": "nRoot",
+    "value": 11.242469713209498
+  },
+  {
+    "name": "armFl",
+    "value": 0.008
+  },
+  {
+    "name": "widthFl",
+    "value": 0.01
+  },
+  {
+    "name": "SigFl",
+    "value": 98884799.99999997
+  },
+  {
+    "name": "nFlange",
+    "value": 2.4270666472501343
+  },
+  {
+    "name": "W",
+    "value": 0.3
+  },
+  {
+    "name": "Depth",
+    "value": 0.125
+  },
+  {
+    "name": "tf",
+    "value": 0.0025
+  },
+  {
+    "name": "span",
+    "value": 0.045
+  },
+  {
+    "name": "over",
+    "value": 0.02
+  },
+  {
+    "name": "strip",
+    "value": 0.05
+  },
+  {
+    "name": "Patch",
+    "value": 100
+  },
+  {
+    "name": "pressure",
+    "value": 39240.0
+  },
+  {
+    "name": "Mspan",
+    "value": 32.432625
+  },
+  {
+    "name": "Medge",
+    "value": 47.848
+  },
+  {
+    "name": "Mfloor",
+    "value": 47.848
+  },
+  {
+    "name": "SigFloor",
+    "value": 45934079.99999999
+  },
+  {
+    "name": "nFloor",
+    "value": 2.8301426740232967
+  },
+  {
+    "name": "tNeed",
+    "value": 0.0022041806431625124
+  },
+  {
+    "name": "rh",
+    "value": 0.02
+  },
+  {
+    "name": "rd",
+    "value": 0.01
+  },
+  {
+    "name": "rt",
+    "value": 0.0015
+  },
+  {
+    "name": "Irib",
+    "value": 3.2547229432078184e-09
+  },
+  {
+    "name": "Zrib",
+    "value": 3.2547229432078183e-07
+  },
+  {
+    "name": "Lrib",
+    "value": 0.25
+  },
+  {
+    "name": "SigRib",
+    "value": 98899547.09409097
+  },
+  {
+    "name": "nRib",
+    "value": 2.4267047428606423
+  },
+  {
+    "name": "nRibBear",
+    "value": 3.494975972040192
+  },
+  {
+    "name": "ta",
+    "value": 0.002
+  },
+  {
+    "name": "tp",
+    "value": 0.0018000000000000002
+  },
+  {
+    "name": "dp",
+    "value": 0.018000000000000002
+  },
+  {
+    "name": "slot",
+    "value": 0.052000000000000005
+  },
+  {
+    "name": "Lsa",
+    "value": 0.024
+  },
+  {
+    "name": "LsA",
+    "value": 7.236000000000002e-05
+  },
+  {
+    "name": "Lsy",
+    "value": 0.01647313432835821
+  },
+  {
+    "name": "Lsz",
+    "value": 0.004526865671641791
+  },
+  {
+    "name": "LsIy",
+    "value": 2.0595185731343288e-09
+  },
+  {
+    "name": "LsIz",
+    "value": 4.226430573134318e-09
+  },
+  {
+    "name": "LsIyz",
+    "value": 1.7391546268656703e-09
+  },
+  {
+    "name": "LsDet",
+    "value": 5.679753447284624e-18
+  },
+  {
+    "name": "Ls1",
+    "value": 1675573.490887111
+  },
+  {
+    "name": "Ls2",
+    "value": -5673286.179197865
+  },
+  {
+    "name": "Ls3",
+    "value": 7720913.238522989
+  },
+  {
+    "name": "Ls4",
+    "value": 8272077.713779361
+  },
+  {
+    "name": "Ls5",
+    "value": -3782701.7621694063
+  },
+  {
+    "name": "Ls6",
+    "value": 3014993.4326591967
+  },
+  {
+    "name": "LsZ",
+    "value": 1.2088861282507443e-07
+  },
+  {
+    "name": "nSlot",
+    "value": 2.888908014474564
+  },
+  {
+    "name": "Lba",
+    "value": 0.026000000000000002
+  },
+  {
+    "name": "LbA",
+    "value": 7.596000000000001e-05
+  },
+  {
+    "name": "Lby",
+    "value": 0.017645023696682468
+  },
+  {
+    "name": "Lbz",
+    "value": 0.004354976303317537
+  },
+  {
+    "name": "LbIy",
+    "value": 2.105601218957346e-09
+  },
+  {
+    "name": "LbIz",
+    "value": 5.274657218957351e-09
+  },
+  {
+    "name": "LbIyz",
+    "value": 1.9564839810426556e-09
+  },
+  {
+    "name": "LbDet",
+    "value": 7.278495101742246e-18
+  },
+  {
+    "name": "Lb1",
+    "value": 1587031.2268576326
+  },
+  {
+    "name": "Lb2",
+    "value": -5401856.282997625
+  },
+  {
+    "name": "Lb3",
+    "value": 7642575.10207066
+  },
+  {
+    "name": "Lb4",
+    "value": 8126421.160445255
+  },
+  {
+    "name": "Lb5",
+    "value": -3613567.0861162012
+  },
+  {
+    "name": "Lb6",
+    "value": 2891474.365364461
+  },
+  {
+    "name": "LbZ",
+    "value": 1.2305539920419395e-07
+  },
+  {
+    "name": "nBelt",
+    "value": 2.9406882970835673
+  },
+  {
+    "name": "Csh",
+    "value": 0.07200000000000001
+  },
+  {
+    "name": "CsA",
+    "value": 0.00018792000000000006
+  },
+  {
+    "name": "Csz",
+    "value": 0.003693103448275862
+  },
+  {
+    "name": "CsI",
+    "value": 4.568326262068968e-09
+  },
+  {
+    "name": "CsZ",
+    "value": 3.193093796095446e-07
+  },
+  {
+    "name": "CsSig",
+    "value": 54839760.803182416
+  },
+  {
+    "name": "nShoulderRoot",
+    "value": 4.376386703460467
+  },
+  {
+    "name": "CsWeb",
+    "value": 14156033.699736891
+  },
+  {
+    "name": "CsCr",
+    "value": 176414364.47486955
+  },
+  {
+    "name": "CsnWeb",
+    "value": 12.46213227636979
+  },
+  {
+    "name": "Cbh",
+    "value": 0.1
+  },
+  {
+    "name": "CbA",
+    "value": 0.00023832000000000006
+  },
+  {
+    "name": "Cbz",
+    "value": 0.003102416918429003
+  },
+  {
+    "name": "CbI",
+    "value": 4.8919738078549865e-09
+  },
+  {
+    "name": "CbZ",
+    "value": 3.283736550465414e-07
+  },
+  {
+    "name": "CbSig",
+    "value": 78420572.43097104
+  },
+  {
+    "name": "nHipRoot",
+    "value": 3.0604214246364716
+  },
+  {
+    "name": "CbWeb",
+    "value": 16331059.161112966
+  },
+  {
+    "name": "CbCr",
+    "value": 88816177.9516479
+  },
+  {
+    "name": "CbnWeb",
+    "value": 5.438482407995578
+  },
+  {
+    "name": "CrFlange",
+    "value": 338083972.8078272
+  },
+  {
+    "name": "nPanLocal",
+    "value": 2.888908014474564
+  },
+  {
+    "name": "riseX",
+    "value": 0.305
+  },
+  {
+    "name": "lenX",
+    "value": 0.3647259244967377
+  },
+  {
+    "name": "ForceX",
+    "value": 447.2451649141246
+  },
+  {
+    "name": "AnetX",
+    "value": 2.68e-05
+  },
+  {
+    "name": "nX",
+    "value": 7.789910933232698
+  },
+  {
+    "name": "nXBearing",
+    "value": 2.906683184042051
+  },
+  {
+    "name": "nXTear",
+    "value": 4.866705524391347
+  },
+  {
+    "name": "Rframe",
+    "value": 830.9941978969496
+  },
+  {
+    "name": "nFrameBear",
+    "value": 3.465728169087824
+  },
+  {
+    "name": "nRailFrame",
+    "value": 2.426009718361477
+  },
+  {
+    "name": "scatter",
+    "value": 0.25
+  },
+  {
+    "name": "prying",
+    "value": 1.5
+  },
+  {
+    "name": "F0C",
+    "value": 1500
+  },
+  {
+    "name": "F0F",
+    "value": 1400
+  },
+  {
+    "name": "F0H",
+    "value": 1800
+  },
+  {
+    "name": "F05",
+    "value": 1000
+  },
+  {
+    "name": "PC",
+    "value": 128.75624999999997
+  },
+  {
+    "name": "PF",
+    "value": 128.75624999999997
+  },
+  {
+    "name": "PHS",
+    "value": 824.0400000000001
+  },
+  {
+    "name": "PHB",
+    "value": 869.1046875
+  },
+  {
+    "name": "PH",
+    "value": 869.1046875
+  },
+  {
+    "name": "P5",
+    "value": 257.5125
+  },
+  {
+    "name": "As6",
+    "value": 2.01e-05
+  },
+  {
+    "name": "As5",
+    "value": 1.4199999999999998e-05
+  },
+  {
+    "name": "Ash6",
+    "value": 2.8274333882308137e-05
+  },
+  {
+    "name": "Zsh6",
+    "value": 2.1205750411731103e-08
+  },
+  {
+    "name": "droot5",
+    "value": 0.004018504
+  },
+  {
+    "name": "Zroot5",
+    "value": 6.3707873530411226e-09
+  },
+  {
+    "name": "RH",
+    "value": 309.015
+  },
+  {
+    "name": "R5",
+    "value": 68.67
+  },
+  {
+    "name": "MbC",
+    "value": 2.5701015034028876
+  },
+  {
+    "name": "MbF",
+    "value": 3.5594669280126126
+  },
+  {
+    "name": "MbH",
+    "value": 0.5253255
+  },
+  {
+    "name": "Mb5",
+    "value": 0.22317750000000003
+  },
+  {
+    "name": "VMC",
+    "value": 232191318.93939352
+  },
+  {
+    "name": "nBoltC",
+    "value": 2.584075936777859
+  },
+  {
+    "name": "VMF",
+    "value": 266236333.42247155
+  },
+  {
+    "name": "nBoltF",
+    "value": 2.253636805641785
+  },
+  {
+    "name": "VMH",
+    "value": 180945038.0613503
+  },
+  {
+    "name": "nBoltH",
+    "value": 3.3159240310119316
+  },
+  {
+    "name": "VM5",
+    "value": 141442464.02532196
+  },
+  {
+    "name": "nBolt5",
+    "value": 4.242007547977841
+  },
+  {
+    "name": "Apin",
+    "value": 4.432787234215199e-05
+  },
+  {
+    "name": "Zpin",
+    "value": 7.954636691799174e-08
+  },
+  {
+    "name": "VMPin",
+    "value": 89954633.130593
+  },
+  {
+    "name": "nPin",
+    "value": 2.6680115481275584
+  },
+  {
+    "name": "nPinBore",
+    "value": 3.6979084240122164
+  },
+  {
+    "name": "Asp6",
+    "value": 4.432787234215199e-05
+  },
+  {
+    "name": "Asp5",
+    "value": 1.6241705557227195e-05
+  },
+  {
+    "name": "nSleeve6",
+    "value": 3.4108150985607075
+  },
+  {
+    "name": "nSleeve5",
+    "value": 2.585722727827813
+  },
+  {
+    "name": "Aw6",
+    "value": 8.092742675647308e-05
+  },
+  {
+    "name": "Aw5",
+    "value": 5.647798192991051e-05
+  },
+  {
+    "name": "nSeat6",
+    "value": 6.226973560519051
+  },
+  {
+    "name": "nSeat5",
+    "value": 4.870366017454824
+  },
+  {
+    "name": "nPanPunch",
+    "value": 3.014562461424337
+  },
+  {
+    "name": "ClampC",
+    "value": 996.2437500000001
+  },
+  {
+    "name": "ClampF",
+    "value": 921.2437500000001
+  },
+  {
+    "name": "ClampH",
+    "value": 480.89531250000005
+  },
+  {
+    "name": "Clamp5",
+    "value": 492.4875
+  },
+  {
+    "name": "ProofNut",
+    "value": 800000000.0
+  },
+  {
+    "name": "nProof6",
+    "value": 5.155325521596492
+  },
+  {
+    "name": "nProof5",
+    "value": 7.535592573859254
+  },
+  {
+    "name": "Ktorque",
+    "value": 0.2
+  },
+  {
+    "name": "TorqueC",
+    "value": 1.8
+  },
+  {
+    "name": "TorqueF",
+    "value": 1.68
+  },
+  {
+    "name": "TorqueH",
+    "value": 2.16
+  },
+  {
+    "name": "Torque5",
+    "value": 1.0
+  },
+  {
+    "name": "MinFrame",
+    "value": 2.3050259650218807
+  },
+  {
+    "name": "MinJoint",
+    "value": 2.253636805641785
+  },
+  {
+    "name": "MinHarness",
+    "value": 2.888908014474564
+  },
+  {
+    "name": "MinBrace",
+    "value": 2.426009718361477
+  },
+  {
+    "name": "MinContact",
+    "value": 3.014562461424337
+  },
+  {
+    "name": "MinModel",
+    "value": 2.253636805641785
+  },
+  {
+    "name": "mCAD",
+    "value": 2.333128413437
+  },
+  {
+    "name": "mHarness",
+    "value": 0.5
+  },
+  {
+    "name": "mExtra",
+    "value": 0.08
+  },
+  {
+    "name": "mTotal",
+    "value": 2.913128413437
+  },
+  {
+    "name": "mRestante",
+    "value": 22.086871586563
+  },
+  {
+    "name": "mGoal",
+    "value": 2.0
+  },
+  {
+    "name": "mOld",
+    "value": 3.2062576846
+  },
+  {
+    "name": "savingCAD",
+    "value": 0.26004241231769176
+  }
+]

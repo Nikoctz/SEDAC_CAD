@@ -1,0 +1,19 @@
+{
+  "pdf_pages": 55,
+  "mathcad_pages": 45,
+  "mathcad_regions": 659,
+  "mathcad_variables": 247,
+  "mathcad_errors": 0,
+  "mathcad_overlaps": 0,
+  "pdf_overfull": 0,
+  "max_relative_error": 5.836143318479703e-15,
+  "cad_parts": 51,
+  "cad_instances": 131,
+  "position_constraints": 390,
+  "unrestrained_dof": 0,
+  "volumetric_interferences": 0,
+  "rounded_anchor_parts": 4,
+  "threaded_part_definitions": 6,
+  "P2_02_zip_sha256": "9353e6ef30483065898f710e1b56b6be4a7f2c876f8e23a77ad9cce72a151f1c",
+  "visual_review": "Revisión visual por el asistente de las 55 diapositivas PDF, las 45 páginas Mathcad y las tres vistas CAD; sin recortes ni solapamientos observados. Detalles ampliados revisados en PDF25/37 y Mathcad12/43."
+}

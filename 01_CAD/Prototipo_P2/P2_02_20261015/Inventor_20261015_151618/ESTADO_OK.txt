@@ -1,0 +1,1 @@
+Actualizacion correcta de 46 piezas solidas y 61 ocurrencias. STEP y vistas exportados. No es validacion mecanica.

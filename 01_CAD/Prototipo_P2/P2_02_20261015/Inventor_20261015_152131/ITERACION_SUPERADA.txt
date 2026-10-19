@@ -1,0 +1,1 @@
+Iteracion de estudio. Usar la carpeta indicada en ULTIMA_EJECUCION.txt. Esta carpeta puede contener geometria parcial o interferencias ya corregidas.

@@ -1,0 +1,17 @@
+[
+  {
+    "pieza": "Anclaje_hombro_I",
+    "radio_mm": 0.6,
+    "aplicado": true
+  },
+  {
+    "pieza": "Anclaje_hombro_D",
+    "radio_mm": 0.6,
+    "aplicado": true
+  },
+  {
+    "pieza": "Yugo_cinturon",
+    "radio_mm": 0.6,
+    "aplicado": true
+  }
+]

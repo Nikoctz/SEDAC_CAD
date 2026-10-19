@@ -1,0 +1,29 @@
+{
+  "version": "P2.02",
+  "fecha": "2026-10-15",
+  "Inventor": "2027.1",
+  "piezas_solidas": 54,
+  "ocurrencias": 70,
+  "interferencias_volumetricas": 0,
+  "perfil_riel_mm": [
+    50,
+    25,
+    2.5
+  ],
+  "margen_analitico_riel": 2.2525996934730617,
+  "masa_metales_sin_herrajes_kg": 2.494270370974538,
+  "masa_representada_kg": 3.2062576845699455,
+  "masa_por_material_kg": {
+    "hdpe": 0.34292497977753167,
+    "6061": 1.135787091433936,
+    "pad": 0.053200736052701585,
+    "anclaje": 0.6083545618069777,
+    "herrajes": 0.31586159776517436,
+    "5052": 0.7501287177336242
+  },
+  "ensayo_fisico": false,
+  "FEA": false,
+  "fatiga_validada": false,
+  "escala": "1:1",
+  "parametrizacion": "regeneracion desde JSON; montaje fijado"
+}

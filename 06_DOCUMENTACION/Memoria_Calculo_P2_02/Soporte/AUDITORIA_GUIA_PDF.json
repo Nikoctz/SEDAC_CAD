@@ -1,0 +1,197 @@
+{
+  "output": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\06_DOCUMENTACION\\Memoria_Calculo_P2_02\\Guia_Explicada_Memoria_SEDAC_P2_02_MC01.pdf",
+  "pages": [
+    {
+      "page": 1,
+      "key": "portada",
+      "section": null,
+      "used": 438.6,
+      "available": 684.89
+    },
+    {
+      "page": 2,
+      "key": "mapa",
+      "section": null,
+      "used": 577.5,
+      "available": 684.89
+    },
+    {
+      "page": 3,
+      "key": "mathcad1",
+      "section": null,
+      "used": 483.8,
+      "available": 684.89
+    },
+    {
+      "page": 4,
+      "key": "mathcad2",
+      "section": null,
+      "used": 492.3,
+      "available": 684.89
+    },
+    {
+      "page": 5,
+      "key": "teoria",
+      "section": null,
+      "used": 489.0,
+      "available": 684.89
+    },
+    {
+      "page": 6,
+      "key": "s1",
+      "section": 1,
+      "used": 485.2,
+      "available": 684.89
+    },
+    {
+      "page": 7,
+      "key": "s2",
+      "section": 2,
+      "used": 546.8,
+      "available": 684.89
+    },
+    {
+      "page": 8,
+      "key": "s3",
+      "section": 3,
+      "used": 447.3,
+      "available": 684.89
+    },
+    {
+      "page": 9,
+      "key": "s4",
+      "section": 4,
+      "used": 485.0,
+      "available": 684.89
+    },
+    {
+      "page": 10,
+      "key": "s5",
+      "section": 5,
+      "used": 434.2,
+      "available": 684.89
+    },
+    {
+      "page": 11,
+      "key": "s6",
+      "section": 6,
+      "used": 465.0,
+      "available": 684.89
+    },
+    {
+      "page": 12,
+      "key": "s7",
+      "section": 7,
+      "used": 470.8,
+      "available": 684.89
+    },
+    {
+      "page": 13,
+      "key": "s8",
+      "section": 8,
+      "used": 439.8,
+      "available": 684.89
+    },
+    {
+      "page": 14,
+      "key": "s9",
+      "section": 9,
+      "used": 456.2,
+      "available": 684.89
+    },
+    {
+      "page": 15,
+      "key": "s10",
+      "section": 10,
+      "used": 457.4,
+      "available": 684.89
+    },
+    {
+      "page": 16,
+      "key": "s11",
+      "section": 11,
+      "used": 491.4,
+      "available": 684.89
+    },
+    {
+      "page": 17,
+      "key": "s12",
+      "section": 12,
+      "used": 468.0,
+      "available": 684.89
+    },
+    {
+      "page": 18,
+      "key": "s13",
+      "section": 13,
+      "used": 458.4,
+      "available": 684.89
+    },
+    {
+      "page": 19,
+      "key": "s14",
+      "section": 14,
+      "used": 518.4,
+      "available": 684.89
+    },
+    {
+      "page": 20,
+      "key": "s15",
+      "section": 15,
+      "used": 502.9,
+      "available": 684.89
+    },
+    {
+      "page": 21,
+      "key": "s16",
+      "section": 16,
+      "used": 540.0,
+      "available": 684.89
+    },
+    {
+      "page": 22,
+      "key": "s17",
+      "section": 17,
+      "used": 463.0,
+      "available": 684.89
+    },
+    {
+      "page": 23,
+      "key": "fatiga",
+      "section": null,
+      "used": 473.6,
+      "available": 684.89
+    },
+    {
+      "page": 24,
+      "key": "sensibilidad",
+      "section": null,
+      "used": 478.5,
+      "available": 684.89
+    },
+    {
+      "page": 25,
+      "key": "diccionario",
+      "section": null,
+      "used": 556.4,
+      "available": 684.89
+    },
+    {
+      "page": 26,
+      "key": "fuentes1",
+      "section": null,
+      "used": 314.4,
+      "available": 684.89
+    },
+    {
+      "page": 27,
+      "key": "fuentes2",
+      "section": null,
+      "used": 309.2,
+      "available": 684.89
+    }
+  ],
+  "characters": 42405,
+  "cad_modified": false,
+  "worksheet_modified": false
+}

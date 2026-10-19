@@ -1,0 +1,1 @@
+P2.01 generado y comprobado en Inventor 2027.1 mediante API. 12 componentes solidos y maqueta de un cuerpo. Volumen y dimensiones contrastados con STL. Regla iLogic entregada sin ejecutar por incompatibilidad del enlace COM externo. Error previo de escritura del informe resuelto; ver VERIFICACION_INVENTOR.json.

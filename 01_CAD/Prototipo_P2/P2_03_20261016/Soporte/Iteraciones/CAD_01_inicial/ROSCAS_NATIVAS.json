@@ -1,0 +1,65 @@
+[
+  {
+    "pieza": "Tornillo_ISO4762_M8x70_A2_80",
+    "rosca": "M8x1.25",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tuerca_autofrenante_M8_DIN980",
+    "rosca": "M8x1.25",
+    "clase": "6H",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tornillo_ISO4762_M5x40_A2_80",
+    "rosca": "M5x0.8",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tuerca_autofrenante_M5_DIN980",
+    "rosca": "M5x0.8",
+    "clase": "6H",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tornillo_ISO4762_M8x65_A2_80",
+    "rosca": "M8x1.25",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tornillo_ISO4762_M8x60_A2_80",
+    "rosca": "M8x1.25",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tornillo_ISO4762_M6x60_A2_80",
+    "rosca": "M6x1",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tuerca_autofrenante_M6_DIN980",
+    "rosca": "M6x1",
+    "clase": "6H",
+    "nativa": true,
+    "helice_geometrica": false
+  },
+  {
+    "pieza": "Tornillo_ISO4762_M6x30_A2_80",
+    "rosca": "M6x1",
+    "clase": "6g",
+    "nativa": true,
+    "helice_geometrica": false
+  }
+]

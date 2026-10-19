@@ -1,0 +1,410 @@
+﻿[
+    {
+        "pieza":  "Riel_I",
+        "material":  "6061",
+        "volumen_mm3":  126496.78326438957,
+        "masa_candidata_kg":  0.3415413148138518,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_45",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595538,
+        "masa_candidata_kg":  0.004428354446980795,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_80",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595518,
+        "masa_candidata_kg":  0.00442835444698079,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_365",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.004428354446980792,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_395",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.004428354446980792,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_165",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595481,
+        "masa_candidata_kg":  0.00442835444698078,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_I_470",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.0044283544469807916,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_I_20",
+        "material":  "6061",
+        "volumen_mm3":  2349.377234134157,
+        "masa_candidata_kg":  0.006343318532162224,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_I_100",
+        "material":  "6061",
+        "volumen_mm3":  2349.3772341341532,
+        "masa_candidata_kg":  0.006343318532162213,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Cartela_I",
+        "material":  "6061",
+        "volumen_mm3":  40063.16284435006,
+        "masa_candidata_kg":  0.10817053967974516,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_15",
+        "material":  "6061",
+        "volumen_mm3":  767.2554765359921,
+        "masa_candidata_kg":  0.0020715897866471788,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_60",
+        "material":  "6061",
+        "volumen_mm3":  767.255476535995,
+        "masa_candidata_kg":  0.0020715897866471862,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_105",
+        "material":  "6061",
+        "volumen_mm3":  767.25547653599551,
+        "masa_candidata_kg":  0.0020715897866471879,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Riel_D",
+        "material":  "6061",
+        "volumen_mm3":  126496.78326438976,
+        "masa_candidata_kg":  0.34154131481385236,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_45",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595538,
+        "masa_candidata_kg":  0.004428354446980795,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_80",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595518,
+        "masa_candidata_kg":  0.00442835444698079,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_365",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.004428354446980792,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_395",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.004428354446980792,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_165",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595481,
+        "masa_candidata_kg":  0.00442835444698078,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Casquillo_M6_D_470",
+        "material":  "6061",
+        "volumen_mm3":  1640.1312766595524,
+        "masa_candidata_kg":  0.0044283544469807916,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_D_20",
+        "material":  "6061",
+        "volumen_mm3":  2349.377234134157,
+        "masa_candidata_kg":  0.006343318532162224,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_D_100",
+        "material":  "6061",
+        "volumen_mm3":  2349.3772341341532,
+        "masa_candidata_kg":  0.006343318532162213,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Cartela_D",
+        "material":  "6061",
+        "volumen_mm3":  40063.16284434999,
+        "masa_candidata_kg":  0.10817053967974496,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_15",
+        "material":  "6061",
+        "volumen_mm3":  767.25547653600051,
+        "masa_candidata_kg":  0.0020715897866472014,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_60",
+        "material":  "6061",
+        "volumen_mm3":  767.25547653599585,
+        "masa_candidata_kg":  0.0020715897866471888,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_105",
+        "material":  "6061",
+        "volumen_mm3":  767.25547653599529,
+        "masa_candidata_kg":  0.002071589786647187,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Refuerzo_cuna_1",
+        "material":  "6061",
+        "volumen_mm3":  22418.89800902058,
+        "masa_candidata_kg":  0.06053102462435557,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Refuerzo_cuna_2",
+        "material":  "6061",
+        "volumen_mm3":  22418.898009020588,
+        "masa_candidata_kg":  0.060531024624355584,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Refuerzo_cuna_3",
+        "material":  "6061",
+        "volumen_mm3":  22418.898009020595,
+        "masa_candidata_kg":  0.060531024624355605,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Cuna_modular",
+        "material":  "5052",
+        "volumen_mm3":  107439.87419953135,
+        "masa_candidata_kg":  0.287938862854744,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Travesano_Bajo",
+        "material":  "6061",
+        "volumen_mm3":  12812.231856689108,
+        "masa_candidata_kg":  0.034593026013060593,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Travesano_Alto",
+        "material":  "6061",
+        "volumen_mm3":  12812.2318566891,
+        "masa_candidata_kg":  0.034593026013060572,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Diagonal_1",
+        "material":  "5052",
+        "volumen_mm3":  15412.189203879163,
+        "masa_candidata_kg":  0.04130466706639616,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Diagonal_2",
+        "material":  "5052",
+        "volumen_mm3":  15412.189203879127,
+        "masa_candidata_kg":  0.04130466706639606,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Calce_X_100_165",
+        "material":  "6061",
+        "volumen_mm3":  239.45219205662366,
+        "masa_candidata_kg":  0.0006465209185528839,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Calce_X_-100_470",
+        "material":  "6061",
+        "volumen_mm3":  239.4521920566237,
+        "masa_candidata_kg":  0.000646520918552884,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Anclaje_hombro_I",
+        "material":  "anclaje",
+        "volumen_mm3":  18768.21174752256,
+        "masa_candidata_kg":  0.050674171718310915,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Anclaje_hombro_D",
+        "material":  "anclaje",
+        "volumen_mm3":  18768.211747522597,
+        "masa_candidata_kg":  0.050674171718311012,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Anclaje_cinturon_I",
+        "material":  "anclaje",
+        "volumen_mm3":  21866.0879691035,
+        "masa_candidata_kg":  0.059038437516579452,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Anclaje_cinturon_D",
+        "material":  "anclaje",
+        "volumen_mm3":  21866.087969103181,
+        "masa_candidata_kg":  0.059038437516578585,
+        "cantidad":  1,
+        "referencia":  false
+    },
+    {
+        "pieza":  "REF_Acolchado_I",
+        "material":  "pad",
+        "volumen_mm3":  246082.30016469254,
+        "masa_candidata_kg":  0.01476493800988155,
+        "cantidad":  1,
+        "referencia":  true
+    },
+    {
+        "pieza":  "REF_Acolchado_D",
+        "material":  "pad",
+        "volumen_mm3":  246082.3001646925,
+        "masa_candidata_kg":  0.014764938009881549,
+        "cantidad":  1,
+        "referencia":  true
+    },
+    {
+        "pieza":  "Protector_bolsa_aligerado",
+        "material":  "hdpe",
+        "volumen_mm3":  100870.17998922996,
+        "masa_candidata_kg":  0.096129281529736155,
+        "cantidad":  1,
+        "referencia":  true
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x65_A2_80",
+        "material":  "herrajes",
+        "volumen_mm3":  2233.29337755726,
+        "masa_candidata_kg":  0.01786634702045808,
+        "cantidad":  4,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Arandela_ISO7089_M6",
+        "material":  "herrajes",
+        "volumen_mm3":  129.48388281036245,
+        "masa_candidata_kg":  0.0010358710624828996,
+        "cantidad":  32,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Tuerca_autofrenante_M6_DIN980",
+        "material":  "herrajes",
+        "volumen_mm3":  349.9692389768073,
+        "masa_candidata_kg":  0.002799753911814458,
+        "cantidad":  16,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M5x40_A2_80",
+        "material":  "herrajes",
+        "volumen_mm3":  1028.9396711891325,
+        "masa_candidata_kg":  0.00823151736951306,
+        "cantidad":  6,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Arandela_ISO7089_M5",
+        "material":  "herrajes",
+        "volumen_mm3":  56.47798192991294,
+        "masa_candidata_kg":  0.0004518238554393035,
+        "cantidad":  12,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Tuerca_autofrenante_M5_DIN980",
+        "material":  "herrajes",
+        "volumen_mm3":  178.95335878633523,
+        "masa_candidata_kg":  0.0014316268702906818,
+        "cantidad":  6,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x60_A2_80",
+        "material":  "herrajes",
+        "volumen_mm3":  2091.921708145726,
+        "masa_candidata_kg":  0.016735373665165806,
+        "cantidad":  4,
+        "referencia":  false
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x55_A2_80",
+        "material":  "herrajes",
+        "volumen_mm3":  1950.5500387341908,
+        "masa_candidata_kg":  0.015604400309873525,
+        "cantidad":  8,
+        "referencia":  false
+    }
+]

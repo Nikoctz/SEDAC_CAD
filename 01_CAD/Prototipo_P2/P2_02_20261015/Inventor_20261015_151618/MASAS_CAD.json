@@ -1,0 +1,370 @@
+[
+  {
+    "pieza": "Riel_I",
+    "material": "6061",
+    "volumen_mm3": 152332.01316586393,
+    "masa_candidata_kg": 0.41129643554783263,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_50",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645032,
+    "masa_candidata_kg": 0.0035905576597141586,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_95",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645018,
+    "masa_candidata_kg": 0.0035905576597141547,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_150",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645018,
+    "masa_candidata_kg": 0.0035905576597141547,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_470",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_360",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_I_400",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_X_I_35",
+    "material": "6061",
+    "volumen_mm3": 2239.3272434789033,
+    "masa_candidata_kg": 0.006046183557393039,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_X_I_80",
+    "material": "6061",
+    "volumen_mm3": 2239.327243478905,
+    "masa_candidata_kg": 0.006046183557393043,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Cartela_I",
+    "material": "5052",
+    "volumen_mm3": 36841.92553103635,
+    "masa_candidata_kg": 0.09873636042317743,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_refuerzo_I_55",
+    "material": "6061",
+    "volumen_mm3": 677.6022654711185,
+    "masa_candidata_kg": 0.00182952611677202,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_refuerzo_I_120",
+    "material": "6061",
+    "volumen_mm3": 677.6022654711151,
+    "masa_candidata_kg": 0.0018295261167720106,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Riel_D",
+    "material": "6061",
+    "volumen_mm3": 152332.01316586393,
+    "masa_candidata_kg": 0.41129643554783263,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_50",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645032,
+    "masa_candidata_kg": 0.0035905576597141586,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_95",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645018,
+    "masa_candidata_kg": 0.0035905576597141547,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_150",
+    "material": "6061",
+    "volumen_mm3": 1329.8361702645018,
+    "masa_candidata_kg": 0.0035905576597141547,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_470",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_360",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_Z_D_400",
+    "material": "6061",
+    "volumen_mm3": 1329.836170264502,
+    "masa_candidata_kg": 0.0035905576597141556,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_X_D_35",
+    "material": "6061",
+    "volumen_mm3": 2239.3272434789033,
+    "masa_candidata_kg": 0.006046183557393039,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_X_D_80",
+    "material": "6061",
+    "volumen_mm3": 2239.327243478905,
+    "masa_candidata_kg": 0.006046183557393043,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Cartela_D",
+    "material": "5052",
+    "volumen_mm3": 36841.92553103631,
+    "masa_candidata_kg": 0.09873636042317731,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_refuerzo_D_55",
+    "material": "6061",
+    "volumen_mm3": 677.6022654711185,
+    "masa_candidata_kg": 0.00182952611677202,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Casquillo_refuerzo_D_120",
+    "material": "6061",
+    "volumen_mm3": 677.6022654711151,
+    "masa_candidata_kg": 0.0018295261167720106,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Travesano_Bajo",
+    "material": "5052",
+    "volumen_mm3": 20601.346895068087,
+    "masa_candidata_kg": 0.055211609678782476,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Travesano_Alto",
+    "material": "5052",
+    "volumen_mm3": 20601.346895068084,
+    "masa_candidata_kg": 0.05521160967878247,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Diagonal_1",
+    "material": "5052",
+    "volumen_mm3": 19128.39599755833,
+    "masa_candidata_kg": 0.05126410127345633,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Diagonal_2",
+    "material": "5052",
+    "volumen_mm3": 19128.395997558306,
+    "masa_candidata_kg": 0.051264101273456264,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Calce_diagonal_100_150",
+    "material": "5052",
+    "volumen_mm3": 239.45219205662366,
+    "masa_candidata_kg": 0.0006417318747117515,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Calce_diagonal_-100_470",
+    "material": "5052",
+    "volumen_mm3": 239.4521920566237,
+    "masa_candidata_kg": 0.0006417318747117515,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Refuerzo_cuna_1",
+    "material": "6061",
+    "volumen_mm3": 31419.175356862783,
+    "masa_candidata_kg": 0.08483177346352952,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Refuerzo_cuna_2",
+    "material": "6061",
+    "volumen_mm3": 31419.175356862695,
+    "masa_candidata_kg": 0.08483177346352928,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Cuna_modular",
+    "material": "5052",
+    "volumen_mm3": 132974.82826476003,
+    "masa_candidata_kg": 0.3563725397495569,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Anclaje_hombro_I",
+    "material": "anclaje",
+    "volumen_mm3": 42817.34947453176,
+    "masa_candidata_kg": 0.11560684358123574,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Anclaje_hombro_D",
+    "material": "anclaje",
+    "volumen_mm3": 42817.34947453175,
+    "masa_candidata_kg": 0.11560684358123573,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "Yugo_cinturon",
+    "material": "anclaje",
+    "volumen_mm3": 140069.92038540708,
+    "masa_candidata_kg": 0.3781887850405991,
+    "cantidad": 1,
+    "referencia": false
+  },
+  {
+    "pieza": "REF_Interfaz_I",
+    "material": "hdpe",
+    "volumen_mm3": 76443.75203952617,
+    "masa_candidata_kg": 0.07285089569366844,
+    "cantidad": 1,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_Pad_I",
+    "material": "pad",
+    "volumen_mm3": 322999.6447372311,
+    "masa_candidata_kg": 0.019379978684233863,
+    "cantidad": 1,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_Interfaz_D",
+    "material": "hdpe",
+    "volumen_mm3": 76443.75203952617,
+    "masa_candidata_kg": 0.07285089569366844,
+    "cantidad": 1,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_Pad_D",
+    "material": "pad",
+    "volumen_mm3": 322999.644737231,
+    "masa_candidata_kg": 0.01937997868423386,
+    "cantidad": 1,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_Pad_lumbar",
+    "material": "pad",
+    "volumen_mm3": 240679.64473723102,
+    "masa_candidata_kg": 0.01444077868423386,
+    "cantidad": 1,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_M8_Agarre_39",
+    "material": "herrajes",
+    "volumen_mm3": 3432.9897125709576,
+    "masa_candidata_kg": 0.02746391770056766,
+    "cantidad": 4,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_M5_Agarre_26p5",
+    "material": "herrajes",
+    "volumen_mm3": 879.8565314761317,
+    "masa_candidata_kg": 0.007038852251809054,
+    "cantidad": 4,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_M6_Agarre_39",
+    "material": "herrajes",
+    "volumen_mm3": 1723.967290343366,
+    "masa_candidata_kg": 0.013791738322746926,
+    "cantidad": 2,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_M6_Agarre_41",
+    "material": "herrajes",
+    "volumen_mm3": 1780.5159581079797,
+    "masa_candidata_kg": 0.014244127664863836,
+    "cantidad": 2,
+    "referencia": true
+  },
+  {
+    "pieza": "REF_M6_Agarre_40",
+    "material": "herrajes",
+    "volumen_mm3": 1752.2416242256725,
+    "masa_candidata_kg": 0.014017932993805379,
+    "cantidad": 8,
+    "referencia": true
+  }
+]

@@ -1,0 +1,2 @@
+﻿Refuerzo_C_I operacion 3
+Unidades de modulo de Young no coinciden

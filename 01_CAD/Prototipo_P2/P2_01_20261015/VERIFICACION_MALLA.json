@@ -1,0 +1,12 @@
+{
+  "triangles": 2576,
+  "closed_oriented": true,
+  "components": 1,
+  "bounds_mm": [
+    24.36666667,
+    35.0,
+    11.95833334
+  ],
+  "volume_mm3": 903.4446579526108,
+  "slicer_review": "Pendiente"
+}

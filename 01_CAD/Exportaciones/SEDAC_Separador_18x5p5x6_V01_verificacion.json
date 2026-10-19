@@ -1,0 +1,19 @@
+{
+  "units": "mm (select millimetres on STL import)",
+  "origin": "Independent mesh generator, not exported from Inventor",
+  "outer_diameter_mm": 18,
+  "nominal_bore_mm": 5.5,
+  "minimum_faceted_bore_mm": 5.498343502829123,
+  "height_mm": 6,
+  "bounding_box_mm": [
+    18.0,
+    18.0,
+    6.0
+  ],
+  "triangles": 1024,
+  "watertight_manifold": true,
+  "consistent_orientation": true,
+  "volume_mm3": 1383.7084160331938,
+  "fits_40_40_70_geometrically": true,
+  "limitations": "Not sliced or printed. Fit, strength and tightening not validated. Print one sample first."
+}

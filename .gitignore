@@ -1,0 +1,38 @@
+﻿# === Entornos y cachés ===
+.venv*/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# === Herramientas externas clonadas ===
+tools/inventor-mcp/
+
+# === Configuración local de Codex ===
+.codex/config.toml
+
+# === Variables/credenciales locales ===
+.env
+.env.*
+*.key
+*.pem
+
+# === Temporales ===
+*.tmp
+*.temp
+*.bak
+*.lck
+~$*
+Thumbs.db
+desktop.ini
+
+# === Autodesk Inventor ===
+OldVersions/
+**/OldVersions/
+
+# === Logs locales ===
+*.log
+
+# Dependencias Python locales dentro del proyecto
+**/python_libs/

@@ -1,0 +1,55 @@
+﻿pieza,cantidad,material,grupo,referencia,masa_unitaria_kg,masa_total_kg,observacion
+Refuerzo_C_I,1,6061,estructura,False,0.2843792097218539,0.2843792097218539,"6061-T6. Canal mecanizado/extruido, no chapa T6 doblada. Boca del canal hacia la bolsa. Sin recortes en zona inferior."
+Casquillo_I_35,1,6061,uniones,False,0.0028785957953909747,0.0028785957953909747,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_I_35,1,6061,uniones,False,0.005561420102980838,0.005561420102980838,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_I_95,1,6061,uniones,False,0.0028785957953909804,0.0028785957953909804,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_I_95,1,6061,uniones,False,0.005561420102980831,0.005561420102980831,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_I_390,1,6061,uniones,False,0.0028785957953910177,0.0028785957953910177,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_I_390,1,6061,uniones,False,0.005561420102980815,0.005561420102980815,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_I_450,1,6061,uniones,False,0.0028785957953910177,0.0028785957953910177,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_I_450,1,6061,uniones,False,0.005561420102980862,0.005561420102980862,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Refuerzo_C_D,1,6061,estructura,False,0.2843792097218539,0.2843792097218539,"6061-T6. Canal mecanizado/extruido, no chapa T6 doblada. Boca del canal hacia la bolsa. Sin recortes en zona inferior."
+Casquillo_D_35,1,6061,uniones,False,0.0028785957953909747,0.0028785957953909747,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_D_35,1,6061,uniones,False,0.005561420102980838,0.005561420102980838,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_D_95,1,6061,uniones,False,0.0028785957953909804,0.0028785957953909804,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_D_95,1,6061,uniones,False,0.005561420102980831,0.005561420102980831,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_D_390,1,6061,uniones,False,0.002878595795391019,0.002878595795391019,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_D_390,1,6061,uniones,False,0.005561420102980815,0.005561420102980815,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Casquillo_D_450,1,6061,uniones,False,0.002878595795391019,0.002878595795391019,6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.
+Pasador_hueco_D_450,1,6061,uniones,False,0.005561420102980862,0.005561420102980862,"6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar."
+Interfaz_lumbar_aligerada,1,6061,anclajes,False,0.31108983098374005,0.31108983098374005,Centro lumbar resistente; alas del cinturon textiles. Recorte central de esquinas redondeadas. Sin apoyo de bandeja.
+Yugo_superior_I,1,6061,anclajes,False,0.12469916004551046,0.12469916004551046,Anclajes independientes: el textil permite movilidad relativa. Sin travesano metalico entre hombros.
+Yugo_superior_D,1,6061,anclajes,False,0.12469916004550985,0.12469916004550985,Anclajes independientes: el textil permite movilidad relativa. Sin travesano metalico entre hombros.
+Espaldera_HDPE_aligerada,1,hdpe,protecciones,False,0.08075908399532589,0.08075908399532589,Distribucion local del contacto y separacion de aristas. No se cuenta como elemento resistente; retenida dentro de funda textil.
+REF_Funda_refuerzo_I,1,textil,textiles,True,0.00966868498409154,0.00966868498409154,
+REF_Acolchado_dorsal_I,1,espuma,acolchados,True,0.010972688417786784,0.010972688417786784,
+REF_Funda_refuerzo_D,1,textil,textiles,True,0.009668684984091517,0.009668684984091517,
+REF_Acolchado_dorsal_D,1,espuma,acolchados,True,0.010972688417786784,0.010972688417786784,
+REF_Acolchado_lumbar,1,espuma,acolchados,True,0.029542765316663496,0.029542765316663496,
+REF_Cuna_textil_I,1,textil,textiles,True,0.03706589676221777,0.03706589676221777,Superficie ancha de contacto; confeccion y resistencia del conjunto por definir. Ventana central de 104 mm.
+REF_Cinta_carga_I,1,textil,textiles,True,0.040353693123664415,0.040353693123664415,Cinta continua desde el anclaje lumbar a cuna y yugo superior. Seccion tejida esquematica. No presupone resistencia por area.
+REF_Hombrera_I,1,espuma,acolchados,True,0.011409648236451195,0.011409648236451195,
+REF_Cinta_hombrera_I,1,textil,textiles,True,0.023192991432748746,0.023192991432748746,
+REF_Regulador_hombro_I,1,hebilla_ref,herrajes_textiles,True,0.007546991118430777,0.007546991118430777,Envolvente de regulador comercial a seleccionar; no mecanismo validado.
+REF_Cuna_textil_D,1,textil,textiles,True,0.03706589676221777,0.03706589676221777,Superficie ancha de contacto; confeccion y resistencia del conjunto por definir. Ventana central de 104 mm.
+REF_Cinta_carga_D,1,textil,textiles,True,0.040353693123664526,0.040353693123664526,Cinta continua desde el anclaje lumbar a cuna y yugo superior. Seccion tejida esquematica. No presupone resistencia por area.
+REF_Hombrera_D,1,espuma,acolchados,True,0.011409648236451193,0.011409648236451193,
+REF_Cinta_hombrera_D,1,textil,textiles,True,0.023192991432748746,0.023192991432748746,
+REF_Regulador_hombro_D,1,hebilla_ref,herrajes_textiles,True,0.007546991118430777,0.007546991118430777,Envolvente de regulador comercial a seleccionar; no mecanismo validado.
+REF_Cinta_estabilizadora_225,1,textil,textiles,True,0.025981401662859633,0.025981401662859633,Correa transversal ajustable de 25 mm. Envolvente propuesta para controlar desplazamiento lateral; ajuste a bolsa llena/vacia pendiente. No estrangular costuras ni tapa.
+REF_Hebilla_carga_225,1,hebilla_ref,herrajes_textiles,True,0.01136222339297275,0.01136222339297275,"Cierre comercial protegido contra apertura accidental, operable con guantes; seleccion y ubicacion definitiva pendientes."
+REF_Cinta_estabilizadora_350,1,textil,textiles,True,0.025981401662859633,0.025981401662859633,Correa transversal ajustable de 25 mm. Envolvente propuesta para controlar desplazamiento lateral; ajuste a bolsa llena/vacia pendiente. No estrangular costuras ni tapa.
+REF_Hebilla_carga_350,1,hebilla_ref,herrajes_textiles,True,0.01136222339297275,0.01136222339297275,"Cierre comercial protegido contra apertura accidental, operable con guantes; seleccion y ubicacion definitiva pendientes."
+REF_Ala_cinturon_I,1,espuma,acolchados,True,0.01615147906554393,0.01615147906554393,
+REF_Bisagra_textil_I,1,textil,textiles,True,0.0032624999999999876,0.0032624999999999876,
+REF_Cinta_cierre_cinturon_I,1,textil,textiles,True,0.002331308625617575,0.002331308625617575,
+REF_Ala_cinturon_D,1,espuma,acolchados,True,0.016151479065543952,0.016151479065543952,
+REF_Bisagra_textil_D,1,textil,textiles,True,0.00326249999999999,0.00326249999999999,
+REF_Cinta_cierre_cinturon_D,1,textil,textiles,True,0.002331308625617574,0.002331308625617574,
+REF_Hebilla_cinturon,1,hebilla_ref,herrajes_textiles,True,0.028537698930976945,0.028537698930976945,"Envolvente de hebilla frontal comercial accionable con guantes. Requiere seleccion por carga, apertura accidental y temperatura."
+REF_Correa_pectoral,1,textil,textiles,True,0.004603808625617611,0.004603808625617611,
+REF_Hebilla_pectoral,1,hebilla_ref,herrajes_textiles,True,0.008749048622548074,0.008749048622548074,
+REF_Asa_sistema,1,textil,textiles,True,0.011121716668932916,0.011121716668932916,Asa vinculada a las cintas de carga; requiere continuidad y costuras ensayadas. No utiliza el asa de la bolsa.
+Tornillo_M5x55_ISO4762_A2_80,8,herrajes,fijaciones,False,0.010576626734536862,0.0846130138762949,"ISO 4762 M5x0.8, A2-80. Rosca parcial b=22 mm nominal; confirmar proveedor."
+Arandela_M5_16x3_GN6341,16,herrajes,fijaciones,False,0.004296002290078085,0.06873603664124936,"Envolvente GN 6341-ST-5-16-A-ZB: 5.3x16x3 mm, acero protegido. Confirmar proveedor; minimo de calculo Sy=200 MPa y espesor=2.9 mm. No es el elemento de autofreno."
+Tuerca_M5_autofreno_metalica,8,herrajes,fijaciones,False,0.0014316268702906818,0.011453014962325455,Envolvente derivada DIN 980 M5; seleccionar clase y par prevalente compatibles. No se modela deformacion de autofreno.

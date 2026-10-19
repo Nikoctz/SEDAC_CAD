@@ -1,0 +1,3951 @@
+{
+  "version": "P2.02",
+  "units": "mm",
+  "parameters": {
+    "version": "P2.02",
+    "unidades": "mm",
+    "geometria": {
+      "altura_riel": 500,
+      "separacion_rieles": 200,
+      "ancho_cuna": 300,
+      "fondo_cuna": 125,
+      "altura_piso": 120,
+      "espesor_piso": 2.5,
+      "espesor_cartela": 4,
+      "ancho_refuerzo_cuna": 20,
+      "espesor_refuerzo_cuna": 1.5,
+      "espesor_anclaje_hombro": 5,
+      "espesor_yugo_cinturon": 5,
+      "espesor_hdpe": 2,
+      "profundidad_pad": 12
+    },
+    "cargas": {
+      "masa_total_referencia_kg": 25,
+      "factor_vertical": 3,
+      "factor_horizontal": 1,
+      "fraccion_lado_mas_cargado": 0.7,
+      "brazo_carga_desde_eje_riel": 100,
+      "altura_fuerza_sobre_sujecion": 400,
+      "factor_concentracion_provisional": 2,
+      "margen_fluencia_objetivo": 2.2,
+      "flecha_limite_preliminar_mm": 5
+    },
+    "materiales": {
+      "riel": "6061-T6 extruido SIN soldar, certificado pendiente",
+      "fluencia_6061_MPa": 240,
+      "fluencia_5052_MPa": 130,
+      "fluencia_A2_70_MPa": 450,
+      "E_aluminio_MPa": 69000,
+      "nu_aluminio": 0.33,
+      "densidad_6061_kg_mm3": 2.7e-06,
+      "densidad_5052_kg_mm3": 2.68e-06,
+      "densidad_hdpe_kg_mm3": 9.53e-07
+    },
+    "candidatos_riel": [
+      [
+        25,
+        25,
+        2
+      ],
+      [
+        30,
+        25,
+        2
+      ],
+      [
+        30,
+        30,
+        2
+      ],
+      [
+        30,
+        30,
+        2.5
+      ],
+      [
+        30,
+        30,
+        3
+      ],
+      [
+        35,
+        35,
+        2
+      ],
+      [
+        35,
+        35,
+        2.5
+      ],
+      [
+        40,
+        25,
+        2.5
+      ],
+      [
+        45,
+        25,
+        2.5
+      ],
+      [
+        50,
+        25,
+        2.5
+      ],
+      [
+        50,
+        25,
+        3
+      ],
+      [
+        40,
+        30,
+        2.5
+      ]
+    ],
+    "notas": [
+      "Dimensiones y cargas son hipótesis de prediseño, no mediciones.",
+      "La capacidad comercial publicada es 19 L; 25 kg es escenario de cálculo elegido, no masa medida.",
+      "Margen analítico no demuestra fatiga, torsión de uniones, incendio ni seguridad humana."
+    ],
+    "preferencia_optimizacion": {
+      "profundidad_max_preferida": 25,
+      "masa_max_par_rieles_kg": 1
+    }
+  },
+  "rail": {
+    "b": 50,
+    "d": 25,
+    "t": 2.5,
+    "A": 333.89894845498907,
+    "Ix": 32783.254939018356,
+    "Iz": 98862.55277533585,
+    "Zx": 2622.6603951214684,
+    "Zz": 3954.502111013434,
+    "masa_rieles_kg": 0.9015271608284705,
+    "tension_VM_MPa": 106.54356417405333,
+    "margen": 2.2525996934730617,
+    "flecha_mm": 3.440515731510931,
+    "margen_Euler": 67.73180078862595,
+    "tension_pandeo_local_MPa": 995.0872746160609,
+    "cumple_precriterios": true
+  },
+  "parts": [
+    {
+      "name": "Riel_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 500,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 0,
+              "y": -125.0,
+              "w": 25,
+              "h": 50,
+              "r": 5.0
+            }
+          ],
+          "cut": false,
+          "label": "Tubo_exterior"
+        },
+        {
+          "axis": "y",
+          "start": -0.1,
+          "depth": 500.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 2.5,
+              "y": -122.5,
+              "w": 20.0,
+              "h": 45.0,
+              "r": 2.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado_tubo"
+        },
+        {
+          "axis": "z",
+          "start": -0.1,
+          "depth": 25.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 50,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 95,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 150,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 320,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 340,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 360,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 380,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 400,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Patron_M6"
+        },
+        {
+          "axis": "x",
+          "start": -125.1,
+          "depth": 50.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": true,
+          "label": "Cartela_M8"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_50",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 50,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 50,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_95",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 95,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 95,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_150",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 150,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 150,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_360",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 360,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 360,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_I_400",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 400,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 400,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_X_I_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -122.5,
+          "depth": 45.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 6.5
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_X_I_80",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -122.5,
+          "depth": 45.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 6.5
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cartela_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -129.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  20,
+                  0
+                ],
+                [
+                  100,
+                  0
+                ],
+                [
+                  100,
+                  150
+                ],
+                [
+                  70,
+                  100.0
+                ],
+                [
+                  20,
+                  25
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Alma_cartela"
+        },
+        {
+          "axis": "y",
+          "start": 96,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 25,
+              "y": -129.0,
+              "w": 125,
+              "h": 20,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Ala_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": -129.1,
+          "depth": 4.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 77,
+              "y": 60,
+              "r": 10
+            }
+          ],
+          "cut": true,
+          "label": "Taladros_alivio"
+        },
+        {
+          "axis": "y",
+          "start": 95.9,
+          "depth": 4.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "Tornillos_piso"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_refuerzo_I_45",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 101.5,
+          "depth": 17.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 4.5
+            },
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_refuerzo_I_110",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 101.5,
+          "depth": 17.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 4.5
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Riel_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 500,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 0,
+              "y": 75.0,
+              "w": 25,
+              "h": 50,
+              "r": 5.0
+            }
+          ],
+          "cut": false,
+          "label": "Tubo_exterior"
+        },
+        {
+          "axis": "y",
+          "start": -0.1,
+          "depth": 500.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 2.5,
+              "y": 77.5,
+              "w": 20.0,
+              "h": 45.0,
+              "r": 2.5
+            }
+          ],
+          "cut": true,
+          "label": "Vaciado_tubo"
+        },
+        {
+          "axis": "z",
+          "start": -0.1,
+          "depth": 25.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 50,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 95,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 320,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 340,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 360,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 380,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 400,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Patron_M6"
+        },
+        {
+          "axis": "x",
+          "start": 74.9,
+          "depth": 50.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": true,
+          "label": "Cartela_M8"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_50",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 50,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 50,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_95",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 95,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 95,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_150",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_360",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 360,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 360,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_Z_D_400",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 2.5,
+          "depth": 20.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 400,
+              "r": 5
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 400,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_X_D_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 77.5,
+          "depth": 45.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 6.5
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_X_D_80",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 77.5,
+          "depth": 45.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 6.5
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cartela_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 125.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  20,
+                  0
+                ],
+                [
+                  100,
+                  0
+                ],
+                [
+                  100,
+                  150
+                ],
+                [
+                  70,
+                  100.0
+                ],
+                [
+                  20,
+                  25
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Alma_cartela"
+        },
+        {
+          "axis": "y",
+          "start": 96,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 25,
+              "y": 109.0,
+              "w": 125,
+              "h": 20,
+              "r": 0
+            }
+          ],
+          "cut": false,
+          "label": "Ala_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": 124.9,
+          "depth": 4.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 80,
+              "y": 12.5,
+              "r": 4.3
+            },
+            {
+              "kind": "circle",
+              "x": 77,
+              "y": 60,
+              "r": 10
+            }
+          ],
+          "cut": true,
+          "label": "Taladros_alivio"
+        },
+        {
+          "axis": "y",
+          "start": 95.9,
+          "depth": 4.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "Tornillos_piso"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_refuerzo_D_45",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 101.5,
+          "depth": 17.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 4.5
+            },
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Casquillo_refuerzo_D_110",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 101.5,
+          "depth": 17.0,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 4.5
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Travesano_Bajo",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -130.0,
+              "y": 130,
+              "w": 260,
+              "h": 40,
+              "r": 6
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 150,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 150,
+              "r": 2.25
+            },
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 150,
+              "r": 2.25
+            }
+          ],
+          "cut": true,
+          "label": "Taladros"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Travesano_Alto",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -2,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -130.0,
+              "y": 450,
+              "w": 260,
+              "h": 40,
+              "r": 6
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 470,
+              "r": 2.25
+            },
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 470,
+              "r": 2.25
+            }
+          ],
+          "cut": true,
+          "label": "Taladros"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Diagonal_1",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -116.53596692809921,
+                  146.1840076319771
+                ],
+                [
+                  -96.1840076319771,
+                  133.4640330719008
+                ],
+                [
+                  116.53596692809921,
+                  473.8159923680229
+                ],
+                [
+                  96.1840076319771,
+                  486.53596692809924
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -4.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 150.0,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 470.0,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Extremos"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Diagonal_2",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -6,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  96.1840076319771,
+                  133.4640330719008
+                ],
+                [
+                  116.53596692809921,
+                  146.1840076319771
+                ],
+                [
+                  -96.1840076319771,
+                  486.53596692809924
+                ],
+                [
+                  -116.53596692809921,
+                  473.8159923680229
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -6.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150.0,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470.0,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Extremos"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Calce_diagonal_100_150",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150.0,
+              "r": 7
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 150.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Calce_diagonal_-100_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -4,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470.0,
+              "r": 7
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 470.0,
+              "r": 3.3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Refuerzo_cuna_1",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 300,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 100,
+              "y": 35,
+              "w": 20,
+              "h": 20,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "x",
+          "start": -150.1,
+          "depth": 300.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 101.5,
+              "y": 36.5,
+              "w": 17.0,
+              "h": 17.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Hueco"
+        },
+        {
+          "axis": "y",
+          "start": 99.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "Paso_tornillos"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Refuerzo_cuna_2",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 300,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 100,
+              "y": 100,
+              "w": 20,
+              "h": 20,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "x",
+          "start": -150.1,
+          "depth": 300.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 101.5,
+              "y": 101.5,
+              "w": 17.0,
+              "h": 17.0,
+              "r": 1.5
+            }
+          ],
+          "cut": true,
+          "label": "Hueco"
+        },
+        {
+          "axis": "y",
+          "start": 99.9,
+          "depth": 20.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "Paso_tornillos"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Cuna_modular",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 120,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 25,
+              "y": -150.0,
+              "w": 125,
+              "h": 300,
+              "r": 8
+            }
+          ],
+          "cut": false,
+          "label": "Piso"
+        },
+        {
+          "axis": "y",
+          "start": 119.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 0,
+              "r": 25
+            }
+          ],
+          "cut": true,
+          "label": "Salida_manguera"
+        },
+        {
+          "axis": "z",
+          "start": 25,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -142.0,
+              "y": 122.5,
+              "w": 284,
+              "h": 50,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Respaldo_cuna"
+        },
+        {
+          "axis": "x",
+          "start": -150.0,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 122.5,
+              "y": 33,
+              "w": 16,
+              "h": 109,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Labio_lateral"
+        },
+        {
+          "axis": "x",
+          "start": 147.5,
+          "depth": 2.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 122.5,
+              "y": 33,
+              "w": 16,
+              "h": 109,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Labio_lateral"
+        },
+        {
+          "axis": "y",
+          "start": 119.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 67,
+              "y": -70,
+              "w": 6,
+              "h": 25,
+              "r": 3
+            },
+            {
+              "kind": "rr",
+              "x": 67,
+              "y": 45,
+              "w": 6,
+              "h": 25,
+              "r": 3
+            }
+          ],
+          "cut": true,
+          "label": "Drenajes"
+        },
+        {
+          "axis": "y",
+          "start": 119.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 97,
+              "y": -70,
+              "w": 6,
+              "h": 25,
+              "r": 3
+            },
+            {
+              "kind": "rr",
+              "x": 97,
+              "y": 45,
+              "w": 6,
+              "h": 25,
+              "r": 3
+            }
+          ],
+          "cut": true,
+          "label": "Drenajes"
+        },
+        {
+          "axis": "y",
+          "start": 119.9,
+          "depth": 2.7,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 2.75
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 2.75
+            }
+          ],
+          "cut": true,
+          "label": "Fijacion_M5"
+        }
+      ],
+      "material": "5052",
+      "color": [
+        118,
+        150,
+        166
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_hombro_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 25,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -138.0,
+              "y": 340,
+              "w": 76,
+              "h": 120,
+              "r": 10
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 24.9,
+          "depth": 5.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 360,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 400,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": -126.0,
+              "y": 428,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Correa_y_tornillos"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        227,
+        151,
+        65
+      ],
+      "reference": false
+    },
+    {
+      "name": "Anclaje_hombro_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 25,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 62.0,
+              "y": 340,
+              "w": 76,
+              "h": 120,
+              "r": 10
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 24.9,
+          "depth": 5.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 360,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 400,
+              "r": 3.3
+            },
+            {
+              "kind": "rr",
+              "x": 74.0,
+              "y": 428,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Correa_y_tornillos"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        227,
+        151,
+        65
+      ],
+      "reference": false
+    },
+    {
+      "name": "Yugo_cinturon",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -5,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -170.0,
+              "y": 15,
+              "w": 340,
+              "h": 100,
+              "r": 14
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -5.1,
+          "depth": 5.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -50,
+              "y": 40,
+              "w": 100,
+              "h": 50,
+              "r": 12
+            },
+            {
+              "kind": "rr",
+              "x": -144.0,
+              "y": 39,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 136.0,
+              "y": 39,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 50,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": -100.0,
+              "y": 95,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 50,
+              "r": 3.3
+            },
+            {
+              "kind": "circle",
+              "x": 100.0,
+              "y": 95,
+              "r": 3.3
+            }
+          ],
+          "cut": true,
+          "label": "Cinturon_y_anclajes"
+        }
+      ],
+      "material": "anclaje",
+      "color": [
+        227,
+        151,
+        65
+      ],
+      "reference": false
+    },
+    {
+      "name": "REF_Interfaz_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -14,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -130,
+              "y": 130,
+              "w": 110,
+              "h": 350,
+              "r": 18
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -14.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 150,
+              "r": 2.25
+            },
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 470,
+              "r": 2.25
+            }
+          ],
+          "cut": true,
+          "label": "Fijacion_independiente"
+        }
+      ],
+      "material": "hdpe",
+      "color": [
+        41,
+        99,
+        108
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_Pad_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -26,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -122,
+              "y": 160,
+              "w": 94,
+              "h": 290,
+              "r": 20
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "pad",
+      "color": [
+        48,
+        62,
+        74
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_Interfaz_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -14,
+          "depth": 2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 20,
+              "y": 130,
+              "w": 110,
+              "h": 350,
+              "r": 18
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -14.1,
+          "depth": 2.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 150,
+              "r": 2.25
+            },
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 470,
+              "r": 2.25
+            }
+          ],
+          "cut": true,
+          "label": "Fijacion_independiente"
+        }
+      ],
+      "material": "hdpe",
+      "color": [
+        41,
+        99,
+        108
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_Pad_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -26,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 28,
+              "y": 160,
+              "w": 94,
+              "h": 290,
+              "r": 20
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "pad",
+      "color": [
+        48,
+        62,
+        74
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_Pad_lumbar",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -26,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -120,
+              "y": 20,
+              "w": 240,
+              "h": 85,
+              "r": 20
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "pad",
+      "color": [
+        48,
+        62,
+        74
+      ],
+      "reference": true
+    },
+    {
+      "name": "Separador_interfaz_-70_150",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -12,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 150,
+              "r": 4
+            },
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 150,
+              "r": 2.25
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Separador_interfaz_-70_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -12,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 470,
+              "r": 4
+            },
+            {
+              "kind": "circle",
+              "x": -70,
+              "y": 470,
+              "r": 2.25
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Separador_interfaz_70_150",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -12,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 150,
+              "r": 4
+            },
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 150,
+              "r": 2.25
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "Separador_interfaz_70_470",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -12,
+          "depth": 10,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 470,
+              "r": 4
+            },
+            {
+              "kind": "circle",
+              "x": 70,
+              "y": 470,
+              "r": 2.25
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        159,
+        184,
+        200
+      ],
+      "reference": false
+    },
+    {
+      "name": "REF_Protector_bolsa_cuna",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 122.5,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 27.5,
+              "y": -147.0,
+              "w": 122.5,
+              "h": 294,
+              "r": 8
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "y",
+          "start": 122.4,
+          "depth": 6.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 145,
+              "y": 0,
+              "r": 25
+            }
+          ],
+          "cut": true,
+          "label": "Salida_manguera"
+        },
+        {
+          "axis": "y",
+          "start": 122.4,
+          "depth": 4.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": -117.0,
+              "r": 4.8
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": -117.0,
+              "r": 4.8
+            },
+            {
+              "kind": "circle",
+              "x": 45,
+              "y": 117.0,
+              "r": 4.8
+            },
+            {
+              "kind": "circle",
+              "x": 110,
+              "y": 117.0,
+              "r": 4.8
+            }
+          ],
+          "cut": true,
+          "label": "Alojamiento_tuercas"
+        }
+      ],
+      "material": "hdpe",
+      "color": [
+        41,
+        99,
+        108
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M8_Agarre_54",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 54,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -5.6,
+          "depth": 5.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 6.56
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 54,
+          "depth": 6.4,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  6.56,
+                  0.0
+                ],
+                [
+                  3.2800000000000007,
+                  5.6811266488259164
+                ],
+                [
+                  -3.2799999999999985,
+                  5.681126648825917
+                ],
+                [
+                  -6.56,
+                  8.033683002406637e-16
+                ],
+                [
+                  -3.280000000000003,
+                  -5.6811266488259164
+                ],
+                [
+                  3.2800000000000007,
+                  -5.6811266488259164
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M5_Agarre_26p5",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 26.5,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.5
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -3.5,
+          "depth": 3.5,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.1
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 26.5,
+          "depth": 4.0,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.1,
+                  0.0
+                ],
+                [
+                  2.0500000000000003,
+                  3.550704155516198
+                ],
+                [
+                  -2.049999999999999,
+                  3.5507041555161982
+                ],
+                [
+                  -4.1,
+                  5.021051876504147e-16
+                ],
+                [
+                  -2.0500000000000016,
+                  -3.5507041555161973
+                ],
+                [
+                  2.0500000000000003,
+                  -3.550704155516198
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M6_Agarre_29",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 29,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -4.199999999999999,
+          "depth": 4.199999999999999,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.92
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 29,
+          "depth": 4.800000000000001,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.92,
+                  0.0
+                ],
+                [
+                  2.4600000000000004,
+                  4.260844986619438
+                ],
+                [
+                  -2.459999999999999,
+                  4.260844986619438
+                ],
+                [
+                  -4.92,
+                  6.025262251804977e-16
+                ],
+                [
+                  -2.460000000000002,
+                  -4.260844986619437
+                ],
+                [
+                  2.4600000000000004,
+                  -4.260844986619438
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M6_Agarre_31",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 31,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -4.199999999999999,
+          "depth": 4.199999999999999,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.92
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 31,
+          "depth": 4.800000000000001,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.92,
+                  0.0
+                ],
+                [
+                  2.4600000000000004,
+                  4.260844986619438
+                ],
+                [
+                  -2.459999999999999,
+                  4.260844986619438
+                ],
+                [
+                  -4.92,
+                  6.025262251804977e-16
+                ],
+                [
+                  -2.460000000000002,
+                  -4.260844986619437
+                ],
+                [
+                  2.4600000000000004,
+                  -4.260844986619438
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M6_Agarre_30",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 30,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -4.199999999999999,
+          "depth": 4.199999999999999,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.92
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 30,
+          "depth": 4.800000000000001,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.92,
+                  0.0
+                ],
+                [
+                  2.4600000000000004,
+                  4.260844986619438
+                ],
+                [
+                  -2.459999999999999,
+                  4.260844986619438
+                ],
+                [
+                  -4.92,
+                  6.025262251804977e-16
+                ],
+                [
+                  -2.460000000000002,
+                  -4.260844986619437
+                ],
+                [
+                  2.4600000000000004,
+                  -4.260844986619438
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    },
+    {
+      "name": "REF_M4_Agarre_14",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 14,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.0
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": -2.8,
+          "depth": 2.8,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 3.28
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        },
+        {
+          "axis": "z",
+          "start": 14,
+          "depth": 3.2,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  3.28,
+                  0.0
+                ],
+                [
+                  1.6400000000000003,
+                  2.8405633244129582
+                ],
+                [
+                  -1.6399999999999992,
+                  2.8405633244129587
+                ],
+                [
+                  -3.28,
+                  4.0168415012033185e-16
+                ],
+                [
+                  -1.6400000000000015,
+                  -2.8405633244129582
+                ],
+                [
+                  1.6400000000000003,
+                  -2.8405633244129582
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Forma"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        85,
+        96,
+        106
+      ],
+      "reference": true
+    }
+  ],
+  "instances": [
+    {
+      "part": "Riel_I",
+      "name": "Riel_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_50",
+      "name": "Casquillo_Z_I_50",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_95",
+      "name": "Casquillo_Z_I_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_150",
+      "name": "Casquillo_Z_I_150",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_470",
+      "name": "Casquillo_Z_I_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_360",
+      "name": "Casquillo_Z_I_360",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_I_400",
+      "name": "Casquillo_Z_I_400",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_X_I_35",
+      "name": "Casquillo_X_I_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_X_I_80",
+      "name": "Casquillo_X_I_80",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cartela_I",
+      "name": "Cartela_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_refuerzo_I_45",
+      "name": "Casquillo_refuerzo_I_45",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_refuerzo_I_110",
+      "name": "Casquillo_refuerzo_I_110",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Riel_D",
+      "name": "Riel_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_50",
+      "name": "Casquillo_Z_D_50",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_95",
+      "name": "Casquillo_Z_D_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_150",
+      "name": "Casquillo_Z_D_150",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_470",
+      "name": "Casquillo_Z_D_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_360",
+      "name": "Casquillo_Z_D_360",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_Z_D_400",
+      "name": "Casquillo_Z_D_400",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_X_D_35",
+      "name": "Casquillo_X_D_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_X_D_80",
+      "name": "Casquillo_X_D_80",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cartela_D",
+      "name": "Cartela_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_refuerzo_D_45",
+      "name": "Casquillo_refuerzo_D_45",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Casquillo_refuerzo_D_110",
+      "name": "Casquillo_refuerzo_D_110",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Travesano_Bajo",
+      "name": "Travesano_Bajo",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Travesano_Alto",
+      "name": "Travesano_Alto",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Diagonal_1",
+      "name": "Diagonal_1",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Diagonal_2",
+      "name": "Diagonal_2",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Calce_diagonal_100_150",
+      "name": "Calce_diagonal_100_150",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Calce_diagonal_-100_470",
+      "name": "Calce_diagonal_-100_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Refuerzo_cuna_1",
+      "name": "Refuerzo_cuna_1",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Refuerzo_cuna_2",
+      "name": "Refuerzo_cuna_2",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Cuna_modular",
+      "name": "Cuna_modular",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_hombro_I",
+      "name": "Anclaje_hombro_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Anclaje_hombro_D",
+      "name": "Anclaje_hombro_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Yugo_cinturon",
+      "name": "Yugo_cinturon",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Interfaz_I",
+      "name": "REF_Interfaz_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Pad_I",
+      "name": "REF_Pad_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Interfaz_D",
+      "name": "REF_Interfaz_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Pad_D",
+      "name": "REF_Pad_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Pad_lumbar",
+      "name": "REF_Pad_lumbar",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Separador_interfaz_-70_150",
+      "name": "Separador_interfaz_-70_150",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Separador_interfaz_-70_470",
+      "name": "Separador_interfaz_-70_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Separador_interfaz_70_150",
+      "name": "Separador_interfaz_70_150",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "Separador_interfaz_70_470",
+      "name": "Separador_interfaz_70_470",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_Protector_bolsa_cuna",
+      "name": "REF_Protector_bolsa_cuna",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "part": "REF_M8_Agarre_54",
+      "name": "Cartela_I_1",
+      "axis": "x",
+      "position": [
+        -129.0,
+        35,
+        12.5
+      ]
+    },
+    {
+      "part": "REF_M8_Agarre_54",
+      "name": "Cartela_I_2",
+      "axis": "x",
+      "position": [
+        -129.0,
+        80,
+        12.5
+      ]
+    },
+    {
+      "part": "REF_M5_Agarre_26p5",
+      "name": "Piso_I_3",
+      "axis": "y",
+      "position": [
+        -117.0,
+        96,
+        45
+      ]
+    },
+    {
+      "part": "REF_M5_Agarre_26p5",
+      "name": "Piso_I_4",
+      "axis": "y",
+      "position": [
+        -117.0,
+        96,
+        110
+      ]
+    },
+    {
+      "part": "REF_M8_Agarre_54",
+      "name": "Cartela_D_5",
+      "axis": "x",
+      "position": [
+        75.0,
+        35,
+        12.5
+      ]
+    },
+    {
+      "part": "REF_M8_Agarre_54",
+      "name": "Cartela_D_6",
+      "axis": "x",
+      "position": [
+        75.0,
+        80,
+        12.5
+      ]
+    },
+    {
+      "part": "REF_M5_Agarre_26p5",
+      "name": "Piso_D_7",
+      "axis": "y",
+      "position": [
+        117.0,
+        96,
+        45
+      ]
+    },
+    {
+      "part": "REF_M5_Agarre_26p5",
+      "name": "Piso_D_8",
+      "axis": "y",
+      "position": [
+        117.0,
+        96,
+        110
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_29",
+      "name": "Diagonal_9",
+      "axis": "z",
+      "position": [
+        -100.0,
+        150.0,
+        -4
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_29",
+      "name": "Diagonal_10",
+      "axis": "z",
+      "position": [
+        100.0,
+        470.0,
+        -4
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_31",
+      "name": "Diagonal_11",
+      "axis": "z",
+      "position": [
+        100.0,
+        150.0,
+        -6
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_31",
+      "name": "Diagonal_12",
+      "axis": "z",
+      "position": [
+        -100.0,
+        470.0,
+        -6
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Hombro_I_13",
+      "axis": "z",
+      "position": [
+        -100.0,
+        360,
+        0
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Hombro_I_14",
+      "axis": "z",
+      "position": [
+        -100.0,
+        400,
+        0
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Hombro_D_15",
+      "axis": "z",
+      "position": [
+        100.0,
+        360,
+        0
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Hombro_D_16",
+      "axis": "z",
+      "position": [
+        100.0,
+        400,
+        0
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Cinturon_17",
+      "axis": "z",
+      "position": [
+        -100.0,
+        50,
+        -5
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Cinturon_18",
+      "axis": "z",
+      "position": [
+        -100.0,
+        95,
+        -5
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Cinturon_19",
+      "axis": "z",
+      "position": [
+        100.0,
+        50,
+        -5
+      ]
+    },
+    {
+      "part": "REF_M6_Agarre_30",
+      "name": "Cinturon_20",
+      "axis": "z",
+      "position": [
+        100.0,
+        95,
+        -5
+      ]
+    },
+    {
+      "part": "REF_M4_Agarre_14",
+      "name": "Interfaz_21",
+      "axis": "z",
+      "position": [
+        -70,
+        150,
+        -14
+      ]
+    },
+    {
+      "part": "REF_M4_Agarre_14",
+      "name": "Interfaz_22",
+      "axis": "z",
+      "position": [
+        -70,
+        470,
+        -14
+      ]
+    },
+    {
+      "part": "REF_M4_Agarre_14",
+      "name": "Interfaz_23",
+      "axis": "z",
+      "position": [
+        70,
+        150,
+        -14
+      ]
+    },
+    {
+      "part": "REF_M4_Agarre_14",
+      "name": "Interfaz_24",
+      "axis": "z",
+      "position": [
+        70,
+        470,
+        -14
+      ]
+    }
+  ],
+  "bolts": [
+    {
+      "axis": "x",
+      "pos": [
+        -129.0,
+        35,
+        12.5
+      ],
+      "diam": 8,
+      "grip": 54,
+      "tag": "Cartela_I"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        -129.0,
+        80,
+        12.5
+      ],
+      "diam": 8,
+      "grip": 54,
+      "tag": "Cartela_I"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        -117.0,
+        96,
+        45
+      ],
+      "diam": 5,
+      "grip": 26.5,
+      "tag": "Piso_I"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        -117.0,
+        96,
+        110
+      ],
+      "diam": 5,
+      "grip": 26.5,
+      "tag": "Piso_I"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        75.0,
+        35,
+        12.5
+      ],
+      "diam": 8,
+      "grip": 54,
+      "tag": "Cartela_D"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        75.0,
+        80,
+        12.5
+      ],
+      "diam": 8,
+      "grip": 54,
+      "tag": "Cartela_D"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        117.0,
+        96,
+        45
+      ],
+      "diam": 5,
+      "grip": 26.5,
+      "tag": "Piso_D"
+    },
+    {
+      "axis": "y",
+      "pos": [
+        117.0,
+        96,
+        110
+      ],
+      "diam": 5,
+      "grip": 26.5,
+      "tag": "Piso_D"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        150.0,
+        -4
+      ],
+      "diam": 6,
+      "grip": 29,
+      "tag": "Diagonal"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        470.0,
+        -4
+      ],
+      "diam": 6,
+      "grip": 29,
+      "tag": "Diagonal"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        150.0,
+        -6
+      ],
+      "diam": 6,
+      "grip": 31,
+      "tag": "Diagonal"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        470.0,
+        -6
+      ],
+      "diam": 6,
+      "grip": 31,
+      "tag": "Diagonal"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        360,
+        0
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Hombro_I"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        400,
+        0
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Hombro_I"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        360,
+        0
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Hombro_D"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        400,
+        0
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Hombro_D"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        50,
+        -5
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Cinturon"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -100.0,
+        95,
+        -5
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Cinturon"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        50,
+        -5
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Cinturon"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        100.0,
+        95,
+        -5
+      ],
+      "diam": 6,
+      "grip": 30,
+      "tag": "Cinturon"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -70,
+        150,
+        -14
+      ],
+      "diam": 4,
+      "grip": 14,
+      "tag": "Interfaz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        -70,
+        470,
+        -14
+      ],
+      "diam": 4,
+      "grip": 14,
+      "tag": "Interfaz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        70,
+        150,
+        -14
+      ],
+      "diam": 4,
+      "grip": 14,
+      "tag": "Interfaz"
+    },
+    {
+      "axis": "z",
+      "pos": [
+        70,
+        470,
+        -14
+      ],
+      "diam": 4,
+      "grip": 14,
+      "tag": "Interfaz"
+    }
+  ]
+}

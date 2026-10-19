@@ -1,0 +1,87 @@
+{
+  "version": "P2.03",
+  "fecha": "2026-10-16",
+  "unidades": "mm",
+  "geometria": {
+    "H": 500,
+    "S": 200,
+    "W": 300,
+    "D": 125,
+    "Y": 135,
+    "b": 50,
+    "d": 40,
+    "t": 1.5,
+    "tmin": 1.4,
+    "tf": 2.5,
+    "tg": 3,
+    "ta": 2,
+    "tb": 2,
+    "rib_h": 20,
+    "rib_d": 10,
+    "rib_t": 1.5,
+    "support_depths": [
+      15,
+      60,
+      105
+    ],
+    "bolt8_y": [
+      20,
+      100
+    ],
+    "hip_y": [
+      45,
+      80
+    ],
+    "shoulder_y": [
+      365,
+      395
+    ],
+    "brace_y": [
+      165,
+      470
+    ],
+    "hose_radius": 25,
+    "hose_offset": 10,
+    "tflange": 5,
+    "cover_gap": 12,
+    "pan_depth": 18,
+    "pan_min": 1.8
+  },
+  "cargas": {
+    "m": 25,
+    "g": 9.81,
+    "av": 3,
+    "ah": 1,
+    "eta": 0.7,
+    "e": 107.5,
+    "L": 423,
+    "Kt": 2,
+    "Kb": 1.2,
+    "Kslot": 1.5,
+    "nReq": 2.2,
+    "deltaLim": 5
+  },
+  "materiales": {
+    "SyR": 240,
+    "SyS": 130,
+    "SyB": 600,
+    "E": 69000,
+    "nu": 0.33
+  },
+  "uniones": {
+    "preload8": 3500,
+    "preload6": 1800,
+    "preload5": 1000,
+    "preload4": 250,
+    "dispersion": 0.25,
+    "prying": 1.5,
+    "preload_interface": 500,
+    "preload_cartela": 1500,
+    "preload_frame": 1400
+  },
+  "masa": {
+    "reserva_textiles_kg": 0.5,
+    "reserva_piezas_no_modeladas_kg": 0.08,
+    "objetivo_total_kg": 2.0
+  }
+}

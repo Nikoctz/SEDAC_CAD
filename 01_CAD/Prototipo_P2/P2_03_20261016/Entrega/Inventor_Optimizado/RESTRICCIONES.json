@@ -1,0 +1,1042 @@
+﻿[
+    {
+        "ocurrencia":  "Casquillo_M6_I_45",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_I_80",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_I_365",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_I_395",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_I_165",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_I_470",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_M6_I_20",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_M6_I_100",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_I_15",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_I_60",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_I_105",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Riel_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_45",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_80",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_365",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_395",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_165",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_M6_D_470",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_M6_D_20",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_M6_D_100",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_D_15",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_D_60",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Apoyo_interior_M5_D_105",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Refuerzo_cuna_1",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Refuerzo_cuna_2",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Refuerzo_cuna_3",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_modular",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Travesano_Bajo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Travesano_Alto",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Diagonal_1",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Diagonal_2",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Calce_X_100_165",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Calce_X_-100_470",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Anclaje_hombro_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Anclaje_hombro_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Anclaje_cinturon_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Anclaje_cinturon_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Acolchado_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Acolchado_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Protector_bolsa_aligerado",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_1_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_1_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_1_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_1_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_2_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_2_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_2_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_I_2_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_3_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_3_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_3_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_3_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_4_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_4_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_4_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_4_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_5_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_5_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_5_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_I_5_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_6_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_6_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_6_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_6_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_7_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_7_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_7_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cartela_D_7_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_8_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_8_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_8_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_8_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_9_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_9_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_9_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_9_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_10_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_10_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_10_Arandela_tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cuna_D_10_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_11_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_11_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_11_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_11_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_12_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_12_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_12_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_12_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_13_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_13_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_13_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_13_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_14_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_14_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_14_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Marco_14_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_15_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_15_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_15_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_15_Tuerca",
+        "error_transformacion":  1.1102230246251565E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_16_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_16_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_16_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_I_16_Tuerca",
+        "error_transformacion":  1.1102230246251565E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_17_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_17_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_17_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_17_Tuerca",
+        "error_transformacion":  1.1102230246251565E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_18_Tornillo",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_18_Arandela_cabeza",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_18_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Hombro_D_18_Tuerca",
+        "error_transformacion":  1.1102230246251565E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_19_Tornillo",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_19_Arandela_cabeza",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_19_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_19_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_20_Tornillo",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_20_Arandela_cabeza",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_20_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_I_20_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_21_Tornillo",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_21_Arandela_cabeza",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_21_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_21_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_22_Tornillo",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_22_Arandela_cabeza",
+        "error_transformacion":  5.5511151231257827E-17,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_22_Arandela_tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Cinturon_D_22_Tuerca",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    }
+]

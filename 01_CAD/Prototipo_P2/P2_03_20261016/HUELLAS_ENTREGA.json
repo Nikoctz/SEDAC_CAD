@@ -1,0 +1,452 @@
+[
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Anclaje_cinturon_D.ipt",
+    "bytes": 226816,
+    "sha256": "91c31fe6ec1d27d4ab74b21feb23fc6ff1527dc832db656888da69455ffd44c1"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Anclaje_cinturon_I.ipt",
+    "bytes": 228352,
+    "sha256": "c8684af4d450906ba380d522667c307efaf57e2229a5f640eb62f5eec5bef6ec"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Anclaje_hombro_D.ipt",
+    "bytes": 198656,
+    "sha256": "5f664d76cdeb92296a9b440759b74eb9a42a7289be5da290d0d09c89d1962b9d"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Anclaje_hombro_I.ipt",
+    "bytes": 199168,
+    "sha256": "502814a249af39ad0f5cbbba0c58c57633c89ff5970086c4169a51805ddf8c04"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_D_105.ipt",
+    "bytes": 111104,
+    "sha256": "83365b24977f0efd2b4ea228240ad20713d6f72fd40981381ad35d547329d1ee"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_D_15.ipt",
+    "bytes": 111104,
+    "sha256": "e611e22d018a9db00d897b7e3c0bf4be0132dfc446f8c4d09e48fed8a93dff11"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_D_60.ipt",
+    "bytes": 111104,
+    "sha256": "2d25d15b1c6f55de45cc997182c8d1fb459c73e5abd9842e5b8e6ab9f535ee51"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_I_105.ipt",
+    "bytes": 110592,
+    "sha256": "aff84340f5a4309387628b46657a3782d740ca143189001ac79e63062a19b81e"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_I_15.ipt",
+    "bytes": 111104,
+    "sha256": "347d6636613d2431b9240afa9b2ebc273d8e173404599a724b6b15cea2f18b39"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Apoyo_interior_M5_I_60.ipt",
+    "bytes": 111104,
+    "sha256": "6583a3615a1056f19efb70eec9a05cf2b2ed2d381bacccad80afd02fa3c9b483"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Arandela_ISO7089_M5.ipt",
+    "bytes": 97792,
+    "sha256": "c05fb37a910ad50f31cf6e7ea8e258d1c0bd76869967c79e135da0ec746a3e15"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Arandela_ISO7089_M6.ipt",
+    "bytes": 98816,
+    "sha256": "e0c161de6a395680349f552ef45bfceab49cc3c16052517250700b3c273227c4"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/AUDITORIA_NATIVA.json",
+    "bytes": 20121,
+    "sha256": "d411567843ccb111bc4b4b254ec997fe0edbec8549f8cdf392b132c39fb8620f"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/BOM_FIJACIONES.csv",
+    "bytes": 2408,
+    "sha256": "c88c3945777568e29209d823600f1051ce4aa11906e0ec7b08b5b1b2fbc9cbb7"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/BOM_PIEZAS_Y_MASAS.csv",
+    "bytes": 5682,
+    "sha256": "0a82b3b8b686ac4bb175e9768c446b1f0a24e0a6089c8d0c55ce7e088805267e"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Calce_X_-100_470.ipt",
+    "bytes": 100352,
+    "sha256": "473b893e9da8fa8666e66b0309de867583bd414b6bd888723a0acde004455eb2"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Calce_X_100_165.ipt",
+    "bytes": 100352,
+    "sha256": "befdeb6c924d0a9dda97a87e1d63b3fd264b4e6fe1a7add56140363194cd60a6"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Cartela_D.ipt",
+    "bytes": 119296,
+    "sha256": "0521de6afdfd307dc5d42820c54c92bee023840360de69e846cb6f9ee0dc764e"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Cartela_I.ipt",
+    "bytes": 122880,
+    "sha256": "9c06f8b3272c38486fc66b6865eab3d17bc6a7ba732ae9b6d8d6a9b085569ee7"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_165.ipt",
+    "bytes": 102912,
+    "sha256": "12ff1a62eca084606d85fda030767ad552e850e0b48d739d3a809baa1e1f948c"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_365.ipt",
+    "bytes": 102400,
+    "sha256": "4e32a2e0f3932aca7e08c4dc6e06c9c3e5d853f151d95b13dc9665f4a87f30e1"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_395.ipt",
+    "bytes": 102400,
+    "sha256": "deef2cb6e7f0ffa9d9a4f5cbef619c956084b4423fe7ad96b86d0252f3874b32"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_45.ipt",
+    "bytes": 102912,
+    "sha256": "c6c36e80782c9b9aeb0c5a153bd196e5fe4468d04210c5b0e436b0fb6efae321"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_470.ipt",
+    "bytes": 102912,
+    "sha256": "703c692f6628cfdb7c805e3a6d2b8b55e3252d2f90c74c9395ede508984318be"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_D_80.ipt",
+    "bytes": 102912,
+    "sha256": "88fdde8ba633731c75d8b81f2e8f4541fcb358a4c81b8b1a748a8b7b4a143ba3"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_165.ipt",
+    "bytes": 102400,
+    "sha256": "c4f8578ace1211e98b2ea3dc899519e9640255b28b039f5126d0187782170a61"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_365.ipt",
+    "bytes": 102400,
+    "sha256": "92b0cf16eda158cf565fcf21f7f3b91f34b7b8258366e50d52e5d3a4fb7c9524"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_395.ipt",
+    "bytes": 102400,
+    "sha256": "e31f23397ad0e653bbab1a717e9bbd0acd1997996e8726b356c26274a072bf2a"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_45.ipt",
+    "bytes": 102400,
+    "sha256": "c0dfd917d6abd78f19700cc76005cd33c4dba2a124932007b2d7fa6d6a7ed4f6"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_470.ipt",
+    "bytes": 102400,
+    "sha256": "d6634c5986469d837eecba3966caed728daf82a9c1505693fe23de3564b578ef"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Casquillo_M6_I_80.ipt",
+    "bytes": 102400,
+    "sha256": "1d1497915ffaf9226f94e0afb47466b7b9d7462d4bd842ceb3bf861ae9ac4f21"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Cuna_modular.ipt",
+    "bytes": 146432,
+    "sha256": "c5eaf45ff85b3ecd8355b0ba3e96a2bd3861131caa191496211475c8bceb1200"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Diagonal_1.ipt",
+    "bytes": 88576,
+    "sha256": "da1be4c1facf8c71d23e24ff231df4fd3b6b356e74bfb9a7bda9c20b0aa2b536"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Diagonal_2.ipt",
+    "bytes": 89088,
+    "sha256": "485b2ca344670c7b08035e9409fe2d7f21780d0a6c3d29ffeb3fd23ddaa03628"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/ESTADO_OK.txt",
+    "bytes": 120,
+    "sha256": "159df1bb557df28df45bec29af6fa91b8f7e14aca6590e3418e9b8f3f0a4a747"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/INTERFERENCIAS.json",
+    "bytes": 11,
+    "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/MASAS_CAD.json",
+    "bytes": 12223,
+    "sha256": "5a5112d28d4c87d1f8b944a216611b132719871c1b0d079f3ec6de0d9ad678f2"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/MODELO_API.json",
+    "bytes": 103951,
+    "sha256": "7f03f95405d5513f3d9e93022783f785b6851c947e061118147673fcef672343"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/MODELO_P2_03.json",
+    "bytes": 105616,
+    "sha256": "544ee365b9452ed97e6dd91fee48f05bccfd2a1d75247b31c9acf219ca099f61"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Pasador_hueco_M6_D_100.ipt",
+    "bytes": 100864,
+    "sha256": "a9fbf7ba3d32a03c037d5a501e6c1c1acdb5dd93724ef9a770ca2d3bc3ced8e5"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Pasador_hueco_M6_D_20.ipt",
+    "bytes": 101376,
+    "sha256": "23338267ca7e66bda499ede9afc50ffd40d5df0f3d9e97c6af9df4dd29ef135a"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Pasador_hueco_M6_I_100.ipt",
+    "bytes": 100864,
+    "sha256": "f19d42422be609dea4a65abd4a0d718ef7a8bdd5af971e5498ff93bc90289152"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Pasador_hueco_M6_I_20.ipt",
+    "bytes": 101376,
+    "sha256": "b236f68739513f57a9ff3e525d0161d6aa27b24dbfec2ea9a6a1c69510023771"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Protector_bolsa_aligerado.ipt",
+    "bytes": 131584,
+    "sha256": "34bbb822041e50e703f127ff88902ff3069a87aaefe592545ec794e2b6b92084"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/REDONDEOS.json",
+    "bytes": 711,
+    "sha256": "8ed68f79c683c9392c5d10c681b6b84559dbbbfc1af1a8c1e2cac7ce9a1bbcb2"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/REF_Acolchado_D.ipt",
+    "bytes": 89600,
+    "sha256": "a5029adfb15aff090b581bc2c0ed38bc35d2541b976ab997832cf23ebacbe7ce"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/REF_Acolchado_I.ipt",
+    "bytes": 89600,
+    "sha256": "002a87b157b94fba1a2cdbc8675121e85d7902b5d072a0e68b6d6d1dd1f85608"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Refuerzo_cuna_1.ipt",
+    "bytes": 122880,
+    "sha256": "53ef10fea10f1abbe3142cca4c3231d012ce6d738342361749a9bcf9f0beec1a"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Refuerzo_cuna_2.ipt",
+    "bytes": 121856,
+    "sha256": "1c07ff942b8fc3a6c70affa287d5a197a8c51b9422347b015529d74f210eff33"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Refuerzo_cuna_3.ipt",
+    "bytes": 122368,
+    "sha256": "dbd565f2adde426165c53b60792ce4dc0c7af0bb1955d242de98dc313cbeaf1d"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/RESTRICCIONES.json",
+    "bytes": 30627,
+    "sha256": "3b4f91b9698c7243a34edca530e74a10797170586a463086a4f5fa1086520df2"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/RESUMEN_MASAS.csv",
+    "bytes": 542,
+    "sha256": "20d0bbf54856bfd8300aaff96c294cc7ab646dce7ced8e8f7642228ba0214b97"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Riel_D.ipt",
+    "bytes": 118272,
+    "sha256": "d46e00036388bb36ff15b035eedeaf6cb58cf35ce10c1df358043878434ad78e"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Riel_I.ipt",
+    "bytes": 118784,
+    "sha256": "8eba5af9d6be35255f8adea022d10a00722a912864fc639315219816708eae37"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/ROSCAS_NATIVAS.json",
+    "bytes": 1100,
+    "sha256": "d549137f9aa2486909de15f255fba03f4e8032019f13749a9027595b7b03ae99"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/SEDAC_P2_03.iam",
+    "bytes": 651264,
+    "sha256": "cec3c9026b8d15e276e390a9336f9967345fcbd8773e92be3e1a74fe7a425ede"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/SEDAC_P2_03_REVISION.step",
+    "bytes": 2006318,
+    "sha256": "a7895338d1ba9ab5d75632cfd5917f28aec142af610df07528761ec1c4764ed4"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tornillo_ISO4762_M5x40_A2_80.ipt",
+    "bytes": 141824,
+    "sha256": "9d706af6edb947d57aaf674b3298a716a6e11f341f69f93e32e36b3751052b87"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tornillo_ISO4762_M6x55_A2_80.ipt",
+    "bytes": 133120,
+    "sha256": "522f95960d152df604fce595aecc2d950765af107ded92ef6e7610d8c9820d1a"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tornillo_ISO4762_M6x60_A2_80.ipt",
+    "bytes": 127488,
+    "sha256": "61922d23a1b34f44a939cec698660a7f6189110e09049f77aea6fb2cfdc3318c"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tornillo_ISO4762_M6x65_A2_80.ipt",
+    "bytes": 126976,
+    "sha256": "dd8ec4c084535f55ebb688c7f6450e6f583dd386e36ec6d79fc786781ca8ffee"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Travesano_Alto.ipt",
+    "bytes": 94720,
+    "sha256": "042f8e63b6d17275592a2ee4187d9058efdb9f45053e98f9a52807daf3ce16f8"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Travesano_Bajo.ipt",
+    "bytes": 93696,
+    "sha256": "a62336f1fc410a5a5f7cf2e358f82cf1c83b09d68d9e53b0217d2b039873886d"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tuerca_autofrenante_M5_DIN980.ipt",
+    "bytes": 122368,
+    "sha256": "c432658bb9e7350ee449d28b8aa29276279815259e7955f8761f0830ea62d5a6"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/Tuerca_autofrenante_M6_DIN980.ipt",
+    "bytes": 121344,
+    "sha256": "ab2961186748599a5c3126505fbef7dc2fda7de04368723bbf26f0a8c5cea2d0"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/VISTA_ESPALDA.png",
+    "bytes": 650297,
+    "sha256": "2e150229c6e9cbc8dfb8928eb1b458850552a84fa74c7f284bd89f970f34aac0"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/VISTA_ESTRUCTURA.png",
+    "bytes": 679732,
+    "sha256": "0ce09b0e30ee66ca7cc2afd39733d258e321cb6c130e2f6d04fd3cfd8d99adf0"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Entrega/Inventor_Optimizado/VISTA_FRENTE.png",
+    "bytes": 664463,
+    "sha256": "4369a209f326e9a57cb7f48c52f435cf59f5256118d464130bdd76641253e546"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/ESPECIFICACION_P2_03.md",
+    "bytes": 3447,
+    "sha256": "f0ba544cfeee8bf28fb1d9de42016f17d83fca5e3313786392a28b5f2f01466b"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/HOJA_MEDICION_P2_03.md",
+    "bytes": 2201,
+    "sha256": "9753b8ccce8d178def975daee80b7f3c35508c87fd7684ce0ac6e7139130ce77"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/INFORME_DISENO_P2_03.md",
+    "bytes": 8799,
+    "sha256": "ac3ac399e0dabfe48f6e808d1756a478d4cff8cb2f8b476e53a61611b526ffb5"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/LEEME.md",
+    "bytes": 3521,
+    "sha256": "e2b2eb216a2287935b316d5038bd9bb1cc373c3c073263bd2f8ee5c8726a5170"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/PARAMETROS_P2_03.json",
+    "bytes": 1433,
+    "sha256": "2c153c44f623eb543ed3b60121247515db6c3ca7eecfb5912ce134a29874ea7c"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Soporte/calcular_y_mathcad.py",
+    "bytes": 23457,
+    "sha256": "856a59448e03c690cc2f47daf82d7823048bcdb3d8de31475e470595a91fc11d"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Soporte/generar_p2_03.py",
+    "bytes": 10329,
+    "sha256": "c7ad5b4f361e4afe6448187505c0e53f2aebc22e3167fa4f6d6ceb287459aff9"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Soporte/mathcad_base.py",
+    "bytes": 6867,
+    "sha256": "5557344e1f7feeac8dfe3d8a4c86862d09ffa2053711e4fbc4722060895d23fa"
+  },
+  {
+    "ruta": "01_CAD/Prototipo_P2/P2_03_20261016/Soporte/REGENERAR_P2_03.ps1",
+    "bytes": 16948,
+    "sha256": "63499391be1f064da602b868edd6823d7cc4cd12b0de244046764a4482449781"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Guia_SEDAC_P2_03_MC02_Beamer.pdf",
+    "bytes": 142696,
+    "sha256": "790e0cdd9dec27bca065f57961df509a2189782dc846cc08fc008e63a11d7b99"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Guia_SEDAC_P2_03_MC02_Beamer.tex",
+    "bytes": 43328,
+    "sha256": "db2820afba3530a1824fe7b08739cab3574a13928d5e9a6ffc2c7dbd5ce365dc"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/LEEME_MEMORIA.md",
+    "bytes": 2227,
+    "sha256": "df0ecbeea98fb3e20e48896cbf1649e758962a51bf89b4166738b342f5a8b5e9"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Memoria_SEDAC_P2_03_MC02_FINAL_EDITABLE.xmcd",
+    "bytes": 1296169,
+    "sha256": "7b6a1ef7dfeee95035db50428c15748c01251f22400bd4206a1a334766c6b2d0"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/AUDITORIA_ENTREGA.json",
+    "bytes": 747,
+    "sha256": "59652efdd70803e31ebf6aeb5a6a52f74133d52c569585c069a290a97a02fbdc"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/comprobar_mathcad.ps1",
+    "bytes": 1992,
+    "sha256": "77fd89df3027cf42c8ccef3de9678e85b5954947b9b547456dd74b5add363aa3"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/crear_beamer.py",
+    "bytes": 41013,
+    "sha256": "8495bc20adf7e2cba56b681047027ec5ead3e92b6414810d32c4d2e380f59b69"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/ENTRADAS.json",
+    "bytes": 1351,
+    "sha256": "e5999ceddded2783a334dd934a5e011df2b9b360a0de349938f660e6576cfe9c"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/ERRORES_MATHCAD.json",
+    "bytes": 11,
+    "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/REGIONES.json",
+    "bytes": 182389,
+    "sha256": "8f7a07fdcdab01f122e6366849efcd5566f7a0a947449861c488c2f2a263e769"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/RESUMEN_CALCULO.json",
+    "bytes": 3569,
+    "sha256": "75e67697c3e731cc7b7120c2edc8ab494d34bf7cd902ba5dac4aef5f90497007"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/VALORES_ESPERADOS_SI.json",
+    "bytes": 15226,
+    "sha256": "299899c7632c891a9486e560249068fa7fed2299a75300dcc3a4be33ecf5de35"
+  },
+  {
+    "ruta": "06_DOCUMENTACION/Memoria_Calculo_P2_03/Soporte/VERIFICACION_MATHCAD.json",
+    "bytes": 49116,
+    "sha256": "2f1d759f4123645185f2c612959482ec48a4f0ec725b5c2f4121051a9c1d5fee"
+  }
+]

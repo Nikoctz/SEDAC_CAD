@@ -1,0 +1,28 @@
+[
+  {
+    "origen": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\CAD",
+    "destino": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Soporte\\Iteraciones\\CAD_01_inicial",
+    "estado": "archivado"
+  },
+  {
+    "origen": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\CAD_Final",
+    "destino": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Soporte\\Iteraciones\\CAD_02_intermedio",
+    "estado": "archivado"
+  },
+  {
+    "origen": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\CAD",
+    "destino": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Soporte\\Iteraciones\\CAD_03_intermedio",
+    "estado": "archivado"
+  },
+  {
+    "origen": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor",
+    "destino": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Soporte\\Iteraciones\\CAD_04_antes_de_corregir_apoyos",
+    "estado": "archivado"
+  },
+  {
+    "origen": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\06_DOCUMENTACION\\Memoria_Calculo_P2_03\\Memoria_SEDAC_P2_03_MC02_EDITABLE.xmcd",
+    "destino": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\06_DOCUMENTACION\\Memoria_Calculo_P2_03\\Soporte\\Iteraciones\\MC02_borrador_NO_USAR.xmcd",
+    "estado": "pendiente",
+    "motivo": "The process cannot access the file because it is being used by another process."
+  }
+]

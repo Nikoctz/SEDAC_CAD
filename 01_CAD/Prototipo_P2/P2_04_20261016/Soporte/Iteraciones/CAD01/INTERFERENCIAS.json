@@ -1,0 +1,42 @@
+﻿[
+    {
+        "pieza_1":  "Refuerzo_C_D",
+        "pieza_2":  "Casquillo_D_450",
+        "volumen_mm3":  0.46341711801502533
+    },
+    {
+        "pieza_1":  "Refuerzo_C_D",
+        "pieza_2":  "Casquillo_D_390",
+        "volumen_mm3":  0.46341711801502522
+    },
+    {
+        "pieza_1":  "Refuerzo_C_D",
+        "pieza_2":  "Casquillo_D_95",
+        "volumen_mm3":  0.463417118014958
+    },
+    {
+        "pieza_1":  "Refuerzo_C_D",
+        "pieza_2":  "Casquillo_D_35",
+        "volumen_mm3":  0.46341711801498381
+    },
+    {
+        "pieza_1":  "Refuerzo_C_I",
+        "pieza_2":  "Casquillo_I_450",
+        "volumen_mm3":  0.46341711801502544
+    },
+    {
+        "pieza_1":  "Refuerzo_C_I",
+        "pieza_2":  "Casquillo_I_390",
+        "volumen_mm3":  0.46341711801502533
+    },
+    {
+        "pieza_1":  "Refuerzo_C_I",
+        "pieza_2":  "Casquillo_I_95",
+        "volumen_mm3":  0.46341711801495028
+    },
+    {
+        "pieza_1":  "Refuerzo_C_I",
+        "pieza_2":  "Casquillo_I_35",
+        "volumen_mm3":  0.46341711801497526
+    }
+]

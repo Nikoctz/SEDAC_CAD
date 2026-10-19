@@ -1,0 +1,461 @@
+﻿[
+    {
+        "pieza":  "Riel_I",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Riel_I.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.34154131481385186,
+        "volumen_mm3":  126496.78326438957,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_45",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_45.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807951,
+        "volumen_mm3":  1640.1312766595538,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00442835444698079,
+        "volumen_mm3":  1640.1312766595518,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_365",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_365.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_395",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_395.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_165",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_165.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00442835444698078,
+        "volumen_mm3":  1640.1312766595481,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_I_470",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_I_470.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_I_20",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Pasador_hueco_M6_I_20.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0063433185321622246,
+        "volumen_mm3":  2349.3772341341569,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_I_100",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Pasador_hueco_M6_I_100.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.006343318532162215,
+        "volumen_mm3":  2349.3772341341532,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Cartela_I",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Cartela_I.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.10817053967974517,
+        "volumen_mm3":  40063.162844350059,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_15",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_I_15.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866471788,
+        "volumen_mm3":  767.2554765359921,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_60",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_I_60.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866471866,
+        "volumen_mm3":  767.255476535995,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_I_105",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_I_105.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866471879,
+        "volumen_mm3":  767.25547653599551,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Riel_D",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Riel_D.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.34154131481385236,
+        "volumen_mm3":  126496.78326438976,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_45",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_45.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807951,
+        "volumen_mm3":  1640.1312766595538,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00442835444698079,
+        "volumen_mm3":  1640.1312766595518,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_365",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_365.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_395",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_395.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_165",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_165.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00442835444698078,
+        "volumen_mm3":  1640.1312766595481,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Casquillo_M6_D_470",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Casquillo_M6_D_470.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0044283544469807916,
+        "volumen_mm3":  1640.1312766595524,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_D_20",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Pasador_hueco_M6_D_20.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0063433185321622246,
+        "volumen_mm3":  2349.3772341341569,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Pasador_hueco_M6_D_100",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Pasador_hueco_M6_D_100.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.006343318532162215,
+        "volumen_mm3":  2349.3772341341532,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Cartela_D",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Cartela_D.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.10817053967974498,
+        "volumen_mm3":  40063.162844349987,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_15",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_D_15.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866472014,
+        "volumen_mm3":  767.25547653600051,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_60",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_D_60.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866471892,
+        "volumen_mm3":  767.25547653599585,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Apoyo_interior_M5_D_105",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Apoyo_interior_M5_D_105.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0020715897866471875,
+        "volumen_mm3":  767.25547653599529,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Refuerzo_cuna_1",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Refuerzo_cuna_1.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.060531024624355577,
+        "volumen_mm3":  22418.898009020581,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Refuerzo_cuna_2",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Refuerzo_cuna_2.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.060531024624355591,
+        "volumen_mm3":  22418.898009020588,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Refuerzo_cuna_3",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Refuerzo_cuna_3.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.060531024624355612,
+        "volumen_mm3":  22418.898009020595,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Cuna_modular",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Cuna_modular.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.287938862854744,
+        "volumen_mm3":  107439.87419953135,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Travesano_Bajo",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Travesano_Bajo.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.034593026013060593,
+        "volumen_mm3":  12812.231856689108,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Travesano_Alto",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Travesano_Alto.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.034593026013060572,
+        "volumen_mm3":  12812.2318566891,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Diagonal_1",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Diagonal_1.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.041304667066396156,
+        "volumen_mm3":  15412.189203879163,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Diagonal_2",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Diagonal_2.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.041304667066396066,
+        "volumen_mm3":  15412.189203879127,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Calce_X_100_165",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Calce_X_100_165.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.000646520918552884,
+        "volumen_mm3":  239.45219205662366,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Calce_X_-100_470",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Calce_X_-100_470.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.000646520918552884,
+        "volumen_mm3":  239.45219205662369,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Anclaje_hombro_I",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Anclaje_hombro_I.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.050674171718310915,
+        "volumen_mm3":  18768.21174752256,
+        "roscas_nativas":  0,
+        "redondeos":  1
+    },
+    {
+        "pieza":  "Anclaje_hombro_D",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Anclaje_hombro_D.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.050674171718311019,
+        "volumen_mm3":  18768.211747522597,
+        "roscas_nativas":  0,
+        "redondeos":  1
+    },
+    {
+        "pieza":  "Anclaje_cinturon_I",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Anclaje_cinturon_I.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.059038437516579459,
+        "volumen_mm3":  21866.0879691035,
+        "roscas_nativas":  0,
+        "redondeos":  1
+    },
+    {
+        "pieza":  "Anclaje_cinturon_D",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Anclaje_cinturon_D.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.059038437516578592,
+        "volumen_mm3":  21866.087969103181,
+        "roscas_nativas":  0,
+        "redondeos":  1
+    },
+    {
+        "pieza":  "REF_Acolchado_I",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\REF_Acolchado_I.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.01476493800988155,
+        "volumen_mm3":  246082.30016469254,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "REF_Acolchado_D",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\REF_Acolchado_D.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.014764938009881549,
+        "volumen_mm3":  246082.30016469251,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Protector_bolsa_aligerado",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Protector_bolsa_aligerado.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.096129281529736155,
+        "volumen_mm3":  100870.17998922996,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x65_A2_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tornillo_ISO4762_M6x65_A2_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.017866347020458081,
+        "volumen_mm3":  2233.29337755726,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Arandela_ISO7089_M6",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Arandela_ISO7089_M6.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0010358710624828996,
+        "volumen_mm3":  129.48388281036245,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tuerca_autofrenante_M6_DIN980",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tuerca_autofrenante_M6_DIN980.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.002799753911814458,
+        "volumen_mm3":  349.96923897680728,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M5x40_A2_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tornillo_ISO4762_M5x40_A2_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00823151736951306,
+        "volumen_mm3":  1028.9396711891325,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Arandela_ISO7089_M5",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Arandela_ISO7089_M5.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.00045182385543930355,
+        "volumen_mm3":  56.477981929912943,
+        "roscas_nativas":  0,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tuerca_autofrenante_M5_DIN980",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tuerca_autofrenante_M5_DIN980.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.0014316268702906818,
+        "volumen_mm3":  178.95335878633523,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x60_A2_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tornillo_ISO4762_M6x60_A2_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.016735373665165806,
+        "volumen_mm3":  2091.9217081457259,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    },
+    {
+        "pieza":  "Tornillo_ISO4762_M6x55_A2_80",
+        "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_03_20261016\\Entrega\\Inventor_Optimizado\\Tornillo_ISO4762_M6x55_A2_80.ipt",
+        "solidos":  1,
+        "masa_nativa_kg":  0.015604400309873525,
+        "volumen_mm3":  1950.5500387341908,
+        "roscas_nativas":  1,
+        "redondeos":  0
+    }
+]

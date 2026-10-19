@@ -1,0 +1,1 @@
+﻿Actualizacion correcta de 42 piezas solidas y 71 ocurrencias. STEP y vistas exportados. Textiles/hebillas: representacion provisional. Calculos son cribado condicionado; no validacion de uso.

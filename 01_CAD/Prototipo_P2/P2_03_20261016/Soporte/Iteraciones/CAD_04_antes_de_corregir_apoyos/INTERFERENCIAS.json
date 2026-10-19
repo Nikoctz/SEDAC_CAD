@@ -1,0 +1,32 @@
+﻿[
+    {
+        "pieza_1":  "Casquillo_M5_D_105",
+        "pieza_2":  "Refuerzo_cuna_3",
+        "volumen_mm3":  143.13644265055981
+    },
+    {
+        "pieza_1":  "Casquillo_M5_D_60",
+        "pieza_2":  "Refuerzo_cuna_2",
+        "volumen_mm3":  143.13644265055393
+    },
+    {
+        "pieza_1":  "Casquillo_M5_D_15",
+        "pieza_2":  "Refuerzo_cuna_1",
+        "volumen_mm3":  143.13644265056337
+    },
+    {
+        "pieza_1":  "Casquillo_M5_I_105",
+        "pieza_2":  "Refuerzo_cuna_3",
+        "volumen_mm3":  143.13644265055984
+    },
+    {
+        "pieza_1":  "Casquillo_M5_I_60",
+        "pieza_2":  "Refuerzo_cuna_2",
+        "volumen_mm3":  143.13644265055407
+    },
+    {
+        "pieza_1":  "Casquillo_M5_I_15",
+        "pieza_2":  "Refuerzo_cuna_1",
+        "volumen_mm3":  143.13644265056496
+    }
+]
