@@ -50,8 +50,8 @@ Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
 - Repositorio local, rama `main`.
 - Baseline: **`20f1ef3`** — "Baseline inicial SEDAC antes de P2.05" (2026-10-18 22:30).
-- Commit vigente (HEAD): **`0f7d03b`** — "Gobierno: corregir estado, registrar D-10/D-11, requisitos de las convocatorias y enlace con ChatGPT" (2026-10-19).
-- Historial reciente: `e27cf4e` — "P2.05: copia de trabajo sobre P2.04, parametros coherentes con la geometria y calculo regenerado" (2026-10-19, 148 archivos) sobre `f26f010` — "Agregar contexto compartido para agentes SEDAC".
+- Commits del 2026-10-19, de más antiguo a más nuevo: `e27cf4e` — P2.05 (148 archivos) · `0f7d03b` — gobierno, requisitos y enlace · `d2ae769` — mapa del repositorio y limpieza · `acd7bd7` — arreglo del enlace. Cualquier commit posterior a esta lista aparece en `git log`; esta sección no pretende ir por delante del historial.
+- Antes: `f26f010` — "Agregar contexto compartido para agentes SEDAC" (2026-10-18 22:52).
 - Sin remoto configurado: el repositorio solo existe en este equipo, dentro de una carpeta sincronizada en la nube, que es la **única copia de seguridad** (advertencia en `MAPA_DEL_REPOSITORIO.md`).
 - **Árbol limpio** a 2026-10-19: no quedan carpetas ni archivos sin rastrear.
 - Excluidos de Git por decisión intencional: `.codex/config.toml` (contiene rutas locales de este equipo, verificado), `tools/inventor-mcp/` (repositorio externo clonado), `.venv-inventor-mcp/`, `OldVersions/` y `01_CAD/Automatizacion/python_libs/` (retirado a la Papelera el 2026-10-19). No deben agregarse al repositorio.
@@ -238,6 +238,7 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **No se borró nada más.** Se conservan, a propósito: la generación «maqueta» (contiene el porqué de las cotas del kit en `KIT_MONTAJE_V01.md` y la hoja de medición de la bomba en `REGISTRO_MEDICION_BOMBA_LOCAL.md`), las memorias P2_02/P2_03 (citadas por 19 líneas de otros documentos), las instantáneas de iteración y todas las entregas.
 - **Nuevo `MAPA_DEL_REPOSITORIO.md`:** declara el estado de cada cosa, el orden de lectura para un agente, lo que está fuera de Git y la limpieza de hoy.
 - Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
+- Cierre: el aviso de privacidad del generador se había colado en el control de versiones; se retiró del índice y del disco y se añadió a `.gitignore`. La línea que señaló era **real** (el estado decía dónde vive el repositorio) y se reescribió sin la ruta. Además, el campo «commit vigente» del estado se sustituyó por la lista de commits del día, porque un documento no puede nombrar al commit que lo contiene. Commits del 2026-10-19: `e27cf4e`, `0f7d03b`, `d2ae769`, `acd7bd7` y los posteriores que registre `git log`.
 
 ---
 

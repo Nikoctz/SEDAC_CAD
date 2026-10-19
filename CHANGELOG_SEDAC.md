@@ -40,6 +40,7 @@ Con autorización del responsable se hizo lo siguiente, **en este orden** (prote
 - **No se borró nada más.** Se conservan, a propósito: la generación «maqueta» (contiene el porqué de las cotas del kit en `KIT_MONTAJE_V01.md` y la hoja de medición de la bomba en `REGISTRO_MEDICION_BOMBA_LOCAL.md`), las memorias P2_02/P2_03 (citadas por 19 líneas de otros documentos), las instantáneas de iteración y todas las entregas.
 - **Nuevo `MAPA_DEL_REPOSITORIO.md`:** declara el estado de cada cosa, el orden de lectura para un agente, lo que está fuera de Git y la limpieza de hoy.
 - Evidencia: `git log`, `git status`, y las mediciones de tamaño antes y después.
+- Cierre: el aviso de privacidad del generador se había colado en el control de versiones; se retiró del índice y del disco y se añadió a `.gitignore`. La línea que señaló era **real** (el estado decía dónde vive el repositorio) y se reescribió sin la ruta. Además, el campo «commit vigente» del estado se sustituyó por la lista de commits del día, porque un documento no puede nombrar al commit que lo contiene. Commits del 2026-10-19: `e27cf4e`, `0f7d03b`, `d2ae769`, `acd7bd7` y los posteriores que registre `git log`.
 
 ---
 
