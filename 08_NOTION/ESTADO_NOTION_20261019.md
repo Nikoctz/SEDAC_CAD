@@ -81,3 +81,44 @@ Los literales exactos de las cuatro páginas, con el reemplazo propuesto, se ent
 - Llamadas del 2026-10-19: `API-get-self`, `API-post-search` (consultas `P2.03`, `P2.04`, `P2.05`, vacía), `API-retrieve-page-markdown` (03.1, 03.2, 03.4, 04.1), `API-get-block-children` (04.1: sin subpáginas).
 - Del repositorio: `ESTADO_ACTUAL.md` (vigencia P2.04), `01_CAD/Prototipo_P2/P2_04_20261016/`, `DECISIONES.md` D-10 y D-11.
 - Detalle de la conexión y su alcance: `DECISIONES.md`, D-11 (actualizada).
+
+---
+
+## 8. Verificación posterior de la corrección (2026-10-19, 12:52–12:53)
+
+El responsable corrigió las cuatro páginas a través de su cuenta de ChatGPT, que **sí** tiene permiso de escritura. El agente **releyó las páginas** y comprobó, no dio por bueno el informe de ChatGPT.
+
+### 8.1 Sin daño colateral (hecho)
+
+Ordenando por fecha de edición, ese día solo se editaron **las cuatro páginas** previstas: 03.1 (12:52), 03.2 (12:52), 03.4 (12:53) y 04.1 (12:53). La siguiente más reciente es del 2026-10-17. Ninguna otra página fue tocada.
+
+### 8.2 Qué se comprobó, página por página (hecho)
+
+| Página | Comprobado |
+|---|---|
+| 03.1 | Encabezado e introducción a **P2.04**; F5 con **2,247**; materiales retitulados «(P2.03, histórico)» con su línea de `pendiente`; C1, M1 y M3 marcados como históricos de P2.03 con `pendiente` para P2.04 |
+| 03.2 | Título nuevo «03.2 — Diseño P2.03 (histórico)»; recuadro azul reescrito; referencia a la revisión vigente actualizada; nota de que la optimización ya se ejecutó en P2.04 |
+| 03.4 | Recuadro a **P2.04**; carpeta `P2_04_20261016/Entrega/Inventor/`; `SEDAC_P2_04.iam`; **54** `.ipt`; contenido, documentación y trazabilidad reescritos; los cuatro enlaces de Drive conservados y marcados como históricos |
+| 04.1 | Sección 1 a «revisión vigente (P2.04)», con la marca `(pendiente revisar en P2.04)` en los puntos de manguera y unión M6 marco/X |
+
+### 8.3 Lo que NO se trasvasó (hecho — es lo más importante)
+
+En 03.2 los datos propios de P2.03 quedaron **intactos y con sus valores originales**: 51 diseños, 131 ocurrencias, 390 restricciones, rieles 50 × 40 × 1,5 mm, masa rígida 2,333 kg y margen 2,254. En esa página **no aparece ni una vez el 2,247**: no se le pasaron a P2.03 cifras de P2.04. Era exactamente el riesgo que el bloque de instrucciones prohibía.
+
+Igualmente, en 04.1 siguen **sin tocarse** las secciones 2 a 5, la ficha por prueba y la frase «Hoy no hay ensayos físicos ejecutados».
+
+### 8.4 Defecto de formato encontrado (hecho, pendiente de corregir)
+
+Notion **convirtió dos nombres de archivo en enlaces roto**s, porque `.md` es un dominio real (Moldavia):
+`ESPECIFICACION_P2_04.md` → enlace a `http://04.md`; `INFORME_DISENO_P2_04.md` → `http://04.md`;
+`ESPECIFICACION_P2_03.md` → `http://03.md`; `INFORME_DISENO_P2_03.md` → `http://03.md`.
+No afecta al contenido, pero ensucia la página y muestra un nombre clicable que no lleva a ninguna parte. **Corrección:** escribir esos nombres entre acentos graves (`` `ESPECIFICACION_P2_04.md` ``) para que Notion no los autovincule. Los nombres terminados en `.json`, `.csv`, `.step`, `.iam`, `.xmcd` y `.pdf` no se vieron afectados.
+
+### 8.5 Dos correcciones del propio agente
+
+- **Falsa alarma, error de método propio:** una comprobación automática de esta lectura informó «0 apariciones de `pendiente` en 03.4». Era **falso**: la búsqueda distinguía mayúsculas y la página escribe `Pendiente`. Los tres pendientes pedidos **están** en 03.4. Se registra el fallo porque el error fue del agente, no de la página.
+- **Número 54 confirmado:** los **54** `.ipt` están junto al `.iam` (`OldVersions/` solo contiene un `.iam` antiguo, ningún `.ipt`). El número es correcto, y la carpeta de P2.03 tiene 51, coherente con lo que decía su página anterior.
+
+### 8.6 Límite de esta verificación
+
+El propio ChatGPT lo declaró y **es correcto**: la corrección de las páginas es **documental**. No verifica los archivos CAD locales, ni la masa, ni la seguridad del prototipo. La vigencia de P2.04 se sostiene en `ESTADO_ACTUAL.md` y en el contenido de `01_CAD/Prototipo_P2/P2_04_20261016/`, no en que Notion lo diga ahora.

@@ -7,6 +7,16 @@ Formato: fecha · versión/ámbito · descripción · evidencia.
 
 ## 2026-10-19
 
+**Notion: corrección aplicada por el responsable y verificada por el agente**
+
+El responsable corrigió las cuatro páginas desfasadas mediante su cuenta de ChatGPT (que sí puede escribir en Notion) y el agente **releyó y comprobó** el resultado, en lugar de dar por bueno el informe recibido.
+- Verificado: solo esas cuatro páginas se editaron ese día (12:52–12:53); ninguna otra.
+- Verificado: en **03.2** los datos propios de P2.03 quedaron **intactos** (51 diseños, 131 ocurrencias, 390 restricciones, rieles 50 × 40 × 1,5 mm, 2,333 kg, margen 2,254) y **el 2,247 no aparece**: no se trasvasaron cifras de P2.04 a P2.03.
+- Verificado: en **04.1** las secciones 2 a 5, la ficha por prueba y la declaración de ausencia de ensayos físicos siguen intactas.
+- **Defecto detectado, pendiente:** Notion autovinculó cuatro nombres de archivo `.md` (`.md` es dominio de Moldavia) a enlaces rotos como `http://04.md`; se corrige escribiéndolos entre acentos graves.
+- Registrada una **falsa alarma propia**: una comprobación automática informó 0 apariciones de `pendiente` en 03.4; era un error del agente (búsqueda sensible a mayúsculas). Los pendientes estaban.
+- Evidencia: llamadas `API-retrieve-page-markdown` y `API-post-search` del 2026-10-19; `08_NOTION/ESTADO_NOTION_20261019.md` §8.
+
 **Notion: acceso de solo lectura en funcionamiento, y desfase verificado frente al repositorio**
 
 Se cerró el diagnóstico que quedaba abierto: la conexión `SEDAC lectura` creada por el responsable quedó operativa y el agente **lee Notion**. El bloqueo era de entorno —el proceso de OpenCode no heredaba la variable `NOTION_TOKEN`; se reinició el servicio y quedó resuelto—.
