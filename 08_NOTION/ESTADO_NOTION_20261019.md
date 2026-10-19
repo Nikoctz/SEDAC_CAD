@@ -122,3 +122,32 @@ No afecta al contenido, pero ensucia la página y muestra un nombre clicable que
 ### 8.6 Límite de esta verificación
 
 El propio ChatGPT lo declaró y **es correcto**: la corrección de las páginas es **documental**. No verifica los archivos CAD locales, ni la masa, ni la seguridad del prototipo. La vigencia de P2.04 se sostiene en `ESTADO_ACTUAL.md` y en el contenido de `01_CAD/Prototipo_P2/P2_04_20261016/`, no en que Notion lo diga ahora.
+
+---
+
+## 9. Desfase pendiente: dos páginas más (2026-10-19, hallazgo del agente)
+
+**Corrección de un informe previo del propio agente.** El 2026-10-19, tras verificar las cuatro páginas, el agente informó que el desfase estaba resuelto. **No era exacto.** Aquel día se leyeron completas solo las páginas que *declaraban* la vigencia (03.1, 03.2, 03.4, 04.1); las demás se habían visto únicamente como líneas de resultado de búsqueda, lo que no permite juzgar el texto. Al leer después el plan de trabajo, aparecen **dos páginas más** con la misma confusión, y una de ellas es la que ordena el trabajo:
+
+**`2. Tareas semanales — 18 entregables`** (id `3ebf5e4b-db90-8123-938f-d1d39007a53c`) — «hecho», citado literal:
+- Recuadro: «**Estado actualizado:** entregables **1 y 2 entregados**. Diseño técnico vigente: **P2.03**.»
+- Entregable **6** (Modelado 3D — Lab CIUSACH): «Partir desde **P2.03**».
+- Entregable **9** (Fundamentos financieros y costos): «Cotizar a partir de BOM **P2.03** corregida con bomba real.»
+- Entregable **14** (Storytelling científico): «Problema → evolución P0/P2 → **P2.03** → evidencia → límites → siguiente prueba.»
+- Entregable **15** (Pitch en inglés): «Usar **P2.03** como diseño actual».
+
+**`Próximos pasos`** (id `2f3257d2-afd4-4493-9098-cc3f4cd0c875`) — «hecho», citado literal:
+- Paso 3: «**Actualizar P2.03** con esas medidas.»
+- «## Vector inmediato»: «Usar **P2.03** como único diseño vigente en nuevas evidencias y presentaciones.»
+- «## Regla»: «No seguir aligerando o abriendo variantes sin resolver una duda concreta del **P2.03**.»
+- «## Alternativa prioritaria para la próxima iteración»: propone **A. P2.03 actual** (cuna inferior estructural) frente a **B. Nueva arquitectura** (suspensión superior distribuida + estabilizador inferior abierto). **Esa alternativa B ya está construida: es P2.04.** No es una hipótesis abierta, es el estado actual del repositorio.
+
+### 9.1 Por qué importa
+
+- **Riesgo concreto y con fecha:** el **entregable 15 (pitch en inglés)** —que desemboca en Lions Cage el 9 de diciembre— y el **14 (storytelling)** están redactados para presentar **P2.03**. Seguir esas páginas produce una entrega que presenta un diseño superado.
+- **También fija una fecha:** el mismo bloque declara «Taller de modelado 3D: **23/10/2026**» y el entregable 7 está atado a ese taller.
+- **Asimetría útil de registrar:** la página de 03.2 ya proponía la arquitectura de P2.04 como «dirección de optimización» (ver §5). Es decir, **Notion contiene el plan; el repositorio contiene el plan ejecutado**, y las páginas operativas no se enteraron.
+
+### 9.2 Acción propuesta (no ejecutada)
+
+Corregir esas dos páginas con el mismo criterio que las cuatro anteriores —cambiar la vigencia, no trasvasar cifras, escribir `pendiente`—, **antes** de preparar los entregables 14 y 15. El agente no escribe en Notion.

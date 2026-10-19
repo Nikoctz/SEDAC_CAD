@@ -7,6 +7,14 @@ Formato: fecha · versión/ámbito · descripción · evidencia.
 
 ## 2026-10-19
 
+**Notion: el desfase no estaba resuelto — dos páginas más, corregido un informe propio**
+
+Al leer el plan de trabajo del proyecto se encontraron **dos páginas más** que siguen nombrando P2.03 como diseño vigente, una de ellas `2. Tareas semanales — 18 entregables` («Diseño técnico vigente: P2.03», repetido en los entregables 6, 9, 14 y 15) y la otra `Próximos pasos` («Usar P2.03 como único diseño vigente en nuevas evidencias y presentaciones»). El informe anterior del agente —«desfase resuelto»— era **inexacto**: ese día solo se leyeron completas las cuatro páginas que declaraban la vigencia, y el resto se había visto como líneas sueltas de búsqueda.
+- **Riesgo concreto:** los entregables **15 (pitch en inglés)** y **14 (storytelling)** están redactados sobre P2.03, dos revisiones por detrás.
+- Además, la «alternativa prioritaria B» de `Próximos pasos` (suspensión superior + estabilizador inferior abierto) **ya está construida**: es P2.04. No es una hipótesis abierta.
+- `ESTADO_ACTUAL.md` corregido: ya no declara resuelto lo que solo está resuelto a medias.
+- Evidencia: `API-retrieve-page-markdown` sobre ambas páginas, 2026-10-19; `08_NOTION/ESTADO_NOTION_20261019.md` §9.
+
 **Notion: corrección aplicada por el responsable y verificada por el agente**
 
 El responsable corrigió las cuatro páginas desfasadas mediante su cuenta de ChatGPT (que sí puede escribir en Notion) y el agente **releyó y comprobó** el resultado, en lugar de dar por bueno el informe recibido.
