@@ -1,0 +1,27 @@
+[
+  {
+    "archivo": "SEDAC_P204_MAQUETA_CUNA_CURVA.3mf",
+    "bytes": 19316,
+    "sha256": "2e58398225bba46f7eda4fbf74e297e73134fbd580380cdfd0414f824b20d2d0"
+  },
+  {
+    "archivo": "SEDAC_P204_MAQUETA_CUNA_CURVA.stl",
+    "bytes": 105684,
+    "sha256": "e9b3440434352ec53ac26ad374f3a1f9458e206624b290c6cad88d512628c552"
+  },
+  {
+    "archivo": "INSTRUCCIONES_CENTRO.txt",
+    "bytes": 1021,
+    "sha256": "531e459814d64e206f7a04399779284b43dec64afdea54cbe9070808aad50753"
+  },
+  {
+    "archivo": "VISTA_MAQUETA.png",
+    "bytes": 653405,
+    "sha256": "e32cc1a40fcad75f294951f1eace87d998735335d22e8b4cd503839d7880935a"
+  },
+  {
+    "archivo": "ORIENTACION_IMPRESION.png",
+    "bytes": 119374,
+    "sha256": "510632e3d7fd94b3406b0d0687846c87fba3ae76ed1d3e4623afe70a7de62355"
+  }
+]

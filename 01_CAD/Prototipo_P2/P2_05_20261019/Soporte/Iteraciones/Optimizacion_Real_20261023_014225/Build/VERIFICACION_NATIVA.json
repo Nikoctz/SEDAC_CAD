@@ -1,0 +1,18 @@
+﻿{
+    "archivo":  "SEDAC_OPT_20261023.iam",
+    "fecha":  "2026-10-23 01:50:21",
+    "ocurrencias":  83,
+    "documentos_referenciados":  1,
+    "componentes_grounded":  1,
+    "restricciones":  246,
+    "masa_ensemble_kg":  1.4327775206353317,
+    "interferencias":  0,
+    "detalle_interferencias":  [
+
+                               ],
+    "vistas_anadidas":  [
+                            "VISTA_LATERAL.png",
+                            "VISTA_ISOMETRICA.png"
+                        ],
+    "nota":  "Lectura y captura de vistas sobre el IAM de esta carpeta. No se modifica geometria ni se guarda el documento."
+}

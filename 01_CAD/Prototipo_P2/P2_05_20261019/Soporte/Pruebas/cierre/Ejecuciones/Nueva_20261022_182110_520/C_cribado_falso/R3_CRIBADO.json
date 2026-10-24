@@ -1,0 +1,19 @@
+﻿{
+    "naturaleza":  "caso_sintetico",
+    "resultado":  {
+                      "resultado":  "R3",
+                      "nombre":  "Cribado analítico cumplido",
+                      "etiqueta":  "cálculo",
+                      "cumple":  false,
+                      "evidencia":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\C_cribado_falso\\RESULTADOS_PREDISENO.json",
+                      "minimo_margen":  1.1,
+                      "umbral":  2.2,
+                      "alcance":  "Prediseno analitico condicionado; NO validacion del conjunto",
+                      "motivos":  [
+                                      "cumple_cribado falta, no es booleano o es false",
+                                      "Margen mínimo insuficiente o ausente: 1.1; umbral del modelo: 2.2",
+                                      "Verificación incumplida o inválida: Refuerzo combinado, pared minima; margen=1.1; umbral=2.2"
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad)."
+}

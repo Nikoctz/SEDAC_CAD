@@ -1,0 +1,27 @@
+﻿{
+    "naturaleza":  "caso_sintetico",
+    "resultado":  {
+                      "resultado":  "R2",
+                      "nombre":  "Coherencia comprobada",
+                      "etiqueta":  "hecho",
+                      "cumple":  true,
+                      "redondeos_solicitados":  5,
+                      "redondeos_pendientes":  0,
+                      "limite_interferencia_mm3":  0.001,
+                      "limite_error_transformacion":  1E-06,
+                      "tolerancia_aritmetica_relativa":  1E-09,
+                      "masa_rigida_derivada_kg":  1.4420687346427812,
+                      "evidencia":  [
+                                        "MODELO_API.json",
+                                        "REDONDEOS.json",
+                                        "INTERFERENCIAS.json",
+                                        "RESTRICCIONES.json",
+                                        "MASAS_CAD.json",
+                                        "RESUMEN_ENTREGA.json"
+                                    ],
+                      "motivos":  [
+
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad)."
+}

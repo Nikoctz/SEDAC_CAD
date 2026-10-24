@@ -22,7 +22,18 @@ Cada unión añade un pasador hueco extraíble 6061-T6 de Ø10/Ø5,5 y 37,6 mm d
 
 El pasador recibe el cortante y el M5 mantiene el apriete y la retención. Los extremos del pasador quedan nominalmente retraídos 0,2 mm respecto de las mejillas. El separador evita cerrar las alas durante el apriete. Dos fijaciones separadas 60 mm en cada interfaz limitan el giro relativo. La tuerca autofrenante aporta retención frente al aflojamiento; su eficacia bajo vibración aún debe comprobarse.
 
-Roscas nativas M5×0,8, 6g/6H, de representación cosmética. No se ha modelado la hélice ni la deformación del autofreno. Longitud roscada nominal del tornillo: 22 mm; salida nominal tras la tuerca: 6 mm. Proteger extremos y herrajes frente a roce/enganches mediante la funda. El CAD incluye radios de 0,35 mm en canales y 0,5 mm en interfaces; esos radios por sí solos no validan desgaste de cintas: hacen falta fundas/protecciones de contacto y ensayos.
+Roscas nativas M5×0,8, 6g/6H, de representación cosmética. No se ha modelado la hélice ni la deformación del autofreno. Longitud roscada nominal del tornillo: 22 mm; salida nominal tras la tuerca: 6 mm. Proteger extremos y herrajes frente a roce/enganches mediante la funda.
+
+**Corrección documental — 2026-10-22. Motivo: discrepancia entre el acabado descrito y el registro de la entrega.**
+
+> Texto original del 17/10/2026, conservado como historial y sustituido por esta corrección:
+> El CAD incluye radios de 0,35 mm en canales y 0,5 mm en interfaces; esos radios por sí solos no validan desgaste de cintas: hacen falta fundas/protecciones de contacto y ensayos.
+
+**hecho:** `REDONDEOS.json` de la entrega P2.04 registra los canales con radio de 0,35 mm y los yugos con radio de 0,5 mm como aplicados. El redondeo de 0,5 mm de `Interfaz_lumbar_aligerada` fue **solicitado y NO aplicado**: `aplicado: false`, error COM E_FAIL. Su masa registrada, 0,31108983098374 kg, coincide con la geometría sin esa operación adicional según la comparación documentada en `P2_05_20261019/LEEME_P2_05.md` §3. Se corrige el texto; no se ha hecho una nueva inspección ni se ha cambiado el CAD. Evidencia fuente: `P2_04_20261016/Entrega/Inventor/REDONDEOS.json` y `MASAS_CAD.json`.
+
+**hecho de trazabilidad (2026-10-22):** esta fe de erratas cambia los bytes y la huella SHA-256 del informe. El manifiesto `HUELLAS_ENTREGA.json` y el ZIP históricos de P2.04 se conservan sin reemitir: describen el texto original. La excepción documental queda registrada; una nueva entrega necesitará su propio manifiesto. La geometría y los registros originales de entrega no se modificaron.
+
+**supuesto:** el radio de 0,5 mm sigue siendo una **propuesta sin ensayo de desgaste**. El acabado de contacto lumbar sigue pendiente de clasificación funcional A/B/C (D-12), fabricación y ensayos. Ni el radio solicitado ni los radios registrados como aplicados acreditan desgaste o compatibilidad con las cintas.
 
 La precarga de 2000 N es una hipótesis de cálculo, no un par de montaje publicado. No se entrega un par sin conocer lubricación, fricción, material real y par prevalente. Deben definirse ajustes, tolerancias apiladas, recubrimientos y aislamiento entre aluminio y acero. El montaje propuesto requiere confirmar el acceso a herramientas y el espacio real del textil.
 

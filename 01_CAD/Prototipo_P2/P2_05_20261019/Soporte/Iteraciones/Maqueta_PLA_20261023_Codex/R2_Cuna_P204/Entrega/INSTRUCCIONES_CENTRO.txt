@@ -1,0 +1,21 @@
+SEDAC — MAQUETA PLA, P2.04 SIN ARNES
+
+Solicitud: revisar y, si el laminado es viable, imprimir UNA maqueta integrada en PLA.
+
+Archivos alternativos de LA MISMA pieza:
+- SEDAC_P204_MAQUETA_CUNA_CURVA.3mf: unidad milimetro incluida.
+- SEDAC_P204_MAQUETA_CUNA_CURVA.stl: importar en MILIMETROS, al 100 %.
+
+Tamano aproximado: 32 x 18 x 48 mm. Altura Z = 48 mm.
+Limite comunicado: 40 x 40 x 70 mm, incluyendo soportes y adhesion.
+
+Orientacion propuesta: espalda vertical y borde inferior sobre la cama.
+REVISAR SOPORTES DEBAJO DE AMBAS CUNAS ELEVADAS. Revisar tambien
+puentes de las ventanas, detalles pequenos y acceso para retirar soportes.
+Un brim de 3 mm es solo una propuesta. Comprobar la envolvente final.
+
+La malla esta cerrada y tiene un componente; aun queda PENDIENTE DE
+COMPROBACION EN LAMINADOR con el perfil real del centro. No incluye
+perfil de impresora ni G-code. Los dos formatos son para una sola impresion.
+
+Es una maqueta visual: las cunas representan partes textiles del concepto.

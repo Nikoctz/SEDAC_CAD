@@ -1,0 +1,57 @@
+--- generar_p2_05_ANTES.py
++++ Soporte/generar_p2_05.py
+@@ -6,6 +6,9 @@
+ G=P['geometria']; H=G['alto_refuerzo']; S=G['separacion_refuerzos']; B=G['ancho_refuerzo']; D=G['profundidad_refuerzo']; t=G['pared_refuerzo']
+ ECU=G['espesor_cuerpo_lumbar']; EM=G['espesor_mejilla']; ECI=G['espesor_cinta']; ACI=G['ancho_cinta']
+ ANC=G['ancho_cuna']; HM=G['hueco_manguera']; AP=G['ancho_panel']; ALP=G['alto_panel']; Z0=-(G['espesor_anclaje']+0.7)
++# Dependencias H03/H13: caras y agarre derivados de los espesores nominales.
++# Retranqueos/sobrepasos existentes conservados; no son tolerancias validadas.
++GRIP=B+2*EM; Z_CAPA=Z0+ECU; Z_CORTE=Z0-.1
+ parts=[]; instances=[]; bolts=[]
+ colors={'6061':(175,188,197),'hdpe':(66,88,99),'textil':(49,65,75),'espuma':(73,82,89),'herrajes':(106,118,128),'hebilla_ref':(220,143,53),'bolsa_ref':(245,191,39)}
+ rho={'6061':2.7e-6,'hdpe':.953e-6,'textil':.75e-6,'espuma':.06e-6,'herrajes':8e-6,'hebilla_ref':1.25e-6,'bolsa_ref':.00001e-6}
+@@ -40,31 +43,31 @@
+     part('Refuerzo_C_'+side,ops,description='6061-T6. Canal mecanizado/extruido, no chapa T6 doblada. Boca del canal hacia la bolsa. Sin recortes en zona inferior.',edge_radius=G['radio_redondeo_refuerzo'])
+     for yy in G['pernos_y']:
+         part(f'Casquillo_{side}_{yy}',[op('x',cx-B/2+t,B-2*t,[circle(yy,G['eje_pernos_z'],G['casquillo_od']/2),circle(yy,G['eje_pernos_z'],G['taladro_union']/2)],label='Separador_compresion')],group='uniones',description='6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.')
+-        part(f'Pasador_hueco_{side}_{yy}',[op('x',cx-B/2-3+.2,B+6-.4,[circle(yy,G['eje_pernos_z'],G['pasador_od']/2),circle(yy,G['eje_pernos_z'],G['pasador_id']/2)],label='Pasador_cortante')],group='uniones',description='6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.')
++        part(f'Pasador_hueco_{side}_{yy}',[op('x',cx-B/2-EM+.2,GRIP-.4,[circle(yy,G['eje_pernos_z'],G['pasador_od']/2),circle(yy,G['eje_pernos_z'],G['pasador_id']/2)],label='Pasador_cortante')],group='uniones',description='6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.')
+ 
+ # Lumbar bridge: only the centre is rigid. Textile wings articulate outside it.
+ # Rounded openings preserve the mounting bosses and continuous top/bottom load paths.
+ ops=[op('z',Z0,ECU,[rect(-160,12,320,112,16)],label='Placa_lumbar'),
+-     op('z',-3.7,G['espesor_anclaje']-ECU,[rect(-160,34,34,68,4),rect(126,34,34,68,4)],label='Refuerzos_locales_puentes'),
+-     op('z',-3.7,ECU,[rect(cx-32,88,64,36,4) for cx in [-S/2,S/2]],label='Refuerzos_locales_cuna'),
+-     op('z',-6.8,G['espesor_anclaje']+.2,[rect(-66,34,132,103,15),rect(-140,42,8,52,4),rect(132,42,8,52,4)]+[rect(cx-26,100,52,8,4) for cx in [-S/2,S/2]],True,'Ventanas_cinturon_y_cuna')]
++     op('z',Z_CAPA,G['espesor_anclaje']-ECU,[rect(-160,34,34,68,4),rect(126,34,34,68,4)],label='Refuerzos_locales_puentes'),
++     op('z',Z_CAPA,ECU,[rect(cx-32,88,64,36,4) for cx in [-S/2,S/2]],label='Refuerzos_locales_cuna'),
++     op('z',Z_CORTE,G['espesor_anclaje']+.2,[rect(-66,34,132,103,15),rect(-140,42,8,52,4),rect(132,42,8,52,4)]+[rect(cx-26,100,52,8,4) for cx in [-S/2,S/2]],True,'Ventanas_cinturon_y_cuna')]
+ for cx in [-S/2,S/2]:
+-    for xx in [cx-B/2-3,cx+B/2]:
+-        ops.append(op('x',xx,EM,[rect(18,-3.7,100,D+3.7,5)],label='Mejilla_apoyo'))
+-    ops.append(op('x',cx-B/2-3-.1,B+6+.2,[circle(yy,G['eje_pernos_z'],G['taladro_union']/2) for yy in G['pernos_y'][:2]]+[rect(50,4,30,11,4)],True,'Pasadores_y_ventana_mejillas'))
++    for xx in [cx-B/2-EM,cx+B/2]:
++        ops.append(op('x',xx,EM,[rect(18,Z_CAPA,100,D-Z_CAPA,5)],label='Mejilla_apoyo'))
++    ops.append(op('x',cx-B/2-EM-.1,GRIP+.2,[circle(yy,G['eje_pernos_z'],G['taladro_union']/2) for yy in G['pernos_y'][:2]]+[rect(50,4,30,11,4)],True,'Pasadores_y_ventana_mejillas'))
+ part('Interfaz_lumbar_aligerada',ops,group='anclajes',edge_radius=G['radio_redondeo_lumbar'],description='Centro lumbar resistente; alas del cinturon textiles. Recorte central de esquinas redondeadas. Sin apoyo de bandeja.')
+ for side,cx in [('I',-S/2),('D',S/2)]:
+-    for yy in G['pernos_y'][:2]:bolt('x',[cx-B/2-3,yy,G['eje_pernos_z']],B+6,'Lumbar_'+side)
++    for yy in G['pernos_y'][:2]:bolt('x',[cx-B/2-EM,yy,G['eje_pernos_z']],GRIP,'Lumbar_'+side)
+ 
+ # Compact upper yokes. Two slots separate the cargo sling and the shoulder harness.
+ for side,cx in [('I',-S/2),('D',S/2)]:
+-    ops=[op('z',-6.7,G['espesor_anclaje'],[rect(cx-36,375,72,100,10)],label='Placa_yugo'),
+-         op('z',-6.8,G['espesor_anclaje']+.2,[rect(cx-26,443,52,8,4),rect(cx-26,415,52,8,4),rect(cx-21,383,42,14,6)],True,'Cintas_y_aligeramiento')]
+-    for xx in [cx-B/2-3,cx+B/2]:
++    ops=[op('z',Z0,G['espesor_anclaje'],[rect(cx-36,375,72,100,10)],label='Placa_yugo'),
++         op('z',Z_CORTE,G['espesor_anclaje']+.2,[rect(cx-26,443,52,8,4),rect(cx-26,415,52,8,4),rect(cx-21,383,42,14,6)],True,'Cintas_y_aligeramiento')]
++    for xx in [cx-B/2-EM,cx+B/2]:
+         ops.append(op('x',xx,EM,[rect(376,-2,98,D+2,5)],label='Mejilla_yugo'))
+-    ops.append(op('x',cx-B/2-3-.1,B+6+.2,[circle(yy,G['eje_pernos_z'],G['taladro_union']/2) for yy in G['pernos_y'][2:]]+[rect(405,4,30,11,4)],True,'Pasadores_yugo_y_ventana'))
++    ops.append(op('x',cx-B/2-EM-.1,GRIP+.2,[circle(yy,G['eje_pernos_z'],G['taladro_union']/2) for yy in G['pernos_y'][2:]]+[rect(405,4,30,11,4)],True,'Pasadores_yugo_y_ventana'))
+     part('Yugo_superior_'+side,ops,group='anclajes',edge_radius=G['radio_redondeo_yugo'],description='Anclajes independientes: el textil permite movilidad relativa. Sin travesano metalico entre hombros.')
+-    for yy in G['pernos_y'][2:]:bolt('x',[cx-B/2-3,yy,G['eje_pernos_z']],B+6,'Yugo_'+side)
++    for yy in G['pernos_y'][2:]:bolt('x',[cx-B/2-EM,yy,G['eje_pernos_z']],GRIP,'Yugo_'+side)
+ 
+ # Perforated contact panel; no structural credit. Open spine and ventilation.
+ loops=[rect(-AP/2,2,AP,ALP,25)]

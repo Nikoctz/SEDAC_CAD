@@ -1,0 +1,11 @@
+{
+  "etiqueta": "hecho",
+  "metodo": "AST en memoria, omitiendo mkdir y toda escritura original",
+  "resultados_anteriores_identicos": true,
+  "verificaciones": 15,
+  "minimo_margen": 2.24713091866015,
+  "magnitudes_trazadas": 26,
+  "alcance_conservado": true,
+  "bloque_presente_en_print": true,
+  "inventor_ejecutado": false
+}

@@ -1,0 +1,101 @@
+﻿{
+    "naturaleza":  "casos sintéticos de prueba; no son evidencia de entrega",
+    "interprete":  "5.1.26100.9711",
+    "casos":  [
+                  {
+                      "caso":  "A · redondeo parcial 236/472, con y sin AceptarPendientes",
+                      "cumple":  true,
+                      "aserciones":  6,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "B · ausencia de registro al reutilizar",
+                      "cumple":  true,
+                      "aserciones":  4,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "C · cumple_cribado=false y verificación incumplida",
+                      "cumple":  true,
+                      "aserciones":  5,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "D · todo conforme, con generación simulada",
+                      "cumple":  true,
+                      "aserciones":  8,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "Registro inválido · duplicado",
+                      "cumple":  true,
+                      "aserciones":  2,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "Registro inválido · conteos",
+                      "cumple":  true,
+                      "aserciones":  2,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "Registro inválido · radio",
+                      "cumple":  true,
+                      "aserciones":  2,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "Registro inválido · booleano",
+                      "cumple":  true,
+                      "aserciones":  2,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "Registro inválido · heredado_sin_campos",
+                      "cumple":  true,
+                      "aserciones":  2,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R3 ausente",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R2 · interferencia por encima del límite existente",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R2 · grados de libertad pendientes",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R2 · registro de interferencias nulo",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R2 · resumen de masas incoherente",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  },
+                  {
+                      "caso":  "R1 · archivo generado ausente",
+                      "cumple":  true,
+                      "aserciones":  1,
+                      "error":  null
+                  }
+              ],
+    "total_casos":  15,
+    "aserciones":  39,
+    "fallos":  0,
+    "inventor_ejecutado":  false,
+    "carpeta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181736_747"
+}

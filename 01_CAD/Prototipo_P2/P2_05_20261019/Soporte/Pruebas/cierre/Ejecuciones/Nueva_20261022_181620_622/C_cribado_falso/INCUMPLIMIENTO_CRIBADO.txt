@@ -1,0 +1,5 @@
+casos sintéticos de prueba; no son evidencia de entrega
+cálculo: incumplimiento del cribado condicionado
+cumple_cribado falta, no es booleano o es false
+Margen mínimo insuficiente o ausente: 1.1; umbral del modelo: 2.2
+Verificación incumplida o inválida: Refuerzo combinado, pared minima; margen=1.1; umbral=2.2

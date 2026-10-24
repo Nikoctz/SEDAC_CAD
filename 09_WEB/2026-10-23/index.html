@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEDAC — Apoyo y estabilización de la bomba de espalda</title>
+<meta name="description" content="SEDAC es un sistema auxiliar en desarrollo para apoyar y estabilizar una bomba de espalda flexible usada en trabajo forestal. CAD y prediseño analítico; validación física pendiente.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141613'/%3E%3Cpath d='M9 22V10h3l7 8v-8h3v12h-3l-7-8v8z' fill='%23ffc21a'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a class="brand" href="#portada" aria-label="SEDAC, ir a la portada">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="7" fill="#1d201b"/>
+        <path d="M9 22V10h3l7 8v-8h3v12h-3l-7-8v8z" fill="#ffc21a"/>
+      </svg>
+      <span>
+        <span class="brand-name">SEDAC</span><br>
+        <span class="brand-sub">Sistema de apoyo dorsal</span>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú de navegación">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav" aria-label="Navegación principal">
+      <a href="#desafio">El desafío</a>
+      <a href="#propuesta">La propuesta</a>
+      <a href="#imu">Movimiento e IMU</a>
+      <a href="#validacion">Validación</a>
+      <a href="#cierre">Sumarse</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ PORTADA ============ -->
+  <section class="hero" id="portada">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Proyecto universitario · en desarrollo</p>
+        <h1 class="display">Diseñando apoyo para quienes <em>combaten el fuego</em></h1>
+        <p class="hero-lead">
+          SEDAC explora un sistema auxiliar que ayude a apoyar y estabilizar la bomba de espalda
+          flexible que usan brigadas forestales, sin rigidizar el cuerpo ni sumar peso innecesario.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#propuesta">
+            Explorar el concepto
+            <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#imu">Cómo lo evaluaremos</a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>Etapa</strong> &nbsp;prediseño CAD</span>
+          <span><strong>Escala</strong> &nbsp;1:1 · mm</span>
+          <span><strong>Validación física</strong> &nbsp;pendiente</span>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <svg viewBox="0 0 640 720" role="img" aria-labelledby="heroTitle heroDesc">
+          <title id="heroTitle">Ilustración conceptual del sistema SEDAC sobre la espalda de una persona, con la bomba flexible y los cinco elementos principales señalados</title>
+          <desc id="heroDesc">Esquema de una persona de espaldas con una mochila flexible de agua, dos canales de aluminio a los lados, una placa lumbar, un cinturón y correas sobre los hombros. Cada elemento está numerado.</desc>
+          <defs>
+            <linearGradient id="bagGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#33474a"/><stop offset="1" stop-color="#22333a"/>
+            </linearGradient>
+            <linearGradient id="waterGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#3f8f92" stop-opacity="0.55"/><stop offset="1" stop-color="#2f7a80" stop-opacity="0.85"/>
+            </linearGradient>
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M40 0H0V40" fill="none" stroke="#f7f4ec" stroke-opacity="0.05" stroke-width="1"/>
+            </pattern>
+          </defs>
+
+          <rect width="640" height="720" fill="url(#grid)"/>
+
+          <!-- cuerpo -->
+          <g fill="#2b2f28" stroke="#f7f4ec" stroke-opacity="0.14" stroke-width="2">
+            <circle cx="250" cy="96" r="37"/>
+            <path d="M214 300v96c0 10 8 18 18 18h36c10 0 18-8 18-18v-96z" transform="translate(-105 0)"/>
+            <path d="M214 300v96c0 10 8 18 18 18h36c10 0 18-8 18-18v-96z" transform="translate(105 0)"/>
+            <path d="M196 142h108c16 0 28 12 28 28l8 210c1 24-18 44-42 44h-96c-24 0-43-20-42-44l8-210c0-16 12-28 28-28z"/>
+          </g>
+
+          <!-- correas -->
+          <g stroke="#171b16" stroke-width="17" stroke-linecap="round" opacity="0.95">
+            <path d="M212 168 158 452"/>
+            <path d="M288 168 342 452"/>
+          </g>
+          <g stroke="#3a4038" stroke-width="2.5" stroke-linecap="round">
+            <path d="M212 168 158 452"/>
+            <path d="M288 168 342 452"/>
+          </g>
+
+          <!-- bomba flexible -->
+          <path d="M172 190h156a26 26 0 0 1 26 26v168a26 26 0 0 1-26 26H172a26 26 0 0 1-26-26V216a26 26 0 0 1 26-26z" fill="url(#bagGrad)" stroke="#7f8f88" stroke-opacity="0.5" stroke-width="2"/>
+          <path d="M146 330h208v48a26 26 0 0 1-26 26H172a26 26 0 0 1-26-26z" fill="url(#waterGrad)"/>
+          <path d="M172 190h156" stroke="#9fb0a6" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="6 7"/>
+          <!-- boca de llenado y manguera -->
+          <circle cx="326" cy="204" r="9" fill="#151814" stroke="#ffc21a" stroke-width="2.5"/>
+          <path d="M330 214c26 10 40 34 34 62" fill="none" stroke="#ffc21a" stroke-opacity="0.8" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- estructura: dos canales -->
+          <g stroke="#cdd6cf" stroke-opacity="0.85" stroke-width="2.5" fill="#8e9c94" fill-opacity="0.5">
+            <rect x="146" y="188" width="22" height="258" rx="6"/>
+            <rect x="332" y="188" width="22" height="258" rx="6"/>
+          </g>
+          <g fill="#141613" fill-opacity="0.75">
+            <rect x="152" y="240" width="10" height="26" rx="4"/><rect x="152" y="300" width="10" height="26" rx="4"/><rect x="152" y="360" width="10" height="26" rx="4"/>
+            <rect x="338" y="240" width="10" height="26" rx="4"/><rect x="338" y="300" width="10" height="26" rx="4"/><rect x="338" y="360" width="10" height="26" rx="4"/>
+          </g>
+
+          <!-- placa lumbar y cinturón -->
+          <rect x="180" y="418" width="140" height="40" rx="10" fill="#9aa79f" fill-opacity="0.55" stroke="#cdd6cf" stroke-opacity="0.7" stroke-width="2"/>
+          <rect x="128" y="456" width="244" height="34" rx="11" fill="#20241f" stroke="#8e9c94" stroke-opacity="0.55" stroke-width="2"/>
+          <rect x="226" y="460" width="48" height="26" rx="6" fill="#ffc21a"/>
+
+          <!-- marcadores -->
+          <g font-family="Helvetica Neue, Arial, sans-serif" font-size="0">
+            <g fill="#ffc21a">
+              <circle cx="250" cy="262" r="13"/><circle cx="157" cy="330" r="13"/><circle cx="250" cy="438" r="13"/>
+              <circle cx="250" cy="473" r="13"/><circle cx="300" cy="300" r="13"/>
+            </g>
+            <g fill="#17190f" font-size="12.5" font-weight="700" text-anchor="middle">
+              <text x="250" y="266.5">1</text><text x="157" y="334.5">2</text><text x="250" y="442.5">3</text>
+              <text x="250" y="477.5">4</text><text x="300" y="304.5">5</text>
+            </g>
+            <g stroke="#ffc21a" stroke-opacity="0.32" stroke-width="1.4" stroke-dasharray="3 4">
+              <path d="M263 262h142"/><path d="M170 330h236"/><path d="M263 438h142"/>
+              <path d="M263 473h142"/><path d="M313 300h93"/>
+            </g>
+            <g fill="#f7f4ec" font-size="12" font-family="Helvetica Neue, Arial, sans-serif">
+              <text x="412" y="266">Bomba flexible</text>
+              <text x="412" y="334">Estructura 6061-T6</text>
+              <text x="412" y="442">Cunas y placa lumbar</text>
+              <text x="412" y="477">Cinturón</text>
+              <text x="412" y="304">Correas de hombro</text>
+            </g>
+            <g fill="#a2a89b" font-size="10.5" font-family="Helvetica Neue, Arial, sans-serif">
+              <text x="412" y="283">mochila de agua, no rígida</text>
+              <text x="412" y="351">dos canales abiertos</text>
+              <text x="412" y="459">interfaz y apoyo local</text>
+              <text x="412" y="494">carga al cinturón</text>
+              <text x="412" y="321">movilidad relativa</text>
+            </g>
+          </g>
+        </svg>
+        <figcaption class="figure-tag">Ilustración conceptual · no es una foto de prototipo</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ DESAFÍO ============ -->
+  <section class="section" id="desafio">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 · El desafío</p>
+        <h2 class="h2">Una bomba llena pesa, y el terreno no ayuda</h2>
+        <p>
+          En trabajo forestal la bomba de espalda se lleva durante horas: se camina, se sube, se
+          agacha, se corre y se retira el equipo. La carga cambia de posición con cada paso y el
+          cuerpo tiene que absorberla. El problema no es solo cuánto pesa, sino cómo se transmite.
+        </p>
+      </div>
+
+      <div class="challenge-grid reveal">
+        <div class="challenge-item">
+          <span class="num">01</span>
+          <h3>La carga viaja</h3>
+          <p>El agua se mueve dentro de una mochila flexible. El centro de masa no está fijo y cada
+            cambio de postura lo desplaza.</p>
+        </div>
+        <div class="challenge-item">
+          <span class="num">02</span>
+          <h3>El cuerpo se mueve</h3>
+          <p>Hombros y cintura no se mueven juntos: la espalda rota y se inclina. Un apoyo demasiado
+            rígido obliga a compensar con otras zonas.</p>
+        </div>
+        <div class="challenge-item">
+          <span class="num">03</span>
+          <h3>El peso añadido compite</h3>
+          <p>Cada gramo de estructura es un gramo que también se transporta. Apoyar mejor no puede
+            costar más carga de la que resuelve.</p>
+        </div>
+      </div>
+
+      <div class="challenge-foot reveal">
+        <p class="quote">
+          El objetivo del proyecto no es “endurecer” la espalda, sino repartir el apoyo y conservar
+          la movilidad relativa entre el equipo y el cuerpo.
+        </p>
+        <div>
+          <p class="small">
+            Estas ideas son el marco de diseño, no resultados demostrados. Todavía no hay mediciones
+            de la bomba real, del centro de gravedad ni del reparto de cargas entre hombros y cinturón.
+          </p>
+          <p class="note">Estado: hipótesis de prediseño pendientes de comprobación física.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROPUESTA ============ -->
+  <section class="section section--paper2" id="propuesta">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 · La propuesta</p>
+        <h2 class="h2">Una estructura ligera que acompaña, no que inmoviliza</h2>
+        <p>
+          El conjunto parte de la bomba flexible y le agrega lo mínimo para que la carga encuentre un
+          camino reconocible hacia los hombros y el cinturón, dejando que el textil haga el resto.
+        </p>
+      </div>
+
+      <div class="prop-grid">
+        <figure class="reveal" style="margin:0">
+          <div class="figure-frame">
+            <img src="assets/cad_conjunto.png" alt="Vista isométrica del ensamblaje CAD P2.04: mochila flexible oscura, dos canales de aluminio, placa lumbar, cinturón y correas" loading="lazy">
+          </div>
+          <figcaption class="figure-cap">
+            Conjunto del <strong>CAD vigente (P2.04, 16-10-2026)</strong>. Es un modelo de prediseño,
+            no un prototipo fabricado.
+          </figcaption>
+        </figure>
+
+        <div class="reveal">
+          <ol class="parts">
+            <li>
+              <span class="dot" aria-hidden="true">1</span>
+              <div>
+                <h3>Bomba flexible de agua</h3>
+                <p>La mochila que ya se usa. No se reemplaza: el sistema se adapta a ella y a su
+                  forma cuando está llena o vacía.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true">2</span>
+              <div>
+                <h3>Estructura de aluminio</h3>
+                <p>Dos canales abiertos de 6061-T6 que dan continuidad al apoyo sin cerrar el conjunto
+                  en un tubo rígido.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true">3</span>
+              <div>
+                <h3>Cunas textiles y placa lumbar</h3>
+                <p>Cunas flexibles que reciben la bomba y una interfaz lumbar que reparte la carga hacia
+                  el cinturón.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true">4</span>
+              <div>
+                <h3>Cinturón</h3>
+                <p>Toma parte del peso en la cadera. Cuánto exactamente es una de las cosas que hay
+                  que medir.</p>
+              </div>
+            </li>
+            <li>
+              <span class="dot" aria-hidden="true">5</span>
+              <div>
+                <h3>Correas y espaldera</h3>
+                <p>Correas de hombro con ajuste y una espaldera de HDPE de 1 mm que separa, ventila y
+                  protege el contacto.</p>
+              </div>
+            </li>
+          </ol>
+
+          <div class="mass-strip" aria-label="Cifras del modelo de prediseño">
+            <div><div class="v mono">1,44 kg</div><div class="k">Estructura y protectores</div></div>
+            <div><div class="v mono">2,21 kg</div><div class="k">Presupuesto auxiliar</div></div>
+            <div><div class="v mono">1:1</div><div class="k">Escala maestra · mm</div></div>
+          </div>
+          <p class="note" style="margin-top:10px">
+            Masas del modelo CAD, sin bomba ni agua. No son pesajes físicos.
+          </p>
+        </div>
+      </div>
+
+      <div class="prop-grid" style="margin-top:clamp(34px,5vw,58px)">
+        <figure class="reveal" style="margin:0">
+          <div class="figure-frame">
+            <img src="assets/cad_estructura.png" alt="Vista del subsistema estructural: dos canales verticales de aluminio unidos por una placa lumbar, con pasadores y casquillos" loading="lazy">
+          </div>
+          <figcaption class="figure-cap">Subconjunto estructural aislado. Las uniones se están revisando
+            pieza por pieza.</figcaption>
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow">En estudio</p>
+          <h3 class="h3" style="margin-bottom:14px">Lo que todavía se está decidiendo</h3>
+          <p class="small">
+            El prediseño analítico compara secciones del canal y modos de falla con hipótesis de carga
+            explícitas. Las variantes de aligeramiento posteriores son propuestas en estudio: ninguna
+            reemplaza al CAD vigente y ninguna está adoptada.
+          </p>
+          <ul class="limits" style="color:var(--muted)">
+            <li>Espesor y profundidad del canal: en trade study, no cerrado.</li>
+            <li>Uniones y pasadores: tolerancias por definir.</li>
+            <li>Textiles, costuras y hebillas: sin ensayo.</li>
+            <li>Contacto, desgaste y liberación de emergencia: pendientes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IMU ============ -->
+  <section class="section section--dark" id="imu">
+    <div class="wrap">
+      <div class="imu-head">
+        <div class="section-head reveal" style="margin-bottom:0">
+          <p class="eyebrow">03 · Movimiento y sensores</p>
+          <h2 class="h2">Medir cómo se mueve el equipo, no solo cuánto pesa</h2>
+        </div>
+        <div class="reveal">
+          <p style="color:var(--muted-dark);font-size:15.5px;margin-bottom:0">
+            El plan de evaluación incluye unidades de medición inercial (IMU) para registrar el
+            movimiento durante el uso. Son instrumentos de estudio: sirven para describir cómo se
+            mueve el conjunto, no para afirmar que el diseño mejora el confort.
+          </p>
+        </div>
+      </div>
+
+      <div class="imu-flow reveal">
+        <div class="imu-step">
+          <span class="idx">01</span>
+          <h3>Sensores</h3>
+          <p>IMU ubicadas en puntos del equipo y del cuerpo para captar aceleración y orientación.</p>
+        </div>
+        <div class="imu-step">
+          <span class="idx">02</span>
+          <h3>Registro de movimiento</h3>
+          <p>Series temporales de una caminata o de una tarea definida, guardadas para su revisión.</p>
+        </div>
+        <div class="imu-step">
+          <span class="idx">03</span>
+          <h3>Análisis</h3>
+          <p>Procesamiento de orientación e inclinación, y comparación de tramos entre condiciones.</p>
+        </div>
+        <div class="imu-step">
+          <span class="idx">04</span>
+          <h3>Comparación</h3>
+          <p>Contraste entre configuraciones del sistema bajo el mismo recorrido y la misma tarea.</p>
+        </div>
+      </div>
+
+      <div class="imu-plot">
+        <div class="reveal">
+          <div class="plot-box">
+            <svg viewBox="0 0 560 250" role="img" aria-labelledby="plotT plotD">
+              <title id="plotT">Gráfico de ejemplo con dos curvas de inclinación a lo largo de un recorrido</title>
+              <desc id="plotD">Curvas ilustrativas, no datos de ensayo. El eje horizontal representa tiempo y el vertical, grados de inclinación.</desc>
+              <g stroke="#f7f4ec" stroke-opacity="0.12" stroke-width="1">
+                <path d="M40 30h500M40 80h500M40 130h500M40 180h500M40 210h500"/>
+              </g>
+              <g fill="#a2a89b" font-family="Helvetica Neue, Arial, sans-serif" font-size="10">
+                <text x="8" y="34">+18°</text><text x="8" y="134">0°</text><text x="8" y="214">−14°</text>
+                <text x="40" y="236">inicio</text><text x="300" y="236">mitad del recorrido</text><text x="492" y="236">fin</text>
+              </g>
+              <path d="M40 132c30-6 44-38 78-34s46 46 82 36 44-58 84-46 52 58 90 42 42-42 76-34 54 30 90 18"
+                    fill="none" stroke="#ffc21a" stroke-width="2.6" stroke-linecap="round"/>
+              <path d="M40 150c26 10 48 30 84 22s50-40 86-30 48 44 88 36 46-30 80-22 46 22 78 12 44-16 64-14"
+                    fill="none" stroke="#5aa7a3" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5"/>
+            </svg>
+            <div class="plot-legend">
+              <span><span class="swatch" style="background:#ffc21a"></span>Inclinación · configuración A</span>
+              <span><span class="swatch" style="background:#5aa7a3"></span>Inclinación · configuración B</span>
+            </div>
+          </div>
+          <p class="note" style="margin-top:10px;color:var(--muted-dark)">
+            Curvas <strong>ilustrativas</strong>: muestran el tipo de lectura esperada, no resultados de ensayo.
+          </p>
+        </div>
+
+        <div class="reveal">
+          <p class="callout">
+            <strong>Qué sí pueden decir las IMU:</strong> cómo se orienta e inclina el conjunto durante
+            el movimiento, y en qué instantes cambia más.
+          </p>
+          <p class="callout" style="border-left-color:#5aa7a3">
+            <strong>Qué no pueden decir por sí solas:</strong> no miden fuerza ni presión, y no demuestran
+            por sí mismas transferencia de carga, reducción de fatiga ni seguridad.
+          </p>
+          <ul class="limits">
+            <li>Cantidad y ubicación definitiva de sensores: por definir con el plan de ensayo.</li>
+            <li>Modelo de sensor y aplicación de registro: no implementados en esta etapa.</li>
+            <li>Toda conclusión requerirá ensayos con personas y criterios acordados.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALIDACIÓN ============ -->
+  <section class="section" id="validacion">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 · Del diseño a la validación</p>
+        <h2 class="h2">Lo que ya existe y lo que falta</h2>
+        <p>
+          El proyecto tiene geometría y cuentas. Lo que no tiene todavía es el contacto con la realidad:
+          medir, ajustar y ensayar. Este es el camino previsto.
+        </p>
+      </div>
+
+      <div class="track reveal">
+        <div class="stage is-done">
+          <span class="node" aria-hidden="true"></span>
+          <span class="state">Avanzado</span>
+          <h3>CAD y prediseño</h3>
+          <p>Modelo nativo en Inventor a escala 1:1 y cribado analítico con hipótesis declaradas.</p>
+        </div>
+        <div class="stage is-next">
+          <span class="node" aria-hidden="true"></span>
+          <span class="state">Siguiente</span>
+          <h3>Medir la bomba real</h3>
+          <p>Masa llena y vacía, centro de gravedad, puntos de apoyo y comportamiento de la mochila.</p>
+        </div>
+        <div class="stage">
+          <span class="node" aria-hidden="true"></span>
+          <span class="state">Pendiente</span>
+          <h3>Ajustar el prototipo</h3>
+          <p>Corregir geometría, uniones y tolerancias a partir de las mediciones.</p>
+        </div>
+        <div class="stage">
+          <span class="node" aria-hidden="true"></span>
+          <span class="state">Pendiente</span>
+          <h3>Ensayos y evaluación</h3>
+          <p>Banco de pruebas, medición instrumentada con IMU y evaluación con usuarios.</p>
+        </div>
+      </div>
+
+      <p class="note reveal" style="margin-top:30px;max-width:70ch">
+        Ninguna etapa cumplida hasta hoy equivale a una validación del producto: no hay ensayos de
+        resistencia, fatiga, comodidad ni seguridad realizados sobre el sistema completo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CIERRE ============ -->
+  <section class="section section--dark" id="cierre">
+    <div class="wrap close-grid">
+      <div class="reveal">
+        <p class="eyebrow">05 · Sumarse</p>
+        <h2 class="h2">Un proyecto abierto a miradas distintas</h2>
+        <p style="color:var(--muted-dark);margin-top:18px;max-width:46ch">
+          SEDAC se desarrolla en un marco universitario y necesita usuarios, mediciones y crítica.
+          Si trabajas en emergencias, diseño mecánico, textiles técnicos o evaluación de movimiento,
+          tu experiencia cambia decisiones.
+        </p>
+        <div class="hero-actions" style="margin-top:28px">
+          <a class="btn btn-primary" href="#propuesta">Volver al concepto</a>
+          <a class="btn btn-ghost" href="#validacion">Ver qué falta</a>
+        </div>
+      </div>
+      <div class="reveal">
+        <ul class="close-list">
+          <li><span>Estado</span><strong>Prediseño CAD</strong></li>
+          <li><span>Escala</span><strong>1:1 · milímetros</strong></li>
+          <li><span>Materiales base</span><strong>6061-T6 · HDPE · textil</strong></li>
+          <li><span>Validación física</span><strong>Pendiente</strong></li>
+        </ul>
+        <p class="note" style="margin-top:18px;color:var(--muted-dark)">
+          Contacto: sin datos publicados por ahora. La vía de contacto se incorporará cuando el equipo
+          la confirme.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>SEDAC · Sistema de apoyo dorsal para bomba de espalda flexible</span>
+    <span>Contenido de prediseño · 2026</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

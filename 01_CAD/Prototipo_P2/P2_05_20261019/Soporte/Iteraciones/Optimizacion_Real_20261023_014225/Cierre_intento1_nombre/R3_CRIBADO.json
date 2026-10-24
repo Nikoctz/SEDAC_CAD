@@ -1,0 +1,17 @@
+﻿{
+    "naturaleza":  "registro_de_ejecucion",
+    "resultado":  {
+                      "resultado":  "R3",
+                      "nombre":  "Cribado analÃ­tico cumplido",
+                      "etiqueta":  "cÃ¡lculo",
+                      "cumple":  true,
+                      "evidencia":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\RESULTADOS_PREDISENO.json",
+                      "minimo_margen":  2.2272920419462303,
+                      "umbral":  2.2,
+                      "alcance":  "Prediseno analitico condicionado; NO validacion del conjunto",
+                      "motivos":  [
+
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento fÃ­sico del producto (textil, contacto, abrasiÃ³n, ergonomÃ­a, fatiga, seguridad)."
+}

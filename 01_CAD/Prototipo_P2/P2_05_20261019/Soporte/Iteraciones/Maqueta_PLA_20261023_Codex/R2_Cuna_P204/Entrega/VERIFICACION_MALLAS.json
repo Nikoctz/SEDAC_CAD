@@ -1,0 +1,71 @@
+{
+  "fecha": "2026-10-23",
+  "base": "P2.04 señalado por usuario; cunas originales escaladas y engrosadas",
+  "native": {
+    "X_mm": 32,
+    "Y_mm": 48.00000000000001,
+    "Z_mm": 17.99857819705379,
+    "cuerpos": 1,
+    "volumen_mm3": 2762.353575620557,
+    "version_inventor": "2027.1"
+  },
+  "conversion_STL": {
+    "factor_de_unidad_desde_exportacion": 10,
+    "exportacion_original": "centimetros",
+    "rotacion": "Xnuevo=X, Ynuevo=-Z, Znuevo=Y; trasladado a origen positivo"
+  },
+  "STL": {
+    "triangulos": 2112,
+    "vertices_soldados": 1042,
+    "tolerancia_soldadura_mm": 1e-06,
+    "dimensiones_mm": [
+      32.0,
+      17.998579025268555,
+      48.0
+    ],
+    "minimo_mm": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "maximo_mm": [
+      32.0,
+      17.998579025268555,
+      48.0
+    ],
+    "componentes_conectados": 1,
+    "aristas_abiertas": 0,
+    "aristas_no_manifold": 0,
+    "aristas_orientacion_incoherente": 0,
+    "vertices_no_manifold": 0,
+    "triangulos_degenerados": 0,
+    "triangulos_duplicados": 0,
+    "volumen_firmado_mm3": 2762.4308700230163
+  },
+  "MF3": {
+    "unidad": "millimeter",
+    "objetos": 1,
+    "dimensiones_mm": [
+      32.0,
+      17.998579,
+      48.0
+    ],
+    "comprobado_reabriendo_zip_y_xml": true
+  },
+  "diferencia_volumen_STL_vs_IPT_porcentaje": 0.002798135732562379,
+  "limite_impresion_mm": [
+    40,
+    40,
+    70
+  ],
+  "supuesto_brim_mm": 3,
+  "envolvente_con_brim_sin_soportes_mm": [
+    38,
+    24,
+    48
+  ],
+  "laminado": "PENDIENTE DE COMPROBACION EN LAMINADOR",
+  "perfil_maquina": "No proporcionado",
+  "comprobacion_autointersecciones_independiente": "No realizada; comprobacion de solido nativo y topologia de malla",
+  "nota": "3MF de modelo, sin perfil ni G-code. No se atribuye resistencia o funcion textil a la maqueta PLA."
+}

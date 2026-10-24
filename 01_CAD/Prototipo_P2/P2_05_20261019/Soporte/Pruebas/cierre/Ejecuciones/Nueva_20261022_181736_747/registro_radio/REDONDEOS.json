@@ -1,0 +1,52 @@
+﻿[
+    {
+        "pieza":  "Refuerzo_C_I",
+        "aristas_totales":  46,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  46,
+        "radio_mm":  0.70,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Refuerzo_C_D",
+        "aristas_totales":  46,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  46,
+        "radio_mm":  0.35,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Interfaz_lumbar_aligerada",
+        "aristas_totales":  472,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  472,
+        "radio_mm":  0.5,
+        "pruebas":  14,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Yugo_superior_I",
+        "aristas_totales":  248,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  248,
+        "radio_mm":  0.5,
+        "pruebas":  1,
+        "estado":  "total"
+    },
+    {
+        "pieza":  "Yugo_superior_D",
+        "aristas_totales":  248,
+        "aplicado":  true,
+        "criterio":  "todas",
+        "aristas_redondeadas":  248,
+        "radio_mm":  0.5,
+        "pruebas":  1,
+        "estado":  "total"
+    }
+]

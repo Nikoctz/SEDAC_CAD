@@ -1,0 +1,12 @@
+casos sintéticos de prueba; no son evidencia de entrega
+no es una entrega aceptada
+casos sintéticos de prueba; no son evidencia de entrega
+hecho: cierre documental y analítico de P2.05
+hecho: R1 · Generación terminada; cumple=True
+hecho: R2 · Coherencia comprobada; cumple=True
+cálculo: R3 · Cribado analítico cumplido; cumple=False
+  - cumple_cribado falta, no es booleano o es false
+Evidencia: R1_GENERACION.json, R2_COHERENCIA.json, R3_CRIBADO.json y CIERRE.json.
+Cribado condicionado; no validación de uso.
+Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad).
+pendiente: clasificación funcional A/B/C (D-12); radio de 0,5 mm propuesto sin ensayo de desgaste.

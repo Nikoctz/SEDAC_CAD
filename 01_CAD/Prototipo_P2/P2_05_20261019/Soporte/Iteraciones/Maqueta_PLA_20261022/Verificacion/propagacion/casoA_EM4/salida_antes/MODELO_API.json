@@ -1,0 +1,4903 @@
+{
+  "version": "P2.05",
+  "units": "mm",
+  "parameters": {
+    "version": "P2.05",
+    "fecha": "2026-10-19",
+    "unidades": "mm",
+    "estado": "PREDISENO: geometria identica a P2.04. P2.05 solo reorganiza los parametros y hace que gobiernen la geometria. Las medidas de bomba y arnes siguen siendo provisionales.",
+    "origen": {
+      "version_base": "P2.04",
+      "carpeta_base": "01_CAD/Prototipo_P2/P2_04_20261016",
+      "regla": "P2.05 no cambia ninguna cota respecto a la entrega P2.04. Solo se anade al JSON lo que estaba fijo en el generador y se separan las reservas de masa de la geometria."
+    },
+    "geometria": {
+      "alto_refuerzo": 480,
+      "separacion_refuerzos": 190,
+      "ancho_refuerzo": 32,
+      "profundidad_refuerzo": 24,
+      "pared_refuerzo": 3,
+      "pared_minima": 2.8,
+      "radio_raiz": 2,
+      "ventanas_refuerzo_y": [],
+      "ancho_ventana_refuerzo": 10,
+      "alto_ventana_refuerzo": 42,
+      "radio_redondeo_refuerzo": 0.35,
+      "apoyo_hombro_y": 435,
+      "apoyo_cinturon_y": 55,
+      "eje_pernos_z": 12,
+      "pernos_y": [
+        35,
+        95,
+        390,
+        450
+      ],
+      "separacion_pernos": 60,
+      "distancia_borde_perno": 12,
+      "casquillo_od": 12.5,
+      "pasador_od": 10,
+      "pasador_id": 5.5,
+      "taladro_union": 10.2,
+      "espesor_anclaje": 6,
+      "espesor_minimo_anclaje": 5.8,
+      "espesor_cuerpo_lumbar": 3,
+      "espesor_mejilla": 4,
+      "radio_redondeo_lumbar": 0.5,
+      "radio_redondeo_yugo": 0.5,
+      "alto_puente_cinta": 18,
+      "luz_puente_cinta": 52,
+      "espesor_panel": 1,
+      "ancho_panel": 270,
+      "alto_panel": 472,
+      "ancho_cuna": 100,
+      "hueco_manguera": 104,
+      "espesor_cinta": 1.5,
+      "ancho_cinta": 50,
+      "espesor_arandela": 3,
+      "espesor_arandela_minimo": 2.9
+    },
+    "reservas_masa": {
+      "masa_presupuesto_textil_kg": 0.65,
+      "masa_reserva_kg": 0.12,
+      "nota": "Reservas de presupuesto, no geometria. Entran en el resumen de masa del sistema, no en el CAD ni en el calculo resistente."
+    },
+    "referencias_historicas": {
+      "p2_03_rigida_kg": 2.3331284134369037,
+      "p2_03_presupuesto_kg": 2.9131284134369038,
+      "nota": "Datos de la entrega P2.03. Solo se usan para calcular el ahorro en el resumen generado."
+    },
+    "cargas": {
+      "masa_total_kg": 25,
+      "g": 9.81,
+      "factor_vertical": 3,
+      "factor_horizontal": 1,
+      "fraccion_lado": 0.7,
+      "excentricidad_mm": 107.5,
+      "brazo_torsion_mm": 12,
+      "K_borde": 1.25,
+      "K_ventana": 3,
+      "margen_objetivo": 2.2,
+      "flecha_limite_mm": 5,
+      "precarga_estudio_N": 2000,
+      "angulo_eslinga_grados": 35,
+      "nota": "Hipotesis de prediseno, no medidas. Ver AGENTS.md y DECISIONES.md: margen, reparto 70/30, 3g/1g, excentricidad 107.5 mm y precarga 2000 N NO estan validados."
+    },
+    "materiales": {
+      "E_6061_MPa": 69000,
+      "Sy_6061_MPa": 240,
+      "Sy_perno_MPa": 600,
+      "aluminio": "6061-T6 mecanizado o extrusion certificada; sin doblado severo ni soldadura creditada",
+      "panel": "HDPE: solo distribucion de contacto, sin credito resistente",
+      "textiles": "Representacion provisional, conjunto cinta/costura/hebilla por seleccionar y ensayar"
+    },
+    "parametrizacion": {
+      "pendiente": [
+        {
+          "campo": "profundidad_cuna",
+          "valor_nominal_mm": 130,
+          "motivo": "El contorno de la cuna esta fijo en generar_p2_05.py. No se encontro una correspondencia verificable entre 130 mm y el recorrido dibujado, asi que NO se conecta: conectarlo seria inventar geometria. Queda como dato de entrada sin reflejo en el CAD."
+        }
+      ],
+      "fijo_en_generador": "Contornos de textiles, radios de esquina de cada recorte y elementos normalizados M5 (tornillo, arandela, tuerca) siguen definidos en el generador. Solo gobiernan por JSON los campos listados en 'geometria'."
+    }
+  },
+  "parts": [
+    {
+      "name": "Refuerzo_C_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 480,
+          "loops": [
+            {
+              "kind": "channel",
+              "cx": -95.0,
+              "B": 32,
+              "D": 24,
+              "t": 3,
+              "r": 2
+            }
+          ],
+          "cut": false,
+          "label": "Canal_abierto",
+          "depth_name": "Altura_refuerzo"
+        },
+        {
+          "axis": "x",
+          "start": -111.1,
+          "depth": 32.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "Alojamiento_pasador_hueco"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "estructura",
+      "description": "6061-T6. Canal mecanizado/extruido, no chapa T6 doblada. Boca del canal hacia la bolsa. Sin recortes en zona inferior.",
+      "edge_radius": 0.35,
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_I_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -108.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_I_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -113.8,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_I_95",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -108.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_I_95",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -113.8,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_I_390",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -108.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_I_390",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -113.8,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_I_450",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -108.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_I_450",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -113.8,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Refuerzo_C_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 0,
+          "depth": 480,
+          "loops": [
+            {
+              "kind": "channel",
+              "cx": 95.0,
+              "B": 32,
+              "D": 24,
+              "t": 3,
+              "r": 2
+            }
+          ],
+          "cut": false,
+          "label": "Canal_abierto",
+          "depth_name": "Altura_refuerzo"
+        },
+        {
+          "axis": "x",
+          "start": 78.9,
+          "depth": 32.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": true,
+          "label": "Alojamiento_pasador_hueco"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "estructura",
+      "description": "6061-T6. Canal mecanizado/extruido, no chapa T6 doblada. Boca del canal hacia la bolsa. Sin recortes en zona inferior.",
+      "edge_radius": 0.35,
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_D_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 82.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_D_35",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 76.2,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_D_95",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 82.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_D_95",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 76.2,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_D_390",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 82.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_D_390",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 76.2,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Casquillo_D_450",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 82.0,
+          "depth": 26,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 6.25
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            }
+          ],
+          "cut": false,
+          "label": "Separador_compresion"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6. Colocar por la boca del canal antes del pasador; longitud ajustada al interior real. Evita aplastar las alas durante el apriete.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Pasador_hueco_D_450",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 76.2,
+          "depth": 37.6,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.0
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 2.75
+            }
+          ],
+          "cut": false,
+          "label": "Pasador_cortante"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "uniones",
+      "description": "6061-T6 mecanizado, pasante extraible. OD10 ID5.5, extremos retraidos 0.2 mm respecto a mejillas. Transmite cortante; el M5 interior aporta apriete y retencion. Ajustes por cerrar.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Interfaz_lumbar_aligerada",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -6.7,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -160,
+              "y": 12,
+              "w": 320,
+              "h": 112,
+              "r": 16
+            }
+          ],
+          "cut": false,
+          "label": "Placa_lumbar"
+        },
+        {
+          "axis": "z",
+          "start": -3.7,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -160,
+              "y": 34,
+              "w": 34,
+              "h": 68,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 126,
+              "y": 34,
+              "w": 34,
+              "h": 68,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Refuerzos_locales_puentes"
+        },
+        {
+          "axis": "z",
+          "start": -3.7,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -127.0,
+              "y": 88,
+              "w": 64,
+              "h": 36,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 63.0,
+              "y": 88,
+              "w": 64,
+              "h": 36,
+              "r": 4
+            }
+          ],
+          "cut": false,
+          "label": "Refuerzos_locales_cuna"
+        },
+        {
+          "axis": "z",
+          "start": -6.8,
+          "depth": 6.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -66,
+              "y": 34,
+              "w": 132,
+              "h": 103,
+              "r": 15
+            },
+            {
+              "kind": "rr",
+              "x": -140,
+              "y": 42,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 132,
+              "y": 42,
+              "w": 8,
+              "h": 52,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": -121.0,
+              "y": 100,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 69.0,
+              "y": 100,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Ventanas_cinturon_y_cuna"
+        },
+        {
+          "axis": "x",
+          "start": -114.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 18,
+              "y": -3.7,
+              "w": 100,
+              "h": 27.7,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": -79.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 18,
+              "y": -3.7,
+              "w": 100,
+              "h": 27.7,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": -114.1,
+          "depth": 38.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "rr",
+              "x": 50,
+              "y": 4,
+              "w": 30,
+              "h": 11,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Pasadores_y_ventana_mejillas"
+        },
+        {
+          "axis": "x",
+          "start": 76.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 18,
+              "y": -3.7,
+              "w": 100,
+              "h": 27.7,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": 111.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 18,
+              "y": -3.7,
+              "w": 100,
+              "h": 27.7,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_apoyo"
+        },
+        {
+          "axis": "x",
+          "start": 75.9,
+          "depth": 38.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 35,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 95,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "rr",
+              "x": 50,
+              "y": 4,
+              "w": 30,
+              "h": 11,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Pasadores_y_ventana_mejillas"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "anclajes",
+      "edge_radius": 0.5,
+      "description": "Centro lumbar resistente; alas del cinturon textiles. Recorte central de esquinas redondeadas. Sin apoyo de bandeja.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Yugo_superior_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -6.7,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -131.0,
+              "y": 375,
+              "w": 72,
+              "h": 100,
+              "r": 10
+            }
+          ],
+          "cut": false,
+          "label": "Placa_yugo"
+        },
+        {
+          "axis": "z",
+          "start": -6.8,
+          "depth": 6.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -121.0,
+              "y": 443,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": -121.0,
+              "y": 415,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": -116.0,
+              "y": 383,
+              "w": 42,
+              "h": 14,
+              "r": 6
+            }
+          ],
+          "cut": true,
+          "label": "Cintas_y_aligeramiento"
+        },
+        {
+          "axis": "x",
+          "start": -114.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 376,
+              "y": -2,
+              "w": 98,
+              "h": 26,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_yugo"
+        },
+        {
+          "axis": "x",
+          "start": -79.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 376,
+              "y": -2,
+              "w": 98,
+              "h": 26,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_yugo"
+        },
+        {
+          "axis": "x",
+          "start": -114.1,
+          "depth": 38.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "rr",
+              "x": 405,
+              "y": 4,
+              "w": 30,
+              "h": 11,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Pasadores_yugo_y_ventana"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "anclajes",
+      "edge_radius": 0.5,
+      "description": "Anclajes independientes: el textil permite movilidad relativa. Sin travesano metalico entre hombros.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Yugo_superior_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -6.7,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 59.0,
+              "y": 375,
+              "w": 72,
+              "h": 100,
+              "r": 10
+            }
+          ],
+          "cut": false,
+          "label": "Placa_yugo"
+        },
+        {
+          "axis": "z",
+          "start": -6.8,
+          "depth": 6.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 69.0,
+              "y": 443,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 69.0,
+              "y": 415,
+              "w": 52,
+              "h": 8,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 74.0,
+              "y": 383,
+              "w": 42,
+              "h": 14,
+              "r": 6
+            }
+          ],
+          "cut": true,
+          "label": "Cintas_y_aligeramiento"
+        },
+        {
+          "axis": "x",
+          "start": 76.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 376,
+              "y": -2,
+              "w": 98,
+              "h": 26,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_yugo"
+        },
+        {
+          "axis": "x",
+          "start": 111.0,
+          "depth": 4,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 376,
+              "y": -2,
+              "w": 98,
+              "h": 26,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Mejilla_yugo"
+        },
+        {
+          "axis": "x",
+          "start": 75.9,
+          "depth": 38.2,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 390,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "circle",
+              "x": 450,
+              "y": 12,
+              "r": 5.1
+            },
+            {
+              "kind": "rr",
+              "x": 405,
+              "y": 4,
+              "w": 30,
+              "h": 11,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Pasadores_yugo_y_ventana"
+        }
+      ],
+      "material": "6061",
+      "color": [
+        175,
+        188,
+        197
+      ],
+      "density": 2.7e-06,
+      "reference": false,
+      "group": "anclajes",
+      "edge_radius": 0.5,
+      "description": "Anclajes independientes: el textil permite movilidad relativa. Sin travesano metalico entre hombros.",
+      "mechanical": {
+        "E_MPa": 69000,
+        "nu": 0.33,
+        "Sy_MPa": 240,
+        "Su_MPa": 260,
+        "nota": "Minimos de prediseno 6061-T6; certificacion de suministro requerida"
+      }
+    },
+    {
+      "name": "Espaldera_HDPE_aligerada",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -8,
+          "depth": 1,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -135.0,
+              "y": 2,
+              "w": 270,
+              "h": 472,
+              "r": 25
+            }
+          ],
+          "cut": false,
+          "label": "Panel_contacto"
+        },
+        {
+          "axis": "z",
+          "start": -8.1,
+          "depth": 1.2,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -45,
+              "y": 145,
+              "w": 90,
+              "h": 265,
+              "r": 20
+            },
+            {
+              "kind": "rr",
+              "x": -122,
+              "y": 150,
+              "w": 25,
+              "h": 80,
+              "r": 12
+            },
+            {
+              "kind": "rr",
+              "x": 97,
+              "y": 150,
+              "w": 25,
+              "h": 80,
+              "r": 12
+            },
+            {
+              "kind": "rr",
+              "x": -122,
+              "y": 250,
+              "w": 25,
+              "h": 80,
+              "r": 12
+            },
+            {
+              "kind": "rr",
+              "x": 97,
+              "y": 250,
+              "w": 25,
+              "h": 80,
+              "r": 12
+            },
+            {
+              "kind": "rr",
+              "x": -60,
+              "y": 34,
+              "w": 120,
+              "h": 68,
+              "r": 14
+            },
+            {
+              "kind": "rr",
+              "x": -122.0,
+              "y": 99,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": -122.0,
+              "y": 414,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": -122.0,
+              "y": 442,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 68.0,
+              "y": 99,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 68.0,
+              "y": 414,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            },
+            {
+              "kind": "rr",
+              "x": 68.0,
+              "y": 442,
+              "w": 54,
+              "h": 10,
+              "r": 4
+            }
+          ],
+          "cut": true,
+          "label": "Ventilacion_y_paso_cintas"
+        }
+      ],
+      "material": "hdpe",
+      "color": [
+        66,
+        88,
+        99
+      ],
+      "density": 9.53e-07,
+      "reference": false,
+      "group": "protecciones",
+      "description": "Distribucion local del contacto y separacion de aristas. No se cuenta como elemento resistente; retenida dentro de funda textil."
+    },
+    {
+      "name": "REF_Funda_refuerzo_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 128,
+          "depth": 235,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -0.5,
+              "y": -111.7,
+              "w": 25.5,
+              "h": 33.4,
+              "r": 2
+            },
+            {
+              "kind": "rr",
+              "x": -0.1,
+              "y": -111.1,
+              "w": 24.7,
+              "h": 32.2,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Funda_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Acolchado_dorsal_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -24,
+          "depth": 15,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -124.0,
+              "y": 150,
+              "w": 58,
+              "h": 215,
+              "r": 18
+            }
+          ],
+          "cut": false,
+          "label": "Apoyo_dorsal"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Funda_refuerzo_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 128,
+          "depth": 235,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -0.5,
+              "y": 78.3,
+              "w": 25.5,
+              "h": 33.4,
+              "r": 2
+            },
+            {
+              "kind": "rr",
+              "x": -0.1,
+              "y": 78.9,
+              "w": 24.7,
+              "h": 32.2,
+              "r": 1.5
+            }
+          ],
+          "cut": false,
+          "label": "Funda_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Acolchado_dorsal_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -24,
+          "depth": 15,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 66.0,
+              "y": 150,
+              "w": 58,
+              "h": 215,
+              "r": 18
+            }
+          ],
+          "cut": false,
+          "label": "Apoyo_dorsal"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Acolchado_lumbar",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -26,
+          "depth": 17,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -125,
+              "y": 10,
+              "w": 250,
+              "h": 118,
+              "r": 25
+            }
+          ],
+          "cut": false,
+          "label": "Apoyo_lumbar"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Cuna_textil_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -152.0,
+          "depth": 100,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  155.807585539279,
+                  29.018686250322844
+                ],
+                [
+                  104.59060827184173,
+                  39.087641291533
+                ],
+                [
+                  77.04641733486586,
+                  64.6988686320629
+                ],
+                [
+                  74.0212528644541,
+                  135.2050708284001
+                ],
+                [
+                  99.57472817673597,
+                  170.90506567515163
+                ],
+                [
+                  157.93119790838463,
+                  174.99763032842299
+                ],
+                [
+                  158.06880209161537,
+                  173.00236967157701
+                ],
+                [
+                  100.42527182326403,
+                  169.09493432484837
+                ],
+                [
+                  75.9787471355459,
+                  134.7949291715999
+                ],
+                [
+                  78.95358266513414,
+                  65.3011313679371
+                ],
+                [
+                  105.40939172815827,
+                  40.912358708467
+                ],
+                [
+                  156.192414460721,
+                  30.981313749677156
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Superficie ancha de contacto; confeccion y resistencia del conjunto por definir. Ventana central de 104 mm."
+    },
+    {
+      "name": "REF_Cinta_carga_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -127.0,
+          "depth": 50,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  117.44112877325628,
+                  15.606552063227392
+                ],
+                [
+                  128.67660066622673,
+                  7.323591622978004
+                ],
+                [
+                  128.3974992050024,
+                  -8.635998728003816
+                ],
+                [
+                  103.60250079499761,
+                  -8.635998728003816
+                ],
+                [
+                  103.39199057870009,
+                  7.439117915383269
+                ],
+                [
+                  129.25137362752662,
+                  27.95462870469858
+                ],
+                [
+                  101.57607641977948,
+                  39.38130072075925
+                ],
+                [
+                  75.28267773172023,
+                  64.7810279391567
+                ],
+                [
+                  72.26509258846899,
+                  135.14970336160818
+                ],
+                [
+                  97.71443764605928,
+                  173.69350857385604
+                ],
+                [
+                  175.00371282579155,
+                  177.74999080989346
+                ],
+                [
+                  300.10769575132355,
+                  172.74222747533815
+                ],
+                [
+                  430.42121802813057,
+                  140.62054441644236
+                ],
+                [
+                  465.74443979152153,
+                  60.091155892839375
+                ],
+                [
+                  448.7269641484755,
+                  -7.184453589911691
+                ],
+                [
+                  447.2730358515245,
+                  -6.815546410088309
+                ],
+                [
+                  464.25556020847847,
+                  59.908844107160625
+                ],
+                [
+                  429.57878197186943,
+                  139.37945558355764
+                ],
+                [
+                  299.89230424867645,
+                  171.25777252466185
+                ],
+                [
+                  174.99628717420845,
+                  176.25000919010654
+                ],
+                [
+                  98.28556235394072,
+                  172.30649142614396
+                ],
+                [
+                  73.73490741153101,
+                  134.85029663839182
+                ],
+                [
+                  76.71732226827977,
+                  65.2189720608433
+                ],
+                [
+                  102.42392358022052,
+                  40.61869927924075
+                ],
+                [
+                  130.74862637247338,
+                  28.04537129530142
+                ],
+                [
+                  104.60800942129991,
+                  6.560882084616731
+                ],
+                [
+                  104.39749920500239,
+                  -7.364001271996184
+                ],
+                [
+                  127.60250079499761,
+                  -7.364001271996184
+                ],
+                [
+                  127.32339933377327,
+                  6.676408377021996
+                ],
+                [
+                  116.55887122674372,
+                  14.393447936772608
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Cinta continua desde el anclaje lumbar a cuna y yugo superior. Seccion tejida esquematica. No presupone resistencia por area."
+    },
+    {
+      "name": "REF_Hombrera_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -130.0,
+          "depth": 56,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  420.1690780938645,
+                  -4.494991651204501
+                ],
+                [
+                  475.3031394744601,
+                  -31.246432415386224
+                ],
+                [
+                  497.9937616943892,
+                  -74.75031191528053
+                ],
+                [
+                  479.4115912518001,
+                  -118.65527634121435
+                ],
+                [
+                  419.4108316199578,
+                  -149.79682750785636
+                ],
+                [
+                  340.0,
+                  -160.0
+                ],
+                [
+                  281.15046541746176,
+                  -149.92730057872174
+                ],
+                [
+                  282.84953458253824,
+                  -140.07269942127826
+                ],
+                [
+                  340.0,
+                  -150.0
+                ],
+                [
+                  416.5891683800422,
+                  -140.20317249214364
+                ],
+                [
+                  472.5884087481999,
+                  -111.34472365878565
+                ],
+                [
+                  488.0062383056108,
+                  -75.24968808471947
+                ],
+                [
+                  468.6968605255399,
+                  -38.753567584613776
+                ],
+                [
+                  415.8309219061355,
+                  -13.5050083487955
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Cinta_hombrera_I",
+      "ops": [
+        {
+          "axis": "x",
+          "start": -121.0,
+          "depth": 38,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  418.335410196625,
+                  -11.329179606750063
+                ],
+                [
+                  472.5017235487168,
+                  -38.442529390314625
+                ],
+                [
+                  488.749702616959,
+                  -75.02111838357631
+                ],
+                [
+                  470.4831018093371,
+                  -110.57368339858779
+                ],
+                [
+                  412.21250960576305,
+                  -139.71926328104416
+                ],
+                [
+                  338.0,
+                  -149.75
+                ],
+                [
+                  281.7327565632496,
+                  -139.70077167858997
+                ],
+                [
+                  219.58476711322865,
+                  -104.6245651685321
+                ],
+                [
+                  99.563110793929,
+                  -18.609612845680473
+                ],
+                [
+                  100.436889206071,
+                  -17.390387154319527
+                ],
+                [
+                  220.41523288677135,
+                  -103.3754348314679
+                ],
+                [
+                  282.2672434367504,
+                  -138.29922832141003
+                ],
+                [
+                  338.0,
+                  -148.25
+                ],
+                [
+                  411.78749039423695,
+                  -138.28073671895584
+                ],
+                [
+                  469.5168981906629,
+                  -109.42631660141221
+                ],
+                [
+                  487.250297383041,
+                  -74.97888161642369
+                ],
+                [
+                  471.4982764512832,
+                  -39.557470609685375
+                ],
+                [
+                  417.664589803375,
+                  -12.670820393249937
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Regulador_hombro_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -151,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -126.0,
+              "y": 267,
+              "w": 48,
+              "h": 34,
+              "r": 5
+            },
+            {
+              "kind": "rr",
+              "x": -119.0,
+              "y": 275,
+              "w": 34,
+              "h": 18,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_regulador"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles",
+      "description": "Envolvente de regulador comercial a seleccionar; no mecanismo validado."
+    },
+    {
+      "name": "REF_Cuna_textil_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 52.0,
+          "depth": 100,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  155.807585539279,
+                  29.018686250322844
+                ],
+                [
+                  104.59060827184173,
+                  39.087641291533
+                ],
+                [
+                  77.04641733486586,
+                  64.6988686320629
+                ],
+                [
+                  74.0212528644541,
+                  135.2050708284001
+                ],
+                [
+                  99.57472817673597,
+                  170.90506567515163
+                ],
+                [
+                  157.93119790838463,
+                  174.99763032842299
+                ],
+                [
+                  158.06880209161537,
+                  173.00236967157701
+                ],
+                [
+                  100.42527182326403,
+                  169.09493432484837
+                ],
+                [
+                  75.9787471355459,
+                  134.7949291715999
+                ],
+                [
+                  78.95358266513414,
+                  65.3011313679371
+                ],
+                [
+                  105.40939172815827,
+                  40.912358708467
+                ],
+                [
+                  156.192414460721,
+                  30.981313749677156
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Superficie ancha de contacto; confeccion y resistencia del conjunto por definir. Ventana central de 104 mm."
+    },
+    {
+      "name": "REF_Cinta_carga_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 77.0,
+          "depth": 50,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  117.44112877325628,
+                  15.606552063227392
+                ],
+                [
+                  128.67660066622673,
+                  7.323591622978004
+                ],
+                [
+                  128.3974992050024,
+                  -8.635998728003816
+                ],
+                [
+                  103.60250079499761,
+                  -8.635998728003816
+                ],
+                [
+                  103.39199057870009,
+                  7.439117915383269
+                ],
+                [
+                  129.25137362752662,
+                  27.95462870469858
+                ],
+                [
+                  101.57607641977948,
+                  39.38130072075925
+                ],
+                [
+                  75.28267773172023,
+                  64.7810279391567
+                ],
+                [
+                  72.26509258846899,
+                  135.14970336160818
+                ],
+                [
+                  97.71443764605928,
+                  173.69350857385604
+                ],
+                [
+                  175.00371282579155,
+                  177.74999080989346
+                ],
+                [
+                  300.10769575132355,
+                  172.74222747533815
+                ],
+                [
+                  430.42121802813057,
+                  140.62054441644236
+                ],
+                [
+                  465.74443979152153,
+                  60.091155892839375
+                ],
+                [
+                  448.7269641484755,
+                  -7.184453589911691
+                ],
+                [
+                  447.2730358515245,
+                  -6.815546410088309
+                ],
+                [
+                  464.25556020847847,
+                  59.908844107160625
+                ],
+                [
+                  429.57878197186943,
+                  139.37945558355764
+                ],
+                [
+                  299.89230424867645,
+                  171.25777252466185
+                ],
+                [
+                  174.99628717420845,
+                  176.25000919010654
+                ],
+                [
+                  98.28556235394072,
+                  172.30649142614396
+                ],
+                [
+                  73.73490741153101,
+                  134.85029663839182
+                ],
+                [
+                  76.71732226827977,
+                  65.2189720608433
+                ],
+                [
+                  102.42392358022052,
+                  40.61869927924075
+                ],
+                [
+                  130.74862637247338,
+                  28.04537129530142
+                ],
+                [
+                  104.60800942129991,
+                  6.560882084616731
+                ],
+                [
+                  104.39749920500239,
+                  -7.364001271996184
+                ],
+                [
+                  127.60250079499761,
+                  -7.364001271996184
+                ],
+                [
+                  127.32339933377327,
+                  6.676408377021996
+                ],
+                [
+                  116.55887122674372,
+                  14.393447936772608
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Cinta continua desde el anclaje lumbar a cuna y yugo superior. Seccion tejida esquematica. No presupone resistencia por area."
+    },
+    {
+      "name": "REF_Hombrera_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 74.0,
+          "depth": 56,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  420.1690780938645,
+                  -4.494991651204501
+                ],
+                [
+                  475.3031394744601,
+                  -31.246432415386224
+                ],
+                [
+                  497.9937616943892,
+                  -74.75031191528053
+                ],
+                [
+                  479.4115912518001,
+                  -118.65527634121435
+                ],
+                [
+                  419.4108316199578,
+                  -149.79682750785636
+                ],
+                [
+                  340.0,
+                  -160.0
+                ],
+                [
+                  281.15046541746176,
+                  -149.92730057872174
+                ],
+                [
+                  282.84953458253824,
+                  -140.07269942127826
+                ],
+                [
+                  340.0,
+                  -150.0
+                ],
+                [
+                  416.5891683800422,
+                  -140.20317249214364
+                ],
+                [
+                  472.5884087481999,
+                  -111.34472365878565
+                ],
+                [
+                  488.0062383056108,
+                  -75.24968808471947
+                ],
+                [
+                  468.6968605255399,
+                  -38.753567584613776
+                ],
+                [
+                  415.8309219061355,
+                  -13.5050083487955
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Cinta_hombrera_D",
+      "ops": [
+        {
+          "axis": "x",
+          "start": 83.0,
+          "depth": 38,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  418.335410196625,
+                  -11.329179606750063
+                ],
+                [
+                  472.5017235487168,
+                  -38.442529390314625
+                ],
+                [
+                  488.749702616959,
+                  -75.02111838357631
+                ],
+                [
+                  470.4831018093371,
+                  -110.57368339858779
+                ],
+                [
+                  412.21250960576305,
+                  -139.71926328104416
+                ],
+                [
+                  338.0,
+                  -149.75
+                ],
+                [
+                  281.7327565632496,
+                  -139.70077167858997
+                ],
+                [
+                  219.58476711322865,
+                  -104.6245651685321
+                ],
+                [
+                  99.563110793929,
+                  -18.609612845680473
+                ],
+                [
+                  100.436889206071,
+                  -17.390387154319527
+                ],
+                [
+                  220.41523288677135,
+                  -103.3754348314679
+                ],
+                [
+                  282.2672434367504,
+                  -138.29922832141003
+                ],
+                [
+                  338.0,
+                  -148.25
+                ],
+                [
+                  411.78749039423695,
+                  -138.28073671895584
+                ],
+                [
+                  469.5168981906629,
+                  -109.42631660141221
+                ],
+                [
+                  487.250297383041,
+                  -74.97888161642369
+                ],
+                [
+                  471.4982764512832,
+                  -39.557470609685375
+                ],
+                [
+                  417.664589803375,
+                  -12.670820393249937
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Recorrido_textil"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Regulador_hombro_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -151,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 78.0,
+              "y": 267,
+              "w": 48,
+              "h": 34,
+              "r": 5
+            },
+            {
+              "kind": "rr",
+              "x": 85.0,
+              "y": 275,
+              "w": 34,
+              "h": 18,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_regulador"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles",
+      "description": "Envolvente de regulador comercial a seleccionar; no mecanismo validado."
+    },
+    {
+      "name": "REF_Cinta_estabilizadora_225",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 225,
+          "depth": 25,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 26,
+              "y": -165,
+              "w": 160,
+              "h": 330,
+              "r": 30
+            },
+            {
+              "kind": "rr",
+              "x": 27.5,
+              "y": -163.5,
+              "w": 157,
+              "h": 327,
+              "r": 28.5
+            }
+          ],
+          "cut": false,
+          "label": "Retencion_transversal"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Correa transversal ajustable de 25 mm. Envolvente propuesta para controlar desplazamiento lateral; ajuste a bolsa llena/vacia pendiente. No estrangular costuras ni tapa."
+    },
+    {
+      "name": "REF_Hebilla_carga_225",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 185,
+          "depth": 7,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -20,
+              "y": 221,
+              "w": 40,
+              "h": 33,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_hebilla"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles",
+      "description": "Cierre comercial protegido contra apertura accidental, operable con guantes; seleccion y ubicacion definitiva pendientes."
+    },
+    {
+      "name": "REF_Cinta_estabilizadora_350",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 350,
+          "depth": 25,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 26,
+              "y": -165,
+              "w": 160,
+              "h": 330,
+              "r": 30
+            },
+            {
+              "kind": "rr",
+              "x": 27.5,
+              "y": -163.5,
+              "w": 157,
+              "h": 327,
+              "r": 28.5
+            }
+          ],
+          "cut": false,
+          "label": "Retencion_transversal"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Correa transversal ajustable de 25 mm. Envolvente propuesta para controlar desplazamiento lateral; ajuste a bolsa llena/vacia pendiente. No estrangular costuras ni tapa."
+    },
+    {
+      "name": "REF_Hebilla_carga_350",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 185,
+          "depth": 7,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -20,
+              "y": 346,
+              "w": 40,
+              "h": 33,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_hebilla"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles",
+      "description": "Cierre comercial protegido contra apertura accidental, operable con guantes; seleccion y ubicacion definitiva pendientes."
+    },
+    {
+      "name": "REF_Ala_cinturon_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 15,
+          "depth": 88,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -44.630409046171266,
+                  -133.76606858593095
+                ],
+                [
+                  -56.83221215612903,
+                  -145.62305898749054
+                ],
+                [
+                  -69.99999999999999,
+                  -155.88457268119896
+                ],
+                [
+                  -83.98950353862998,
+                  -164.43818237566816
+                ],
+                [
+                  -98.64745084375788,
+                  -171.19017293312763
+                ],
+                [
+                  -113.81324637733609,
+                  -176.066568132085
+                ],
+                [
+                  -129.32073050985198,
+                  -179.0139411662892
+                ],
+                [
+                  -145.0,
+                  -180.0
+                ],
+                [
+                  -160.67926949014804,
+                  -179.0139411662892
+                ],
+                [
+                  -176.1867536226639,
+                  -176.06656813208502
+                ],
+                [
+                  -191.3525491562421,
+                  -171.19017293312766
+                ],
+                [
+                  -206.01049646137005,
+                  -164.43818237566816
+                ],
+                [
+                  -219.99999999999997,
+                  -155.88457268119896
+                ],
+                [
+                  -233.16778784387094,
+                  -145.62305898749054
+                ],
+                [
+                  -245.36959095382872,
+                  -133.76606858593095
+                ],
+                [
+                  -256.4717238216091,
+                  -120.4435091445945
+                ],
+                [
+                  -266.3525491562421,
+                  -105.80134541264519
+                ],
+                [
+                  -274.9038105676658,
+                  -89.99999999999999
+                ],
+                [
+                  -282.0318186463901,
+                  -73.21259575364408
+                ],
+                [
+                  -287.658477444273,
+                  -55.62305898749055
+                ],
+                [
+                  -278.1479122813215,
+                  -52.53288904374108
+                ],
+                [
+                  -272.8963640699641,
+                  -69.14522932288607
+                ],
+                [
+                  -266.24355652982143,
+                  -84.99999999999999
+                ],
+                [
+                  -258.26237921249265,
+                  -99.92349288972045
+                ],
+                [
+                  -249.0402755668352,
+                  -113.75220308100592
+                ],
+                [
+                  -238.67828489024015,
+                  -126.33462033115703
+                ],
+                [
+                  -227.28993532094623,
+                  -137.53288904374108
+                ],
+                [
+                  -214.99999999999997,
+                  -147.2243186433546
+                ],
+                [
+                  -201.94313003061205,
+                  -155.30272779924215
+                ],
+                [
+                  -188.26237921249262,
+                  -161.67960777017612
+                ],
+                [
+                  -174.10763671448632,
+                  -166.28509212474697
+                ],
+                [
+                  -159.6339848574715,
+                  -169.06872221260645
+                ],
+                [
+                  -145.0,
+                  -170.0
+                ],
+                [
+                  -130.3660151425285,
+                  -169.06872221260645
+                ],
+                [
+                  -115.89236328551368,
+                  -166.28509212474694
+                ],
+                [
+                  -101.73762078750735,
+                  -161.6796077701761
+                ],
+                [
+                  -88.05686996938798,
+                  -155.30272779924215
+                ],
+                [
+                  -74.99999999999999,
+                  -147.22431864335456
+                ],
+                [
+                  -62.71006467905376,
+                  -137.53288904374108
+                ],
+                [
+                  -51.32171510975985,
+                  -126.33462033115703
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Ala_flexible"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Bisagra_textil_I",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 44,
+          "depth": 50,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -8,
+                  -136
+                ],
+                [
+                  -38,
+                  -142
+                ],
+                [
+                  -55,
+                  -150
+                ],
+                [
+                  -57,
+                  -151
+                ],
+                [
+                  -39,
+                  -140
+                ],
+                [
+                  -8,
+                  -134
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Conexion_flexible_cinturon"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Cinta_cierre_cinturon_I",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -292,
+          "depth": 1.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -70,
+              "y": 42,
+              "w": 52,
+              "h": 40,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Cierre_frontal"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Ala_cinturon_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 15,
+          "depth": 88,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -44.630409046171266,
+                  133.76606858593095
+                ],
+                [
+                  -56.83221215612903,
+                  145.62305898749054
+                ],
+                [
+                  -69.99999999999999,
+                  155.88457268119896
+                ],
+                [
+                  -83.98950353862998,
+                  164.43818237566816
+                ],
+                [
+                  -98.64745084375788,
+                  171.19017293312763
+                ],
+                [
+                  -113.81324637733609,
+                  176.066568132085
+                ],
+                [
+                  -129.32073050985198,
+                  179.0139411662892
+                ],
+                [
+                  -145.0,
+                  180.0
+                ],
+                [
+                  -160.67926949014804,
+                  179.0139411662892
+                ],
+                [
+                  -176.1867536226639,
+                  176.06656813208502
+                ],
+                [
+                  -191.3525491562421,
+                  171.19017293312766
+                ],
+                [
+                  -206.01049646137005,
+                  164.43818237566816
+                ],
+                [
+                  -219.99999999999997,
+                  155.88457268119896
+                ],
+                [
+                  -233.16778784387094,
+                  145.62305898749054
+                ],
+                [
+                  -245.36959095382872,
+                  133.76606858593095
+                ],
+                [
+                  -256.4717238216091,
+                  120.4435091445945
+                ],
+                [
+                  -266.3525491562421,
+                  105.80134541264519
+                ],
+                [
+                  -274.9038105676658,
+                  89.99999999999999
+                ],
+                [
+                  -282.0318186463901,
+                  73.21259575364408
+                ],
+                [
+                  -287.658477444273,
+                  55.62305898749055
+                ],
+                [
+                  -278.1479122813215,
+                  52.53288904374108
+                ],
+                [
+                  -272.8963640699641,
+                  69.14522932288607
+                ],
+                [
+                  -266.24355652982143,
+                  84.99999999999999
+                ],
+                [
+                  -258.26237921249265,
+                  99.92349288972045
+                ],
+                [
+                  -249.0402755668352,
+                  113.75220308100592
+                ],
+                [
+                  -238.67828489024015,
+                  126.33462033115703
+                ],
+                [
+                  -227.28993532094623,
+                  137.53288904374108
+                ],
+                [
+                  -214.99999999999997,
+                  147.2243186433546
+                ],
+                [
+                  -201.94313003061205,
+                  155.30272779924215
+                ],
+                [
+                  -188.26237921249262,
+                  161.67960777017612
+                ],
+                [
+                  -174.10763671448632,
+                  166.28509212474697
+                ],
+                [
+                  -159.6339848574715,
+                  169.06872221260645
+                ],
+                [
+                  -145.0,
+                  170.0
+                ],
+                [
+                  -130.3660151425285,
+                  169.06872221260645
+                ],
+                [
+                  -115.89236328551368,
+                  166.28509212474694
+                ],
+                [
+                  -101.73762078750735,
+                  161.6796077701761
+                ],
+                [
+                  -88.05686996938798,
+                  155.30272779924215
+                ],
+                [
+                  -74.99999999999999,
+                  147.22431864335456
+                ],
+                [
+                  -62.71006467905376,
+                  137.53288904374108
+                ],
+                [
+                  -51.32171510975985,
+                  126.33462033115703
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Ala_flexible"
+        }
+      ],
+      "material": "espuma",
+      "color": [
+        73,
+        82,
+        89
+      ],
+      "density": 6e-08,
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "name": "REF_Bisagra_textil_D",
+      "ops": [
+        {
+          "axis": "y",
+          "start": 44,
+          "depth": 50,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -8,
+                  136
+                ],
+                [
+                  -38,
+                  142
+                ],
+                [
+                  -55,
+                  150
+                ],
+                [
+                  -57,
+                  151
+                ],
+                [
+                  -39,
+                  140
+                ],
+                [
+                  -8,
+                  134
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Conexion_flexible_cinturon"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Cinta_cierre_cinturon_D",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -292,
+          "depth": 1.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": 18,
+              "y": 42,
+              "w": 52,
+              "h": 40,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Cierre_frontal"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Hebilla_cinturon",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -300,
+          "depth": 12,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -25,
+              "y": 37,
+              "w": 50,
+              "h": 50,
+              "r": 8
+            },
+            {
+              "kind": "rr",
+              "x": -18,
+              "y": 46,
+              "w": 9,
+              "h": 31,
+              "r": 3
+            },
+            {
+              "kind": "rr",
+              "x": 9,
+              "y": 46,
+              "w": 9,
+              "h": 31,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_cierre"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles",
+      "description": "Envolvente de hebilla frontal comercial accionable con guantes. Requiere seleccion por carga, apertura accidental y temperatura."
+    },
+    {
+      "name": "REF_Correa_pectoral",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -146,
+          "depth": 1.5,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -82,
+              "y": 350,
+              "w": 164,
+              "h": 25,
+              "r": 3
+            }
+          ],
+          "cut": false,
+          "label": "Correa_pecho"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "name": "REF_Hebilla_pectoral",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -152,
+          "depth": 6,
+          "loops": [
+            {
+              "kind": "rr",
+              "x": -18,
+              "y": 346,
+              "w": 36,
+              "h": 33,
+              "r": 5
+            }
+          ],
+          "cut": false,
+          "label": "Envolvente_cierre"
+        }
+      ],
+      "material": "hebilla_ref",
+      "color": [
+        220,
+        143,
+        53
+      ],
+      "density": 1.25e-06,
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "name": "REF_Asa_sistema",
+      "ops": [
+        {
+          "axis": "z",
+          "start": -1,
+          "depth": 25,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  -96.0,
+                  448.0
+                ],
+                [
+                  -95.93177739198532,
+                  500.36303015272154
+                ],
+                [
+                  -65.1543768802736,
+                  525.9880120337511
+                ],
+                [
+                  65.1543768802736,
+                  525.9880120337511
+                ],
+                [
+                  95.93177739198532,
+                  500.36303015272154
+                ],
+                [
+                  96.0,
+                  448.0
+                ],
+                [
+                  94.0,
+                  448.0
+                ],
+                [
+                  94.06822260801468,
+                  499.63696984727846
+                ],
+                [
+                  64.8456231197264,
+                  524.0119879662489
+                ],
+                [
+                  -64.8456231197264,
+                  524.0119879662489
+                ],
+                [
+                  -94.06822260801468,
+                  499.63696984727846
+                ],
+                [
+                  -94.0,
+                  448.0
+                ]
+              ]
+            }
+          ],
+          "cut": false,
+          "label": "Asa_textil_continua"
+        }
+      ],
+      "material": "textil",
+      "color": [
+        49,
+        65,
+        75
+      ],
+      "density": 7.5e-07,
+      "reference": true,
+      "group": "textiles",
+      "description": "Asa vinculada a las cintas de carga; requiere continuidad y costuras ensayadas. No utiliza el asa de la bolsa."
+    },
+    {
+      "name": "Tornillo_M5x55_ISO4762_A2_80",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 55,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.5
+            }
+          ],
+          "cut": false,
+          "label": "Vastago"
+        },
+        {
+          "axis": "z",
+          "start": -5,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 4.25
+            }
+          ],
+          "cut": false,
+          "label": "Cabeza"
+        },
+        {
+          "axis": "z",
+          "start": -5.1,
+          "depth": 3.1,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  2.3094010767585034,
+                  0.0
+                ],
+                [
+                  1.154700538379252,
+                  2.0
+                ],
+                [
+                  -1.1547005383792512,
+                  2.0000000000000004
+                ],
+                [
+                  -2.3094010767585034,
+                  2.828200636599752e-16
+                ],
+                [
+                  -1.1547005383792528,
+                  -2.0
+                ],
+                [
+                  1.154700538379252,
+                  -2.0
+                ]
+              ]
+            }
+          ],
+          "cut": true,
+          "label": "Hexagono_interior"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        106,
+        118,
+        128
+      ],
+      "density": 8e-06,
+      "reference": false,
+      "group": "fijaciones",
+      "no_instance": true,
+      "thread": {
+        "d": 5,
+        "pitch": 0.8,
+        "internal": false,
+        "length": 22
+      },
+      "description": "ISO 4762 M5x0.8, A2-80. Rosca parcial b=22 mm nominal; confirmar proveedor.",
+      "mechanical": {
+        "E_MPa": 193000,
+        "nu": 0.3,
+        "Sy_MPa": 600,
+        "Su_MPa": 800,
+        "nota": "Hipotesis A2-80; tuerca requiere prueba de carga y par prevalente compatibles"
+      }
+    },
+    {
+      "name": "Arandela_M5_16x3_GN6341",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 3,
+          "loops": [
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 8
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.65
+            }
+          ],
+          "cut": false,
+          "label": "Arandela_gruesa"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        106,
+        118,
+        128
+      ],
+      "density": 8e-06,
+      "reference": false,
+      "group": "fijaciones",
+      "no_instance": true,
+      "thread": null,
+      "description": "Envolvente GN 6341-ST-5-16-A-ZB: 5.3x16x3 mm, acero protegido. Confirmar proveedor; minimo de calculo Sy=200 MPa y espesor=2.9 mm. No es el elemento de autofreno.",
+      "mechanical": {
+        "E_MPa": 200000,
+        "nu": 0.3,
+        "Sy_MPa": 200,
+        "Su_MPa": 400,
+        "nota": "Minimos exigidos de prediseno; confirmar acero/proveedor de arandela"
+      }
+    },
+    {
+      "name": "Tuerca_M5_autofreno_metalica",
+      "ops": [
+        {
+          "axis": "z",
+          "start": 0,
+          "depth": 5,
+          "loops": [
+            {
+              "kind": "poly",
+              "pts": [
+                [
+                  4.618802153517007,
+                  0.0
+                ],
+                [
+                  2.309401076758504,
+                  4.0
+                ],
+                [
+                  -2.3094010767585025,
+                  4.000000000000001
+                ],
+                [
+                  -4.618802153517007,
+                  5.656401273199504e-16
+                ],
+                [
+                  -2.3094010767585056,
+                  -4.0
+                ],
+                [
+                  2.309401076758504,
+                  -4.0
+                ]
+              ]
+            },
+            {
+              "kind": "circle",
+              "x": 0,
+              "y": 0,
+              "r": 2.5
+            }
+          ],
+          "cut": false,
+          "label": "Tuerca"
+        }
+      ],
+      "material": "herrajes",
+      "color": [
+        106,
+        118,
+        128
+      ],
+      "density": 8e-06,
+      "reference": false,
+      "group": "fijaciones",
+      "no_instance": true,
+      "thread": {
+        "d": 5,
+        "pitch": 0.8,
+        "internal": true,
+        "length": 5
+      },
+      "description": "Envolvente derivada DIN 980 M5; seleccionar clase y par prevalente compatibles. No se modela deformacion de autofreno.",
+      "mechanical": {
+        "E_MPa": 193000,
+        "nu": 0.3,
+        "Sy_MPa": 600,
+        "Su_MPa": 800,
+        "nota": "Hipotesis A2-80; tuerca requiere prueba de carga y par prevalente compatibles"
+      }
+    }
+  ],
+  "instances": [
+    {
+      "part": "Refuerzo_C_I",
+      "name": "Refuerzo_C_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "estructura"
+    },
+    {
+      "part": "Casquillo_I_35",
+      "name": "Casquillo_I_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_I_35",
+      "name": "Pasador_hueco_I_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_I_95",
+      "name": "Casquillo_I_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_I_95",
+      "name": "Pasador_hueco_I_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_I_390",
+      "name": "Casquillo_I_390",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_I_390",
+      "name": "Pasador_hueco_I_390",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_I_450",
+      "name": "Casquillo_I_450",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_I_450",
+      "name": "Pasador_hueco_I_450",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Refuerzo_C_D",
+      "name": "Refuerzo_C_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "estructura"
+    },
+    {
+      "part": "Casquillo_D_35",
+      "name": "Casquillo_D_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_D_35",
+      "name": "Pasador_hueco_D_35",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_D_95",
+      "name": "Casquillo_D_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_D_95",
+      "name": "Pasador_hueco_D_95",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_D_390",
+      "name": "Casquillo_D_390",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_D_390",
+      "name": "Pasador_hueco_D_390",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Casquillo_D_450",
+      "name": "Casquillo_D_450",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Pasador_hueco_D_450",
+      "name": "Pasador_hueco_D_450",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "uniones"
+    },
+    {
+      "part": "Interfaz_lumbar_aligerada",
+      "name": "Interfaz_lumbar_aligerada",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "anclajes"
+    },
+    {
+      "part": "Yugo_superior_I",
+      "name": "Yugo_superior_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "anclajes"
+    },
+    {
+      "part": "Yugo_superior_D",
+      "name": "Yugo_superior_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "anclajes"
+    },
+    {
+      "part": "Espaldera_HDPE_aligerada",
+      "name": "Espaldera_HDPE_aligerada",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": false,
+      "group": "protecciones"
+    },
+    {
+      "part": "REF_Funda_refuerzo_I",
+      "name": "REF_Funda_refuerzo_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Acolchado_dorsal_I",
+      "name": "REF_Acolchado_dorsal_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Funda_refuerzo_D",
+      "name": "REF_Funda_refuerzo_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Acolchado_dorsal_D",
+      "name": "REF_Acolchado_dorsal_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Acolchado_lumbar",
+      "name": "REF_Acolchado_lumbar",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Cuna_textil_I",
+      "name": "REF_Cuna_textil_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Cinta_carga_I",
+      "name": "REF_Cinta_carga_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hombrera_I",
+      "name": "REF_Hombrera_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Cinta_hombrera_I",
+      "name": "REF_Cinta_hombrera_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Regulador_hombro_I",
+      "name": "REF_Regulador_hombro_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Cuna_textil_D",
+      "name": "REF_Cuna_textil_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Cinta_carga_D",
+      "name": "REF_Cinta_carga_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hombrera_D",
+      "name": "REF_Hombrera_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Cinta_hombrera_D",
+      "name": "REF_Cinta_hombrera_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Regulador_hombro_D",
+      "name": "REF_Regulador_hombro_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Cinta_estabilizadora_225",
+      "name": "REF_Cinta_estabilizadora_225",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hebilla_carga_225",
+      "name": "REF_Hebilla_carga_225",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Cinta_estabilizadora_350",
+      "name": "REF_Cinta_estabilizadora_350",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hebilla_carga_350",
+      "name": "REF_Hebilla_carga_350",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Ala_cinturon_I",
+      "name": "REF_Ala_cinturon_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Bisagra_textil_I",
+      "name": "REF_Bisagra_textil_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Cinta_cierre_cinturon_I",
+      "name": "REF_Cinta_cierre_cinturon_I",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Ala_cinturon_D",
+      "name": "REF_Ala_cinturon_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "acolchados"
+    },
+    {
+      "part": "REF_Bisagra_textil_D",
+      "name": "REF_Bisagra_textil_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Cinta_cierre_cinturon_D",
+      "name": "REF_Cinta_cierre_cinturon_D",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hebilla_cinturon",
+      "name": "REF_Hebilla_cinturon",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Correa_pectoral",
+      "name": "REF_Correa_pectoral",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "REF_Hebilla_pectoral",
+      "name": "REF_Hebilla_pectoral",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "herrajes_textiles"
+    },
+    {
+      "part": "REF_Asa_sistema",
+      "name": "REF_Asa_sistema",
+      "axis": "z",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "reference": true,
+      "group": "textiles"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Lumbar_I_1_Tornillo",
+      "axis": "x",
+      "position": [
+        -117.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_I_1_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -117.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_I_1_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -76.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Lumbar_I_1_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Lumbar_I_2_Tornillo",
+      "axis": "x",
+      "position": [
+        -117.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_I_2_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -117.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_I_2_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -76.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Lumbar_I_2_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Lumbar_D_3_Tornillo",
+      "axis": "x",
+      "position": [
+        73.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_D_3_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        73.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_D_3_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        114.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Lumbar_D_3_Tuerca",
+      "axis": "x",
+      "position": [
+        117.0,
+        35,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Lumbar_D_4_Tornillo",
+      "axis": "x",
+      "position": [
+        73.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_D_4_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        73.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Lumbar_D_4_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        114.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Lumbar_D_4_Tuerca",
+      "axis": "x",
+      "position": [
+        117.0,
+        95,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Yugo_I_5_Tornillo",
+      "axis": "x",
+      "position": [
+        -117.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_I_5_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -117.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_I_5_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -76.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Yugo_I_5_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Yugo_I_6_Tornillo",
+      "axis": "x",
+      "position": [
+        -117.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_I_6_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        -117.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_I_6_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        -76.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Yugo_I_6_Tuerca",
+      "axis": "x",
+      "position": [
+        -73.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Yugo_D_7_Tornillo",
+      "axis": "x",
+      "position": [
+        73.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_D_7_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        73.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_D_7_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        114.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Yugo_D_7_Tuerca",
+      "axis": "x",
+      "position": [
+        117.0,
+        390,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tornillo_M5x55_ISO4762_A2_80",
+      "name": "Yugo_D_8_Tornillo",
+      "axis": "x",
+      "position": [
+        73.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_D_8_Arandela_cabeza",
+      "axis": "x",
+      "position": [
+        73.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Arandela_M5_16x3_GN6341",
+      "name": "Yugo_D_8_Arandela_tuerca",
+      "axis": "x",
+      "position": [
+        114.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    },
+    {
+      "part": "Tuerca_M5_autofreno_metalica",
+      "name": "Yugo_D_8_Tuerca",
+      "axis": "x",
+      "position": [
+        117.0,
+        450,
+        12
+      ],
+      "reference": false,
+      "group": "fijaciones"
+    }
+  ],
+  "bolts": [
+    {
+      "axis": "x",
+      "pos": [
+        -114.0,
+        35,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Lumbar_I",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        -114.0,
+        95,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Lumbar_I",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        76.0,
+        35,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Lumbar_D",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        76.0,
+        95,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Lumbar_D",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        -114.0,
+        390,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Yugo_I",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        -114.0,
+        450,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Yugo_I",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        76.0,
+        390,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Yugo_D",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    },
+    {
+      "axis": "x",
+      "pos": [
+        76.0,
+        450,
+        12
+      ],
+      "diam": 5,
+      "grip": 38,
+      "tag": "Yugo_D",
+      "longitud": 55,
+      "paso": 0.8,
+      "protrusion": 6,
+      "tornillo": "Tornillo_M5x55_ISO4762_A2_80",
+      "tuerca": "Tuerca_M5_autofreno_metalica"
+    }
+  ]
+}

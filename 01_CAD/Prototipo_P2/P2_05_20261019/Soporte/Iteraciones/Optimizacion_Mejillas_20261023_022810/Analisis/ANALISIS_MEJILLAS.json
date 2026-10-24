@@ -1,0 +1,81 @@
+{
+  "etiqueta": "calculo",
+  "nota": "Analisis de prediseno. No es FEA ni validacion. Cargas heredadas sin cambios.",
+  "cargas_reutilizadas": {
+    "V_union_N": 1046.9766026994891,
+    "Mmax_Nmm": 55738.58598984375,
+    "origen": "Analisis/RESULTADOS_OPT1.json"
+  },
+  "geometria_mejillas": {
+    "z0_mm": -6.7,
+    "z_capa_mm": -3.7,
+    "z_pasador_mm": 12,
+    "brazo_mm": 15.7,
+    "lumbar_n_mejillas": 4,
+    "lumbar_longitud_mm": 100.0,
+    "yugo_n_mejillas": 4,
+    "yugo_longitud_mm": 98.0,
+    "altura_lumbar_P204_mm": 27.7,
+    "altura_lumbar_OPT1_mm": 31.7,
+    "altura_yugo_P204_mm": 26,
+    "altura_yugo_OPT1_mm": 30.0,
+    "regla_en_generador": "rect(18,Z_CAPA,100,D-Z_CAPA) lumbar; rect(376,-2,98,D+2) yugo"
+  },
+  "incremento_mejillas": {
+    "masa_mejillas_P204_g": 172.3032,
+    "masa_mejillas_OPT1_g": 197.964,
+    "delta_analitico_g": 25.660800000000012,
+    "delta_nativo_medido_g": 25.39,
+    "desviacion_g": 0.2708000000000119,
+    "desviacion_pct": 1.0665616384403778,
+    "lectura": "El incremento de anclajes de OPT1 es integramente el area de mejilla que crece con D; la geometria lo explica dentro del 1%."
+  },
+  "comprobacion_mejilla_fuera_de_plano": {
+    "modelo": "Placa en voladizo empotrada en la placa lumbar, carga V en el pasador, Z=L*EM^2/6",
+    "Z_placa_mm3": 150.0,
+    "brazo_mm": 15.7,
+    "V_N": 1046.9766026994891,
+    "sigma_MPa": 109.58355108254652,
+    "margen": 2.190109716550562,
+    "observacion": "Z no depende de la altura en z: los 4 mm anadidos por D no aumentan la resistencia de la mejilla, solo su cobertura.",
+    "etiqueta": "calculo"
+  },
+  "cortante_en_raiz": {
+    "tau_MPa": 12.598996422376525,
+    "margen": 10.991351640837975,
+    "modelo": "V/(altura*EM) frente a 0,577*Sy; sin credito de empotramiento parcial"
+  },
+  "variante_A_mejilla_escalonada": {
+    "descripcion": "Altura completa solo en 2 zonas de 24 mm por pasador + labio de 8 mm en la boca; espesor 3 mm sin cambios.",
+    "L_boss_mm": 24.0,
+    "H_lip_mm": 8.0,
+    "ahorro_OPT1_g": 75.56976,
+    "ahorro_P204_g": 62.35056,
+    "margen_seccion_escalonada": 0.35041755464808994,
+    "sigma_MPa": 684.8971942659158,
+    "K_escalon": 1.5,
+    "ancho_minimo_mm_n1": 68.48971942659158,
+    "ancho_para_margen_objetivo_mm": 150.67738273850148,
+    "etiqueta": "calculo (masa) / supuesto (K=1.5, forma del escalon)"
+  },
+  "masa_de_cobertura_no_gobernada_por_carga": {
+    "modelo": "Altura por encima del alojamiento del pasador; no aporta a Z ni al aplastamiento.",
+    "h_nec_lumbar_mm": 23.2,
+    "h_nec_yugo_mm": 21.5,
+    "P204_lumbar_g": 14.58,
+    "P204_yugo_g": 14.2884,
+    "OPT1_lumbar_g": 27.54,
+    "OPT1_yugo_g": 26.9892,
+    "etiqueta": "cálculo; NO es ahorro: esa cobertura cumple funcion de retencion y proteccion de arista que habria que reasignar",
+    "lectura": "Es la magnitud del premio si la mordaza se sustituye por un concepto que no dependa de D. No se descuenta del presupuesto."
+  },
+  "impacto_masa_si_se_adopta": {
+    "OPT1_rigida_kg": 1.432778,
+    "OPT1_presupuesto_kg": 2.202778,
+    "OPT1_mas_varianteA_rigida_kg": 1.35720824,
+    "OPT1_mas_varianteA_presupuesto_kg": 2.12720824,
+    "P204_rigida_kg": 1.442328,
+    "P204_presupuesto_kg": 2.212328,
+    "ahorro_neto_vs_P204_g": 85.11975999999999
+  }
+}

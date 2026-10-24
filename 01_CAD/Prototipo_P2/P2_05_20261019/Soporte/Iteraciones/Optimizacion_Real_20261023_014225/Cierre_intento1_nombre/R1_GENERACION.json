@@ -1,0 +1,311 @@
+﻿{
+    "naturaleza":  "registro_de_ejecucion",
+    "resultado":  {
+                      "resultado":  "R1",
+                      "nombre":  "GeneraciÃ³n terminada",
+                      "etiqueta":  "hecho",
+                      "cumple":  false,
+                      "archivos":  [
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Refuerzo_C_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  147968
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_I_35.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_I_35.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_I_95.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_I_95.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_I_390.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_I_390.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_I_450.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_I_450.ipt",
+                                           "existe":  true,
+                                           "bytes":  106496
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Refuerzo_C_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  147456
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_D_35.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_D_35.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_D_95.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_D_95.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_D_390.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_D_390.ipt",
+                                           "existe":  true,
+                                           "bytes":  105984
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Casquillo_D_450.ipt",
+                                           "existe":  true,
+                                           "bytes":  113664
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Pasador_hueco_D_450.ipt",
+                                           "existe":  true,
+                                           "bytes":  106496
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Interfaz_lumbar_aligerada.ipt",
+                                           "existe":  true,
+                                           "bytes":  556544
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Yugo_superior_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  486400
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Yugo_superior_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  484864
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Espaldera_HDPE_aligerada.ipt",
+                                           "existe":  true,
+                                           "bytes":  186880
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Funda_refuerzo_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  101376
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Acolchado_dorsal_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  93184
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Funda_refuerzo_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  101376
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Acolchado_dorsal_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  92672
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Acolchado_lumbar.ipt",
+                                           "existe":  true,
+                                           "bytes":  92160
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cuna_textil_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  104960
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_carga_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  115200
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hombrera_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  98816
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_hombrera_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  101888
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Regulador_hombro_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  109568
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cuna_textil_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  104448
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_carga_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  115712
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hombrera_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  98816
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_hombrera_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  100352
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Regulador_hombro_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  109568
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_estabilizadora_225.ipt",
+                                           "existe":  true,
+                                           "bytes":  103936
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hebilla_carga_225.ipt",
+                                           "existe":  true,
+                                           "bytes":  93696
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_estabilizadora_350.ipt",
+                                           "existe":  true,
+                                           "bytes":  103424
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hebilla_carga_350.ipt",
+                                           "existe":  true,
+                                           "bytes":  93184
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Ala_cinturon_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  121344
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Bisagra_textil_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  88064
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_cierre_cinturon_I.ipt",
+                                           "existe":  true,
+                                           "bytes":  92160
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Ala_cinturon_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  119808
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Bisagra_textil_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  88064
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Cinta_cierre_cinturon_D.ipt",
+                                           "existe":  true,
+                                           "bytes":  92160
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hebilla_cinturon.ipt",
+                                           "existe":  true,
+                                           "bytes":  126464
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Correa_pectoral.ipt",
+                                           "existe":  true,
+                                           "bytes":  90624
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Hebilla_pectoral.ipt",
+                                           "existe":  true,
+                                           "bytes":  93696
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\REF_Asa_sistema.ipt",
+                                           "existe":  true,
+                                           "bytes":  94208
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Tornillo_M5x55_ISO4762_A2_80.ipt",
+                                           "existe":  true,
+                                           "bytes":  131072
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Arandela_M5_16x3_GN6341.ipt",
+                                           "existe":  true,
+                                           "bytes":  101376
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\Tuerca_M5_autofreno_metalica.ipt",
+                                           "existe":  true,
+                                           "bytes":  123904
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\SEDAC_OPT_20261023.iam",
+                                           "existe":  true,
+                                           "bytes":  720896
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\SEDAC_OPT_20261023_REVISION.step",
+                                           "existe":  false,
+                                           "bytes":  null
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\VISTA_FRENTE.png",
+                                           "existe":  true,
+                                           "bytes":  636024
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\VISTA_ESPALDA.png",
+                                           "existe":  true,
+                                           "bytes":  621181
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Build\\VISTA_ESTRUCTURA.png",
+                                           "existe":  true,
+                                           "bytes":  783696
+                                       }
+                                   ],
+                      "alcance":  "Presencia y tamaÃ±o de archivos generados; no reinspecciÃ³n del CAD nativo.",
+                      "motivos":  [
+                                      "Archivo generado ausente o vacÃ­o: SEDAC_OPT_20261023_REVISION.step"
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento fÃ­sico del producto (textil, contacto, abrasiÃ³n, ergonomÃ­a, fatiga, seguridad)."
+}

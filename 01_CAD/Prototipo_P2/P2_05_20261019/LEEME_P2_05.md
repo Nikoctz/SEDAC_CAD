@@ -6,6 +6,8 @@ La entrega vigente sigue siendo **P2.04** (`../P2_04_20261016/`), **intacta**.
 
 Fecha: 2026-10-19 · Base: P2.04 (16/10/2026)
 
+**Actualización documental — 2026-10-22 (hecho).** La entrega vigente sigue siendo **P2.04**; P2.05 continúa abierta. El redondeo lumbar 236/472 de la corrida `Nueva_20261019_060807` queda **pendiente de clasificación funcional A/B/C (D-12)**: «grupo mayor» es criterio de herramienta, no de diseño. El radio de 0,5 mm es una propuesta sin ensayo de desgaste (**supuesto**), no un acabado validado. Las secciones fechadas el 19/10 se conservan como historial; el cierre actualizado se describe en la sección nueva del 22/10 y sustituye las instrucciones históricas que permitan forzar una entrega aceptada con pendientes.
+
 ---
 
 ## 1. Qué se ha conseguido (todo verificable)
@@ -162,3 +164,78 @@ de enumeración (§3, punto 4), no una decisión de diseño. La decisión de qu�
 
 Trazabilidad según AGENTS.md §4: cada afirmación está marcada como hecho, cálculo, supuesto o hipótesis.
 Los valores «hecho» salen de archivos de este repositorio y son reproducibles con este constructor.
+
+
+## 10. Cierre corregido — 2026-10-22 (vigente sobre las instrucciones históricas)
+
+**hecho:** se modificó soporte y documentación mediante el encargo «Corregir el cierre de P2.05 sin la bomba». No se ejecutó el constructor ni Inventor. P2.04 sigue siendo la entrega vigente, con fe de erratas documental; P2.05 no se ha cerrado. Las secciones 1–9 describen las corridas del 19/10; sus opciones de forzar cierre quedan sustituidas por esta sección y D-16.
+
+**hecho registrado:** `Nueva_20261019_060807` conserva `ERROR.txt`, sin `ESTADO_OK.txt`, y el redondeo lumbar parcial 236/472. No se sobrescribió esa evidencia. «Grupo mayor» es criterio de herramienta, no de diseño; la clasificación A/B/C permanece pendiente de recorrido y tensión reales de las cintas (D-12). El radio de 0,5 mm es propuesta sin ensayo de desgaste (**supuesto**).
+
+### 10.1. Tres resultados distintos
+
+| Resultado | Evidencia de la nueva lógica | Qué acredita |
+|---|---|---|
+| R1 · Generación terminada | `R1_GENERACION.json`: presencia y tamaño no nulo de cada pieza, ensamblaje, STEP y las tres vistas, determinados desde `MODELO_API.json` | **hecho:** archivos presentes; no una nueva inspección nativa ni validación física |
+| R2 · Coherencia comprobada | `R2_COHERENCIA.json`: exactamente un registro válido de redondeo por pieza solicitada, todos aplicados; interferencias ≤0,001 mm³; restricciones sin traslaciones/rotaciones y error ≤1e-6; masas y grupos reconciliados con el resumen | **hecho:** coherencia de los registros de la corrida |
+| R3 · Cribado analítico cumplido | `R3_CRIBADO.json`: copia de los resultados del cálculo en la propia salida, `cumple_cribado=true`, mínimo y verificaciones ≥ margen objetivo del modelo (actualmente 2,2), cierre residual positivo y flecha dentro del límite vigente | **cálculo:** cribado condicionado; no validación de uso |
+
+**hecho de implementación:** `CIERRE.json` reúne R1, R2 y R3. `ESTADO_OK.txt` solo se escribe si los tres cumplen y la carpeta no conserva un error/borrador anterior. Su texto incluye literalmente: **«Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad).»**
+
+**hecho de implementación:** `-AceptarPendientes` permite exportar únicamente un borrador si R3 cumple; mantiene `AVISO_CIERRE.txt`, termina con `ESTADO_BORRADOR.txt` (dice «no es una entrega aceptada»), `ERROR.txt` y excepción. Nunca convierte un pendiente en aceptación. Sin esa opción, el proceso se detiene antes de exportar. Un R3 falso, ausente o inválido detiene el proceso antes de cargar Inventor y deja `INCUMPLIMIENTO_CRIBADO.txt` con las verificaciones incumplidas o la evidencia faltante.
+
+**hecho de implementación:** cada pieza con radio pedido requiere `pieza`, `radio_mm`, `aristas_totales`, `aristas_redondeadas`, `estado` y `aplicado`, de tipos y valores coherentes. La reutilización sin evidencia genera `sin_registro` con conteos `null` (desconocidos); duplicados o registros inválidos se diagnostican y bloquean. Un registro antiguo de P2.04 con solo `aplicado:true` no aporta por sí solo el nuevo esquema de evidencia: no se inventan los conteos ausentes.
+
+**hecho de implementación:** la salida debe ser una carpeta nueva. La tolerancia relativa 1e-9 de comparación de masas es exclusivamente aritmética y de serialización, no una tolerancia de fabricación. Los límites 0,001 mm³ y 1e-6 se conservan del constructor anterior. Los tamaños y valores del estado proceden de los archivos leídos.
+
+### 10.2. Situación que representa el cálculo
+
+**hipótesis:** canal abierto con apoyos ideales efectivos en cinturón (y=55 mm) y hombro (y=435 mm), y fuerzas del lado más cargado. Los 25 kg incluyen el sistema auxiliar en el escenario heredado. El reparto 70/30, 3g verticales **totales**, 1g horizontal, excentricidad 107,5 mm, precarga 2000 N y margen objetivo 2,2 son hipótesis de prediseño no medidas o no validadas (AGENTS.md §5). El umbral de margen es un criterio elegido, no una medición física.
+
+**cálculo:** `Fv=m*g*factor_vertical`, `Fh=m*g*factor_horizontal`, `N=Fv*fraccion_lado`, `Q=Fh*fraccion_lado`, `L=apoyo_hombro_y-apoyo_cinturon_y` y `M0=N*e`. La envolvente original se conserva:
+
+`M(x)=M0*max(1-x/L,x/L)+Q*x*(L-x)/L`.
+
+**hipótesis de interpretación:** el momento único se aplica alternativamente en uno u otro extremo; Q es una fuerza puntual horizontal de posición variable dentro de la luz. La envolvente combina casos alternativos; no representa un único diagrama de acciones simultáneas. La fórmula de flecha conserva la suma de cotas de esos casos. No se ha sustituido por la integral de la envolvente ni por momentos simultáneos en los dos extremos.
+
+**hecho de alcance:** no se modelan contacto textil, abrasión ni dinámica temporal; los factores 3g/1g se usan como cargas estáticas equivalentes. No hay validación de uso. Se mantiene exactamente el campo `alcance` anterior: `Prediseno analitico condicionado; NO validacion del conjunto`.
+
+**hecho de implementación:** `calcular_p2_05.py` añade `situacion_de_carga` al resultado y al `print`, con valor, unidad, origen y etiqueta por magnitud. No cambian ecuaciones ni valores. El JSON histórico de `Calculos/` no se regeneró en este encargo; el bloque aparecerá al ejecutar en el futuro el cálculo autorizado. La salida enriquecida se comprobó en memoria, omitiendo sus escrituras.
+
+### 10.3. Verificación permitida en este encargo
+
+**hecho:** el banco está en `Soporte/Pruebas/cierre/`. Usa exactamente el módulo de cierre importado por el constructor y sustituye solo la comprobación de presencia de archivos generados. No crea `.ipt`, `.iam` ni `.step` y no conecta con Inventor. Todos sus estados son **casos sintéticos de prueba; no son evidencia de entrega**.
+
+```powershell
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\01_CAD\Prototipo_P2\P2_05_20261019\Soporte\Pruebas\cierre\verificar_cierre.ps1
+```
+
+**hecho:** cada ejecución conserva sus artefactos en una carpeta nueva con fecha bajo `Soporte/Pruebas/cierre/Ejecuciones/`. El LEEME del banco describe los casos A–D, las pruebas adicionales, la comprobación numérica en memoria y la ubicación de los resultados. El constructor completo no es una prueba autorizada en este encargo.
+
+### 10.4. Pendientes conservados y revisión posterior no ejecutada
+
+- **hipótesis pendiente:** medir bomba llena/vacía, centro de gravedad, apoyos y reparto real de fuerzas.
+- **pendiente (D-12):** recorrido/tensión de cintas y clasificación funcional A/B/C; acabado, compatibilidad y desgaste. No se aprueba el subconjunto arbitrario 236/472.
+- **pendiente:** verificar una futura corrida real del constructor, sus masas nativas, STEP y vistas. Las pruebas de lógica no la sustituyen.
+- **pendiente:** FEA local, pandeo distorsional, fatiga, dinámica, textiles, temperatura, liberación y ergonomía.
+- **pendiente de revisión posterior, no realizada ahora:** cobertura de parámetros sobre generador/cálculo; constantes embebidas; correspondencia de apoyos, pernos y geometría; cotas críticas del CAD, tolerancias y evidencia de bocetos; coherencia de versiones, resumen, huellas y paquete final.
+- **hecho documental:** permanecen sin corregir las ecuaciones de cribado existentes. El pandeo local limitado por fluencia y la cobertura física de apoyos/pernos siguen siendo limitaciones conocidas; este encargo no cambia esos modelos ni sus números.
+- **hecho de trazabilidad:** la fe de erratas cambia la huella del informe P2.04. Su manifiesto y ZIP históricos conservan la versión anterior; la excepción está registrada y no se presenta como una entrega reemitida.
+
+
+## 11. Auditoría de coherencia — 2026-10-22
+
+**hecho:** se revisaron parámetros, literales, cálculo y descripción del modelo, sin corregir las fuentes. La regeneración JSON/CSV coincide byte por byte con `Nueva_20261019_060807`; no se ejecutó Inventor. Se documentaron 13 hallazgos con severidad propuesta (10 informativos, 3 a conservar), incluidos el recuento 8+4 frente al 10+4 histórico y dependencias geométricas parciales.
+
+**hecho:** informe, tablas, scripts y registros: [Auditoría de coherencia](Soporte/Auditoria_Coherencia_20261022_185635/AUDITORIA.md). Fuera de esa carpeta solo se añadió esta sección y una línea al changelog.
+
+**pendiente:** resolver las propuestas antes de variar parámetros, justificar los supuestos locales y validar la integración nativa/física. Esta revisión no cierra P2.05 ni sustituye D-12.
+
+
+## 12. Primera corrección de dependencias — 2026-10-22
+
+**hecho de implementación:** el generador deriva de `espesor_mejilla` las posiciones exteriores, el agarre y la longitud del pasador (H03); las capas lumbares y cortes derivan de sus caras de referencia (parte de H13). El JSON de parámetros y el cálculo resistente no se modificaron. No se ejecutó el generador modificado ni Inventor, ni se añadieron o ejecutaron pruebas; la invariancia de las salidas queda pendiente.
+
+**hecho:** fuente anterior, diff, ficha, alcance y estado: [Corrección de dependencias](Soporte/Iteraciones/Correccion_Dependencias_20261022_192327/INFORME.md). La auditoría de §11 describe la fuente anterior; no se interpreta como verificación de este cambio. Se conserva intacta.
+
+**pendiente:** comparación de descripciones antes/después y propagación de parámetros. H02/H04/H05 y el vínculo del espesor de cuna con el mínimo analítico siguen abiertos; también las hipótesis físicas y D-12. No se autoriza cambiar valores ni cerrar P2.05 por esta edición.

@@ -1,0 +1,286 @@
+{"piezas": 54, "ocurrencias": 83, "uniones": 8}
+{
+  "minimo_margen": 2.2272920419462303,
+  "cumple_cribado": true,
+  "flecha_envolvente_mm": 0.6660438168790912,
+  "giro_torsion_ideal_grados": 5.112093318842655,
+  "cierre_residual_junta_N": 282.2232802031251,
+  "situacion_de_carga": {
+    "modelo": {
+      "valor": "Canal abierto con apoyos ideales efectivos de hombro y cintur\u00f3n; lado m\u00e1s cargado. Sin contacto textil, abrasi\u00f3n, simulaci\u00f3n din\u00e1mica ni validaci\u00f3n de uso.",
+      "origen": "Modelo anal\u00edtico documentado en este script y LEEME_P2_05.md",
+      "etiqueta": "hip\u00f3tesis"
+    },
+    "envolvente": {
+      "valor": "M(x)=M0*max(1-x/L,x/L)+Q*x*(L-x)/L",
+      "interpretacion": "Momento \u00fanico aplicado alternativamente en uno u otro extremo y fuerza horizontal puntual de posici\u00f3n variable en la luz. La envolvente re\u00fane casos alternativos; no es un \u00fanico diagrama de cargas simult\u00e1neas.",
+      "origen": "Variable moment de este script",
+      "etiqueta": "c\u00e1lculo"
+    },
+    "magnitudes": {
+      "masa_total": {
+        "valor": 25,
+        "unidad": "kg",
+        "origen": "PARAMETROS_P2_05.json:cargas.masa_total_kg; incluye el sistema auxiliar seg\u00fan el informe heredado",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "gravedad": {
+        "valor": 9.81,
+        "unidad": "m/s\u00b2",
+        "origen": "PARAMETROS_P2_05.json:cargas.g",
+        "etiqueta": "supuesto"
+      },
+      "factor_vertical": {
+        "valor": 3,
+        "unidad": "g totales",
+        "origen": "PARAMETROS_P2_05.json:cargas.factor_vertical; no se a\u00f1ade otro 1g",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "factor_horizontal": {
+        "valor": 1,
+        "unidad": "g",
+        "origen": "PARAMETROS_P2_05.json:cargas.factor_horizontal",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "fuerza_vertical_total": {
+        "valor": 735.75,
+        "unidad": "N",
+        "origen": "masa_total_kg*g*factor_vertical",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "fuerza_horizontal_total": {
+        "valor": 245.25,
+        "unidad": "N",
+        "origen": "masa_total_kg*g*factor_horizontal",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "fraccion_lado_mas_cargado": {
+        "valor": 0.7,
+        "unidad": "fracci\u00f3n",
+        "origen": "PARAMETROS_P2_05.json:cargas.fraccion_lado; reparto nominal 70/30 no medido",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "fraccion_otro_lado": {
+        "valor": 0.30000000000000004,
+        "unidad": "fracci\u00f3n",
+        "origen": "1-fraccion_lado; complemento del reparto supuesto",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "N_lado": {
+        "valor": 515.025,
+        "unidad": "N",
+        "origen": "Fv*fraccion_lado",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "Q_lado": {
+        "valor": 171.67499999999998,
+        "unidad": "N",
+        "origen": "Fh*fraccion_lado",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "apoyo_hombro_y": {
+        "valor": 435,
+        "unidad": "mm",
+        "origen": "PARAMETROS_P2_05.json:geometria.apoyo_hombro_y; efectividad no confirmada f\u00edsicamente",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "apoyo_cinturon_y": {
+        "valor": 55,
+        "unidad": "mm",
+        "origen": "PARAMETROS_P2_05.json:geometria.apoyo_cinturon_y; efectividad no confirmada f\u00edsicamente",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "L": {
+        "valor": 380,
+        "unidad": "mm",
+        "origen": "apoyo_hombro_y-apoyo_cinturon_y",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "excentricidad": {
+        "valor": 107.5,
+        "unidad": "mm",
+        "origen": "PARAMETROS_P2_05.json:cargas.excentricidad_mm",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "M0": {
+        "valor": 55365.1875,
+        "unidad": "N\u00b7mm",
+        "origen": "N_lado*excentricidad_mm",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "Mmax": {
+        "valor": 55738.58598984375,
+        "unidad": "N\u00b7mm",
+        "origen": "M\u00e1ximo de la envolvente moment sobre la malla x original",
+        "etiqueta": "c\u00e1lculo"
+      },
+      "precarga": {
+        "valor": 2000,
+        "unidad": "N",
+        "origen": "PARAMETROS_P2_05.json:cargas.precarga_estudio_N; no es un par de montaje",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "angulo_eslinga": {
+        "valor": 35,
+        "unidad": "grados",
+        "origen": "PARAMETROS_P2_05.json:cargas.angulo_eslinga_grados",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "margen_objetivo": {
+        "valor": 2.2,
+        "unidad": "adimensional",
+        "origen": "PARAMETROS_P2_05.json:cargas.margen_objetivo; umbral elegido, no validado",
+        "etiqueta": "hip\u00f3tesis"
+      },
+      "flecha_limite": {
+        "valor": 5,
+        "unidad": "mm",
+        "origen": "PARAMETROS_P2_05.json:cargas.flecha_limite_mm",
+        "etiqueta": "supuesto"
+      },
+      "K_borde": {
+        "valor": 1.25,
+        "unidad": "adimensional",
+        "origen": "PARAMETROS_P2_05.json:cargas.K_borde",
+        "etiqueta": "supuesto"
+      },
+      "factor_palanca_union": {
+        "valor": 1.5,
+        "unidad": "adimensional",
+        "origen": "Constante existente en R=1.5*reaction",
+        "etiqueta": "supuesto"
+      },
+      "factor_puente_anclaje": {
+        "valor": 1.5,
+        "unidad": "adimensional",
+        "origen": "Constante existente en sbri=1.5*bridge_M*(...)",
+        "etiqueta": "supuesto"
+      },
+      "factor_puente_cuna": {
+        "valor": 1.5,
+        "unidad": "adimensional",
+        "origen": "Constante existente en cuna_sigma=1.5*(Tstrap*52/4)*(...)",
+        "etiqueta": "supuesto"
+      },
+      "E_aluminio": {
+        "valor": 69000,
+        "unidad": "MPa",
+        "origen": "PARAMETROS_P2_05.json:materiales.E_6061_MPa; condicionado al material real",
+        "etiqueta": "supuesto"
+      },
+      "Sy_aluminio": {
+        "valor": 240,
+        "unidad": "MPa",
+        "origen": "PARAMETROS_P2_05.json:materiales.Sy_6061_MPa; condicionado al material real",
+        "etiqueta": "supuesto"
+      }
+    },
+    "pendientes": [
+      "Confirmar apoyos y transmisi\u00f3n real de cargas",
+      "Medir masa y centro de gravedad",
+      "Clasificar contacto A/B/C (D-12)",
+      "Definir textiles y ensayos; no se atribuye resistencia al CAD textil"
+    ]
+  }
+}
+Refuerzo combinado, pared minima 2.437 True
+Pandeo Euler, eje debil 141.292 True
+Pandeo local de alas 2.227 True
+Pandeo lateral torsional ideal 20.774 True
+Taladro en alas, tension local 4.075 True
+M5 combinacion precarga y servicio 2.551 True
+Aplastamiento ala por pasador 5.22 True
+Aplastamiento mejilla por pasador 5.22 True
+Arrancamiento ala 4.198 True
+Casquillo compresion 3.594 True
+Pasador hueco flexion y cortante 2.969 True
+Arandela gruesa flexion local 2.284 True
+Arandela presion bajo tuerca 2.258 True
+Puente anclaje arnes/cinturon biaxial 2.359 True
+Puente inferior de cuna 3.698 True
+Pieza: Refuerzo_C_I
+Redondeo Refuerzo_C_I: total 46/46 [todas], 1 pruebas
+Material Refuerzo_C_I dens=2.7 vol=98691.5907133465 masa=0.266467294926036 calculada=0.266467294926035
+Pieza: Casquillo_I_35
+Material Casquillo_I_35 dens=2.7 vol=1107.15222899653 masa=0.00298931101829062 calculada=0.00298931101829062
+Reutilizada sin cambios: Pasador_hueco_I_35
+Pieza: Casquillo_I_95
+Material Casquillo_I_95 dens=2.7 vol=1107.15222899653 masa=0.00298931101829064 calculada=0.00298931101829064
+Reutilizada sin cambios: Pasador_hueco_I_95
+Pieza: Casquillo_I_390
+Material Casquillo_I_390 dens=2.7 vol=1107.15222899655 masa=0.00298931101829067 calculada=0.00298931101829067
+Reutilizada sin cambios: Pasador_hueco_I_390
+Pieza: Casquillo_I_450
+Material Casquillo_I_450 dens=2.7 vol=1107.15222899655 masa=0.00298931101829067 calculada=0.00298931101829067
+Reutilizada sin cambios: Pasador_hueco_I_450
+Pieza: Refuerzo_C_D
+Redondeo Refuerzo_C_D: total 46/46 [todas], 1 pruebas
+Material Refuerzo_C_D dens=2.7 vol=98691.5907133465 masa=0.266467294926036 calculada=0.266467294926035
+Pieza: Casquillo_D_35
+Material Casquillo_D_35 dens=2.7 vol=1107.15222899653 masa=0.00298931101829063 calculada=0.00298931101829063
+Reutilizada sin cambios: Pasador_hueco_D_35
+Pieza: Casquillo_D_95
+Material Casquillo_D_95 dens=2.7 vol=1107.15222899653 masa=0.00298931101829064 calculada=0.00298931101829064
+Reutilizada sin cambios: Pasador_hueco_D_95
+Pieza: Casquillo_D_390
+Material Casquillo_D_390 dens=2.7 vol=1107.15222899655 masa=0.00298931101829067 calculada=0.00298931101829067
+Reutilizada sin cambios: Pasador_hueco_D_390
+Pieza: Casquillo_D_450
+Material Casquillo_D_450 dens=2.7 vol=1107.15222899655 masa=0.00298931101829067 calculada=0.00298931101829067
+Reutilizada sin cambios: Pasador_hueco_D_450
+Pieza: Interfaz_lumbar_aligerada
+Redondeo Interfaz_lumbar_aligerada: parcial 236/472 [grupo_mayor], 14 pruebas
+Material Interfaz_lumbar_aligerada dens=2.7 vol=119920.771498597 masa=0.323786083046213 calculada=0.323786083046212
+Pieza: Yugo_superior_I
+Redondeo Yugo_superior_I: total 248/248 [todas], 1 pruebas
+Material Yugo_superior_I dens=2.7 vol=48535.157276237 masa=0.13104492464584 calculada=0.13104492464584
+Pieza: Yugo_superior_D
+Redondeo Yugo_superior_D: total 248/248 [todas], 1 pruebas
+Material Yugo_superior_D dens=2.7 vol=48535.1572762367 masa=0.131044924645839 calculada=0.131044924645839
+Reutilizada sin cambios: Espaldera_HDPE_aligerada
+Pieza: REF_Funda_refuerzo_I
+Material REF_Funda_refuerzo_I dens=0.75 vol=14019.5799787886 masa=0.0105146849840915 calculada=0.0105146849840915
+Reutilizada sin cambios: REF_Acolchado_dorsal_I
+Pieza: REF_Funda_refuerzo_D
+Material REF_Funda_refuerzo_D dens=0.75 vol=14019.5799787887 masa=0.0105146849840915 calculada=0.0105146849840915
+Reutilizada sin cambios: REF_Acolchado_dorsal_D
+Reutilizada sin cambios: REF_Acolchado_lumbar
+Reutilizada sin cambios: REF_Cuna_textil_I
+Reutilizada sin cambios: REF_Cinta_carga_I
+Reutilizada sin cambios: REF_Hombrera_I
+Reutilizada sin cambios: REF_Cinta_hombrera_I
+Reutilizada sin cambios: REF_Regulador_hombro_I
+Reutilizada sin cambios: REF_Cuna_textil_D
+Reutilizada sin cambios: REF_Cinta_carga_D
+Reutilizada sin cambios: REF_Hombrera_D
+Reutilizada sin cambios: REF_Cinta_hombrera_D
+Reutilizada sin cambios: REF_Regulador_hombro_D
+Reutilizada sin cambios: REF_Cinta_estabilizadora_225
+Reutilizada sin cambios: REF_Hebilla_carga_225
+Reutilizada sin cambios: REF_Cinta_estabilizadora_350
+Reutilizada sin cambios: REF_Hebilla_carga_350
+Reutilizada sin cambios: REF_Ala_cinturon_I
+Reutilizada sin cambios: REF_Bisagra_textil_I
+Reutilizada sin cambios: REF_Cinta_cierre_cinturon_I
+Reutilizada sin cambios: REF_Ala_cinturon_D
+Reutilizada sin cambios: REF_Bisagra_textil_D
+Reutilizada sin cambios: REF_Cinta_cierre_cinturon_D
+Reutilizada sin cambios: REF_Hebilla_cinturon
+Reutilizada sin cambios: REF_Correa_pectoral
+Reutilizada sin cambios: REF_Hebilla_pectoral
+Reutilizada sin cambios: REF_Asa_sistema
+Reutilizada sin cambios: Tornillo_M5x55_ISO4762_A2_80
+Reutilizada sin cambios: Arandela_M5_16x3_GN6341
+Reutilizada sin cambios: Tuerca_M5_autofreno_metalica
+Interferencias registradas: 0
+Masa rigida y protectores: 1.4328 kg; presupuesto: 2.2028 kg; redondeos pendientes: 1
+ADVERTENCIA: CIERRE PENDIENTE. Redondeo pendiente o sin evidencia: Interfaz_lumbar_aligerada; estado=parcial Solo se 
+exportarǭ un borrador; no es una entrega aceptada y la corrida terminarǭ con error.
+Borrador con pendientes: no es una entrega aceptada. Revisar R1, R2, R3 y ERROR.txt.
+En C:\Users\nicol\OneDrive\Documentos\SEDAC_CAD\01_CAD\Prototipo_P2\P2_05_20261019\Soporte\Iteraciones\Optimizacion_Rea
+l_20261023_014225\Soporte\CONSTRUIR_OPT.ps1: 448 Car�cter: 35
++ ... .aceptado) {throw 'Borrador con pendientes: no es una entrega aceptad ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (Borrador con pe...R3 y ERROR.txt.:String) [], RuntimeException
+    + FullyQualifiedErrorId : Borrador con pendientes: no es una entrega aceptada. Revisar R1, R2, R3 y ERROR.txt.
+ 

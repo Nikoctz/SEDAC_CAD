@@ -1,0 +1,20 @@
+NOTA SOBRE EL CIERRE (añadida 2026-10-23 al revisar la coherencia del paquete)
+
+Los archivos CIERRE.json, ESTADO_BORRADOR.txt, R1_GENERACION.json, R2_COHERENCIA.json
+y R3_CRIBADO.json de ESTA carpeta Build/ corresponden al INTENTO 1 del cierre, ejecutado
+antes de corregir el nombre esperado del ensamblaje. Por eso R1 aparece como incumplido
+con los motivos "Archivo generado ausente o vacío: SEDAC_P2_05.iam / _REVISION.step":
+el módulo de cierre busca nombres fijos y esta corrida usa SEDAC_OPT_20261023.
+
+Ese es un FALSO NEGATIVO, no un fallo de generación: el ensamblaje y el STEP existen en
+esta misma carpeta (SEDAC_OPT_20261023.iam, SEDAC_OPT_20261023_REVISION.step).
+
+CIERRE DEFINITIVO: carpeta ../Cierre/
+  R1 Generación            cumple = True
+  R2 Coherencia            cumple = False  -> único motivo: redondeo del lumbar parcial (D-12)
+  R3 Cribado analítico     cumple = True
+  aceptado = False  -> estado: BORRADOR declarado, no entrega aceptada
+
+El intento fallido se conserva íntegro en ../Cierre_intento1_nombre/ para trazabilidad.
+Ningún artefacto de Build/ (IPT, IAM, STEP, masas, interferencias) fue modificado por
+esta corrección: solo se parametrizó el nombre esperado en la copia del módulo de cierre.

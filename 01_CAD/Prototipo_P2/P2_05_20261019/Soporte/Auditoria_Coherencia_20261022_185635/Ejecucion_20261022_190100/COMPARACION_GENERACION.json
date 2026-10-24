@@ -1,0 +1,17 @@
+{
+  "etiqueta": "hecho",
+  "archivos_generados": [
+    "BOM_FIJACIONES.csv",
+    "MODELO_API.json"
+  ],
+  "diferencias_modelo": [],
+  "diferencias_bom": [],
+  "igualdad_bytes": {
+    "BOM_FIJACIONES.csv": true,
+    "MODELO_API.json": true
+  },
+  "piezas": 54,
+  "ocurrencias": 83,
+  "uniones": 8,
+  "instrumentacion_sin_cambio_de_valores": true
+}

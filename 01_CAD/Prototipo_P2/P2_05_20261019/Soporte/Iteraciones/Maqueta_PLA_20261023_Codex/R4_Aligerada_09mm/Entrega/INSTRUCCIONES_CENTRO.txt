@@ -1,0 +1,31 @@
+SEDAC — MAQUETA PLA ALIGERADA DEL P2.04, REVISION R4
+
+Solicitud: revisar y, si el laminado es viable, imprimir UNA maqueta integrada en PLA.
+Se corrigio la maqueta para quitar material visible y conservar el concepto del P2.04.
+
+Archivos alternativos de LA MISMA pieza:
+- SEDAC_P204_MAQUETA_ALIGERADA_09mm.3mf: unidad milimetro incluida.
+- SEDAC_P204_MAQUETA_ALIGERADA_09mm.stl: importar en MILIMETROS, al 100 %.
+Elegir uno de los formatos: no son dos piezas distintas.
+
+Tamano aproximado X x Y x altura Z: 32.0 x 18.2 x 48.0 mm.
+Limite comunicado: 40 x 40 x 70 mm, incluyendo soportes y adhesion.
+
+Orientacion propuesta: espalda vertical y borde inferior sobre la cama.
+REVISAR SOPORTES BAJO AMBAS CUNAS, VENTANAS Y PUENTES DEL PANEL.
+Revisar que puedan retirarse sin romper las paredes o las uniones.
+
+Pared nominal de panel y canales: 0,9 mm. Cunas: 1,6 mm de espesor,
+con ventanas y tiras laterales de 2,8 mm. Se ha considerado una boquilla
+de 0,4 mm solo como hipotesis. Comprobar trayectorias y ancho de extrusion
+con el perfil real; no se presupone compatibilidad con cualquier boquilla.
+
+Un brim de 3 mm es una propuesta. Revisar la envolvente final de modelo,
+soportes y adhesion dentro de 40 x 40 x 70 mm.
+
+La malla esta cerrada y tiene un componente. PENDIENTE DE COMPROBACION
+EN LAMINADOR con la maquina real. No se ha ensayado su impresion.
+El 3MF es de modelo, sin perfil de impresora ni G-code.
+
+Es una maqueta visual. No valida flexibilidad ni resistencia del producto.
+Las cunas textiles y el panel HDPE del concepto se representan aqui en PLA.

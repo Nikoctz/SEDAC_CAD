@@ -1,0 +1,6 @@
+﻿variante,B,D,t,t_min,area_mm2,I_mm4,Z_mm3,Ix_mm4,J_mm4,masa_canal_kg,masa_2canales_kg,delta_vs_base_g,minimo_margen,cumple_cribado,sigma_vm,flecha_mm,giro_grados,margen_pandeo_local,margen_pandeo_lt,margen_aplastamiento_ala,margen_arrancamiento,margen_pasador,margen_M5,margen_casquillo,fallos
+V0_base_P2_05,32,24,3.0,2.8,208.32,11858.0,752.3,33029.8,544.4,0.269983,0.539965,0.0,2.2471,True,106.8,0.867,3.176,2.2471,26.6094,6.3543,5.1108,2.9692,2.5512,3.5942,
+V1_30x26x2.5,30,26,2.5,2.3,178.02,12274.6,726.8,26135.5,313.9,0.230714,0.461428,-78.54,2.107,False,113.91,0.837,5.508,2.107,17.9736,5.2196,4.1981,2.9692,2.5512,3.5942,"Refuerzo combinado, pared minima, Pandeo local de alas"
+V2_32x26x2.5,32,26,2.5,2.3,182.62,12560.8,735.0,30370.0,322.0,0.236676,0.473351,-66.61,2.1487,False,111.69,0.818,5.37,2.1487,19.6238,5.2196,4.1981,2.9692,2.5512,3.5942,"Refuerzo combinado, pared minima, Pandeo local de alas"
+V3_32x24x2.5,32,24,2.5,2.3,173.42,10049.9,630.4,28337.1,305.8,0.224752,0.449505,-90.46,1.8717,False,128.23,1.023,5.654,1.8717,18.472,5.2196,4.1981,2.9692,2.5512,3.5942,"Refuerzo combinado, pared minima, Pandeo local de alas"
+V4_32x28x2.5,32,28,2.5,2.3,191.82,15430.0,846.8,32402.8,338.2,0.248599,0.497197,-42.77,2.2273,True,98.47,0.666,5.112,2.2273,20.7742,5.2196,4.1981,2.9692,2.5512,3.5942,

@@ -89,8 +89,50 @@ check('Puente inferior de cuna',Sy/cuna_sigma,'Ranura horizontal52x8 con puente 
 joint_residual=.75*f0-.8*R
 delta_bound=M0*L*L/(9*math.sqrt(3)*E*S['I'])+Q*L**3/(48*E*S['I'])
 twist=T*L/(GG*S['J'])*180/math.pi
+# Trazabilidad añadida el 2026-10-22: describe las entradas; no cambia las ecuaciones.
+def dato_carga(valor, unidad, origen, etiqueta):
+    return dict(valor=valor, unidad=unidad, origen=origen, etiqueta=etiqueta)
+
+situacion_de_carga = dict(
+    modelo=dict(
+        valor='Canal abierto con apoyos ideales efectivos de hombro y cinturón; lado más cargado. Sin contacto textil, abrasión, simulación dinámica ni validación de uso.',
+        origen='Modelo analítico documentado en este script y LEEME_P2_05.md', etiqueta='hipótesis'),
+    envolvente=dict(
+        valor='M(x)=M0*max(1-x/L,x/L)+Q*x*(L-x)/L',
+        interpretacion='Momento único aplicado alternativamente en uno u otro extremo y fuerza horizontal puntual de posición variable en la luz. La envolvente reúne casos alternativos; no es un único diagrama de cargas simultáneas.',
+        origen='Variable moment de este script', etiqueta='cálculo'),
+    magnitudes={
+        'masa_total': dato_carga(C['masa_total_kg'], 'kg', 'PARAMETROS_P2_05.json:cargas.masa_total_kg; incluye el sistema auxiliar según el informe heredado', 'hipótesis'),
+        'gravedad': dato_carga(C['g'], 'm/s²', 'PARAMETROS_P2_05.json:cargas.g', 'supuesto'),
+        'factor_vertical': dato_carga(C['factor_vertical'], 'g totales', 'PARAMETROS_P2_05.json:cargas.factor_vertical; no se añade otro 1g', 'hipótesis'),
+        'factor_horizontal': dato_carga(C['factor_horizontal'], 'g', 'PARAMETROS_P2_05.json:cargas.factor_horizontal', 'hipótesis'),
+        'fuerza_vertical_total': dato_carga(Fv, 'N', 'masa_total_kg*g*factor_vertical', 'cálculo'),
+        'fuerza_horizontal_total': dato_carga(Fh, 'N', 'masa_total_kg*g*factor_horizontal', 'cálculo'),
+        'fraccion_lado_mas_cargado': dato_carga(C['fraccion_lado'], 'fracción', 'PARAMETROS_P2_05.json:cargas.fraccion_lado; reparto nominal 70/30 no medido', 'hipótesis'),
+        'fraccion_otro_lado': dato_carga(1-C['fraccion_lado'], 'fracción', '1-fraccion_lado; complemento del reparto supuesto', 'cálculo'),
+        'N_lado': dato_carga(N, 'N', 'Fv*fraccion_lado', 'cálculo'),
+        'Q_lado': dato_carga(Q, 'N', 'Fh*fraccion_lado', 'cálculo'),
+        'apoyo_hombro_y': dato_carga(G['apoyo_hombro_y'], 'mm', 'PARAMETROS_P2_05.json:geometria.apoyo_hombro_y; efectividad no confirmada físicamente', 'hipótesis'),
+        'apoyo_cinturon_y': dato_carga(G['apoyo_cinturon_y'], 'mm', 'PARAMETROS_P2_05.json:geometria.apoyo_cinturon_y; efectividad no confirmada físicamente', 'hipótesis'),
+        'L': dato_carga(L, 'mm', 'apoyo_hombro_y-apoyo_cinturon_y', 'cálculo'),
+        'excentricidad': dato_carga(e, 'mm', 'PARAMETROS_P2_05.json:cargas.excentricidad_mm', 'hipótesis'),
+        'M0': dato_carga(M0, 'N·mm', 'N_lado*excentricidad_mm', 'cálculo'),
+        'Mmax': dato_carga(mmax, 'N·mm', 'Máximo de la envolvente moment sobre la malla x original', 'cálculo'),
+        'precarga': dato_carga(f0, 'N', 'PARAMETROS_P2_05.json:cargas.precarga_estudio_N; no es un par de montaje', 'hipótesis'),
+        'angulo_eslinga': dato_carga(C['angulo_eslinga_grados'], 'grados', 'PARAMETROS_P2_05.json:cargas.angulo_eslinga_grados', 'hipótesis'),
+        'margen_objetivo': dato_carga(C['margen_objetivo'], 'adimensional', 'PARAMETROS_P2_05.json:cargas.margen_objetivo; umbral elegido, no validado', 'hipótesis'),
+        'flecha_limite': dato_carga(C['flecha_limite_mm'], 'mm', 'PARAMETROS_P2_05.json:cargas.flecha_limite_mm', 'supuesto'),
+        'K_borde': dato_carga(C['K_borde'], 'adimensional', 'PARAMETROS_P2_05.json:cargas.K_borde', 'supuesto'),
+        'factor_palanca_union': dato_carga(1.5, 'adimensional', 'Constante existente en R=1.5*reaction', 'supuesto'),
+        'factor_puente_anclaje': dato_carga(1.5, 'adimensional', 'Constante existente en sbri=1.5*bridge_M*(...)', 'supuesto'),
+        'factor_puente_cuna': dato_carga(1.5, 'adimensional', 'Constante existente en cuna_sigma=1.5*(Tstrap*52/4)*(...)', 'supuesto'),
+        'E_aluminio': dato_carga(E, 'MPa', 'PARAMETROS_P2_05.json:materiales.E_6061_MPa; condicionado al material real', 'supuesto'),
+        'Sy_aluminio': dato_carga(Sy, 'MPa', 'PARAMETROS_P2_05.json:materiales.Sy_6061_MPa; condicionado al material real', 'supuesto')
+    },
+    pendientes=['Confirmar apoyos y transmisión real de cargas', 'Medir masa y centro de gravedad', 'Clasificar contacto A/B/C (D-12)', 'Definir textiles y ensayos; no se atribuye resistencia al CAD textil'])
+
 result=dict(version='P2.05',alcance='Prediseno analitico condicionado; NO validacion del conjunto',
-  entrada=P,seccion_minima=S,Fv_N=Fv,Fh_N=Fh,N_lado_N=N,Q_lado_N=Q,L_mm=L,M0_Nmm=M0,
+  situacion_de_carga=situacion_de_carga,entrada=P,seccion_minima=S,Fv_N=Fv,Fh_N=Fh,N_lado_N=N,Q_lado_N=Q,L_mm=L,M0_Nmm=M0,
   Mmax_Nmm=mmax,pos_Mmax_mm=xmax,sigma_VM_MPa=vm,flecha_envolvente_mm=delta_bound,
   giro_torsion_ideal_grados=twist,cierre_residual_junta_N=joint_residual,
   cortante_union_N=V,traccion_externa_union_N=R,fuerza_max_perno_N=fb,pasador_sigma_VM_MPa=pin_vm,
@@ -104,5 +146,5 @@ with (O/'COMPARACION_SECCIONES.csv').open('w',newline='',encoding='utf-8-sig') a
     for b,d,t in [(30,20,2.5),(30,22,3),(30,24,3),(30,26,3),(32,24,3),(35,25,3)]:
         ss=section(b,d,t);nn=Sy/(N/ss['A']+C['K_borde']*mmax/ss['Z'])
         w.writerow([b,d,t,2*ss['A']*G['alto_refuerzo']*2.7e-6,nn,'cribado, sin ranuras ni carga lateral'])
-print(json.dumps({k:result[k] for k in ['minimo_margen','cumple_cribado','flecha_envolvente_mm','giro_torsion_ideal_grados','cierre_residual_junta_N']},indent=2))
+print(json.dumps({k:result[k] for k in ['minimo_margen','cumple_cribado','flecha_envolvente_mm','giro_torsion_ideal_grados','cierre_residual_junta_N','situacion_de_carga']},indent=2))
 for q in checks: print(q['nombre'],round(q['margen'],3),q['cumple'])

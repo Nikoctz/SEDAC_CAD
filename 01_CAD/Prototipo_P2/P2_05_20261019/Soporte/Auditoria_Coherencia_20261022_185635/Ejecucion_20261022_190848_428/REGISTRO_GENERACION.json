@@ -1,0 +1,16 @@
+{
+  "etiqueta": "hecho",
+  "fecha": "2026-10-22T19:08:48.911655-03:00",
+  "comando": [
+    "C:\\Users\\nicol\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "-B",
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\generar_p2_05.py",
+    "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Auditoria_Coherencia_20261022_185635\\Ejecucion_20261022_190848_428\\Control_generacion_JSON"
+  ],
+  "powershell_invocador": "7.6.5",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "retorno": 0,
+  "stdout": "{\"piezas\": 54, \"ocurrencias\": 83, \"uniones\": 8}\n",
+  "stderr": "",
+  "alcance": "Solo descripción JSON y CSV; no CAD nativo ni Inventor"
+}

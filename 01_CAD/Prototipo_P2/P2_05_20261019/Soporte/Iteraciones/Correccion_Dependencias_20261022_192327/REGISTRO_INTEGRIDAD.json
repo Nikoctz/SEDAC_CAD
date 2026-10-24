@@ -1,0 +1,46 @@
+{
+  "etiqueta": "hecho",
+  "fecha": "2026-10-22T19:26:35.043249-03:00",
+  "archivos_previos": 4725,
+  "cambios": [
+    "01_CAD/Prototipo_P2/P2_05_20261019/LEEME_P2_05.md",
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/generar_p2_05.py",
+    "CHANGELOG_SEDAC.md",
+    "ESTADO_ACTUAL.md"
+  ],
+  "nuevos_fuera_de_carpeta": [],
+  "borrados": [],
+  "copia_anterior_coincide": true,
+  "documentacion_solo_inserciones": true,
+  "CAD_comparados": 818,
+  "CAD_modificados": [],
+  "auditoria_anterior_comparados": 47,
+  "auditoria_anterior_modificados": [],
+  "evidencia_ajena_comparados": 213,
+  "evidencia_ajena_modificados": [],
+  "corrida_historica_comparados": 65,
+  "corrida_historica_modificados": [],
+  "fuentes_protegidas_sin_cambios": {
+    "01_CAD/Prototipo_P2/P2_05_20261019/PARAMETROS_P2_05.json": true,
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/calcular_p2_05.py": true,
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/CONSTRUIR_P2_05.ps1": true,
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/cierre_p2_05.ps1": true,
+    "DECISIONES.md": true
+  },
+  "all_png_solo_metadatos": {
+    "antes": {
+      "bytes": 0,
+      "mtime_ns": 1792439422410773000
+    },
+    "despues": {
+      "bytes": 0,
+      "mtime_ns": 1792439422410773000
+    },
+    "intacto": true
+  },
+  "generador_modificado_ejecutado": false,
+  "pruebas_implementacion_ejecutadas": false,
+  "inventor_ejecutado": false,
+  "commit": false,
+  "alcance": "Cotejo de preservacion; no comprueba comportamiento del generador nuevo"
+}

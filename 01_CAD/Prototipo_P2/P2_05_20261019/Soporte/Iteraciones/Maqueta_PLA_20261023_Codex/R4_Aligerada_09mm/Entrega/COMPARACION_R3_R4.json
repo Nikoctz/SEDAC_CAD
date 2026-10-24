@@ -1,0 +1,19 @@
+{
+  "base": "R3_Cunas_16mm",
+  "revision": "R4_Aligerada_09mm",
+  "volumen_R3_mm3": 2962.557964911966,
+  "volumen_R4_mm3": 1918.4515525411387,
+  "volumen_retirado_mm3": 1044.1064123708272,
+  "reduccion_volumen_solido_porcentaje": 35.24340872776318,
+  "interpretacion": "Reduccion geometrica de la maqueta integrada, no reduccion de masa del producto real ni consumo de filamento laminado.",
+  "dimensiones_R4_impresion_mm": [
+    32.0,
+    18.198104858398438,
+    48.0
+  ],
+  "panel_mm": 0.9,
+  "pared_canal_mm": 0.9,
+  "cuna_mm": 1.6,
+  "flexibilidad": "No ensayada; la maqueta PLA no reproduce la flexibilidad del HDPE y los textiles del producto.",
+  "laminado": "PENDIENTE"
+}

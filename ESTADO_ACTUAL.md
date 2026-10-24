@@ -1,7 +1,26 @@
 # ESTADO ACTUAL — SEDAC_CAD
 
-Última actualización: 2026-10-19
+Última actualización: 2026-10-22
 Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
+
+## Seguimiento de coherencia y dependencias — 2026-10-22, 19:23
+
+- **hecho:** la auditoría de parámetros/cálculo/descripción del modelo sí se realizó después del encargo de cierre: 13 hallazgos propuestos, con regeneración descriptiva idéntica antes de esta corrección. Ver `P2_05_20261019/LEEME_P2_05.md` §11. Las menciones previas a «revisión no ejecutada» quedan como historial del encargo anterior.
+- **hecho de implementación:** primera corrección del generador: dependencias de mejillas/pasador (H03) y referencias de capas/cortes (parte de H13), con nominales conservados en el JSON. Fuente anterior y diff guardados en `01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Iteraciones/Correccion_Dependencias_20261022_192327/`. No se ejecutó el generador modificado, Inventor ni pruebas. No se declara invariancia comprobada después de esta edición.
+- **pendiente:** verificar las salidas y variaciones; resolver H02/H04/H05, el espesor local de cuna y los supuestos físicos. P2.04 continúa como entrega vigente y P2.05 sigue abierta. No hay commit nuevo.
+
+## Actualización de soporte y documentación — 2026-10-22
+
+- **hecho:** P2.04 sigue siendo la entrega vigente; P2.05 sigue abierta. No se ejecutó Inventor ni una nueva corrida del constructor. La evidencia `Nueva_20261019_060807` se conserva intacta: lumbar parcial 236/472, `ERROR.txt` y sin `ESTADO_OK.txt`.
+- **hecho:** se corrigieron con fe de erratas fechada los dos informes P2.04 (original y copia heredada). El redondeo lumbar fue solicitado y no aplicado; el radio de 0,5 mm sigue como propuesta sin ensayo de desgaste (**supuesto**). La fe de erratas cambia la huella del informe: manifiesto y ZIP históricos se conservan, con esta excepción documental explícita; no se reemitió la entrega.
+- **hecho de implementación:** el soporte P2.05 separa generación R1, coherencia R2 y cribado R3 (D-16). La opción de pendientes ya no produce aceptación; faltantes/duplicados/registros inválidos bloquean, y se consulta `cumple_cribado` antes de cargar Inventor. Una futura ejecución usará una carpeta nueva y una copia de sus resultados analíticos en esa salida.
+- **hecho verificado:** 16 casos y 46 aserciones del banco sintético pasan tanto en PowerShell 7.6.5 como en Windows PowerShell 5.1.26100.9711. Son **casos sintéticos de prueba; no son evidencia de entrega**. El cálculo se comparó en memoria: las 15 verificaciones y los resultados anteriores permanecen idénticos; se añadió trazabilidad de 26 magnitudes al script y a su `print`. No se regeneró el JSON histórico de `Calculos/`.
+- **hecho de Git:** hay cambios de soporte/documentación y pruebas nuevos, sin commit. `all.png` es la excepción autorizada: untracked, 0 bytes, sin referencias al iniciar el encargo; quedó excluido e intacto. Su borrado queda como decisión del responsable.
+- **pendiente:** corrida nativa futura y validación del comportamiento físico; mediciones, clasificación A/B/C, textiles y ensayos. Las mediciones bloquean cerrar el ajuste físico, pero no impiden el trabajo de soporte/documentación ya realizado.
+- **pendiente, no ejecutado en este encargo:** revisión posterior de parámetros ↔ cálculo ↔ modelo, cotas, tolerancias y bocetos. Lista en `P2_05_20261019/LEEME_P2_05.md` §10.4. Evidencias y comandos del encargo: `Soporte/Pruebas/cierre/LEEME.md` e `INFORME_CIERRE_20261022.md`.
+
+Las secciones históricas fechadas el 19/10 se conservan; para el cierre automático rige esta actualización.
+
 
 ## Versión vigente
 

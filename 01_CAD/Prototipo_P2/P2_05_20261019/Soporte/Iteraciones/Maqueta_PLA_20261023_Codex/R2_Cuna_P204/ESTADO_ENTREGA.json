@@ -1,0 +1,21 @@
+{
+  "fecha": "2026-10-23",
+  "revision_propuesta": "R2_Cuna_P204",
+  "referencia": "P2.04 IAM indicado por usuario",
+  "modelo_original_y_manifiesto_intactos": true,
+  "solidos_nativos": 1,
+  "componentes_malla": 1,
+  "malla_cerrada": true,
+  "dimensiones_STL_mm": [
+    32.0,
+    17.998579025268555,
+    48.0
+  ],
+  "laminado": "PENDIENTE",
+  "soportes": "Revisar bajo cunas elevadas; perfil de maquina no proporcionado",
+  "zip_para_centro": "SEDAC_P204_CUNA_CURVA_PARA_CENTRO.zip",
+  "archivos_en_zip": 6,
+  "zip_integridad": "CRC y SHA256 verificados",
+  "IPT_editable": "Entrega/SEDAC_P204_MAQUETA_CUNA_CURVA.ipt",
+  "correccion": "Las cunas se recuperaron del contorno original, se omitieron bandeja plana y cartelas del primer borrador; no hay correas largas/arnes"
+}

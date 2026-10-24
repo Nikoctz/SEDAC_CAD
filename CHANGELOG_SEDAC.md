@@ -5,6 +5,22 @@ Formato: fecha · versión/ámbito · descripción · evidencia.
 
 ---
 
+## 2026-10-22
+
+**Corrección del cierre P2.05 — soporte y documentación, sin Inventor**
+
+- **hecho:** autorización explícita del responsable para este encargo y excepción únicamente para `all.png`; comprobado `git status` antes de editar. El archivo (0 bytes, sin referencias al inicio) quedó excluido e intacto; no se borró ni se incluyó en ningún commit.
+- **hecho:** fe de erratas en el informe P2.04 y su copia heredada. Se conserva la afirmación original como historial y se declara el redondeo lumbar solicitado/no aplicado, el E_FAIL y la propuesta de radio sin ensayo de desgaste. `LEEME_P2_05.md` aclara el estado parcial y D-12. La modificación documental cambia la huella del informe frente al manifiesto/ZIP históricos; estos no se reemitieron y la excepción queda registrada.
+- **hecho:** se añadió `Soporte/cierre_p2_05.ps1` y se integró en `CONSTRUIR_P2_05.ps1`: evidencias completas por pieza, diagnóstico de reutilización sin registro, comprobación de `cumple_cribado`, resultados R1/R2/R3 y bloqueo de aceptación con pendientes. `AceptarPendientes` solo permite borrador con aviso, error y salida no correcta. No se permite sobrescribir una salida existente.
+- **hecho:** `calcular_p2_05.py` añade únicamente `situacion_de_carga` al resultado y al `print`, con etiquetas y origen por magnitud; sin cambiar ecuaciones, parámetros o valores. Los resultados numéricos anteriores se verificaron idénticos en memoria, omitiendo las escrituras del script.
+- **hecho:** banco en `Soporte/Pruebas/cierre/`: 16 casos, 46 aserciones, cero fallos en PowerShell 7.6.5 y en Windows PowerShell 5.1.26100.9711. Son **casos sintéticos de prueba; no son evidencia de entrega**. Se conserva el primer fallo del preparador B y su corrección, sin borrar corridas.
+- **hecho:** D-16 registra el cierre de tres resultados, su argumento y reversibilidad. Estado actual y pendientes actualizados. No se ejecutó Inventor ni el constructor completo; no hubo commit, push ni borrados. No se auditó ahora la correspondencia posterior de parámetros/cálculo/modelo.
+- **Evidencia:** `01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Pruebas/cierre/LEEME.md`, `INFORME_CIERRE_20261022.md`, resultados de pruebas e integridad.
+- **hecho (2026-10-22):** auditoría de coherencia P2.05, 88 nodos/78 hojas; 13 hallazgos propuestos (10 I/3 C), regeneración JSON/BOM idéntica en Windows PowerShell 5.1, sin correcciones de fuentes, CAD ni commit. Evidencia: `01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Auditoria_Coherencia_20261022_185635/AUDITORIA.md`.
+- **hecho (2026-10-22):** primera corrección de dependencias del generador P2.05 (H03 y parte de H13), conservando parámetros y ecuaciones; sin ejecución del generador modificado, pruebas, CAD ni commit. Evidencia: `01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Iteraciones/Correccion_Dependencias_20261022_192327/INFORME.md`; comparación posterior pendiente.
+
+---
+
 ## 2026-10-19
 
 **Notion: el desfase no estaba resuelto — dos páginas más, corregido un informe propio**

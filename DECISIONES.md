@@ -106,3 +106,19 @@ Secuencia de validación en cuatro fases: 0) preparación técnica y análisis d
 *Argumento:* solo restringe (no permite declarar más de lo ensayado) y ordena el gasto hacia lo barato y productivo —banco y carga inerte—, que es justo la «validación técnica» que pide la Etapa 3. Encaja con el calendario: dic 2026 – ene 2027 es validación **técnica**, no pilotaje humano.
 *Distinción de etapas:* la **Etapa 3 de Despega (dic 2026 – ene 2027)** exige validación técnica y comercial; el **piloto de funcionalidad con actores externos o usuarios reales** es un hito del **Programa de Preincubación (abril–diciembre 2027)** — bases, apartado 9.c. Queda `pendiente` confirmar con la organización qué evidencia admite cada etapa.
 P2.04 y P2.05 no están liberados para ensayos con personas. Ningún avance de fase se presumirá a partir de resultados solo analíticos o de CAD.
+
+
+---
+
+**D-16 — Cierre documental mediante tres resultados independientes**
+Fecha: 2026-10-22 · Estado: **adoptada para soporte y documentación**, conforme al encargo explícito del responsable.
+
+**hecho de implementación:** separar R1 (generación), R2 (coherencia de evidencias) y R3 (cribado analítico condicionado). Solo su conjunción permite el sello de cierre; ninguno acredita comportamiento físico, desgaste, ergonomía, fatiga o seguridad. El cierre parcial mantiene borrador y error; `AceptarPendientes` solo permite exportar ese borrador, nunca aceptarlo. La falta de registro de una pieza solicitada es ausencia de evidencia, no cero pendientes.
+
+*Argumento:* un proceso que termina o un registro inexistente no demuestran cumplimiento. La separación hace visibles generación, coherencia y cálculo sin repetir la contradicción de P2.04. Se conserva el bloqueo de D-12; no se clasifica el contacto A/B/C ni se valida el radio de 0,5 mm. La decisión no modifica las hipótesis ni los valores del prediseño.
+
+**hecho de implementación:** `cierre_p2_05.ps1` contiene la decisión común usada por constructor y pruebas. Las salidas R1/R2/R3, `CIERRE.json`, borrador y diagnóstico conservan valores derivados de archivos. La tolerancia 1e-9 es aritmética, para comparar sumas serializadas; no es una tolerancia física. Los nombres de estado y esta tolerancia administrativa quedan documentados para revisión del responsable, sin atribuirles validación del producto.
+
+*Reversibilidad:* la política de soporte y los nombres pueden sustituirse en una revisión autorizada, conservando los registros anteriores. Esta decisión no obliga a editar ni regenerar CAD y no autoriza borrados, commits ni ensayos.
+
+**hecho verificado:** banco sintético A–D y controles adicionales aprobados en PowerShell 7 y 5.1; no se ejecutó Inventor. Evidencia: `01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Pruebas/cierre/LEEME.md` y sus resultados fechados. La corrida nativa nueva y las mediciones siguen **pendientes**.

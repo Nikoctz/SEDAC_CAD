@@ -1,0 +1,70 @@
+﻿casos sintéticos de prueba; no son evidencia de entrega
+no es una entrega aceptada
+casos sintéticos de prueba; no son evidencia de entrega
+hecho: cierre documental y analítico de P2.05
+hecho: R1 · Generación terminada; cumple=False
+  - Archivo generado ausente o vacío: Refuerzo_C_I.ipt
+  - Archivo generado ausente o vacío: Casquillo_I_35.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_I_35.ipt
+  - Archivo generado ausente o vacío: Casquillo_I_95.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_I_95.ipt
+  - Archivo generado ausente o vacío: Casquillo_I_390.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_I_390.ipt
+  - Archivo generado ausente o vacío: Casquillo_I_450.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_I_450.ipt
+  - Archivo generado ausente o vacío: Refuerzo_C_D.ipt
+  - Archivo generado ausente o vacío: Casquillo_D_35.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_D_35.ipt
+  - Archivo generado ausente o vacío: Casquillo_D_95.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_D_95.ipt
+  - Archivo generado ausente o vacío: Casquillo_D_390.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_D_390.ipt
+  - Archivo generado ausente o vacío: Casquillo_D_450.ipt
+  - Archivo generado ausente o vacío: Pasador_hueco_D_450.ipt
+  - Archivo generado ausente o vacío: Interfaz_lumbar_aligerada.ipt
+  - Archivo generado ausente o vacío: Yugo_superior_I.ipt
+  - Archivo generado ausente o vacío: Yugo_superior_D.ipt
+  - Archivo generado ausente o vacío: Espaldera_HDPE_aligerada.ipt
+  - Archivo generado ausente o vacío: REF_Funda_refuerzo_I.ipt
+  - Archivo generado ausente o vacío: REF_Acolchado_dorsal_I.ipt
+  - Archivo generado ausente o vacío: REF_Funda_refuerzo_D.ipt
+  - Archivo generado ausente o vacío: REF_Acolchado_dorsal_D.ipt
+  - Archivo generado ausente o vacío: REF_Acolchado_lumbar.ipt
+  - Archivo generado ausente o vacío: REF_Cuna_textil_I.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_carga_I.ipt
+  - Archivo generado ausente o vacío: REF_Hombrera_I.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_hombrera_I.ipt
+  - Archivo generado ausente o vacío: REF_Regulador_hombro_I.ipt
+  - Archivo generado ausente o vacío: REF_Cuna_textil_D.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_carga_D.ipt
+  - Archivo generado ausente o vacío: REF_Hombrera_D.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_hombrera_D.ipt
+  - Archivo generado ausente o vacío: REF_Regulador_hombro_D.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_estabilizadora_225.ipt
+  - Archivo generado ausente o vacío: REF_Hebilla_carga_225.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_estabilizadora_350.ipt
+  - Archivo generado ausente o vacío: REF_Hebilla_carga_350.ipt
+  - Archivo generado ausente o vacío: REF_Ala_cinturon_I.ipt
+  - Archivo generado ausente o vacío: REF_Bisagra_textil_I.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_cierre_cinturon_I.ipt
+  - Archivo generado ausente o vacío: REF_Ala_cinturon_D.ipt
+  - Archivo generado ausente o vacío: REF_Bisagra_textil_D.ipt
+  - Archivo generado ausente o vacío: REF_Cinta_cierre_cinturon_D.ipt
+  - Archivo generado ausente o vacío: REF_Hebilla_cinturon.ipt
+  - Archivo generado ausente o vacío: REF_Correa_pectoral.ipt
+  - Archivo generado ausente o vacío: REF_Hebilla_pectoral.ipt
+  - Archivo generado ausente o vacío: REF_Asa_sistema.ipt
+  - Archivo generado ausente o vacío: Tornillo_M5x55_ISO4762_A2_80.ipt
+  - Archivo generado ausente o vacío: Arandela_M5_16x3_GN6341.ipt
+  - Archivo generado ausente o vacío: Tuerca_M5_autofreno_metalica.ipt
+  - Archivo generado ausente o vacío: SEDAC_P2_05.iam
+  - Archivo generado ausente o vacío: SEDAC_P2_05_REVISION.step
+  - Archivo generado ausente o vacío: VISTA_FRENTE.png
+  - Archivo generado ausente o vacío: VISTA_ESPALDA.png
+  - Archivo generado ausente o vacío: VISTA_ESTRUCTURA.png
+hecho: R2 · Coherencia comprobada; cumple=True
+cálculo: R3 · Cribado analítico cumplido; cumple=True
+Evidencia: R1_GENERACION.json, R2_COHERENCIA.json, R3_CRIBADO.json y CIERRE.json.
+Cribado condicionado; no validación de uso.
+Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad).
+pendiente: clasificación funcional A/B/C (D-12); radio de 0,5 mm propuesto sin ensayo de desgaste.

@@ -1,0 +1,10 @@
+﻿no es una entrega aceptada
+hecho: cierre documental y analÃ­tico de P2.05
+hecho: R1 Â· GeneraciÃ³n terminada; cumple=True
+hecho: R2 Â· Coherencia comprobada; cumple=False
+  - Redondeo pendiente o sin evidencia: Interfaz_lumbar_aligerada; estado=parcial
+cÃ¡lculo: R3 Â· Cribado analÃ­tico cumplido; cumple=True
+Evidencia: R1_GENERACION.json, R2_COHERENCIA.json, R3_CRIBADO.json y CIERRE.json.
+Cribado condicionado; no validaciÃ³n de uso.
+Ninguno de los tres acredita el comportamiento fÃ­sico del producto (textil, contacto, abrasiÃ³n, ergonomÃ­a, fatiga, seguridad).
+pendiente: clasificaciÃ³n funcional A/B/C (D-12); radio de 0,5 mm propuesto sin ensayo de desgaste.

@@ -1,14 +1,28 @@
 ﻿param([string]$Salida='', [string]$Desde='', [string]$Proyecto='', [switch]$AceptarPendientes)
 $ErrorActionPreference='Stop'
 if($Proyecto){$base=$Proyecto}elseif($PSScriptRoot){$base=Split-Path -Parent $PSScriptRoot}else{throw 'Indicar -Proyecto con la carpeta P2.05'}
-if (-not $Salida) {$Salida=Join-Path $base ('Soporte\Iteraciones\Nueva_'+(Get-Date -Format 'yyyyMMdd_HHmmss'))}
-New-Item -ItemType Directory -Path $Salida -Force | Out-Null
+. (Join-Path $base 'Soporte/cierre_p2_05.ps1')
+if (-not $Salida) {$Salida=Join-Path $base ('Soporte\Iteraciones\Nueva_'+(Get-Date -Format 'yyyyMMdd_HHmmss_fff'))}
+if (Test-Path -LiteralPath $Salida) {throw 'La salida ya existe. Usar una carpeta nueva; no se sobrescriben entregas ni evidencias.'}
+New-Item -ItemType Directory -Path $Salida | Out-Null
+$app=$null;$oldSilent=$null;$stage='Generar modelo y cálculo'
+$rutaCribado=Join-Path $Salida 'RESULTADOS_PREDISENO.json'
+try {
 $python='C:\Users\nicol\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
 & $python (Join-Path $base 'Soporte\generar_p2_05.py') $Salida
 if ($LASTEXITCODE -ne 0) {throw 'Error al generar la geometria (MODELO_API.json)'}
 & $python (Join-Path $base 'Soporte\calcular_p2_05.py')
 if ($LASTEXITCODE -ne 0) {throw 'Error en el calculo de prediseno (revisar Calculos/RESULTADOS_PREDISENO.json)'}
 $data=Get-Content -Raw -LiteralPath (Join-Path $Salida 'MODELO_API.json') | ConvertFrom-Json
+$rutaCalculoFuente=Join-Path $base 'Calculos/RESULTADOS_PREDISENO.json'
+if (Test-Path -LiteralPath $rutaCalculoFuente) {Copy-Item -LiteralPath $rutaCalculoFuente -Destination $rutaCribado}
+$sedacControl=Get-SedacCribado $rutaCribado $data
+if (-not $sedacControl.cumple) {
+ $sedacCierre=Get-SedacCierre $Salida $rutaCribado
+ Write-SedacCierre $sedacCierre $Salida
+ throw ('Cribado condicionado incumplido o sin evidencia: '+($sedacControl.motivos -join '; '))
+}
+$stage='Construcción CAD'
 Add-Type -Path 'C:\Program Files\Autodesk\Inventor 2027\Bin\Autodesk.Inventor.Interop.dll'
 Add-Type -TypeDefinition @'
 using System;
@@ -141,7 +155,6 @@ if($Desde){
  foreach($mm in $pm){$priorMass[$mm.pieza]=$mm}
  $priorThreads=Get-Content -Raw -LiteralPath (Join-Path $Desde 'ROSCAS_NATIVAS.json') | ConvertFrom-Json
 }
-try {
  foreach ($p in $data.parts) {
   if($priorParts.ContainsKey($p.name) -and $priorMass.ContainsKey($p.name)){
    $oldjson=ConvertTo-Json -InputObject $priorParts[$p.name] -Depth 100 -Compress
@@ -151,7 +164,7 @@ try {
     $m=$priorMass[$p.name];$m.cantidad=@($data.instances | Where-Object {$_.part -eq $p.name}).Count
     $masses+=$m
     $threads+=@($priorThreads | Where-Object {$_.pieza -eq $p.name})
-    $rounding+=@($priorRounding | Where-Object {$_.pieza -eq $p.name})
+    if ($p.edge_radius) {$rounding+=Get-SedacRegistroReutilizado $p $priorRounding}
     Write-Output ('Reutilizada sin cambios: '+$p.name)
     continue
    }
@@ -389,9 +402,15 @@ try {
  }
  $sedacResumen | ConvertTo-Json -Depth 4 | Set-Content -LiteralPath (Join-Path $Salida 'RESUMEN_ENTREGA.json') -Encoding utf8
  Write-Output ('Masa rigida y protectores: '+[Math]::Round($sedacRigida,4)+' kg; presupuesto: '+[Math]::Round($sedacTotal,4)+' kg; redondeos pendientes: '+$sedacPend.Count)
- if ($sedacPend.Count -gt 0) {
-  $sedacMsg='REDONDEO PENDIENTE en '+(@($sedacPend | ForEach-Object {$_.pieza}) -join ', ')+'. Una entrega no puede declarar un redondeo que no se aplico (fue el problema de P2.04). Revisar REDONDEOS.json, que incluye las aristas problematicas.'
-  if ($AceptarPendientes) {Set-Content -LiteralPath (Join-Path $Salida 'AVISO_REDONDEOS.txt') -Value $sedacMsg -Encoding utf8;Write-Output ('AVISO: '+$sedacMsg)} else {throw $sedacMsg}
+ # R2 comprueba el conjunto esperado, no solo los registros presentes. R3 se relee de la copia de esta corrida.
+ $sedacCierre=Get-SedacCierre $Salida $rutaCribado
+ Write-SedacCierre $sedacCierre $Salida -SoloResultados
+ if (-not $sedacCierre.R2.cumple -or -not $sedacCierre.R3.cumple) {
+  $sedacMsg='CIERRE PENDIENTE. '+(@($sedacCierre.R2.motivos)+@($sedacCierre.R3.motivos) -join '; ')
+  if (Test-SedacExportacion $sedacCierre -AceptarPendientes:$AceptarPendientes) {
+   Set-Content -LiteralPath (Join-Path $Salida 'AVISO_CIERRE.txt') -Value $sedacMsg -Encoding UTF8
+   Write-Warning ($sedacMsg+' Solo se exportará un borrador; no es una entrega aceptada y la corrida terminará con error.')
+  } else {Write-SedacCierre $sedacCierre $Salida;throw $sedacMsg}
  }
  $assy.Activate()
  $assy.ObjectVisibility.AllWorkFeatures=$false; $app.ActiveView.DisplayMode=[Inventor.DisplayModeEnum]::kShadedWithEdgesRendering
@@ -422,14 +441,22 @@ try {
  $options.Value('ApplicationProtocolType')=3
  $medium=$app.TransientObjects.CreateDataMedium();$medium.FileName=Join-Path $Salida 'SEDAC_P2_05_REVISION.step'
  $translator.SaveCopyAs($assy,$context,$options,$medium)
- Set-Content -LiteralPath (Join-Path $Salida 'ESTADO_OK.txt') -Value ('Actualizacion correcta de '+$data.parts.Count+' piezas solidas y '+$data.instances.Count+' ocurrencias. STEP y vistas exportados. Textiles/hebillas: representacion provisional. Calculos son cribado condicionado; no validacion de uso.') -Encoding utf8
- Set-Content -LiteralPath (Join-Path $base 'ULTIMA_EJECUCION.txt') -Value $Salida -Encoding utf8
  $app.SilentOperation=$oldSilent
- Write-Output ('TERMINADO: '+$Salida)
+ $sedacCierre=Get-SedacCierre $Salida $rutaCribado
+ if ($sedacCierre.aceptado) {Set-Content -LiteralPath (Join-Path $base 'ULTIMA_EJECUCION.txt') -Value $Salida -Encoding UTF8}
+ Write-SedacCierre $sedacCierre $Salida
+ if (-not $sedacCierre.aceptado) {throw 'Borrador con pendientes: no es una entrega aceptada. Revisar R1, R2, R3 y ERROR.txt.'}
+ Write-Output ('TERMINADO: '+$Salida+'; cierre documental y cribado condicionado, sin validación de uso.')
 } catch {
- $app.SilentOperation=$oldSilent
- Set-Content -LiteralPath (Join-Path $Salida 'ERROR.txt') -Value ($stage+[Environment]::NewLine+$_.ToString()) -Encoding utf8
- throw
+ $sedacFallo=$_
+ if ($null -ne $app -and $null -ne $oldSilent) {try {$app.SilentOperation=$oldSilent} catch {Write-Warning 'No se pudo restaurar SilentOperation.'}}
+ # Conservar la excepción original y añadir el estado disponible sin conectarse a Inventor.
+ try {
+  $sedacCierre=Get-SedacCierre $Salida $rutaCribado
+  if (-not $sedacCierre.aceptado) {Write-SedacCierre $sedacCierre $Salida}
+ } catch {Write-Warning ('No se pudo completar el diagnóstico de cierre: '+$_.Exception.Message)}
+ Add-Content -LiteralPath (Join-Path $Salida 'ERROR.txt') -Value ($stage+[Environment]::NewLine+$sedacFallo.ToString()) -Encoding UTF8
+ throw $sedacFallo
 }
 
 

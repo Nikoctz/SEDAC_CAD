@@ -1,0 +1,31 @@
+{
+  "etiqueta": "hecho",
+  "campos": 88,
+  "hojas": 78,
+  "conectados_desde_p204": [
+    "alto_panel",
+    "ancho_cinta",
+    "ancho_cuna",
+    "ancho_panel",
+    "espesor_cinta",
+    "espesor_cuerpo_lumbar",
+    "espesor_mejilla",
+    "hueco_manguera"
+  ],
+  "nuevos_campos": [
+    "pasador_id",
+    "radio_redondeo_lumbar",
+    "radio_redondeo_refuerzo",
+    "radio_redondeo_yugo"
+  ],
+  "literales": 879,
+  "magnitudes_geometricas": 29,
+  "cotas_inventariadas": 1189,
+  "diferencias_modelo": 0,
+  "diferencias_bom": 0,
+  "hallazgos_por_severidad": {
+    "I": 10,
+    "C": 3
+  },
+  "inventor_ejecutado": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "archivo": "SEDAC_P204_MAQUETA_ALIGERADA_09mm.3mf",
+    "bytes": 24296,
+    "sha256": "de531e58b0e7a37fdf678306ce24aa663d08ba324204e4be980040f5ea4ab585"
+  },
+  {
+    "archivo": "SEDAC_P204_MAQUETA_ALIGERADA_09mm.stl",
+    "bytes": 129284,
+    "sha256": "e3b254ba4eff6426a51a22bf7328ef248ed25f0c1d26a748c4f1e8d1153b17b3"
+  },
+  {
+    "archivo": "INSTRUCCIONES_CENTRO.txt",
+    "bytes": 1595,
+    "sha256": "affe415a09dc68de9f1020830ca84db5814d3690f84a9947efc7505dfb01659c"
+  },
+  {
+    "archivo": "VISTA_MAQUETA.png",
+    "bytes": 667522,
+    "sha256": "625fbbe90a075dea4b7df1eb70980fd2f77cd5b480b052ffcaed5f3b8d3ab6fc"
+  },
+  {
+    "archivo": "VISTA_POSTERIOR.png",
+    "bytes": 586354,
+    "sha256": "6c644274792c10eeb172f7ac6c6e584da0d988257ebae8a911becb0b8d942290"
+  },
+  {
+    "archivo": "ORIENTACION_IMPRESION.png",
+    "bytes": 123690,
+    "sha256": "9763165a0f03c2bdbbd4010b71860e256cf0aee424671543698cad7c4305bcb6"
+  }
+]

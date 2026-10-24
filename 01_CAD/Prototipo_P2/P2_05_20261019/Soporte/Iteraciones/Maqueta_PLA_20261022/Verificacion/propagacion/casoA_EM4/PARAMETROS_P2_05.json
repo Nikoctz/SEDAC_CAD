@@ -1,0 +1,102 @@
+﻿{
+    "version":  "P2.05",
+    "fecha":  "2026-10-19",
+    "unidades":  "mm",
+    "estado":  "PREDISENO: geometria identica a P2.04. P2.05 solo reorganiza los parametros y hace que gobiernen la geometria. Las medidas de bomba y arnes siguen siendo provisionales.",
+    "origen":  {
+                   "version_base":  "P2.04",
+                   "carpeta_base":  "01_CAD/Prototipo_P2/P2_04_20261016",
+                   "regla":  "P2.05 no cambia ninguna cota respecto a la entrega P2.04. Solo se anade al JSON lo que estaba fijo en el generador y se separan las reservas de masa de la geometria."
+               },
+    "geometria":  {
+                      "alto_refuerzo":  480,
+                      "separacion_refuerzos":  190,
+                      "ancho_refuerzo":  32,
+                      "profundidad_refuerzo":  24,
+                      "pared_refuerzo":  3,
+                      "pared_minima":  2.8,
+                      "radio_raiz":  2,
+                      "ventanas_refuerzo_y":  [
+
+                                              ],
+                      "ancho_ventana_refuerzo":  10,
+                      "alto_ventana_refuerzo":  42,
+                      "radio_redondeo_refuerzo":  0.35,
+                      "apoyo_hombro_y":  435,
+                      "apoyo_cinturon_y":  55,
+                      "eje_pernos_z":  12,
+                      "pernos_y":  [
+                                       35,
+                                       95,
+                                       390,
+                                       450
+                                   ],
+                      "separacion_pernos":  60,
+                      "distancia_borde_perno":  12,
+                      "casquillo_od":  12.5,
+                      "pasador_od":  10,
+                      "pasador_id":  5.5,
+                      "taladro_union":  10.2,
+                      "espesor_anclaje":  6,
+                      "espesor_minimo_anclaje":  5.8,
+                      "espesor_cuerpo_lumbar":  3,
+                      "espesor_mejilla":  4,
+                      "radio_redondeo_lumbar":  0.5,
+                      "radio_redondeo_yugo":  0.5,
+                      "alto_puente_cinta":  18,
+                      "luz_puente_cinta":  52,
+                      "espesor_panel":  1,
+                      "ancho_panel":  270,
+                      "alto_panel":  472,
+                      "ancho_cuna":  100,
+                      "hueco_manguera":  104,
+                      "espesor_cinta":  1.5,
+                      "ancho_cinta":  50,
+                      "espesor_arandela":  3,
+                      "espesor_arandela_minimo":  2.9
+                  },
+    "reservas_masa":  {
+                          "masa_presupuesto_textil_kg":  0.65,
+                          "masa_reserva_kg":  0.12,
+                          "nota":  "Reservas de presupuesto, no geometria. Entran en el resumen de masa del sistema, no en el CAD ni en el calculo resistente."
+                      },
+    "referencias_historicas":  {
+                                   "p2_03_rigida_kg":  2.3331284134369037,
+                                   "p2_03_presupuesto_kg":  2.9131284134369038,
+                                   "nota":  "Datos de la entrega P2.03. Solo se usan para calcular el ahorro en el resumen generado."
+                               },
+    "cargas":  {
+                   "masa_total_kg":  25,
+                   "g":  9.81,
+                   "factor_vertical":  3,
+                   "factor_horizontal":  1,
+                   "fraccion_lado":  0.7,
+                   "excentricidad_mm":  107.5,
+                   "brazo_torsion_mm":  12,
+                   "K_borde":  1.25,
+                   "K_ventana":  3,
+                   "margen_objetivo":  2.2,
+                   "flecha_limite_mm":  5,
+                   "precarga_estudio_N":  2000,
+                   "angulo_eslinga_grados":  35,
+                   "nota":  "Hipotesis de prediseno, no medidas. Ver AGENTS.md y DECISIONES.md: margen, reparto 70/30, 3g/1g, excentricidad 107.5 mm y precarga 2000 N NO estan validados."
+               },
+    "materiales":  {
+                       "E_6061_MPa":  69000,
+                       "Sy_6061_MPa":  240,
+                       "Sy_perno_MPa":  600,
+                       "aluminio":  "6061-T6 mecanizado o extrusion certificada; sin doblado severo ni soldadura creditada",
+                       "panel":  "HDPE: solo distribucion de contacto, sin credito resistente",
+                       "textiles":  "Representacion provisional, conjunto cinta/costura/hebilla por seleccionar y ensayar"
+                   },
+    "parametrizacion":  {
+                            "pendiente":  [
+                                              {
+                                                  "campo":  "profundidad_cuna",
+                                                  "valor_nominal_mm":  130,
+                                                  "motivo":  "El contorno de la cuna esta fijo en generar_p2_05.py. No se encontro una correspondencia verificable entre 130 mm y el recorrido dibujado, asi que NO se conecta: conectarlo seria inventar geometria. Queda como dato de entrada sin reflejo en el CAD."
+                                              }
+                                          ],
+                            "fijo_en_generador":  "Contornos de textiles, radios de esquina de cada recorte y elementos normalizados M5 (tornillo, arandela, tuerca) siguen definidos en el generador. Solo gobiernan por JSON los campos listados en \u0027geometria\u0027."
+                        }
+}

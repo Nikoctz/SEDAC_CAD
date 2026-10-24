@@ -18,6 +18,9 @@ tools/inventor-mcp/
 *.key
 *.pem
 
+# === Dependencias de JavaScript/Node (landing-sedac) ===
+node_modules/
+
 # === Temporales ===
 *.tmp
 *.temp

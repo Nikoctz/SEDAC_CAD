@@ -1,0 +1,25 @@
+{
+  "version": "P2.05",
+  "fecha": "2026-10-19",
+  "masa_rigida_y_protectores_kg": 1.4420687346427812,
+  "masa_referencias_visuales_kg": 0.4811540518095093,
+  "masa_arnes_textiles_kg": 0.65,
+  "reserva_adicional_kg": 0.12,
+  "presupuesto_sistema_kg": 4.424137469285562,
+  "masa_sistema_medida_kg": null,
+  "P2_03_rigida_kg": 2.3331284134369037,
+  "P2_03_presupuesto_kg": 2.913128413436904,
+  "ahorro_rigido_porcentaje": 38.19162604434246,
+  "ahorro_presupuesto_porcentaje": 24.065526104529454,
+  "grupos": {
+    "estructura": 0.5687584194437078,
+    "uniones": 0.06752012718697468,
+    "anclajes": 0.5602290385369032,
+    "protecciones": 0.08075908399532589,
+    "fijaciones": 0.16480206547986972
+  },
+  "redondeos_pendientes": 0,
+  "interferencias": 0,
+  "generado_por": "CONSTRUIR_P2_05.ps1",
+  "nota": "Generado desde MASAS_CAD.json y PARAMETROS_P2_05.json. El presupuesto sustituye toda la geometria REF por la reserva textil; no suma dos veces los textiles y no incluye bomba ni agua."
+}

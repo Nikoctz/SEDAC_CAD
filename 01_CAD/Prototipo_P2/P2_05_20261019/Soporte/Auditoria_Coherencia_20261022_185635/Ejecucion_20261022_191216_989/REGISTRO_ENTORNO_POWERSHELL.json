@@ -1,0 +1,10 @@
+{
+    "etiqueta":  "hecho",
+    "fecha":  "2026-10-22T19:12:17.4888078-03:00",
+    "version":  "5.1.26100.9711",
+    "ejecutable":  "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "invocacion":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Auditoria_Coherencia_20261022_185635\\ejecutar_auditoria.ps1",
+    "salida":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Auditoria_Coherencia_20261022_185635\\Ejecucion_20261022_191216_989",
+    "retorno_python":  0,
+    "alcance":  "Auditoria AST y generador JSON; sin Inventor ni calculador"
+}

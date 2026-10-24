@@ -1,0 +1,27 @@
+[
+  {
+    "archivo": "SEDAC_P204_MAQUETA_CUNAS_REFORZADAS.3mf",
+    "bytes": 19261,
+    "sha256": "bdaeba127bba835f2af7a0a9890ba8f0674f5f141e02d8910e2173bceba2d447"
+  },
+  {
+    "archivo": "SEDAC_P204_MAQUETA_CUNAS_REFORZADAS.stl",
+    "bytes": 104484,
+    "sha256": "ec16f0b61ab01fe2f219bd1f37b1465c04decbb99d07f88ea174ecdd6308cd65"
+  },
+  {
+    "archivo": "INSTRUCCIONES_CENTRO.txt",
+    "bytes": 1321,
+    "sha256": "fa712bac5be2bb9bb0841876346b11b62716507501dc69d23260054adf64b9ba"
+  },
+  {
+    "archivo": "VISTA_MAQUETA.png",
+    "bytes": 652010,
+    "sha256": "9c8a641b03de6e6b61c2edd666a4cf801f6d4de2154089ce171911ac9eda9e87"
+  },
+  {
+    "archivo": "ORIENTACION_IMPRESION.png",
+    "bytes": 119468,
+    "sha256": "0d36f6e85008d772aad5fe7a4cd805d9f35cb22b5c576057d1475094f246d372"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "fecha": "2026-10-23",
+  "revision_propuesta": "R3_Cunas_16mm",
+  "referencia": "P2.04 indicado por usuario; adaptacion de maqueta redibujada",
+  "modelo_original_y_manifiesto_intactos": true,
+  "cambio_vs_R2": "Solo cunas: espesor nominal de 1.2 a 1.6 mm; mismo recorrido, posicion y ancho; marco identico",
+  "comprobacion_cambios_geometricos": true,
+  "solidos_nativos": 1,
+  "componentes_malla": 1,
+  "malla_cerrada": true,
+  "dimensiones_STL_mm": [
+    32.0,
+    18.198104858398438,
+    48.0
+  ],
+  "laminado": "PENDIENTE",
+  "ensayo_impresion": "NO REALIZADO",
+  "soportes": "Revisar debajo de ambas cunas; comprobar perfil y envolvente total",
+  "zip_para_centro": "SEDAC_P204_R3_PARA_CENTRO.zip",
+  "archivos_en_zip": 6,
+  "zip_integridad": "CRC y SHA256 comprobados",
+  "IPT_editable": "Entrega/SEDAC_P204_MAQUETA_CUNAS_REFORZADAS.ipt"
+}

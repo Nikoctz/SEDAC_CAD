@@ -1,0 +1,7 @@
+﻿ancho_mm,profundidad_mm,espesor_mm,masa_par_kg,margen_solo_flexion,nota
+30,20,2.5,0.4212,1.5922276444217465,"cribado, sin ranuras ni carga lateral"
+30,22,3,0.528768,2.2454623069603077,"cribado, sin ranuras ni carga lateral"
+30,24,3,0.559872,2.6523789595741487,"cribado, sin ranuras ni carga lateral"
+30,26,3,0.590976,3.0882268740351346,"cribado, sin ranuras ni carga lateral"
+32,24,3,0.575424,2.6836365738173953,"cribado, sin ranuras ni carga lateral"
+35,25,3,0.614304,2.947748677789469,"cribado, sin ranuras ni carga lateral"

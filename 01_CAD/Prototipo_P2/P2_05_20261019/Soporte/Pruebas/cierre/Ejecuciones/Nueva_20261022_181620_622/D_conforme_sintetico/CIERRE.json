@@ -1,0 +1,462 @@
+{
+  "version": "P2.05",
+  "aceptado": true,
+  "R1": {
+    "resultado": "R1",
+    "nombre": "Generación terminada",
+    "etiqueta": "hecho",
+    "cumple": true,
+    "archivos": [
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Refuerzo_C_I.ipt",
+        "existe": true,
+        "bytes": 148480,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Refuerzo_C_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_I_35.ipt",
+        "existe": true,
+        "bytes": 115712,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_35.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_I_35.ipt",
+        "existe": true,
+        "bytes": 106496,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_35.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_I_95.ipt",
+        "existe": true,
+        "bytes": 115200,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_95.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_I_95.ipt",
+        "existe": true,
+        "bytes": 105984,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_95.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_I_390.ipt",
+        "existe": true,
+        "bytes": 115200,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_390.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_I_390.ipt",
+        "existe": true,
+        "bytes": 107008,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_390.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_I_450.ipt",
+        "existe": true,
+        "bytes": 115200,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_450.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_I_450.ipt",
+        "existe": true,
+        "bytes": 105984,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_450.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Refuerzo_C_D.ipt",
+        "existe": true,
+        "bytes": 147456,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Refuerzo_C_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_D_35.ipt",
+        "existe": true,
+        "bytes": 115200,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_35.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_D_35.ipt",
+        "existe": true,
+        "bytes": 107008,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_35.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_D_95.ipt",
+        "existe": true,
+        "bytes": 114688,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_95.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_D_95.ipt",
+        "existe": true,
+        "bytes": 106496,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_95.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_D_390.ipt",
+        "existe": true,
+        "bytes": 115712,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_390.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_D_390.ipt",
+        "existe": true,
+        "bytes": 105984,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_390.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Casquillo_D_450.ipt",
+        "existe": true,
+        "bytes": 115712,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_450.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Pasador_hueco_D_450.ipt",
+        "existe": true,
+        "bytes": 106496,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_450.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Interfaz_lumbar_aligerada.ipt",
+        "existe": true,
+        "bytes": 291840,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Interfaz_lumbar_aligerada.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Yugo_superior_I.ipt",
+        "existe": true,
+        "bytes": 488960,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Yugo_superior_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Yugo_superior_D.ipt",
+        "existe": true,
+        "bytes": 487936,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Yugo_superior_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Espaldera_HDPE_aligerada.ipt",
+        "existe": true,
+        "bytes": 187392,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Espaldera_HDPE_aligerada.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Funda_refuerzo_I.ipt",
+        "existe": true,
+        "bytes": 100352,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Funda_refuerzo_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Acolchado_dorsal_I.ipt",
+        "existe": true,
+        "bytes": 92160,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_dorsal_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Funda_refuerzo_D.ipt",
+        "existe": true,
+        "bytes": 101376,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Funda_refuerzo_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Acolchado_dorsal_D.ipt",
+        "existe": true,
+        "bytes": 93184,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_dorsal_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Acolchado_lumbar.ipt",
+        "existe": true,
+        "bytes": 92672,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_lumbar.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cuna_textil_I.ipt",
+        "existe": true,
+        "bytes": 104448,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cuna_textil_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_carga_I.ipt",
+        "existe": true,
+        "bytes": 115712,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_carga_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hombrera_I.ipt",
+        "existe": true,
+        "bytes": 98816,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hombrera_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_hombrera_I.ipt",
+        "existe": true,
+        "bytes": 100352,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_hombrera_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Regulador_hombro_I.ipt",
+        "existe": true,
+        "bytes": 108544,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Regulador_hombro_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cuna_textil_D.ipt",
+        "existe": true,
+        "bytes": 103936,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cuna_textil_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_carga_D.ipt",
+        "existe": true,
+        "bytes": 115712,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_carga_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hombrera_D.ipt",
+        "existe": true,
+        "bytes": 98304,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hombrera_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_hombrera_D.ipt",
+        "existe": true,
+        "bytes": 100352,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_hombrera_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Regulador_hombro_D.ipt",
+        "existe": true,
+        "bytes": 109056,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Regulador_hombro_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_estabilizadora_225.ipt",
+        "existe": true,
+        "bytes": 103424,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_estabilizadora_225.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hebilla_carga_225.ipt",
+        "existe": true,
+        "bytes": 93184,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_carga_225.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_estabilizadora_350.ipt",
+        "existe": true,
+        "bytes": 103936,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_estabilizadora_350.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hebilla_carga_350.ipt",
+        "existe": true,
+        "bytes": 93696,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_carga_350.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Ala_cinturon_I.ipt",
+        "existe": true,
+        "bytes": 120320,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Ala_cinturon_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Bisagra_textil_I.ipt",
+        "existe": true,
+        "bytes": 87552,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Bisagra_textil_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_cierre_cinturon_I.ipt",
+        "existe": true,
+        "bytes": 91648,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_cierre_cinturon_I.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Ala_cinturon_D.ipt",
+        "existe": true,
+        "bytes": 119808,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Ala_cinturon_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Bisagra_textil_D.ipt",
+        "existe": true,
+        "bytes": 88576,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Bisagra_textil_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Cinta_cierre_cinturon_D.ipt",
+        "existe": true,
+        "bytes": 92160,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_cierre_cinturon_D.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hebilla_cinturon.ipt",
+        "existe": true,
+        "bytes": 125952,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_cinturon.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Correa_pectoral.ipt",
+        "existe": true,
+        "bytes": 90624,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Correa_pectoral.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Hebilla_pectoral.ipt",
+        "existe": true,
+        "bytes": 93184,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_pectoral.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\REF_Asa_sistema.ipt",
+        "existe": true,
+        "bytes": 93696,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Asa_sistema.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Tornillo_M5x55_ISO4762_A2_80.ipt",
+        "existe": true,
+        "bytes": 131584,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Tornillo_M5x55_ISO4762_A2_80.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Arandela_M5_16x3_GN6341.ipt",
+        "existe": true,
+        "bytes": 100864,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Arandela_M5_16x3_GN6341.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\Tuerca_M5_autofreno_metalica.ipt",
+        "existe": true,
+        "bytes": 124416,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Tuerca_M5_autofreno_metalica.ipt"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\SEDAC_P2_05.iam",
+        "existe": true,
+        "bytes": 674304,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04.iam"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\SEDAC_P2_05_REVISION.step",
+        "existe": true,
+        "bytes": 2691167,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04_REVISION.step"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\VISTA_FRENTE.png",
+        "existe": true,
+        "bytes": 637029,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_FRENTE.png"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\VISTA_ESPALDA.png",
+        "existe": true,
+        "bytes": 621448,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_ESPALDA.png"
+      },
+      {
+        "ruta": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\VISTA_ESTRUCTURA.png",
+        "existe": true,
+        "bytes": 740796,
+        "simulado": true,
+        "origen_solo_lectura": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_ESTRUCTURA.png"
+      }
+    ],
+    "alcance": "Presencia y tamaño de archivos generados; no reinspección del CAD nativo.",
+    "motivos": []
+  },
+  "R2": {
+    "resultado": "R2",
+    "nombre": "Coherencia comprobada",
+    "etiqueta": "hecho",
+    "cumple": true,
+    "redondeos_solicitados": 5,
+    "redondeos_pendientes": 0,
+    "limite_interferencia_mm3": 0.001,
+    "limite_error_transformacion": 1E-06,
+    "tolerancia_aritmetica_relativa": 1E-09,
+    "masa_rigida_derivada_kg": 1.4420687346427812,
+    "evidencia": [
+      "MODELO_API.json",
+      "REDONDEOS.json",
+      "INTERFERENCIAS.json",
+      "RESTRICCIONES.json",
+      "MASAS_CAD.json",
+      "RESUMEN_ENTREGA.json"
+    ],
+    "motivos": []
+  },
+  "R3": {
+    "resultado": "R3",
+    "nombre": "Cribado analítico cumplido",
+    "etiqueta": "cálculo",
+    "cumple": true,
+    "evidencia": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_181620_622\\D_conforme_sintetico\\RESULTADOS_PREDISENO.json",
+    "minimo_margen": 2.24713091866015,
+    "umbral": 2.2,
+    "alcance": "Prediseno analitico condicionado; NO validacion del conjunto",
+    "motivos": []
+  },
+  "alcance": "Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad).",
+  "clasificacion_funcional": "pendiente; D-12. Radio de 0,5 mm: propuesta sin ensayo de desgaste.",
+  "naturaleza": "caso_sintetico"
+}

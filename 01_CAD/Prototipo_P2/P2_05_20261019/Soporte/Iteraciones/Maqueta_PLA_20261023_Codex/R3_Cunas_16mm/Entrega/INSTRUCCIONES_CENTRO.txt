@@ -1,0 +1,25 @@
+SEDAC — MAQUETA PLA DEL P2.04 SIN ARNES, REVISION R3
+
+Solicitud: revisar y, si el laminado es viable, imprimir UNA maqueta integrada en PLA.
+
+Archivos alternativos de LA MISMA pieza:
+- SEDAC_P204_MAQUETA_CUNAS_REFORZADAS.3mf: unidad milimetro incluida.
+- SEDAC_P204_MAQUETA_CUNAS_REFORZADAS.stl: importar en MILIMETROS, al 100 %.
+Elegir uno de los formatos: no son dos piezas distintas.
+
+Tamano aproximado X x Y x altura Z: 32.0 x 18.2 x 48.0 mm.
+Limite comunicado: 40 x 40 x 70 mm, incluyendo soportes y adhesion.
+
+Orientacion propuesta: espalda vertical y borde inferior sobre la cama.
+REVISAR SOPORTES DEBAJO DE AMBAS CUNAS ELEVADAS. Revisar tambien
+puentes de las ventanas, detalles pequenos y acceso para retirar soportes.
+Las cunas tienen espesor nominal 1,6 mm; el panel nominal conserva 1,2 mm.
+Un brim de 3 mm es solo una propuesta. Comprobar la envolvente final de
+modelo, soportes y adhesion dentro del limite indicado.
+
+La malla esta cerrada y tiene un componente. PENDIENTE DE COMPROBACION
+EN LAMINADOR con el perfil real del centro. No se ha ensayado su impresion.
+El 3MF es de modelo: no incluye perfil de impresora ni G-code.
+
+Es una maqueta visual: las cunas representan partes textiles del concepto.
+No es una pieza funcional para cargar una bomba ni para uso sobre personas.

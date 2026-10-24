@@ -1,0 +1,82 @@
+{
+  "etiqueta": "hecho",
+  "fecha": "2026-10-22T19:12:38.437565-03:00",
+  "archivos_previos": 4678,
+  "archivos_previos_modificados": [
+    "01_CAD/Prototipo_P2/P2_05_20261019/LEEME_P2_05.md",
+    "CHANGELOG_SEDAC.md"
+  ],
+  "nuevos_fuera_de_auditoria": [],
+  "borrados": [],
+  "cambios_no_autorizados": [],
+  "CAD": {
+    "comparados": 818,
+    "modificados": []
+  },
+  "corrida_historica": {
+    "comparados": 65,
+    "modificados": []
+  },
+  "evidencia_ajena": {
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Pruebas/cierre/Ejecuciones/Nueva_20261022_183218_837/": {
+      "comparados": 212,
+      "modificados": []
+    },
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/Pruebas/cierre/Ejecuciones/Calculo_20261022_183238_628/": {
+      "comparados": 1,
+      "modificados": []
+    }
+  },
+  "all_png_solo_metadatos": {
+    "antes": {
+      "bytes": 0,
+      "mtime_ns": 1792439422410773000
+    },
+    "despues": {
+      "bytes": 0,
+      "mtime_ns": 1792439422410773000
+    },
+    "intacto": true
+  },
+  "documentacion": {
+    "01_CAD/Prototipo_P2/P2_05_20261019/LEEME_P2_05.md": {
+      "antes_sha256": "f57b2d5e5f763f10ff845442681fb9e8aff2b050fec533512fdb3471c262b798",
+      "antes_coincide_linea_base": true,
+      "despues_solo_insercion_autorizada": true
+    },
+    "CHANGELOG_SEDAC.md": {
+      "antes_sha256": "689e6b6a82202fd31a784dab57972cb3453e353db4659a07ae12abc4ca28cb6d",
+      "antes_coincide_linea_base": true,
+      "despues_solo_insercion_autorizada": true
+    }
+  },
+  "regeneraciones": {
+    "Ejecucion_20261022_190100": {
+      "powershell": "7.6.5",
+      "retorno": 0,
+      "igualdad_bytes": {
+        "BOM_FIJACIONES.csv": true,
+        "MODELO_API.json": true
+      }
+    },
+    "Ejecucion_20261022_190848_428": {
+      "powershell": "7.6.5",
+      "retorno": 0,
+      "igualdad_bytes": {
+        "BOM_FIJACIONES.csv": true,
+        "MODELO_API.json": true
+      }
+    },
+    "Ejecucion_20261022_191216_989": {
+      "powershell": "5.1.26100.9711",
+      "retorno": 0,
+      "igualdad_bytes": {
+        "BOM_FIJACIONES.csv": true,
+        "MODELO_API.json": true
+      }
+    }
+  },
+  "inventor_ejecutado": false,
+  "commit": false,
+  "integridad_cumple": true
+}

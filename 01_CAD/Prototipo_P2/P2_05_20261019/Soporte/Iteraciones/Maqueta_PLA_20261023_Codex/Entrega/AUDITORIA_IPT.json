@@ -1,0 +1,80 @@
+﻿{
+    "version":  "2027.1",
+    "archivo":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Maqueta_PLA_20261023_Codex\\Entrega\\SEDAC_P204_MAQUETA_SIN_ARNES.ipt",
+    "actualiza":  true,
+    "cuerpos":  1,
+    "solido":  true,
+    "bocetos":  16,
+    "operaciones":  [
+                        {
+                            "nombre":  "F_1_Cuna_integrada_paso_manguera",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_2_Panel_dorsal",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_3_Ventilacion_panel",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_4_Interfaz_lumbar",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_5_Aligerado_lumbar",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_6_Alma_refuerzo",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_7_Alas_canal_abierto",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_8_Yugo_superior_simplificado",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_9_Relieves_fijaciones",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_10_Alma_refuerzo",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_11_Alas_canal_abierto",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_12_Yugo_superior_simplificado",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_13_Relieves_fijaciones",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_14_Lateral_cuna",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_15_Lateral_cuna",
+                            "estado":  "kUpToDateHealth"
+                        },
+                        {
+                            "nombre":  "F_16_Labios_cuna",
+                            "estado":  "kUpToDateHealth"
+                        }
+                    ],
+    "dimensiones_XYZ_mm":  [
+                               32,
+                               48.000000000000007,
+                               18.000000000000004
+                           ],
+    "convencion":  "Altura Y en IPT; altura Z en STL y 3MF"
+}

@@ -1,0 +1,44 @@
+{
+  "fecha": "2026-10-23",
+  "revision": "R4_Aligerada_09mm",
+  "alcance": "Solo correccion de la maqueta para envio, confirmado por usuario",
+  "fuente": "P2.04 indicado por usuario; adaptacion de maqueta",
+  "original_P204_intacto": true,
+  "R3_preservada": true,
+  "solidos_nativos": 1,
+  "operaciones_nativas": 17,
+  "todos_los_vaciados_redujeron_volumen": true,
+  "componentes_malla": 1,
+  "malla_cerrada": true,
+  "dimensiones_STL_mm": [
+    32.0,
+    18.198104858398438,
+    48.0
+  ],
+  "comparacion_R3_R4": {
+    "base": "R3_Cunas_16mm",
+    "revision": "R4_Aligerada_09mm",
+    "volumen_R3_mm3": 2962.557964911966,
+    "volumen_R4_mm3": 1918.4515525411387,
+    "volumen_retirado_mm3": 1044.1064123708272,
+    "reduccion_volumen_solido_porcentaje": 35.24340872776318,
+    "interpretacion": "Reduccion geometrica de la maqueta integrada, no reduccion de masa del producto real ni consumo de filamento laminado.",
+    "dimensiones_R4_impresion_mm": [
+      32.0,
+      18.198104858398438,
+      48.0
+    ],
+    "panel_mm": 0.9,
+    "pared_canal_mm": 0.9,
+    "cuna_mm": 1.6,
+    "flexibilidad": "No ensayada; la maqueta PLA no reproduce la flexibilidad del HDPE y los textiles del producto.",
+    "laminado": "PENDIENTE"
+  },
+  "laminado": "PENDIENTE",
+  "impresion_fisica": "NO ENSAYADA",
+  "flexibilidad": "NO ENSAYADA",
+  "zip_para_centro": "SEDAC_P204_R4_ALIGERADA_PARA_CENTRO.zip",
+  "archivos_en_zip": 7,
+  "zip_integridad": "CRC y SHA256 comprobados",
+  "IPT_editable": "Entrega/SEDAC_P204_MAQUETA_ALIGERADA_09mm.ipt"
+}

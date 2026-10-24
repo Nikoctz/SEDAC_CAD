@@ -1,0 +1,59 @@
+{
+ "carpeta": "Optimizacion_Mejillas_20261023_022810",
+ "fecha": "2026-10-23",
+ "n_archivos": 10,
+ "bytes_total": 62257,
+ "nota": "Hashes SHA-256 de todos los archivos de la iteracion. Generado al cierre, despues de la ultima escritura.",
+ "archivos": [
+  {
+   "ruta": "Analisis/ANALISIS_MEJILLAS.json",
+   "bytes": 3344,
+   "sha256": "3be0b614e475118324c175da03d733faaf7a47597fd5c814b100d08bbd688653"
+  },
+  {
+   "ruta": "Analisis/RESULTADOS_OPT1.json",
+   "bytes": 15416,
+   "sha256": "f108177ac3eabb310a0e53f9a1d5e3ead8a68e10470abcbd5cf6a75b42991da0"
+  },
+  {
+   "ruta": "COMPARACION.md",
+   "bytes": 3387,
+   "sha256": "fdf11e69d48d44f9400bcf83b7ed8bcdf836be9e506a11ed7da00270478f2630"
+  },
+  {
+   "ruta": "INFORME.md",
+   "bytes": 6003,
+   "sha256": "d0576f134f8c5ede43dd6f83f61eb266fe83031b2b174e58aab0ada26a740cfd"
+  },
+  {
+   "ruta": "LEEME.md",
+   "bytes": 2112,
+   "sha256": "7e0ceec4d271ab6fa21c66d87c376b69cc72105d7889932050175bf152656ed1"
+  },
+  {
+   "ruta": "PARAMETROS_OPT1.json",
+   "bytes": 3815,
+   "sha256": "8a3ec6d93a34b7de90f7d8d29acfa560abcec626956092627c7cc99dfe216370"
+  },
+  {
+   "ruta": "PARAMETROS_P2_04.json",
+   "bytes": 3781,
+   "sha256": "40f2491d01bdef73170a46fc3fabc2e019dde088515ff91dffc7c2e835293771"
+  },
+  {
+   "ruta": "Soporte/analisis_mejillas.py",
+   "bytes": 10264,
+   "sha256": "27ee34d54ccca4ff4df8dbd11867b98a613c5aa891fb204c1af4e6c038f73759"
+  },
+  {
+   "ruta": "Soporte/calcular_p2_05.py",
+   "bytes": 13361,
+   "sha256": "96e91feace666fa0b23f2767c609ca4a3625b2ae3d298b5433017f8d6211f3db"
+  },
+  {
+   "ruta": "Soporte/manifiesto.py",
+   "bytes": 774,
+   "sha256": "76356a9df4a76c67ff5833f1a7c9f582e2053026fd95d3c9f625d0ea30a39c90"
+  }
+ ]
+}

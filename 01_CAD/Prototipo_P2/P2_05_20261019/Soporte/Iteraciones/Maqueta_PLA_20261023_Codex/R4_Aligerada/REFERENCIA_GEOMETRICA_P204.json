@@ -1,0 +1,81 @@
+{
+  "ensamblaje_fuente": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04.iam",
+  "sha256_IAM": "65b69f20af4bb02a24ef796a76698b9fcc50eede76c644df205eb7dab86152e1",
+  "manifest_fuente": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\MODELO_API.json",
+  "sha256_manifest": "849be1c84ee2abda58189fa2fbe38a115a82fb19bf28154a7544b873a170007e",
+  "cunas": [
+    {
+      "pieza_fuente": "REF_Cuna_textil_I",
+      "recorrido_central_mm": [
+        [
+          15.6,
+          3.0
+        ],
+        [
+          10.5,
+          4.0
+        ],
+        [
+          7.8,
+          6.5
+        ],
+        [
+          7.5,
+          13.5
+        ],
+        [
+          10.0,
+          17.0
+        ],
+        [
+          15.8,
+          17.4
+        ]
+      ],
+      "ancho_maqueta_mm": 10.0,
+      "espesor_nominal_maqueta_mm": 1.6,
+      "desplazamiento_del_recorrido": 0
+    },
+    {
+      "pieza_fuente": "REF_Cuna_textil_D",
+      "recorrido_central_mm": [
+        [
+          15.6,
+          3.0
+        ],
+        [
+          10.5,
+          4.0
+        ],
+        [
+          7.8,
+          6.5
+        ],
+        [
+          7.5,
+          13.5
+        ],
+        [
+          10.0,
+          17.0
+        ],
+        [
+          15.8,
+          17.4
+        ]
+      ],
+      "ancho_maqueta_mm": 10.0,
+      "espesor_nominal_maqueta_mm": 1.6,
+      "desplazamiento_del_recorrido": 0
+    }
+  ],
+  "criterio": "R4: correccion de la maqueta PLA para envio, confirmada por usuario. Panel y canales mas delgados, vaciados visibles y ventanas en cunas; mismo recorrido de cunas y anclajes. No cambia el producto P2.04 ni cierra P2.05.",
+  "cambio_de_espesores_maqueta_mm": {
+    "panel_de": 1.2,
+    "panel_a": 0.8,
+    "pared_canal_de": 1.2,
+    "pared_canal_a": 0.8,
+    "cuna_conservada": 1.6
+  },
+  "revision_anterior": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Maqueta_PLA_20261023_Codex\\R3_Cunas_16mm"
+}

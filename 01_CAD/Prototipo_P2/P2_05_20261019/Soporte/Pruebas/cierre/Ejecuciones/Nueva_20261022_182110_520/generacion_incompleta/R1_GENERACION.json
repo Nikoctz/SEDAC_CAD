@@ -1,0 +1,487 @@
+﻿{
+    "naturaleza":  "caso_sintetico",
+    "resultado":  {
+                      "resultado":  "R1",
+                      "nombre":  "Generación terminada",
+                      "etiqueta":  "hecho",
+                      "cumple":  false,
+                      "archivos":  [
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Refuerzo_C_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  148480,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Refuerzo_C_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_I_35.ipt",
+                                           "existe":  false,
+                                           "bytes":  115712,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_35.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_I_35.ipt",
+                                           "existe":  false,
+                                           "bytes":  106496,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_35.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_I_95.ipt",
+                                           "existe":  false,
+                                           "bytes":  115200,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_95.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_I_95.ipt",
+                                           "existe":  false,
+                                           "bytes":  105984,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_95.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_I_390.ipt",
+                                           "existe":  false,
+                                           "bytes":  115200,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_390.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_I_390.ipt",
+                                           "existe":  false,
+                                           "bytes":  107008,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_390.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_I_450.ipt",
+                                           "existe":  false,
+                                           "bytes":  115200,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_I_450.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_I_450.ipt",
+                                           "existe":  false,
+                                           "bytes":  105984,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_I_450.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Refuerzo_C_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  147456,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Refuerzo_C_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_D_35.ipt",
+                                           "existe":  false,
+                                           "bytes":  115200,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_35.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_D_35.ipt",
+                                           "existe":  false,
+                                           "bytes":  107008,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_35.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_D_95.ipt",
+                                           "existe":  false,
+                                           "bytes":  114688,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_95.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_D_95.ipt",
+                                           "existe":  false,
+                                           "bytes":  106496,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_95.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_D_390.ipt",
+                                           "existe":  false,
+                                           "bytes":  115712,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_390.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_D_390.ipt",
+                                           "existe":  false,
+                                           "bytes":  105984,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_390.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Casquillo_D_450.ipt",
+                                           "existe":  false,
+                                           "bytes":  115712,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Casquillo_D_450.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Pasador_hueco_D_450.ipt",
+                                           "existe":  false,
+                                           "bytes":  106496,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Pasador_hueco_D_450.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Interfaz_lumbar_aligerada.ipt",
+                                           "existe":  false,
+                                           "bytes":  291840,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Interfaz_lumbar_aligerada.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Yugo_superior_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  488960,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Yugo_superior_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Yugo_superior_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  487936,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Yugo_superior_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Espaldera_HDPE_aligerada.ipt",
+                                           "existe":  false,
+                                           "bytes":  187392,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Espaldera_HDPE_aligerada.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Funda_refuerzo_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  100352,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Funda_refuerzo_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Acolchado_dorsal_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  92160,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_dorsal_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Funda_refuerzo_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  101376,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Funda_refuerzo_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Acolchado_dorsal_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  93184,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_dorsal_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Acolchado_lumbar.ipt",
+                                           "existe":  false,
+                                           "bytes":  92672,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Acolchado_lumbar.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cuna_textil_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  104448,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cuna_textil_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_carga_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  115712,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_carga_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hombrera_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  98816,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hombrera_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_hombrera_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  100352,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_hombrera_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Regulador_hombro_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  108544,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Regulador_hombro_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cuna_textil_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  103936,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cuna_textil_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_carga_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  115712,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_carga_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hombrera_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  98304,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hombrera_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_hombrera_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  100352,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_hombrera_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Regulador_hombro_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  109056,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Regulador_hombro_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_estabilizadora_225.ipt",
+                                           "existe":  false,
+                                           "bytes":  103424,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_estabilizadora_225.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hebilla_carga_225.ipt",
+                                           "existe":  false,
+                                           "bytes":  93184,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_carga_225.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_estabilizadora_350.ipt",
+                                           "existe":  false,
+                                           "bytes":  103936,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_estabilizadora_350.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hebilla_carga_350.ipt",
+                                           "existe":  false,
+                                           "bytes":  93696,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_carga_350.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Ala_cinturon_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  120320,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Ala_cinturon_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Bisagra_textil_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  87552,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Bisagra_textil_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_cierre_cinturon_I.ipt",
+                                           "existe":  false,
+                                           "bytes":  91648,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_cierre_cinturon_I.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Ala_cinturon_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  119808,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Ala_cinturon_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Bisagra_textil_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  88576,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Bisagra_textil_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Cinta_cierre_cinturon_D.ipt",
+                                           "existe":  false,
+                                           "bytes":  92160,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Cinta_cierre_cinturon_D.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hebilla_cinturon.ipt",
+                                           "existe":  false,
+                                           "bytes":  125952,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_cinturon.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Correa_pectoral.ipt",
+                                           "existe":  false,
+                                           "bytes":  90624,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Correa_pectoral.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Hebilla_pectoral.ipt",
+                                           "existe":  false,
+                                           "bytes":  93184,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Hebilla_pectoral.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\REF_Asa_sistema.ipt",
+                                           "existe":  false,
+                                           "bytes":  93696,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\REF_Asa_sistema.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Tornillo_M5x55_ISO4762_A2_80.ipt",
+                                           "existe":  false,
+                                           "bytes":  131584,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Tornillo_M5x55_ISO4762_A2_80.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Arandela_M5_16x3_GN6341.ipt",
+                                           "existe":  false,
+                                           "bytes":  100864,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Arandela_M5_16x3_GN6341.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\Tuerca_M5_autofreno_metalica.ipt",
+                                           "existe":  false,
+                                           "bytes":  124416,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\Tuerca_M5_autofreno_metalica.ipt"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\SEDAC_P2_05.iam",
+                                           "existe":  false,
+                                           "bytes":  674304,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04.iam"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\SEDAC_P2_05_REVISION.step",
+                                           "existe":  false,
+                                           "bytes":  2691167,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04_REVISION.step"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\VISTA_FRENTE.png",
+                                           "existe":  false,
+                                           "bytes":  637029,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_FRENTE.png"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\VISTA_ESPALDA.png",
+                                           "existe":  false,
+                                           "bytes":  621448,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_ESPALDA.png"
+                                       },
+                                       {
+                                           "ruta":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Pruebas\\cierre\\Ejecuciones\\Nueva_20261022_182110_520\\generacion_incompleta\\VISTA_ESTRUCTURA.png",
+                                           "existe":  false,
+                                           "bytes":  740796,
+                                           "simulado":  true,
+                                           "origen_solo_lectura":  "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\VISTA_ESTRUCTURA.png"
+                                       }
+                                   ],
+                      "alcance":  "Presencia y tamaño de archivos generados; no reinspección del CAD nativo.",
+                      "motivos":  [
+                                      "Archivo generado ausente o vacío: Refuerzo_C_I.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_I_35.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_I_35.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_I_95.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_I_95.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_I_390.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_I_390.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_I_450.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_I_450.ipt",
+                                      "Archivo generado ausente o vacío: Refuerzo_C_D.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_D_35.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_D_35.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_D_95.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_D_95.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_D_390.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_D_390.ipt",
+                                      "Archivo generado ausente o vacío: Casquillo_D_450.ipt",
+                                      "Archivo generado ausente o vacío: Pasador_hueco_D_450.ipt",
+                                      "Archivo generado ausente o vacío: Interfaz_lumbar_aligerada.ipt",
+                                      "Archivo generado ausente o vacío: Yugo_superior_I.ipt",
+                                      "Archivo generado ausente o vacío: Yugo_superior_D.ipt",
+                                      "Archivo generado ausente o vacío: Espaldera_HDPE_aligerada.ipt",
+                                      "Archivo generado ausente o vacío: REF_Funda_refuerzo_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Acolchado_dorsal_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Funda_refuerzo_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Acolchado_dorsal_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Acolchado_lumbar.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cuna_textil_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_carga_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hombrera_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_hombrera_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Regulador_hombro_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cuna_textil_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_carga_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hombrera_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_hombrera_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Regulador_hombro_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_estabilizadora_225.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hebilla_carga_225.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_estabilizadora_350.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hebilla_carga_350.ipt",
+                                      "Archivo generado ausente o vacío: REF_Ala_cinturon_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Bisagra_textil_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_cierre_cinturon_I.ipt",
+                                      "Archivo generado ausente o vacío: REF_Ala_cinturon_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Bisagra_textil_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Cinta_cierre_cinturon_D.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hebilla_cinturon.ipt",
+                                      "Archivo generado ausente o vacío: REF_Correa_pectoral.ipt",
+                                      "Archivo generado ausente o vacío: REF_Hebilla_pectoral.ipt",
+                                      "Archivo generado ausente o vacío: REF_Asa_sistema.ipt",
+                                      "Archivo generado ausente o vacío: Tornillo_M5x55_ISO4762_A2_80.ipt",
+                                      "Archivo generado ausente o vacío: Arandela_M5_16x3_GN6341.ipt",
+                                      "Archivo generado ausente o vacío: Tuerca_M5_autofreno_metalica.ipt",
+                                      "Archivo generado ausente o vacío: SEDAC_P2_05.iam",
+                                      "Archivo generado ausente o vacío: SEDAC_P2_05_REVISION.step",
+                                      "Archivo generado ausente o vacío: VISTA_FRENTE.png",
+                                      "Archivo generado ausente o vacío: VISTA_ESPALDA.png",
+                                      "Archivo generado ausente o vacío: VISTA_ESTRUCTURA.png"
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad)."
+}

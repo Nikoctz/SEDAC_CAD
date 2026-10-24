@@ -1,0 +1,12 @@
+casos sintéticos de prueba; no son evidencia de entrega
+no es una entrega aceptada
+casos sintéticos de prueba; no son evidencia de entrega
+hecho: cierre documental y analítico de P2.05
+hecho: R1 · Generación terminada; cumple=True
+hecho: R2 · Coherencia comprobada; cumple=False
+  - Resumen de masa/coherencia discrepante: presupuesto_sistema_kg; registrado=4.42413746928556; derivado=2.21206873464278
+cálculo: R3 · Cribado analítico cumplido; cumple=True
+Evidencia: R1_GENERACION.json, R2_COHERENCIA.json, R3_CRIBADO.json y CIERRE.json.
+Cribado condicionado; no validación de uso.
+Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad).
+pendiente: clasificación funcional A/B/C (D-12); radio de 0,5 mm propuesto sin ensayo de desgaste.

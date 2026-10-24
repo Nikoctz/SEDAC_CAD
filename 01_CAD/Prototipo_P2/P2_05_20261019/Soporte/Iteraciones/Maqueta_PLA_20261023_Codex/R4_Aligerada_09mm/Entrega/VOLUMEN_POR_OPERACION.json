@@ -1,0 +1,138 @@
+﻿[
+    {
+        "operacion":  1,
+        "nombre":  "Travesano_inferior_integrado",
+        "corte":  false,
+        "antes_mm3":  0,
+        "despues_mm3":  115.2,
+        "delta_mm3":  115.2
+    },
+    {
+        "operacion":  2,
+        "nombre":  "Panel_dorsal",
+        "corte":  false,
+        "antes_mm3":  115.2,
+        "despues_mm3":  1232.2428847204662,
+        "delta_mm3":  1117.0428847204662
+    },
+    {
+        "operacion":  3,
+        "nombre":  "Panel_vaciado_y_contorno_entallado",
+        "corte":  true,
+        "antes_mm3":  1232.2428847204662,
+        "despues_mm3":  676.60108045219329,
+        "delta_mm3":  -555.641804268273
+    },
+    {
+        "operacion":  4,
+        "nombre":  "Interfaz_lumbar",
+        "corte":  false,
+        "antes_mm3":  676.60108045219329,
+        "despues_mm3":  964.79003604434683,
+        "delta_mm3":  288.18895559215355
+    },
+    {
+        "operacion":  5,
+        "nombre":  "Abertura_lumbar_pasante",
+        "corte":  true,
+        "antes_mm3":  964.79003604434683,
+        "despues_mm3":  851.699239717552,
+        "delta_mm3":  -113.09079632679482
+    },
+    {
+        "operacion":  6,
+        "nombre":  "Alma_canal_aligerado",
+        "corte":  false,
+        "antes_mm3":  851.699239717552,
+        "despues_mm3":  933.87523971755184,
+        "delta_mm3":  82.175999999999817
+    },
+    {
+        "operacion":  7,
+        "nombre":  "Alas_canal_aligerado",
+        "corte":  false,
+        "antes_mm3":  933.87523971755184,
+        "despues_mm3":  1060.9552397175521,
+        "delta_mm3":  127.08000000000027
+    },
+    {
+        "operacion":  8,
+        "nombre":  "Yugo_superior_simplificado",
+        "corte":  false,
+        "antes_mm3":  1060.9552397175521,
+        "despues_mm3":  1083.5923543140545,
+        "delta_mm3":  22.637114596502443
+    },
+    {
+        "operacion":  9,
+        "nombre":  "Relieves_fijaciones",
+        "corte":  false,
+        "antes_mm3":  1083.5923543140545,
+        "despues_mm3":  1087.2075575812275,
+        "delta_mm3":  3.6152032671730012
+    },
+    {
+        "operacion":  10,
+        "nombre":  "Alma_canal_aligerado",
+        "corte":  false,
+        "antes_mm3":  1087.2075575812275,
+        "despues_mm3":  1169.3835575812273,
+        "delta_mm3":  82.1759999999997
+    },
+    {
+        "operacion":  11,
+        "nombre":  "Alas_canal_aligerado",
+        "corte":  false,
+        "antes_mm3":  1169.3835575812273,
+        "despues_mm3":  1296.4635575812272,
+        "delta_mm3":  127.07999999999993
+    },
+    {
+        "operacion":  12,
+        "nombre":  "Yugo_superior_simplificado",
+        "corte":  false,
+        "antes_mm3":  1296.4635575812272,
+        "despues_mm3":  1319.1006721777294,
+        "delta_mm3":  22.637114596502215
+    },
+    {
+        "operacion":  13,
+        "nombre":  "Relieves_fijaciones",
+        "corte":  false,
+        "antes_mm3":  1319.1006721777294,
+        "despues_mm3":  1322.7158754449024,
+        "delta_mm3":  3.6152032671730012
+    },
+    {
+        "operacion":  14,
+        "nombre":  "Cuna_curva_I_16mm",
+        "corte":  false,
+        "antes_mm3":  1322.7158754449024,
+        "despues_mm3":  1734.9526819178163,
+        "delta_mm3":  412.23680647291394
+    },
+    {
+        "operacion":  15,
+        "nombre":  "Cuna_curva_D_16mm",
+        "corte":  false,
+        "antes_mm3":  1734.9526819178163,
+        "despues_mm3":  2147.1894883907312,
+        "delta_mm3":  412.23680647291485
+    },
+    {
+        "operacion":  16,
+        "nombre":  "Ventana_cuna_I_sin_cambiar_contorno",
+        "corte":  true,
+        "antes_mm3":  2147.1894883907312,
+        "despues_mm3":  2032.8205204659348,
+        "delta_mm3":  -114.36896792479638
+    },
+    {
+        "operacion":  17,
+        "nombre":  "Ventana_cuna_D_sin_cambiar_contorno",
+        "corte":  true,
+        "antes_mm3":  2032.8205204659348,
+        "despues_mm3":  1918.4515525411387,
+        "delta_mm3":  -114.36896792479615
+    }
+]

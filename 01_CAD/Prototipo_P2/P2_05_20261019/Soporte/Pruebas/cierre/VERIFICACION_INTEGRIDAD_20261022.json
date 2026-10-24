@@ -1,0 +1,60 @@
+{
+  "etiqueta": "hecho",
+  "archivos_rastreados_con_huella": 3418,
+  "metodo_rutas": "Claves de rutas comparadas con la misma codificación del canal inicial cp1252/UTF-8, sin colisiones. Los hashes no se transforman.",
+  "archivos_rastreados_cambiados": [
+    {
+      "archivo": "01_CAD/Prototipo_P2/P2_04_20261016/INFORME_DISENO_P2_04.md",
+      "sha256_antes": "428fb19946c1282dd64f3815c906328824312d4ad4ffcd7669d65a62f6e2e94e",
+      "sha256_despues": "d47b2aeea0d16d4edd57045ef67da10c9b9d176fdab39824e28713617f7211f4"
+    },
+    {
+      "archivo": "01_CAD/Prototipo_P2/P2_05_20261019/Heredado_P2_04/INFORME_DISENO_P2_04.md",
+      "sha256_antes": "428fb19946c1282dd64f3815c906328824312d4ad4ffcd7669d65a62f6e2e94e",
+      "sha256_despues": "d47b2aeea0d16d4edd57045ef67da10c9b9d176fdab39824e28713617f7211f4"
+    },
+    {
+      "archivo": "01_CAD/Prototipo_P2/P2_05_20261019/LEEME_P2_05.md",
+      "sha256_antes": "83adccb00a7e4d9f1311a4872bf6f6bb9983fc9d381e171a62ce4a04f965d28e",
+      "sha256_despues": "f57b2d5e5f763f10ff845442681fb9e8aff2b050fec533512fdb3471c262b798"
+    },
+    {
+      "archivo": "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/CONSTRUIR_P2_05.ps1",
+      "sha256_antes": "43dbfce0a73659747ca55ea35e80e1b0bf5550302c081c11aa010d0f7e24f002",
+      "sha256_despues": "0ec9ef3c67633f5ed05de8c5df4783855bd933377a00661d65ad3e1037803459"
+    },
+    {
+      "archivo": "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/calcular_p2_05.py",
+      "sha256_antes": "6ebfbaf8812ae33db7fcfd69e167847555c065dd36dc370b67a91d9daf451fb5",
+      "sha256_despues": "b664720ea12b94c7ee59da310abc032ccd092898f5bbf2676c6bc54b7ad6b85d"
+    },
+    {
+      "archivo": "CHANGELOG_SEDAC.md",
+      "sha256_antes": "025dc76fce62a18c2db96ae3559f0606773d64ccc58047d836d64626f330aa96",
+      "sha256_despues": "689e6b6a82202fd31a784dab57972cb3453e353db4659a07ae12abc4ca28cb6d"
+    },
+    {
+      "archivo": "DECISIONES.md",
+      "sha256_antes": "bbd0f0e0cfb5d55b1cc8c7080c1b07c85ba3b55884b5c69b7fecbc88832d681e",
+      "sha256_despues": "9a55719a1e4c089a0038f0f62e8e0a74ea83777833d10a4a6de1f0747ac0594c"
+    },
+    {
+      "archivo": "ESTADO_ACTUAL.md",
+      "sha256_antes": "256dee89ef584aed852a2021246920724f845eac58bb62ba601badae36118efc",
+      "sha256_despues": "36c3a375eb4a1fc673d6046c2e2fc209d8e4370512b390ecd238f092c509b750"
+    }
+  ],
+  "cambios_fuera_del_encargo": [],
+  "archivos_cad_comparados": 818,
+  "archivos_cad_modificados": [],
+  "archivos_corrida_historica_comparados": 65,
+  "archivos_corrida_historica_modificados": [],
+  "archivos_p204_comparados": 330,
+  "cambios_p204": [
+    "01_CAD/Prototipo_P2/P2_04_20261016/INFORME_DISENO_P2_04.md"
+  ],
+  "calculos_historicos_y_parametros_intactos": true,
+  "excepcion_documental": "La fe de erratas del informe P2.04 cambia su huella. Manifiesto y ZIP históricos se conservan sin reemitir; la excepción no afecta al CAD.",
+  "inventor_ejecutado": false,
+  "commit_realizado": false
+}

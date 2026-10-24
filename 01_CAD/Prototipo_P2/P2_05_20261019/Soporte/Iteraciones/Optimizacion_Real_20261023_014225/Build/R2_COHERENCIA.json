@@ -1,0 +1,27 @@
+﻿{
+    "naturaleza":  "registro_de_ejecucion",
+    "resultado":  {
+                      "resultado":  "R2",
+                      "nombre":  "Coherencia comprobada",
+                      "etiqueta":  "hecho",
+                      "cumple":  false,
+                      "redondeos_solicitados":  5,
+                      "redondeos_pendientes":  1,
+                      "limite_interferencia_mm3":  0.001,
+                      "limite_error_transformacion":  1E-06,
+                      "tolerancia_aritmetica_relativa":  1E-09,
+                      "masa_rigida_derivada_kg":  1.4327775206353301,
+                      "evidencia":  [
+                                        "MODELO_API.json",
+                                        "REDONDEOS.json",
+                                        "INTERFERENCIAS.json",
+                                        "RESTRICCIONES.json",
+                                        "MASAS_CAD.json",
+                                        "RESUMEN_ENTREGA.json"
+                                    ],
+                      "motivos":  [
+                                      "Redondeo pendiente o sin evidencia: Interfaz_lumbar_aligerada; estado=parcial"
+                                  ]
+                  },
+    "alcance":  "Ninguno de los tres acredita el comportamiento físico del producto (textil, contacto, abrasión, ergonomía, fatiga, seguridad)."
+}

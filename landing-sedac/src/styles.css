@@ -1,0 +1,43 @@
+.section-section {
+  position: relative;
+  padding-block: clamp(72px, 10vw, 140px);
+}
+
+.section-dark {
+  background: var(--sedac-graphite);
+  color: var(--sedac-paper);
+}
+
+.section {
+  background: var(--sedac-graphite);
+  color: var(--sedac-paper);
+}
+
+.section-section > div {
+  opacity: 1;
+  transform: none;
+}
+
+.text-balance { text-wrap: balance; }
+.text-pretty  { text-wrap: pretty; }
+
+/* fallback if any component style is missing */
+:root,
+globalThis {
+  --sedac-graphite: #141613;
+  --sedac-graphite-2: #1d201b;
+  --sedac-graphite-3: #2a2e27;
+  --sedac-paper: #f7f4ec;
+  --sedac-paper-2: #ede8dc;
+  --sedac-paper-3: #e2dccf;
+  --sedac-ink: #191b17;
+  --sedac-muted: #6c7066;
+  --sedac-amber: #ffc21a;
+  --sedac-amber-soft: #ffd75a;
+  --sedac-amber-deep: #e0a400;
+  --sedac-accent: #ff8a3d;
+  --sedac-line: rgba(25, 27, 23, 0.14);
+  --sedac-line-dark: rgba(247, 244, 236, 0.14);
+  --font-display: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+}

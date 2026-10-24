@@ -1,0 +1,73 @@
+{
+  "ensamblaje_fuente": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\SEDAC_P2_04.iam",
+  "sha256_IAM": "65b69f20af4bb02a24ef796a76698b9fcc50eede76c644df205eb7dab86152e1",
+  "manifest_fuente": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_04_20261016\\Entrega\\Inventor\\MODELO_API.json",
+  "sha256_manifest": "849be1c84ee2abda58189fa2fbe38a115a82fb19bf28154a7544b873a170007e",
+  "cunas": [
+    {
+      "pieza_fuente": "REF_Cuna_textil_I",
+      "recorrido_central_mm": [
+        [
+          15.6,
+          3.0
+        ],
+        [
+          10.5,
+          4.0
+        ],
+        [
+          7.8,
+          6.5
+        ],
+        [
+          7.5,
+          13.5
+        ],
+        [
+          10.0,
+          17.0
+        ],
+        [
+          15.8,
+          17.4
+        ]
+      ],
+      "ancho_maqueta_mm": 10.0,
+      "espesor_nominal_maqueta_mm": 1.6,
+      "desplazamiento_del_recorrido": 0
+    },
+    {
+      "pieza_fuente": "REF_Cuna_textil_D",
+      "recorrido_central_mm": [
+        [
+          15.6,
+          3.0
+        ],
+        [
+          10.5,
+          4.0
+        ],
+        [
+          7.8,
+          6.5
+        ],
+        [
+          7.5,
+          13.5
+        ],
+        [
+          10.0,
+          17.0
+        ],
+        [
+          15.8,
+          17.4
+        ]
+      ],
+      "ancho_maqueta_mm": 10.0,
+      "espesor_nominal_maqueta_mm": 1.6,
+      "desplazamiento_del_recorrido": 0
+    }
+  ],
+  "criterio": "R3: mismo marco y recorrido de cunas que R2; espesor nominal de ambas cunas aumentado de 1.2 a 1.6 mm para la maqueta PLA. No cambia el producto ni sus materiales. No se ejecuta el generador P2.05."
+}

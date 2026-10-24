@@ -1,0 +1,3 @@
+casos sintéticos de prueba; no son evidencia de entrega
+cálculo: incumplimiento del cribado condicionado
+cumple_cribado falta, no es booleano o es false

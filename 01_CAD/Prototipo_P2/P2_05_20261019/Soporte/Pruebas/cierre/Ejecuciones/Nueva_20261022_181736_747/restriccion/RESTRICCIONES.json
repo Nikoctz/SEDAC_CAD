@@ -1,0 +1,658 @@
+﻿[
+    {
+        "ocurrencia":  "Refuerzo_C_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  1,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_I_35",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_I_35",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_I_95",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_I_95",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_I_390",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_I_390",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_I_450",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_I_450",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Refuerzo_C_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_D_35",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_D_35",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_D_95",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_D_95",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_D_390",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_D_390",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Casquillo_D_450",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Pasador_hueco_D_450",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_superior_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_superior_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Espaldera_HDPE_aligerada",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Funda_refuerzo_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Acolchado_dorsal_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Funda_refuerzo_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Acolchado_dorsal_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Acolchado_lumbar",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cuna_textil_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_carga_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hombrera_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_hombrera_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Regulador_hombro_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cuna_textil_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_carga_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hombrera_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_hombrera_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Regulador_hombro_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_estabilizadora_225",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hebilla_carga_225",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_estabilizadora_350",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hebilla_carga_350",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Ala_cinturon_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Bisagra_textil_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_cierre_cinturon_I",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Ala_cinturon_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Bisagra_textil_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Cinta_cierre_cinturon_D",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hebilla_cinturon",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Correa_pectoral",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Hebilla_pectoral",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "REF_Asa_sistema",
+        "error_transformacion":  0,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_1_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_1_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_1_Arandela_tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_1_Tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_2_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_2_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_2_Arandela_tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_I_2_Tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_3_Tornillo",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_3_Arandela_cabeza",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_3_Arandela_tuerca",
+        "error_transformacion":  2.2204460492503131E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_3_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_4_Tornillo",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_4_Arandela_cabeza",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_4_Arandela_tuerca",
+        "error_transformacion":  2.2204460492503131E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Lumbar_D_4_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_5_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_5_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_5_Arandela_tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_5_Tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_6_Tornillo",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_6_Arandela_cabeza",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_6_Arandela_tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_I_6_Tuerca",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_7_Tornillo",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_7_Arandela_cabeza",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_7_Arandela_tuerca",
+        "error_transformacion":  2.2204460492503131E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_7_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_8_Tornillo",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_8_Arandela_cabeza",
+        "error_transformacion":  8.8817841970012523E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_8_Arandela_tuerca",
+        "error_transformacion":  2.2204460492503131E-16,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    },
+    {
+        "ocurrencia":  "Yugo_D_8_Tuerca",
+        "error_transformacion":  1.7763568394002505E-15,
+        "restricciones":  3,
+        "estado":  "posicion_verificada",
+        "traslaciones":  0,
+        "rotaciones":  0
+    }
+]

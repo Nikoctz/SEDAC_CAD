@@ -1,0 +1,674 @@
+{
+ "carpeta": "Optimizacion_Real_20261023_014225",
+ "fecha": "2026-10-23",
+ "n_archivos": 133,
+ "bytes_total": 15702868,
+ "nota": "Hashes SHA-256 de todos los archivos de la iteracion. Generado al cierre, despues de la ultima escritura.",
+ "archivos": [
+  {
+   "ruta": "Analisis/COMPARACION_ALTERNATIVAS.csv",
+   "bytes": 1311,
+   "sha256": "7091d1ed98938773961b02dc3c2055491d01cfcf0b85c4aa42236f12fec99dee"
+  },
+  {
+   "ruta": "Analisis/COMPARACION_ALTERNATIVAS.json",
+   "bytes": 3715,
+   "sha256": "a472e7199e77a458086942b764740ceae3e456d4a171f5f912d6f888dd155b83"
+  },
+  {
+   "ruta": "Analisis/Modelo_API_OPT/BOM_FIJACIONES.csv",
+   "bytes": 707,
+   "sha256": "0ea272db2368885c3641e1d94bf8e2508eb860b140f1ea26fc800296481d997a"
+  },
+  {
+   "ruta": "Analisis/Modelo_API_OPT/MODELO_API.json",
+   "bytes": 117986,
+   "sha256": "e4d53c680d14c672104e20841b389bf1a1a99cae41d16ab1356157db1bfa7c6e"
+  },
+  {
+   "ruta": "Analisis/PARAMETROS_V0_base_P2_05.json",
+   "bytes": 3781,
+   "sha256": "b29f78ac50955d158bfdb4cc77b91aa2fa97b2b035fdd044f6383c32eea66686"
+  },
+  {
+   "ruta": "Analisis/PARAMETROS_V1_30x26x2.5.json",
+   "bytes": 3781,
+   "sha256": "4e333232f8e4b988a5b558dcb10a5ae22bce35cc089ef0980b6810dc764d302e"
+  },
+  {
+   "ruta": "Analisis/PARAMETROS_V2_32x26x2.5.json",
+   "bytes": 3781,
+   "sha256": "c5c71cb4ae04d297aee3939657df80374b02770e2d69d4b7716b99df7fce8a30"
+  },
+  {
+   "ruta": "Analisis/PARAMETROS_V3_32x24x2.5.json",
+   "bytes": 3781,
+   "sha256": "4c5f47d2dcb975931e0e10f64126e7f6a458fcb8cba41686cb4a500359199711"
+  },
+  {
+   "ruta": "Analisis/PARAMETROS_V4_32x28x2.5.json",
+   "bytes": 3781,
+   "sha256": "779cbe436f288d9006806f2e1336d645648a96c8c152f2b9cb932a16f00facad"
+  },
+  {
+   "ruta": "Analisis/V0_base_P2_05/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Analisis/V0_base_P2_05/RESULTADOS_PREDISENO.json",
+   "bytes": 15420,
+   "sha256": "0127629f07f7e2156089c16c242168733f1ccdb4ca2a12f9845fcc5b0827f516"
+  },
+  {
+   "ruta": "Analisis/V1_30x26x2.5/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Analisis/V1_30x26x2.5/RESULTADOS_PREDISENO.json",
+   "bytes": 15431,
+   "sha256": "fdac33c1c933305a9b8af30740e2a418eac834ba02d89f78df361cac04ffdd4a"
+  },
+  {
+   "ruta": "Analisis/V2_32x26x2.5/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Analisis/V2_32x26x2.5/RESULTADOS_PREDISENO.json",
+   "bytes": 15439,
+   "sha256": "896fcf748261982803bd70a5c736065221a40eee0ddb2c864862c1bada53acff"
+  },
+  {
+   "ruta": "Analisis/V3_32x24x2.5/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Analisis/V3_32x24x2.5/RESULTADOS_PREDISENO.json",
+   "bytes": 15429,
+   "sha256": "fa71734ad4edc0b2d7caf3ad10464318106a47d869f5c30e365fc1815999995f"
+  },
+  {
+   "ruta": "Analisis/V4_32x28x2.5/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Analisis/V4_32x28x2.5/RESULTADOS_PREDISENO.json",
+   "bytes": 15416,
+   "sha256": "f108177ac3eabb310a0e53f9a1d5e3ead8a68e10470abcbd5cf6a75b42991da0"
+  },
+  {
+   "ruta": "Build/Arandela_M5_16x3_GN6341.ipt",
+   "bytes": 101376,
+   "sha256": "96139295934a09905552b750a420d4d31250730b58621059dc180b2c7c8350cf"
+  },
+  {
+   "ruta": "Build/AVISO_CIERRE.txt",
+   "bytes": 100,
+   "sha256": "77794b38ee069a7a852dfa8b379627040cc21adce7a0de91775cb32c978a486f"
+  },
+  {
+   "ruta": "Build/BOM_FIJACIONES.csv",
+   "bytes": 707,
+   "sha256": "0ea272db2368885c3641e1d94bf8e2508eb860b140f1ea26fc800296481d997a"
+  },
+  {
+   "ruta": "Build/Casquillo_D_35.ipt",
+   "bytes": 113664,
+   "sha256": "a45109409b0aafbb63fadf35ff3e66ad7ce6899236ffc7c1513d3ea531455d2a"
+  },
+  {
+   "ruta": "Build/Casquillo_D_390.ipt",
+   "bytes": 113664,
+   "sha256": "b59f135c0d5832e8c8ea44216666f17a198fbc5e143131a190514a773540e4fa"
+  },
+  {
+   "ruta": "Build/Casquillo_D_450.ipt",
+   "bytes": 113664,
+   "sha256": "c612a70b0a45887a931eaa5979b477793f02fea84911fb9c841cece399ed8779"
+  },
+  {
+   "ruta": "Build/Casquillo_D_95.ipt",
+   "bytes": 113664,
+   "sha256": "b095e7df474de50529bb0ad0190f22e00addea10f11b29b8509870bb6dde7277"
+  },
+  {
+   "ruta": "Build/Casquillo_I_35.ipt",
+   "bytes": 113664,
+   "sha256": "a8f9feee5907683e18aaa5bfd755b6a8faffa462825dd7f1299550877b785bfd"
+  },
+  {
+   "ruta": "Build/Casquillo_I_390.ipt",
+   "bytes": 113664,
+   "sha256": "adddb9296875d6e3b4449886f464e036b154045b5304c7f64bb0a82b96fd47cd"
+  },
+  {
+   "ruta": "Build/Casquillo_I_450.ipt",
+   "bytes": 113664,
+   "sha256": "85fc738bd2dd4b71287060839c918743e0343ba8a77d757e04828fe331577caa"
+  },
+  {
+   "ruta": "Build/Casquillo_I_95.ipt",
+   "bytes": 113664,
+   "sha256": "cf30188358c09e49d0bbb4341dc44cf17ec6d1c68f80688d820274010dc239e8"
+  },
+  {
+   "ruta": "Build/CIERRE.json",
+   "bytes": 26540,
+   "sha256": "0188080d71fa8d9562ddebdb3bdca037ad25c3f25c6fd11c57e4a2a616e73346"
+  },
+  {
+   "ruta": "Build/ERROR.txt",
+   "bytes": 876,
+   "sha256": "1aafa50aa4639b79e51d40fa63d4624cf8bc61d8213187befca829ad57cdd48c"
+  },
+  {
+   "ruta": "Build/Espaldera_HDPE_aligerada.ipt",
+   "bytes": 186880,
+   "sha256": "7b5894b7224e4e286fb2e2313255c48da3005f638eea767d0a1b6e536a0be625"
+  },
+  {
+   "ruta": "Build/ESTADO_BORRADOR.txt",
+   "bytes": 803,
+   "sha256": "fc0a2ac19c400531997572590eb5320c2ab7143278103cc812f932fd2a6c14d1"
+  },
+  {
+   "ruta": "Build/Interfaz_lumbar_aligerada.ipt",
+   "bytes": 556544,
+   "sha256": "51d9f2d5502e9a68ff8925791050ea6724c4f546e6f739f0eb37d13a1fa82f76"
+  },
+  {
+   "ruta": "Build/INTERFERENCIAS.json",
+   "bytes": 11,
+   "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+  },
+  {
+   "ruta": "Build/LEEME_CIERRE.txt",
+   "bytes": 1240,
+   "sha256": "7de75779d2c8f1ec7a7e8e0863083bd7ea8e1332635ac7711a58cc3eab9264bc"
+  },
+  {
+   "ruta": "Build/MASAS_CAD.json",
+   "bytes": 14802,
+   "sha256": "672c5f9593c924fee594a16c01232cc506fe91d49edc69754bc07e9f2308b826"
+  },
+  {
+   "ruta": "Build/MODELO_API.json",
+   "bytes": 117986,
+   "sha256": "e4d53c680d14c672104e20841b389bf1a1a99cae41d16ab1356157db1bfa7c6e"
+  },
+  {
+   "ruta": "Build/OldVersions/SEDAC_OPT_20261023.0001.iam",
+   "bytes": 719360,
+   "sha256": "daae464380bd6c00354e2decb9379b5b7e0b87f85e0ca33e702f7e2c14ce1e8e"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_D_35.ipt",
+   "bytes": 105984,
+   "sha256": "9710f17156c73307b9be63b2748ba13a995bad74c7ef5e75c9620c3b297eb7b5"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_D_390.ipt",
+   "bytes": 105984,
+   "sha256": "21de2f6d1bdbbde3994f63434b756be5c03f8b443a4bce3a7751f3b30864c9a1"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_D_450.ipt",
+   "bytes": 106496,
+   "sha256": "7d694ce1fdc423b9ee585d77ee7607a1ea13b6a5249d6772893d8a88ae8e0085"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_D_95.ipt",
+   "bytes": 105984,
+   "sha256": "594ed0f96c717b8491758a288f7d3a9440be9298107e2b4c1185781941e29ed8"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_I_35.ipt",
+   "bytes": 105984,
+   "sha256": "8b7843ecf2b987e56b5152ba921ffebbf5019eb1ab5b7d380efd3708036a2a76"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_I_390.ipt",
+   "bytes": 105984,
+   "sha256": "a16cf3fe3bbb8a41c1fa15b992e490dbc019656476d88e8446568cee713a2aa3"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_I_450.ipt",
+   "bytes": 106496,
+   "sha256": "9ae095459a772aa688b51d795fac155c1d7d7b8110442d06bcd0376c0e067a84"
+  },
+  {
+   "ruta": "Build/Pasador_hueco_I_95.ipt",
+   "bytes": 105984,
+   "sha256": "086f550745300b9f6ca538802e5dda1ac808bf58df9fcd5b54b4f1ddd3b573ae"
+  },
+  {
+   "ruta": "Build/PROGRESO.txt",
+   "bytes": 265,
+   "sha256": "276c4a0988cbb61f06070091c1be711edd9ca4a761050abeead607302b9e32e2"
+  },
+  {
+   "ruta": "Build/R1_GENERACION.json",
+   "bytes": 26821,
+   "sha256": "7a504733ba035118d966f513a4a5451273fccead39ed19604b09abc37a42697e"
+  },
+  {
+   "ruta": "Build/R2_COHERENCIA.json",
+   "bytes": 1435,
+   "sha256": "4914c92c03747f0a110797afa20261950d9172e5d37977b63dcbbdc6573715bb"
+  },
+  {
+   "ruta": "Build/R3_CRIBADO.json",
+   "bytes": 936,
+   "sha256": "3d67d80f6e0b1c35c97ae05bfe77254d185b55adbce1e89c9342ab386ff40684"
+  },
+  {
+   "ruta": "Build/REDONDEOS.json",
+   "bytes": 1335,
+   "sha256": "00d99b8acc24746e53a357dfb2f48b8a8af23b4d365bebd97f8853d6a169d021"
+  },
+  {
+   "ruta": "Build/REF_Acolchado_dorsal_D.ipt",
+   "bytes": 92672,
+   "sha256": "fb1ad55e5cc78378957a0fa5d632eaf9d8579b76b2dbdb5bd5577e965aa54c74"
+  },
+  {
+   "ruta": "Build/REF_Acolchado_dorsal_I.ipt",
+   "bytes": 93184,
+   "sha256": "319ef35803656812ad5f0cac81bfe6ba9ab561cc51f73106758d75bd2eed3d62"
+  },
+  {
+   "ruta": "Build/REF_Acolchado_lumbar.ipt",
+   "bytes": 92160,
+   "sha256": "3904176dc5a46b4f365a3740c3bab8db0bd22f11d764bd3a30f45fc4b6c8bb3b"
+  },
+  {
+   "ruta": "Build/REF_Ala_cinturon_D.ipt",
+   "bytes": 119808,
+   "sha256": "75bfcbe416db6390b1574f730363a1f2a3561321aac91d49521e2fde96eaf7e0"
+  },
+  {
+   "ruta": "Build/REF_Ala_cinturon_I.ipt",
+   "bytes": 121344,
+   "sha256": "db6e923b5474bc1e4bfef5ba18966920d6c8628c38adf81e034550ac7c316ffd"
+  },
+  {
+   "ruta": "Build/REF_Asa_sistema.ipt",
+   "bytes": 94208,
+   "sha256": "ddf4f1b630a75f380a54086f24ba4975c8122fbae794a96862b6b010984ea980"
+  },
+  {
+   "ruta": "Build/REF_Bisagra_textil_D.ipt",
+   "bytes": 88064,
+   "sha256": "3d6c33841749277bf20e89eafd258bdf779cd0521ee7b19ef79479bc1c759d05"
+  },
+  {
+   "ruta": "Build/REF_Bisagra_textil_I.ipt",
+   "bytes": 88064,
+   "sha256": "33e156fd9ac5cfc3a90dc22c22d6d7aed88677f11bfac2003baed2239a83eed6"
+  },
+  {
+   "ruta": "Build/REF_Cinta_carga_D.ipt",
+   "bytes": 115712,
+   "sha256": "78e5f56837c9a4e393726d4b10c698bd0a64b0c4a59ec70f1b6c15d68bc84bfe"
+  },
+  {
+   "ruta": "Build/REF_Cinta_carga_I.ipt",
+   "bytes": 115200,
+   "sha256": "ada9efa601d5a425a34bf764d86b93c68731b3bb81e8576a09fe924a7047f116"
+  },
+  {
+   "ruta": "Build/REF_Cinta_cierre_cinturon_D.ipt",
+   "bytes": 92160,
+   "sha256": "8fa60033a3bbbb48de13158cb1d932adf367879c2edd4098c2a8e138bc70d626"
+  },
+  {
+   "ruta": "Build/REF_Cinta_cierre_cinturon_I.ipt",
+   "bytes": 92160,
+   "sha256": "ea9b9203a38daf69ba53027c8cb73958bcf5b38b5c54c475f0bba84a20f1d485"
+  },
+  {
+   "ruta": "Build/REF_Cinta_estabilizadora_225.ipt",
+   "bytes": 103936,
+   "sha256": "6ca6392cbc7b8cf9e4bee387fb01d9dd7abfeb8f0ec0b3bdc442dfadaa2febb0"
+  },
+  {
+   "ruta": "Build/REF_Cinta_estabilizadora_350.ipt",
+   "bytes": 103424,
+   "sha256": "91ce145a39bc76195834f8ac96c6d668f9f4dd0e7b06c8c91d785e32912b5aa5"
+  },
+  {
+   "ruta": "Build/REF_Cinta_hombrera_D.ipt",
+   "bytes": 100352,
+   "sha256": "f1b98b5edb8c3d1dbfe8b3c3e583470f2c766bc615f19dc50fc8e26c4004e860"
+  },
+  {
+   "ruta": "Build/REF_Cinta_hombrera_I.ipt",
+   "bytes": 101888,
+   "sha256": "20add22588760b65cb2b85761727f2b1ef9f15df5e0ae26810e666a5dd352afb"
+  },
+  {
+   "ruta": "Build/REF_Correa_pectoral.ipt",
+   "bytes": 90624,
+   "sha256": "5824b63a939da51c66d6209698f232477183d4a235f784e67852bc7d17c8f389"
+  },
+  {
+   "ruta": "Build/REF_Cuna_textil_D.ipt",
+   "bytes": 104448,
+   "sha256": "ff4f91f197b33509cb9db168633d1e763971a70c1db39719e796f5972d20a916"
+  },
+  {
+   "ruta": "Build/REF_Cuna_textil_I.ipt",
+   "bytes": 104960,
+   "sha256": "4fbac2986b3b751e070bc7cc7b08327a27c8f89d36feef4053d98d6c38c2472d"
+  },
+  {
+   "ruta": "Build/REF_Funda_refuerzo_D.ipt",
+   "bytes": 101376,
+   "sha256": "d0de6d82649e9d526028bb44cf74079553e2e27a3cf321b2e4f9ac7691c20d03"
+  },
+  {
+   "ruta": "Build/REF_Funda_refuerzo_I.ipt",
+   "bytes": 101376,
+   "sha256": "55c1bb79f9b458bd1114dbc4a759283da04376c93222a1f3b688f33f7745f6bc"
+  },
+  {
+   "ruta": "Build/REF_Hebilla_carga_225.ipt",
+   "bytes": 93696,
+   "sha256": "e94ba53247712f545dc5a35a8e7fc65c58f1b981a8fff3289820305af90adb5c"
+  },
+  {
+   "ruta": "Build/REF_Hebilla_carga_350.ipt",
+   "bytes": 93184,
+   "sha256": "6c1fe3715b10403c8044fc8c0b4a85ef96927dc36d582352b1495835bb1804da"
+  },
+  {
+   "ruta": "Build/REF_Hebilla_cinturon.ipt",
+   "bytes": 126464,
+   "sha256": "bdc3946cbdc263181789eb9ee6725ba1e7d1a88254aa254f553345a59d1a4f50"
+  },
+  {
+   "ruta": "Build/REF_Hebilla_pectoral.ipt",
+   "bytes": 93696,
+   "sha256": "a14cfa5f0dd1177ecd5315ea1c67c9dc388f182f6af76bff469c219bd5657fc5"
+  },
+  {
+   "ruta": "Build/REF_Hombrera_D.ipt",
+   "bytes": 98816,
+   "sha256": "c36aca4ecdec6830ea813fa8df20a87965df5b8ecc2122449c48f32bff073fcd"
+  },
+  {
+   "ruta": "Build/REF_Hombrera_I.ipt",
+   "bytes": 98816,
+   "sha256": "badb1633eec98b7ed356db3004a10838a530f5b78c029e62d03da362e21e3f90"
+  },
+  {
+   "ruta": "Build/REF_Regulador_hombro_D.ipt",
+   "bytes": 109568,
+   "sha256": "73bcc5efada42caf262b39f7460a5e0c4e3993ce9114c0665efafd360c6d2a8f"
+  },
+  {
+   "ruta": "Build/REF_Regulador_hombro_I.ipt",
+   "bytes": 109568,
+   "sha256": "0546586f697c812285af1f5c57b4ea371f68735dd38b54ebe858e8590b523e99"
+  },
+  {
+   "ruta": "Build/REFERENCIAS_IPT.txt",
+   "bytes": 3,
+   "sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+  },
+  {
+   "ruta": "Build/REFERENCIAS_Y_ACTUALIZACION.json",
+   "bytes": 11254,
+   "sha256": "9bfd54b13db26b0ae14dfe725c706e7a14e61cb77ef5e1aefd6cb114ced295db"
+  },
+  {
+   "ruta": "Build/Refuerzo_C_D.ipt",
+   "bytes": 147456,
+   "sha256": "fe21c6c447bb6d3811f8b44784da1e3a6a2a49c94200dc8ec1a15116350ce62c"
+  },
+  {
+   "ruta": "Build/Refuerzo_C_I.ipt",
+   "bytes": 147968,
+   "sha256": "e3d3c5b69e6af99dbff6c9304f1537cade8a763e8c2cf6bd6ab0b7ccb20bcf06"
+  },
+  {
+   "ruta": "Build/RESTRICCIONES.json",
+   "bytes": 19336,
+   "sha256": "f64e256b28aaed6c9b8739da8367c7c1eb46d918d7121e56e0b53108ad4bff86"
+  },
+  {
+   "ruta": "Build/RESULTADOS_PREDISENO.json",
+   "bytes": 15450,
+   "sha256": "66848e5b30baaa10ee9f3b7656c1b5f85a5c1d653c56d9fc26c41ed167eace85"
+  },
+  {
+   "ruta": "Build/RESUMEN_ENTREGA.json",
+   "bytes": 1166,
+   "sha256": "2bd8df34cbac6aaeca61326864e080700bc7b495a530bd267c000a2ca9647917"
+  },
+  {
+   "ruta": "Build/ROSCAS_NATIVAS.json",
+   "bytes": 374,
+   "sha256": "49c1a410a5d381c539288562ffc5a9bf7a0f8e101412dd25c4dacec43a71222a"
+  },
+  {
+   "ruta": "Build/SEDAC_OPT_20261023.iam",
+   "bytes": 720896,
+   "sha256": "014c2c5757d1764b13d7757a064aa4b9b9772dd47102e3ded227eadfa30d1947"
+  },
+  {
+   "ruta": "Build/SEDAC_OPT_20261023_REVISION.step",
+   "bytes": 3080974,
+   "sha256": "41203d8af3c9a3c5f249772de4874c967f920f1695aadb0ccf2f49ab7732c378"
+  },
+  {
+   "ruta": "Build/Tornillo_M5x55_ISO4762_A2_80.ipt",
+   "bytes": 131072,
+   "sha256": "c5a963a4e2d5bd7049a6bb06589da3a9ae0f6253ec268aa7008e6547beb74b61"
+  },
+  {
+   "ruta": "Build/Tuerca_M5_autofreno_metalica.ipt",
+   "bytes": 123904,
+   "sha256": "2396d2b6bfba5fa5cb9732622132cd88e988ba6d215d520cb051c03ad6632319"
+  },
+  {
+   "ruta": "Build/VERIFICACION_NATIVA.json",
+   "bytes": 640,
+   "sha256": "11c337729a808b0ad11bc36377e1c368711e2ce526b4bfc2084d20dc450f08d7"
+  },
+  {
+   "ruta": "Build/VISTA_ESPALDA.png",
+   "bytes": 621181,
+   "sha256": "f5e452743093ffed8cdb7047b3286623dfddc928451f43c0daf508b1a52e987d"
+  },
+  {
+   "ruta": "Build/VISTA_ESTRUCTURA.png",
+   "bytes": 783696,
+   "sha256": "e7290a671d03abeef165e62ea5442ac06ad862198f4d5a448afa893247a237e8"
+  },
+  {
+   "ruta": "Build/VISTA_FRENTE.png",
+   "bytes": 636024,
+   "sha256": "d627c8bdba0b66f02d2214ea6c297d182c47933055e6ee2b8146b6061231f93b"
+  },
+  {
+   "ruta": "Build/VISTA_ISOMETRICA.png",
+   "bytes": 670418,
+   "sha256": "e17d7d76a291bca4cd70e68a91e5edf3777a32379a31014b7c63b86a5875f835"
+  },
+  {
+   "ruta": "Build/VISTA_LATERAL.png",
+   "bytes": 674027,
+   "sha256": "f4514470adf27d2e2bc18a458af654d06da6d5b41d5198a8db23a90df3644c07"
+  },
+  {
+   "ruta": "Build/Yugo_superior_D.ipt",
+   "bytes": 484864,
+   "sha256": "f7e526599a99ff157333873bb56262814f9f5f7ca1f8dc60015f74eca705f7ca"
+  },
+  {
+   "ruta": "Build/Yugo_superior_I.ipt",
+   "bytes": 486400,
+   "sha256": "e032e91f66fafeed4b30f295cbcd0ee527167dc13d78883da62883e49b2d1b02"
+  },
+  {
+   "ruta": "Build_log.txt",
+   "bytes": 12377,
+   "sha256": "f53312aad209891a03764883ed96bb0fdf97fc175c99a763dde1f490e32def6f"
+  },
+  {
+   "ruta": "Calculos/COMPARACION_SECCIONES.csv",
+   "bytes": 537,
+   "sha256": "db0925e120c0395d9a6e33d97fb860b44e17c39b5ec27d514efb14b8b2229b74"
+  },
+  {
+   "ruta": "Calculos/RESULTADOS_PREDISENO.json",
+   "bytes": 15450,
+   "sha256": "66848e5b30baaa10ee9f3b7656c1b5f85a5c1d653c56d9fc26c41ed167eace85"
+  },
+  {
+   "ruta": "Cierre/CIERRE.json",
+   "bytes": 26393,
+   "sha256": "e97480c985b9278b6c9989d12eb3ab09b52cb4d3221fba9e3ca0a39a8d3f73c0"
+  },
+  {
+   "ruta": "Cierre/ERROR.txt",
+   "bytes": 676,
+   "sha256": "fed38f5b99a3660601beef2e7204f0f63c7057e0591706cec1886a67308997ba"
+  },
+  {
+   "ruta": "Cierre/ESTADO_BORRADOR.txt",
+   "bytes": 704,
+   "sha256": "c27d1881d513fc010e79b0c7d892be6551e79d9218bd06ae7ba1b25776a8ad41"
+  },
+  {
+   "ruta": "Cierre/R1_GENERACION.json",
+   "bytes": 26656,
+   "sha256": "ddc4c341aed04e85f380b630023ef36fb92001621e29c749248c65f7704bc62d"
+  },
+  {
+   "ruta": "Cierre/R2_COHERENCIA.json",
+   "bytes": 1441,
+   "sha256": "31098a3cc6a506c67327cba7dd4566fff0da67a06077900accf9c0b4f5b45aeb"
+  },
+  {
+   "ruta": "Cierre/R3_CRIBADO.json",
+   "bytes": 946,
+   "sha256": "464c3a953cbc119d32eda3ab59d16426a78d8a0d64b7d945081420338d4cbcc2"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/CIERRE.json",
+   "bytes": 26494,
+   "sha256": "32d9da0f7fe8b5b6ca1af4a106ea334aab2717ea7b845ac81598c2959b7f7e8c"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/ERROR.txt",
+   "bytes": 752,
+   "sha256": "97996cf6809d9826885070e1aa46b70de7b3dcb6038f2e8c111fa39a8e23e2ee"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/ESTADO_BORRADOR.txt",
+   "bytes": 780,
+   "sha256": "1c80af25248ba4181cdeff6e301249402138a66170a14114dfc680825d984920"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/R1_GENERACION.json",
+   "bytes": 26764,
+   "sha256": "aa5ae3e4be42905f85dcfac6eb2ce2697e7c57f10067dcbaaec28e7d04cc0a1c"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/R2_COHERENCIA.json",
+   "bytes": 1441,
+   "sha256": "31098a3cc6a506c67327cba7dd4566fff0da67a06077900accf9c0b4f5b45aeb"
+  },
+  {
+   "ruta": "Cierre_intento1_nombre/R3_CRIBADO.json",
+   "bytes": 946,
+   "sha256": "464c3a953cbc119d32eda3ab59d16426a78d8a0d64b7d945081420338d4cbcc2"
+  },
+  {
+   "ruta": "INFORME_OPT.md",
+   "bytes": 12010,
+   "sha256": "c6972dcc63ebdb90d1519e75190f58b0b36a1415c6e71faf07ea8e4a33caccc4"
+  },
+  {
+   "ruta": "LEEME_OPT.md",
+   "bytes": 4714,
+   "sha256": "22619f7b30fe0cc7f108ba9262586b070357825d26a57355ea4b77a5c9e37474"
+  },
+  {
+   "ruta": "PARAMETROS_BASE.json",
+   "bytes": 3781,
+   "sha256": "40f2491d01bdef73170a46fc3fabc2e019dde088515ff91dffc7c2e835293771"
+  },
+  {
+   "ruta": "PARAMETROS_P2_05.json",
+   "bytes": 3815,
+   "sha256": "8a3ec6d93a34b7de90f7d8d29acfa560abcec626956092627c7cc99dfe216370"
+  },
+  {
+   "ruta": "RESULTADO_NATIVO.md",
+   "bytes": 5107,
+   "sha256": "a29c999e002984f85631065ac42726b85bdd39b1eadb003a10adade1698d2e71"
+  },
+  {
+   "ruta": "Soporte/alternativas.py",
+   "bytes": 4099,
+   "sha256": "dfb0e2d1a28d455aeb3001e17a95185075582c7676cdd96d0e3cbe5a03cccba8"
+  },
+  {
+   "ruta": "Soporte/calcular_p2_05.py",
+   "bytes": 13361,
+   "sha256": "96e91feace666fa0b23f2767c609ca4a3625b2ae3d298b5433017f8d6211f3db"
+  },
+  {
+   "ruta": "Soporte/cierre_p2_05.ps1",
+   "bytes": 16621,
+   "sha256": "ebd613cb0f5f74664e1ff71a2e756e7ac57e7e670ca093c2199353b77bc5b4f8"
+  },
+  {
+   "ruta": "Soporte/CONSTRUIR_OPT.ps1",
+   "bytes": 28759,
+   "sha256": "ec1311b317a5c9597c90249be3f438290fbc3feaf89516809cbb9c800e7d4c45"
+  },
+  {
+   "ruta": "Soporte/generar_p2_05.py",
+   "bytes": 15075,
+   "sha256": "ba9ad146ac19afc85cb68f90936a77677256206c20c4d20d5de1e496dcf1829b"
+  },
+  {
+   "ruta": "Soporte/generar_tabla.py",
+   "bytes": 5276,
+   "sha256": "a85fee7ad667b4d9a38c2b795515062b17e685b9883ffede009143473150d5f9"
+  },
+  {
+   "ruta": "Soporte/manifiesto.py",
+   "bytes": 774,
+   "sha256": "76356a9df4a76c67ff5833f1a7c9f582e2053026fd95d3c9f625d0ea30a39c90"
+  },
+  {
+   "ruta": "Soporte/reevaluar_cierre.ps1",
+   "bytes": 746,
+   "sha256": "ce6c8a91bf68196e7065391df61f25852d035d2ee5de03f6be7314aa2e5aa3c1"
+  },
+  {
+   "ruta": "Soporte/refs_y_actualizacion.ps1",
+   "bytes": 1845,
+   "sha256": "c952094772843c31ec7c1295895265ada79c1de7240f83ffe3c1da32f6203406"
+  },
+  {
+   "ruta": "Soporte/verificar_y_vistas.ps1",
+   "bytes": 3211,
+   "sha256": "fdde585608556425ae892bbf4931b43fd5d6596a236ebaf563677ff3ca25604c"
+  },
+  {
+   "ruta": "TABLA_MASAS.md",
+   "bytes": 4617,
+   "sha256": "a7041513abd059971718a873985f6f1c4e538954a5faf728f1c0d3ddc4546447"
+  }
+ ]
+}
