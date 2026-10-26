@@ -1,0 +1,1418 @@
+﻿[
+    {
+        "variable":  "u_fuerza",
+        "mathcad_SI":  1,
+        "control_SI":  1,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "u_fuerza_ratio",
+        "mathcad_SI":  1,
+        "control_SI":  1,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "u_presion_ratio",
+        "mathcad_SI":  1,
+        "control_SI":  1,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "u_area",
+        "mathcad_SI":  1E-06,
+        "control_SI":  1E-06,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "u_momento",
+        "mathcad_SI":  0.001,
+        "control_SI":  0.001,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "L_canal",
+        "mathcad_SI":  0.48,
+        "control_SI":  0.48,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "B",
+        "mathcad_SI":  0.032,
+        "control_SI":  0.032,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "D",
+        "mathcad_SI":  0.024,
+        "control_SI":  0.024,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "t_nom",
+        "mathcad_SI":  0.003,
+        "control_SI":  0.003,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "t_min",
+        "mathcad_SI":  0.0028,
+        "control_SI":  0.0028,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "r_raiz",
+        "mathcad_SI":  0.002,
+        "control_SI":  0.002,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sep_canales",
+        "mathcad_SI":  0.19,
+        "control_SI":  0.19,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "z_eje",
+        "mathcad_SI":  0.012,
+        "control_SI":  0.012,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "d_taladro",
+        "mathcad_SI":  0.010199999999999999,
+        "control_SI":  0.010199999999999999,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "esp_mejilla",
+        "mathcad_SI":  0.003,
+        "control_SI":  0.003,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "esp_anclaje",
+        "mathcad_SI":  0.006,
+        "control_SI":  0.006,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "esp_anclaje_min",
+        "mathcad_SI":  0.0058,
+        "control_SI":  0.0058,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "casquillo_od",
+        "mathcad_SI":  0.0125,
+        "control_SI":  0.0125,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pasador_od",
+        "mathcad_SI":  0.01,
+        "control_SI":  0.01,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pasador_id",
+        "mathcad_SI":  0.0055,
+        "control_SI":  0.0055,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "L_pasador",
+        "mathcad_SI":  0.0376,
+        "control_SI":  0.0376,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "arandela_od",
+        "mathcad_SI":  0.016,
+        "control_SI":  0.016,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "arandela_id",
+        "mathcad_SI":  0.0053,
+        "control_SI":  0.0053,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "arandela_esp",
+        "mathcad_SI":  0.003,
+        "control_SI":  0.003,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "arandela_esp_min",
+        "mathcad_SI":  0.0029,
+        "control_SI":  0.0029,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "separacion_pernos",
+        "mathcad_SI":  0.06,
+        "control_SI":  0.06,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "dist_borde_perno",
+        "mathcad_SI":  0.012,
+        "control_SI":  0.012,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "apoyo_hombro_y",
+        "mathcad_SI":  0.435,
+        "control_SI":  0.435,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "apoyo_cinturon_y",
+        "mathcad_SI":  0.055,
+        "control_SI":  0.055,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "alto_puente_cinta",
+        "mathcad_SI":  0.018000000000000002,
+        "control_SI":  0.018000000000000002,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "luz_puente_cinta",
+        "mathcad_SI":  0.052000000000000005,
+        "control_SI":  0.052000000000000005,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "brazo_torsion",
+        "mathcad_SI":  0.012,
+        "control_SI":  0.012,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "nu",
+        "mathcad_SI":  0.33,
+        "control_SI":  0.33,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "As_M5",
+        "mathcad_SI":  1.4199999999999998E-05,
+        "control_SI":  1.4199999999999998E-05,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "longitud_tornillo",
+        "mathcad_SI":  0.055,
+        "control_SI":  0.055,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "altura_tuerca",
+        "mathcad_SI":  0.005,
+        "control_SI":  0.005,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "m_total",
+        "mathcad_SI":  25,
+        "control_SI":  25,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "g",
+        "mathcad_SI":  9.81,
+        "control_SI":  9.81,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "fv",
+        "mathcad_SI":  3,
+        "control_SI":  3,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "fh",
+        "mathcad_SI":  1,
+        "control_SI":  1,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "frac",
+        "mathcad_SI":  0.7,
+        "control_SI":  0.7,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "excentricidad",
+        "mathcad_SI":  0.1075,
+        "control_SI":  0.1075,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "precarga",
+        "mathcad_SI":  2000,
+        "control_SI":  2000,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "angulo_eslinga",
+        "mathcad_SI":  0.6108652381980153,
+        "control_SI":  0.6108652381980153,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "margen_objetivo",
+        "mathcad_SI":  2.2,
+        "control_SI":  2.2,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "flecha_limite",
+        "mathcad_SI":  0.005,
+        "control_SI":  0.005,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "K_borde",
+        "mathcad_SI":  1.25,
+        "control_SI":  1.25,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "K_ventana",
+        "mathcad_SI":  3,
+        "control_SI":  3,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "E_al",
+        "mathcad_SI":  69000000000,
+        "control_SI":  69000000000,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Sy_al",
+        "mathcad_SI":  240000000,
+        "control_SI":  240000000,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Sy_perno",
+        "mathcad_SI":  600000000,
+        "control_SI":  600000000,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Sy_arandela",
+        "mathcad_SI":  200000000,
+        "control_SI":  200000000,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "factor_palanca",
+        "mathcad_SI":  1.5,
+        "control_SI":  1.5,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "masa_CAD",
+        "mathcad_SI":  1.442328,
+        "control_SI":  1.442328,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "reserva_textil",
+        "mathcad_SI":  0.65,
+        "control_SI":  0.65,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "reserva_adicional",
+        "mathcad_SI":  0.12,
+        "control_SI":  0.12,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "A_min",
+        "mathcad_SI":  0.00020832,
+        "control_SI":  0.00020832,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "z_min",
+        "mathcad_SI":  0.0082387096774193553,
+        "control_SI":  0.0082387096774193553,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "I_min",
+        "mathcad_SI":  1.1857979045161291E-08,
+        "control_SI":  1.1857979045161291E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ix_min",
+        "mathcad_SI":  3.30297856E-08,
+        "control_SI":  3.30297856E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_min",
+        "mathcad_SI":  7.5234824068767911E-07,
+        "control_SI":  7.5234824068767911E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "J_min",
+        "mathcad_SI":  5.4440959999999986E-10,
+        "control_SI":  5.444096E-10,
+        "unidad":  "",
+        "error_rel":  1.8992607141594944E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "L_luz",
+        "mathcad_SI":  0.38,
+        "control_SI":  0.38,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Fv",
+        "mathcad_SI":  735.75,
+        "control_SI":  735.75,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Fh",
+        "mathcad_SI":  245.25,
+        "control_SI":  245.25,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "N_lado",
+        "mathcad_SI":  515.025,
+        "control_SI":  515.025,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Q_lado",
+        "mathcad_SI":  171.67499999999998,
+        "control_SI":  171.67499999999998,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "M0",
+        "mathcad_SI":  55.3651875,
+        "control_SI":  55.3651875,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "step",
+        "mathcad_SI":  0.000475,
+        "control_SI":  0.000475,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "x_cont",
+        "mathcad_SI":  0.028749999999999998,
+        "control_SI":  0.028749999999999998,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "i_cont",
+        "mathcad_SI":  60,
+        "control_SI":  60,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "x_a",
+        "mathcad_SI":  0.0285,
+        "control_SI":  0.0285,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "x_b",
+        "mathcad_SI":  0.028975,
+        "control_SI":  0.028975,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Mmax",
+        "mathcad_SI":  55.738585989843749,
+        "control_SI":  55.738585989843749,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "x_max",
+        "mathcad_SI":  0.028975,
+        "control_SI":  0.028975,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "GG",
+        "mathcad_SI":  25939849624.06015,
+        "control_SI":  25939849624.06015,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "mlat",
+        "mathcad_SI":  16.309124999999998,
+        "control_SI":  16.309124999999998,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig",
+        "mathcad_SI":  95079968.015338376,
+        "control_SI":  95079968.015338376,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_biax",
+        "mathcad_SI":  104955372.71672402,
+        "control_SI":  104955372.71672402,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "T",
+        "mathcad_SI":  2.0601,
+        "control_SI":  2.0601,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tau",
+        "mathcad_SI":  11419570.852534564,
+        "control_SI":  11419570.852534562,
+        "unidad":  "",
+        "error_rel":  1.6310990783139149E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "vm",
+        "mathcad_SI":  106802856.03613149,
+        "control_SI":  106802856.03613149,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_combinado",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_euler",
+        "mathcad_SI":  108.58354359903593,
+        "control_SI":  108.58354359903593,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_placa",
+        "mathcad_SI":  477698571.76015168,
+        "control_SI":  477698571.76015168,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_local",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Mcr",
+        "mathcad_SI":  1483.1678853931433,
+        "control_SI":  1483.1678853931437,
+        "unidad":  "",
+        "error_rel":  3.0660544592760255E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_ltb",
+        "mathcad_SI":  26.609356140885858,
+        "control_SI":  26.609356140885868,
+        "unidad":  "",
+        "error_rel":  4.0054110967476704E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "netA",
+        "mathcad_SI":  0.00015120000000000002,
+        "control_SI":  0.00015120000000000002,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_local",
+        "mathcad_SI":  28986568.242417436,
+        "control_SI":  28986568.242417436,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_taladro",
+        "mathcad_SI":  2.7598989756549437,
+        "control_SI":  2.7598989756549437,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "reaction",
+        "mathcad_SI":  1014.8139331640625,
+        "control_SI":  1014.8139331640625,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "R",
+        "mathcad_SI":  1522.2208997460939,
+        "control_SI":  1522.2208997460939,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "V_union",
+        "mathcad_SI":  1046.9766026994894,
+        "control_SI":  1046.9766026994894,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "fb",
+        "mathcad_SI":  2804.4441799492188,
+        "control_SI":  2804.4441799492188,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sb",
+        "mathcad_SI":  197496069.01050839,
+        "control_SI":  197496069.01050839,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tb",
+        "mathcad_SI":  73730746.66897814,
+        "control_SI":  73730746.66897814,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bolt_vm",
+        "mathcad_SI":  235187938.22749197,
+        "control_SI":  235187938.22749197,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_perno",
+        "mathcad_SI":  2.55115123897057,
+        "control_SI":  2.55115123897057,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pin_od_eff",
+        "mathcad_SI":  0.0099,
+        "control_SI":  0.0099,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pin_id_eff",
+        "mathcad_SI":  0.0056,
+        "control_SI":  0.0056,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_aplast_ala",
+        "mathcad_SI":  6.3542967272111381,
+        "control_SI":  6.3542967272111381,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_aplast_mejilla",
+        "mathcad_SI":  6.3542967272111381,
+        "control_SI":  6.3542967272111381,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_arranc",
+        "mathcad_SI":  5.110780113140545,
+        "control_SI":  5.110780113140545,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_casquillo",
+        "mathcad_SI":  3.5942333231190164,
+        "control_SI":  3.5942333231190164,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pin_area",
+        "mathcad_SI":  5.2346787590439945E-05,
+        "control_SI":  5.2346787590439945E-05,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "pin_Z",
+        "mathcad_SI":  8.5506362507262834E-08,
+        "control_SI":  8.5506362507262821E-08,
+        "unidad":  "",
+        "error_rel":  1.5478251457281071E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "pin_vm",
+        "mathcad_SI":  80830190.485096961,
+        "control_SI":  80830190.485096976,
+        "unidad":  "",
+        "error_rel":  1.8435142988553329E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_pasador",
+        "mathcad_SI":  2.96918760873451,
+        "control_SI":  2.9691876087345097,
+        "unidad":  "",
+        "error_rel":  1.4956589760231985E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "washer_sigma",
+        "mathcad_SI":  87569905.336023122,
+        "control_SI":  87569905.336023122,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_arb_flex",
+        "mathcad_SI":  2.2838896448792569,
+        "control_SI":  2.2838896448792569,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "washer_contact",
+        "mathcad_SI":  3.166733139943126E-05,
+        "control_SI":  3.166733139943126E-05,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_arb_tuerca",
+        "mathcad_SI":  2.2583677454407147,
+        "control_SI":  2.2583677454407147,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Tstrap",
+        "mathcad_SI":  314.36471628843447,
+        "control_SI":  314.36471628843447,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Tinterface",
+        "mathcad_SI":  628.72943257686893,
+        "control_SI":  628.72943257686893,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bridge_M",
+        "mathcad_SI":  8.1734826234992966,
+        "control_SI":  8.1734826234992966,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_bridge",
+        "mathcad_SI":  3.1320000000000008E-07,
+        "control_SI":  3.1320000000000008E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_bridge_out",
+        "mathcad_SI":  1.0091999999999999E-07,
+        "control_SI":  1.0091999999999999E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sbri",
+        "mathcad_SI":  101746425.91801317,
+        "control_SI":  101746425.91801317,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_puente_anclaje",
+        "mathcad_SI":  2.3588052143806109,
+        "control_SI":  2.3588052143806109,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "cuna_Zin",
+        "mathcad_SI":  2.1749999999999996E-07,
+        "control_SI":  2.1749999999999996E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "cuna_Zout",
+        "mathcad_SI":  8.4099999999999979E-08,
+        "control_SI":  8.4099999999999979E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "cuna_sigma",
+        "mathcad_SI":  64895743.481842391,
+        "control_SI":  64895743.481842391,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_puente_cuna",
+        "mathcad_SI":  3.6982394703152015,
+        "control_SI":  3.6982394703152015,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_min",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "flecha",
+        "mathcad_SI":  0.00086667687991169161,
+        "control_SI":  0.00086667687991169161,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "giro",
+        "mathcad_SI":  3.1761521758763416,
+        "control_SI":  3.1761521758763407,
+        "unidad":  "",
+        "error_rel":  2.7963975606901316E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "cierre_residual",
+        "mathcad_SI":  282.22328020312489,
+        "control_SI":  282.22328020312489,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "masa_presupuesto",
+        "mathcad_SI":  2.2123280000000003,
+        "control_SI":  2.2123280000000003,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "masa_brecha_2kg",
+        "mathcad_SI":  0.21232800000000029,
+        "control_SI":  0.21232800000000029,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "paquete",
+        "mathcad_SI":  0.038,
+        "control_SI":  0.038,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "L_casq",
+        "mathcad_SI":  0.026000000000000002,
+        "control_SI":  0.026000000000000002,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "holgura_axial",
+        "mathcad_SI":  0,
+        "control_SI":  0,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "bajo_cabeza",
+        "mathcad_SI":  0.048999999999999995,
+        "control_SI":  0.048999999999999995,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "saliente",
+        "mathcad_SI":  0.0060000000000000053,
+        "control_SI":  0.0060000000000000053,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "A_D24",
+        "mathcad_SI":  0.00020832,
+        "control_SI":  0.00020832,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "z_D24",
+        "mathcad_SI":  0.0082387096774193553,
+        "control_SI":  0.0082387096774193553,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "I_D24",
+        "mathcad_SI":  1.1857979045161291E-08,
+        "control_SI":  1.1857979045161291E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ix_D24",
+        "mathcad_SI":  3.30297856E-08,
+        "control_SI":  3.30297856E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_D24",
+        "mathcad_SI":  7.5234824068767911E-07,
+        "control_SI":  7.5234824068767911E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "J_D24",
+        "mathcad_SI":  5.4440959999999986E-10,
+        "control_SI":  5.444096E-10,
+        "unidad":  "",
+        "error_rel":  1.8992607141594944E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_D24",
+        "mathcad_SI":  95079968.015338376,
+        "control_SI":  95079968.015338376,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_biax_D24",
+        "mathcad_SI":  104955372.71672402,
+        "control_SI":  104955372.71672402,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tau_D24",
+        "mathcad_SI":  11419570.852534564,
+        "control_SI":  11419570.852534562,
+        "unidad":  "",
+        "error_rel":  1.6310990783139149E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "vm_D24",
+        "mathcad_SI":  106802856.03613149,
+        "control_SI":  106802856.03613149,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_placa_D24",
+        "mathcad_SI":  477698571.76015168,
+        "control_SI":  477698571.76015168,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_comb_D24",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_local_D24",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_caso_D24",
+        "mathcad_SI":  2.2471309186601509,
+        "control_SI":  2.2471309186601509,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "A_D26",
+        "mathcad_SI":  0.00021952,
+        "control_SI":  0.00021952,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "z_D26",
+        "mathcad_SI":  0.00909387755102041,
+        "control_SI":  0.00909387755102041,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "I_D26",
+        "mathcad_SI":  1.4847712304761908E-08,
+        "control_SI":  1.4847712304761908E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ix_D26",
+        "mathcad_SI":  3.5424494933333335E-08,
+        "control_SI":  3.5424494933333335E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_D26",
+        "mathcad_SI":  8.782446920972157E-07,
+        "control_SI":  8.782446920972157E-07,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "J_D26",
+        "mathcad_SI":  5.7367893333333326E-10,
+        "control_SI":  5.7367893333333326E-10,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_D26",
+        "mathcad_SI":  81678511.15272291,
+        "control_SI":  81678511.15272291,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_biax_D26",
+        "mathcad_SI":  90886334.739589989,
+        "control_SI":  90886334.739589989,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tau_D26",
+        "mathcad_SI":  10836939.686588923,
+        "control_SI":  10836939.686588923,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "vm_D26",
+        "mathcad_SI":  92804329.789666057,
+        "control_SI":  92804329.789666057,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_placa_D26",
+        "mathcad_SI":  398886827.60828358,
+        "control_SI":  398886827.60828358,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_comb_D26",
+        "mathcad_SI":  2.5860862369669788,
+        "control_SI":  2.5860862369669788,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_local_D26",
+        "mathcad_SI":  2.5860862369669788,
+        "control_SI":  2.5860862369669788,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_caso_D26",
+        "mathcad_SI":  2.5860862369669788,
+        "control_SI":  2.5860862369669788,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "A_D28",
+        "mathcad_SI":  0.00023072000000000001,
+        "control_SI":  0.00023072000000000001,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "z_D28",
+        "mathcad_SI":  0.0099631067961165054,
+        "control_SI":  0.0099631067961165054,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "I_D28",
+        "mathcad_SI":  1.826817023171521E-08,
+        "control_SI":  1.826817023171521E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Ix_D28",
+        "mathcad_SI":  3.7819204266666673E-08,
+        "control_SI":  3.7819204266666673E-08,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "Z_D28",
+        "mathcad_SI":  1.0128224426023611E-06,
+        "control_SI":  1.0128224426023611E-06,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "J_D28",
+        "mathcad_SI":  6.0294826666666657E-10,
+        "control_SI":  6.0294826666666667E-10,
+        "unidad":  "",
+        "error_rel":  1.7148664700663395E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_D28",
+        "mathcad_SI":  71023412.977627844,
+        "control_SI":  71023412.977627844,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_biax_D28",
+        "mathcad_SI":  79648197.827675387,
+        "control_SI":  79648197.827675387,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "tau_D28",
+        "mathcad_SI":  10310874.653259363,
+        "control_SI":  10310874.653259361,
+        "unidad":  "",
+        "error_rel":  1.8064860759820778E-16,
+        "coincide":  true
+    },
+    {
+        "variable":  "vm_D28",
+        "mathcad_SI":  81625840.42778483,
+        "control_SI":  81625840.42778483,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "sig_placa_D28",
+        "mathcad_SI":  338083972.80782717,
+        "control_SI":  338083972.80782717,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_comb_D28",
+        "mathcad_SI":  2.9402453774712471,
+        "control_SI":  2.9402453774712471,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_local_D28",
+        "mathcad_SI":  2.9402453774712471,
+        "control_SI":  2.9402453774712471,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    },
+    {
+        "variable":  "n_caso_D28",
+        "mathcad_SI":  2.9402453774712471,
+        "control_SI":  2.9402453774712471,
+        "unidad":  "",
+        "error_rel":  0,
+        "coincide":  true
+    }
+]

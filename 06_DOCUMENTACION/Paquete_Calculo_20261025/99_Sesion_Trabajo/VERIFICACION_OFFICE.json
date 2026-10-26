@@ -1,0 +1,24 @@
+{
+  "word": {
+    "opened": true,
+    "paragraphs": 1849,
+    "tables": 26,
+    "pages": 27,
+    "pdf_page_objects": 27,
+    "pdf_bytes": 531831,
+    "corrected_text_present": true
+  },
+  "excel": {
+    "opened": true,
+    "sheets": 12,
+    "changed_cells": [
+      [
+        "02_Variables",
+        26,
+        7
+      ]
+    ],
+    "other_entries_and_formulas_unchanged": true
+  },
+  "crc": "OK"
+}

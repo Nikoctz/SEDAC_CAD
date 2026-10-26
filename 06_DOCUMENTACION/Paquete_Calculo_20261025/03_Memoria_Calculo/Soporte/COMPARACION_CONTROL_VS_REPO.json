@@ -1,0 +1,188 @@
+{
+  "cotejo": [
+    {
+      "tipo": "magnitud",
+      "variable": "Mmax",
+      "control": 55738.58598984375,
+      "repo": 55738.58598984375,
+      "error_relativo": 0.0
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "vm",
+      "control": 106.80285603613149,
+      "repo": 106.80285603613153,
+      "error_relativo": 3.9917063763897256e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "flecha",
+      "control": 0.8666768799116916,
+      "repo": 0.8666768799116917,
+      "error_relativo": 1.2810114707782217e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "giro",
+      "control": 3.1761521758763407,
+      "repo": 3.176152175876342,
+      "error_relativo": 4.194596341035195e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "cierre_residual",
+      "control": 282.2232802031249,
+      "repo": 282.2232802031251,
+      "error_relativo": 8.056517353195808e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "V_union",
+      "control": 1046.9766026994894,
+      "repo": 1046.9766026994891,
+      "error_relativo": 2.1717168736816032e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "R",
+      "control": 1522.220899746094,
+      "repo": 1522.2208997460937,
+      "error_relativo": 1.493696975788192e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "fb",
+      "control": 2804.444179949219,
+      "repo": 2804.444179949219,
+      "error_relativo": 0.0
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "pin_vm",
+      "control": 80.83019048509698,
+      "repo": 80.83019048509696,
+      "error_relativo": 1.7581122387460072e-16
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "Tstrap",
+      "control": 314.36471628843447,
+      "repo": 314.36471628843447,
+      "error_relativo": 0.0
+    },
+    {
+      "tipo": "magnitud",
+      "variable": "Tinterface",
+      "control": 628.7294325768689,
+      "repo": 628.7294325768689,
+      "error_relativo": 0.0
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_combinado",
+      "control": 2.247130918660151,
+      "repo": 2.24713091866015,
+      "error_relativo": 3.9524996622346368e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_euler",
+      "control": 108.58354359903593,
+      "repo": 108.5835435990359,
+      "error_relativo": 2.617496951044095e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_local",
+      "control": 2.247130918660151,
+      "repo": 2.24713091866015,
+      "error_relativo": 3.9524996622346368e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_ltb",
+      "control": 26.60935614088587,
+      "repo": 26.609356140885858,
+      "error_relativo": 4.0054110967476724e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_taladro",
+      "control": 2.7598989756549437,
+      "repo": 2.759898975654943,
+      "error_relativo": 3.2181555467600204e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_perno",
+      "control": 2.55115123897057,
+      "repo": 2.5511512389705704,
+      "error_relativo": 1.7407404275618704e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_aplast_ala",
+      "control": 6.354296727211138,
+      "repo": 6.354296727211137,
+      "error_relativo": 1.3977603782597377e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_aplast_mejilla",
+      "control": 6.354296727211138,
+      "repo": 6.354296727211137,
+      "error_relativo": 1.3977603782597377e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_arranc",
+      "control": 5.110780113140545,
+      "repo": 5.110780113140546,
+      "error_relativo": 1.7378529305467312e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_casquillo",
+      "control": 3.5942333231190164,
+      "repo": 3.594233323119014,
+      "error_relativo": 7.413361959451586e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_pasador",
+      "control": 2.9691876087345097,
+      "repo": 2.96918760873451,
+      "error_relativo": 1.4956589760231983e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_arb_flex",
+      "control": 2.283889644879257,
+      "repo": 2.2838896448792565,
+      "error_relativo": 1.944442503365965e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_arb_tuerca",
+      "control": 2.2583677454407147,
+      "repo": 2.258367745440715,
+      "error_relativo": 1.9664167217522833e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_puente_anclaje",
+      "control": 2.358805214380611,
+      "repo": 2.3588052143806113,
+      "error_relativo": 1.8826870787915997e-16
+    },
+    {
+      "tipo": "margen",
+      "variable": "n_puente_cuna",
+      "control": 3.6982394703152015,
+      "repo": 3.6982394703152024,
+      "error_relativo": 2.401624953790311e-16
+    }
+  ],
+  "peor_error_relativo": 8.056517353195808e-16,
+  "referencia": "C:\\Users\\nicol\\OneDrive\\Documentos\\SEDAC_CAD\\01_CAD\\Prototipo_P2\\P2_05_20261019\\Soporte\\Iteraciones\\Optimizacion_Real_20261023_014225\\Analisis\\V0_base_P2_05\\RESULTADOS_PREDISENO.json"
+}

@@ -1,0 +1,2597 @@
+{
+  "created": "2026-10-25T22:18:28.212192-03:00",
+  "source_package": "SEDAC_Paquete_Calculo_20261025",
+  "tracked_delivery": "06_DOCUMENTACION/Paquete_Calculo_20261025",
+  "files": [
+    {
+      "path": "01_Informe/docx_lib.py",
+      "bytes": 10732,
+      "sha256": "25fed9d25843d997c9a26885e8c832455a8477ef918fc69b54129f0e0bb84aef"
+    },
+    {
+      "path": "01_Informe/exportar_pdf.ps1",
+      "bytes": 930,
+      "sha256": "dd7cdd7e90725a6af1f6f591a478078dfaaec3fce1aaac59d2c91da8bf530a7f"
+    },
+    {
+      "path": "01_Informe/gen_informe.py",
+      "bytes": 80904,
+      "sha256": "8799c78662deb3fae6da70bae3bf98b3ebf83dae9dc3c42ff78ed5efa332dd75"
+    },
+    {
+      "path": "01_Informe/Informe_SEDAC_Memoria_y_Ensayos_v0.1.docx",
+      "bytes": 40632,
+      "sha256": "b63f6200924826986fd0ead5cccc0286899bb63b57b39c12c7546212692835bd"
+    },
+    {
+      "path": "01_Informe/Informe_SEDAC_Memoria_y_Ensayos_v0.1.pdf",
+      "bytes": 531831,
+      "sha256": "87565e394fa33d39b713300845147f904a83ab115166088f2fc80bd54c59b3e3"
+    },
+    {
+      "path": "01_Informe/verificar_informe.ps1",
+      "bytes": 1139,
+      "sha256": "1d9911171d28c5b09bebc09f466944ec19ff78b5c0cc2bd17377ac6ee7d7d2e8"
+    },
+    {
+      "path": "02_Planilla/gen_planilla.py",
+      "bytes": 45212,
+      "sha256": "1ab636c66605af2b4c42917f189fe37a0ace43aff15ace9c5cb381dd89de4ab2"
+    },
+    {
+      "path": "02_Planilla/Planilla_SEDAC_Captura_y_Seguimiento_v0.1.xlsx",
+      "bytes": 39696,
+      "sha256": "07b1484711e85e5ab3617362daeafac1fa04aa2dfb1a46cccda546a96ffc3f93"
+    },
+    {
+      "path": "02_Planilla/verificar_planilla.ps1",
+      "bytes": 2367,
+      "sha256": "6b9ddc74cd1fe458bc357338d1f9fee7a51d54d0cc3130854603aa5e3480f432"
+    },
+    {
+      "path": "02_Planilla/xlsx_lib.py",
+      "bytes": 9999,
+      "sha256": "30c86ab2099c0990ae7032343b6d69ae6973042cdc2d88642a1d2817737cea8b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Guion_Implementacion_Mathcad15.md",
+      "bytes": 9615,
+      "sha256": "1b0c47687a331e8aa783bf71bd65736cf2cefa43747dff174ab8345f53f006a2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/COMPARACION_CONTROL_VS_REPO.json",
+      "bytes": 5193,
+      "sha256": "c1486bdb0e823df671f6ddf38c2657873b468878c68a45a2a447e4fd26a93197"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/comparar_control.py",
+      "bytes": 3532,
+      "sha256": "7a5925197ffbdc78b231898974a36b05c680e00e2976b2fb4551d246abb1d7e8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/construir_memoria.py",
+      "bytes": 43569,
+      "sha256": "98abceb4244de25cc15bd5d1803620e339eb9af39dba07b8ae6716baa91a4f94"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/MANIFIESTO_MEMORIA.json",
+      "bytes": 3300,
+      "sha256": "860f01d1b2191e241ef6302fc7358458b01cef83559340fab7096438d57613f9"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/mathcad_gen.py",
+      "bytes": 13096,
+      "sha256": "c9da5594058ffff04598b52314dcbdaade7d0665d5474206de4a384d5a0d3906"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01.html",
+      "bytes": 165075,
+      "sha256": "ef041f27d06c9cdec2f5cec8b8adf2a00943be5b1dc88ed07f0ca12492d8cea2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_EDITABLE.xmcd",
+      "bytes": 1139064,
+      "sha256": "f8fa7949fbab4f711b5fb2f14db5445a95aa81698d13b5318060186e0e1a720a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_FUENTE.xmcd",
+      "bytes": 284113,
+      "sha256": "28740d12c488d71b6a5c6ab885189ddcf7af9f308df75fb3410f6057e278cbb7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/filelist.xml",
+      "bytes": 17949,
+      "sha256": "368ef68ca543cb0068ba59871026407481e95613512fd002d2066cf7597024d2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0001_84083750.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0002_84083750.PNG",
+      "bytes": 1676,
+      "sha256": "b167858b2ddec9bcb004e70228b44dbe99b6bad50e09352107d09a2643f8bd1f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0003_84083765.PNG",
+      "bytes": 1040,
+      "sha256": "cdc9c2ead28a944eb7198940f82e85d81af37625b72d885df0331cf5d226b8de"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0004_84083765.PNG",
+      "bytes": 25362,
+      "sha256": "40905dcd812123f9d3c9fa06d02cd16ef3a5eedcc8ce8ddc335089f10bebf86b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0005_84083765.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0006_84083765.PNG",
+      "bytes": 1483,
+      "sha256": "5f02b3e3855872c9bed78f78a4422522fd6aadc8819c21d9ce87c96901adc14a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0007_84083765.PNG",
+      "bytes": 1261,
+      "sha256": "ce2e811e5881c431292a4e43f25b262fbcd69fffd50211fbd6f6c7acba7a921f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0008_84083765.PNG",
+      "bytes": 1130,
+      "sha256": "6c41f766b39fb68ccfccf8fde4b08f7fd5692ee9bd1f6d5e808c9ebc31259510"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0009_84083781.PNG",
+      "bytes": 885,
+      "sha256": "26ca1300d1c9157ba81c6abf903f7741a9ba3b864cef8c44ee09031d0b5d5e38"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0010_84083781.PNG",
+      "bytes": 1187,
+      "sha256": "5c12927fce7d10fb91cda962c41c701b47ae2e03c1bb925fcfd9797002f1b775"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0011_84083781.PNG",
+      "bytes": 1074,
+      "sha256": "ce4d2846e76eb4623980270ca759bf7c4e0ddc6fc0f7c9f166f004218ccf9609"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0012_84083781.PNG",
+      "bytes": 1768,
+      "sha256": "03ed5605dd35dadb871cd0d2895aeaeb12a1d553a9cb6fa35dcd4c5dfef4c6c2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0013_84083781.PNG",
+      "bytes": 1165,
+      "sha256": "577c650f270a5b66acf3009490f0ad76ddb890533845259ab8a35ade81a936a7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0014_84083781.PNG",
+      "bytes": 1029,
+      "sha256": "b747fbc0490d437d6ff96d12dd9a8fc71413c816da2cdcf7181aff428ffa3903"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0015_84083781.PNG",
+      "bytes": 1084,
+      "sha256": "ad95b026d607595c20cd3d842eb6e38808b22ad351bafced4782b190f2a7277e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0016_84083796.PNG",
+      "bytes": 1784,
+      "sha256": "8751e9201c0ed851ae1a5fb2022090e3c7a3c77e95cb3e9924e97006d1f068ed"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0017_84083796.PNG",
+      "bytes": 1587,
+      "sha256": "3c29d774d00da9c9df4068ec49b79f0bcdde43c04c5f2a26624a644a1fe4e377"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0018_84083796.PNG",
+      "bytes": 1675,
+      "sha256": "d241b30629fb6f6de76b049236e74e1a16156239937fc6654d4e6a20c04d6514"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0019_84083796.PNG",
+      "bytes": 1606,
+      "sha256": "63ae649ea0dd7c6814d5e1e22e6f895c03340414b04dcf8cfa146b8bfb1a0f45"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0020_84083796.PNG",
+      "bytes": 1433,
+      "sha256": "a1a8eb086cdb5caef1eff3805480a1b2e51353b6593528bb0146dae27428ce02"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0021_84083796.PNG",
+      "bytes": 1699,
+      "sha256": "0922b562d6d34541ae01af41f0064cde84109828d9633576b048b64ce0eb32ea"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0022_84083796.PNG",
+      "bytes": 1442,
+      "sha256": "c92438be93d90bfa0ac86cf0e4a9e6951e5d83ba4dc0fefa49777bbd2437fd12"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0023_84083812.PNG",
+      "bytes": 1764,
+      "sha256": "881e4766fdc72d348d94b24e066cba51ac71a53313a89a2c4402ffe9780cf552"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0024_84083812.PNG",
+      "bytes": 1589,
+      "sha256": "ce9bc0da91f1d0862d8b7e5538d75978530c3f6ab0c95018620737c703e7f193"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0025_84083812.PNG",
+      "bytes": 1364,
+      "sha256": "2e403d9a35929cd307e9fcdca866e6f927ad48d84709963742dbb490dc3fec5f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0026_84083812.PNG",
+      "bytes": 1053,
+      "sha256": "244bc86f3dae897b7415a661bd35690d3478f1e34808c8694c5095e54a761181"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0027_84083812.PNG",
+      "bytes": 1085,
+      "sha256": "5504b8873b2dc6a9c707be0ae7ac4efa44eff69d1f86484bf681890d9fb5fa43"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0028_84083812.PNG",
+      "bytes": 961,
+      "sha256": "2fdcb09d240c4ae197de35070dfd67339332de5bab304331faf11231ab4f43be"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0029_84083828.PNG",
+      "bytes": 1104,
+      "sha256": "63654d098fab63f96ef327f76d8ce2d5678945929a91b253ae023b76acb220ac"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0030_84083828.PNG",
+      "bytes": 1558,
+      "sha256": "65ad27119cb2bf0fdaf92714fe77578aa8ef0cb4338576a8a8836295478d1cde"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0031_84083828.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0032_84083828.PNG",
+      "bytes": 1398,
+      "sha256": "f36296ad8590ca97e6435b902e5901827b5828f8eff68dbbe46d04264a0beeb7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0033_84083828.PNG",
+      "bytes": 1447,
+      "sha256": "ee20cbe08384a16bc29392c72c3392f99bb247dfc40e847d2ecb965d901dbe10"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0034_84083828.PNG",
+      "bytes": 1029,
+      "sha256": "6eb627f68e8427c5fb753e9343baabf4609fa19c122c424fe83a08ea1367dcca"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0035_84083843.PNG",
+      "bytes": 1081,
+      "sha256": "454ad1c5ee5a14242063e13670458011ea36724bbed091fb59ab476c8096c1af"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0036_84083843.PNG",
+      "bytes": 1048,
+      "sha256": "fa6afb6df47bbe4ab1de05e4507c38c674ac03780f0e697fac2d1c128f41ae34"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0037_84083843.PNG",
+      "bytes": 1364,
+      "sha256": "ee25792ecf7979de2b8255e16f815ce9329ce6ccc3c347cc82c12417a3b82f0a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0038_84083843.PNG",
+      "bytes": 1296,
+      "sha256": "5aad7c4414208015d62cb0e517f73d57c5872c2ff8374a6221a96dc64b6caa1a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0039_84083843.PNG",
+      "bytes": 1475,
+      "sha256": "1b2988f73d7812187ba1b14522f7371159aae4cc966fba748502d3518c759da2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0040_84083843.PNG",
+      "bytes": 1666,
+      "sha256": "f2f5fb43b32617a3b26a40b5ad89ef266147abaa4d445472899eef038fa6ccc4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0041_84083859.PNG",
+      "bytes": 25902,
+      "sha256": "68ef42c4eab1fd3392db79dad3b23016724bdb6f17e6f85540619e80a858814a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0042_84083859.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0043_84083859.PNG",
+      "bytes": 1326,
+      "sha256": "fbc0ff2a8fabb50980c3a9ee80aa0d3dfeb91bd9a84f7ed3929329d8b0870e5c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0044_84083859.PNG",
+      "bytes": 1567,
+      "sha256": "53e9bbd3db4167adad9c44663e9d66f2cf959255f5e617a85bebf9c3101fff8c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0045_84083859.PNG",
+      "bytes": 18337,
+      "sha256": "7e1235b8c684bb7cf159a531c3e46cfd2aeed1afcb3322988805620f7e984971"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0046_84083875.PNG",
+      "bytes": 1423,
+      "sha256": "498851422eaaacd06992a80dd8d480f5fa29fe639fda0a0bd30afab4bcd9cbd5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0047_84083875.PNG",
+      "bytes": 853,
+      "sha256": "4f9c142694da7a5c67bf400df8798e616b5b4c70ad142710ce19c2d255b2eb8c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0048_84083875.PNG",
+      "bytes": 831,
+      "sha256": "99dcadcdd90ee6a9ebc8116cbf7b06fc6d94867f3d267ae5494ec6514aa9fa37"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0049_84083875.PNG",
+      "bytes": 1689,
+      "sha256": "a3baf0368f6c79de29ccc45108fc92121dc5c078d7e1f9eacf294805a2e7693b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0050_84083875.PNG",
+      "bytes": 778,
+      "sha256": "4949aa3a863ec267ad90b0c30e64301af94a9ce0a506a837fa20e1a88b6643a0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0051_84083875.PNG",
+      "bytes": 908,
+      "sha256": "904bac5b1a6c90accc68693793707878badda472f6b2f1c39be6e1c158d0c2f4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0052_84083890.PNG",
+      "bytes": 933,
+      "sha256": "fdafded1173558476e4f09cf411c9ed8ea066b6b4fab29de007c02ac9c38c699"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0053_84083890.PNG",
+      "bytes": 729,
+      "sha256": "671046f3dd9ea9e9b88e36aee7b9a528e352264d597b5d4e49844142c394b56a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0054_84083890.PNG",
+      "bytes": 570,
+      "sha256": "daa2704ec3d019f5d4f92422f2e19bfccd5b4fd2f12ed6f8cd9736efc59f2870"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0055_84083890.PNG",
+      "bytes": 351,
+      "sha256": "1fca2518167f0b4bdff8ff4ea3616e0a0a232179391465928adc7c490219e424"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0056_84083890.PNG",
+      "bytes": 648,
+      "sha256": "132bb37d69e43d025cfd15086cc907743e2f08baa684fc946da04ce64ddfa78b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0057_84083890.PNG",
+      "bytes": 395,
+      "sha256": "875adcb8089806a363d80cf423683536b3550603fe15086e03168d30f09bf19a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0058_84083906.PNG",
+      "bytes": 829,
+      "sha256": "70f42ed77c752296efd0aaac475e953624fe72616d19f7bf552540dec771c7bf"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0059_84083906.PNG",
+      "bytes": 405,
+      "sha256": "f45c72f9eb95a79c965ac4664935257e7408d1350a67966e1accdc73ca1cb249"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0060_84083906.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0061_84083906.PNG",
+      "bytes": 376,
+      "sha256": "c8004fd877b775f4e4a85124b0850e21d200d242188a74ea46ed932177cec964"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0062_84083906.PNG",
+      "bytes": 1404,
+      "sha256": "fbdc96789993cb8d516a91815ddf679e198d8d13702971788f1543603a5c1a00"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0063_84083906.PNG",
+      "bytes": 362,
+      "sha256": "b2ef8ed080d35f94c6eeb923197d291c873ccd96d2252d083abe4f4d60f0c771"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0064_84083921.PNG",
+      "bytes": 1185,
+      "sha256": "60b3d64e78a0f5a341932ec96688f0cd9c52c25c05b4dcd9fe0efe032907f6f2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0065_84083921.PNG",
+      "bytes": 449,
+      "sha256": "d64d402283dc4b09fec6281ff722642a7b9b72151f3263f5f4bd600c95bc1d58"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0066_84083921.PNG",
+      "bytes": 379,
+      "sha256": "acdfa30c7b44bc49b761a0c5db4bf2cd24e765bf44bcae6b6d0aea713ea301c5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0067_84083921.PNG",
+      "bytes": 366,
+      "sha256": "1c81892290f18f6e872e404df1dd875264e2b381a350f0b2237910213122a992"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0068_84083921.PNG",
+      "bytes": 413,
+      "sha256": "1a5046065d9c2cb901064b77abedf7f13e3a7de780714498c5fc941dfff4132e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0069_84083921.PNG",
+      "bytes": 293,
+      "sha256": "7faa1b0c18f7cf9a753632ec393305d1e9da63706442f9235028efeabbe63e9d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0070_84083921.PNG",
+      "bytes": 266,
+      "sha256": "265281e582a61961ede971035b1919312f50c44bd9e63d7d422f7b2c26b937ab"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0071_84083937.PNG",
+      "bytes": 298,
+      "sha256": "eb64a8248bac16c55e28d5d2954f1d8a50aff4f8bea04f63598300be0a7d664b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0072_84083937.PNG",
+      "bytes": 266,
+      "sha256": "4e6b0cb027ef95b1cf142431961ba3b5b79f10f42b1227516d5ecef06e07c98f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0073_84083937.PNG",
+      "bytes": 325,
+      "sha256": "3e3886be564114b0ff97cd87a1b975d84199a504bbae402cfb016582829e65e2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0074_84083937.PNG",
+      "bytes": 306,
+      "sha256": "8da6a36337c1ecf319b383329c9a2da72107733e1ed9182130cebb7bd33f11cf"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0075_84083937.PNG",
+      "bytes": 352,
+      "sha256": "3f07cabf6d8af930d2d9d41060044d466d007673b6eed7ae1c73345a71e6d85b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0076_84083953.PNG",
+      "bytes": 332,
+      "sha256": "ffb73c6f0a83d0116badd8402800f931b3c121d734099a8808744562554f28f8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0077_84083953.PNG",
+      "bytes": 316,
+      "sha256": "9ab9b9cd3d05548f2d9612793162edcd3ba740b8777be41293078f3567600359"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0078_84083953.PNG",
+      "bytes": 301,
+      "sha256": "5055f5d2e6a482284c142cd3ea3c7f9782a65be8da7ce78fe91d14f25d3f58df"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0079_84083953.PNG",
+      "bytes": 431,
+      "sha256": "2358e4c45f72f5ccf71f7e18429d58e9e760b22f7d77efc0f55b969fbff70fc1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0080_84083968.PNG",
+      "bytes": 410,
+      "sha256": "0ae7e4e5ad75b9b70d4dc1e477f64377a5fdb593cd6d88cdd63d32da1e2119de"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0081_84083968.PNG",
+      "bytes": 343,
+      "sha256": "b8796b297cd99ce75fedf254e7526d5662eba4ffd6eb534e40b7b2a6f522931d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0082_84083968.PNG",
+      "bytes": 331,
+      "sha256": "203de2f74716372378c18bf6cf80bc4d8d13c8e3f7a05ed8aadf02568bc42d1a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0083_84083968.PNG",
+      "bytes": 421,
+      "sha256": "f3fb5bac4adbc6e165290e1560ef39ccb4e5a93aefde189e18e05f5223728dbc"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0084_84083968.PNG",
+      "bytes": 406,
+      "sha256": "a06fa8265cde00fe70c722557325e88a910f739cdd86aef22c155cee929a9f8e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0085_84083968.PNG",
+      "bytes": 396,
+      "sha256": "7beffdc4e6e8e22763732146b5a3b9f0861a23ed5c064184d23ab839452bbc9a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0086_84083968.PNG",
+      "bytes": 390,
+      "sha256": "3bfb3ec17957d1ee9e6a178ebde47cc5fe3ce85404defb0e7c1306393652debe"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0087_84083984.PNG",
+      "bytes": 409,
+      "sha256": "8cd0d0213aa5d9c8d58e47f54308956858fd9e769d5c4aa166528dd046e9bba5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0088_84083984.PNG",
+      "bytes": 394,
+      "sha256": "24377d186e86c9125ed5eb476524724983e2b768926b89924602b508875f2647"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0089_84083984.PNG",
+      "bytes": 483,
+      "sha256": "55376e9829c3e850b8776eef892400917bfb2f2ce9017138e9f4ebc66defa172"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0090_84083984.PNG",
+      "bytes": 470,
+      "sha256": "266f4752c005cbfd81bb87593c20436bec352d8272dde6d24b9ae403e49aa048"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0091_84083984.PNG",
+      "bytes": 455,
+      "sha256": "d4e302c82b4f2ff1c799616a45a1336035abbb32f3eb3b6f2e71b6864ff09e70"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0092_84083984.PNG",
+      "bytes": 447,
+      "sha256": "df8b39a348b28b87b6175cb499f56b3ed6f752beb6677153c0c1893f54727c6a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0093_84083984.PNG",
+      "bytes": 422,
+      "sha256": "3ab3b5250d89bbe6fad4e0fcbef0c41ce5c8cfece578d94e512b56b2a99d8e98"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0094_84083984.PNG",
+      "bytes": 402,
+      "sha256": "26188e3632e03dbaea989fe01f996c5a26833df8b164fb5c36ddc72c55352f97"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0095_84084000.PNG",
+      "bytes": 426,
+      "sha256": "de590bae3339a78e521ca20a9b9b40596667bd551229a1afd6fdd7a36970dcd2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0096_84084000.PNG",
+      "bytes": 407,
+      "sha256": "57092329fc2c9a153ac6253b16ce0adda85a9e77a469c0c303f43471bbbc50dd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0097_84084000.PNG",
+      "bytes": 423,
+      "sha256": "cb1e2b6ee918be5ebe533ef5b62f83c366d8d1c1d4b9a3ba33d46a180df7640e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0098_84084000.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0099_84084000.PNG",
+      "bytes": 409,
+      "sha256": "30da9a85ebcf7ae472ee6829ae0571171ed2f4dc307aac0dd636c5c773716ad1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0100_84084000.PNG",
+      "bytes": 1685,
+      "sha256": "717e049da16d4963d64c7c27dc79cbc9364fca32d9368b124dee2ee16209a7cf"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0101_84084015.PNG",
+      "bytes": 422,
+      "sha256": "be32a5f09ca397a55045c434990bce0ce791b8f23029545dbf9fe75c1f7e8f2c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0102_84084015.PNG",
+      "bytes": 405,
+      "sha256": "98982053aac3b6e61beaa451a361727c5ad1ab3cf3b25876c7f344f7582d6b01"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0103_84084015.PNG",
+      "bytes": 1525,
+      "sha256": "40943ab84c345b7623dc910b42f79500625b61e0afc312f91a6ca42e70404eaa"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0104_84084015.PNG",
+      "bytes": 422,
+      "sha256": "5f40172e98145e671fd84afe6bfe494a24c8e85265f78a972069f21490f88660"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0105_84084015.PNG",
+      "bytes": 405,
+      "sha256": "608e865e37b21d3033870d397ea52592b6bf115f64ccd86dfd29f3bbd7a8ff09"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0106_84084015.PNG",
+      "bytes": 383,
+      "sha256": "8384597fd92af712663fbb4323cb405464c63c177c0ec7eabea7b17c9879b017"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0107_84084015.PNG",
+      "bytes": 367,
+      "sha256": "11dbe862301d95bb27f99cc4b8311c323cbdcb204a5b95e5e5e7c82e09136e1b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0108_84084031.PNG",
+      "bytes": 416,
+      "sha256": "e518eee75dbe3cc0548bde9f500d4e97dd8b98a76c91ba47d83d0db1441b7a0c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0109_84084031.PNG",
+      "bytes": 403,
+      "sha256": "8dbcbb9e3cd094e4b64f180e7505935fbdc9d743827076dc96aeb51d76fa8215"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0110_84084031.PNG",
+      "bytes": 472,
+      "sha256": "50bd494e1167e1b2621a8e8a218c0aec288b5a88736065b52351b4d1761f4127"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0111_84084031.PNG",
+      "bytes": 408,
+      "sha256": "8b3257f3a6dc6d3cbbee267d44eda2068731d20f57ae0c1215dd5206d71644c9"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0112_84084031.PNG",
+      "bytes": 495,
+      "sha256": "402fa53b395b618a1050fb8cd397a0a470793d81226bfd56e1ca698aac41d656"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0113_84084031.PNG",
+      "bytes": 475,
+      "sha256": "aa3dce72efb643cc3f56a6e0fdbcc54fed816e093ed4e7801b35a57eff5561df"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0114_84084031.PNG",
+      "bytes": 260,
+      "sha256": "2e0d21346292c563efa9cda7841f741607762eef6af16400af562c55cea43b00"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0115_84084046.PNG",
+      "bytes": 235,
+      "sha256": "bae836521ccd935bd5cd6bc476b8d61d3fafc992accde1c705e65f1a0cef5651"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0116_84084046.PNG",
+      "bytes": 489,
+      "sha256": "93cd4140a1d585ef47e40da0e1e851a05cfa3ed38a26bcda1e17cb59250c915a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0117_84084046.PNG",
+      "bytes": 476,
+      "sha256": "39ab4c1ab29718ad1fa997114e5c28400814627e5f2661ea34544a249839950f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0118_84084046.PNG",
+      "bytes": 226,
+      "sha256": "21a2eef87f54024a07b95ccd2620bc4d4a4a78e6d282b8e500c6f4299f3a5304"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0119_84084046.PNG",
+      "bytes": 222,
+      "sha256": "d8cafabe64c0da429a5117535d1479fe855aa058c1be07bf5c1389742fe5f3a1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0120_84084046.PNG",
+      "bytes": 501,
+      "sha256": "603cc1e9457358f67585e42784997469a37c8302fb04b3295a0eebdaef01656a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0121_84084062.PNG",
+      "bytes": 486,
+      "sha256": "5c868b5c57a96607464ece8b7e97ebbc68c9c28f12989e94c09b5ba594227ab8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0122_84084062.PNG",
+      "bytes": 282,
+      "sha256": "93e21a271d34dbdac9367e4e27f9ea62ce2009c086d0353a086d5ff5867a412b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0123_84084062.PNG",
+      "bytes": 287,
+      "sha256": "bea8d3f5819cb2a69720f832021869d88210250a383a9a4576438e193c65cd07"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0124_84084062.PNG",
+      "bytes": 505,
+      "sha256": "3681be2d96c8facb91aaa418dcb36682bd0eaf1de694e86def702ab82a55bdf5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0125_84084062.PNG",
+      "bytes": 494,
+      "sha256": "bf0738415c7e2b8e0fef61deae54e48b3dd1332cf81141628f40faa05cb6b127"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0126_84084062.PNG",
+      "bytes": 461,
+      "sha256": "5e00c38dcbb39bc7af0476ee952146ef1c4b2f20d3b9de7c9c7eeb85b42ca453"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0127_84084078.PNG",
+      "bytes": 452,
+      "sha256": "289634330cfacc40a7b7b19cafd75c1b951f89394761e8630249182514af47f1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0128_84084078.PNG",
+      "bytes": 489,
+      "sha256": "61ab17f19124d94641f61e94e2932e4118a7b0aeb7d480496bf64e5646e7143a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0129_84084078.PNG",
+      "bytes": 480,
+      "sha256": "0b11a3d0b73f7ad79aaccff52cdf7ef2f8a255619fdb821ccfd50b949b7765b5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0130_84084078.PNG",
+      "bytes": 389,
+      "sha256": "701461e759e36a76bcf9526b5e160515d88aeaefefedf75b1c62699a542781a2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0131_84084078.PNG",
+      "bytes": 461,
+      "sha256": "3a16fa99da63b5dfb22edd2c8e7ea6317d87425b1b0faae00d8174bb2f05bc68"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0132_84084078.PNG",
+      "bytes": 490,
+      "sha256": "beb750e9ef9c8f27131aac26f7d2f30c4e999dac189d89da14df09a10bd8006e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0133_84084078.PNG",
+      "bytes": 470,
+      "sha256": "863c13ee7b83951eefadd76716464ce9dfd89da513ab6270fddd9a825f0b5741"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0134_84084093.PNG",
+      "bytes": 601,
+      "sha256": "abe8feb6d42fff35d693ec84ff3289c029040d6a2c8ae2457c0c3a5caba2aba2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0135_84084093.PNG",
+      "bytes": 495,
+      "sha256": "f9e098051d3aa6cd07745c6355b2f4d460e6f0169d1ef043e845f32ad659c3e7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0136_84084093.PNG",
+      "bytes": 477,
+      "sha256": "23ac542b901b025b0ba9b61dd0ca95ce96e4b1537e322fba53941b1fcfe553db"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0137_84084093.PNG",
+      "bytes": 471,
+      "sha256": "cafff45fcf17f199d209469fbe49e757e407f9bbf817a849d7ca3b5c9e9638f2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0138_84084093.PNG",
+      "bytes": 450,
+      "sha256": "82ce3aab63dfcb6be8e782539b6be2acaf757be000881f2d455f485063065d3c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0139_84084109.PNG",
+      "bytes": 459,
+      "sha256": "af5364c7047dd0c24b66963489577cd863b8dd96076ab001f84134be0e3a7ee3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0140_84084109.PNG",
+      "bytes": 431,
+      "sha256": "ab8e9b5e99e51f00c975ef1a9311cc8007a428a4eac5e224a726d272f946535a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0141_84084109.PNG",
+      "bytes": 422,
+      "sha256": "ad4f69bc2f794de2b2f78ba052bc3608342d02f3d5e40b1cb670cc7e35ec72aa"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0142_84084109.PNG",
+      "bytes": 419,
+      "sha256": "1eedd56137e3ca91bdfdf71316e4e88acb4643c7ccb2437a6518e639f898f491"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0143_84084109.PNG",
+      "bytes": 406,
+      "sha256": "90e7b650c3555e1fc62df64d70ab8399e5b153485ee8f6009264d76c266dbcfb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0144_84084109.PNG",
+      "bytes": 278,
+      "sha256": "62d64c353668731c0ff73dc3b8f003e623f06ce4029fdcb689570a75b03412c0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0145_84084125.PNG",
+      "bytes": 283,
+      "sha256": "a6057c98d90632c8f462862eab915d5e01a6aeb59d4ba51233d1aaeb28670895"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0146_84084125.PNG",
+      "bytes": 375,
+      "sha256": "38f0eceefa7e00cd9baf2e56099a1d49979ddec2c32457a8c112a8f4f3418b17"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0147_84084125.PNG",
+      "bytes": 373,
+      "sha256": "5acc02297031d6f25d55a6da64b1b29a11bcd3bfbf20d2294c7c51c92a321d2e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0148_84084125.PNG",
+      "bytes": 464,
+      "sha256": "cf6175b227b024de16032f8e96d76f1b3304545fe12e55f6d589591da908b11f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0149_84084125.PNG",
+      "bytes": 445,
+      "sha256": "585fb1d52c6c145f671877c59ec551b682d90f0f4eff94b601ce9bbb4c14033e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0150_84084125.PNG",
+      "bytes": 356,
+      "sha256": "978e5c248cf8a855f2ab0cd4d4ce23d5a94c43a3680104a30f6cbd683944080f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0151_84084125.PNG",
+      "bytes": 353,
+      "sha256": "b653d7d84823dbd7f24c0b742ce704d2d30e5010d2a0890c797276aebb5932eb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0152_84084140.PNG",
+      "bytes": 484,
+      "sha256": "95fea920dad19a2e4bf1cd4b6436f96e3c907a6c4628dc0bde58c668d30636f9"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0153_84084140.PNG",
+      "bytes": 474,
+      "sha256": "9366a58b02af83f76859d2078f650cc5d0a89424daaba5da52806e150104ddbc"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0154_84084140.PNG",
+      "bytes": 410,
+      "sha256": "1c9e1f4f22e2a9c9d82cbf9cf8f1c5dbfe219bba6a57c2477a3a3d06efce7666"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0155_84084140.PNG",
+      "bytes": 490,
+      "sha256": "89ae66ad69eb6ba8cc189a659b1cbb66002139d75d3471c52946854855911679"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0156_84084140.PNG",
+      "bytes": 417,
+      "sha256": "243d69cbb9f5a9e88d5d75374856256e9ffcdd8479e3219b22725aa4b6d865e1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0157_84084140.PNG",
+      "bytes": 395,
+      "sha256": "082f1a2f9c00ed174ddd5534b53908f1be71db98462583fdbe367d7064d5b9b7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0158_84084156.PNG",
+      "bytes": 432,
+      "sha256": "652b924f451698a89519d093cc760d6031c25ef4b23c5267db685f57012693f0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0159_84084156.PNG",
+      "bytes": 405,
+      "sha256": "7dc0c5476f0f75fd71b4e64b372305768714560ca70a84acb02d98273943483e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0160_84084156.PNG",
+      "bytes": 466,
+      "sha256": "da125d41cdfb33a25aa16b3c42d5282627d9c8faa04475a187b3509072b4f9f9"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0161_84084156.PNG",
+      "bytes": 442,
+      "sha256": "5c1987f63442e623896ac553ccbbeeba9cdf0861815a7d247720d3a98230b4ed"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0162_84084156.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0163_84084171.PNG",
+      "bytes": 495,
+      "sha256": "8f19d75bbe355868788114415a08e1ffa549a1187f7104e07f176ddf584b857a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0164_84084171.PNG",
+      "bytes": 470,
+      "sha256": "fb819d8513bd23c2a6cbeb5bf29f4759be74098d46e0868dd86cf64b5cd66771"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0165_84084171.PNG",
+      "bytes": 1413,
+      "sha256": "ac251d63d8df892ecfe9b95255659bc1a70c72f4ab00ab24b6c85f64739374ee"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0166_84084171.PNG",
+      "bytes": 404,
+      "sha256": "043c24fc55c65767b5dcdbbf9b4369af119b182defd26225d241911c57c65b10"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0167_84084171.PNG",
+      "bytes": 406,
+      "sha256": "3e12a7304a4a24225c2f7e1321cfc80ee4b9479412d01dac8650eb2c93214e83"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0168_84084187.PNG",
+      "bytes": 1602,
+      "sha256": "e7d5197907399b72845770ae8cf1764ba7347ba16ceb82c9da6e2f7c08ea9b5b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0169_84084187.PNG",
+      "bytes": 496,
+      "sha256": "4b711a9afa161635eedadb0d5c409af718855c1570af7b1d64e6b18caa842090"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0170_84084187.PNG",
+      "bytes": 451,
+      "sha256": "7a12336c3de0637e7cfece425be48aeefdb467935903e5cb54f56168fe5aac30"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0171_84084187.PNG",
+      "bytes": 611,
+      "sha256": "19d04ea8fb3ae716c850fbcec2ea63090252603d1b9208114d3988db30bba499"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0172_84084187.PNG",
+      "bytes": 470,
+      "sha256": "cdeb26824053e91609df2b3dd6ee66593c6c8c40afb9a00c01f3281dc366d0bf"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0173_84084187.PNG",
+      "bytes": 462,
+      "sha256": "11592ddf342ea6b21743e4d80365cfa13a173a0d53cac495b804e85cfe4cdf65"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0174_84084203.PNG",
+      "bytes": 1372,
+      "sha256": "0ecdb24c0568b1a1af96f8824936fe134cd27888b2848adabfb5fe95398ca24b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0175_84084203.PNG",
+      "bytes": 505,
+      "sha256": "626326a42e5b83c3c3b0bbbf47efa32c5b59eff6e7daf44f8a99de78e5fa24b7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0176_84084203.PNG",
+      "bytes": 496,
+      "sha256": "21ae73b6b8d274b6f6dbc803e2839b35489d7291264570907c1608efd46ec69e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0177_84084203.PNG",
+      "bytes": 2437,
+      "sha256": "63b5d82df47d10a8a64c9d9f422225b5803bfa3c3237daf0a6ac99e69f56d3c1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0178_84084218.PNG",
+      "bytes": 1624,
+      "sha256": "d25a807d3fc66e666ce618069007d17c16d96d7e4093ca12c6df29f25921e402"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0179_84084218.PNG",
+      "bytes": 1180,
+      "sha256": "60796b0dc93751c0383d82b765d832c0f52d2e5fac6ba6794acda3f35ccf358a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0180_84084234.PNG",
+      "bytes": 829,
+      "sha256": "cafb366d50a2a51fbc65c42245736091b6590001d716836e76a0025d0a5d916a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0181_84084234.PNG",
+      "bytes": 1735,
+      "sha256": "2ffb62b0ced93387106109504da16ab10054be12033a3ce83ec16cea71edf14a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0182_84084234.PNG",
+      "bytes": 541,
+      "sha256": "3c5af97994e189e4917727f73b42fdf116884d9e38ae1857da854cd3bca1cfd6"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0183_84084234.PNG",
+      "bytes": 442,
+      "sha256": "18ce670c4cd1792a9ae182a56af73cee00ccb09deca6637a32f319806ceb2347"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0184_84084250.PNG",
+      "bytes": 515,
+      "sha256": "f8590bf7206132dbe69b27afe8a71fe7260332088d974c352afb924f3e8b22a5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0185_84084250.PNG",
+      "bytes": 388,
+      "sha256": "4e177e489f9c0193957d65531a58c029ef0231c45803c9720d468e38fe1c70d5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0186_84084250.PNG",
+      "bytes": 515,
+      "sha256": "1e7221c6a28f7d047918d9229e6d2b29a539e3a6a64eec747401d3fc17bac59b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0187_84084250.PNG",
+      "bytes": 526,
+      "sha256": "ebbe3ad2fe9c4c22ae62fc71b2d221cc4e6b86b0f58c6c89f9e7fd4028743c4a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0188_84084250.PNG",
+      "bytes": 537,
+      "sha256": "4927cb9bc8205952667d8707571ba2c23180102abf1272b122ccca62277bb597"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0189_84084250.PNG",
+      "bytes": 523,
+      "sha256": "1a1a34fdb738e02743fa37cb697c51b5ac2ee6f7021aed7d611e358873932cc4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0190_84084265.PNG",
+      "bytes": 537,
+      "sha256": "c221f28f538b9eb8b66f6ef9f08717037d949aa64feb99aa76501eea21e1d1cd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0191_84084265.PNG",
+      "bytes": 478,
+      "sha256": "028d62e2d62e13e5a4bcadf89bca7985c134b6211b50976e1adca2145454557c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0192_84084265.PNG",
+      "bytes": 521,
+      "sha256": "4b6685d19929d8245b447a079152f9902fb557973d9a45fc46ebc8b90c688a93"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0193_84084265.PNG",
+      "bytes": 463,
+      "sha256": "3ec90a73abf5bc0ba9691fd3539f7fda5fcdecbde76e57ffc198b1c7d5b0ee99"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0194_84084265.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0195_84084281.PNG",
+      "bytes": 1284,
+      "sha256": "3779687678903e72c7f1b7e79a0431ab3251d38ec07fd0552a20b43c7e864d0d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0196_84084281.PNG",
+      "bytes": 1477,
+      "sha256": "927d5dae3318e8922647f1af88f13712d8f1b36ba8bccab9f0faf822b45acd0d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0197_84084281.PNG",
+      "bytes": 682,
+      "sha256": "8129fb1257db7340f5b358f2d4408f2fe3d77d0a3c7b487e8b73b9db62556b7b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0198_84084281.PNG",
+      "bytes": 329,
+      "sha256": "7416a7ee4ce7aeb5133b51e66d80cb767287841b1a1a19fd1dc1a81fd5402bc2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0199_84084281.PNG",
+      "bytes": 406,
+      "sha256": "16edc19f1f35c2b7f819d5f27e7ee96c82e311adecad04b5e1da39b21c3f5fc3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0200_84084296.PNG",
+      "bytes": 343,
+      "sha256": "0953a59274f5f00fe1ace38548c8c612a8b9569408fce8d467c7f48c1f75b70c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0201_84084296.PNG",
+      "bytes": 418,
+      "sha256": "eca375a1715c1296de18f6a11e691a34fc0c777b7acc41d0c3ddbcd0e01d5e11"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0202_84084296.PNG",
+      "bytes": 343,
+      "sha256": "a1546bf6b2f0488ee0b31c1e996bbfd75cda6905054e378e7b77769deeee5967"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0203_84084312.PNG",
+      "bytes": 407,
+      "sha256": "f6b1dde6d15db52fca17ea7c5958e0779e9fafc49447baea521e88d8003caf82"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0204_84084312.PNG",
+      "bytes": 449,
+      "sha256": "5e0ddde98282cae9c17be579c66fd5a23da8fddcd0f900234315224205df72d7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0205_84084312.PNG",
+      "bytes": 407,
+      "sha256": "f4e6027b20a21db08df6c604076ee3b29d531e76ad6e6d43cd0bfe8cac9986d1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0206_84084312.PNG",
+      "bytes": 425,
+      "sha256": "c0e81a4e14f3fe26821d4bb50b9cbbc8615ae0e5386ce333c39482efe660dce5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0207_84084328.PNG",
+      "bytes": 517,
+      "sha256": "af8fe11f3c46a609b28e222d201897b101c526d3ecaa677128503640420fb146"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0208_84084328.PNG",
+      "bytes": 535,
+      "sha256": "ab1d3ad90975953399857c205a7513cfd97baf5f6cce7859c2c1d2445b95b3c5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0209_84084328.PNG",
+      "bytes": 3844,
+      "sha256": "e7e20f383c8599e583860fa4c5d15ed8b956e168a4a2ee7a0408123e4c807fb1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0210_84084343.PNG",
+      "bytes": 1418,
+      "sha256": "80c1eb49bb8ce28c4e3fdb6f688d1bad32d3f10d912d704f5ac9a274b0410346"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0211_84084343.PNG",
+      "bytes": 465,
+      "sha256": "2d4e8c4df3a52dda4bfc43749177d8ebceb32ccfb7b1c9918ed00e50007ebd0d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0212_84084343.PNG",
+      "bytes": 372,
+      "sha256": "00c6079830099d7e8c6d26b8219029ffa080fc90f072f9e2fb72ab65c57d46a0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0213_84084359.PNG",
+      "bytes": 928,
+      "sha256": "27f9b4751b604f128cd3fe536ea61f6f5373a761461db8c9b097cc88cbbeea7d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0214_84084359.PNG",
+      "bytes": 386,
+      "sha256": "07a392791548f8f095fbf04a3c7387c6b4f3f9f00f9577363b840e63862dab06"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0215_84084359.PNG",
+      "bytes": 684,
+      "sha256": "d8c8b472846de9a96ef7ec722ca00fe3e960258354893062093451815f28d217"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0216_84084359.PNG",
+      "bytes": 307,
+      "sha256": "1a56e342729a9a61679c2be2a77316258c961a08cfb3bf6aade270299c3e1920"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0217_84084359.PNG",
+      "bytes": 381,
+      "sha256": "cdb34b8a5000d1839b31f6da2d28fb7ecb6b180f7cfcab4f241ecc2a0e603095"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0218_84084359.PNG",
+      "bytes": 328,
+      "sha256": "33830d46e3394c4f793b06e3eaa45d244218f46b80d346fa8533b055983f8d3d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0219_84084359.PNG",
+      "bytes": 481,
+      "sha256": "3738cdbbb68f39d18c96e808db0732bf2b2435cb88325dba5edd8000a84668d4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0220_84084375.PNG",
+      "bytes": 372,
+      "sha256": "bb1b026c74a018cc4538c67f6852c2e756f78d20b5f7dfcd160db6af7595ef81"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0221_84084375.PNG",
+      "bytes": 698,
+      "sha256": "ef344bee4b415addfc4f7fab6641265239eaa887e302637af00231804dd50f85"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0222_84084375.PNG",
+      "bytes": 549,
+      "sha256": "ca6b221a1c7332485af44a49d8d583406826978a230847d7cc5ff02ec805a593"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0223_84084375.PNG",
+      "bytes": 845,
+      "sha256": "7bbb0dcaab886b6e4ecb00c2f9b943f2bc5e4ea985726e0dd7fa77c32ced252a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0224_84084375.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0225_84084375.PNG",
+      "bytes": 395,
+      "sha256": "ca85e21ba0f36e24d0b819c9a49944aa562e1d2c420f2fd37e359547ae7f0cad"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0226_84084390.PNG",
+      "bytes": 1379,
+      "sha256": "f7aa950ccc10f727092a92072b557a0230dabdf59bbbe05efc78fd86e3faa151"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0227_84084390.PNG",
+      "bytes": 559,
+      "sha256": "7defd409a2a19ff6c6facce1ba975df1f1636b88ff835e5ed14604c67977bff2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0228_84084390.PNG",
+      "bytes": 499,
+      "sha256": "bd9b8fa933a4a6f5125d03390345810c30d6f7cce3a8b964da0d2e715c9afd13"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0229_84084390.PNG",
+      "bytes": 799,
+      "sha256": "d3d07ae65a47a24877c1bd4dcb79bab5c5cb5bcdc743c777ad9b7a7a1e5deffe"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0230_84084390.PNG",
+      "bytes": 3477,
+      "sha256": "f3b399ad6103ea3dc05cebce7148286dc428d6eedf699914fd4fbcf430191fd2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0231_84084390.PNG",
+      "bytes": 577,
+      "sha256": "98bf667215f845ff5e9c23aee13d63e5b771870297f2cbc83dd4cb54feffd3ee"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0232_84084390.PNG",
+      "bytes": 535,
+      "sha256": "2b5bf012b6b5c2bf756091307a906a74811bc3483a5c45d6804b46dd6671a931"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0233_84084406.PNG",
+      "bytes": 882,
+      "sha256": "63840b73fe5667f75139e77e52b6004f7ff563e3594ed2b685b1b9adf18feff5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0234_84084406.PNG",
+      "bytes": 397,
+      "sha256": "a6a254ba0f9d14e82dc8c2ae7ac0c281b826dcec800a39a80e22a38eabbc7753"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0235_84084406.PNG",
+      "bytes": 957,
+      "sha256": "be0e6d3be7d47c7f8138007c1d633b45bc0d13be1d99c70ff4ec5bb073b04a21"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0236_84084406.PNG",
+      "bytes": 496,
+      "sha256": "49b860f6340010ab0e47641b9c9f5fb0b0d2fb2e56aaaa1c80cc87d613b546aa"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0237_84084406.PNG",
+      "bytes": 522,
+      "sha256": "643319add3509498d7abce9f9ad40c42fe3ec0b8e5d50dfa5b4b51eb1e537abe"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0238_84084406.PNG",
+      "bytes": 493,
+      "sha256": "3e4f3f9b7ea960466f8a00198afed05bd4b419bb99e3d7a01b67dae7a7bbbc0f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0239_84084421.PNG",
+      "bytes": 746,
+      "sha256": "cc4ea566128d0cb0bb479dbe1888d7e44e9c58e787cf10ae4fa51e82c381707d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0240_84084421.PNG",
+      "bytes": 404,
+      "sha256": "2ac2d822e13038215b50a66a627080e37fedffb6c6ec21df43b853069418b997"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0241_84084421.PNG",
+      "bytes": 583,
+      "sha256": "fff58e93cb5aab4c7995076a712b629862b75c78f1e3772c6600b29f9d281498"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0242_84084421.PNG",
+      "bytes": 412,
+      "sha256": "38730100e80f3437c3305b319687332e33fff4856d79690389e1f077772699a8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0243_84084421.PNG",
+      "bytes": 578,
+      "sha256": "8266140b1b17fb92a311e123b577071671dda5175c8e878b78eb06d2b2195807"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0244_84084421.PNG",
+      "bytes": 457,
+      "sha256": "ff9fbd56ecb2cea5fcf13a005531877e9b629bfe339cfa9244d24a43d26c7cd7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0245_84084437.PNG",
+      "bytes": 1089,
+      "sha256": "67fe946822a1fa3a4cb24d19027fc9b92316789d88096fdc07d74cd6d7fa0e2f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0246_84084437.PNG",
+      "bytes": 409,
+      "sha256": "f8789f609ef8f19ea73fec20776d7beb2501c21d441a049bbc612402cf290d34"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0247_84084437.PNG",
+      "bytes": 1388,
+      "sha256": "6d4b26f5b9f3ed6affec372a8ba02b3212f7b98921769f1ffaf938106826b7e2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0248_84084437.PNG",
+      "bytes": 509,
+      "sha256": "df05faf957164f6cd55f60b130004c12f85b041a5d73a91014819cc0b3593148"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0249_84084437.PNG",
+      "bytes": 738,
+      "sha256": "2758aa24049d6eb70acc74c29fc163031aac47c1754bca2e9f567f66f7f1ed7e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0250_84084437.PNG",
+      "bytes": 368,
+      "sha256": "75948ff7c4a7f046bbfae9cedfdfb24b13011f842efdbd97c1aef7e7e895d952"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0251_84084453.PNG",
+      "bytes": 819,
+      "sha256": "bc2bb8e5c56ecc8c7ba3ebd3c391c36d3c79f77a4f265a1856567a27efa60f2a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0252_84084453.PNG",
+      "bytes": 561,
+      "sha256": "9a2d161b758e13e187bb35604bed513cb93cf028e1b6b026e413d3d6120874b3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0253_84084453.PNG",
+      "bytes": 493,
+      "sha256": "fb4805d7afef46b7bc39c5e87e39ae4e42d6dacb6498749d96b9cca2134f3654"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0254_84084468.PNG",
+      "bytes": 379,
+      "sha256": "97dbb016fc4ed8e953879ee75d9c57da268c08169a14e2f620a9772f9b7f6d41"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0255_84084468.PNG",
+      "bytes": 575,
+      "sha256": "76c33ba179a485d05db01f1f683ce0b0bc753871e73b415dbf7ea9b6f057a877"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0256_84084468.PNG",
+      "bytes": 417,
+      "sha256": "76fb494044e07f5504cb0667a4707793e471f7c83ac88ed807acec617f211c8e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0257_84084484.PNG",
+      "bytes": 1419,
+      "sha256": "ebce2094cf3b6cf488623b776f1a5971d368ad0c440d5577ca2c8ea7b16c1b5f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0258_84084484.PNG",
+      "bytes": 488,
+      "sha256": "cddb65778a29339266ba31248fec88b1b02ee8d642d3884f476f9cc623f7c2f8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0259_84084484.PNG",
+      "bytes": 663,
+      "sha256": "ea940876616db131068afe813514f8d8ba5f17328584d8655ba950717ef78a01"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0260_84084484.PNG",
+      "bytes": 414,
+      "sha256": "999675b987d31795e482e4b80525a16683a6c86d76a430e28b26d4015d01efb5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0261_84084500.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0262_84084500.PNG",
+      "bytes": 3855,
+      "sha256": "a2d272382a32223ca5fece227275f38d5cdab6ab04b8461054a5479e37c46789"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0263_84084500.PNG",
+      "bytes": 1474,
+      "sha256": "dff1da97132f1eff602b86ae500ef3de1bc7a93adff6cceacff7ba2311664e6f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0264_84084500.PNG",
+      "bytes": 1136,
+      "sha256": "b94ea9c640fb462cb12dbeff4e4fa157ebe932ba88baba3036f75068f383b1ca"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0265_84084500.PNG",
+      "bytes": 866,
+      "sha256": "f55d3a492de8854096d9db8a72d5fc70e334f28b09dd0829e9e1274de4aa068d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0266_84084515.PNG",
+      "bytes": 517,
+      "sha256": "a0ce7d2e98ad8bb0b7976ee7f6dbbc1907fad0fe023c68bd463039821a48ded3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0267_84084515.PNG",
+      "bytes": 504,
+      "sha256": "a4bb3d6acd21ca515481fa119080e67622871667cd3955f33daa6be78d121004"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0268_84084515.PNG",
+      "bytes": 426,
+      "sha256": "70cc8e325738082f7c7919b5e72a835ef0a0c295187f5fc04fd596c3fb41cc01"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0269_84084515.PNG",
+      "bytes": 1023,
+      "sha256": "e20ec8d75826eac130b5014f4a9a8d6745b7acc8c130b0b5123de8def882b638"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0270_84084515.PNG",
+      "bytes": 521,
+      "sha256": "c97ea2d306bcea71c30a5721857035aa2dd12676233f0c50e9d99b1bcfccd530"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0271_84084531.PNG",
+      "bytes": 521,
+      "sha256": "3c00fb7bf277bf2a045e0d0105138d13f2aa8874b05177da125ab64982daf8e4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0272_84084531.PNG",
+      "bytes": 459,
+      "sha256": "2567d5620feede836d4f013c718e0f23caa2766ff0ffa2972b8543a196f4fe44"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0273_84084531.PNG",
+      "bytes": 469,
+      "sha256": "2ed8e518363d1acbd007b73ef7d9d1f6f915b1e426f1460a4e75bf9fdf3ed16e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0274_84084531.PNG",
+      "bytes": 415,
+      "sha256": "3752364b6b293a80c9e95d8aa5da7833850dccb1d4dd3eb7260eba02974a51eb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0275_84084531.PNG",
+      "bytes": 502,
+      "sha256": "e9086d11e4fa133932cbd8588a974cb2702cdef34d5c8cd72ad2f9b20ccda8e0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0276_84084531.PNG",
+      "bytes": 392,
+      "sha256": "94731340721e60114ba72393db3819e60b42a178c5af8e32d1ff770c5d3c19bb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0277_84084546.PNG",
+      "bytes": 576,
+      "sha256": "7b0fa85b5a9e6ed95359eb9dbc5f55e6694301b081206d9e1a16c1732fceb837"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0278_84084546.PNG",
+      "bytes": 491,
+      "sha256": "a2e57c227bca2422a73c26e8d31621e420a79201b1d66e463ef3d017b422ec79"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0279_84084546.PNG",
+      "bytes": 608,
+      "sha256": "e6635e00c989a31a57b168d3aef3a6c2b6ef299c41817b8414540c4e43c60ed1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0280_84084546.PNG",
+      "bytes": 380,
+      "sha256": "ff93e34a3043ebb8d72080654c4dadeb66592d8434cc69b826098123a6a6c2be"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0281_84084546.PNG",
+      "bytes": 596,
+      "sha256": "8e2f9fdf00b35e253c2736ca065860b797e2bdb82538e0442d45d6d8b629cb2e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0282_84084562.PNG",
+      "bytes": 410,
+      "sha256": "97848bb027a239ce5865c7374dd5d8a68a3568fc27f8e54971470ec40419aba2"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0283_84084562.PNG",
+      "bytes": 427,
+      "sha256": "a3f4f8cb7e7e135319042398de1fb5d313bc313c790bfacc84d18801a22228b3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0284_84084562.PNG",
+      "bytes": 404,
+      "sha256": "c0239446ab0c0dccca2bf301c2431bb21de8a256340dc8ddc189c96855964429"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0285_84084562.PNG",
+      "bytes": 990,
+      "sha256": "ed678a5b1bd6cfcfbc9b32bc19ea3d3dcff15bf1b3d8095d0ab5d124d3cb3f39"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0286_84084562.PNG",
+      "bytes": 465,
+      "sha256": "eb733fa51575309be6c5cd076260ba9289739eb55ca1a14d3403970bea38f980"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0287_84084562.PNG",
+      "bytes": 1053,
+      "sha256": "b99ee774fd246567c098cc30b2bbf47bcc8d2bfce5cc12ddce26d110d817ad89"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0288_84084578.PNG",
+      "bytes": 512,
+      "sha256": "754f3d9fb581a3aaac99724a84c3b698f9a276c3410bef999eee5ce6f190c80e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0289_84084578.PNG",
+      "bytes": 1563,
+      "sha256": "f10948ddb99254f2e298dc841b02cd21433a25ac643e5a0d598ebd7b7c0e957e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0290_84084578.PNG",
+      "bytes": 372,
+      "sha256": "f7110c64fe174f70ffb6bb1273ee667740a480d44dfdff51bf198ff3a5f3de43"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0291_84084578.PNG",
+      "bytes": 1695,
+      "sha256": "649dbfc2b1d72fe82e37e70a168b43fcab329a92d5cb9ed5a4630b54444b25c8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0292_84084578.PNG",
+      "bytes": 441,
+      "sha256": "43fc1efc8d55f49a376a4d7a77893a584284778932f8806a2414213c90dc701c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0293_84084578.PNG",
+      "bytes": 865,
+      "sha256": "c8b45393c09b9d91237f7b7e249fa7a294eb939bcb0c8a326bc025963342f393"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0294_84084578.PNG",
+      "bytes": 486,
+      "sha256": "52e7095f909464110c02f53e971633ddb0b758874f7d95b5ea52c9b7a77110d1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0295_84084578.PNG",
+      "bytes": 1164,
+      "sha256": "3a4b30d5e1f8f5a667fa50bbd7ca6035443a8a1e322a7c0656f7b5fcf4556018"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0296_84084578.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0297_84084593.PNG",
+      "bytes": 465,
+      "sha256": "0bf0fcb04e562d4adb4fbe5769301c6b0b03e89b9263b0db5b67b6fdfed662ac"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0298_84084593.PNG",
+      "bytes": 1374,
+      "sha256": "818cd51f33fc07116047ab4674c3b62514b465b82c73f3348782ad109ef1fc75"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0299_84084593.PNG",
+      "bytes": 1547,
+      "sha256": "7e207c615cb48f6b51e823ca22faed687c5a7b568b432ca61616ef16eb5b5c3a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0300_84084593.PNG",
+      "bytes": 453,
+      "sha256": "98c5898d1d33f0e08bd56da6b86c506d3aa39541c95df80b15e56503779d0835"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0301_84084593.PNG",
+      "bytes": 1178,
+      "sha256": "1f004e659c79a57b4162e02b01a3b927a3d7c59575637d29ba8655a81c85311f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0302_84084593.PNG",
+      "bytes": 592,
+      "sha256": "01df0837fbebc68b820316f32c776419f4e34cad9b6498eeed26d094834b0e9c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0303_84084593.PNG",
+      "bytes": 418,
+      "sha256": "787113068898b75837334e2ef53947a2085663162eb702fd874d79f9cec950ba"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0304_84084609.PNG",
+      "bytes": 844,
+      "sha256": "d2b31bbda2cebb678c46028f0530b84b298636a3bef7df7bc877a608af5747b8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0305_84084609.PNG",
+      "bytes": 447,
+      "sha256": "fa5ea5d86a060234b537fe3d2ae2253c29c4ca1fbef7ce34203c2d80254c53fd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0306_84084609.PNG",
+      "bytes": 1627,
+      "sha256": "afd44898ba808b659fef02cbfe3b09844dad8a96a388595a98f16f8e2a0790f5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0307_84084609.PNG",
+      "bytes": 548,
+      "sha256": "c487a51545f6ddf8db04e292cb6da2410cecd9dcdb712f73fc9857ee01ac85b1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0308_84084609.PNG",
+      "bytes": 1946,
+      "sha256": "0b4d063c92091a220148e53e8234635a6f28216dc5adbcc8bca5c021bbe54eee"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0309_84084625.PNG",
+      "bytes": 467,
+      "sha256": "bf5be2b59a0e92b7864f0319b5a8ac4b55df892af3b2a733f40fb6a9423bb1b3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0310_84084625.PNG",
+      "bytes": 769,
+      "sha256": "ff206415cd507c1596cedcb0f7f66033aa0a65e6225614a79957cb5d7c178909"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0311_84084625.PNG",
+      "bytes": 418,
+      "sha256": "2caf6f2505d0562bb7558858ddc190b77da4f25067c98a7e7f8361cd2f95c5df"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0312_84084625.PNG",
+      "bytes": 828,
+      "sha256": "0128c852cccf393ffd4f6660a10099ab184d9812db27027bc617076b989ae38a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0313_84084625.PNG",
+      "bytes": 631,
+      "sha256": "b61e434cd2af271b6b5dddda038a9b294da6bafb74c288d3491bd078bb5aedca"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0314_84084640.PNG",
+      "bytes": 986,
+      "sha256": "9b2e61436e826e42600a6253dcac70fe79c8aee73271759b2cdb01ca80ddfec3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0315_84084640.PNG",
+      "bytes": 580,
+      "sha256": "1daff9cb468dc0e8a79d6bbf68a3c339a666bc4a9da3c0039dcd738b1f235748"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0316_84084640.PNG",
+      "bytes": 980,
+      "sha256": "d05d93b067a77e0befec9eaaa1a18e68f628ce63ed6d67f1ac66d35d2bbdcdba"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0317_84084640.PNG",
+      "bytes": 478,
+      "sha256": "ba6c26baa4f76f5ee6702ff43503b6a253119179b98292c96162936a04f44578"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0318_84084640.PNG",
+      "bytes": 933,
+      "sha256": "f61b150a579d88525b5e3287883407fb4c3ff0cdab49245430ecef76b322480f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0319_84084656.PNG",
+      "bytes": 446,
+      "sha256": "65ea07efe9a4906d7b27030095f520f3fad6ca6d44b0e5fd2ace0160b53db111"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0320_84084656.PNG",
+      "bytes": 1036,
+      "sha256": "58ee767ef4c7bd6d664195aa832842e26ce82b3234679822395dd35f8bd81664"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0321_84084656.PNG",
+      "bytes": 550,
+      "sha256": "22a0a2a2ba66ea7b3c221e9a1a555e16e9f97c672a03aa7cbab387ac65a20f5a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0322_84084656.PNG",
+      "bytes": 1814,
+      "sha256": "7bbab80fd8a000ffcd4396200c1f6c9a2afc953ca1a71139f276951befbfe55a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0323_84084656.PNG",
+      "bytes": 427,
+      "sha256": "36d9434bd46361980c7ba158707c190102867278690711b0752ddcbf20a0f03d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0324_84084656.PNG",
+      "bytes": 5980,
+      "sha256": "e321275cf58d5f1afafcd5e5588542cd7cb8fa42c9860d8555337edd5ed6f937"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0325_84084656.PNG",
+      "bytes": 649,
+      "sha256": "3e6a0256f8b1f4719bcbbbf08dd63408d572495a58ea62dd81148dbc64ca2b16"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0326_84084671.PNG",
+      "bytes": 498,
+      "sha256": "c265004ab187a986af99ed561aef5c50fa69e2e823b73251436cf42f94f7fe89"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0327_84084671.PNG",
+      "bytes": 861,
+      "sha256": "be8efe23f7adcb4478e6b818dcab12833b3d77610ece7017886c0bfb5bb1749c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0328_84084671.PNG",
+      "bytes": 471,
+      "sha256": "77595ffd9a647b6d8238901603906c98ff0d3a095cdc27520b24ff673e11ea04"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0329_84084671.PNG",
+      "bytes": 841,
+      "sha256": "786928026db67df44af94ca41cced36b8c8c7d152317f537a02a972deac29070"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0330_84084671.PNG",
+      "bytes": 473,
+      "sha256": "b82fb0e2ebbe1096172707d42ad554436c157875389d7a940bd73b6f9d82a80b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0331_84084671.PNG",
+      "bytes": 2068,
+      "sha256": "9e6edd76a21b27435f8a0623022e656ef020042e6d6f4cb3d535dba1bdaf9251"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0332_84084687.PNG",
+      "bytes": 521,
+      "sha256": "7637f284a70142ab8192890350012a39544fa628e785869d0be8a54f93800b3a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0333_84084687.PNG",
+      "bytes": 736,
+      "sha256": "1276128673dc06349318c62f113879f044b61a76ba43a186c3915917d0b1c416"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0334_84084687.PNG",
+      "bytes": 469,
+      "sha256": "8c4db5befcc31a5bb39f6318184d2758236f9b12ee0d3934077c001e61171584"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0335_84084687.PNG",
+      "bytes": 2651,
+      "sha256": "ee2b2dcfbb6ad704a4ffda8d59362f0252057e894240ec3242a75c15b4ede71a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0336_84084687.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0337_84084687.PNG",
+      "bytes": 835,
+      "sha256": "9a42c9cdc2284183c7db923836fb65f6a5fa3c8050f7211eef78ff269566ae6c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0338_84084687.PNG",
+      "bytes": 1004,
+      "sha256": "1196cefb4e869e044ccb6bbea451127ed420141a408b425494ceb29fdfdefaef"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0339_84084703.PNG",
+      "bytes": 2404,
+      "sha256": "6d38f94d364dc2b40086c21edbce13fc9d3aa375ddb3ba4dbd4734175b4e4ff6"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0340_84084703.PNG",
+      "bytes": 347,
+      "sha256": "4f3160af80fe610b260b313f971e0ad8ffffead5d716d71d1bbf69bff18131cd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0341_84084703.PNG",
+      "bytes": 1227,
+      "sha256": "9445daf042a7d18157e23b2720d0a9d230f53bdf53b51c2b15ee42c2080da8f5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0342_84084703.PNG",
+      "bytes": 396,
+      "sha256": "96f96f4b02ee7b04dd25ac3c7db41fcf0c69911075c342279682a733ab4edccb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0343_84084703.PNG",
+      "bytes": 1319,
+      "sha256": "d3e55f0aa627c2cb670d70c8aaabe805b762d58731851e9d9560b0a54247fd46"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0344_84084703.PNG",
+      "bytes": 405,
+      "sha256": "b8d23d421ba0f3639ca961fdf13c55fbd8c4a819f1e52737872a61888a8b3b13"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0345_84084718.PNG",
+      "bytes": 750,
+      "sha256": "51d9f15f06d3c061feda002b89b3a2c9aba082f9f19aad967a30f5cb0b7e20a1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0346_84084718.PNG",
+      "bytes": 349,
+      "sha256": "bdc2f0dbdfbe0fc5038445c375026abb1e19afe3a512d01d8efdf346ab12744a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0347_84084718.PNG",
+      "bytes": 647,
+      "sha256": "7b7b4b4a473c6d95b5efa6051a62744ef7024bfdf4ff42cc4361c6edd832fdb5"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0348_84084718.PNG",
+      "bytes": 507,
+      "sha256": "ab8613731d1cd301a34ca99d4f4540181eccb1c950a0078412f7a512340e79d3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0349_84084718.PNG",
+      "bytes": 2672,
+      "sha256": "2a87cf4626a3a51b95e1a72b88eebbf706c31094b7858d6d9c53447ddb48edad"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0350_84084718.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0351_84084718.PNG",
+      "bytes": 1172,
+      "sha256": "318fe53b36bba940a86de5aacd94adc2a990bb26a96a3672d02954e9746c20c7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0352_84084734.PNG",
+      "bytes": 1151,
+      "sha256": "ee4ff3581051012159d064cea2689cd4ebb2e661e8f5911a3a8167bbf3406b01"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0353_84084734.PNG",
+      "bytes": 939,
+      "sha256": "0faaabe7fff5ed2f29f0a7b8932b7aabb413a674d014b0c0cb20d7fb066e9a4e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0354_84084734.PNG",
+      "bytes": 532,
+      "sha256": "7c786efdb65c01f4efdea866b70c472b1c8bb9962b519b8318eb5ca99bc18779"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0355_84084734.PNG",
+      "bytes": 709,
+      "sha256": "26099e79c53c1603897702860da894c23979b6981bbc6ce17c381fb711b8fb8a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0356_84084750.PNG",
+      "bytes": 550,
+      "sha256": "21be5d9d5a93700fd5a6a3164e445e76aacaf580351d59ff59801e5988957827"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0357_84084750.PNG",
+      "bytes": 518,
+      "sha256": "57ad94b87e32be67928092242424422795a81b3f422612685780f2b13ab3f72a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0358_84084750.PNG",
+      "bytes": 356,
+      "sha256": "ed5addc4c9359af6c655371e2bf61ac8a45983b679b3901fc4f4eabbe3fcbe37"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0359_84084750.PNG",
+      "bytes": 4770,
+      "sha256": "377911541046653a64417f7d2790bde594b7b53506de808a1bef08eee7231ab3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0360_84084750.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0361_84084750.PNG",
+      "bytes": 1518,
+      "sha256": "3765e9802225bcf3196dae443ca9b7aaf197e1ecf8e8c96611e4df9c3725c429"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0362_84084750.PNG",
+      "bytes": 1140,
+      "sha256": "bd54234bde096bdb9f6667cbfe3843cdf559fb4c243bd91d25890e1a18cc4159"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0363_84084765.PNG",
+      "bytes": 427,
+      "sha256": "4bc7559c63884152f89da59e2d9ece6f09ea93e8f21c774dc75f836ca328676c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0364_84084765.PNG",
+      "bytes": 336,
+      "sha256": "a1840dff97b97a6c56c343e2ef52e1439439e3b66d17c9136b606cd442120868"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0365_84084765.PNG",
+      "bytes": 602,
+      "sha256": "860f1a9e24b5e3666597e63e882d1c828018c1c09af914257d98c03d473f7919"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0366_84084765.PNG",
+      "bytes": 424,
+      "sha256": "432d2be0071d488eefb97daba909c7853928c3cb6feb043cb846cfd5824cd7f3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0367_84084765.PNG",
+      "bytes": 838,
+      "sha256": "43edb429f2e936d20decab6348ed8637db99829459ba3bb768e9300203edb9f4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0368_84084765.PNG",
+      "bytes": 416,
+      "sha256": "a16b2d2b4e0ef10739473d9a4f0b0dbb887112eafbe2010d391a964643ef89ed"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0369_84084781.PNG",
+      "bytes": 658,
+      "sha256": "f26393abafff51470c6d3b1090d1ed1d3c6a8e6836ecd43ab13984556db883fb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0370_84084781.PNG",
+      "bytes": 337,
+      "sha256": "76a4fc008ff959e016174df33a6222311109324c6a555fdc4f77a7b35088c536"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0371_84084781.PNG",
+      "bytes": 9443,
+      "sha256": "783ab70a9bae8675b794bb108e04a2c917356d8ea3b4767df16b0b11b9e5a829"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0372_84084781.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0373_84084781.PNG",
+      "bytes": 1595,
+      "sha256": "f4886d60d45a1e09fe316d220accd166623a05415adc67f1d06980e07d1be20e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0374_84084781.PNG",
+      "bytes": 1168,
+      "sha256": "9ef8de37e3e968cd396a2e6345569003962f64aa2e96557806c47bafa85621ce"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0375_84084796.PNG",
+      "bytes": 1071,
+      "sha256": "fdf4fc088b2e11bca3572070f6a348c2147f272237add6018aed410b59ba1aee"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0376_84084796.PNG",
+      "bytes": 564,
+      "sha256": "64fe1faeb25ddf7063bcf49529ddd38e9294dd860965e43ea7288cd50b6e0551"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0377_84084796.PNG",
+      "bytes": 471,
+      "sha256": "7d2d87afe9f464ac4ecd2df3cc3fcce3a8c017faa618b77e5083e7b8c1a26f6e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0378_84084796.PNG",
+      "bytes": 530,
+      "sha256": "94b2552ddd0c16a6d3170138bcbed45df1ab5e7163c2e0a79f0fe1d0a415215a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0379_84084796.PNG",
+      "bytes": 407,
+      "sha256": "e8acd683d5c9ac881975cf591668bf86f4d6dd172792226b62563334a557458c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0380_84084796.PNG",
+      "bytes": 529,
+      "sha256": "c2f16f5e7b50d9c11cc538be9caad17491f73c9d76c5aa603a6fa60a47aff415"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0381_84084796.PNG",
+      "bytes": 552,
+      "sha256": "b8bf60de09c408066b037d5811e911d28ffb60027aa2d251aabf3938bc249fd4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0382_84084812.PNG",
+      "bytes": 555,
+      "sha256": "b9aebca3e76ad35299cce4f19d9aacb59c0318cb0ff2188171466a69ffed5880"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0383_84084812.PNG",
+      "bytes": 551,
+      "sha256": "20e70c894dcf33dea21f37745be0a7997fe2885675fb3fd1e201a5156208b834"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0384_84084812.PNG",
+      "bytes": 553,
+      "sha256": "3a1b86a66390b2b14c805220840cf941243b9c8d5cc479eb2cdcb392a57df609"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0385_84084812.PNG",
+      "bytes": 496,
+      "sha256": "3be9e7df61a8a084e5bcc65c67d70521a04e6e3de0f37ac17665ef5d69c8f28c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0386_84084812.PNG",
+      "bytes": 540,
+      "sha256": "a075d2e0dcc4a385fd2bde670f45bd064a07e9757829f546f0a760eb2dfb7317"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0387_84084812.PNG",
+      "bytes": 485,
+      "sha256": "71a488fc8d4954236c38d9b53c6cf1c18544e663340b65637bd548cd0acb01b8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0388_84084812.PNG",
+      "bytes": 1005,
+      "sha256": "41319c9f56625250fdbd3fa88911970eb89f3570780069f07f183c6783dd0d97"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0389_84084828.PNG",
+      "bytes": 470,
+      "sha256": "0be60414ef4b68a5d77320ffbe4d6cb4c09e9521f8a85a4df89bc20e85f8463b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0390_84084828.PNG",
+      "bytes": 1140,
+      "sha256": "24e71b1b30eedc369349db1a48b050cc971a5da496aa4521b38745a7ba259b2f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0391_84084828.PNG",
+      "bytes": 566,
+      "sha256": "2099c17b1556aa7b1f834d036f54ac958174645d133e9463817362db9cce6680"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0392_84084828.PNG",
+      "bytes": 857,
+      "sha256": "41fb3989fe8b25066dc2dd03dfeeb24a33ace1fb2fe0414e64a56f1e308d0421"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0393_84084828.PNG",
+      "bytes": 478,
+      "sha256": "677c40f2937144bd5eeb95c77f6d5f1de99a1f690cae6aa09dc500f10410c199"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0394_84084828.PNG",
+      "bytes": 811,
+      "sha256": "cc7235de1a29a1f6fa2e1223cd3ad75f95bea0f6ac103557082daa0b699b4285"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0395_84084843.PNG",
+      "bytes": 483,
+      "sha256": "bc12828c99e216c93dced753e611e31e9b9c07cb22030759bd49145cb47fd57a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0396_84084843.PNG",
+      "bytes": 1485,
+      "sha256": "bb39d0a4f158a9c6e4d10888d347520face067420aad00a9f5f1a3c7f54ad569"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0397_84084843.PNG",
+      "bytes": 585,
+      "sha256": "70ac5382984050d0f3d9e9dfb6e2fa216ff81332344634ba53c9b4d0edc334ee"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0398_84084843.PNG",
+      "bytes": 664,
+      "sha256": "f24a4ca941141515a58255b086ab9a616e3261ce2d0c16b4333d55d15a9580ab"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0399_84084843.PNG",
+      "bytes": 461,
+      "sha256": "4a0521d283d04a29ee479ab61979a1fa9935b77ec77d9443d798c6190c812476"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0400_84084843.PNG",
+      "bytes": 975,
+      "sha256": "41848fc717676b5541ce0e1516ca1df3a87717c87e17dbb8b2e1c92691092bd1"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0401_84084843.PNG",
+      "bytes": 453,
+      "sha256": "7fce98a193681a29d3f7c7f3c5cfca66adb1f8a40ffc703aa29d5afa57f0ef30"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0402_84084843.PNG",
+      "bytes": 742,
+      "sha256": "fe00bbf9216ca16e7729684169416efc6b0f1c1f6d55aa68e29f3d354612b40c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0403_84084859.PNG",
+      "bytes": 442,
+      "sha256": "c9dde699106673a5f57114630d8491e8b05f2b870e826e565860c0c442aca90e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0404_84084859.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0405_84084859.PNG",
+      "bytes": 1599,
+      "sha256": "d53ee5c4016f1cce2defab75de3ce7d4b6355c36e3f582e9b98bd2c7b27fe165"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0406_84084859.PNG",
+      "bytes": 1168,
+      "sha256": "9ef8de37e3e968cd396a2e6345569003962f64aa2e96557806c47bafa85621ce"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0407_84084859.PNG",
+      "bytes": 1119,
+      "sha256": "5345f9aa4a645189a8cedfc5e86baafff3400a896d9558b3bc3a087a4e0a7a27"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0408_84084859.PNG",
+      "bytes": 606,
+      "sha256": "dc18b2dd8f8461d82784ff45cdbe0917e41bd363ba89f3202432bec6dfef97ef"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0409_84084875.PNG",
+      "bytes": 472,
+      "sha256": "a5ba47e77530167e274f51e834104a72e2050cc2abea1612926b281c1f5e959c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0410_84084875.PNG",
+      "bytes": 567,
+      "sha256": "78c5591d3a25be781878c2f02e5b0a67459d09167cc4f1c754dfc8b4a8715b38"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0411_84084875.PNG",
+      "bytes": 401,
+      "sha256": "df9e4b15bd2d63d9be23a951b2fd5b9c990f5095ab077468cf2f7a3b11da4154"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0412_84084875.PNG",
+      "bytes": 576,
+      "sha256": "0748befade5b543579d6288a214a0b5cd5f0f2e0cf20d137b5edff8309e11112"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0413_84084875.PNG",
+      "bytes": 552,
+      "sha256": "0f2f34b2b9f96b41e6a0f97da5d426fafd9eba23cd734f5ecb4f860dfe751e2b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0414_84084890.PNG",
+      "bytes": 599,
+      "sha256": "49b8d0b4164cf8c76a07b75033d3e8b4250360ed37be7e35cf7cd99fbd126f0d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0415_84084890.PNG",
+      "bytes": 571,
+      "sha256": "85b68af33e18dc6aa83f41c111b08623218e6e43d3c2bb8ec25116a62fcf7bc3"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0416_84084890.PNG",
+      "bytes": 596,
+      "sha256": "851ac9445f5e4e99927a88501c1af0c06a7dc5553f76edbce6010a8ccb03875a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0417_84084890.PNG",
+      "bytes": 486,
+      "sha256": "6829d997aa1787f4318b9f246c06082bac759ac499bcc30f85cd3344bdb4f0d9"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0418_84084890.PNG",
+      "bytes": 581,
+      "sha256": "5a9f89f1702bd9740d19a3199465976432fe41448f3bd7ebc03463a2fa1185fb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0419_84084890.PNG",
+      "bytes": 471,
+      "sha256": "7fb75e6e003494d2808b9ab232fe2080a710d77700f0043a3d41134f285a885d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0420_84084906.PNG",
+      "bytes": 997,
+      "sha256": "9886b48e10a96af0d1c9a82901ec02e551387fc313da0296bf6a69159f7e217f"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0421_84084906.PNG",
+      "bytes": 489,
+      "sha256": "d6582746a3a0641250677820a26e8d95e338d840acbdc71615426963d119b6eb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0422_84084906.PNG",
+      "bytes": 1134,
+      "sha256": "8b6936f63e2f1a67c83b03ff11ba7c65c3129160a25a048eb734f79e7ae3f966"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0423_84084906.PNG",
+      "bytes": 551,
+      "sha256": "33604d8cf07858dce8cdc825d09ae3b41d5e47a016a2cbbe0ee4415743539f35"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0424_84084906.PNG",
+      "bytes": 851,
+      "sha256": "e4f416bb5dc5e55e2a5db947dc0eda56dce8742d58fe1b45f9a83c35afe1816e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0425_84084906.PNG",
+      "bytes": 477,
+      "sha256": "28772da1b258a2f2169bfa201b4a33ceebc73c47656609e8453000d28a1a9086"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0426_84084921.PNG",
+      "bytes": 808,
+      "sha256": "21265f76dd15eb3497ef63f12bcf0f2c7a86b3828eacf5bfb8ba5b04ebc0e36d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0427_84084921.PNG",
+      "bytes": 481,
+      "sha256": "b01658dbde88434658fc5d1958f5a4b84d8faffc9d48102db62dc52df1b3ba65"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0428_84084921.PNG",
+      "bytes": 1543,
+      "sha256": "d19c30b0648bb3aefa1bc7de41233cf6674ac721e6fd2a5a7d8a7e42d950010c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0429_84084921.PNG",
+      "bytes": 573,
+      "sha256": "aff819b3b3e0994987b792d8e96c7e2980369f35082567f05e0edf89d0cf4302"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0430_84084921.PNG",
+      "bytes": 669,
+      "sha256": "1e41dadb65b9a047dc28b2052fcf6f2257aacefb1f88d5028836c436eb06821b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0431_84084937.PNG",
+      "bytes": 451,
+      "sha256": "cfa2056184bc298afb828f3c80c16489576501f01a3f222598dde06bbc6b57bc"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0432_84084937.PNG",
+      "bytes": 964,
+      "sha256": "a4d8334889af1d8ab3efa5f664728202a0df5cd770db5c47def8cafa214db27c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0433_84084937.PNG",
+      "bytes": 449,
+      "sha256": "0e777c0b55edc3bdb639744ae6307dcb51710a3ebf07f1b2a3664bf1036907f4"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0434_84084937.PNG",
+      "bytes": 744,
+      "sha256": "3cc070c7660c9e7157040c6f6309f104f44795e4c922c38fdc1f376fbce3b5fc"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0435_84084937.PNG",
+      "bytes": 434,
+      "sha256": "a677246f0e92a822308757694f496cb9bff0fca2d03c22e5c23db5ad8aa18f31"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0436_84084937.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0437_84084937.PNG",
+      "bytes": 1588,
+      "sha256": "4e8a2a27b40f0e293f7cdefb45b87fe941af6880f0ed1c09da7fdb845faed3fe"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0438_84084953.PNG",
+      "bytes": 1168,
+      "sha256": "9ef8de37e3e968cd396a2e6345569003962f64aa2e96557806c47bafa85621ce"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0439_84084953.PNG",
+      "bytes": 1118,
+      "sha256": "9f63ffd30ee77a5e29d86ac234eae631ecb5df53af843bc9add71f972f350929"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0440_84084953.PNG",
+      "bytes": 602,
+      "sha256": "6083b8dde496cf0d537777c769aeb77ff5720c3601f01775e275a2071d2911f0"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0441_84084953.PNG",
+      "bytes": 468,
+      "sha256": "36164c92cff08c13c1a10cb30d642e8cb83b2bf19cee6e855d148dcd6702e5ea"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0442_84084953.PNG",
+      "bytes": 562,
+      "sha256": "17b78b59c078efc48772fa91a9eeff9114696982b3f7bc1c0e0f821a9d0c3b69"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0443_84084968.PNG",
+      "bytes": 407,
+      "sha256": "bafa10bae279307aa7fdb8f04ee1d9f4b631f08423b87d2055cc015aa2d1d4cc"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0444_84084968.PNG",
+      "bytes": 570,
+      "sha256": "a093d7cb93b31bc6468bef481325d0c2ee6dfe600b412d29f353c9757236f164"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0445_84084968.PNG",
+      "bytes": 552,
+      "sha256": "c54a615cfa05c0487a7a2fe4045a195abe2399d4f32de93712a6260bb58b4895"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0446_84084968.PNG",
+      "bytes": 602,
+      "sha256": "8ab666b51f0a19c4090adb200aa1ea07ac2b005d592e01bb0569491fe7d8d276"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0447_84084968.PNG",
+      "bytes": 560,
+      "sha256": "35bb7520c8f8f0d5b57ea856565138b2b1338101215ff6a46e43a45579fdb492"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0448_84084968.PNG",
+      "bytes": 592,
+      "sha256": "fc3fd47869ed06884f82edb0231720f99ae0cb1d7384cc0895e81db263e22519"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0449_84084968.PNG",
+      "bytes": 534,
+      "sha256": "0d989f34921e11cf104861d03945e9d26ebe715ab21657fb36a2b1dd60b4e93a"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0450_84084984.PNG",
+      "bytes": 578,
+      "sha256": "9541705a745db9eff0682257ab0853558965e501dca530c11d1151a54fdfb541"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0451_84084984.PNG",
+      "bytes": 499,
+      "sha256": "195bc68bdc0582c5d7784898cfbef0f3db69e287537bc5b87f3945c56e584586"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0452_84084984.PNG",
+      "bytes": 988,
+      "sha256": "2b8ac3695908aaccdda5bab02a92b7d12c9981851ffe86e3ee847457eab58a88"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0453_84084984.PNG",
+      "bytes": 490,
+      "sha256": "29a10eda33aa39535e16a8930df54cd40bfbd0773f052baf41e592c1c0eeb203"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0454_84084984.PNG",
+      "bytes": 1131,
+      "sha256": "f5c1b3034a116106aaa5616a670b886545d93bf11fb541fd773f9aa769c9129d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0455_84084984.PNG",
+      "bytes": 560,
+      "sha256": "0cf210f5572c9eff28e107f1843caff2562a94fe0011908a3faa6a929a638d07"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0456_84085000.PNG",
+      "bytes": 845,
+      "sha256": "18115e50599d9bc5b792235b1f527a6adc9c9a312330f96a698307d7f7a52f59"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0457_84085000.PNG",
+      "bytes": 459,
+      "sha256": "51febe78f01e53f3e12f724a336cdb07ab0873c8e1914d56a8a15ecbe6f5b01d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0458_84085000.PNG",
+      "bytes": 805,
+      "sha256": "84b0154ff6c1d13c4a8837c2c62edf315c0bc1e831beac037114a402cb49490e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0459_84085000.PNG",
+      "bytes": 476,
+      "sha256": "416ee0d9e27ecacd9e3e7efb12d6498f6711e72de6d48e81bb6aa932abcff859"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0460_84085000.PNG",
+      "bytes": 1543,
+      "sha256": "444a57d6b03692043302cab8216c9a14c7de8fe442ca06417e208ad517224cb6"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0461_84085015.PNG",
+      "bytes": 553,
+      "sha256": "380d8d1712086a15a75defba739caaced083330967e07f2cde03ee6829e70ada"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0462_84085015.PNG",
+      "bytes": 668,
+      "sha256": "813460e10cc0b72b504d4b8b4af0212c3648f4a0ab540ba872bcc3518d24e9cd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0463_84085015.PNG",
+      "bytes": 462,
+      "sha256": "9c0409341d6bf9df3ecf43bbeea6d3301c1912b1874cd758844c936ff611dfe7"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0464_84085015.PNG",
+      "bytes": 967,
+      "sha256": "b54a0797af22e39fcc5159686c374cc03303084b7e878f8791e949c6a5a7435d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0465_84085015.PNG",
+      "bytes": 460,
+      "sha256": "5ba5765c04a35acc2efac4e644f7b683a7b602bd6ff1aef6c8106c8ab5f19b11"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0466_84085015.PNG",
+      "bytes": 748,
+      "sha256": "41681b43c16403bd38b05eee313b25ad6df642721035d324a9b8525eac9f31eb"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0467_84085031.PNG",
+      "bytes": 445,
+      "sha256": "19fadb6972e83f6c88dc3306ce6bff9e5d546fc20aefe8d11260cc3306eaf69b"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0468_84085031.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0469_84085031.PNG",
+      "bytes": 7794,
+      "sha256": "667575e6e0d1b592b303b464bd3bffc299e6129390a04558eeef4eb8b335efca"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0470_84085031.PNG",
+      "bytes": 1752,
+      "sha256": "1d2f681da13e5c1f50690bad8fdbd148d8f4bda408acf14e8d098cf0b9f7a469"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0471_84085031.PNG",
+      "bytes": 985,
+      "sha256": "7ba77e2b068dc64dfe05d0c04f863890bb7e498144ba1d7d2b233e4884ccf9af"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0472_84085031.PNG",
+      "bytes": 14143,
+      "sha256": "c0a3a94a07c5d6b50c66c83cd034177bfaaa621505a92175d5b53fada9d39ad8"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0473_84085046.PNG",
+      "bytes": 4369,
+      "sha256": "05f9fd9e76b2c60246b60e217cb8f7602df678541bc5db4750ac4478cd498dcd"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0474_84085046.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0475_84085046.PNG",
+      "bytes": 1310,
+      "sha256": "f95c1428548f5519f3d207cccc7008c16190fbcb44b9416c2bc2040d82bba234"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0476_84085046.PNG",
+      "bytes": 1480,
+      "sha256": "a619275ada097e9833a47c59f3afc80496f4714279aff9185ae271598ec5835e"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0477_84085046.PNG",
+      "bytes": 12521,
+      "sha256": "cfe293cdb175c5743ade7d0351d8d687d9033b1a27f4b1b50353de4e49d2a542"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0478_84085046.PNG",
+      "bytes": 3025,
+      "sha256": "36eef9c4d7a6bd79fe320c39212df743764fdc74f8df45ee8bd847d052219009"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0479_84085062.PNG",
+      "bytes": 636,
+      "sha256": "be4a081ade7d74509b7d30cc52762b215adda199d3987aeb6529cf0b4fddb854"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0480_84085062.PNG",
+      "bytes": 1078,
+      "sha256": "b60c4ce700d145c7aab51a54a82b859ead011904c0913733c5b12ad692ba936d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0481_84085062.PNG",
+      "bytes": 631,
+      "sha256": "8b5907adea8584eaf4efc079a812e30b445082ec0f6096b2bd71317db49ccd77"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/Memoria_SEDAC_P204_MC01_imágenes/IMG0482_84085062.PNG",
+      "bytes": 10262,
+      "sha256": "284edb76d5c9cd23038c77cdf94afd72f32527d5cad7050cb580d35f19f32896"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/NO_NUMERICOS.json",
+      "bytes": 11,
+      "sha256": "84b1c14e68260082e3e79edff0a78f4ebf1942cfd6c593246044ec2149cbb87d"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/VALORES_ESPERADOS_SI.csv",
+      "bytes": 4340,
+      "sha256": "7ea0ab38d60e58b876a4e69e9a490a2eb745e68deb49fcd5fef6fc7ab06b7e49"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/VALORES_ESPERADOS_SI.json",
+      "bytes": 5413,
+      "sha256": "d37dc09c6a4ae168ec982373e4e365ba3cdc6700985c2c85cc5ef85a14bf0219"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/VERIFICACION_MATHCAD.json",
+      "bytes": 36586,
+      "sha256": "662bfc47562de9cf368186c3c0d04ecd07638777cb55745adea7ed83f545656c"
+    },
+    {
+      "path": "03_Memoria_Calculo/Soporte/verificar_mathcad.ps1",
+      "bytes": 2797,
+      "sha256": "1a57da8693dcbc86fd912ca06072030519a28ceea530b082edb93c3d4516539e"
+    },
+    {
+      "path": "04_Anexos_Formularios/Diccionario_de_Datos.md",
+      "bytes": 7032,
+      "sha256": "0e38e88daef53e461096c338584bd74468e10a607a87b9db1d9c505be39fe0dc"
+    },
+    {
+      "path": "04_Anexos_Formularios/Formulario_Ficha_de_Ensayo.md",
+      "bytes": 2466,
+      "sha256": "8c4e97c4c8731a75164cbdb7effec1274c31b12c005344fb530965368505ec96"
+    },
+    {
+      "path": "04_Anexos_Formularios/Formulario_Protocolo_Laboratorio.md",
+      "bytes": 4962,
+      "sha256": "2aec2a32a3d463662a264ac387885dfe5a330251871759af2987b64fc5e8dd2b"
+    },
+    {
+      "path": "04_Anexos_Formularios/Formulario_Registro_Bomba_y_Correas.md",
+      "bytes": 4060,
+      "sha256": "412852de78a0223a9748cf3d0f7696181b72bdb2f621611714e742e387e6ba23"
+    },
+    {
+      "path": "05_Auditoria_Antecedentes/Auditoria_Memoria_Anterior_y_Antecedentes.md",
+      "bytes": 7606,
+      "sha256": "e8c1d2701467c998c64df2fce1ecbbfc77603d17b23045ebc3181b7746c664ef"
+    },
+    {
+      "path": "99_Sesion_Trabajo/VERIFICACION_FINAL.json",
+      "bytes": 1637,
+      "sha256": "93799971c67a908127fca928f8a6a39a3aa21cead292a067d16e4f38676aec9b"
+    },
+    {
+      "path": "99_Sesion_Trabajo/VERIFICACION_OFFICE.json",
+      "bytes": 421,
+      "sha256": "e50938fc52014a55964770e0374aaf0c97ba9ef3943646bb4b3faa055267d5c9"
+    },
+    {
+      "path": "CORRECCIONES_VERIFICADAS_20261025.md",
+      "bytes": 3827,
+      "sha256": "1902f1733838d51ece8910f03ed41a12d2f3f6956b8b9a6c46748f564db79a60"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12289,
+      "sha256": "e507329b01fb19883deea33cb0697bfb9d063a1d547fa248e15cb61e4bae2b78"
+    }
+  ],
+  "extra_generated_files": [
+    "06_Registro_Ensayos/README.md",
+    "MANIFIESTO_ENTREGA.json"
+  ],
+  "excluded": [
+    "historical_backup",
+    "python_caches",
+    "lockfiles"
+  ],
+  "scope": "Documentación de prediseño; no validación física"
+}

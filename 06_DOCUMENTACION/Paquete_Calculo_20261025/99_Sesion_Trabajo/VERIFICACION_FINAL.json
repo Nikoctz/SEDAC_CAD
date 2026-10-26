@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-25T22:18:28.212192-03:00",
+  "reference_files_unchanged": {
+    "AGENTS.md": true,
+    "ESTADO_ACTUAL.md": true,
+    "DECISIONES.md": true,
+    "CHANGELOG_SEDAC.md": true,
+    "01_CAD/Prototipo_P2/P2_05_20261019/Soporte/calcular_p2_05.py": true,
+    "01_CAD/Prototipo_P2/P2_04_20261016/Entrega/Inventor/MODELO_API.json": true
+  },
+  "numeric_control_identical_to_before": true,
+  "numeric_control_count": 178,
+  "saved_excel_sheets": 12,
+  "saved_excel_differences_from_backup": [
+    {
+      "sheet": "02_Variables",
+      "cell": "G26",
+      "before": "BOM_Y_MASAS.csv (medido en Inventor)",
+      "after": "01_CAD/Prototipo_P2/P2_04_20261016/BOM_Y_MASAS.csv (masa de modelo en Inventor)"
+    }
+  ],
+  "other_excel_entries_and_formulas_identical": true,
+  "boolean_control_not_in_numeric_comparison": {
+    "cumple_cribado": true
+  },
+  "mathcad_numeric_checks": 177,
+  "mathcad_discrepancies": 0,
+  "mathcad_nonnumeric_checks": 0,
+  "repo_comparison_count": 26,
+  "repo_comparison_max_relative_error": 8.056517353195808e-16,
+  "pdf_page_objects": 27,
+  "python_source_syntax": "OK",
+  "native_opening_record": {
+    "word": {
+      "opened": true,
+      "paragraphs": 1849,
+      "tables": 26,
+      "pages": 27,
+      "pdf_page_objects": 27,
+      "pdf_bytes": 531831,
+      "corrected_text_present": true
+    },
+    "excel": {
+      "opened": true,
+      "sheets": 12,
+      "changed_cells": [
+        [
+          "02_Variables",
+          26,
+          7
+        ]
+      ],
+      "other_entries_and_formulas_unchanged": true
+    },
+    "crc": "OK"
+  }
+}
