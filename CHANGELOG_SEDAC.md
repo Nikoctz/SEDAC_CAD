@@ -3,6 +3,14 @@
 Registra cambios **realizados** sobre el proyecto. No ideas, no planes, no propuestas.
 Formato: fecha · versión/ámbito · descripción · evidencia.
 
+## 2026-10-25 — Paquete documental corregido y verificado
+
+- **hecho de autorización:** el responsable pidió corregir el paquete, realizar commits locales y luego actualizar Notion. Esta autorización no cambia D-11 ni autoriza publicar mediante push.
+- **hecho:** incorporada entrega documental seleccionada en `06_DOCUMENTACION/Paquete_Calculo_20261025/`, commit `7042a2931ebebb2c71e43a0704479e500010dbff`; el paquete externo y su respaldo anterior se conservan. Se excluyen respaldos históricos y cachés.
+- **hecho:** corregidos informe y fuentes, README, ruta de la BOM, unidad de momento lateral y explicación del límite de fluencia; diámetros efectivos heredados explícitos. DOCX/PDF y XMCD corregidos regenerados; planilla conservada salvo una cita. No se modificaron CAD, parámetros ni generadores del prototipo.
+- **hecho / cálculo:** apertura Word/Excel, PDF de 27 páginas, Mathcad recalculado con 177 resultados coincidentes, control Python idéntico al anterior y 26 resultados cotejados con V0. El control compartido no equivale a validación física. Registros y límites en el paquete.
+- **pendiente:** mediciones, revisión del profesor, ensayos, cotizaciones y PDF de la hoja Mathcad como anexo. P2.04 vigente y P2.05 abierta; no liberadas a fabricación ni a uso con personas.
+
 ---
 
 ## 2026-10-22

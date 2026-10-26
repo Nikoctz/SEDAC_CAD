@@ -3,6 +3,14 @@
 Última actualización: 2026-10-22
 Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
+## Actualización documental — 2026-10-25
+
+- **hecho:** paquete de memoria y planificación de ensayos corregido y versionado en `06_DOCUMENTACION/Paquete_Calculo_20261025/`; commit local `7042a2931ebebb2c71e43a0704479e500010dbff`. Contiene informe DOCX/PDF, planilla XLSX, hoja Mathcad editable y fuentes/registros. No sustituye la entrega CAD ni cierra P2.05.
+- **hecho / cálculo:** Word abrió el informe y exportó 27 páginas; Excel conserva las 12 hojas y las entradas/fórmulas anteriores salvo la cita `02_Variables!G26`. Mathcad recalculó y guardó la fuente corregida: 177 resultados numéricos coincidentes. Los 178 valores del control Python (177 numéricos y un booleano) siguen idénticos al respaldo anterior; el booleano no forma parte del cotejo numérico nativo. Comparación V0: 26 resultados, error relativo máximo 8,06·10⁻¹⁶.
+- **hecho:** se corrigieron rutas, unidades de `mlat` y explicaciones. En el caso base el empate de `n_local` con `n_combinado` proviene del límite de fluencia, no de pandeo elástico gobernante. Los diámetros 9,9/5,6 mm siguen como supuestos heredados, no medidas ni tolerancias aprobadas.
+- **pendiente:** revisión del profesor, mediciones, instrumentos, cotizaciones, ensayos y PDF de la hoja Mathcad. No existe validación física ni liberación para personas. La memoria completa con datos reales sigue pendiente aunque ya existe este borrador recalculable.
+- **hecho de alcance:** P2.04 sigue vigente y P2.05 abierta. Sin cambios de CAD, parámetros o generadores del prototipo; sin push. Los cambios ajenos previos quedan fuera de los commits de este encargo. Evidencia: `CORRECCIONES_VERIFICADAS_20261025.md` y `99_Sesion_Trabajo/VERIFICACION_FINAL.json` dentro del paquete.
+
 ## Seguimiento de coherencia y dependencias — 2026-10-22, 19:23
 
 - **hecho:** la auditoría de parámetros/cálculo/descripción del modelo sí se realizó después del encargo de cierre: 13 hallazgos propuestos, con regeneración descriptiva idéntica antes de esta corrección. Ver `P2_05_20261019/LEEME_P2_05.md` §11. Las menciones previas a «revisión no ejecutada» quedan como historial del encargo anterior.
