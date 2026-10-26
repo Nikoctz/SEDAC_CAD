@@ -3,6 +3,11 @@
 Última actualización: 2026-10-22
 Alcance: estado vigente. No repite `CONTEXTO_SEDAC.md`.
 
+## Notion — cierre documental del 2026-10-25
+
+- **hecho:** creada la página «03.10 — Memoria y plan de ensayos — borrador MC01» (`405f5e4b-db90-811b-b5a4-f125cfdf59b5`) y ajustadas las referencias de diseño, archivos, validación y seguimiento. Se releyeron las páginas intervenidas; el registro de alcance y advertencia resuelta está en `08_NOTION/ACTUALIZACION_MEMORIA_ENSAYOS_20261025.md`.
+- **hecho:** Notion distingue el borrador recalculado del cierre pendiente con datos reales. No se marcaron entregables académicos nuevos como entregados, no se aumentó TRL ni se publicaron los archivos como descargas. D-11 no se modifica: autorización de escritura limitada a este encargo. Sin push.
+
 ## Actualización documental — 2026-10-25
 
 - **hecho:** paquete de memoria y planificación de ensayos corregido y versionado en `06_DOCUMENTACION/Paquete_Calculo_20261025/`; commit local `7042a2931ebebb2c71e43a0704479e500010dbff`. Contiene informe DOCX/PDF, planilla XLSX, hoja Mathcad editable y fuentes/registros. No sustituye la entrega CAD ni cierra P2.05.

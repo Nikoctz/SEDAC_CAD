@@ -3,6 +3,12 @@
 Registra cambios **realizados** sobre el proyecto. No ideas, no planes, no propuestas.
 Formato: fecha · versión/ámbito · descripción · evidencia.
 
+## 2026-10-25 — Conciliación de Notion con el borrador MC01
+
+- **hecho:** tras los commits locales del paquete y su estado, creada una página de referencia MC01 y corregidas las menciones operativas de memoria inexistente/pendiente para distinguir borrador disponible y cierre con mediciones aún pendiente. Se preservan P2.03 histórica, P2.04 vigente y P2.05 abierta, sin modificar CAD.
+- **hecho:** relectura por ID de las páginas intervenidas. Una advertencia `no_match` en la guía TRL se resolvió con dos cambios más pequeños y relectura. Sin archivos adjuntos nuevos, push, cotizaciones inventadas ni declaraciones de validación física.
+- **Evidencia:** `08_NOTION/ACTUALIZACION_MEMORIA_ENSAYOS_20261025.md`; página de referencia `405f5e4b-db90-811b-b5a4-f125cfdf59b5`.
+
 ## 2026-10-25 — Paquete documental corregido y verificado
 
 - **hecho de autorización:** el responsable pidió corregir el paquete, realizar commits locales y luego actualizar Notion. Esta autorización no cambia D-11 ni autoriza publicar mediante push.
