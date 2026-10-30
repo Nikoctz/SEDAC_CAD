@@ -1,0 +1,1435 @@
+{
+  "generated_at": "2026-10-27T22:31:13",
+  "tools": [
+    {
+      "name": "revit_add_insulation_layer",
+      "description": "Agrega (o cambia) una capa de aislamiento en un tipo de muro, piso o cubierta existente.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "nombre o id del tipo"
+          },
+          "material": {
+            "type": "string",
+            "description": "nombre o id del material aislante"
+          },
+          "thickness_m": {
+            "type": "number",
+            "description": "espesor del aislamiento en metros"
+          },
+          "position": {
+            "type": "integer",
+            "description": "posicion de la capa (0 = exterior). Por defecto se agrega al exterior"
+          }
+        },
+        "required": ["type", "material", "thickness_m"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_assembly_thermal_report",
+      "description": "Calcula la resistencia y transmitancia (U) de un tipo constructivo a partir de sus capas.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "nombre o id del tipo"
+          },
+          "rsi": {
+            "type": "number",
+            "description": "resistencia superficial interior (por defecto 0.13 m2K/W)"
+          },
+          "rse": {
+            "type": "number",
+            "description": "resistencia superficial exterior (por defecto 0.04 m2K/W)"
+          }
+        },
+        "required": ["type"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_assign_material_to_type",
+      "description": "Cambia el material de una capa de un tipo (muro, piso o cubierta).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "nombre o id del tipo"
+          },
+          "layer_index": {
+            "type": "integer",
+            "description": "indice de la capa (0 = exterior)"
+          },
+          "material": {
+            "type": "string",
+            "description": "nombre o id del material"
+          }
+        },
+        "required": ["type", "layer_index", "material"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_batch",
+      "description": "Ejecuta varias operaciones tipadas en una sola transaccion de Revit, con una unica confirmacion en pantalla.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "steps": {
+            "type": "array",
+            "description": "lista de pasos: [{tool, params}] con tool y params objetos",
+            "items": {}
+          },
+          "stop_on_error": {
+            "type": "boolean",
+            "description": "detener en el primer fallo y deshacer todo (por defecto true)"
+          }
+        },
+        "required": ["steps"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_close_document",
+      "description": "Cierra un documento abierto en Revit.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "titulo del documento a cerrar"
+          },
+          "path": {
+            "type": "string",
+            "description": "ruta del documento a cerrar"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_3d_view",
+      "description": "Crea una vista 3D isometrica del modelo.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "nombre de la vista"
+          },
+          "view_family_type": {
+            "type": "string",
+            "description": "nombre del tipo de vista 3D"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_compound_type",
+      "description": "Crea un tipo de muro, piso o cubierta con capas (estructura, aislamiento, revestimiento).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "wall, floor o roof"
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre del tipo"
+          },
+          "layers": {
+            "type": "array",
+            "description": "capas: [{material, thickness_m, function}] donde function es structure, insulation, finish, substrate, air o underlay",
+            "items": {}
+          },
+          "function": {
+            "type": "string",
+            "description": "para muros: exterior o interior"
+          },
+          "base_type": {
+            "type": "string",
+            "description": "tipo base a duplicar (opcional)"
+          }
+        },
+        "required": ["kind", "name", "layers"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_door",
+      "description": "Coloca una puerta en un muro, con simbolo de familia, posicion y nivel.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wall_id": {
+            "type": "integer",
+            "description": "id del muro anfitrion"
+          },
+          "symbol": {
+            "type": "string",
+            "description": "nombre del tipo de familia (simbolo)"
+          },
+          "point": {
+            "type": "array",
+            "description": "punto de insercion [x,y] sobre el muro",
+            "items": {}
+          },
+          "distance_m": {
+            "type": "number",
+            "description": "distancia desde el inicio del muro"
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel de instancia"
+          },
+          "flip": {
+            "type": "boolean",
+            "description": "invertir"
+          },
+          "width_m": {
+            "type": "number",
+            "description": "anuloOverride en metros"
+          },
+          "height_m": {
+            "type": "number",
+            "description": "alto override en metros"
+          }
+        },
+        "required": ["wall_id", "symbol"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_duct",
+      "description": "Crea un tramo de ducto entre dos puntos, con diametro y material opcionales.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y,z] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y,z] en metros",
+            "items": {}
+          },
+          "duct_type": {
+            "type": "string",
+            "description": "nombre o id del tipo de ducto"
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel"
+          },
+          "diameter_mm": {
+            "type": "number",
+            "description": "diametro en milimetros"
+          },
+          "material": {
+            "type": "string",
+            "description": "material del ducto"
+          }
+        },
+        "required": ["start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_fill",
+      "description": "Crea relleno de terreno: toposolido (solido con perfiles y puntos con altura) o region 2D sobre topografia.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "profiles": {
+            "type": "array",
+            "description": "contornos: [[ [x,y], [x,y], ... ], ...] en metros",
+            "items": {}
+          },
+          "points": {
+            "type": "array",
+            "description": "puntos interiores [[x,y,z]] en metros, con z como cota absoluta",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel del relleno (nombre o id)"
+          },
+          "type": {
+            "type": "string",
+            "description": "tipo de toposolido o de topografia"
+          },
+          "mode": {
+            "type": "string",
+            "description": "toposolid (por defecto) o region"
+          },
+          "comments": {
+            "type": "string",
+            "description": "comentario con la fuente de las cotas"
+          }
+        },
+        "required": ["profiles"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_floor",
+      "description": "Crea un piso (losa) a partir de un contorno en metros.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "description": "contorno [[x,y],...] en metros",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel (nombre o id)"
+          },
+          "type": {
+            "type": "string",
+            "description": "tipo de piso"
+          },
+          "offset_m": {
+            "type": "number",
+            "description": "altura sobre el nivel"
+          },
+          "comments": {
+            "type": "string",
+            "description": "comentario del elemento"
+          }
+        },
+        "required": ["points", "level"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_foundation",
+      "description": "Crea un muro de cimiento (fundacion) y, si la API lo permite, su zapata.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "description": "contorno [[x,y],...] en metros",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel base"
+          },
+          "wall_type": {
+            "type": "string",
+            "description": "tipo de muro de fundacion"
+          },
+          "thickness_mm": {
+            "type": "number",
+            "description": "espesor del cimiento"
+          },
+          "depth_mm": {
+            "type": "number",
+            "description": "profundidad de la zapata"
+          },
+          "create_footing": {
+            "type": "boolean",
+            "description": "intentar crear la zapata (por defecto true)"
+          }
+        },
+        "required": ["points"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_grid",
+      "description": "Crea un eje (grid) de referencia entre dos puntos.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y] en metros",
+            "items": {}
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre del eje"
+          },
+          "type": {
+            "type": "string",
+            "description": "tipo de eje (nombre)"
+          }
+        },
+        "required": ["start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_level",
+      "description": "Crea un nivel a una elevacion dada (metros).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "nombre del nivel"
+          },
+          "elevation_m": {
+            "type": "number",
+            "description": "elevacion del nivel en metros"
+          }
+        },
+        "required": ["name", "elevation_m"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_material",
+      "description": "Crea un material con asset termico (lambda, densidad, calor especifico) y notas de trazabilidad.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "nombre del material"
+          },
+          "material_class": {
+            "type": "string",
+            "description": "clase del material (Hormigon, Ladrillo, Aislamiento, ...)"
+          },
+          "conductivity": {
+            "type": "number",
+            "description": "conductividad termica lambda en W/(m K)"
+          },
+          "density": {
+            "type": "number",
+            "description": "densidad en kg/m3"
+          },
+          "specific_heat": {
+            "type": "number",
+            "description": "calor especifico en J/(kg K)"
+          },
+          "color": {
+            "type": "string",
+            "description": "color RGB hexadecimal, por ejemplo 'C0C0C0'"
+          },
+          "notes": {
+            "type": "string",
+            "description": "notas de trazabilidad: clave MINVU, fuente y URL"
+          },
+          "material_category": {
+            "type": "string",
+            "description": "categoria de material (Hormigon, Terraza, ...)"
+          }
+        },
+        "required": ["name"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_opening",
+      "description": "Crea un vano (apertura) en un muro entre dos puntos.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wall_id": {
+            "type": "integer",
+            "description": "id del muro"
+          },
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y] en metros",
+            "items": {}
+          }
+        },
+        "required": ["wall_id", "start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_pipe",
+      "description": "Crea un tramo de tuberia entre dos puntos. Para aislamiento nativo usa despues revit_create_pipe_insulation.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y,z] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y,z] en metros",
+            "items": {}
+          },
+          "pipe_type": {
+            "type": "string",
+            "description": "nombre o id del tipo de tuberia"
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel"
+          },
+          "diameter_mm": {
+            "type": "number",
+            "description": "diametro nominal en milimetros"
+          },
+          "material": {
+            "type": "string",
+            "description": "material de la tuberia"
+          },
+          "insulation": {
+            "type": "string",
+            "description": "material de aislacion"
+          },
+          "insulation_thickness_mm": {
+            "type": "number",
+            "description": "espesor de aislacion en milimetros"
+          },
+          "system_type": {
+            "type": "string",
+            "description": "tipo de sistema (agua fria, agua caliente sanitaria, ...)"
+          }
+        },
+        "required": ["start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_pipe_insulation",
+      "description": "Aplica aislamiento nativo a una tuberia existente con un tipo de aislamiento disponible en el proyecto.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "pipe_id": {
+            "type": "integer",
+            "description": "id de la tuberia anfitriona"
+          },
+          "insulation_type": {
+            "type": "string",
+            "description": "nombre o id del tipo devuelto por revit_list_mep_types con kind=insulation"
+          },
+          "thickness_mm": {
+            "type": "number",
+            "description": "espesor de aislamiento en milimetros"
+          }
+        },
+        "required": ["pipe_id", "insulation_type", "thickness_mm"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_plan_view",
+      "description": "Crea una vista de planta para un nivel, con escala y recorte opcionales.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "nivel de la planta"
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre de la vista"
+          },
+          "scale": {
+            "type": "integer",
+            "description": "escala (por defecto la de la plantilla)"
+          },
+          "view_family_type": {
+            "type": "string",
+            "description": "nombre del tipo de vista de planta"
+          },
+          "crop_to_room_bounds": {
+            "type": "boolean",
+            "description": "recortar la vista a los limites de los recintos"
+          },
+          "cut_plane_m": {
+            "type": "number",
+            "description": "altura del plano de corte sobre el nivel; rango explicito 0 a max(3, corte+0.5) m"
+          }
+        },
+        "required": ["level"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_roof",
+      "description": "Crea una cubierta de footprint a partir de un contorno en metros.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "points": {
+            "type": "array",
+            "description": "contorno [[x,y],...] en metros",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel (nombre o id)"
+          },
+          "type": {
+            "type": "string",
+            "description": "tipo de cubierta"
+          },
+          "offset_m": {
+            "type": "number",
+            "description": "altura sobre el nivel"
+          }
+        },
+        "required": ["points", "level"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_room",
+      "description": "Crea un recinto (room) en un nivel con nombre y numero.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "nivel (nombre o id)"
+          },
+          "point": {
+            "type": "array",
+            "description": "punto interior [x,y] en metros",
+            "items": {}
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre del recinto"
+          },
+          "number": {
+            "type": "string",
+            "description": "numero del recinto"
+          },
+          "comments": {
+            "type": "string",
+            "description": "comentario (por ejemplo cota declarada)"
+          }
+        },
+        "required": ["level", "point"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_section",
+      "description": "Crea una vista de seccion entre dos puntos en planta, con altura y profundidad.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y] en metros",
+            "items": {}
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre de la seccion"
+          },
+          "depth_m": {
+            "type": "number",
+            "description": "profundidad de la vista en metros (por defecto 10)"
+          },
+          "height_m": {
+            "type": "number",
+            "description": "altura de la vista en metros (por defecto 5)"
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel de referencia"
+          }
+        },
+        "required": ["start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_wall",
+      "description": "Crea un muro entre dos puntos, con tipo, nivel, altura, offset y condicion de base.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start": {
+            "type": "array",
+            "description": "punto inicial [x,y] en metros",
+            "items": {}
+          },
+          "end": {
+            "type": "array",
+            "description": "punto final [x,y] en metros",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel base (nombre o id)"
+          },
+          "type": {
+            "type": "string",
+            "description": "tipo de muro (nombre)"
+          },
+          "height_m": {
+            "type": "number",
+            "description": "altura en metros (por defecto 3.0)"
+          },
+          "offset_m": {
+            "type": "number",
+            "description": "desplazamiento respecto de la linea de posicion"
+          },
+          "flip": {
+            "type": "boolean",
+            "description": "invertir lado"
+          },
+          "structural": {
+            "type": "boolean",
+            "description": "muro estructural"
+          },
+          "base_level": {
+            "type": "string",
+            "description": "nivel de base si es distinto del nivel de creacion"
+          },
+          "base_offset_m": {
+            "type": "number",
+            "description": "offset de la base en metros"
+          },
+          "top_level": {
+            "type": "string",
+            "description": "nivel superior (condicion de altura)"
+          },
+          "top_offset_m": {
+            "type": "number",
+            "description": "offset superior en metros"
+          }
+        },
+        "required": ["start", "end"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_create_window",
+      "description": "Coloca una ventana en un muro, con simbolo de familia, posicion y nivel.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "wall_id": {
+            "type": "integer",
+            "description": "id del muro anfitrion"
+          },
+          "symbol": {
+            "type": "string",
+            "description": "nombre del tipo de familia (simbolo)"
+          },
+          "point": {
+            "type": "array",
+            "description": "punto de insercion [x,y] sobre el muro",
+            "items": {}
+          },
+          "distance_m": {
+            "type": "number",
+            "description": "distancia desde el inicio del muro"
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel de instancia"
+          },
+          "flip": {
+            "type": "boolean",
+            "description": "invertir"
+          },
+          "width_m": {
+            "type": "number",
+            "description": "ancho override en metros"
+          },
+          "height_m": {
+            "type": "number",
+            "description": "alto override en metros"
+          },
+          "sill_m": {
+            "type": "number",
+            "description": "antepecho en metros"
+          }
+        },
+        "required": ["wall_id", "symbol"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_delete_elements",
+      "description": "Elimina elementos del modelo por id.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_ids": {
+            "type": "array",
+            "description": "ids de elementos a eliminar",
+            "items": {}
+          }
+        },
+        "required": ["element_ids"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_energy_summary",
+      "description": "Resumen energetico del modelo: areas, superficies por orientacion, UA por tipo de muro y auditoria de materiales.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "rsi": {
+            "type": "number",
+            "description": "resistencia superficial interior (por defecto 0.13)"
+          },
+          "rse": {
+            "type": "number",
+            "description": "resistencia superficial exterior (por defecto 0.04)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_envelope_analysis",
+      "description": "Analiza la envolvente: superficies exteriores por orientacion, areas vidriadas y volumenes.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "include_floors": {
+            "type": "boolean",
+            "description": "incluir losas exteriores en el analisis (por defecto true)"
+          },
+          "rsi": {
+            "type": "number",
+            "description": "resistencia superficial interior para el calculo de U (por defecto 0.13)"
+          },
+          "rse": {
+            "type": "number",
+            "description": "resistencia superficial exterior (por defecto 0.04)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_export_model",
+      "description": "Exporta el modelo a IFC, DWG o DXF.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "format": {
+            "type": "string",
+            "description": "ifc, dwg o dxf"
+          },
+          "output_dir": {
+            "type": "string",
+            "description": "carpeta de destino"
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre del archivo (sin extension)"
+          }
+        },
+        "required": ["format", "output_dir"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_export_pdf",
+      "description": "Exporta vistas a PDF.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "output_path": {
+            "type": "string",
+            "description": "ruta del PDF de salida"
+          },
+          "views": {
+            "type": "array",
+            "description": "nombres o ids de vistas",
+            "items": {}
+          },
+          "combine": {
+            "type": "boolean",
+            "description": "combinar en un solo PDF (por defecto true)"
+          }
+        },
+        "required": ["output_path"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_export_schedule_csv",
+      "description": "Crea una tabla (schedule) de una categoria y la exporta a CSV.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "categoria (Walls, Rooms, Doors, ...)"
+          },
+          "output_path": {
+            "type": "string",
+            "description": "ruta del CSV de salida"
+          },
+          "name": {
+            "type": "string",
+            "description": "nombre de la tabla"
+          }
+        },
+        "required": ["category", "output_path"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_export_view_images",
+      "description": "Exporta vistas 2D o 3D a imagenes PNG o JPG en una carpeta.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "output_dir": {
+            "type": "string",
+            "description": "carpeta de destino"
+          },
+          "views": {
+            "type": "array",
+            "description": "nombres o ids de vistas; si se omite exporta todas las vistas utiles",
+            "items": {}
+          },
+          "file_type": {
+            "type": "string",
+            "description": "PNG o JPG"
+          },
+          "pixel_size": {
+            "type": "integer",
+            "description": "lado del pixel en pixeles (por defecto 2000)"
+          },
+          "white_background": {
+            "type": "boolean",
+            "description": "fondo blanco (por defecto true)"
+          }
+        },
+        "required": ["output_dir"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_fit_view",
+      "description": "Ajusta el encuadre de una vista al contenido del modelo: recorte 2D en plantas o caja de seccion en 3D.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "view": {
+            "type": "string",
+            "description": "id o nombre de la vista"
+          },
+          "categories": {
+            "type": "array",
+            "description": "categorias a encuadrar (por defecto todo el modelo)",
+            "items": {}
+          },
+          "margin_m": {
+            "type": "number",
+            "description": "margen alrededor del contenido (por defecto 0.5)"
+          }
+        },
+        "required": ["view"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_get_element",
+      "description": "Devuelve las propiedades completas (parametros) de un elemento por id.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_id": {
+            "type": "integer",
+            "description": "id del elemento"
+          }
+        },
+        "required": ["element_id"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_get_geometry",
+      "description": "Caja acotadora, volumen y area de un elemento (en metros y m2/m3).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_id": {
+            "type": "integer",
+            "description": "id del elemento"
+          }
+        },
+        "required": ["element_id"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_get_material",
+      "description": "Devuelve el detalle termico y constructivo de un material (lambda, rho, Cp, notas, uso).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "material": {
+            "type": "string",
+            "description": "nombre o id del material"
+          },
+          "usage": {
+            "type": "boolean",
+            "description": "incluir los tipos que lo usan (por defecto true)"
+          }
+        },
+        "required": ["material"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_get_rooms",
+      "description": "Lista los recintos del modelo con nombre, numero, area y nivel.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "level": {
+            "type": "string",
+            "description": "filtro por nivel"
+          },
+          "include_unbounded": {
+            "type": "boolean",
+            "description": "incluir recintos sin limite (por defecto true)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_categories",
+      "description": "Lista las categorias de elementos disponibles en el documento.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_families",
+      "description": "Lista familias y simbolos cargados (y familias disponibles para cargar) por categoria.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "categoria de familia: Doors, Windows, Pipes, ..."
+          },
+          "include_loadable": {
+            "type": "boolean",
+            "description": "incluir familias no cargadas todavia"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_fill_types",
+      "description": "Lista los tipos de toposolido y de topografia disponibles en el proyecto.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "toposolid o topography"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_levels",
+      "description": "Lista los niveles del modelo con su elevacion en metros.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_materials",
+      "description": "Lista los materiales del proyecto con sus propiedades termicas (lambda, densidad, calor especifico).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "name_contains": {
+            "type": "string",
+            "description": "filtro por nombre"
+          },
+          "material_class": {
+            "type": "string",
+            "description": "filtro por clase (Hormigon, Ladrillo, ...)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_mep_systems",
+      "description": "Lista los sistemas MEP existentes (agua, /(descarte), climatizacion, ductos).",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_mep_types",
+      "description": "Lista tipos de tuberia, ducto, aislacion y sistemas disponibles en el proyecto.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "description": "pipe, duct, system o insulation"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_tools",
+      "description": "Lista el catalogo completo de herramientas disponibles con su esquema de entrada.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "tool": {
+            "type": "string",
+            "description": "nombre de la herramienta; si se omite devuelve todo el catalogo"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_types",
+      "description": "Lista los tipos de elemento (WallType, FloorType, RoofType, ...) por categoria.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string",
+            "description": "categoria: 'Walls', 'Floors', 'Roofs', 'OST_Walls', ..."
+          },
+          "kind": {
+            "type": "string",
+            "description": "filtro opcional: wall, floor, roof, family_symbol"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_list_views",
+      "description": "Lista las vistas del modelo (plantas, secciones, elevaciones, 3D y tablas).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "view_type": {
+            "type": "string",
+            "description": "filtro: FloorPlan, Section, ThreeDimensional, Elevation, Schedule"
+          },
+          "level": {
+            "type": "string",
+            "description": "filtro por nivel"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_load_family",
+      "description": "Carga una familia (.rfa) al proyecto para poder usarla.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "ruta del archivo .rfa"
+          }
+        },
+        "required": ["path"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_material_audit",
+      "description": "Auditoria de materiales del modelo: datos termicos, faltantes y uso en tipos de muro, piso y cubierta.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "include_unused": {
+            "type": "boolean",
+            "description": "incluir materiales no usados (por defecto false)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_model_statistics",
+      "description": "Resumen estadistico del modelo: conteo por categoria y por nivel.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_new_project",
+      "description": "Crea un proyecto nuevo desde una plantilla .rte/.rft y lo guarda en disco.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "template": {
+            "type": "string",
+            "description": "ruta de la plantilla (.rte o .rft)"
+          },
+          "save_path": {
+            "type": "string",
+            "description": "ruta del .rvt de salida"
+          }
+        },
+        "required": ["template"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_open_document",
+      "description": "Abre un archivo .rvt en Revit. Con 'activate' lo deja como documento activo.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "ruta completa del archivo .rvt"
+          },
+          "activate": {
+            "type": "boolean",
+            "description": "dejar el documento como activo (por defecto true)"
+          }
+        },
+        "required": ["path"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_query_elements",
+      "description": "Consulta elementos por categoria, nivel, nombre, tipo y valor de parametros. Devuelve ids y resumenes.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "categories": {
+            "type": "array",
+            "description": "categorias: ['OST_Walls','Doors',...]",
+            "items": {}
+          },
+          "level": {
+            "type": "string",
+            "description": "nivel por nombre o id"
+          },
+          "name_contains": {
+            "type": "string",
+            "description": "filtro de nombre"
+          },
+          "type_contains": {
+            "type": "string",
+            "description": "filtro de tipo"
+          },
+          "filters": {
+            "type": "array",
+            "description": "filtros: [{param, op, value}] con op eq, ne, contains, gt, lt",
+            "items": {}
+          },
+          "limit": {
+            "type": "integer",
+            "description": "maximo de elementos devueltos (por defecto 500)"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_regenerate_model",
+      "description": "Fuerza la regeneracion del modelo (actualiza cambios hechos por otros Complementos).",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_save_document",
+      "description": "Guarda el documento (opcionalmente como una copia en otra ruta).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string",
+            "description": "ruta de destino; si se omite se guarda en la ruta actual"
+          },
+          "overwrite": {
+            "type": "boolean",
+            "description": "sobrescribir si el archivo existe"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_set_active_view",
+      "description": "Cambia la vista activa de Revit (vista de planta, seccion o 3D).",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "view": {
+            "type": "string",
+            "description": "id o nombre exacto de la vista"
+          },
+          "document": {
+            "type": "string",
+            "description": "titulo del documento donde esta la vista"
+          }
+        },
+        "required": ["view"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_set_opening_size",
+      "description": "Cambia el tamano de puertas o ventanas ya colocadas, usando o creando el tipo con esas medidas.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_ids": {
+            "type": "array",
+            "description": "ids de puertas o ventanas",
+            "items": {}
+          },
+          "width_m": {
+            "type": "number",
+            "description": "ancho objetivo en metros"
+          },
+          "height_m": {
+            "type": "number",
+            "description": "alto objetivo en metros"
+          }
+        },
+        "required": ["element_ids"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_set_parameter",
+      "description": "Escribe un parametro (nombre o parametro de Revit) en uno o varios elementos.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_ids": {
+            "type": "array",
+            "description": "ids de elementos",
+            "items": {}
+          },
+          "param": {
+            "type": "string",
+            "description": "nombre del parametro"
+          },
+          "value": {
+            "type": "string",
+            "description": "valor a asignar"
+          },
+          "number_value": {
+            "type": "number",
+            "description": "valor numerico (si aplica)"
+          },
+          "bool_value": {
+            "type": "boolean",
+            "description": "valor booleano (si aplica)"
+          }
+        },
+        "required": ["element_ids", "param"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_set_wall_type",
+      "description": "Cambia el tipo de muro de uno o varios elementos.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "element_ids": {
+            "type": "array",
+            "description": "ids de muros",
+            "items": {}
+          },
+          "type": {
+            "type": "string",
+            "description": "nombre del tipo de muro"
+          }
+        },
+        "required": ["element_ids", "type"],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "revit_status",
+      "description": "Estado de Revit: version, build, documentos abiertos, documento y vista activa, unidades del proyecto.",
+      "input_schema": {
+        "type": "object",
+        "properties": {},
+        "required": [],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

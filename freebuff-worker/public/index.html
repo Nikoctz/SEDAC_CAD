@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEDAC CAD MCP Bridge</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 40px; background: #1a1a2e; color: #eee; }
+    h1 { color: #4cc9f0; }
+    .endpoint { background: #16213e; padding: 15px; border-radius: 8px; margin: 10px 0; }
+    code { background: #0f3460; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>SEDAC CAD MCP Bridge</h1>
+  <p>Puente entre Freebuff y los MCP locales de Inventor y Revit.</p>
+  
+  <h2>Endpoints disponibles</h2>
+  <div class="endpoint">
+    <h3>Inventor</h3>
+    <p><code>GET /inventor/tools</code> - Listar herramientas</p>
+    <p><code>POST /inventor/call</code> - Ejecutar herramienta</p>
+  </div>
+  <div class="endpoint">
+    <h3>Revit</h3>
+    <p><code>GET /revit/tools</code> - Listar herramientas</p>
+    <p><code>POST /revit/call</code> - Ejecutar herramienta</p>
+  </div>
+  
+  <h2>Estado</h2>
+  <p>El Worker está desplegado pero los puentes locales necesitan:</p>
+  <ol>
+    <li>Los puentes HTTP corriendo en localhost:8766 (Inventor) y 8767 (Revit)</li>
+    <li>Túneles (cloudflared/ngrok) exponiendo esos puertos</li>
+    <li>Secrets configurados con las URLs de los túneles</li>
+  </ol>
+</body>
+</html>

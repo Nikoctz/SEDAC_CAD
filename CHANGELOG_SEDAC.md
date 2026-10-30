@@ -19,6 +19,17 @@ Formato: fecha · versión/ámbito · descripción · evidencia.
 
 ---
 
+## 2026-10-24
+
+**Retiro de `landing-sedac` y conciliación de vigencias en Notion**
+
+- **hecho:** por solicitud expresa se retiró del árbol de trabajo `landing-sedac/`; contenía 39 archivos versionados y 4.358 archivos locales en total (≈85,8 MB). La carpeta dejó de existir y Git registra las eliminaciones. No se hizo commit ni push. El cambio preexistente de `AGENTS.md` se dejó intacto.
+- **hecho:** barrido de Notion: 93 páginas accesibles recuperadas; 60 dentro del árbol visible de SEDAC. No apareció `P0.3` literal, una declaración operativa de P2.03 como vigente ni los enlaces rotos `http://03.md` / `http://04.md`. Se preservaron las menciones históricas de P2.03.
+- **hecho:** se creó la página «Diseño actual — P2.04» (`403f5e4b-db90-814a-97fe-e418823ccb0a`) y se actualizaron las referencias operativas y de presentación para distinguir P2.04 vigente, P2.05 abierta y P2.03 histórica. La fecha vencida del taller 23/10/2026 quedó como pendiente de confirmar; no se inventó resultado.
+- **pendiente:** subir a Drive el paquete/STEP P2.04 y completar la memoria de cálculo P2.04; confirmar el resultado del taller anunciado para el 23/10/2026.
+- **hecho de autorización:** la escritura en Notion se realizó bajo autorización explícita para esta limpieza únicamente; D-11 no se modificó y no se asume autorización futura.
+- **Evidencia:** `08_NOTION/ESTADO_NOTION_20261024.md`; `git status` y lectura completa de las 93 páginas de Notion.
+
 ## 2026-10-22
 
 **Corrección del cierre P2.05 — soporte y documentación, sin Inventor**

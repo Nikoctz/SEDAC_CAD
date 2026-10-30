@@ -1,0 +1,16 @@
+{
+  "name": "sedac-cad-mcp-bridge",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-29",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    // URLs de los puentes locales - SE SOBREESCRIBEN POR LOS SECRETS
+    // Estas son placeholders; las URLs reales vienen de los secrets
+    "INVENTOR_BRIDGE_URL": "https://placeholder-inventor.tunnel.freebuff.dev",
+    "REVIT_BRIDGE_URL": "https://placeholder-revit.tunnel.freebuff.dev"
+  },
+  "secrets": [
+    "INVENTOR_BRIDGE_URL",
+    "REVIT_BRIDGE_URL"
+  ]
+}

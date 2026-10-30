@@ -1,0 +1,6 @@
+﻿Etapa: Refuerzo_C_451 - Redondeo R0.35
+System.MissingMemberException: Public member 'IsTangentiallyConnected' on type 'Edge' not found.
+   at Microsoft.VisualBasic.CompilerServices.LateBinding.LateGet(Object o, Type objType, String name, Object[] args, String[] paramnames, Boolean[] CopyBack)
+   at Microsoft.VisualBasic.CompilerServices.NewLateBinding.LateGet(Object Instance, Type Type, String MemberName, Object[] Arguments, String[] ArgumentNames, Type[] TypeArguments, Boolean[] CopyBack)
+   at ThisRule.AplicarRedondeoAuditado(Application invApp, PartDocument doc, String partName, Double radioMM) in C:\Users\nicol\AppData\Local\Temp\iLogic Rules\Assembly1.iam.Rule0.vb:line 862
+   at ThisRule.Main() in C:\Users\nicol\AppData\Local\Temp\iLogic Rules\Assembly1.iam.Rule0.vb:line 150

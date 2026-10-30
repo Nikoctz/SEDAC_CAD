@@ -1,0 +1,14 @@
+{
+  "name": "sedac-cad-mcp-bridge",
+  "version": "1.0.0",
+  "description": "Puente HTTP para MCP de Inventor y Revit - Worker de Cloudflare para Freebuff",
+  "main": "worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.0.0",
+    "wrangler": "^3.0.0"
+  },
+  "type": "module"
+}

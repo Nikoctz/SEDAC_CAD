@@ -61,3 +61,10 @@ Separar siempre "lo que está comprobado" de "lo que falta comprobar".
 ## 8. Al terminar
 
 Indicar: qué se leyó, qué se cambió (con rutas), qué se verificó y cómo, qué quedó pendiente. No hacer commit salvo autorización.
+
+## 9. Memoria de agentes (MemoriaAgentes)
+
+- La memoria compartida entre agentes vive en `C:\Users\nicol\MemoriaAgentes`.
+- Si la tarea toca esa memoria o sus proyectos, leer `C:\Users\nicol\MemoriaAgentes\AGENTS.md` antes de trabajar.
+- No es obligatorio presentarse al iniciar; la identidad del agente se registra en su archivo de sesión de la memoria.
+- Este repositorio tiene su propio Git y remote en GitHub: los commits y pushes se hacen solo con autorización explícita del responsable.
