@@ -1,0 +1,34 @@
+{
+  "masa_impresa_total_g": 10.0963,
+  "montaje": {
+    "volumen_interferencia_mm3": 0.0,
+    "holgura_axial_cubo_tetones": 0.4,
+    "agujero_y_hombro": 6.2,
+    "nota": "Hombro ISO 7379 Ø6 h9 en agujero Ø6,2: juego radial 0,1 mm."
+  },
+  "giro": {
+    "positivo_max": 90,
+    "negativo_min": -90,
+    "paso": 2,
+    "criterio": "sin vertices de la argolla dentro del solido del gancho (muestreo de malla, paso 0,2 mm)",
+    "dist_min_montaje": 0.2,
+    "puntos_dentro_en_montaje": 0,
+    "ADVERTENCIA": "El rango de +-90 grados sale de un muestreo de vertices grueso y NO se considera validado: el booleano de interseccion y la distancia minima dan resultados contradictorios con holguras de 0,2-2,0 mm. Ver informe S8.",
+    "limite_calculado_grados": 15.5,
+    "limite_calculo_nota": "Primer contacto previsto anilla-horquilla por luz de 2,0 mm y brazo 7,5 mm: CALCULO, no verificado."
+  },
+  "conjunto": {
+    "bbox": [
+      31.0053,
+      16.0019,
+      62.5041
+    ],
+    "z_min": -6.0029,
+    "z_max": 56.5012,
+    "alto_total": 62.5041
+  }
+}
+P0_Cuerpo_Gancho       bbox=[30.1049, 16.0019, 40.5038] vol=4537 m=5.76 g valido=True
+P0_Argolla             bbox=[22.0024, 9.0034, 34.0012] vol=3413 m=4.33 g valido=True
+cabe en 40x40x70: {'P0_Cuerpo_Gancho': True, 'P0_Argolla': True}
+sweep dentro: [(-90, 0), (-80, 0), (-70, 0), (-60, 0), (-50, 0), (-40, 0), (-30, 0), (-20, 0), (-10, 0), (0, 0), (10, 0), (20, 0), (30, 0), (40, 0), (50, 0), (60, 0), (70, 0), (80, 0), (90, 0)]

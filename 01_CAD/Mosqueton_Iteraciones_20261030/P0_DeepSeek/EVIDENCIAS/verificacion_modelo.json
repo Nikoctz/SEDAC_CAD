@@ -1,0 +1,661 @@
+{
+  "parametros": {
+    "T": 9.0,
+    "IN_W": 7.5,
+    "BASKET_R": 7.5,
+    "ARM_T": 6.0,
+    "ARM_TOP": 21.0,
+    "CAP_R": 3.0,
+    "FORK_X0": -14.0,
+    "FORK_X1": -3.0,
+    "FORK_Z0": 19.5,
+    "FORK_Z1": 34.5,
+    "FORK_Y": 16.0,
+    "SLOT_Y": 9.4,
+    "SLOT_Z0": 21.4,
+    "AX_X": -6.5,
+    "AX_Z": 28.0,
+    "BORE_D": 6.2,
+    "PIN_Z": 17.5,
+    "PIN_D": 4.2,
+    "PIN_X0": -15.5,
+    "PIN_X1": 15.5,
+    "HUB_D": 11.0,
+    "RING_W": 22.0,
+    "RING_H": 20.0,
+    "SLOT_W": 12.0,
+    "SLOT_H": 11.0,
+    "RING_GAP": 2.0,
+    "DENSITY": 1.27
+  },
+  "piezas": {
+    "P0_Cuerpo_Gancho": {
+      "bbox": [
+        30.1049,
+        16.0019,
+        40.5038
+      ],
+      "bbox_min": [
+        -16.6008,
+        -8.0009,
+        -6.0029
+      ],
+      "bbox_max": [
+        13.5041,
+        8.0009,
+        34.5009
+      ],
+      "volume_mm3": 4537.3341,
+      "mass_g": 5.7624,
+      "n_solids": 1,
+      "valido": true
+    },
+    "P0_Argolla": {
+      "bbox": [
+        22.0024,
+        9.0034,
+        34.0012
+      ],
+      "bbox_min": [
+        -17.5012,
+        -4.5017,
+        22.5
+      ],
+      "bbox_max": [
+        4.5012,
+        4.5017,
+        56.5012
+      ],
+      "volume_mm3": 3412.5091,
+      "mass_g": 4.3339,
+      "n_solids": 1,
+      "valido": true
+    }
+  },
+  "masa_impresa_total_g": 10.0963,
+  "montaje": {
+    "volumen_interferencia_mm3": 0.0,
+    "holgura_axial_cubo_tetones": 0.4,
+    "agujero_y_hombro": 6.2,
+    "nota": "Hombro ISO 7379 Ø6 h9 en agujero Ø6,2: juego radial 0,1 mm."
+  },
+  "giro": {
+    "positivo_max": 90,
+    "negativo_min": -90,
+    "paso": 2,
+    "criterio": "sin vertices de la argolla dentro del solido del gancho (muestreo de malla, paso 0,2 mm)",
+    "dist_min_montaje": 0.2,
+    "puntos_dentro_en_montaje": 0,
+    "ADVERTENCIA": "El rango de +-90 grados sale de un muestreo de vertices grueso y NO se considera validado: el booleano de interseccion y la distancia minima dan resultados contradictorios con holguras de 0,2-2,0 mm. Ver informe S8.",
+    "limite_calculado_grados": 15.5,
+    "limite_calculo_nota": "Primer contacto previsto anilla-horquilla por luz de 2,0 mm y brazo 7,5 mm: CALCULO, no verificado."
+  },
+  "giro_detalle": [
+    {
+      "ang": -90,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.2593
+    },
+    {
+      "ang": -88,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.8316
+    },
+    {
+      "ang": -86,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.4163
+    },
+    {
+      "ang": -84,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.0037
+    },
+    {
+      "ang": -82,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.5658
+    },
+    {
+      "ang": -80,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.1505
+    },
+    {
+      "ang": -78,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.8181
+    },
+    {
+      "ang": -76,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.3373
+    },
+    {
+      "ang": -74,
+      "puntos_dentro": 6,
+      "dist_mm": 0.0,
+      "vol_inf": 13.8916
+    },
+    {
+      "ang": -72,
+      "puntos_dentro": 6,
+      "dist_mm": 0.0,
+      "vol_inf": 13.7025
+    },
+    {
+      "ang": -70,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 13.7416
+    },
+    {
+      "ang": -68,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 13.9061
+    },
+    {
+      "ang": -66,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.1
+    },
+    {
+      "ang": -64,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.3004
+    },
+    {
+      "ang": -62,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.5008
+    },
+    {
+      "ang": -60,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.7003
+    },
+    {
+      "ang": -58,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 14.9015
+    },
+    {
+      "ang": -56,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.1066
+    },
+    {
+      "ang": -54,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.3172
+    },
+    {
+      "ang": -52,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.5367
+    },
+    {
+      "ang": -50,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.7701
+    },
+    {
+      "ang": -48,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.0263
+    },
+    {
+      "ang": -46,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.3144
+    },
+    {
+      "ang": -44,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.647
+    },
+    {
+      "ang": -42,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.0494
+    },
+    {
+      "ang": -40,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.5406
+    },
+    {
+      "ang": -38,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.1402
+    },
+    {
+      "ang": -36,
+      "puntos_dentro": 6,
+      "dist_mm": 0.0,
+      "vol_inf": 18.8685
+    },
+    {
+      "ang": -34,
+      "puntos_dentro": 6,
+      "dist_mm": 0.0,
+      "vol_inf": 19.744
+    },
+    {
+      "ang": -32,
+      "puntos_dentro": 6,
+      "dist_mm": 0.0,
+      "vol_inf": 20.7764
+    },
+    {
+      "ang": -30,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 21.9478
+    },
+    {
+      "ang": -28,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 23.2075
+    },
+    {
+      "ang": -26,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 24.4316
+    },
+    {
+      "ang": -24,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 25.2291
+    },
+    {
+      "ang": -22,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 25.1203
+    },
+    {
+      "ang": -20,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 24.2694
+    },
+    {
+      "ang": -18,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 22.7903
+    },
+    {
+      "ang": -16,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 20.7664
+    },
+    {
+      "ang": -14,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.2663
+    },
+    {
+      "ang": -12,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.3525
+    },
+    {
+      "ang": -10,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 12.0891
+    },
+    {
+      "ang": -8,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 8.5575
+    },
+    {
+      "ang": -6,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 4.8903
+    },
+    {
+      "ang": -4,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 1.4579
+    },
+    {
+      "ang": -2,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0109,
+      "vol_inf": 0.0
+    },
+    {
+      "ang": 0,
+      "puntos_dentro": 0,
+      "dist_mm": 0.2,
+      "vol_inf": 0.0
+    },
+    {
+      "ang": 2,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0109,
+      "vol_inf": 0.0
+    },
+    {
+      "ang": 4,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 1.459
+    },
+    {
+      "ang": 6,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 4.8983
+    },
+    {
+      "ang": 8,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 8.5769
+    },
+    {
+      "ang": 10,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 12.1238
+    },
+    {
+      "ang": 12,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 15.4063
+    },
+    {
+      "ang": 14,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.3441
+    },
+    {
+      "ang": 16,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 20.8728
+    },
+    {
+      "ang": 18,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 22.9299
+    },
+    {
+      "ang": 20,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 24.446
+    },
+    {
+      "ang": 22,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 25.3368
+    },
+    {
+      "ang": 24,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 25.485
+    },
+    {
+      "ang": 26,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 24.7212
+    },
+    {
+      "ang": 28,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 23.5405
+    },
+    {
+      "ang": 30,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 22.3299
+    },
+    {
+      "ang": 32,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 21.2127
+    },
+    {
+      "ang": 34,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 20.2391
+    },
+    {
+      "ang": 36,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 19.4261
+    },
+    {
+      "ang": 38,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.7633
+    },
+    {
+      "ang": 40,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.231
+    },
+    {
+      "ang": 42,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.8111
+    },
+    {
+      "ang": 44,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.4847
+    },
+    {
+      "ang": 46,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.2324
+    },
+    {
+      "ang": 48,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.0296
+    },
+    {
+      "ang": 50,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.8637
+    },
+    {
+      "ang": 52,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.7253
+    },
+    {
+      "ang": 54,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.6054
+    },
+    {
+      "ang": 56,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.4992
+    },
+    {
+      "ang": 58,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.4034
+    },
+    {
+      "ang": 60,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.3162
+    },
+    {
+      "ang": 62,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.2384
+    },
+    {
+      "ang": 64,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.1715
+    },
+    {
+      "ang": 66,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.1164
+    },
+    {
+      "ang": 68,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.0776
+    },
+    {
+      "ang": 70,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.0736
+    },
+    {
+      "ang": 72,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.1955
+    },
+    {
+      "ang": 74,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 16.5335
+    },
+    {
+      "ang": 76,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.0727
+    },
+    {
+      "ang": 78,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.5442
+    },
+    {
+      "ang": 80,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.7263
+    },
+    {
+      "ang": 82,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.8602
+    },
+    {
+      "ang": 84,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.9297
+    },
+    {
+      "ang": 86,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.9242
+    },
+    {
+      "ang": 88,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 17.9437
+    },
+    {
+      "ang": 90,
+      "puntos_dentro": 0,
+      "dist_mm": 0.0,
+      "vol_inf": 18.0474
+    }
+  ],
+  "conjunto": {
+    "bbox": [
+      31.0053,
+      16.0019,
+      62.5041
+    ],
+    "z_min": -6.0029,
+    "z_max": 56.5012,
+    "alto_total": 62.5041
+  },
+  "sobre_referencia_no_confirmado": [
+    40.0,
+    40.0,
+    70.0
+  ],
+  "cabe_en_referencia": {
+    "P0_Cuerpo_Gancho": true,
+    "P0_Argolla": true
+  },
+  "aviso": "40x40x70 es referencia historica del proyecto, NO confirmada para este servicio ni para este material."
+}

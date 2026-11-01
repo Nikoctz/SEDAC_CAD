@@ -1,0 +1,103 @@
+{
+  "entradas": {
+    "masa_sup_kg": 20.0,
+    "g": 9.81,
+    "F_total_N": 196.2,
+    "F_dos_conexiones_N": 98.1,
+    "k_dinamico_supuesto": 2.0,
+    "F_diseno_N": 392.4,
+    "excentricidad_eje_mm": 6.5
+  },
+  "resistencias_referencia_MPa": {
+    "petg_xy": 39.0,
+    "petg_z": 16.4,
+    "pa6cf_xy": 105.0,
+    "pa6cf_z": 67.7,
+    "a2_shear": 126.0
+  },
+  "resultados": [
+    {
+      "modo": "Tornillo Ø6 (hombro) en cortante doble",
+      "F_N": 392.4,
+      "geometria": "A = 2·π/4·6.2² = 60.4 mm²",
+      "sigma_MPa": 6.5,
+      "tipo": "cortante",
+      "nota": "El herraje es acero A2; el tornillo no es el elemento critico. Se muestra solo para descartar el modo.",
+      "controla": false
+    },
+    {
+      "modo": "Presion de contacto cubo (PETG) sobre hombro Ø6",
+      "F_N": 392.4,
+      "geometria": "A = 6.2·9.0 = 55.8 mm²",
+      "sigma_MPa": 7.03,
+      "tipo": "contacto",
+      "nota": "Presion proyectada; supone contacto uniforme en toda la longitud.",
+      "controla": false
+    },
+    {
+      "modo": "Presion de contacto por teton (2 tetones)",
+      "F_N": 196.2,
+      "geometria": "A = 6.2·3.3 = 20.5 mm²",
+      "sigma_MPa": 9.59,
+      "tipo": "contacto",
+      "nota": "Reparto 50/50 entre tetones, supuesto.",
+      "controla": false
+    },
+    {
+      "modo": "Seccion neta del teton (arrancamiento por el agujero)",
+      "F_N": 196.2,
+      "geometria": "A = (11.0-6.2)·3.3 = 15.8 mm²",
+      "sigma_MPa": 12.39,
+      "tipo": "traccion",
+      "nota": "Traccion sobre la seccion debilitada por el agujero; no incluye concentracion de esfuerzo (Kt > 1).",
+      "controla": false
+    },
+    {
+      "modo": "Flexion de la espina por excentricidad e = 6,5 mm (carga estatica)",
+      "F_N": 196.2,
+      "geometria": "M = 196.2·6.5 = 1275 N·mm; W = 9.0·9.0²/6 = 121.5 mm³",
+      "sigma_MPa": 10.5,
+      "tipo": "flexion",
+      "nota": "Seccion 9 x 9 mm (con refuerzo). Modelo de viga; no incluye entallas.",
+      "controla": true
+    },
+    {
+      "modo": "Flexion de la espina, caso conservador (k = 2)",
+      "F_N": 392.4,
+      "geometria": "M = 392.4·6.5 = 2551 N·mm",
+      "sigma_MPa": 20.99,
+      "tipo": "flexion",
+      "nota": "Mismo modelo con la carga concentrada y factor dinamico supuesto.",
+      "controla": true
+    },
+    {
+      "modo": "Arco de canasta (media circunferencia, apoyo en brazos)",
+      "F_N": 196.2,
+      "geometria": "M = 0,32·196.2·7.5 = 471 N·mm; W = 81.0 mm³",
+      "sigma_MPa": 9.45,
+      "tipo": "flexion+axial",
+      "nota": "Coeficiente 0,32 para arco semicircular con carga en la clave: aproximado. Superpone flexion y compresion de forma conservadora.",
+      "controla": false
+    },
+    {
+      "modo": "Pasador de cierre Ø4 en cortante doble",
+      "F_N": 392.4,
+      "geometria": "A = 2·π/4·4² = 25.1 mm²",
+      "sigma_MPa": 15.61,
+      "tipo": "cortante",
+      "nota": "Acero; solo trabaja si la argolla de la bolsa empuja el cierre desde el interior.",
+      "controla": false
+    },
+    {
+      "modo": "Torsion del cuello de la argolla (e supuesta 10 mm)",
+      "F_N": 196.2,
+      "geometria": "T = 1962 N·mm; seccion circular equiv. Ø9.0",
+      "sigma_MPa": 13.71,
+      "tipo": "torsion",
+      "nota": "Excentricidad SUPUESTA; indica que la cinta debe quedar centrada sobre el eje de giro.",
+      "controla": false
+    }
+  ],
+  "factor_seguridad": "PENDIENTE: no hay admisibles trazables para la pieza impresa (dependen de orientacion, relleno, temperatura y proceso). No se declara.",
+  "aviso": "Calculos de prediseno con formulas simplificadas. No sustituyen ensayos ni FEA. Ningun valor aqui es una validacion del producto."
+}

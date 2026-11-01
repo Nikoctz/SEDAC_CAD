@@ -1,0 +1,31 @@
+{
+  "step": {
+    "P0_Argolla.step": {
+      "volumen_mm3": 3412.51,
+      "solidos": 1
+    },
+    "P0_Conjunto_Montaje.step": {
+      "volumen_mm3": 7949.84,
+      "solidos": 2
+    },
+    "P0_Cuerpo_Gancho.step": {
+      "volumen_mm3": 4537.33,
+      "solidos": 1
+    }
+  },
+  "stl": {
+    "P0_Argolla.stl": {
+      "bytes": 86484,
+      "triangulos": 1728,
+      "binario_consistente": true,
+      "tamano_mm": null
+    },
+    "P0_Cuerpo_Gancho.stl": {
+      "bytes": 194084,
+      "triangulos": 3880,
+      "binario_consistente": true,
+      "tamano_mm": null
+    }
+  },
+  "ok": true
+}
